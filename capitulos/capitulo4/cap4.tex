@@ -1,0 +1,55 @@
+El t\'{e}rmino Aprendizaje Autom\'{a}tico se refiere a la detecci\'{o}n autom\'{a}tica de patrones significativos dentro de un conjunto de datos \cite{32}. En las \'{u}ltimas d\'{e}cadas se ha convertido en una herramienta com\'{u}n en casi cualquier tarea que requiera la extracci\'{o}n de informaci\'{o}n de gran cantidad de datos, por lo cual se ha convertido en una de las \'{a}reas de m\'{a}s r\'{a}pido crecimiento de la inform\'{a}tica en los \'{u}ltimos a\~{n}os.
+
+\vspace{5mm} %5mm vertical space
+
+Si bien el Aprendizaje Autom\'{a}tico puede resolver algunos problemas que son resueltos con algoritmos tradicionales, ha superado a \'{e}stos en problemas tales como el reconocimiento de im\'{a}genes, voz, lenguaje, escritura, juegos, rob\'{o}tica, an\'{a}lisis de datos, an\'{a}lisis de series de tiempo, etc. Desde esta perspectiva, se espera que mediante la aplicaci\'{o}n del Aprendizaje Autom\'{a}tico se pueda generar un modelo que se ajuste a un comportamiento normal esperado para un usuario.
+
+\section{Aprendizaje Supervisado, Aprendizaje no Supervisado y Aprendizaje Semi-supervisado}
+
+Existen diversas formas de clasificar los paradigmas de aprendizaje que existen, sin embargo en el presente trabajo s\'{o}lo se tratar\'{a}n el supervisado, el no supervisado y el semi-supervisado.
+
+\vspace{5mm} %5mm vertical space
+
+El \textbf{Aprendizaje Supervisado} es aquel que cuenta con variables de entrada (X) y una variable de salida (Y), este tipo de aprendizaje utiliza un algoritmo para aprender la funci\'{o}n de mapeo desde la entrada hasta la salida.
+
+\begin{equation}
+Y = f(X)
+\end{equation}
+
+El objetivo de este tipo de aprendizaje es aproximar la funci\'{o}n de mapeo de tal forma que cuando tenga datos de entrada nuevos (X) pueda predecir las variables de salida (Y) para esos datos. 
+
+\vspace{5mm} %5mm vertical space
+
+Este tipo de aprendizaje aborda dos tipos de problemas: clasificaci\'{o}n y regresi\'{o}n. Los problemas de \textbf{Clasificaci\'{o}n} son aquellos donde la variable de salida es una categor\'{i}a, como por ejemplo: ''Rojo'', ''Azul'', o ''Sano'', ''Enfermo'', por otra parte en los problemas de \textbf{Regresi\'{o}n} la variable de salida es un valor real, tal como: ''precio'' o ''altura''. Algunos de los tipos de problemas m\'{a}s comunes construidos sobre la clasificaci\'{o}n y la regresi\'{o}n incluyen la recomendaci\'{o}n y la predicci\'{o}n de series temporales.
+
+\vspace{5mm} %5mm vertical space
+
+Por otro lado el \textbf{Aprendizaje no Supervisado} es aquel donde s\'{o}lo se cuenta con datos de entrada (X) y no hay variables de salida correspondientes, su objetivo principal consiste en modelar la estructura o distribuci\'{o}n subyacente en los datos para aprender m\'{a}s acerca de los mismos.
+
+\vspace{5mm} %5mm vertical space
+
+En cuanto a los problemas del Aprendizaje sin supervisi\'{o}n, pueden ser agrupados en dos: agrupamiento y asociaci\'{o}n. El \textbf{Agrupamiento} es aquel donde se desea descubrir las agrupaciones inherentes en el conjunto de datos, como por ejemplo agrupar clientes por comportamiento de compra. Por otra parte la \textbf{Asociaci\'{o}n} es aquella que desea descubrir reglas que describen grandes porciones de sus datos, por ejemplo las personas que compran X tambi\'{e}n tienden a comprar Y. Algunos de los algoritmos de aprendizaje sin supervisi\'{o}n m\'{a}s populares son: K-means (para problemas de agrupamiento) y algoritmo Apriori (para problemas de aprendizaje de reglas de asociaci\'{o}n).
+
+\vspace{5mm} %5mm vertical space
+
+Por \'{u}ltimo se encuentra el \textbf{Aprendizaje Semi-supervisado}, el cual abarca aquellos problemas donde se tiene gran cantidad de datos de entrada (X) y s\'{o}lo algunos de los datos est\'{a}n etiquetados (Y). Este tipo de problemas se encuentran entre el aprendizaje supervisado y el no supervisado, adem\'{a}s es importante se\~{n}alar que muchos de los problemas de Aprendizaje Autom\'{a}tico en el mundo real se encuentran en esta \'{a}rea, esto debido a que resulta costoso o puede requerir mucho tiempo etiquetar el conjunto de datos, mientras que los datos no etiquetados son baratos, adem\'{a}s de ser f\'{a}ciles de recolectar y almacenar. Este tipo de problemas pueden usar una combinaci\'{o}n de t\'{e}cnicas supervisadas y no supervisadas para ser resueltos.
+
+\vspace{5mm} %5mm vertical space
+
+Dado que los m\'{e}todos de Aprendizaje Supervisado requieren una gran cantidad de datos de entrenamiento etiquetados, es importante aclarar que la recolecci\'{o}n de muestras negativas (conducci\'{o}n an\'{o}mala) es d\'{i}ficil y riesgosa para este estudio en particular; adem\'{a}s el enfoque supervisado presenta una limitaci\'{o}n potencial, la cual es: la detecci\'{o}n de nuevos patrones at\'{i}picos, esto debido a que el modelo resultante s\'{o}lo esta entrenado para reconocer un conjunto limitado de patrones an\'{o}malos, por lo cual al momento en que se presente un nuevo patr\'{o}n este modelo ser\'{a} incapaz de reconocerlo.
+
+\vspace{5mm} %5mm vertical space
+
+Por otra parte el enfoque sin supervisi\'{o}n tiene la ventaja de no requerir informaci\'{o}n etiquetada, sin embargo a menudo sufre altas tasas de falsas alarmas y bajas tasas de detecci\'{o}n \cite{33}. 
+
+\vspace{5mm} %5mm vertical space
+
+En muchas aplicaciones, incluyendo la del presente trabajo de grado, los ejemplos normales son f\'{a}ciles de conseguir, mientras que los an\'{o}malos son bastante dif\'{i}ciles de obtener, en consecuencia, para la realizaci\'{o}n de este estudio, se ha optado por la aplicaci\'{o}n del enfoque Semi-supervisado. De esta manera, como se mencion\'{o} en el Cap\'{i}tulo \ref{Capitulo 2}, el enfoque de \textbf{detecci\'{o}n de anomal\'{i}as Semi-supervisado} s\'{o}lo dispone de muestras normales en el conjunto de entrenamiento; es decir, no se puede obtener informaci\'{o}n sobre anomal\'{i}as, por lo tanto las muestras desconocidas se clasifican como valores at\'{i}picos, siempre y cuando su comportamiento sea muy diferente al de las muestras normales ya conocidas. Por lo tanto en este trabajo, se propone un modelo de detecci\'{o}n de anomal\'{i}as de conducci\'{o}n semi-supervisado que consta de dos componentes: un modelo de comportamiento normal de manejo y un ...
+
+%una red neuronal recurrente y un ... , como se puede apreciar en la Figura ...
+
+
+
+
+
+

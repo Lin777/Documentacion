@@ -1,0 +1,173 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Masters/Doctoral Thesis 
+% LaTeX Template
+% Version 2.5 (27/8/17)
+%
+% This template was downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Version 2.x major modifications by:
+% Vel (vel@latextemplates.com)
+%
+% This template is based on a template by:
+% Steve Gunn (http://users.ecs.soton.ac.uk/srg/softwaretools/document/templates/)
+% Sunil Patel (http://www.sunilpatel.co.uk/thesis-template/)
+%
+% Template license:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[11pt,spanish,singlespacing,headsepline]{MastersDoctoralThesis} 
+\usepackage[utf8]{inputenc} 
+\usepackage[T1]{fontenc}
+\usepackage{mathpazo}
+\usepackage{enumerate}
+\usepackage{subcaption}
+\usepackage{graphicx}
+\usepackage{caption}
+%\usepackage{hyperref}
+%\usepackage[backend=bibtex,style=authoryear,natbib=true]{biblatex}
+\usepackage[style=trad-abbrv]{biblatex}
+%\addbibresource{example.bib}
+%\usepackage[autostyle=true]{csquotes}
+
+%----------------------------------------------------------------------------------------
+%	MARGIN SETTINGS
+%----------------------------------------------------------------------------------------
+\geometry{
+	paper=letterpaper,inner=2.5cm,outer=3.8cm,bindingoffset=.5cm,
+	top=1.5cm,bottom=1.5cm, 
+}
+%----------------------------------------------------------------------------------------
+%	THESIS INFORMATION
+%----------------------------------------------------------------------------------------
+\thesistitle{Detecci\'{o}n de anomal\'{i}as de conducci\'{o}n}
+\supervisor{Dr. Eduardo \textsc{Di Santi}} 
+\examiner{}
+\degree{Licenciatura en Ingeniería de Sistemas}
+\author{Evelyn \textsc{Cusi López}} 
+\addresses{}
+%\subject{Biological Sciences} 
+\keywords{}
+\university{\href{http://www.umss.edu.bo}{Universidad Mayor de San Simón}}
+\department{\href{http://www.cs.umss.edu.bo}{Departamento Informática-Sistemas}}
+\group{\href{http://www.cs.umss.edu.bo}{Carrera de Ingeniería de Sistemas}}
+\faculty{\href{http://www.fcyt.umss.edu.bo}{Facultad de Ciencias y Tecnología}}
+
+\AtBeginDocument{
+\hypersetup{pdftitle=\ttitle}
+\hypersetup{pdfauthor=\authorname}
+\hypersetup{pdfkeywords=\keywordnames}
+}
+
+\begin{document}
+
+\frontmatter % Use roman page numbering style (i, ii, iii, iv...) for the pre-content pages
+
+\pagestyle{plain} % Default to the plain heading style until the thesis style is called for the body content
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+\begin{titlepage}
+\begin{center}
+
+\vspace*{.06\textheight}
+{\scshape\LARGE \univname\par}\vspace{1.5cm} % University name
+\textsc{\Large Proyecto de Grado}\\[0.5cm] % Thesis type
+
+\HRule \\[0.4cm] % Horizontal line
+{\huge \bfseries \ttitle\par}\vspace{0.4cm} % Thesis title
+\HRule \\[1.5cm] % Horizontal line
+ 
+\begin{minipage}[t]{0.4\textwidth}
+\begin{flushleft} \large
+\emph{Autor:}\\
+{\authorname}
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.4\textwidth}
+\begin{flushright} \large
+\emph{Tutor:} \\
+{\supname}
+\end{flushright}
+\end{minipage}\\[3cm]
+ 
+\vfill
+
+\large \textit{Un proyecto de grado presentado en cumplimiento de los requisitos\\ para el titulo de \degreename}\\[0.3cm]
+\textit{en la}\\[0.4cm]
+\groupname\\\deptname\\[2cm]
+\vfill
+
+{\large \today}\\[4cm]
+\vfill
+\end{center}
+\end{titlepage}
+
+\cleardoublepage
+
+
+%----------------------------------------------------------------------------------------
+%	ACKNOWLEDGEMENTS
+%----------------------------------------------------------------------------------------
+
+\begin{acknowledgements}
+\addchaptertocentry{\acknowledgementname} 
+Le agradezco a Dios por haberme acompañado y guiado a lo largo de mi carrera, por ser mi fortaleza en los momentos de debilidad y por brindarme una vida llena de aprendizajes, experiencias y sobre todo felicidad.
+\end{acknowledgements}
+
+%----------------------------------------------------------------------------------------
+%	DEDICATION
+%----------------------------------------------------------------------------------------
+
+\dedicatory{A mi madre, por estar conmigo, por enseñarme a crecer y a levantarme, por apoyarme y guiarme, por ser la base que me ayudó a llegar hasta aquí.} 
+
+%----------------------------------------------------------------------------------------
+%	LIST OF CONTENTS/FIGURES/TABLES PAGES
+%----------------------------------------------------------------------------------------
+
+\tableofcontents % Prints the main table of contents
+
+\listoffigures % Prints the list of figures
+
+\listoftables % Prints the list of tables
+
+%----------------------------------------------------------------------------------------
+%	ABSTRACT PAGE
+%----------------------------------------------------------------------------------------
+
+\begin{abstract}
+\addchaptertocentry{\abstractname} % Add the abstract to the table of contents
+\input{resumen}
+\end{abstract}
+
+%----------------------------------------------------------------------------------------
+%	THESIS CONTENT - CHAPTERS
+%----------------------------------------------------------------------------------------
+
+\mainmatter 
+\pagestyle{thesis}
+\include{capitulos/capitulo1}
+\include{capitulos/capitulo2}
+\include{capitulos/capitulo3}
+\include{capitulos/capitulo4}
+%\include{capitulos/capitulo5}
+
+%----------------------------------------------------------------------------------------
+%	THESIS CONTENT - APPENDICES
+%----------------------------------------------------------------------------------------
+
+%\appendix 
+%\include{apendices/apendiceA}
+%\include{Appendices/AppendixB}
+%\include{Appendices/AppendixC}
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+%\printbibliography[heading=bibintoc]
+\input{bibliografia}
+%----------------------------------------------------------------------------------------
+
+\end{document}  

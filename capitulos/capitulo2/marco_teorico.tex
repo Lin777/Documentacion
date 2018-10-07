@@ -1,0 +1,65 @@
+
+El análisis del comportamiento humano es un campo interdisciplinario y en la ultima decada este campo ha atraído más la atención; un ejemplo claro es la aplicación que encuentra la correlación entre los datos del acelerómetro integrado en los teléfonos inteligentes y los niveles de estrés de sus usuarios y así detectar los comportamientos en episodios de estrés de los mismos(Garcia-Ceja, Osmani y Mayora, 2015).
+
+Otro trabajo importante en éste ámbito es el que presentan Warren, Lipkowits y Sokolov (2017) donde implementan el procesamiento de extremo a extremo y una canalización de aprendizaje estadístico desde observaciones de los teléfonos inteligentes a la distribución de conductas de conducción, condicional de la hora del día y el día de la semana utilizando algoritmos de agrupación de datos telefónicos.
+
+Warren, Lipkowits y Sokolov (2017), sostienen que gracias a los dispositivos móviles se tiene la oportunidad de complementar  la tecnología de recolección de datos tradicional con datos extraídos de los sensores de los teléfonos móviles tales como GPS, giroscopio, acelerómetro y cámara; y esto no sólo es mas práctico sino que también es menos costoso debido a que gran parte de la población ya cuenta con un dispositivo móvil de gama media con lo que es más que suficiente para los propósitos de recopilación de datos.
+
+Dado que este trabajo se centrara en recolección de datos y aprendizaje automático es fundamental presentar definiciones necesarias para la comprensión a cabalidad de lo que se abordara en el presente proyecto.
+
+\section{Reconocimiento de patrones}
+El reconocimiento de patrones se encarga de la descripción y clasificación (reconocimiento) de objetos, personas, señales, representaciones, etc; trabaja en base a un conjunto previamente establecido de todos los posibles patrones individuales a reconocer.
+Se puede definir el reconocimiento de patrones como: "la ciencia que se ocupa de los procesos sobre ingeniería, computación y matemáticas relacionados con objetos físicos y/o abstractos, con el propósito de extraer información que permita establecer propiedades entre conjuntos de dichos objetos, los cuales nos permitan interpretar el mundo que nos rodea"(Ruiz-Shulcloper, Guzmán y Martınez-Trinidad, 1999).
+
+Un sistema de reconocimiento de patrones consta de tres partes (Carrasco, J., y Martinez, J., (2011)):
+\begin{itemize}
+ \item Sensor
+ \item Extracción de características 
+ \item Clasificación o agrupamiento
+\end{itemize}
+
+\subsection{Sensor}
+Es la primera etapa del sistema su propósito principal es proporcionar una representación factible de los elementos del universo a ser clasificados, su función es crucial para el sistema ya que determina los limites del rendimiento en todo el sistema.
+
+En la presente investigación se utilizara los valores de los sensores: GPS, acelerometro y giroscopio de un dispositivo móvil como atributos(parámetros) del manejo de un conductor.
+
+\subsection{Extracción de características}
+Es la selección de atributos relevantes a partir del conjunto total de atributos que se les puede medir a los objetos de estudio; es decir que su función principal es eliminar la redundancia en los atributos con lo que en consecuencia se lograría optimizar la siguiente etapa de este sistema que es la clasificación o agrupamiento.
+Esta etapa requiere un alto grado de análisis debido a que si las tareas en esta etapa se realizan exitosamente la clasificación y/o agrupamiento obtendrán resultados mucho mas precisos por la eliminación de redundancia adecuada.
+
+\subsection{Clasificación o agrupamiento}
+El objetivo principal de este subsistema es dado un ejemplo nunca antes visto clasificarlo con el patrón correcto al que pertenece.
+
+\subsubsection{Clasificación}
+Se denomina también como un tipo de aprendizaje supervisado; en este efecto existen una gran cantidad de algoritmos que realizan esta tarea, el problema recae en que algoritmo escoger para un problema determinado lo cual no tiene una solución como tal, ya que la solución mas "utilizada" es probar con diferentes clasificadores y seleccionar aquel que obtenga los mejores resultados.
+ 
+\subsubsection{Agrupamiento}
+Se denomina también como un tipo de aprendizaje no supervisado ya que no cuenta con un conocimiento previo de cuantas clases (patrones) existen dado un conjunto de datos de entrenamiento, por lo que su objetivo es encontrar clases que se adecuen a nuestros propósitos dado un conjunto de datos de entrenamiento. 
+El agrupamiento también tiene el problema de como seleccionar el algoritmo correcto para agrupar sus datos, para ello se propusieron distintas técnicas, las cuales son:
+\begin{itemize}
+	\item Agrupamientos jerárquicos
+	\item Técnica de reagrupamiento
+	\item Agrupamiento basado de grafos
+\end{itemize}
+
+\section{Aplicaciones nativas}
+
+Las aplicaciones nativas son las aplicaciones propias de cada plataforma. Deben ser desarrolladas pensando en la plataforma concreta. No existe ningún tipo de estandarización, ni en las capacidades ni en los entornos de desarrollo, por lo que los desarrollos que pretenden soportar plataformas diferentes suelen necesitar un esfuerzo extra (Ramirez,  PID 00176755).
+
+\section{Arquitectura}
+Existen muchas arquitecturas de aplicación posibles en lo que respecta a las aplicaciones móviles.  Las arquitecturas más habituales en el desarrollo de aplicaciones para dispositivos móviles son:
+
+\subsection{Aplicación fuera de linea}
+La aplicaciones "fuera de línea" son aplicaciones que, una vez descargadas, no requieren en absoluto de conexión (a excepción de las actualizaciones) para poder funcionar. Estas aplicaciones solo necesitan desarrollar la aplicación del dispositivo móvil (no son necesarios más componentes).
+
+\subsection{Aplicación totalmente en linea}
+Las aplicaciones totalmente "en línea" son aplicaciones que no pueden funcionar sin conexión a Internet. Estas arquitecturas requieren, sin lugar a dudas, de una parte de servidor, y están pensadas para mantener una comunicación constante con dicha parte servidora.
+
+Tienen como desventaja que el usuario no puede utilizar la aplicación cuando no tiene conexión, pero disponen de información constante de las interacciones del usuario. Es necesario desarrollar, al menos, la parte servidora, tal vez una parte de desarrollo en el cliente y, en ocasiones, la comunicación entre ambos. Al necesitar estar siempre conectados, tienen un consumo extra de batería.
+En ocasiones no es necesario realizar la parte servidora, ya que se trata de aplicaciones llamadas mash-ups, que son aplicaciones que aprovechan API existentes en la red para interaccionar con datos, (como, por ejemplo, la API de Twitter o datos públicos del estado).
+
+\subsection{Aplicaciones de sincronización}
+Las aplicaciones de sincronización son aplicaciones que pueden funcionar en ambos modos, "en línea" y "fuera de línea", y permiten realizar las mismas acciones o acciones muy parecidas en ambos casos. La aplicación debe sincronizar los datos de la situación "fuera de línea" cuando se encuentre "en línea" y gestionar los posibles conflictos. Esto supone un beneficio para el usuario, ya que le permite trabajar en cualquier lugar y tener la información lo más actualizada posible.
+
+\subsection{Aplicaciones para la comunicacion entre dispositivos}
+Las aplicaciones para la comunicación entre dispositivos son aplicaciones que interconectan dos (unicast) o más (multicast) dispositivos e intercambian información.
