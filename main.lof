@@ -7,13 +7,18 @@
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Ejemplo de anomal\'{i}as de punto en un conjunto de datos de 2 dimensiones.\relax }}{6}{figure.caption.21}
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Anomal\'{i}a contextual $t_2$ en una serie temporal de temperatura.\relax }}{6}{figure.caption.23}
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Anomal\IeC {\'\i }a colectiva correspondiente a una contracci\IeC {\'o}n prematura auricular en un electrocardiograma humano.\relax }}{7}{figure.caption.25}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces M\'{e}todo de detecci\'{o}n propuesto.\relax }}{10}{figure.caption.33}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces M\'{e}todo de detecci\'{o}n de anomal\'{i}as propuesto.\relax }}{10}{figure.caption.33}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Recolecci\'{o}n de datos, con intervalo de un segundo.\relax }}{12}{figure.caption.37}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Soporte para celular de parabrisas, posici\'{o}n horizontal.\relax }}{12}{figure.caption.38}
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Fragmento del conjunto de datos obtenido.\relax }}{13}{figure.caption.39}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Grafica de los sensores capturados en diferentes posiciones\relax }}{13}{figure.caption.41}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Histograma de frecuencias del conjunto de datos\relax }}{14}{figure.caption.43}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Visualizaci\'{o}n de los par\'{a}metros de conducci\'{o}n capturados.\relax }}{16}{figure.caption.51}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Gr\'{a}fica resultante de aplicar diferentes tipos de normalizaciones a un conjunto de datos.\relax }}{17}{figure.caption.52}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Gr\'{a}fica de los sensores capturados en diferentes posiciones\relax }}{14}{figure.caption.42}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Histograma de frecuencias del conjunto de datos\relax }}{16}{figure.caption.47}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Tabla de resultados estad\'{i}sticos del conjunto de datos.\relax }}{16}{figure.caption.48}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Regla 68-95-99.7 \relax }}{17}{figure.caption.49}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Regla 68-95-99.7 aplicada a los valores de los sensores del aceler\'{o}metro en Y. \relax }}{18}{figure.caption.50}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Visualizaci\'{o}n de los par\'{a}metros de conducci\'{o}n capturados.\relax }}{20}{figure.caption.56}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Gr\'{a}fica resultante de aplicar diferentes tipos de normalizaciones a un conjunto de datos.\relax }}{21}{figure.caption.57}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Visualizaci\'{o}n de los par\'{a}metros de conducci\'{o}n capturados.\relax }}{24}{figure.caption.65}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Gr\'{a}fica resultante de aplicar diferentes tipos de normalizaciones a un conjunto de datos.\relax }}{25}{figure.caption.66}
 \addvspace {10\p@ }

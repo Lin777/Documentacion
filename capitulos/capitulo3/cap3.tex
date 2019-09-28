@@ -4,7 +4,7 @@ Contar con una gran cantidad de datos en cualquier problema de detecci\'{o}n de 
 
 En este cap\'{i}tulo se detallar\'{a} el m\'{e}todo de recolecci\'{o}n de datos que se realizar\'{a} para la presente investigaci\'{o}n y las diferentes t\'{e}cnicas de an\'{a}lisis de datos que se aplicar\'{a}.
 
-\section{Captura de datos}
+\section{Captura de datos} \label{cap:CapDatos}
 
 Actualmente existen varios enfoques para acceder a la información del conductor y del vehículo. En el primer enfoque, un conjunto de sensores y hardware adicional se implementan previamente en el veh\'{i}culo, por ejemplo, cajas telemáticas (cajas negras provistas por compañías de seguros de automóviles), adaptadores de diagnóstico a bordo (OBD-II) enchufados en el controlador del vehículo red de área (CAN) (\cite{30}, \cite{31}), la información registrada por estos dispositivos se puede recuperar o enviar a través de Internet. Sin embargo, esta estrategia requiere que los vehículos instalen dispositivos adicionales, lo que implica un mayor costo. Para superar estos inconvenientes, existe un enfoque alternativo el cual es usar teléfonos inteligentes para recopilar datos a través de un conjunto de sensores integrados, tales como sensores inerciales (acelerómetros y giroscopios), sistemas de posicionamiento global (GPS), magnetómetros, micrófonos, sensores de imagen (cámaras), sensores de luz , sensores de proximidad, sensores de dirección (brújula), entre otros.
 
@@ -16,7 +16,7 @@ Para el presente trabajo de grado se eligi\'{o} el uso de tel\'{e}fonos intelige
 \vspace{5mm} %5mm vertical space
 
 \begin{figure}[h!]
-  \begin{center}	\includegraphics[width=0.95\textwidth]{imagenes/captura}
+  \begin{center}	\includegraphics[width=0.95\textwidth]{imagenes/Cap3/captura}
   \caption{Recolecci\'{o}n de datos, con intervalo de un segundo.}
   \label{fig:captura}
   \end{center}
@@ -29,7 +29,7 @@ Para la captura de datos se us\'{o} un soporte para celular de parabrisas como s
 \vspace{5mm} %5mm vertical space
 
 \begin{figure}[h!]
-  \begin{center}	\includegraphics[width=0.65\textwidth]{imagenes/soporte}
+  \begin{center}	\includegraphics[width=0.65\textwidth]{imagenes/Cap3/soporte}
   \caption{Soporte para celular de parabrisas, posici\'{o}n horizontal.}
   \label{fig:soporte}
   \end{center}
@@ -38,15 +38,31 @@ Para la captura de datos se us\'{o} un soporte para celular de parabrisas como s
 Cada captura, independientemente de la posici\'{o}n en la que se realiz\'{o}, di\'{o} como resultado un conjunto de datos (dataset), donde por cada tiempo T (1 seg.) se tiene seis variables: aceler\'{o}metro en X (acc x), aceler\'{o}metro en Y (acc y), aceler\'{o}metro en Z (acc z), giroscopio en X (gyr x), giroscopio en Y (gyr y) y giroscopio en Z (gyr z). En la Figura \ref{fig:dataset} se aprecia un fragmento del conjunto de datos que se obtuvo en una captura.
 
 \begin{figure}[h!]
-  \begin{center}	\includegraphics[width=0.85\textwidth]{imagenes/dataset}
+  \begin{center}	\includegraphics[width=0.95\textwidth]{imagenes/Cap3/dataset}
   \caption{Fragmento del conjunto de datos obtenido.}
   \label{fig:dataset}
   \end{center}
 \end{figure}
 
-\section{An\'{a}lisis de los datos}
+\section{Preparaci\'{o}n de datos}
 
-Como se indic\'{o} en la anterior secci\'{o}n, se realiz\'{o} la captura de datos del manejo de un usuario (conductor), de forma vertical y horizontal, a continuaci\'{o}n se analizar\'{a} las diferencias entre ellos.
+El Aprendizaje Autom\'{a}tico depende en gran medida de los datos. Son el aspecto m\'{a}s crucial que hace posible el entrenamiento de algoritmos y explica porque el aprendizaje autom\'{a}tico se hizo tan popular en los \'{u}ltimos a\~{n}os. El principal problema es que todos los conjuntos de datos tienen fallas, lo que hace a la preparaci\'{o}n de datos un paso muy importante en el proceso de Aprendizaje Autom\'{a}tico.
+
+\vspace{5mm} %5mm vertical space
+
+El prop\'{o}sito principal de la preparaci\'{o}n de datos es manipular y transformar los datos en crudo, tal que, los datos puedan ser expuestos o hacerse accesibles m\'{a}s facilmente \cite{37}, para lograr este prop\'{o}sito se debe seguir un proceso que implica la selecci\'{o}n, el pre-procesamiento y la transformaci\'{o}n de datos.
+ 
+\subsection{Selecci\'{o}n de datos}
+
+La selecc\'{o}n de datos implica los siguientes pasos:
+
+\begin{itemize}
+\item Seleccionar solo un subconjunto de los datos disponibles.
+\item Derivar o simular algunos datos a partir de los datos diponibles, en caso de ser necesario.
+\item Excluir aquellos datos que no son reelevantes para el problema.
+\end{itemize}
+
+Para el presente trabajo se har\'{a} incapi\'{e} s\'{o}lo en el primer paso de esta fase, debido a que los datos con los que se cuenta son limitados ya que \'{e}stos fueron capturados para la investigaci\'{o}n y como se indic\'{o} en la secci\'{o}n \ref{cap:CapDatos}, esta captura se realiz\'{o}, tanto de forma vertical como horizontal, a continuaci\'{o}n se analizar\'{a} las diferencias entre ellos.
 
 \vspace{5mm} %5mm vertical space
 
@@ -55,16 +71,16 @@ En la Figura \ref{fig:verHor} se muestra fragmentos de las capturas obtenidas po
 \begin{figure}
         \centering
         \begin{subfigure}[h]{0.47\textwidth} 
-            \includegraphics[width=\textwidth]{imagenes/horizontal}
+            \includegraphics[width=\textwidth]{imagenes/Cap3/horizontal}
             \caption{Captura de datos en horizontal}
             \label{fig:hor}
         \end{subfigure}       
         \begin{subfigure}[h]{0.47\textwidth} 
-            \includegraphics[width=\textwidth]{imagenes/vertical}
+            \includegraphics[width=\textwidth]{imagenes/Cap3/vertical}
             \caption{Captura de datos en vertical}
             \label{fig:ver}
         \end{subfigure}
-        \caption{Grafica de los sensores capturados en diferentes posiciones}
+        \caption{Gr\'{a}fica de los sensores capturados en diferentes posiciones}
         		\label{fig:verHor}
     \end{figure}
 
@@ -74,49 +90,231 @@ Si bien los valores capturados, son muy similares entre s\'{i}, los datos que fu
 
 \vspace{5mm} %5mm vertical space
 
-Por las razones presentadas en el anterior p\'{a}rrafo se decidi\'{o} trabajar con los datos capturados con el dispositivo m\'{o}vil en posici\'{o}n horizontal.
+Por las razones presentadas en el anterior p\'{a}rrafo se decidi\'{o} trabajar con los datos capturados con el dispositivo m\'{o}vil en posici\'{o}n horizontal, descartando as\'{i} aquellos datos capturados en vertical.
+
+\section{Pre-procesamiento de datos}
+
+Una vez que se seleccionaron los datos con los que se trabajar\'{a}, se debe proceder a pre-procesarlos, entrando as\'{i} a la fase de Pre-procesamiento de datos, el objetivo de esta fase es reducir la cantidad de los datos, encontrar las relaciones entre ellos, normalizarlos, remover los valores at\'{i}picos y extraer las caracter\'{i}sticas de los datos. Esta fase incluye varias t\'{e}cnicas como la limpieza, integraci\'{o}n, transformaci\'{o}n y reduci\'{o}n de los datos \cite{38}.
+
+\subsection{Limpieza de datos}
+
+Los datos de las filas pueden tener registros incompletos, valores ruidosos, valores at\'{i}picos y datos inconsistentes. La limpieza de los datos en la mayor\'{i}a de los casos es el primer paso del pre-procesamiento de datos. Esta t\'{e}cnica se usa para encontrar valores ausentes, suavizar el ruido en los datos, reconocer valores at\'{i}picos y corregir inconsistencias.
+
+\subsubsection{Manejo de valores ausentes}
+
+Los valores ausentes en el conjunto de datos pueden ser llenados usando cualquiera de las t\'{e}cnicas que se mencionan a continuaci\'{o}n.
+
+\begin{itemize}
+\item \textbf{Ignorar / Eliminar:} En algunos casos es mejor ignorar o eliminar la tupla que contiene valores faltantes en lugar de llenar esta. Generalmente esta t\'{e}cnica se practica en conjuntos de datos que son muy grandes, donde el eliminar algunos datos no afectara la informaci\'{o}n que transmite nuestro conjunto de datos. Sin embargo cuando se trabaja con un conjunto de datos peque\~{n}o el eliminar las tuplas que contienen valores ausentes podr\'{i}a hacer perder informaci\'{o}n importante.
+
+\item \textbf{Llenar manualmente los valores ausentes:} Otra opci\'{o}n tambi\'{e}n es completar los valores faltantes si se comprende la naturaleza de los mismos, esto generalmente se realiza en conjunto de datos peque\~{n}os, ya que en los conjuntos grandes esta tarea requerir\'{i}a bastante tiempo.
+
+\item \textbf{Llenar los valores ausentes con valores centrales (Media/Mediana):} Esta t\'{e}cnica es mucho mejor que las presentadas anteriormente. En esta t\'{e}cnica se inserta la media o la mediana del atributo respectivo a los valores faltantes. 
+
+\item \textbf{Interpolaci\'{o}n:} Es una forma confiable, precisa y cient\'{i}fica de completar valores perdidos. Para usar esta t\'{e}cnica primero se debe desarrollar una relaci\'{o}n entre los atributos y luego se predice el valor mas probable y preciso para los lugares faltantes, esto se puede lograr mediante regresi\'{o}n, formulaci\'{o}n bayesiana e inducci\'{o}n por \'{a}rboles de decisi\'{o}n.
+
+\end{itemize}
+
+\subsubsection{Eliminar rudio (suavizado) de los datos}
+
+Para comprender esta t\'{e}cnica primero se debe definir qu\'{e} es el ruido en los datos. El ruido en los datos es cualquier tipo de error aleatorio o variaci\'{o}n en los atributos medidos; por otra parte los valores at\'{i}picos presentes en los datos tambi\'{e}n pueden considerarse como ruido. 
 
 \vspace{5mm} %5mm vertical space
 
-Para conseguir un an\'{a}lisis m\'{a}s profundo de los datos capturados durante la conducci\'{o}n de un veh\'{i}culo, a continuaci\'{o}n se presenta una tabla con los par\'{a}metros estad\'{i}sticos (Valor m\'{i}nimo, Valor m\'{a}ximo, Media, Mediana, Desviaci\'{o}n est\'{a}ndar) resultantes para cada columna de datos capturada (Tabla \ref{tab: est}).
-
-%%%%%%%%%%
-\begin{center}
-\begin{table}[]
-\begin{center}
-\begin{tabular}{|l|l|l|l|l|l|l|}
-\hline
- & \textbf{ACC-X} & \textbf{ACC-Y} & \textbf{ACC-Z} &  \textbf{GYR-X} & \textbf{GYR-Y} & \textbf{GYR-Z} \\ \hline
-\textbf{Min} & -16.1556 & -11.5167 & -11.2487 & -3.0617 & -3.2679 & -4.7595 \\ \hline
-\textbf{Max} & 15.5559 & 11.3349 & 15.2552 & 4.3997 & 2.3482 & 2.9745 \\ \hline
-\textbf{Media} & 9.5361 & -0.7939 & -0.4447 & 0.0015 & 0.0003 &-0.0011 \\ \hline
-\textbf{Mediana} & 9.7751 & -0.9049 & -0.4820 & -0.0001 & 6.1035e-05 & 6.1035e-05 \\ \hline
-%\textbf{Moda} & 0, 9.7976 & 0, -0.8294 & 0, -0.997, -0.218 & 0, -0.000046 & 0, -0.000015 & 0, -0.00015 \\ \hline
-\textbf{Des. est.} & 1.7220 & 1.3904 & 0.9007 & 0.0905 & 0.0857 & 0.1042 \\ \hline
-
-\end{tabular}
-
-\end{center}
-\caption{Tabla de resultados estad\'{i}sticos del conjunto de datos.}
-\label{tab: est}
-\end{table}
-\end{center}
+Es importante destacar que el ruido presente en el conjunto de datos puede afectar en gran medida el resultado de nuestros algoritmos de Aprendizaje Autom\'{a}tico, por lo tanto aquellos datos que contengan ruido no son considerados buenos datos y deben ser eliminados en lo posible. Sin embargo antes de eliminar estos, se debe ser capaz de detectarlos; para lograr este objetivo existen muchas t\'{e}cnicas que se pueden utilizar, una de estas t\'{e}cnicas es la \textbf{Visualizaci\'{o}n de datos}, la cual consiste en obtener una representaci\'{o}n visual de nuestros datos, para poder evidenciar si existe ruido en los datos y/o valores at\'{i}picos.
 
 \vspace{5mm} %5mm vertical space
 
-Con la informaci\'{o}n proporcionada por la tabla ahora resulta m\'{a}s sencillo realizar un an\'{a}lisis del conjunto de datos, en primer lugar se evidencia que los valores obtenidos durante la captura, con el uso del dispositivo m\'{o}vil, se presentan entre rangos de valores muy distintos, se puede observar por ejemplo, que el valor del aceler\'{o}metro en X oscila entre los valores de -16 y 15 aproximadamente, mientras que los valores del giroscopio en X se encuentran entre -3 y 4, lo cual representa un problema debido a que \'{e}sta diferencia de rangos puede generar m\'{a}s peso en unos datos que en otros.
-
-\vspace{5mm} %5mm vertical space
-
-Para apreciar de una manera m\'{a}s gr\'{a}fica el problema expuesto con anterioridad a continuaci\'{o}n se presenta histogramas de las frecuencias de valores por cada tipo de par\'{a}metros que existe en el conjunto 
-de datos. (Ver Figura \ref{fig:hist})
+En el presente proyecto se grafic\'{o} histogramas de las frecuencias de cada caracter\'{i}stica de nuestro conjunto de datos y as\'{i} visualizar de mejor manera si existe ruido o valores at\'{i}picos en el mismo. En la Figura \ref{fig:hist} se puede evidenciar que los valores de cada sensor presentan asimetr\'{i}as negativas y positivas, adem\'{a}s de tener muchos valores bastante alejados de la media, lo que d\'{a} un indicio de posibles valores at\'{i}picos.
 
 \begin{figure}[h!]
-  \begin{center}	\includegraphics[width=0.97\textwidth]{imagenes/histogramaNormal}
+  \begin{center}	\includegraphics[width=0.97\textwidth]{imagenes/Cap3/histograma_sensores}
   \caption{Histograma de frecuencias del conjunto de datos}
   \label{fig:hist}
   \end{center}
 \end{figure}
+
+\vspace{5mm} %5mm vertical space
+
+En la Figura \ref{tab: est} se presenta una tabla con estad\'{i}sticas descriptivas de nuestro conjunto de datos, esta tabla presenta: la cantidad de datos, su media, su desviaci\'{o}n est\'{a}ndar, el valor m\'{i}nimo y m\'{a}ximo del conjunto de datos y los percentiles 50, 25 y 75, cabe recalcar que el percentil 50 es el mismo que la mediana.
+
+\begin{figure}[h!]
+  \begin{center}	\includegraphics[width=0.97\textwidth]{imagenes/Cap3/describe_data}
+  \caption{Tabla de resultados estad\'{i}sticos del conjunto de datos.}
+  \label{tab: est}
+  \end{center}
+\end{figure}
+
+\vspace{5mm} %5mm vertical space
+
+Con la informaci\'{o}n proporcionada en la Figura \ref{tab: est} ahora es m\'{a}s sencillo realizar un an\'{a}lisis del conjunto de datos, en primer lugar se evidencia que los valores obtenidos durante la captura, presentan desviaciones est\'{a}ndar muy peque\~{n}as entre 0.02 y 0.79 y sin embargo la diferencia entre los valores m\'{i}nimo y m\'{a}ximo son realmente grandes, por ejemplo para el Aceler\'{o}metro en X, la diferencia es 16 aproximadamente (Valor m\'{i}nimo: -1.998 y valor m\'{a}ximo: 14.31), esto quiere decir que nuestro conjunto de datos presenta mucho ruido, considerando como ruido o valores at\'{i}picos, aquellos valores muy alejados de la media. 
+
+\vspace{5mm} %5mm vertical space
+
+Para eliminar el ruido que presenta nuestro conjunto de datos se aplic\'{o} la \textbf{Regla 68-95-99.7}, conocida tambi\'{e}n como la \textbf{Regla emp\'{i}rica}, donde suponiendo que el conjunto de datos con el que se trabaja tiene una distribuci\'{o}n normal, la desviaci\'{o}n est\'{a}ndar se puede usar para determinar la proporci\'{o}n de valores que se encuentran dentro de un rango particular del valor medio. Para tales distribuciones, siempre ocurre que el 68\% de los valores est\'{a}n a menos de una desviaci\'{o}n est\'{a}ndar (1SD) del valor medio, que el 95\% de los valores est\'{a}n a menos de dos desviaciones est\'{a}ndar (2SD) de la media y que el 99\% de valores est\'{a}n a menos de tres desviaciones est\'{a}ndar (3SD) de la media. En la Figura \ref{fig:689599rule} se muestra este concepto de forma esquem\'{a}tica.
+
+\begin{figure}[h!]
+  \begin{center}	\includegraphics[width=0.97\textwidth]{imagenes/Cap3/68-95-99_rule}
+  \caption{Regla 68-95-99.7 }
+  \label{fig:689599rule}
+  \end{center}
+\end{figure}
+
+En la Figura \ref{fig:689599rule_acc_y}, se puede observar como se comporta la regla 68-95-99.7 sobre los valores del sensor del aceler\'{o}metro en Y, por lo que para eliminar el ruido en nuestro conjunto de datos se tiene dos opciones, eliminar los valores despu\'{e}s de tres desviaciones est\'{a}ndar de la media, en caso de considerar que nuestro conjunto de datos presenta pocas anomal\'{i}as o valores at\'{i}picos, o eliminar los valores despu\'{e}s de dos desviaciones est\'{a}ndar en caso de estar seguro que nuestro conjunto de datos presenta una gran cantidad de ruido en los datos, en nuestro caso la mayor\'{i}a de nuestros datos pertenecen a comportamientos normales de conducci\'{o}n por lo que s\'{o}lo eliminaremos los valores que se encuentran despu\'{e}s de tres desviaciones est\'{a}ndar de la media.
+
+
+\begin{figure}[h!]
+  \begin{center}	\includegraphics[width=0.97\textwidth]{imagenes/Cap3/acc_y_689599_rule}
+  \caption{Regla 68-95-99.7 aplicada a los valores de los sensores del aceler\'{o}metro en Y. }
+  \label{fig:689599rule_acc_y}
+  \end{center}
+\end{figure}
+
+\subsubsection{Fusi\'{o}n o integraci\'{o}n de datos}
+
+Cuando se trabaja con datos del mundo real, es posible que los datos que se requiere no se encuentren en un mismo conjunto de datos, en \'{e}stos casos, se necesita recopilar datos de diferentes fuentes y fusionarlos en un solo conjunto de datos; este proceso recibe el nombre de Fusi\'{o}n o Integraci\'{o}n de datos. Uno de los problemas m\'{a}s comunes de este proceso es la redundancia. 
+
+\vspace{5mm} %5mm vertical space
+
+Este proceso no se aplic\'{o} en la investigaci\'{o}n debido a que s\'{o}lo se capturo los datos por medio del dispositivo m\'{o}vil, por lo cual no se tiene el problema de tener m\'{a}s de una fuente de datos.
+
+\subsubsection{Transformaci\'{o}n de datos}
+
+La transformaci\'{o}n de los datos es el proceso donde se cambia la naturaleza de los datos, dicho proceso usa algunas estrategias para poder extraer informaci\'{o}n importante del conjunto de datos; algunas de las estrategias para la transformaci\'{o}n de datos son: 
+
+\begin{itemize}
+\item \textbf{Agregaci\'{o}n: }En esta t\'{e}cnica, la operaci\'{o}n de resumen o agregaci\'{o}n se aplica sobre los datos. Por ejemplo: los datos de ventas diarias se pueden usar para calcular el monto mensual y anual en ventas, para posteriormente agregar estos datos calculados al conjunto de datos.
+
+\item \textbf{Discretizaci\'{o}n: }Con esta t\'{e}cnica se construye y reemplaza valores en bruto de un atributo num\'{e}rico por valores de intervalo.
+
+\item \textbf{Construcci\'{o}n de atributos / Ingenier\'{i}a de caracter\'{i}sticas: }Esta t\'{e}cnica es \'{u}til para generar informaci\'{o}n adicional a partir de datos vagos, adem\'{a}s puede ser adecuada cuando se tiene menos caracter\'{i}sticas pero a\'{u}n contienen informaci\'{o}n oculta para extraer.
+
+\item \textbf{Normalizaci\'{o}n / Estandarizaci\'{o}n: }La normalizaci\'{o}n o estandarizaci\'{o}n se define como el proceso de reescalar datos originales sin cambiar su comportamiento o naturaleza. Se define un nuevo l\'{i}mite (generalmente entre 0 y 1) y se convierte los datos en consecuencia. Esta t\'{e}cnica es \'{u}til en algoritmos de clasificaci\'{o}n que involucran redes neuronales o algoritmos basados en la distancia (por ejemplo, KNN, K-means). Algunas t\'{e}cnicas de normalizaci\'{o}n son:
+\begin{itemize}
+\item \textit{Normalizaci\'{o}n Min-Max: }En este m\'{e}todo, cada entrada se normaliza entre unos l\'{i}mites definidos:
+
+\begin{equation}
+x_{normalizado} = \frac{x - x_{min}}{x_{max}-x_{min}}
+\end{equation}
+
+Presenta el problema de que comprime los datos de entrada entre unos límites fijos, que por lo general son 0 y 1. Esto quiere decir que si existe ruido, éste va a ser ampliado, lo que hace que este m\'{e}todo no sea adecuado para señales estables.
+
+\item \textit{Escalado est\'{a}ndar (Standard Scaler): }Es un m\'{e}todo alternativo al escalado de variables, consiste en restar a cada dato la media de la variable y dividirlo por la desviaci\'{o}n t\'{i}pica.
+
+\begin{equation}
+x_{normalizado} = \frac{x - x_{media}}{x_{desvSt}}
+\end{equation}
+
+\'{E}ste m\'{e}todo es adecuado para normalizar se\~{n}ales estables, no obstante, tanto la media como la desviaci\'{o}n est\'{a}ndar son muy sensibles a valores an\'{o}malos. Una alternativa de soluci\'{o}n de esto es la eliminaci\'{o}n de anomal\'{i}as antes de realizar la normalizaci\'{o}n.
+
+\item \textit{Escalado sobre el valor m\'{a}ximo: }Este m\'{e}todo, presenta la idea de escalar los datos dividiendo \'{e}stos entre su m\'{a}ximo valor.
+
+\item \textit{Escalado robusto (Robust scaler): }El escalado robusto consiste en eliminar la mediana y escala los datos de acuerdo con el rango de interquartil (IQR). Este m\'{e}todo es robusto para valores at\'{i}picos.
+
+\end{itemize}
+
+\end{itemize}
+
+\subsubsection{Reducci\'{o}n de datos}
+
+Este proceso se basa en la adopci\'{o}n de algunas estrategias, tal que el an\'{a}lisis de datos reducidos produce la misma informaci\'{o}n producida por los datos originales. Algunas de las estrategias incluyen: an\'{a}lisis de componentes principales (PCA), selecci\'{o}n de un subconjunto de atributos, agrupaci\'{o}n y muestreo entre otros.
+
+\vspace{5mm} %5mm vertical space
+
+\textbf{An\'{a}lisis de componentes principales (PCA)}
+
+\vspace{5mm} %5mm vertical space
+
+El An\'{a}lisis de Componentes Principales (PCA - Principal Component Analysis) es una técnica que se usa ampliamente para aplicaciones como reducción de dimensionalidad, compresión de datos con pérdida, extracción de características y visualización de datos \cite{39}.
+
+\vspace{5mm} %5mm vertical space
+
+PCA es una t\'{e}cnica estad\'{i}stica no supervisada y no param\'{e}trica, que se utiliza para la reducci\'{o}n de dimensionalidad. Esta t\'{e}cnica es un paso importante debido a que la alta dimensionalidad en el campo de aprendizaje autom\'{a}tico puede llevar al sobreajuste del modelo, reduciendo as\'{i} su capacidad de generalizaci\'{o}n. Richard Bellman en \cite{40} describe este fen\'{o}meno como la "Maldici\'{o}n de la Dimensionalidad".
+
+\vspace{5mm} %5mm vertical space
+
+PCA se utiliza para identificar los componentes con la variaci\'{o}n m\'{a}xima, y la contribuci\'{o}n de cada variable a un componente se basa en su magnitud de varianza. Se considera una buena pr\'{a}ctica normalizar los datos antes de utilizar esta  t\'{e}cnica, debido a que los datos sin escala con diferentes unidades de medida puede distorcionar la comparaci\'{o}n relativa de la varianza entre las caracter\'{i}sticas.
+
+\vspace{5mm} %5mm vertical space
+
+En el presente proyecto se decidi\'{o} el uso de \'{e}sta t\'{e}cnica, para reducir las dimensiones (caracter\'{i}sticas) y tener menos relaciones entre las variables a considerar, sin embargo como se mencion\'{o} en el p\'{a}rrafo anterior primero se debe escalar nuestro conjunto de datos. 
+
+\vspace{5mm} %5mm vertical space
+
+A continuaci\'{o}n se elaborar\'{a} un an\'{a}lisis para decidir que t\'{e}cnica de normalizaci\'{o}n es la m\'{a}s adecuada para escalar los par\'{a}metros de conducci\'{o}n capturados, en la Figura \ref{fig:datos_puros} se puede apreciar una fracci\'{o}n del conjunto de datos capturado, la cual es la base con la que se realizar\'{a} el an\'{a}lisis comparativo con los distintos tipos de normalizaci\'{o}n.
+
+\begin{figure}[h!]
+  \begin{center}	\includegraphics[width=0.5\textwidth]{imagenes/Cap3/datos_sin_preprocesamiento}
+  \caption{Visualizaci\'{o}n de los par\'{a}metros de conducci\'{o}n capturados.}
+  \label{fig:datos_puros}
+  \end{center}
+\end{figure}
+
+\vspace{5mm} %5mm vertical space
+
+Para probar los diferentes tipos de escalado, se los ajusto con los datos que ya no presentan ruido o valores at\'{i}picos.
+
+
+\begin{figure}
+        \centering
+        \begin{subfigure}[h]{0.45\textwidth} 
+            \includegraphics[width=\textwidth]{imagenes/Cap3/datos_minmax_scaler}
+            \caption{Min max Scaler}
+            \label{fig:min_max}
+        \end{subfigure}       
+        \begin{subfigure}[h]{0.45\textwidth} 
+            \includegraphics[width=\textwidth]{imagenes/Cap3/datos_standard_scaler}
+            \caption{Standard Scaler}
+            \label{fig:standard}
+        \end{subfigure}
+        
+        \begin{subfigure}[h]{0.45\textwidth} 
+            \includegraphics[width=\textwidth]{imagenes/Cap3/datos_max_scaler}
+            \caption{Max Scaler}
+            \label{fig:max}
+        \end{subfigure}       
+        \begin{subfigure}[h]{0.45\textwidth} 
+            \includegraphics[width=\textwidth]{imagenes/Cap3/datos_robust_scaler}
+            \caption{Robust Scaler}
+            \label{fig:robust}
+        \end{subfigure}
+        \caption{Gr\'{a}fica resultante de aplicar diferentes tipos de normalizaciones a un conjunto de datos.}
+        
+		\label{fig:nor_nor}
+    \end{figure}
+
+\vspace{5mm} %5mm vertical space
+
+El primer tipo de escalado que se realiz\'{o} sobre el conjunto de datos capturados fue la \textbf{Normalizaci\'{o}n Min-Max}, el cual se realiz\'{o} entre los l\'{i}mites 0 y 1, los resultados obtenidos se muestran en la figura \ref{fig:min_max}, donde se puede apreciar que los valores del aceler\'{o}metro, en sus tres ejes, no se veen deformados despu\'{e}s de haber sido escalados con \'{e}sta t\'{e}cnica y los valores del giroscopio, los cuales son m\'{a}s estables se tornan deformados, considerando como datos estables aquellos datos que se presentan como una l\'{i}nea en cero con pocas fluctuaciones; esta deformaci\'{o}n puede ser ventajosa al hacer m\'{a}s visible pequenias curvas que anteriormente eran imperceptibles, sin embargo conlleva el peligro de que pueda ampliar ruido existente en nuestros datos que no pudimos eliminar en el paso previo a esta tarea.
+
+
+\vspace{5mm} %5mm vertical space
+
+La segunda t\'{e}cnica de normalizaci\'{o}n que se aplic\'{o} sobre los datos fue el \textbf{escalado est\'{a}ndar}, el resultado se puede apreciar en la figura \ref{fig:standard}, observando detalladamente los resultados se puede evidenciar que son muy similares a los obtenidos con la normalizaci\'{o}n Min-Max, las \'{u}nicas diferencias que se pueden evidencias son que el nuevo rango de los datos es m\'{a}s amplio con media en cero y valores que oscilan principalmente entre 2 y 2,  y que se amplia un poco m\'{a}s algunas de las fluctuaciones que presentan los giroscopios.
+
+\vspace{5mm} %5mm vertical space
+
+Para la tercera normalizaci\'{o}n de datos se aplic\'{o} la t\'{e}cnica de \textbf{escalado sobre el valor m\'{a}ximo}, los resultados se presentan totalmente diferentes a los que seobtuvo anteriormente, sin embargo se observa claramente que los valores del aceler\'{o}metro no presentan mucho cambio con la diferencia de que la media de estos valores son distintas para cada uno, y los valores de los giroscopios se comportan como en los anteriores, como se puede ver en la figura \ref{fig:max}. Esta t\'{e}cnica presenta los peores resultados, ya que no deja nuestro conjunto de datos en un mismo rango lo cual complica su trabajo.
+
+\vspace{5mm} %5mm vertical space
+
+La \'{u}ltima t\'{e}cnica aplicada es el \textbf{escalado robusto}, su resultado puede ser observado en la figura \ref{fig:robust}, el cual puede ser considerado bastante similar a las dos primeras t\'{e}cnicas, con diferencia de que este escalado pronuncia mucho m\'{a}s las fluctuaciones de los valores de los giroscopios.
+
+\vspace{5mm} %5mm vertical space
+
+Para decidir el mejor m\'{e}todo de normalizaci\'{o}n que se puede aplicar a los datos capturados, primero se descartar\'{a} completamente el \textbf{m\'{e}todo de escalado sobre el valor m\'{a}ximo} debido a que los resultados que present\'{o} fueron totalmente desalentadores ya que los valores despu\'{e}s del escalado no compart\'{i}an los mismos l\'{i}mites, por otra parte el \textbf{m\'{e}todo de escalado est\'{a}ndar y de escalado robusto} tambi\'{e}n ser\'{a}n descartados debido a que ampl\'{i}an el ruido de los valores del giroscopio en exceso, quedando como \'{u}nica alternativa la \textbf{Normalizaci\'{o}n Min-Max} la cual presenta resultados similares a los dos anteriores, sin embargo presenta la diferencia de que no obtiene resultados con valores negativos sino entre los l\'{i}mites 0 y 1, el cual es un resultado que se adec\'{u}a muy bien para el an\'{a}lisis de componentes principales, que es lo que se busca en este punto.
+
+\vspace{5mm} %5mm vertical space
+
+Una vez escalado el conjunto de datos, se puede proceder con el an\'{a}lisis de componentes principales
+
+En la presente investigaci\'{o}n se us\'{o} PCA para buscar 
+
+se presentan entre rangos de valores muy distintos, se puede observar por ejemplo, que el valor del aceler\'{o}metro en X oscila entre los valores de -16 y 15 aproximadamente, mientras que los valores del giroscopio en X se encuentran entre -3 y 4, lo cual representa un problema debido a que \'{e}sta diferencia de rangos puede generar m\'{a}s peso en unos datos que en otros.
+
+\vspace{5mm} %5mm vertical space
+
+\vspace{5mm} %5mm vertical space
 
 Para solucionar este problema existe diversas t\'{e}cnicas, las cuales se abordar\'{a}n en la siguiente secci\'{o}n.
 
@@ -161,7 +359,7 @@ El escalado robusto consiste en eliminar la mediana y escala los datos de acuerd
 A continuaci\'{o}n se elaborar\'{a} un an\'{a}lisis para decidir que t\'{e}cnica de normalizaci\'{o}n es la m\'{a}s adecuada para escalar los par\'{a}metros de conducci\'{o}n capturados, en la Figura \ref{fig:datos_puros} se puede apreciar una fracci\'{o}n del conjunto de datos capturado, la cual es la base con la que se realizar\'{a} el an\'{a}lisis comparativo con los distintos tipos de normalizaci\'{o}n.
 
 \begin{figure}[h!]
-  \begin{center}	\includegraphics[width=0.5\textwidth]{imagenes/Cap3/datosPuros}
+  \begin{center}	\includegraphics[width=0.5\textwidth]{imagenes/Cap3/datos_sin_preprocesamiento}
   \caption{Visualizaci\'{o}n de los par\'{a}metros de conducci\'{o}n capturados.}
   \label{fig:datos_puros}
   \end{center}
@@ -219,5 +417,5 @@ Para decidir el mejor m\'{e}todo de normalizaci\'{o}n que se puede aplicar a los
 
 \section{Resumen del cap\'{i}tulo}
 
-En este cap\'{i}tulo se ha descrito la forma en la que se realiz\'{o} la captura de datos de conducci\'{o}n, el an\'{a}lisis del conjunto de datos mediante t\'{e}cnicas estad\'{i}sticas y visuales y finalmente la elecci\'{o}n de un m\'{e}todo de normalizaci\'{o}n para comprimir los valores en un rango definido, para que de \'{e}sta manera estos valores sean una mejor entrada para el algoritmo de aprendizaje autom\'{a}tico que se aplicar\'{a} en el siguiente cap\'{i}tulo.
+En este cap\'{i}tulo se ha descrito la forma en la que se realiz\'{o} la captura de datos de conducci\'{o}n, el pre-procesamiento del conjunto de datos mediante t\'{e}cnicas estad\'{i}sticas y visuales y finalmente la elecci\'{o}n de un m\'{e}todo de normalizaci\'{o}n para comprimir los valores en un rango definido, para que de \'{e}sta manera estos valores sean una mejor entrada para el algoritmo de aprendizaje autom\'{a}tico que se aplicar\'{a} en el siguiente cap\'{i}tulo.
  

@@ -1,4 +1,4 @@
-El t\'{e}rmino Aprendizaje Autom\'{a}tico se refiere a la detecci\'{o}n autom\'{a}tica de patrones significativos dentro de un conjunto de datos \cite{32}. En las \'{u}ltimas d\'{e}cadas se ha convertido en una herramienta com\'{u}n en casi cualquier tarea que requiera la extracci\'{o}n de informaci\'{o}n de gran cantidad de datos, por lo cual se ha convertido en una de las \'{a}reas de m\'{a}s r\'{a}pido crecimiento de la inform\'{a}tica en los \'{u}ltimos a\~{n}os.
+El t\'{e}rmino Aprendizaje Autom\'{a}tico se refiere a la detecci\'{o}n autom\'{a}tica de patrones significativos dentro de un conjunto de datos \cite{32}. En las \'{u}ltimas d\'{e}cadas se ha convertido en una herramienta com\'{u}n en casi cualquier tarea que requiera la extracci\'{o}n de informaci\'{o}n de gran cantidad de datos, por lo cual se ha convertido en una de las \'{a}reas de m\'{a}s r\'{a}pido crecimiento de la inform\'{a}tica.
 
 \vspace{5mm} %5mm vertical space
 
@@ -44,12 +44,25 @@ Por otra parte el enfoque sin supervisi\'{o}n tiene la ventaja de no requerir in
 
 \vspace{5mm} %5mm vertical space
 
-En muchas aplicaciones, incluyendo la del presente trabajo de grado, los ejemplos normales son f\'{a}ciles de conseguir, mientras que los an\'{o}malos son bastante dif\'{i}ciles de obtener, en consecuencia, para la realizaci\'{o}n de este estudio, se ha optado por la aplicaci\'{o}n del enfoque Semi-supervisado. De esta manera, como se mencion\'{o} en el Cap\'{i}tulo \ref{Capitulo 2}, el enfoque de \textbf{detecci\'{o}n de anomal\'{i}as Semi-supervisado} s\'{o}lo dispone de muestras normales en el conjunto de entrenamiento; es decir, no se puede obtener informaci\'{o}n sobre anomal\'{i}as, por lo tanto las muestras desconocidas se clasifican como valores at\'{i}picos, siempre y cuando su comportamiento sea muy diferente al de las muestras normales ya conocidas. Por lo tanto en este trabajo, se propone un modelo de detecci\'{o}n de anomal\'{i}as de conducci\'{o}n semi-supervisado que consta de dos componentes: un modelo de comportamiento normal de manejo y un ...
+En muchas aplicaciones, incluyendo la del presente trabajo de grado, los ejemplos normales son f\'{a}ciles de conseguir, mientras que los an\'{o}malos son bastante dif\'{i}ciles de obtener, en consecuencia, para la realizaci\'{o}n de este estudio, se ha optado por la aplicaci\'{o}n del enfoque Semi-supervisado. De esta manera, como se mencion\'{o} en el Cap\'{i}tulo \ref{Capitulo 2}, el enfoque de \textbf{detecci\'{o}n de anomal\'{i}as Semi-supervisado} s\'{o}lo dispone de muestras normales en el conjunto de entrenamiento; es decir, no se puede obtener informaci\'{o}n sobre anomal\'{i}as, por lo tanto las muestras desconocidas se clasifican como valores at\'{i}picos, siempre y cuando su comportamiento sea muy diferente al de las muestras normales ya conocidas. Por lo tanto en este trabajo, se propone un m\'{e}todo de detecci\'{o}n de anomal\'{i}as de conducci\'{o}n semi-supervisado que consta de dos componentes: un modelo ajustado al comportamiento normal de manejo de un usuario y un m\'{e}todo de desviaci\'{o}n est\'{a}ndar para la detecci\'{o}n de valores at\'{i}picos.
 
-%una red neuronal recurrente y un ... , como se puede apreciar en la Figura ...
+\vspace{5mm} %5mm vertical space
 
+Para la generaci\'{o}n del modelo de detecci\'{o}n de anomal\'{i}as se opt\'{o} por algoritmos de aprendizaje autom\'{a}tico enfocados en series de tiempo, dado que los datos, de los sensores capturados por el dispositivo m\'{o}vil, dependen del tiempo en el que fueron capturados, a continuacion se presenta algunos  algoritmos de aprendizaje autom\'{a}tico supervisado para series de tiempo.
 
+\section{Aprendizaje autom\'{a}tico para an\'{a}lisis de series de tiempo}
 
+Para entender la importancia de las series de tiempo se puede tomar la siguiente analog\'{i}a, los seres humanos no comienzan a pensar desde cero cada segundo, por lo que al leer un documento se comprende cada palabra bas\'{a}ndose en la comprensi\'{o}n de las palabras anteriores, es decir, no se elimina todo y se empieza a pensar de cero cada vez, dada \'{e}sta afirmaci\'{o}n se puede decir que los pensamientos de los seres humanos tienen persistencia.
 
+\vspace{5mm} %5mm vertical space
 
+Las redes neuronales tradicionales no tienen persistencia de los datos, lo que para algunos problemas en concreto, incluyendo el que se aborda en este trabajo, es una gran deficiencia. Con el fin de resolver este tipo de problemas aparecen las Redes Neuronales Recurrentes (RNN), las cuales son un tipo de red neuronal artificial propuesta en los a\~{n}os 80 (\cite{34}, \cite{35}, \cite{36}) dise\~{n}ada para reconocer patrones en secuencias de datos, como texto, genomas, escritura a mano, datos de series de tiempo num\'{e}ricos que emanan de sensores, entre otros.
+
+\vspace{5mm} %5mm vertical space
+
+La estructura de las RNN es similar a la de un perceptr\'{o}n multicapa \'{e}standar, con la diferencia de que permite conexiones entre unidades ocultas asociadas con un retardo de tiempo; a trav\'{e}s de estas conexiones, el modelo puede retener informaci\'{o}n sobre el pasado, lo que le permite descubrir correlaciones temporales entre eventos que est\'{a}n muy lejos unos de otros en los datos.
+
+Las RNN tienen una cierta memoria de lo que sucedi\'{o} anteriormente en una secuencia de datos, esto ayuda al sistema a ganar contexto de los datos. Te\'{o}ricamente se dice que las RNN tiene memoria infinita, es decir, este tipo de redes tienen la capacidad de mirar hacia atras indefinidamente; sin embargo en la practica solo se puede mirar atras unos ultimos pasos.
+
+LSTM esta dise\~{n}ado para obtener un flujo constante de errores en el tiempo y proteger este flujo de errores
 

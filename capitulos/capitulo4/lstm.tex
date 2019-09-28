@@ -1,0 +1,14 @@
+ Las redes LSTM están diseñadas específicamente para aprender dependencias a largo plazo y son
+capaz de superar los problemas previamente inherentes de las RNN, es decir, desaparecer y explotar
+gradientes (Sak et al., 2014)
+Las redes LSTM están compuestas por una capa de entrada, una o más capas ocultas y una capa de salida.
+El número de neuronas en la capa de entrada es igual al número de variables explicativas (característica
+espacio). El número de neuronas en la capa de salida refleja el espacio de salida, es decir, dos neuronas en
+Nuestro caso indica si una acción supera o no la mediana de la sección transversal en t + 1.
+La característica principal de las redes LSTM está contenida en la (s) capa (s) oculta (s) que consta de los llamados
+células de memoria. Cada una de las celdas de memoria tiene tres puertas que mantienen y ajustan su estado de celda.
+:
+una puerta olvidada (ft), una puerta de entrada (it) y una puerta de salida (ot). La estructura de una celda de memoria es
+ilustrado en la figura 2.
+ 
+ 
