@@ -44,11 +44,34 @@ Por otra parte el enfoque sin supervisi\'{o}n tiene la ventaja de no requerir in
 
 \vspace{5mm} %5mm vertical space
 
-En muchas aplicaciones, incluyendo la del presente trabajo de grado, los ejemplos normales son f\'{a}ciles de conseguir, mientras que los an\'{o}malos son bastante dif\'{i}ciles de obtener, en consecuencia, para la realizaci\'{o}n de este estudio, se ha optado por la aplicaci\'{o}n del enfoque Semi-supervisado. De esta manera, como se mencion\'{o} en el Cap\'{i}tulo \ref{Capitulo 2}, el enfoque de \textbf{detecci\'{o}n de anomal\'{i}as Semi-supervisado} s\'{o}lo dispone de muestras normales en el conjunto de entrenamiento; es decir, no se puede obtener informaci\'{o}n sobre anomal\'{i}as, por lo tanto las muestras desconocidas se clasifican como valores at\'{i}picos, siempre y cuando su comportamiento sea muy diferente al de las muestras normales ya conocidas. Por lo tanto en este trabajo, se propone un m\'{e}todo de detecci\'{o}n de anomal\'{i}as de conducci\'{o}n semi-supervisado que consta de dos componentes: un modelo ajustado al comportamiento normal de manejo de un usuario y un m\'{e}todo de desviaci\'{o}n est\'{a}ndar para la detecci\'{o}n de valores at\'{i}picos.
+En muchas aplicaciones, incluyendo la del presente trabajo de grado, los ejemplos normales son f\'{a}ciles de conseguir, mientras que los an\'{o}malos son bastante dif\'{i}ciles de obtener, en consecuencia, para la realizaci\'{o}n de este estudio, se ha optado por la aplicaci\'{o}n del enfoque Semi-supervisado. De esta manera, como se mencion\'{o} en el Cap\'{i}tulo \ref{Capitulo 2}, el enfoque de \textbf{detecci\'{o}n de anomal\'{i}as Semi-supervisado} s\'{o}lo dispone de muestras normales en el conjunto de entrenamiento; es decir, no se puede obtener informaci\'{o}n sobre anomal\'{i}as, por lo tanto las muestras desconocidas se clasifican como valores at\'{i}picos, siempre y cuando su comportamiento sea muy diferente al de las muestras normales ya conocidas. Por lo tanto en este trabajo, se propone un m\'{e}todo de detecci\'{o}n de anomal\'{i}as de conducci\'{o}n semi-supervisado que consta de dos componentes: un modelo ajustado al comportamiento normal de manejo de un usuario y un m\'{e}todo de umbral para detecci\'{o}n de valores at\'{i}picos.
 
 \vspace{5mm} %5mm vertical space
 
-Para la generaci\'{o}n del modelo de detecci\'{o}n de anomal\'{i}as se opt\'{o} por algoritmos de aprendizaje autom\'{a}tico enfocados en series de tiempo, dado que los datos, de los sensores capturados por el dispositivo m\'{o}vil, dependen del tiempo en el que fueron capturados, a continuacion se presenta algunos  algoritmos de aprendizaje autom\'{a}tico supervisado para series de tiempo.
+Para la generaci\'{o}n del modelo de detecci\'{o}n de anomal\'{i}as se opt\'{o} por algoritmos de aprendizaje autom\'{a}tico enfocados en series de tiempo, dado que los datos, de los sensores capturados por el dispositivo m\'{o}vil, dependen del tiempo en el que fueron capturados; por lo cual el primer paso a realizar es la generacion de peque\~{n}as fracciones de series temporales. En el Cuadro \ref{table:series-de-tiempo} se muestran los resultados de diferentes tama\~{n}os de series de tiempo.
+
+
+\begin{landscape}
+\pagestyle{empty}
+\begin{table}[p!]
+
+\centering
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\multicolumn{1}{|c|}{\multirow{2}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}Nro de \\ Componentes\end{tabular}}}} & \multicolumn{5}{c|}{\textbf{Tama\~{n}os de series de tiempo}}                                                                                                               \\ \cline{2-6} 
+\multicolumn{1}{|c|}{}                                                                                        & \multicolumn{1}{c|}{\textbf{1}} & \multicolumn{1}{c|}{\textbf{2}} & \multicolumn{1}{c|}{\textbf{3}} & \multicolumn{1}{c|}{\textbf{4}} & \multicolumn{1}{c|}{\textbf{5}} \\ \hline
+3                                                                              & \adj{\includegraphics[width=1.5in]{imagenes/Cap4/pca3-1}} &\adj{\includegraphics[width=1.5in]{imagenes/Cap4/pca3-2}}&\adj{\includegraphics[width=1.5in]{imagenes/Cap4/pca3-3}}&\adj{\includegraphics[width=1.5in]{imagenes/Cap4/pca3-4}}&\adj{\includegraphics[width=1.5in]{imagenes/Cap4/pca3-5}} \\ \hline
+4                                                                               & \adj{\includegraphics[width=1.5in]{imagenes/Cap4/pca4-1}} &\adj{\includegraphics[width=1.5in]{imagenes/Cap4/pca4-2}}&\adj{\includegraphics[width=1.5in]{imagenes/Cap4/pca4-3}}&\adj{\includegraphics[width=1.5in]{imagenes/Cap4/pca4-4}}&\adj{\includegraphics[width=1.5in]{imagenes/Cap4/pca4-5}} \\ \hline
+\end{tabular}
+\caption{Tabla con diferentes tama\~{n}os de series de tiempo para 3 y 4 componentes principales.}
+  \label{table:series-de-tiempo}
+\end{table}
+\end{landscape}
+
+\pagestyle{thesis}
+
+
+ a continuaci\'{o}n se presenta algunos  algoritmos de aprendizaje autom\'{a}tico supervisado para series de tiempo.
 
 \section{Aprendizaje autom\'{a}tico para an\'{a}lisis de series de tiempo}
 

@@ -179,6 +179,7 @@ Cuando se trabaja con datos del mundo real, es posible que los datos que se requ
 Este proceso no se aplic\'{o} en la investigaci\'{o}n debido a que s\'{o}lo se capturo los datos por medio del dispositivo m\'{o}vil, por lo cual no se tiene el problema de tener m\'{a}s de una fuente de datos.
 
 \subsubsection{Transformaci\'{o}n de datos}
+\label{subsubsection:est-norm-dataset}
 
 La transformaci\'{o}n de los datos es el proceso donde se cambia la naturaleza de los datos, dicho proceso usa algunas estrategias para poder extraer informaci\'{o}n importante del conjunto de datos; algunas de las estrategias para la transformaci\'{o}n de datos son: 
 
@@ -229,19 +230,84 @@ El An\'{a}lisis de Componentes Principales (PCA - Principal Component Analysis) 
 
 \vspace{5mm} %5mm vertical space
 
-PCA es una t\'{e}cnica estad\'{i}stica no supervisada y no param\'{e}trica, que se utiliza para la reducci\'{o}n de dimensionalidad. Esta t\'{e}cnica es un paso importante debido a que la alta dimensionalidad en el campo de aprendizaje autom\'{a}tico puede llevar al sobreajuste del modelo, reduciendo as\'{i} su capacidad de generalizaci\'{o}n. Richard Bellman en \cite{40} describe este fen\'{o}meno como la "Maldici\'{o}n de la Dimensionalidad".
+PCA es una t\'{e}cnica estad\'{i}stica no supervisada y no param\'{e}trica, que se utiliza para la reducci\'{o}n de dimensionalidad. Esta t\'{e}cnica es un paso importante debido a que la alta dimensionalidad en el campo de aprendizaje autom\'{a}tico puede llevar al sobreajuste del modelo, reduciendo as\'{i} su capacidad de generalizaci\'{o}n, Richard Bellman en \cite{40} describe este fen\'{o}meno como la "Maldici\'{o}n de la Dimensionalidad". Adem\'{a}s, el uso de esta t\'{e}cnica puede mejorar directamente el rendimiento de los modelos de Aprendizaje Autom\'{a}tico.
 
 \vspace{5mm} %5mm vertical space
 
-PCA se utiliza para identificar los componentes con la variaci\'{o}n m\'{a}xima, y la contribuci\'{o}n de cada variable a un componente se basa en su magnitud de varianza. Se considera una buena pr\'{a}ctica normalizar los datos antes de utilizar esta  t\'{e}cnica, debido a que los datos sin escala con diferentes unidades de medida puede distorcionar la comparaci\'{o}n relativa de la varianza entre las caracter\'{i}sticas.
+PCA combina las variables de entrada de una manera espec\'{i}fica, luego se deshace de las variables "menos importantes" y al mismo tiempo conserva las partes m\'{a}s valiosas (o componentes principales\footnote{\textbf{Componente principal}, es una combinaci\'{o}n lineal normalizada de las caracter\'{i}sticas originales en el conjunto de datos.}) de todas las variables.
 
 \vspace{5mm} %5mm vertical space
 
-En el presente proyecto se decidi\'{o} el uso de \'{e}sta t\'{e}cnica, para reducir las dimensiones (caracter\'{i}sticas) y tener menos relaciones entre las variables a considerar, sin embargo como se mencion\'{o} en el p\'{a}rrafo anterior primero se debe escalar nuestro conjunto de datos. 
+Cuando se usa PCA enfocado al aprendizaje autom\'{a}tico se sigue los siguientes pasos:
+
+\begin{enumerate}
+
+\item Dividir el conjunto de datos \textit{d}-dimensional en conjunto de entrenamiendo, desarrollo y prueba.
+\item Estandarizar / Normalizar el conjunto de datos seg\'{u}n el conjunto de entrenamiento.
+\item Construir la matriz de covarianza.
+\item Descomponer la matriz de covarianza en sus vectores y valores propios.
+\item Ordenar los valores propios disminuyendo el orden para clasificar los vectores propios correspondientes.
+\item Seleccionar \textit{k} vectores propios que corresponden a los \textit{k} valores propios m\'{a}s grandes, donde \textit{k} es la dimensionalidad del nuevo subespacio de entidad (\textit{k}<=\textit{d}).
+\item Construir una matriz de proyecci\'{o}n \textbf{W} a partir de los "top" \textit{k} vectores propios.
+\item Transformar el conjunto de entrenamiento de entrada \textit{d}-dimensional \textbf{X} utilizando la matriz de proyecci\'{o}n \textbf{W} para obtener el nuevo subespacio de caracter\'{i}stica \textit{k}-dimensional.
+
+\end{enumerate}
 
 \vspace{5mm} %5mm vertical space
 
-A continuaci\'{o}n se elaborar\'{a} un an\'{a}lisis para decidir que t\'{e}cnica de normalizaci\'{o}n es la m\'{a}s adecuada para escalar los par\'{a}metros de conducci\'{o}n capturados, en la Figura \ref{fig:datos_puros} se puede apreciar una fracci\'{o}n del conjunto de datos capturado, la cual es la base con la que se realizar\'{a} el an\'{a}lisis comparativo con los distintos tipos de normalizaci\'{o}n.
+\textbf{\textit{Dividir el conjunto de datos}}
+
+\vspace{5mm} %5mm vertical space
+
+Dado que se cuenta con un conjunto de datos para generar el modelo de Aprendizaje Autom\'{a}tico, este se divide en tres partes: conjunto de entrenamiento\footnote{\textbf{Conjunto de entrenamiento}, es la muestra de datos utilizada para ajustar el modelo de Aprendizaje Autom\'{a}tico.}, desarrollo\footnote{\textbf{Conjunto de desarrollo}, es la muestra de datos utilizada para proporcionar una evaluaci\'{o}n imparcial de un modelo ajustado con el conjunto de entrenamiento mientras se ajustan los hiperpar\'{a}metros del modelo.} y prueba\footnote{\textbf{Conjunto de prueba}, es la muestra de datos utilizada para proporcionar una evaluaci\'{o}n imparcial de un ajuste final del modelo en el conjunto de entrenamiento.}, sin embargo esto no es una tarea trivial; ya que si no se hace correctamente el resultado puede ser desastroso.
+
+\vspace{5mm} %5mm vertical space
+
+\begin{figure}[h!]
+  \begin{center}	\includegraphics[width=0.97\textwidth]{imagenes/Cap3/train-dev-test}
+  \caption{Divisi\'{o}n del conjunto de entrenamiento.}
+  \label{fig:train-dev-test}
+  \end{center}
+\end{figure}
+
+En \cite{42} se dice que la divisi\'{o}n del conjunto de datos tiene un gran impacto en la productividad , por lo cual es importante que al elegir todos nuestros subconjuntos estos deben tener la \textbf{misma distribuci\'{o}n} y deben ser elegidos aleatoriamente del conjunto de datos. 
+
+\vspace{5mm} %5mm vertical space
+
+Por otra parte el tama\~{n}o del conjunto de desarrollo y prueba deben ser lo suficientemente grandes como para que los resultados del desarrollo y prueba sean representativos para el rendimiento del modelo. Para conjuntos de datos grandes (mayores a un mill\'{o}n), el conjunto de desarrollo y prueba puede tener alrededor de 10000 ejemplos cada uno, es decir, el 1\% del total de datos.
+
+\vspace{5mm} %5mm vertical space
+
+Otras consideraciones que deben tomarse en cuenta en la pr\'{a}ctica son:
+
+\begin{itemize}
+\item La divisi\'{o}n del conjunto de entrenamiento/desarrollo/prueba siempre debe ser la misma para todos los experimentos, por lo tanto se debe contar con script reproducible para crear la divisi\'{o}n entrenamiento/desarrollo/prueba.
+\item Se debe probar que los conjuntos de desarrollo y prueba provengan de la misma distribuci\'{o}n.
+\end{itemize}
+
+En la presente investigaci\'{o}n nuestro conjunto de datos cuenta con 30000 ejemplos, por lo que la divisi\'{o}n de nuestro conjunto de datos ser\'{a} la que se observa en el Cuadro \ref{table:division-dataset}.
+
+
+\begin{table}[]
+\centering
+\begin{tabular}{|l|l|l|}
+\hline
+Conjunto de entrenamiento & 70\%  & 21000 \\ \hline
+Conjunto de desarrollo    & 15\%  & 4500  \\ \hline
+Conjunto de prueba        & 15\%  & 4500  \\ \hline
+Conjunto de datos         & 100\% & 30000 \\ \hline
+\end{tabular}
+\caption{Tabla de divisi\'{o}n del conjunto de datos.}
+\label{table:division-dataset}
+\end{table}
+
+\vspace{5mm} %5mm vertical space
+
+\textbf{\textit{Estandarizar / Normalizar el conjunto de datos}}
+
+\vspace{5mm} %5mm vertical space
+
+En la secci\'{o}n \ref{subsubsection:est-norm-dataset} ya se describi\'{o} lo que es la estandarizaci\'{o}n o normalizaci\'{o}n de datos y algunos de los tipos de escalado que existen; por lo tanto esta secci\'{o}n s\'{o}lo se limitar\'{a} a la elaboraci\'{o}n de un an\'{a}lisis para decidir que t\'{e}cnica de escalado es la m\'{a}s adecuada para el conjunto de datos, en la Figura \ref{fig:datos_puros} se puede apreciar una fracci\'{o}n del conjunto de datos capturado, la cual es la base con la que se realizar\'{a} el an\'{a}lisis comparativo con los distintos tipos de escalado.
 
 \begin{figure}[h!]
   \begin{center}	\includegraphics[width=0.5\textwidth]{imagenes/Cap3/datos_sin_preprocesamiento}
@@ -252,8 +318,7 @@ A continuaci\'{o}n se elaborar\'{a} un an\'{a}lisis para decidir que t\'{e}cnica
 
 \vspace{5mm} %5mm vertical space
 
-Para probar los diferentes tipos de escalado, se los ajusto con los datos que ya no presentan ruido o valores at\'{i}picos.
-
+Para probar los diferentes tipos de escalado, se los ajusto con los datos que ya no presentan ruido o valores at\'{i}picos del conjunto de entrenamiento.
 
 \begin{figure}
         \centering
@@ -285,7 +350,7 @@ Para probar los diferentes tipos de escalado, se los ajusto con los datos que ya
 
 \vspace{5mm} %5mm vertical space
 
-El primer tipo de escalado que se realiz\'{o} sobre el conjunto de datos capturados fue la \textbf{Normalizaci\'{o}n Min-Max}, el cual se realiz\'{o} entre los l\'{i}mites 0 y 1, los resultados obtenidos se muestran en la figura \ref{fig:min_max}, donde se puede apreciar que los valores del aceler\'{o}metro, en sus tres ejes, no se veen deformados despu\'{e}s de haber sido escalados con \'{e}sta t\'{e}cnica y los valores del giroscopio, los cuales son m\'{a}s estables se tornan deformados, considerando como datos estables aquellos datos que se presentan como una l\'{i}nea en cero con pocas fluctuaciones; esta deformaci\'{o}n puede ser ventajosa al hacer m\'{a}s visible pequenias curvas que anteriormente eran imperceptibles, sin embargo conlleva el peligro de que pueda ampliar ruido existente en nuestros datos que no pudimos eliminar en el paso previo a esta tarea.
+El primer tipo de escalado que se realiz\'{o} sobre el conjunto de datos capturados fue la \textbf{Normalizaci\'{o}n Min-Max}, el cual se realiz\'{o} entre los l\'{i}mites 0 y 1, los resultados obtenidos se muestran en la figura \ref{fig:min_max}, donde se puede apreciar que los valores del aceler\'{o}metro, en sus tres ejes, no se veen deformados despu\'{e}s de haber sido escalados con \'{e}sta t\'{e}cnica y los valores del giroscopio, los cuales son m\'{a}s estables se tornan deformados, considerando como datos estables aquellos datos que se presentan como una l\'{i}nea en cero con pocas fluctuaciones; esta deformaci\'{o}n puede ser ventajosa al hacer m\'{a}s visible peque\~{n}as curvas que anteriormente eran imperceptibles, sin embargo conlleva el peligro de que pueda ampliar ruido existente en nuestros datos que no pudimos eliminar en el paso previo a esta tarea.
 
 
 \vspace{5mm} %5mm vertical space
@@ -302,120 +367,66 @@ La \'{u}ltima t\'{e}cnica aplicada es el \textbf{escalado robusto}, su resultado
 
 \vspace{5mm} %5mm vertical space
 
-Para decidir el mejor m\'{e}todo de normalizaci\'{o}n que se puede aplicar a los datos capturados, primero se descartar\'{a} completamente el \textbf{m\'{e}todo de escalado sobre el valor m\'{a}ximo} debido a que los resultados que present\'{o} fueron totalmente desalentadores ya que los valores despu\'{e}s del escalado no compart\'{i}an los mismos l\'{i}mites, por otra parte el \textbf{m\'{e}todo de escalado est\'{a}ndar y de escalado robusto} tambi\'{e}n ser\'{a}n descartados debido a que ampl\'{i}an el ruido de los valores del giroscopio en exceso, quedando como \'{u}nica alternativa la \textbf{Normalizaci\'{o}n Min-Max} la cual presenta resultados similares a los dos anteriores, sin embargo presenta la diferencia de que no obtiene resultados con valores negativos sino entre los l\'{i}mites 0 y 1, el cual es un resultado que se adec\'{u}a muy bien para el an\'{a}lisis de componentes principales, que es lo que se busca en este punto.
+Para decidir el mejor m\'{e}todo de normalizaci\'{o}n que se puede aplicar a los datos capturados, primero se descartar\'{a} completamente el \textbf{m\'{e}todo de escalado sobre el valor m\'{a}ximo} debido a que los resultados que present\'{o} fueron totalmente desalentadores ya que los valores despu\'{e}s del escalado no compart\'{i}an los mismos l\'{i}mites, por otra parte los restantes tres tipos de escalado son muy similares, lo cual complica la elecci\'{o}n de escalado correcto, sin embargo cuando se usa PCA se debe ser muy cuidadoso, debido a que si se tiene una variable con una desviaci\'{o}n est\'{a}ndar alta, esta tendr\'{a} un mayor peso en el c\'{a}lculo del eje que una variable con una desviaci\'{o}n est\'{a}nda baja, por lo cual este puede ser un par\'{a}metro de decisi\'{o}n importante para elegir el tipo de escalado m\'{a}s adecuado.
 
 \vspace{5mm} %5mm vertical space
 
-Una vez escalado el conjunto de datos, se puede proceder con el an\'{a}lisis de componentes principales
+En la tabla \ref{table:scalers} se muestra la media y la desviaci\'{o}n est\'{a}ndar de cada variable despu\'{e}s de haber aplicado los diferentes tipos de escalado sobre los datos. Como se puede evidenciar en los escalados sobre el valor m\'{a}ximo y est\'{a}ndar, las desviaciones est\'{a}ndar son muy diferentes, en cuanto al escalado Min-Max las desviaciones est\'{a}ndar de cada variable son casi las mismas todas oscilan entre 0.166759	 y 0.169528, lo cual se adec\'{u}a muy bien para el an\'{a}lisis de componentes principales, que es lo que se busca en este punto.
 
-En la presente investigaci\'{o}n se us\'{o} PCA para buscar 
 
-se presentan entre rangos de valores muy distintos, se puede observar por ejemplo, que el valor del aceler\'{o}metro en X oscila entre los valores de -16 y 15 aproximadamente, mientras que los valores del giroscopio en X se encuentran entre -3 y 4, lo cual representa un problema debido a que \'{e}sta diferencia de rangos puede generar m\'{a}s peso en unos datos que en otros.
+\begin{landscape}
+\pagestyle{empty}
+\begin{table}[p!]
 
-\vspace{5mm} %5mm vertical space
+\centering
+\begin{tabular}{ll|r|r|r|r|r|r|}
+\cline{3-8}
+ &  & \multicolumn{1}{c|}{\textbf{ACC X}} & \multicolumn{1}{c|}{\textbf{ACC Y}} & \multicolumn{1}{c|}{\textbf{ACC Z}} & \multicolumn{1}{c|}{\textbf{GYR X}} & \multicolumn{1}{c|}{\textbf{GYR Y}} & \multicolumn{1}{c|}{\textbf{GYR Z}} \\ \hline
+\multicolumn{1}{|l|}{\multirow{4}{*}{Min-Max}} & Media & 0.494631 & 0.504011 & 0.500105 & 0.497873 & 0.499490 & 0.499922 \\ \cline{2-8} 
+\multicolumn{1}{|l|}{}                  & Desv. Est. & 0.169528 & 0.168058 & 0.166759 & 0.167592 & 0.167005 & 0.166876 \\ \cline{2-8} 
+\multicolumn{1}{|l|}{}                  & M\'{i}nimo & -3.932480 & -0.736326	& -1.182118 & -2.239772 & -8.435568 & -3.984707 \\ \cline{2-8} 
+\multicolumn{1}{|l|}{}                  & M\'{a}ximo & 2.216958 & 2.543331 & 3.373446 & 2.645991 & 4.752865 & 6.877400 \\ \hline
+\multicolumn{1}{|l|}{\multirow{4}{*}{Est\'{a}ndar}} & Media & -0.053019 & 0.006007 & 0.035521 & 0.013953 & -0.007687 & -0.001008 \\ \cline{2-8} 
+\multicolumn{1}{|l|}{}                  & Desv. Est. & 1.956964 & 1.116028 & 1.270322 & 1.537762 & 1.591346 & 1.525546 \\ \cline{2-8} 
+\multicolumn{1}{|l|}{}                  & M\'{i}nimo & -51.157948 & -8.230720 & -12.779184 & -25.105641 & -85.147607 & -40.998624 \\ \cline{2-8} 
+\multicolumn{1}{|l|}{}                  & M\'{a}ximo & 19.828881 & 13.548560 & 21.923844 & 19.724263 & 40.521651 & 58.300659 \\ \hline
+\multicolumn{1}{|l|}{\multirow{4}{*}{Valor M\'{a}ximo}} & Media & 0.879073 & 0.132640 & -0.296123 & 0.003375 & -0.010434 & 0.000820 \\ \cline{2-8} 
+\multicolumn{1}{|l|}{}                  & Desv. Est. & 0.040565 & 0.293892 & 0.234706 & 0.332638 & 0.330862 & 0.333426 \\ \cline{2-8} 
+\multicolumn{1}{|l|}{}                  & M\'{i}nimo & -0.180264 & -2.036399	& -2.663783 & -5.430323 & -17.712144 & -8.959693 \\ \cline{2-8} 
+\multicolumn{1}{|l|}{}                  & M\'{a}ximo & 1.291199 & 3.698900 & 3.747990 & 4.266974 & 8.416149 & 12.743336 \\ \hline
+\multicolumn{1}{|l|}{\multirow{4}{*}{Robusto}} & Media & -0.159037 & 0.083165 & 0.027062 & 0.039046 & -0.083081 & 0.007354 \\ \cline{2-8} 
+\multicolumn{1}{|l|}{}                  & Desv. Est. & 3.178981 & 1.031395 & 1.181458 & 3.848120 & 2.807440 & 2.582457 \\\cline{2-8} 
+\multicolumn{1}{|l|}{}                  & M\'{i}nimo & -83.176214 & -7.528934	& -11.891205 & -62.820606 & -150.286234 & -69.393756 \\ \cline{2-8} 
+\multicolumn{1}{|l|}{}                  & M\'{a}ximo & 32.138026 & 12.598724 & 20.384211 & 49.362424 & 71.418446 & 98.700906 \\ \hline
+\end{tabular}
+\caption{Tabla con estad\'{i}sticas descriptivas de los datos escalados con diferentes t\'{e}cnicas.}
+\label{table:scalers}
+\end{table}
+\end{landscape}
 
-\vspace{5mm} %5mm vertical space
 
-Para solucionar este problema existe diversas t\'{e}cnicas, las cuales se abordar\'{a}n en la siguiente secci\'{o}n.
-
-\subsection{Normalizaci\'{o}n}
-
-La normalizaci\'{o}n de datos es un proceso o t\'{e}cnica para comprimir o extender los valores de una variable para que \'{e}sten en un rango definido, lo cual hace que muchos algoritmos de Aprendizaje Autom\'{a}tico funcionen mejor, sin embargo, una mala aplicaci\'{o}n de este proceso, o una elecci\'{o}n descuidada del m\'{e}todo de normalizaci\'{o}n puede arruinar los datos.
-
-\vspace{5mm} %5mm vertical space
-
-A continuaci\'{o}n se presenta algunos ejemplos de los m\'{e}todos de normalizaci\'{o}n m\'{a}s utilizados.
-
-\subsubsection{Escalado de variables (Feature Scaling o MinMax Scaler)}
-
-En este m\'{e}todo, cada entrada se normaliza entre unos l\'{i}mites definidos:
-
-\begin{equation}
-x_{normalizado} = \frac{x - x_{min}}{x_{max}-x_{min}}
-\end{equation}
-
-Presenta el problema de que comprime los datos de entrada entre unos límites fijos, que por lo general son 0 y 1. Esto quiere decir que si existe ruido, éste va a ser ampliado, lo que hace que este m\'{e}todo no sea adecuado para señales estables.
-
-\subsubsection{Escalado est\'{a}ndar (Standard Scaler)}
-
-Es un m\'{e}todo alternativo al escalado de variables, consiste en restar a cada dato la media de la variable y dividirlo por la desviaci\'{o}n t\'{i}pica.
-
-\begin{equation}
-x_{normalizado} = \frac{x - x_{media}}{x_{desvSt}}
-\end{equation}
-
-\'{E}ste m\'{e}todo si ser\'{i}a adecuado para normalizar se\~{n}ales estables, no obstante, tanto la media como la desviaci\'{o}n est\'{a}ndar son muy sensibles a valores an\'{o}malos. Una alternativa de soluci\'{o}n de esto ser\'{i}a la eliminaci\'{o}n de anomal\'{i}as antes de realizar la normalizaci\'{o}n.
-
-\subsubsection{Escalado sobre el valor m\'{a}ximo}
-
-El siguiente m\'{e}todo, presenta la idea de escalar los datos dividiendo \'{e}stos entre su m\'{a}ximo valor.
-
-\subsubsection{Escalado robusto (Robust scaler)}
-
-El escalado robusto consiste en eliminar la mediana y escala los datos de acuerdo con el rango de interquartil (IQR). Este m\'{e}todo es robusto para valores at\'{i}picos.
+\pagestyle{thesis}
 
 \vspace{5mm} %5mm vertical space
 
-A continuaci\'{o}n se elaborar\'{a} un an\'{a}lisis para decidir que t\'{e}cnica de normalizaci\'{o}n es la m\'{a}s adecuada para escalar los par\'{a}metros de conducci\'{o}n capturados, en la Figura \ref{fig:datos_puros} se puede apreciar una fracci\'{o}n del conjunto de datos capturado, la cual es la base con la que se realizar\'{a} el an\'{a}lisis comparativo con los distintos tipos de normalizaci\'{o}n.
+\textbf{\textit{Aplicar PCA al conjunto de datos}}
+
+\vspace{5mm} %5mm vertical space
+
+Aunque al inicio de esta subsubsecci\'{o}n se explica en detalle algunos de los pasos del funcionamiento interno de PCA, existe una clase llamada PCA implementada en \textsc{scikit-learn}, la cual automatiza todos los pasos siguientes; sin embargo se debe decidir la cantidad correcta de componentes principales para nuestro conjunto de datos, para ello haciendo uso de esta clase se calcula la varianza de cada atributo y posteriormente se grafica los resultados (Ver Figura \ref{}).
 
 \begin{figure}[h!]
-  \begin{center}	\includegraphics[width=0.5\textwidth]{imagenes/Cap3/datos_sin_preprocesamiento}
-  \caption{Visualizaci\'{o}n de los par\'{a}metros de conducci\'{o}n capturados.}
-  \label{fig:datos_puros}
+  \begin{center}	\includegraphics[width=0.5\textwidth]{imagenes/Cap3/pca}
+  \caption{Gr\'{a}fico de la varianza vs el n\'{u}mero de componentes.}
+  \label{fig:varianza-pca}
   \end{center}
 \end{figure}
 
-\vspace{5mm} %5mm vertical space
+El Gr\'{a}fico \ref{fig:varianza-pca} indica que seleccionando 4 componentes se puede preservar alrededor del 95\% de la varianza total de los datos y que seleccionando 3 componentes se conserva alrededor del 80\% de la varianza de los datos, usar cualquiera de esas cantidades de componentes tiene sentido, ya que no se usar\'{a} el 100\% de la varianza, porque denota todos los componentes y s\'{o}lo se desea usar los principales.
 
-El primer tipo de escalado que se realiz\'{o} sobre el conjunto de datos capturados fue el \textbf{escalado de variables}, el cual se realiz\'{o} entre los l\'{i}mites 0 y 1, los resultados obtenidos se muestran en la figura \ref{fig:min_max}, donde se puede apreciar que los valores del aceler\'{o}metro, en sus tres ejes, no se veen deformados despu\'{e}s de haber sido escalados con \'{e}sta t\'{e}cnica y los valores del giroscopio, los cuales son m\'{a}s estables, no se tornan deformados, lo cual es una ventaja debido a que los valores de ruido no son ampliados como se esperaba que lo hicieran.
-
-\vspace{5mm} %5mm vertical space
-
-La segunda t\'{e}cnica de normalizaci\'{o}n que se aplic\'{o} sobre los datos fue el \textbf{escalado est\'{a}ndar}, el resultado se puede apreciar en la figura \ref{fig:standard}, observando detalladamente los resultados se puede evidenciar que los valores del aceler\'{o}metro son levemente deformados, sin embargo a\'{u}n es posible trabajar con ellos, a pesar de esto los valores del giroscopio amplian en exceso el ruido existente, deformando completamente la se\~{n}al estable que presenta en sus tres ejes.
 
 \vspace{5mm} %5mm vertical space
-
-Para la tercera normalizaci\'{o}n de datos se aplic\'{o} la t\'{e}cnica de \textbf{escalado sobre el valor m\'{a}ximo}, los resultados se presentan de manera similar a los resultados que  se obtuvo al aplicar el escalado de variables, con la diferencia de que en \'{e}ste caso se obtiene valores negativos tanto para el aceler\'{o}metro en Y y en Z, como se puede ver en la figura \ref{fig:max}.
-
-\vspace{5mm} %5mm vertical space
-
-La \'{u}ltima t\'{e}cnica aplicada es el \textbf{escalado robusto} donde se obtiene los peores resultados de los cuatro m\'{e}todos de normalizaci\'{o}n que se aplicaron sobre el conjunto de datos, como se puede observar en la figura \ref{fig:robust}, esto debido a que los valores resultantes para los par\'{a}metros del aceler\'{o}metro tanto en X, Y y Z se presentan reducidos frente a los dem\'{a}s, lo cual no refleja el comportamiento real de los datos, en cuanto a los valores del giroscopio se logra ver claramente que el ruido presentado en estas se\~{n}ales estables se ampl\'{i}a en exceso, lo cual deforma totalmente los datos.
-
-\vspace{5mm} %5mm vertical space
-
-Para decidir el mejor m\'{e}todo de normalizaci\'{o}n que se puede aplicar a los datos capturados, primero se descartar\'{a} completamente el \textbf{m\'{e}todo de escalado robusto} debido a que los resultados que present\'{o} fueron totalmente desalentadores ya que deformaba los datos y no reflejaba el comportamiento real de los mismos, por otra parte el \textbf{m\'{e}todo de escalado est\'{a}ndar} tambi\'{e}n ser\'{a} descartado debido a que ampl\'{i}a el ruido en exceso de los valores del giroscopio, quedando como \'{u}nicas alternativas los m\'{e}todos de \textbf{escalado de variables} y el \textbf{escalado sobre el valor m\'{a}ximo} los cuales presentan resultados similares como se puede apreciar tanto en el an\'{a}lsis realizado previamente como en la figura \ref{fig:nor_nor}, sin embargo presentan la diferencia de que uno de \'{e}stos obtiene resultados con valores negativos y el otro valores entre los l\'{i}mites 0 y 1, considerando que al momento de generar el modelo de Aprendizaje Autom\'{a}tico los valores negativos podr\'{i}an presentar una desventaja se eligi\'{o} el m\'{e}todo de \textbf{escalado de variables} ya que este solo presentar\'{a} valores positivos.
-
-\vspace{5mm} %5mm vertical space
-
-\begin{figure}
-        \centering
-        \begin{subfigure}[h]{0.45\textwidth} 
-            \includegraphics[width=\textwidth]{imagenes/Cap3/min_max}
-            \caption{Min max Scaler}
-            \label{fig:min_max}
-        \end{subfigure}       
-        \begin{subfigure}[h]{0.45\textwidth} 
-            \includegraphics[width=\textwidth]{imagenes/Cap3/standard}
-            \caption{Standard Scaler}
-            \label{fig:standard}
-        \end{subfigure}
-        
-        \begin{subfigure}[h]{0.45\textwidth} 
-            \includegraphics[width=\textwidth]{imagenes/Cap3/max}
-            \caption{Max Scaler}
-            \label{fig:max}
-        \end{subfigure}       
-        \begin{subfigure}[h]{0.45\textwidth} 
-            \includegraphics[width=\textwidth]{imagenes/Cap3/robust}
-            \caption{Robust Scaler}
-            \label{fig:robust}
-        \end{subfigure}
-        \caption{Gr\'{a}fica resultante de aplicar diferentes tipos de normalizaciones a un conjunto de datos.}
-        
-		\label{fig:nor_nor}
-    \end{figure}
 
 \section{Resumen del cap\'{i}tulo}
 
-En este cap\'{i}tulo se ha descrito la forma en la que se realiz\'{o} la captura de datos de conducci\'{o}n, el pre-procesamiento del conjunto de datos mediante t\'{e}cnicas estad\'{i}sticas y visuales y finalmente la elecci\'{o}n de un m\'{e}todo de normalizaci\'{o}n para comprimir los valores en un rango definido, para que de \'{e}sta manera estos valores sean una mejor entrada para el algoritmo de aprendizaje autom\'{a}tico que se aplicar\'{a} en el siguiente cap\'{i}tulo.
- 
+En este cap\'{i}tulo se ha descrito la forma en la que se realiz\'{o} la captura del conjunto de datos de conducci\'{o}n y la preparaci\'{o}n del conjunto de datos, mediante distintas t\'{e}cnicas como la selecci\'{o}n, limpieza, reducci\'{o}n y transformaci\'{o}n de datos; con el fin de que estos valores sean una mejor entrada para el algoritmo de aprendizaje autom\'{a}tico que se aplicar\'{a} en el siguiente cap\'{i}tulo.

@@ -32,12 +32,7 @@
 \contentsline {subsubsection}{Fusi\'{o}n o integraci\'{o}n de datos}{17}{section*.51}
 \contentsline {subsubsection}{Transformaci\'{o}n de datos}{18}{section*.52}
 \contentsline {subsubsection}{Reducci\'{o}n de datos}{19}{section*.55}
-\contentsline {subsection}{\numberline {3.3.2}Normalizaci\'{o}n}{22}{subsection.58}
-\contentsline {subsubsection}{Escalado de variables (Feature Scaling o MinMax Scaler)}{23}{section*.59}
-\contentsline {subsubsection}{Escalado est\'{a}ndar (Standard Scaler)}{23}{section*.61}
-\contentsline {subsubsection}{Escalado sobre el valor m\'{a}ximo}{23}{section*.63}
-\contentsline {subsubsection}{Escalado robusto (Robust scaler)}{23}{section*.64}
-\contentsline {section}{\numberline {3.4}Resumen del cap\'{i}tulo}{25}{section.67}
-\contentsline {chapter}{\numberline {4}Aprendizaje Autom\'{a}tico para la detecci\'{o}n de anomal\'{i}as}{27}{chapter.68}
-\contentsline {section}{\numberline {4.1}Aprendizaje Supervisado, Aprendizaje no Supervisado y Aprendizaje Semi-supervisado}{27}{section.69}
-\contentsline {section}{\numberline {4.2}Aprendizaje autom\'{a}tico para an\'{a}lisis de series de tiempo}{29}{section.71}
+\contentsline {section}{\numberline {3.4}Resumen del cap\'{i}tulo}{26}{section.74}
+\contentsline {chapter}{\numberline {4}Aprendizaje Autom\'{a}tico para la detecci\'{o}n de anomal\'{i}as}{27}{chapter.75}
+\contentsline {section}{\numberline {4.1}Aprendizaje Supervisado, Aprendizaje no Supervisado y Aprendizaje Semi-supervisado}{27}{section.76}
+\contentsline {section}{\numberline {4.2}Aprendizaje autom\'{a}tico para an\'{a}lisis de series de tiempo}{31}{section.79}
