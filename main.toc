@@ -35,4 +35,21 @@
 \contentsline {section}{\numberline {3.4}Resumen del cap\'{i}tulo}{26}{section.74}
 \contentsline {chapter}{\numberline {4}Aprendizaje Autom\'{a}tico para la detecci\'{o}n de anomal\'{i}as}{27}{chapter.75}
 \contentsline {section}{\numberline {4.1}Aprendizaje Supervisado, Aprendizaje no Supervisado y Aprendizaje Semi-supervisado}{27}{section.76}
-\contentsline {section}{\numberline {4.2}Aprendizaje autom\'{a}tico para an\'{a}lisis de series de tiempo}{31}{section.79}
+\contentsline {subsection}{\numberline {4.1.1}Aprendizaje Supervisado}{27}{subsection.77}
+\contentsline {subsection}{\numberline {4.1.2}Aprendizaje no Supervisado}{28}{subsection.79}
+\contentsline {subsection}{\numberline {4.1.3}Aprendizaje Semi-Supervisado}{28}{subsection.80}
+\contentsline {section}{\numberline {4.2}Modelos Generativos y Descriptivos}{29}{section.81}
+\contentsline {section}{\numberline {4.3}Redes Neuronales Artificiales}{30}{section.82}
+\contentsline {subsection}{\numberline {4.3.1}Neuronas o nodos}{30}{subsection.84}
+\contentsline {subsection}{\numberline {4.3.2}Tipos de funciones de activaci\'{o}n}{32}{subsection.88}
+\contentsline {subsubsection}{Funci\'{o}n de activaci\'{o}n sigmoide (funci\'{o}n log\'{i}stica)}{32}{section*.90}
+\contentsline {subsubsection}{Funci\'{o}n de tangente hiperb\'{o}lica - tanh}{32}{section*.92}
+\contentsline {subsection}{\numberline {4.3.3}Funci\'{o}n de unidad lineal rectificada (Rectified Linear Unit - ReLU)}{33}{subsection.94}
+\contentsline {subsubsection}{Leaky ReLU (LReLU)}{34}{section*.96}
+\contentsline {subsection}{\numberline {4.3.4}Arquitectura de las Redes Neuronales}{34}{subsection.98}
+\contentsline {subsection}{\numberline {4.3.5}Proceso de aprendizaje de las Redes Neuronales}{35}{subsection.100}
+\contentsline {subsubsection}{Backpropagation}{35}{section*.101}
+\contentsline {section}{\numberline {4.4}Tipos de Redes Neuronales}{36}{section.102}
+\contentsline {subsection}{\numberline {4.4.1}Autoencoders}{36}{subsection.103}
+\contentsline {section}{\numberline {4.5}Modelo del comportamiento normal}{39}{section.106}
+\contentsline {section}{\numberline {4.6}Aprendizaje autom\'{a}tico para an\'{a}lisis de series de tiempo}{39}{section.107}

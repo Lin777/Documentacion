@@ -2,13 +2,16 @@ El t\'{e}rmino Aprendizaje Autom\'{a}tico se refiere a la detecci\'{o}n autom\'{
 
 \vspace{5mm} %5mm vertical space
 
-Si bien el Aprendizaje Autom\'{a}tico puede resolver algunos problemas que son resueltos con algoritmos tradicionales, ha superado a \'{e}stos en problemas tales como el reconocimiento de im\'{a}genes, voz, lenguaje, escritura, juegos, rob\'{o}tica, an\'{a}lisis de datos, an\'{a}lisis de series de tiempo, etc. Desde esta perspectiva, se espera que mediante la aplicaci\'{o}n del Aprendizaje Autom\'{a}tico se pueda generar un modelo que se ajuste a un comportamiento normal esperado para un usuario.
+Si bien el Aprendizaje Autom\'{a}tico puede resolver algunos problemas que son resueltos con algoritmos tradicionales, ha superado a \'{e}stos en problemas tales como el reconocimiento de im\'{a}genes, voz, lenguaje, escritura, juegos, rob\'{o}tica, an\'{a}lisis de datos, an\'{a}lisis de series de tiempo, etc. Desde esta perspectiva, se espera que mediante la aplicaci\'{o}n del Aprendizaje Autom\'{a}tico se pueda generar un modelo que se ajuste a un comportamiento normal esperado para el agente.
+
+
 
 \section{Aprendizaje Supervisado, Aprendizaje no Supervisado y Aprendizaje Semi-supervisado}
+\label{section|aprendizaje}
 
 Existen diversas formas de clasificar los paradigmas de aprendizaje que existen, sin embargo en el presente trabajo s\'{o}lo se tratar\'{a}n el supervisado, el no supervisado y el semi-supervisado.
 
-\vspace{5mm} %5mm vertical space
+\subsection{Aprendizaje Supervisado}
 
 El \textbf{Aprendizaje Supervisado} es aquel que cuenta con variables de entrada (X) y una variable de salida (Y), este tipo de aprendizaje utiliza un algoritmo para aprender la funci\'{o}n de mapeo desde la entrada hasta la salida.
 
@@ -22,7 +25,7 @@ El objetivo de este tipo de aprendizaje es aproximar la funci\'{o}n de mapeo de 
 
 Este tipo de aprendizaje aborda dos tipos de problemas: clasificaci\'{o}n y regresi\'{o}n. Los problemas de \textbf{Clasificaci\'{o}n} son aquellos donde la variable de salida es una categor\'{i}a, como por ejemplo: ''Rojo'', ''Azul'', o ''Sano'', ''Enfermo'', por otra parte en los problemas de \textbf{Regresi\'{o}n} la variable de salida es un valor real, tal como: ''precio'' o ''altura''. Algunos de los tipos de problemas m\'{a}s comunes construidos sobre la clasificaci\'{o}n y la regresi\'{o}n incluyen la recomendaci\'{o}n y la predicci\'{o}n de series temporales.
 
-\vspace{5mm} %5mm vertical space
+\subsection{Aprendizaje no Supervisado}
 
 Por otro lado el \textbf{Aprendizaje no Supervisado} es aquel donde s\'{o}lo se cuenta con datos de entrada (X) y no hay variables de salida correspondientes, su objetivo principal consiste en modelar la estructura o distribuci\'{o}n subyacente en los datos para aprender m\'{a}s acerca de los mismos.
 
@@ -30,7 +33,7 @@ Por otro lado el \textbf{Aprendizaje no Supervisado} es aquel donde s\'{o}lo se 
 
 En cuanto a los problemas del Aprendizaje sin supervisi\'{o}n, pueden ser agrupados en dos: agrupamiento y asociaci\'{o}n. El \textbf{Agrupamiento} es aquel donde se desea descubrir las agrupaciones inherentes en el conjunto de datos, como por ejemplo agrupar clientes por comportamiento de compra. Por otra parte la \textbf{Asociaci\'{o}n} es aquella que desea descubrir reglas que describen grandes porciones de sus datos, por ejemplo las personas que compran X tambi\'{e}n tienden a comprar Y. Algunos de los algoritmos de aprendizaje sin supervisi\'{o}n m\'{a}s populares son: K-means (para problemas de agrupamiento) y algoritmo Apriori (para problemas de aprendizaje de reglas de asociaci\'{o}n).
 
-\vspace{5mm} %5mm vertical space
+\subsection{Aprendizaje Semi-Supervisado}
 
 Por \'{u}ltimo se encuentra el \textbf{Aprendizaje Semi-supervisado}, el cual abarca aquellos problemas donde se tiene gran cantidad de datos de entrada (X) y s\'{o}lo algunos de los datos est\'{a}n etiquetados (Y). Este tipo de problemas se encuentran entre el aprendizaje supervisado y el no supervisado, adem\'{a}s es importante se\~{n}alar que muchos de los problemas de Aprendizaje Autom\'{a}tico en el mundo real se encuentran en esta \'{a}rea, esto debido a que resulta costoso o puede requerir mucho tiempo etiquetar el conjunto de datos, mientras que los datos no etiquetados son baratos, adem\'{a}s de ser f\'{a}ciles de recolectar y almacenar. Este tipo de problemas pueden usar una combinaci\'{o}n de t\'{e}cnicas supervisadas y no supervisadas para ser resueltos.
 
@@ -44,17 +47,281 @@ Por otra parte el enfoque sin supervisi\'{o}n tiene la ventaja de no requerir in
 
 \vspace{5mm} %5mm vertical space
 
-En muchas aplicaciones, incluyendo la del presente trabajo de grado, los ejemplos normales son f\'{a}ciles de conseguir, mientras que los an\'{o}malos son bastante dif\'{i}ciles de obtener, en consecuencia, para la realizaci\'{o}n de este estudio, se ha optado por la aplicaci\'{o}n del enfoque Semi-supervisado. De esta manera, como se mencion\'{o} en el Cap\'{i}tulo \ref{Capitulo 2}, el enfoque de \textbf{detecci\'{o}n de anomal\'{i}as Semi-supervisado} s\'{o}lo dispone de muestras normales en el conjunto de entrenamiento; es decir, no se puede obtener informaci\'{o}n sobre anomal\'{i}as, por lo tanto las muestras desconocidas se clasifican como valores at\'{i}picos, siempre y cuando su comportamiento sea muy diferente al de las muestras normales ya conocidas. Por lo tanto en este trabajo, se propone un m\'{e}todo de detecci\'{o}n de anomal\'{i}as de conducci\'{o}n semi-supervisado que consta de dos componentes: un modelo ajustado al comportamiento normal de manejo de un usuario y un m\'{e}todo de umbral para detecci\'{o}n de valores at\'{i}picos.
+En muchas aplicaciones, incluyendo la del presente trabajo de grado, los ejemplos normales son f\'{a}ciles de conseguir, mientras que los an\'{o}malos son bastante dif\'{i}ciles de obtener, en consecuencia, para la realizaci\'{o}n de este estudio, se ha optado por la aplicaci\'{o}n del enfoque Semi-supervisado. De esta manera, como se mencion\'{o} en el Cap\'{i}tulo \ref{Capitulo 2}, el enfoque de \textbf{detecci\'{o}n de anomal\'{i}as Semi-supervisado} s\'{o}lo dispone de muestras normales en el conjunto de entrenamiento; es decir, no se puede obtener informaci\'{o}n sobre anomal\'{i}as, por lo tanto las muestras desconocidas se clasifican como valores at\'{i}picos, siempre y cuando su comportamiento sea muy diferente al de las muestras normales ya conocidas.
+
+% Por lo tanto en este trabajo, se propone un m\'{e}todo de detecci\'{o}n de anomal\'{i}as de conducci\'{o}n semi-supervisado que consta de dos componentes: un \textbf{modelo ajustado al comportamiento normal de manejo de un agente} y un \textbf{m\'{e}todo de umbral para detecci\'{o}n de valores at\'{i}picos}.
 
 \vspace{5mm} %5mm vertical space
 
-Para la generaci\'{o}n del modelo de detecci\'{o}n de anomal\'{i}as se opt\'{o} por algoritmos de aprendizaje autom\'{a}tico enfocados en series de tiempo, dado que los datos, de los sensores capturados por el dispositivo m\'{o}vil, dependen del tiempo en el que fueron capturados; por lo cual el primer paso a realizar es la generacion de peque\~{n}as fracciones de series temporales. En el Cuadro \ref{table:series-de-tiempo} se muestran los resultados de diferentes tama\~{n}os de series de tiempo.
+Como se mencion\'{o} en esta secci\'{o}n todos estos enfoques de aprendizaje se basan en generar un \textbf{Modelo} que nos ayude ya sea en tareas de clasificaci\'{o}n, agrupaci\'{o}n, etc, sin embargo existe m\'{a}s de un tipo de modelos. En la siguiente secci\'{o}n se detallar\'{a} en profundidad los diferentes tipos de modelos que existen.
 
+%%%%%%%%%%%%%%%%
+
+\section{Modelos Generativos y Descriptivos}
+
+Cuando se utiliza Aprendizaje Autom\'{a}tico existen dos principales enfoques para entender (modelar) el mundo real y tomar decisiones. Estos dos enfoques son los modelos discriminativos y generativos. M\'{a}s formalmente los modelos generativos y discriminativos representan dos distintas estrategias para estimar la probabilidad que un objeto en particular pertenece a una categor\'{i}a \cite{42}.
+
+%Es cierto y correcto, pero quisiera que explicaras la diferencia entre un modelo generativo y uno discriminativo ya que no es lo mismo y si solo dices esto se puede pensar que solo intentas capturar una distribución y nada más.
+
+\vspace{5mm} %5mm vertical space
+
+Los \textbf{modelos discriminativos} se basan en la probabilidad condicionada P(Y|X), es decir, aprenden un mapa directo de un conjunto de caracter\'{i}sticas \textit{X} a etiquetas de clases \textit{Y}. Este tipo de modelos intentan modelar simplemente dependiendo de los datos observados (conjunto de datos), adem\'{a}s hacen menos suposiciones sobre las distribuciones; sin embargo dependen en gran medida de la calidad de los datos. Algunos ejemplos de modelos discriminativos son: Regresi\'{o}n Log\'{i}stica, SVM (Support Vector Machine - M\'{a}quina de vectores de soporte), Redes Neuronales, Random Forest, entre otros.
+
+\vspace{5mm} %5mm vertical space
+
+Por otra parte los \textbf{modelos generativos} apuntan a una descripci\'{o}n probabil\'{i}stica completa del conjunto de datos, su objetivo es desarrollar la distribuci\'{o}n de probabilidad conjunta P(X,Y), ya sea directamente o calculando P(Y|X) y P(X), para luego inferir las probabilidades condicionadas requeridas para clasificar nuevos datos. Estos modelos nos ayudan a especificar la incertidumbre de un modelo, algunos ejemplos de modelos generativos son: Gaussian Mixture model, Hiden Markov Model, Restricted Bolzmann machine, Generative adversial networks, entre otros.
+
+\vspace{5mm} %5mm vertical space
+
+Los Modelos Discriminativos han estado a la vanguardia del éxito del Aprendizaje Automático en los \'{u}ltimos a\~{n}os, ya que estos modelos hacen predicciones que dependen de una entrada dada, aunque no puedan generar nuevas muestras o datos. Debido a esto y a que la tarea que se tiene como objetivo es bastante compleja, en la presente investigaci\'{o}n se optar\'{a} por el uso de modelos discriminativos. 
+
+\vspace{5mm} %5mm vertical space
+
+A continuaci\'{o}n se realizar\'{a} un repaso de las bases te\'{o}ricas fundamentales de algunas t\'{e}cnicas del Aprendizaje Semi Supervisado con un enfoque discriminativo, para posteriormente detallar que tipo de algoritmos se aplicar\'{a} en el m\'{e}todo propuesto en este trabajo de grado.
+
+\section{Redes Neuronales Artificiales}
+
+La Red Neuronal Artificial o ANN\footnote{\textbf{ANN}, Artificial Neural Network (Red Neuronal Artificial)} es un paradigma de procesamiento de informaci\'{o}n inspirado en la manera en la que el sistema nervioso biol\'{o}gico procesa la informaci\'{o}n. Se compone de una gran cantidad de elementos de procesamiento (neuronas) altamente interconectados que trabajan al un\'{i}sono para resolver un problema espec\'{i}fico.
+
+\subsection{Neuronas o nodos}
+
+Las \textbf{neuronas biol\'{o}gicas} (c\'{e}lulas nerviosas) son las unidades fundamentales del cerebro y del sistema nervioso. Las neuronas son las c\'{e}lulas responsables de recibir informaci\'{o}n sensorial del mundo externo a trav\'{e}s de las dendritas, procesarla y dar una salida a trav\'{e}s del ax\'{o}n (Ver Figura \ref{fig:neurona}). 
+
+ \begin{figure}[h!]
+  \begin{center}	\includegraphics[width=0.95\textwidth]{imagenes/Cap4/neurona}
+  \caption{Gr\'{a}fico de una neurona biol\'{o}gica.}
+  \label{fig:neurona}
+  \end{center}
+\end{figure}
+
+Una neurona cerebral puede recibir unas 10000 entradas y enviar a su vez su salida a cientas de neuronas.
+
+\vspace{5mm} %5mm vertical space
+
+La conexi\'{o}n entre neuronas se llama \textbf{sinapsis}, esta no es una conexi\'{o}n f\'{i}sica, sino que existe 2 mm. de separaci\'{o}n entre neronas. Estas conexiones son unidireccionales, donde la transmisi\'{o}n de la informaci\'{o}n se hace de forma el\'{e}ctrica en el interior de la neurona  y de forma qu\'{i}mica entre neuronas, gracias a los neurotransmisores.
+
+Una \textbf{neurona artificial} es un procesador elemental, debido a que procesa un vector x(x1,x2,...,xn) de entradas y produce una respuesta o salida \'{u}nica. Los elementos principales de una neurona artificial son los siguientes:
+
+\begin{figure}[h!]
+  \begin{center}	\includegraphics[width=0.95\textwidth]{imagenes/Cap4/neurona_artificial}
+  \caption{Gr\'{a}fico de una neurona artificial.}
+  \label{fig:neurona}
+  \end{center}
+\end{figure}
+
+\begin{itemize}
+\item \textbf{Las entradas} que reciben los datos de otras neuronas, estas entradas ser\'{i}an las dendritas de una neurona biol\'{o}gica.
+\item \textbf{Los pesos sin\'{a}pticos wij}. En una neurona artificial a aquellas entradas que vienen de otras neuronas se les asigna un peso (factor de importancia). Este peso es un valor num\'{e}rico que se modifica durante el proceso de entrenamiento de una red neuronal, y por lo tanto es aqu\'{i} donde se almacena la informaci\'{o}n que hace que la red sirva para un prop\'{o}sito u otro.
+\item \textbf{Regla de propagaci\'{o}n}. Con las entradas y los pesos sin\'{a}pticos, se suele hacer alg\'{u}n tipo de operaci\'{o}n para obtener el valor potencial postsinaptico; una de las operaciones m\'{a}s comunes es sumar las entradas, pero teniendo en cuenta la importancia (peso sinaptico) de cada una; esta operaci\'{o}n se llama \textit{suma ponderada} \ref{eqn:suma_pon}, sin embargo otras operaciones tambi\'{e}n son posibles. Otra regla de propagaci\'{o}n que es habitual es la distancia euclidea.
+\begin{equation}
+h_{i}(t) = \sum_{j}{w_{ij}x_{j}}
+\label{eqn:suma_pon}
+\end{equation}
+\item \textbf{Funci\'{o}n de activaci\'{o}n}. El valor obtenido con la regla de propagaci\'{o}n, se filtra a trav\'{e}s de una funci\'{o}n conocida como \textit{funci\'{o}n de activaci\'{o}n} y es la que da la salida de la neurona. La función de activación es importante debido a que es la que decide si una neurona debe activarse o no, adem\'{a}s si esta función no se aplica. la señal de salida de la neurona sería simplemente una función lineal.
+\end{itemize}
+
+\subsection{Tipos de funciones de activaci\'{o}n}
+
+Existen diferentes funciones de activaci\'{o}n, a continuaci\'{o}n solo se presentar\'{a} las m\'{a}s usadas en el \'{a}mbito de las redes neuronales.
+
+\begin{figure}
+        \centering
+        \begin{subfigure}[h]{0.45\textwidth} 
+            \includegraphics[width=\textwidth]{imagenes/Cap4/sigmoid}
+            \caption{Funci\'{o}n Sigmoide}
+            \label{fig:sigmoid}
+        \end{subfigure}       
+        \begin{subfigure}[h]{0.45\textwidth} 
+            \includegraphics[width=\textwidth]{imagenes/Cap4/tanh}
+            \caption{Funci\'{o}n Tanh}
+            \label{fig:tanh}
+        \end{subfigure}
+        
+        \begin{subfigure}[h]{0.45\textwidth} 
+            \includegraphics[width=\textwidth]{imagenes/Cap4/relu}
+            \caption{Funci\'{o}n ReLU}
+            \label{fig:relu}
+        \end{subfigure}       
+        \begin{subfigure}[h]{0.45\textwidth} 
+            \includegraphics[width=\textwidth]{imagenes/Cap4/l_relu}
+            \caption{Funci\'{o}n Leaky ReLu}
+            \label{fig:l_relu}
+        \end{subfigure}
+        \caption{Funciones de activaci\'{o}n.}
+        
+		\label{fig:nor_nor}
+    \end{figure}
+    
+\subsubsection{Funci\'{o}n de activaci\'{o}n sigmoide (funci\'{o}n log\'{i}stica)}
+
+Una funci\'{o}n sigmoide es una funci\'{o}n matem\'{a}tica que tiene una curva caracter\'{i}stica en forma de \"S\" o una curva sigmoidea que oscila entre 0 y 1 (Ver Figura \ref{fig:sigmoid}), por lo que esta funci\'{o}n suele ser utilizada en modelos donde se necesita predecir una probabilidad como una salida. Esta funci\'{o}n viene definida por siguiente f\'{o}rmula:
+
+\begin{equation}
+f(x) = \frac{1}{1+e^{-x}}
+\end{equation}
+
+La funci\'{o}n sigmoide se aplic\'{o} con éxito en problemas de clasificación binaria, modelado de tareas de regresión logística, así como otros dominios de red neuronal, sin embargo, sufre inconvenientes importantes que incluyen gradientes húmedos agudos durante la propagación hacia atrás desde capas ocultas más profundas a las capas de entrada, saturación de gradiente, convergencia lenta y salida no centrada en cero, lo que hace que las actualizaciones de gradiente se propaguen en diferentes direcciones.
+
+\subsubsection{Funci\'{o}n de tangente hiperb\'{o}lica - tanh}
+
+Es bastante similar a Sigmoid pero tiene un rendimiento mucho mejor respecto al entrenamiento de redes neuronales multicapa, su naturaleza es no lineal. \'{E}sta funci\'{o}n esta centrada en 0 y su rango se encuentra entre -1 y 1 (Ver Figura \ref{fig:tanh}), por lo tanto, su salida esta definida por:
+
+\begin{equation}
+f(x)=\frac{e^{x}-e^{-x}}{e^{x}+e^{-x}}
+\end{equation}
+    
+Aunque esta funci\'{o}n tenga un mejor rendimiento que la sigmoide, no pudo resolver el problema de gradiente de fuga que tienen las funciones sigmoideas. Una de las principales ventajas de la funci\'{o}n tangencial es que produce una salida centrada a cero, lo cual ayuda al proceso de propagaci\'{o}n hacia atr\'{a}s.
+
+\vspace{5mm} %5mm vertical space
+
+Las funciones de tangente se han utilizado principalmente en redes neuronales recurrentes para el procesamiento del lenguaje natural \cite{43} y tareas de reconocimiento del habla \cite{44}.
+    
+\subsection{Funci\'{o}n de unidad lineal rectificada (Rectified Linear Unit - ReLU)}
+
+La funci\'{o}n ReLU fue propuesta por Nair y Hinton en 2010, y desde entonces ha sido la funci\'{o}n de activaci\'{o}n m\'{a}s ampliamente utilizada para aplicaciones de aprendizaje autom\'{a}tico con redes neuronales. ReLu es una funci\'{o}n de activaci\'{o}n de aprendizaje m\'{a}s r\'{a}pido \cite{46}, por lo que demostr\'{o} ser la funci\'{o}n m\'{a}s exitosa y m\'{a}s usada. Esta funci\'{o}n ofrece un mejor rendimiento y generalizaci\'{o}n que las funciones sigmoide y tangente en el aprendizaje con redes neuronales.
+
+\vspace{5mm} %5mm vertical space
+
+ReLU representa una función casi lineal y, por lo tanto, conserva las propiedades de los modelos lineales que lo hace fácil de optimizar, con métodos de descenso de gradiente.
+
+\vspace{5mm} %5mm vertical space
+
+La función de activación de ReLU realiza una operación de umbral para cada elemento de entrada donde los valores inferiores a cero se establecen en cero (Ver Figura \ref{fig:relu}), por lo que ReLU esta definida por:
+
+\begin{equation}
+f(x) = max(0,x) = \left\lbrace
+\begin{array}{ll}
+\textup{si } x_{i}\geq0 & x_{i}\\
+\textup{si } x_{i} < 0 & 0
+\end{array}
+\right.
+\end{equation}
+
+Esta función rectifica los valores de las entradas inferiores a cero, obligándolos a convertirse en cero, con lo cual elimina el problema de gradiente de fuga observado en los tipos anteriores de función de activación. La función ReLU se ha usado dentro de las unidades ocultas de las redes neuronales.
+
+\vspace{5mm} %5mm vertical space
+
+La principal ventaja de utilizar ReLU es que garantiza un cálculo más rápido, ya que no calcula exponenciales y divisiones, con una velocidad general de cálculo mejorada \cite{45}. Otra propiedad de ReLU es que introduce la escasez en las unidades ocultas, ya que reduce los valores entre cero y máximo. Sin embargo, ReLU tiene la limitación de que se sobreajusta fácilmente en comparación con la función sigmoidea, aunque se ha adoptado la técnica de abandono para reducir el efecto de sobreajuste de ReLU y las redes rectificadas mejoraron el rendimiento de las redes neuronales.
+
+\vspace{5mm} %5mm vertical space
+
+ReLU tiene una limitación significativa de que a veces es frágil durante el entrenamiento, causando la muerte de algunos de los gradientes. Esto hace que algunas neuronas también estén muertas, para resolver los problemas de neuronas muertas, se propuso la funci\'{o}n de activaci\'{o}n Leaky ReLU.
+
+\subsubsection{Leaky ReLU (LReLU)}
+
+Fue propuesta el a\~{n}o 2013 como una funci\'{o}n de activaci\'{o}n, esta funci\'{o}n introduce una peque\~{n}a pendiente negativa a ReLU para mantener y mantener vivas las actualizaciones de peso durante el proceso de propagaci\'{o}n \cite{44}. El par\'{a}metro $\alpha$ fue introducido como una soluci\'{o}n a los problemas de neuronas muertas de ReLU. Esta funci\'{o}n calcula el gradiente con un valor constante muy peque\~{n}o para el gradiente negativo $\alpha$ en el rango de 0.01, por lo que LReLU (Ver Figura \ref{fig:l_relu}) se calcula como:
+
+\begin{equation}
+f(x) = \alpha x + x = \left\lbrace
+\begin{array}{ll}
+\textup{si } x_{i}>0 & x_{i}\\
+\textup{si } x_{i} \leq 0 & \alpha x_{i}
+\end{array}
+\right.
+\end{equation}
+
+\subsection{Arquitectura de las Redes Neuronales}
+
+Una red neuronal regular consiste de una cadena de capas interconectadas de neuronas, estas capas son: una capa de entrada, una o varias capas ocultas y una capa de salida. 
+
+\begin{figure}[h!]
+  \begin{center}	\includegraphics[width=0.95\textwidth]{imagenes/Cap4/arquitectura}
+  \caption{Arquitectura de una neurona artificial.}
+  \label{fig:arquitectura}
+  \end{center}
+\end{figure}
+
+La figura \ref{fig:arquitectura} es un ejemplo de una red neuronal muy simple; en esta figura la capa m\'{a}s a la izquierda se llama \textbf{capa de entrada}, y las neuronas dentro de esta capa se llaman neuronas de entrada. La capa m\'{a}s a la derecha o de \textbf{salida} contiene las neuronas de salida. Y por \'{u}ltimo las dos capas intermedias son las \textbf{capas ocultas} de la red neuronal, estas se llaman as\'{i} debido a que las neuronas de esta capa no son de entrada o de salida; una red neuronal puede tener una o m\'{a}s capas ocultas.
+
+\vspace{5mm} %5mm vertical space
+
+A diferencia del cerebro humano, una Red Neuronal Artificial tiene una estructura predefinida bastante estricta, las conexiones entre neuronas son siempre hacia adelante (feedforward): las conexiones van desde las neuronas de una determinada capa hacia las neuronas de la siguiente capa, es decir, no existen conexiones laterales ni conexiones hacia atr\'{a}s. Esto significa que una neurona que fue activada en la capa 3 no puede activar a una neurona de la capa 2 o anterior.
+
+\subsection{Proceso de aprendizaje de las Redes Neuronales}
+
+Una caracter\'{i}stica clave de las  redes neuronales es su proceso de aprendizaje iterativo, es decir, cada ejemplo del conjunto de entrenamiento se presenta a la red uno a la vez con lo que los pesos asociados con los valores de entrada se ajustan cada vez. Durante esta fase de aprendizaje, la red se entrena ajustando los pesos para predecir una salida correcta para las muestras de entrada.
+
+\vspace{5mm} %5mm vertical space
+
+Las redes neuronales tienen la ventaja de tener una alta tolerancia a los datos ruidosos, como tambi\'{e}n una alta capacidad para clasificar patrones con los que no han sido entrenados. La t\'{e}cnica de entrenamiento de redes neuronales m\'{a}s popular es el \textbf{algoritmo de retropropagaci\'{o}n} (Backpropagation). 
+
+\vspace{5mm} %5mm vertical space
+
+Una vez que se define la estructura de una red para una aplicaci\'{o}n en particular, est\'{a} lista para ser capacitada. Para comenzar este proceso, los pesos iniciales se eligen al azar, para luego proceder con el entrenamiento (aprendizaje). 
+
+\subsubsection{Backpropagation}
+
+Una red neuronal propaga la se\~{n}al de los datos de entrada hacia adelante a trav\'{e}s de sus par\'{a}metros en el momento de la decisi\'{o}n; para luego propagar hacia atr\'{a}s la informaci\'{o}n sobre el error, para que se pueda alterar los par\'{a}metros. Esto sucede siguiendo los siguientes pasos:
+
+\begin{itemize}
+\item La red adivina los datos de salida, usando sus par\'{a}metros.
+\item La red mide su precisi\'{o}n con una funci\'{o}n de p\'{e}rdida.
+\item El error es propagado hacia atr\'{a}s para ajustar los par\'{a}metros equivocados.
+\end{itemize}
+
+Por lo tanto se puede decir que el algoritmo de Backpropagation toma el error asociado con una suposición errónea por parte de la red neuronal, y usa ese error para ajustar los parámetros de la red neuronal en la dirección que genere un menor error.
+
+\section{Tipos de Redes Neuronales}
+
+\subsection{Autoencoders}
+
+Un Autoencoder es una Red Neuronal Artificial usada para aprendizaje autom\'{a}tico no supervisado, esta entrenada para reconstruir sus propias entradas, es decir, predecir el valor de la salida $\hat{x}$ dada una entrada $x$ via una capa oculta $h$, ver Figura \ref{fig:autoencoder}. Los autoencoders suelen ser usados para reducci\'{o}n de dimensionalidad y aprendizaje de caracter\'{i}sticas. 
+
+\begin{figure}[h!]
+  \begin{center}	\includegraphics[width=0.95\textwidth]{imagenes/Cap4/autoencoder}
+  \caption{Gr\'{a}fico de un Autoencoder.}
+  \label{fig:autoencoder}
+  \end{center}
+\end{figure}
+
+Los autoencoders est\'{a}n compuestos de dos partes: el codificador y decodificador. El codificador aprende una representaci\'{o}n compresa de los datos de entrada, este puede ser definido con la funci\'{o}n de codificaci\'{o}n $h=encoder(x)$, el cual es definido por una funci\'{o}n lineal o no lineal. Si la funci\'{o}n del codificador es no lineal el autoencoder ser\'{a} capaz de aprender m\'{a}s caracter\'{i}sticas que un PCA lineal. El prop\'{o}sito del decodificador es reconstruir su propia entrada v\'{i}a la funci\'{o}n de decodificaci\'{o}n, $\hat{x} = decodificador(h)$. Los autoencoders intentan minimizar el error de reconstrucci\'{o}n, el cual es definido como la diferencia entre la salida del decodificador y la entrada original.
+
+% tipos === continuar haciendo ===>> https://blog.statsbot.co/neural-networks-for-beginners-d99f2235efca
+
+
+%3.1. Autoencoder based Anomaly Detection
+An autoencoder is an artificial neural network that consists of sequentially connected encoder
+and decoder networks. The encoder learns a compressed representation, i.e., latent
+variables of the input data, which is fed into the decoder network to reconstruct the input.
+This network tries to minimize the reconstruction error, which is defined as the difference
+between the output of the decoder and the original input. The traditional autoencoder
+based anomaly detection method is a deviation based anomaly detection method in a semisupervised
+learning fashion (An and Cho (2015)). The reconstruction error is set as the
+anomaly score, while samples with high reconstruction errors are considered as anomalies.
+In the training phase, only normal data will be used to train the autoencoder, aiming to
+minimize the reconstruction error, so that the autoencoder can recognize the characteristics
+of normal data. In the testing phase, the learned autoencoder will be able to reconstruct
+normal data will small reconstruction errors, but fail with anomalous data which the autoencoder
+has not encountered before and thus have relatively higher reconstruction errors
+compared with normal data. Thus, by comparing whether the anomaly score is above a
+predefined threshold, an autoencoder can determine whether the tested data is anomalous. http://proceedings.mlr.press/v95/guo18a/guo18a.pdf
+
+
+ //https://s3.amazonaws.com/academia.edu.documents/56469357/PublishedFinalVersion.pdf?response-content-disposition=inline%3B%20filename%3DUnsupervised_obstacle_detection_in_drivi.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWOWYYGZ2Y53UL3A%2F20191007%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20191007T143912Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=189c9e79c42aa12b297a7640ad68df1a2c48ac6be3ff7e2c1affe2fd36211a13
+
+
+
+%When the autoencoder is used for anomaly detection, anomalies can be identified based on the history of the squared error between the inputs and outputs for the training records. Let e be the set of reconstruction error values of the xi AX, where i ¼ 1; …; m. If the reconstruction error for a test sample is larger than the threshold τ ¼ μðeÞþ3σðeÞ, where μðeÞ and σðeÞ are the mean and standard deviation of the values in the set e, respectively, then the record is identified as anomalous, otherwise it is identified as normal.
+
+%. Anomalies then can be identified by the autoencoder based on the history of the squared error between the inputs and outputs for the training records. Let e be the reconstruction error of xi ∈ X, where i = 1, . . . , n. If the reconstruction error for a test sample is larger than the threshold τ = µ(e) + 3 σ(e), the record is identified as anomalous, otherwise it is identified as normal
+
+%%%%%%%%%%%%%%%%
+
+
+
+\vspace{5mm} %5mm vertical space
+
+Para la generaci\'{o}n del modelo de detecci\'{o}n de anomal\'{i}as se opt\'{o} por algoritmos de aprendizaje autom\'{a}tico enfocados en series de tiempo, dado que los datos, de los sensores capturados por el dispositivo m\'{o}vil, dependen del tiempo en el que fueron capturados; por lo cual el primer paso a realizar es la generacion de peque\~{n}as fracciones de series temporales. 
+
+\textbf{Generaci\'{o}n de series temporales}
+
+\vspace{5mm} %5mm vertical space
+
+En el Cuadro \ref{table:series-de-tiempo} se presenta los resultados de diferentes tama\~{n}os de series de tiempo, observando esos resultados en primera instancia se descarta la serie de tiempo que cuenta con s\'{o}lo un paso en el tiempo debido a que su uso se limitar\'{i}a a una mera detecci\'{o}n de anomal\'{i}as puntuales, lo cual no es el objetivo del presente trabajo de grado, por otra parte la serie temporal que tiene dos pasos no es lo suficientemente descriptiva raz\'{o}n por la que esta serie de tiempo tambi\'{e}n queda descartada, llegando a este punto moment\'{a}neamente no es posible definir la cantidad correcta de pasos en las series de tiempo, por lo cual al igual que la cantidad de componentes principales, ser\'{a} un par\'{a}metro a optimizar en los diferentes experimentos que se realizar\'{a} en las siguientes secciones. Cabe recalcar que el dominio de esta variable estar\'{a} entre 3 a 5 pasos y el de la cantidad de componentes principales estar\'{a} entre 3 y 4.
 
 \begin{landscape}
 \pagestyle{empty}
 \begin{table}[p!]
-
 \centering
 \begin{tabular}{|l|l|l|l|l|l|}
 \hline
@@ -70,8 +337,11 @@ Para la generaci\'{o}n del modelo de detecci\'{o}n de anomal\'{i}as se opt\'{o} 
 
 \pagestyle{thesis}
 
+Una vez definido como se tratar\'{a} el conjunto de datos se puede proceder con la siguiente fase (modelo ajustado al comportamiento normal).
 
- a continuaci\'{o}n se presenta algunos  algoritmos de aprendizaje autom\'{a}tico supervisado para series de tiempo.
+\section{Modelo del comportamiento normal}
+
+Esta etapa es una de las partes m\'{a}s importantes de \'{e}ste trabajo debido a que el rendimiendo del modelo de detecci\'{o}n de anomal\'{i}as depende en gran parte a la capacidad  de esta etapa
 
 \section{Aprendizaje autom\'{a}tico para an\'{a}lisis de series de tiempo}
 
