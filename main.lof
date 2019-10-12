@@ -12,7 +12,7 @@
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Recolecci\'{o}n de datos, con intervalo de un segundo.\relax }}{12}{figure.caption.37}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Soporte para celular de parabrisas, posici\'{o}n horizontal.\relax }}{12}{figure.caption.38}
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Fragmento del conjunto de datos obtenido.\relax }}{13}{figure.caption.39}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Gr\'{a}fica de los sensores capturados en diferentes posiciones\relax }}{14}{figure.caption.42}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Gr\'{a}fica de los sensores capturados en diferentes posiciones.\relax }}{14}{figure.caption.42}
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Histograma de frecuencias del conjunto de datos\relax }}{16}{figure.caption.47}
 \contentsline {figure}{\numberline {3.6}{\ignorespaces Tabla de resultados estad\'{i}sticos del conjunto de datos.\relax }}{16}{figure.caption.48}
 \contentsline {figure}{\numberline {3.7}{\ignorespaces Regla 68-95-99.7 \relax }}{17}{figure.caption.49}
@@ -27,3 +27,8 @@
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Funciones de activaci\'{o}n.\relax }}{32}{figure.caption.89}
 \contentsline {figure}{\numberline {4.4}{\ignorespaces Arquitectura de una neurona artificial.\relax }}{34}{figure.caption.99}
 \contentsline {figure}{\numberline {4.5}{\ignorespaces Gr\'{a}fico de un Autoencoder.\relax }}{36}{figure.caption.104}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Arquitectura de una Red Neuronal Convolucional (CNN).\relax }}{37}{figure.caption.107}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Procesamiento secuencial en una red neuronal recurrente (RNN) \cite {53}.\relax }}{38}{figure.caption.110}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Estructura de LSTM. Reproducido desde Yan \cite {54}.\relax }}{39}{figure.caption.114}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Estructura de GRU. Reproducido desde \cite {56}.\relax }}{40}{figure.caption.117}
+\addvspace {10\p@ }

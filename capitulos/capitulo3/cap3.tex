@@ -2,11 +2,11 @@ Contar con una gran cantidad de datos en cualquier problema de detecci\'{o}n de 
 
 \vspace{5mm} %5mm vertical space
 
-En este cap\'{i}tulo se detallar\'{a} el m\'{e}todo de recolecci\'{o}n de datos que se realizar\'{a} para la presente investigaci\'{o}n y las diferentes t\'{e}cnicas de an\'{a}lisis de datos que se aplicar\'{a}.
+En este cap\'{i}tulo se detallar\'{a} el m\'{e}todo de recolecci\'{o}n de datos que se realiz\'{} para la presente investigaci\'{o}n y las diferentes t\'{e}cnicas de an\'{a}lisis de datos que se aplic\'{o}.
 
 \section{Captura de datos} \label{cap:CapDatos}
 
-Actualmente existen varios enfoques para acceder a la información del conductor y del vehículo. En el primer enfoque, un conjunto de sensores y hardware adicional se implementan previamente en el veh\'{i}culo, por ejemplo, cajas telemáticas (cajas negras provistas por compañías de seguros de automóviles), adaptadores de diagnóstico a bordo (OBD-II) enchufados en el controlador del vehículo red de área (CAN) (\cite{30}, \cite{31}), la información registrada por estos dispositivos se puede recuperar o enviar a través de Internet. Sin embargo, esta estrategia requiere que los vehículos instalen dispositivos adicionales, lo que implica un mayor costo. Para superar estos inconvenientes, existe un enfoque alternativo el cual es usar teléfonos inteligentes para recopilar datos a través de un conjunto de sensores integrados, tales como sensores inerciales (acelerómetros y giroscopios), sistemas de posicionamiento global (GPS), magnetómetros, micrófonos, sensores de imagen (cámaras), sensores de luz , sensores de proximidad, sensores de dirección (brújula), entre otros.
+Actualmente existen varios enfoques para acceder a la información del coductor (agente) y del vehículo. En el primer enfoque, un conjunto de sensores y hardware adicional se implementan previamente en el veh\'{i}culo, por ejemplo, cajas telemáticas (cajas negras provistas por compañías de seguros de automóviles), adaptadores de diagnóstico a bordo (OBD-II) enchufados en el controlador del vehículo red de área (CAN) (\cite{30}, \cite{31}), la información registrada por estos dispositivos se puede recuperar o enviar a través de Internet. Sin embargo, esta estrategia requiere que los vehículos instalen dispositivos adicionales, lo que implica un mayor costo. Para superar estos inconvenientes, existe un enfoque alternativo el cual es usar teléfonos inteligentes para recopilar datos a través de un conjunto de sensores integrados, tales como sensores inerciales (acelerómetros y giroscopios), sistemas de posicionamiento global (GPS), magnetómetros, micrófonos, sensores de imagen (cámaras), sensores de luz , sensores de proximidad, sensores de dirección (brújula), entre otros.
 
 \vspace{5mm} %5mm vertical space
 
@@ -54,7 +54,7 @@ El prop\'{o}sito principal de la preparaci\'{o}n de datos es manipular y transfo
  
 \subsection{Selecci\'{o}n de datos}
 
-La selecc\'{o}n de datos implica los siguientes pasos:
+La selecci\'{o}n de datos implica los siguientes pasos:
 
 \begin{itemize}
 \item Seleccionar solo un subconjunto de los datos disponibles.
@@ -62,11 +62,11 @@ La selecc\'{o}n de datos implica los siguientes pasos:
 \item Excluir aquellos datos que no son reelevantes para el problema.
 \end{itemize}
 
-Para el presente trabajo se har\'{a} incapi\'{e} s\'{o}lo en el primer paso de esta fase, debido a que los datos con los que se cuenta son limitados ya que \'{e}stos fueron capturados para la investigaci\'{o}n y como se indic\'{o} en la secci\'{o}n \ref{cap:CapDatos}, esta captura se realiz\'{o}, tanto de forma vertical como horizontal, a continuaci\'{o}n se analizar\'{a} las diferencias entre ellos.
+Para el presente trabajo s\'{o}lo se har\'{a} incapi\'{e} en el primer paso de esta fase, debido a que los datos con los que se cuenta son limitados ya que \'{e}stos fueron capturados para la investigaci\'{o}n y como se indic\'{o} en la secci\'{o}n \ref{cap:CapDatos}, esta captura se realiz\'{o}, tanto de forma vertical como horizontal, a continuaci\'{o}n se analizar\'{a} las diferencias entre ellos.
 
 \vspace{5mm} %5mm vertical space
 
-En la Figura \ref{fig:verHor} se muestra fragmentos de las capturas obtenidas por el dispositivo m\'{o}vil del manejo de un mismo usuario desde diferentes posiciones.
+En la Figura \ref{fig:verHor} se muestra fragmentos de las capturas obtenidas por el dispositivo m\'{o}vil del manejo de un mismo usuario (agente) desde diferentes posiciones.
 
 \begin{figure}
         \centering
@@ -80,7 +80,7 @@ En la Figura \ref{fig:verHor} se muestra fragmentos de las capturas obtenidas po
             \caption{Captura de datos en vertical}
             \label{fig:ver}
         \end{subfigure}
-        \caption{Gr\'{a}fica de los sensores capturados en diferentes posiciones}
+        \caption{Gr\'{a}fica de los sensores capturados en diferentes posiciones.}
         		\label{fig:verHor}
     \end{figure}
 
@@ -105,9 +105,9 @@ Los datos de las filas pueden tener registros incompletos, valores ruidosos, val
 Los valores ausentes en el conjunto de datos pueden ser llenados usando cualquiera de las t\'{e}cnicas que se mencionan a continuaci\'{o}n.
 
 \begin{itemize}
-\item \textbf{Ignorar / Eliminar:} En algunos casos es mejor ignorar o eliminar la tupla que contiene valores faltantes en lugar de llenar esta. Generalmente esta t\'{e}cnica se practica en conjuntos de datos que son muy grandes, donde el eliminar algunos datos no afectara la informaci\'{o}n que transmite nuestro conjunto de datos. Sin embargo cuando se trabaja con un conjunto de datos peque\~{n}o el eliminar las tuplas que contienen valores ausentes podr\'{i}a hacer perder informaci\'{o}n importante.
+\item \textbf{Ignorar / Eliminar:} En algunos casos es mejor ignorar o eliminar la tupla que contiene valores faltantes en lugar de llenar esta. Generalmente esta t\'{e}cnica se practica en conjuntos de datos que son muy grandes, donde el eliminar algunos datos no afectar\'{a} la informaci\'{o}n que transmite nuestro conjunto de datos. Sin embargo cuando se trabaja con un conjunto de datos peque\~{n}o el eliminar las tuplas que contienen valores ausentes podr\'{i}a hacer perder informaci\'{o}n importante.
 
-\item \textbf{Llenar manualmente los valores ausentes:} Otra opci\'{o}n tambi\'{e}n es completar los valores faltantes si se comprende la naturaleza de los mismos, esto generalmente se realiza en conjunto de datos peque\~{n}os, ya que en los conjuntos grandes esta tarea requerir\'{i}a bastante tiempo.
+\item \textbf{Llenar manualmente los valores ausentes:} Otra opci\'{o}n tambi\'{e}n es completar los valores faltantes si se comprende la naturaleza de los mismos, esto generalmente se realiza en conjunto de datos peque\~{n}os, ya que en los conjuntos grandes \'{e}sta tarea requerir\'{i}a bastante tiempo.
 
 \item \textbf{Llenar los valores ausentes con valores centrales (Media/Mediana):} Esta t\'{e}cnica es mucho mejor que las presentadas anteriormente. En esta t\'{e}cnica se inserta la media o la mediana del atributo respectivo a los valores faltantes. 
 
@@ -176,7 +176,7 @@ Cuando se trabaja con datos del mundo real, es posible que los datos que se requ
 
 \vspace{5mm} %5mm vertical space
 
-Este proceso no se aplic\'{o} en la investigaci\'{o}n debido a que s\'{o}lo se capturo los datos por medio del dispositivo m\'{o}vil, por lo cual no se tiene el problema de tener m\'{a}s de una fuente de datos.
+Este proceso no se aplic\'{o} en la investigaci\'{o}n debido a que s\'{o}lo se captur\'{o} los datos por medio del dispositivo m\'{o}vil, por lo cual no se tiene el problema de tener m\'{a}s de una fuente de datos.
 
 \subsubsection{Transformaci\'{o}n de datos}
 \label{subsubsection:est-norm-dataset}
@@ -206,7 +206,7 @@ Presenta el problema de que comprime los datos de entrada entre unos límites fi
 x_{normalizado} = \frac{x - x_{media}}{x_{desvSt}}
 \end{equation}
 
-\'{E}ste m\'{e}todo es adecuado para normalizar se\~{n}ales estables, no obstante, tanto la media como la desviaci\'{o}n est\'{a}ndar son muy sensibles a valores an\'{o}malos. Una alternativa de soluci\'{o}n de esto es la eliminaci\'{o}n de anomal\'{i}as antes de realizar la normalizaci\'{o}n.
+\'{E}ste m\'{e}todo es adecuado para normalizar se\~{n}ales estables, no obstante, tanto la media como la desviaci\'{o}n est\'{a}ndar son muy sensibles a valores an\'{o}malos. Una alternativa de soluci\'{o}n de \'{e}sto, es la eliminaci\'{o}n de anomal\'{i}as antes de realizar la normalizaci\'{o}n.
 
 \item \textit{Escalado sobre el valor m\'{a}ximo: }Este m\'{e}todo, presenta la idea de escalar los datos dividiendo \'{e}stos entre su m\'{a}ximo valor.
 
@@ -218,7 +218,7 @@ x_{normalizado} = \frac{x - x_{media}}{x_{desvSt}}
 
 \subsubsection{Reducci\'{o}n de datos}
 
-Este proceso se basa en la adopci\'{o}n de algunas estrategias, tal que el an\'{a}lisis de datos reducidos produce la misma informaci\'{o}n producida por los datos originales. Algunas de las estrategias incluyen: an\'{a}lisis de componentes principales (PCA), selecci\'{o}n de un subconjunto de atributos, agrupaci\'{o}n y muestreo entre otros.
+Este proceso se basa en la adopci\'{o}n de algunas estrategias, tal que, el an\'{a}lisis de datos reducidos produce la misma informaci\'{o}n producida por los datos originales. Algunas de las estrategias incluyen: an\'{a}lisis de componentes principales (PCA), selecci\'{o}n de un subconjunto de atributos, agrupaci\'{o}n y muestreo entre otros.
 
 \vspace{5mm} %5mm vertical space
 
@@ -255,7 +255,7 @@ Cuando se usa PCA enfocado al aprendizaje autom\'{a}tico se sigue los siguientes
 
 \vspace{5mm} %5mm vertical space
 
-\textbf{\textit{Dividir el conjunto de datos}}
+\textbf{\textit{Divisi\'{o}n del conjunto de datos}}
 
 \vspace{5mm} %5mm vertical space
 
@@ -355,11 +355,11 @@ El primer tipo de escalado que se realiz\'{o} sobre el conjunto de datos captura
 
 \vspace{5mm} %5mm vertical space
 
-La segunda t\'{e}cnica de normalizaci\'{o}n que se aplic\'{o} sobre los datos fue el \textbf{escalado est\'{a}ndar}, el resultado se puede apreciar en la figura \ref{fig:standard}, observando detalladamente los resultados se puede evidenciar que son muy similares a los obtenidos con la normalizaci\'{o}n Min-Max, las \'{u}nicas diferencias que se pueden evidencias son que el nuevo rango de los datos es m\'{a}s amplio con media en cero y valores que oscilan principalmente entre 2 y 2,  y que se amplia un poco m\'{a}s algunas de las fluctuaciones que presentan los giroscopios.
+La segunda t\'{e}cnica de normalizaci\'{o}n que se aplic\'{o} sobre los datos fue el \textbf{escalado est\'{a}ndar}, el resultado se puede apreciar en la figura \ref{fig:standard}, observando detalladamente los resultados se puede evidenciar que son muy similares a los obtenidos con la normalizaci\'{o}n Min-Max, las \'{u}nicas diferencias que se pueden evidenciar son que el nuevo rango de los datos es m\'{a}s amplio con media en cero y valores que oscilan principalmente entre 2 y -2,  y que se amplia un poco m\'{a}s algunas de las fluctuaciones que presentan los giroscopios.
 
 \vspace{5mm} %5mm vertical space
 
-Para la tercera normalizaci\'{o}n de datos se aplic\'{o} la t\'{e}cnica de \textbf{escalado sobre el valor m\'{a}ximo}, los resultados se presentan totalmente diferentes a los que seobtuvo anteriormente, sin embargo se observa claramente que los valores del aceler\'{o}metro no presentan mucho cambio con la diferencia de que la media de estos valores son distintas para cada uno, y los valores de los giroscopios se comportan como en los anteriores, como se puede ver en la figura \ref{fig:max}. Esta t\'{e}cnica presenta los peores resultados, ya que no deja nuestro conjunto de datos en un mismo rango lo cual complica su trabajo.
+Para la tercera normalizaci\'{o}n de datos se aplic\'{o} la t\'{e}cnica de \textbf{escalado sobre el valor m\'{a}ximo}, los resultados se presentan totalmente diferentes a los que se obtuvo anteriormente, sin embargo se observa claramente que los valores del aceler\'{o}metro no presentan mucho cambio, con la diferencia de que la media de estos valores son distintas para cada uno, y los valores de los giroscopios se comportan como en los anteriores, como se puede ver en la figura \ref{fig:max}. Esta t\'{e}cnica presenta los peores resultados, ya que no deja nuestro conjunto de datos en un mismo rango lo cual complica su trabajo.
 
 \vspace{5mm} %5mm vertical space
 

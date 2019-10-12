@@ -4,8 +4,6 @@ El t\'{e}rmino Aprendizaje Autom\'{a}tico se refiere a la detecci\'{o}n autom\'{
 
 Si bien el Aprendizaje Autom\'{a}tico puede resolver algunos problemas que son resueltos con algoritmos tradicionales, ha superado a \'{e}stos en problemas tales como el reconocimiento de im\'{a}genes, voz, lenguaje, escritura, juegos, rob\'{o}tica, an\'{a}lisis de datos, an\'{a}lisis de series de tiempo, etc. Desde esta perspectiva, se espera que mediante la aplicaci\'{o}n del Aprendizaje Autom\'{a}tico se pueda generar un modelo que se ajuste a un comportamiento normal esperado para el agente.
 
-
-
 \section{Aprendizaje Supervisado, Aprendizaje no Supervisado y Aprendizaje Semi-supervisado}
 \label{section|aprendizaje}
 
@@ -49,8 +47,6 @@ Por otra parte el enfoque sin supervisi\'{o}n tiene la ventaja de no requerir in
 
 En muchas aplicaciones, incluyendo la del presente trabajo de grado, los ejemplos normales son f\'{a}ciles de conseguir, mientras que los an\'{o}malos son bastante dif\'{i}ciles de obtener, en consecuencia, para la realizaci\'{o}n de este estudio, se ha optado por la aplicaci\'{o}n del enfoque Semi-supervisado. De esta manera, como se mencion\'{o} en el Cap\'{i}tulo \ref{Capitulo 2}, el enfoque de \textbf{detecci\'{o}n de anomal\'{i}as Semi-supervisado} s\'{o}lo dispone de muestras normales en el conjunto de entrenamiento; es decir, no se puede obtener informaci\'{o}n sobre anomal\'{i}as, por lo tanto las muestras desconocidas se clasifican como valores at\'{i}picos, siempre y cuando su comportamiento sea muy diferente al de las muestras normales ya conocidas.
 
-% Por lo tanto en este trabajo, se propone un m\'{e}todo de detecci\'{o}n de anomal\'{i}as de conducci\'{o}n semi-supervisado que consta de dos componentes: un \textbf{modelo ajustado al comportamiento normal de manejo de un agente} y un \textbf{m\'{e}todo de umbral para detecci\'{o}n de valores at\'{i}picos}.
-
 \vspace{5mm} %5mm vertical space
 
 Como se mencion\'{o} en esta secci\'{o}n todos estos enfoques de aprendizaje se basan en generar un \textbf{Modelo} que nos ayude ya sea en tareas de clasificaci\'{o}n, agrupaci\'{o}n, etc, sin embargo existe m\'{a}s de un tipo de modelos. En la siguiente secci\'{o}n se detallar\'{a} en profundidad los diferentes tipos de modelos que existen.
@@ -65,11 +61,11 @@ Cuando se utiliza Aprendizaje Autom\'{a}tico existen dos principales enfoques pa
 
 \vspace{5mm} %5mm vertical space
 
-Los \textbf{modelos discriminativos} se basan en la probabilidad condicionada P(Y|X), es decir, aprenden un mapa directo de un conjunto de caracter\'{i}sticas \textit{X} a etiquetas de clases \textit{Y}. Este tipo de modelos intentan modelar simplemente dependiendo de los datos observados (conjunto de datos), adem\'{a}s hacen menos suposiciones sobre las distribuciones; sin embargo dependen en gran medida de la calidad de los datos. Algunos ejemplos de modelos discriminativos son: Regresi\'{o}n Log\'{i}stica, SVM (Support Vector Machine - M\'{a}quina de vectores de soporte), Redes Neuronales, Random Forest, entre otros.
+Los \textbf{modelos discriminativos} se basan en la probabilidad condicionada $P(Y|X)$, es decir, aprenden un mapa directo de un conjunto de caracter\'{i}sticas \textit{X} a etiquetas de clases \textit{Y}. Este tipo de modelos intentan modelar simplemente dependiendo de los datos observados (conjunto de datos), adem\'{a}s hacen menos suposiciones sobre las distribuciones; sin embargo dependen en gran medida de la calidad de los datos. Algunos ejemplos de modelos discriminativos son: Regresi\'{o}n Log\'{i}stica, SVM (Support Vector Machine - M\'{a}quina de vectores de soporte), Redes Neuronales, Random Forest, entre otros.
 
 \vspace{5mm} %5mm vertical space
 
-Por otra parte los \textbf{modelos generativos} apuntan a una descripci\'{o}n probabil\'{i}stica completa del conjunto de datos, su objetivo es desarrollar la distribuci\'{o}n de probabilidad conjunta P(X,Y), ya sea directamente o calculando P(Y|X) y P(X), para luego inferir las probabilidades condicionadas requeridas para clasificar nuevos datos. Estos modelos nos ayudan a especificar la incertidumbre de un modelo, algunos ejemplos de modelos generativos son: Gaussian Mixture model, Hiden Markov Model, Restricted Bolzmann machine, Generative adversial networks, entre otros.
+Por otra parte los \textbf{modelos generativos} apuntan a una descripci\'{o}n probabil\'{i}stica completa del conjunto de datos, su objetivo es desarrollar la distribuci\'{o}n de probabilidad conjunta P(X,Y), ya sea directamente o calculando $P(Y|X)$ y $P(X)$, para luego inferir las probabilidades condicionadas requeridas para clasificar nuevos datos. Estos modelos nos ayudan a especificar la incertidumbre de un modelo, algunos ejemplos de modelos generativos son: Gaussian Mixture Model, Hiden Markov Model, Restricted Bolzmann Machine, Generative Adversial Networks (GAN), entre otros.
 
 \vspace{5mm} %5mm vertical space
 
@@ -100,7 +96,9 @@ Una neurona cerebral puede recibir unas 10000 entradas y enviar a su vez su sali
 
 La conexi\'{o}n entre neuronas se llama \textbf{sinapsis}, esta no es una conexi\'{o}n f\'{i}sica, sino que existe 2 mm. de separaci\'{o}n entre neronas. Estas conexiones son unidireccionales, donde la transmisi\'{o}n de la informaci\'{o}n se hace de forma el\'{e}ctrica en el interior de la neurona  y de forma qu\'{i}mica entre neuronas, gracias a los neurotransmisores.
 
-Una \textbf{neurona artificial} es un procesador elemental, debido a que procesa un vector x(x1,x2,...,xn) de entradas y produce una respuesta o salida \'{u}nica. Los elementos principales de una neurona artificial son los siguientes:
+\vspace{5mm} %5mm vertical space
+
+Una \textbf{neurona artificial} es un procesador elemental, debido a que procesa un vector $x(x_{1},x_{2}, ... ,x_{n})$ de entradas y produce una respuesta o salida \'{u}nica. Los elementos principales de una neurona artificial son los siguientes:
 
 \begin{figure}[h!]
   \begin{center}	\includegraphics[width=0.95\textwidth]{imagenes/Cap4/neurona_artificial}
@@ -111,13 +109,13 @@ Una \textbf{neurona artificial} es un procesador elemental, debido a que procesa
 
 \begin{itemize}
 \item \textbf{Las entradas} que reciben los datos de otras neuronas, estas entradas ser\'{i}an las dendritas de una neurona biol\'{o}gica.
-\item \textbf{Los pesos sin\'{a}pticos wij}. En una neurona artificial a aquellas entradas que vienen de otras neuronas se les asigna un peso (factor de importancia). Este peso es un valor num\'{e}rico que se modifica durante el proceso de entrenamiento de una red neuronal, y por lo tanto es aqu\'{i} donde se almacena la informaci\'{o}n que hace que la red sirva para un prop\'{o}sito u otro.
-\item \textbf{Regla de propagaci\'{o}n}. Con las entradas y los pesos sin\'{a}pticos, se suele hacer alg\'{u}n tipo de operaci\'{o}n para obtener el valor potencial postsinaptico; una de las operaciones m\'{a}s comunes es sumar las entradas, pero teniendo en cuenta la importancia (peso sinaptico) de cada una; esta operaci\'{o}n se llama \textit{suma ponderada} \ref{eqn:suma_pon}, sin embargo otras operaciones tambi\'{e}n son posibles. Otra regla de propagaci\'{o}n que es habitual es la distancia euclidea.
+\item \textbf{Los pesos sin\'{a}pticos $w_{ij}$}. En una neurona artificial a aquellas entradas que vienen de otras neuronas se les asigna un peso (factor de importancia). Este peso es un valor num\'{e}rico que se modifica durante el proceso de entrenamiento de una red neuronal, y por lo tanto es aqu\'{i} donde se almacena la informaci\'{o}n que hace que la red sirva para un prop\'{o}sito u otro.
+\item \textbf{Regla de propagaci\'{o}n}. Con las entradas y los pesos sin\'{a}pticos, se suele hacer alg\'{u}n tipo de operaci\'{o}n para obtener el valor potencial postsin\'{a}ptico; una de las operaciones m\'{a}s comunes es sumar las entradas, pero teniendo en cuenta la importancia (peso sin\'{a}ptico) de cada una; esta operaci\'{o}n se llama \textit{suma ponderada} \ref{eqn:suma_pon}, sin embargo otras operaciones tambi\'{e}n son posibles. Otra regla de propagaci\'{o}n que es habitual es la distancia euclidea.
 \begin{equation}
 h_{i}(t) = \sum_{j}{w_{ij}x_{j}}
 \label{eqn:suma_pon}
 \end{equation}
-\item \textbf{Funci\'{o}n de activaci\'{o}n}. El valor obtenido con la regla de propagaci\'{o}n, se filtra a trav\'{e}s de una funci\'{o}n conocida como \textit{funci\'{o}n de activaci\'{o}n} y es la que da la salida de la neurona. La función de activación es importante debido a que es la que decide si una neurona debe activarse o no, adem\'{a}s si esta función no se aplica. la señal de salida de la neurona sería simplemente una función lineal.
+\item \textbf{Funci\'{o}n de activaci\'{o}n}. El valor obtenido con la regla de propagaci\'{o}n, se filtra a trav\'{e}s de una funci\'{o}n conocida como \textit{funci\'{o}n de activaci\'{o}n} y es la que da la salida de la neurona. La función de activación es importante debido a que es la que decide si una neurona debe activarse o no, adem\'{a}s si esta función no se aplica la señal de salida de la neurona sería simplemente una función lineal.
 \end{itemize}
 
 \subsection{Tipos de funciones de activaci\'{o}n}
@@ -154,7 +152,7 @@ Existen diferentes funciones de activaci\'{o}n, a continuaci\'{o}n solo se prese
     
 \subsubsection{Funci\'{o}n de activaci\'{o}n sigmoide (funci\'{o}n log\'{i}stica)}
 
-Una funci\'{o}n sigmoide es una funci\'{o}n matem\'{a}tica que tiene una curva caracter\'{i}stica en forma de \"S\" o una curva sigmoidea que oscila entre 0 y 1 (Ver Figura \ref{fig:sigmoid}), por lo que esta funci\'{o}n suele ser utilizada en modelos donde se necesita predecir una probabilidad como una salida. Esta funci\'{o}n viene definida por siguiente f\'{o}rmula:
+Una funci\'{o}n sigmoide es una funci\'{o}n matem\'{a}tica que tiene una curva caracter\'{i}stica en forma de ''S'' o una curva sigmoidea que oscila entre 0 y 1 (Ver Figura \ref{fig:sigmoid}), por lo que esta funci\'{o}n suele ser utilizada en modelos donde se necesita predecir una probabilidad como una salida. Esta funci\'{o}n viene definida por siguiente f\'{o}rmula:
 
 \begin{equation}
 f(x) = \frac{1}{1+e^{-x}}
@@ -164,7 +162,7 @@ La funci\'{o}n sigmoide se aplic\'{o} con éxito en problemas de clasificación 
 
 \subsubsection{Funci\'{o}n de tangente hiperb\'{o}lica - tanh}
 
-Es bastante similar a Sigmoid pero tiene un rendimiento mucho mejor respecto al entrenamiento de redes neuronales multicapa, su naturaleza es no lineal. \'{E}sta funci\'{o}n esta centrada en 0 y su rango se encuentra entre -1 y 1 (Ver Figura \ref{fig:tanh}), por lo tanto, su salida esta definida por:
+Es bastante similar a Sigmoid pero tiene un rendimiento mucho mejor respecto al entrenamiento de redes neuronales multicapa, su naturaleza es no lineal. \'{E}sta funci\'{o}n est\'{a} centrada en 0 y su rango se encuentra entre -1 y 1 (Ver Figura \ref{fig:tanh}), por lo tanto, su salida esta definida por:
 
 \begin{equation}
 f(x)=\frac{e^{x}-e^{-x}}{e^{x}+e^{-x}}
@@ -176,9 +174,9 @@ Aunque esta funci\'{o}n tenga un mejor rendimiento que la sigmoide, no pudo reso
 
 Las funciones de tangente se han utilizado principalmente en redes neuronales recurrentes para el procesamiento del lenguaje natural \cite{43} y tareas de reconocimiento del habla \cite{44}.
     
-\subsection{Funci\'{o}n de unidad lineal rectificada (Rectified Linear Unit - ReLU)}
+\subsubsection{Funci\'{o}n de unidad lineal rectificada (Rectified Linear Unit - ReLU)}
 
-La funci\'{o}n ReLU fue propuesta por Nair y Hinton en 2010, y desde entonces ha sido la funci\'{o}n de activaci\'{o}n m\'{a}s ampliamente utilizada para aplicaciones de aprendizaje autom\'{a}tico con redes neuronales. ReLu es una funci\'{o}n de activaci\'{o}n de aprendizaje m\'{a}s r\'{a}pido \cite{46}, por lo que demostr\'{o} ser la funci\'{o}n m\'{a}s exitosa y m\'{a}s usada. Esta funci\'{o}n ofrece un mejor rendimiento y generalizaci\'{o}n que las funciones sigmoide y tangente en el aprendizaje con redes neuronales.
+La funci\'{o}n ReLU fue propuesta por Nair y Hinton en 2010, y desde entonces ha sido la funci\'{o}n de activaci\'{o}n m\'{a}s ampliamente utilizada para aplicaciones de aprendizaje autom\'{a}tico con redes neuronales. ReLU es una funci\'{o}n de activaci\'{o}n de aprendizaje m\'{a}s r\'{a}pido \cite{46}, por lo que demostr\'{o} ser la funci\'{o}n m\'{a}s exitosa y m\'{a}s usada. Esta funci\'{o}n ofrece un mejor rendimiento y generalizaci\'{o}n que las funciones sigmoide y tangente en el aprendizaje con redes neuronales.
 
 \vspace{5mm} %5mm vertical space
 
@@ -239,7 +237,7 @@ A diferencia del cerebro humano, una Red Neuronal Artificial tiene una estructur
 
 \subsection{Proceso de aprendizaje de las Redes Neuronales}
 
-Una caracter\'{i}stica clave de las  redes neuronales es su proceso de aprendizaje iterativo, es decir, cada ejemplo del conjunto de entrenamiento se presenta a la red uno a la vez con lo que los pesos asociados con los valores de entrada se ajustan cada vez. Durante esta fase de aprendizaje, la red se entrena ajustando los pesos para predecir una salida correcta para las muestras de entrada.
+Una caracter\'{i}stica clave de las  redes neuronales es su proceso de aprendizaje iterativo, es decir, cada ejemplo del conjunto de entrenamiento se presenta a la red, uno a la vez, con lo que los pesos asociados con los valores de entrada se ajustan cada vez. Durante esta fase de aprendizaje, la red se entrena ajustando los pesos para predecir una salida correcta para las muestras de entrada.
 
 \vspace{5mm} %5mm vertical space
 
@@ -265,7 +263,7 @@ Por lo tanto se puede decir que el algoritmo de Backpropagation toma el error as
 
 \subsection{Autoencoders}
 
-Un Autoencoder es una Red Neuronal Artificial usada para aprendizaje autom\'{a}tico no supervisado, esta entrenada para reconstruir sus propias entradas, es decir, predecir el valor de la salida $\hat{x}$ dada una entrada $x$ via una capa oculta $h$, ver Figura \ref{fig:autoencoder}. Los autoencoders suelen ser usados para reducci\'{o}n de dimensionalidad y aprendizaje de caracter\'{i}sticas. 
+Un Autoencoder es una Red Neuronal Artificial usada para aprendizaje autom\'{a}tico no supervisado, esta entrenada para reconstruir sus propias entradas, es decir, predecir el valor de la salida $\hat{x}$ dada una entrada $x$ v\'{i}a una capa oculta $h$, ver Figura \ref{fig:autoencoder}. Los autoencoders suelen ser usados para reducci\'{o}n de dimensionalidad y aprendizaje de caracter\'{i}sticas. 
 
 \begin{figure}[h!]
   \begin{center}	\includegraphics[width=0.95\textwidth]{imagenes/Cap4/autoencoder}
@@ -276,86 +274,91 @@ Un Autoencoder es una Red Neuronal Artificial usada para aprendizaje autom\'{a}t
 
 Los autoencoders est\'{a}n compuestos de dos partes: el codificador y decodificador. El codificador aprende una representaci\'{o}n compresa de los datos de entrada, este puede ser definido con la funci\'{o}n de codificaci\'{o}n $h=encoder(x)$, el cual es definido por una funci\'{o}n lineal o no lineal. Si la funci\'{o}n del codificador es no lineal el autoencoder ser\'{a} capaz de aprender m\'{a}s caracter\'{i}sticas que un PCA lineal. El prop\'{o}sito del decodificador es reconstruir su propia entrada v\'{i}a la funci\'{o}n de decodificaci\'{o}n, $\hat{x} = decodificador(h)$. Los autoencoders intentan minimizar el error de reconstrucci\'{o}n, el cual es definido como la diferencia entre la salida del decodificador y la entrada original.
 
-% tipos === continuar haciendo ===>> https://blog.statsbot.co/neural-networks-for-beginners-d99f2235efca
+\subsection{Redes neuronales convolucionales}
 
-
-%3.1. Autoencoder based Anomaly Detection
-An autoencoder is an artificial neural network that consists of sequentially connected encoder
-and decoder networks. The encoder learns a compressed representation, i.e., latent
-variables of the input data, which is fed into the decoder network to reconstruct the input.
-This network tries to minimize the reconstruction error, which is defined as the difference
-between the output of the decoder and the original input. The traditional autoencoder
-based anomaly detection method is a deviation based anomaly detection method in a semisupervised
-learning fashion (An and Cho (2015)). The reconstruction error is set as the
-anomaly score, while samples with high reconstruction errors are considered as anomalies.
-In the training phase, only normal data will be used to train the autoencoder, aiming to
-minimize the reconstruction error, so that the autoencoder can recognize the characteristics
-of normal data. In the testing phase, the learned autoencoder will be able to reconstruct
-normal data will small reconstruction errors, but fail with anomalous data which the autoencoder
-has not encountered before and thus have relatively higher reconstruction errors
-compared with normal data. Thus, by comparing whether the anomaly score is above a
-predefined threshold, an autoencoder can determine whether the tested data is anomalous. http://proceedings.mlr.press/v95/guo18a/guo18a.pdf
-
-
- //https://s3.amazonaws.com/academia.edu.documents/56469357/PublishedFinalVersion.pdf?response-content-disposition=inline%3B%20filename%3DUnsupervised_obstacle_detection_in_drivi.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWOWYYGZ2Y53UL3A%2F20191007%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20191007T143912Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=189c9e79c42aa12b297a7640ad68df1a2c48ac6be3ff7e2c1affe2fd36211a13
-
-
-
-%When the autoencoder is used for anomaly detection, anomalies can be identified based on the history of the squared error between the inputs and outputs for the training records. Let e be the set of reconstruction error values of the xi AX, where i ¼ 1; …; m. If the reconstruction error for a test sample is larger than the threshold τ ¼ μðeÞþ3σðeÞ, where μðeÞ and σðeÞ are the mean and standard deviation of the values in the set e, respectively, then the record is identified as anomalous, otherwise it is identified as normal.
-
-%. Anomalies then can be identified by the autoencoder based on the history of the squared error between the inputs and outputs for the training records. Let e be the reconstruction error of xi ∈ X, where i = 1, . . . , n. If the reconstruction error for a test sample is larger than the threshold τ = µ(e) + 3 σ(e), the record is identified as anomalous, otherwise it is identified as normal
-
-%%%%%%%%%%%%%%%%
-
-
+Para algunos tipos de datos, especificamente para im\'{a}genes, las redes neuronales convencionales no est\'{a}n bien adaptadas; lo cual conlleva que en \cite{48} propongan las redes neuronales convolucionales (CNN\footnote{\textbf{CNN,} Convolutional Neural Network}) para solucionar ese problema. Las CNN han revolucionado el procesamiento de im\'{a}genes y han eliminado la extracci\'{o}n manual de caracter\'{i}sticas. Una CNN act\'{u}a directamente en matrices, o incluso en tensores para im\'{a}genes con tres canales de color RGB; por lo que actualmente, las CNN se usan ampliamente para la clasificaci\'{o}n de im\'{a}genes, reconocimiento de objetos, reconocimiento de rostros, entre otros.
 
 \vspace{5mm} %5mm vertical space
 
-Para la generaci\'{o}n del modelo de detecci\'{o}n de anomal\'{i}as se opt\'{o} por algoritmos de aprendizaje autom\'{a}tico enfocados en series de tiempo, dado que los datos, de los sensores capturados por el dispositivo m\'{o}vil, dependen del tiempo en el que fueron capturados; por lo cual el primer paso a realizar es la generacion de peque\~{n}as fracciones de series temporales. 
-
-\textbf{Generaci\'{o}n de series temporales}
+Las CNN no solo brindan un mejor rendimiento en comparaci\'{o}n con otros algoritmos de detecci\'{o}n; sino que incluso en algunos casos superan a los humanos, como por ejemplo en la clasificaci\'{o}n de objetos en categor\'{i}as espec\'{i}ficas como la raza particular de un perro o una especie de ave \cite{49}.
 
 \vspace{5mm} %5mm vertical space
 
-En el Cuadro \ref{table:series-de-tiempo} se presenta los resultados de diferentes tama\~{n}os de series de tiempo, observando esos resultados en primera instancia se descarta la serie de tiempo que cuenta con s\'{o}lo un paso en el tiempo debido a que su uso se limitar\'{i}a a una mera detecci\'{o}n de anomal\'{i}as puntuales, lo cual no es el objetivo del presente trabajo de grado, por otra parte la serie temporal que tiene dos pasos no es lo suficientemente descriptiva raz\'{o}n por la que esta serie de tiempo tambi\'{e}n queda descartada, llegando a este punto moment\'{a}neamente no es posible definir la cantidad correcta de pasos en las series de tiempo, por lo cual al igual que la cantidad de componentes principales, ser\'{a} un par\'{a}metro a optimizar en los diferentes experimentos que se realizar\'{a} en las siguientes secciones. Cabe recalcar que el dominio de esta variable estar\'{a} entre 3 a 5 pasos y el de la cantidad de componentes principales estar\'{a} entre 3 y 4.
+Al apilar múltiples y diferentes capas en una CNN, se crean arquitecturas complejas para los problemas de clasificación. Los cuatro tipos de capas que son más comunes son: capa de convolución, capa de agrupación/submuestreo, capa no lineal y capa completamente conectada. En la Figura \ref{fig:cnn} se puede ver un ejemplo de una CNN, donde la primera y tercera capa son capas convolucionales, la segunda y la cuarta son capas de submuestreo y por \'{u}ltimo la quinta y la sexta capa con capas completamente conectadas. 
 
-\begin{landscape}
-\pagestyle{empty}
-\begin{table}[p!]
-\centering
-\begin{tabular}{|l|l|l|l|l|l|}
-\hline
-\multicolumn{1}{|c|}{\multirow{2}{*}{\textbf{\begin{tabular}[c]{@{}c@{}}Nro de \\ Componentes\end{tabular}}}} & \multicolumn{5}{c|}{\textbf{Tama\~{n}os de series de tiempo}}                                                                                                               \\ \cline{2-6} 
-\multicolumn{1}{|c|}{}                                                                                        & \multicolumn{1}{c|}{\textbf{1}} & \multicolumn{1}{c|}{\textbf{2}} & \multicolumn{1}{c|}{\textbf{3}} & \multicolumn{1}{c|}{\textbf{4}} & \multicolumn{1}{c|}{\textbf{5}} \\ \hline
-3                                                                              & \adj{\includegraphics[width=1.5in]{imagenes/Cap4/pca3-1}} &\adj{\includegraphics[width=1.5in]{imagenes/Cap4/pca3-2}}&\adj{\includegraphics[width=1.5in]{imagenes/Cap4/pca3-3}}&\adj{\includegraphics[width=1.5in]{imagenes/Cap4/pca3-4}}&\adj{\includegraphics[width=1.5in]{imagenes/Cap4/pca3-5}} \\ \hline
-4                                                                               & \adj{\includegraphics[width=1.5in]{imagenes/Cap4/pca4-1}} &\adj{\includegraphics[width=1.5in]{imagenes/Cap4/pca4-2}}&\adj{\includegraphics[width=1.5in]{imagenes/Cap4/pca4-3}}&\adj{\includegraphics[width=1.5in]{imagenes/Cap4/pca4-4}}&\adj{\includegraphics[width=1.5in]{imagenes/Cap4/pca4-5}} \\ \hline
-\end{tabular}
-\caption{Tabla con diferentes tama\~{n}os de series de tiempo para 3 y 4 componentes principales.}
-  \label{table:series-de-tiempo}
-\end{table}
-\end{landscape}
+\begin{figure}[h!]
+  \begin{center}	\includegraphics[width=0.95\textwidth]{imagenes/Cap4/cnn}
+  \caption{Arquitectura de una Red Neuronal Convolucional (CNN).}
+  \label{fig:cnn}
+  \end{center}
+\end{figure}
 
-\pagestyle{thesis}
-
-Una vez definido como se tratar\'{a} el conjunto de datos se puede proceder con la siguiente fase (modelo ajustado al comportamiento normal).
-
-\section{Modelo del comportamiento normal}
-
-Esta etapa es una de las partes m\'{a}s importantes de \'{e}ste trabajo debido a que el rendimiendo del modelo de detecci\'{o}n de anomal\'{i}as depende en gran parte a la capacidad  de esta etapa
-
-\section{Aprendizaje autom\'{a}tico para an\'{a}lisis de series de tiempo}
+\subsection{Redes neuronales recurrentes}
 
 Para entender la importancia de las series de tiempo se puede tomar la siguiente analog\'{i}a, los seres humanos no comienzan a pensar desde cero cada segundo, por lo que al leer un documento se comprende cada palabra bas\'{a}ndose en la comprensi\'{o}n de las palabras anteriores, es decir, no se elimina todo y se empieza a pensar de cero cada vez, dada \'{e}sta afirmaci\'{o}n se puede decir que los pensamientos de los seres humanos tienen persistencia.
 
 \vspace{5mm} %5mm vertical space
 
-Las redes neuronales tradicionales no tienen persistencia de los datos, lo que para algunos problemas en concreto, incluyendo el que se aborda en este trabajo, es una gran deficiencia. Con el fin de resolver este tipo de problemas aparecen las Redes Neuronales Recurrentes (RNN), las cuales son un tipo de red neuronal artificial propuesta en los a\~{n}os 80 (\cite{34}, \cite{35}, \cite{36}) dise\~{n}ada para reconocer patrones en secuencias de datos, como texto, genomas, escritura a mano, datos de series de tiempo num\'{e}ricos que emanan de sensores, entre otros.
+Las redes neuronales tradicionales no tienen persistencia de los datos, lo que para algunos problemas en concreto, incluyendo el que se aborda en este trabajo, es una gran deficiencia. Con el fin de resolver este tipo de problemas aparecen las Redes Neuronales Recurrentes (RNN\footnote{\textbf{RNN,} Recurrent Neural Network}), las cuales son un tipo de red neuronal artificial propuesta en los a\~{n}os 80 (\cite{34}, \cite{35}, \cite{36}) dise\~{n}ada para reconocer patrones en secuencias de datos, como texto, genomas, escritura a mano, datos de series de tiempo num\'{e}ricos que emanan de sensores, entre otros.
 
 \vspace{5mm} %5mm vertical space
 
-La estructura de las RNN es similar a la de un perceptr\'{o}n multicapa \'{e}standar, con la diferencia de que permite conexiones entre unidades ocultas asociadas con un retardo de tiempo; a trav\'{e}s de estas conexiones, el modelo puede retener informaci\'{o}n sobre el pasado, lo que le permite descubrir correlaciones temporales entre eventos que est\'{a}n muy lejos unos de otros en los datos.
+Las RNN son una familia particular de redes neuronales donde la red contiene una o más conexiones de retroalimentación, de modo que la activación de un grupo de neuronas puede fluir en un bucle. Esta propiedad hace que el modelo pueda retener informaci\'{o}n sobre el pasado, lo que le permite descubrir correlaciones temporales entre eventos que est\'{a}n muy lejos unos de otros en los datos.
 
-Las RNN tienen una cierta memoria de lo que sucedi\'{o} anteriormente en una secuencia de datos, esto ayuda al sistema a ganar contexto de los datos. Te\'{o}ricamente se dice que las RNN tiene memoria infinita, es decir, este tipo de redes tienen la capacidad de mirar hacia atras indefinidamente; sin embargo en la practica solo se puede mirar atras unos ultimos pasos.
+\vspace{5mm} %5mm vertical space
 
-LSTM esta dise\~{n}ado para obtener un flujo constante de errores en el tiempo y proteger este flujo de errores
+Las RNN tienen una cierta memoria de lo que sucedi\'{o} anteriormente en una secuencia de datos, esto ayuda al sistema a ganar contexto de los datos. Te\'{o}ricamente se dice que las RNN tiene memoria infinita, es decir, este tipo de redes tienen la capacidad de mirar hacia atr\'{a}s indefinidamente; sin embargo en la pr\'{a}ctica s\'{o}lo se puede mirar atr\'{a}s unos \'{u}ltimos pasos.
 
+\begin{figure}[h!]
+  \begin{center}	\includegraphics[width=0.95\textwidth]{imagenes/Cap4/rnn}
+  \caption{Procesamiento secuencial en una red neuronal recurrente (RNN) \cite{53}.}
+  \label{fig:rnn}
+  \end{center}
+\end{figure}
+
+En la Figura \ref{fig:rnn} se ilustra una simple RNN con una unidad de entrada, una unidad de salida y una unidad oculta recurrente expandida en una red completa, donde $x_{t}$ es la entrada en el paso de tiempo $t$ y $y_{t}$ es la salida en el paso de tiempo $t$. Por otra parte en el proceso de entrenamiento las RNN usan el algoritmo de Backpropagation a trav\'{e}s del tiempo (BPTT\footnote{\textbf{BPTT,} Backpropagation Through The Time}). El proceso BPTT utiliza un enfoque de trabajo hacia atrás, capa por capa, de la salida final de la red, ajustando los pesos de cada unidad de acuerdo con la porción calculada de la unidad del error de la salida total. La repetición de los bucles de información da como resultado grandes actualizaciones de los pesos del modelo de red neuronal y conduce a una red inestable debido a la acumulación de gradientes de error durante el proceso de actualización. Por lo tanto, BPTT no es lo suficientemente eficiente como para aprender un patrón de dependencia a largo plazo debido a la desaparición del gradiente y la explosión de los problemas del gradiente \cite{50}. Para superar los problemas de gradiente de desaparición y explosión que tienen las RNN estándar, se pueden usar LSTM y GRU \cite{51}.
+
+\subsection{LSTM}
+
+LSTM\footnote{\textbf{LSTM,} Long Short-Term Memory} es una evoluci\'{o}n de RNN, fue introducida por Hochreiter y Schmidhuber en \cite{52} para abordar los problemas de las RNN est\'{a}ndar que fueron mencionados antes, agregando interacciones adicionales por m\'{o}dulo (o celda). Los LSTM son un tipo especial de RNN, capaces de aprender dependencias a largo plazo y recordar información por períodos prolongados por defecto.
+
+\vspace{5mm} %5mm vertical space
+
+El modelo LSTM está organizado en forma de estructura de cadena. Sin embargo, el módulo de repetición tiene una estructura diferente. En lugar de una sola red neuronal como un RNN estándar, tiene cuatro capas interactivas con un método único de comunicación. La estructura de la red neuronal LSTM se muestra en la Figura \ref{fig:lstm}.
+
+\begin{figure}[h!]
+  \begin{center}	\includegraphics[width=0.95\textwidth]{imagenes/Cap4/lstm}
+  \caption{Estructura de LSTM. Reproducido desde Yan \cite{54}.} 
+  \label{fig:lstm}
+  \end{center}
+\end{figure}
+
+Una t\'{i}pica red LSTM esta compuesta por bloques de memoria llamados celdas. Dos estados se transfieren a la siguiente celda, el estado de la celda y el estado oculto. El \textbf{estado de la celda} es la cadena principal del flujo de datos, lo que permite que los datos fluyan hacia adelante, esencialmente, sin cambios. Sin embargo, pueden ocurrir algunas transformaciones lineales. Los datos pueden agregar o eliminar el estado de la celda a trav\'{e}s de puertas sigmoideas.
+
+\vspace{5mm} %5mm vertical space
+
+Una puerta es similar a una capa o una serie de operaciones matriciales, la cual contiene diferentes pesos individuales. Los LSTM est\'{a}n dise\~{n}ados para evitar el problema de dependencia a largo plazo porque utiliza puertas para controlar el proceso de memorizaci\'{o}n. 
+
+\subsection{GRU}
+
+GRU\footnote{\textbf{GRU, }Gated Recurrent Unit} fue dise\~{n}ado por primera vez por Kyunghyun Cho en \cite{55}. Esta estructura de RNN s\'{o}lo contiene dos puertas. La puerta de actualizaci\'{o}n controla la informaci\'{o}n que fluye hacia la memoria, mientras que la puerta de reinicio controla la informaci\'{o}n que fluye fuera de la memoria. De manera similar a la LSTM, GRU tiene unidades de compuerta que modulan el flujo de informaci\'{o}n dentro de la unidad; sin embargo, sin tener una celda de memoria separada. Se podr\'{i}a decir que GRU es una variante de RNN un poco m\'{a}s simplificada que a menudo ofrece un rendimiento comparable a LSTM y es significativamente m\'{a}s r\'{a}pido de calcular.
+
+\vspace{5mm} %5mm vertical space
+
+En resumen, las GRU tienen las siguientes dos caracter\'{i}sticas distintivas:
+
+\begin{itemize}
+\item Las \textbf{puertas de reinicio} ayudan a capturar dependencias a corto plazo en series de tiempo.
+\item Las \textbf{puertas de actualizaci\'{o}n} ayudan a capturar dependencias a largo plazo en series de tiempo.
+\end{itemize}
+
+\begin{figure}[h!]
+  \begin{center}	\includegraphics[width=0.95\textwidth]{imagenes/Cap4/gru}
+  \caption{Estructura de GRU. Reproducido desde \cite{56}.} 
+  \label{fig:gru}
+  \end{center}
+\end{figure}
+
+\section{Resumen del cap\'{i}tulo}
+
+Este cap\'{i}tulo permite complementar los conocimientos necesarios para abordar el desarrollo del m\'{e}todo de detecci\'{o}n de anomal\'{i}as de conducci\'{o}n mediante el uso de Aprendizaje Autom\'{a}tico. En primer lugar, se decribi\'{o} los diferentes paradigmas de aprendizaje que existen y los diferentes enfoques de modelos, luego, se realiz\'{o} una descripci\'{o}n del funcionamiento de las redes neuronales y se mostr\'{o} sus diferentes tipos, entre ellos los autoencoders, que son  el m\'{e}todo elegido para la detecci\'{o}n de anomal\'{i}as en el presente proyecto. El siguiente cap\'{i}tulo detalla la generaci\'{o}n del modelo de detecci\'{o}n de anomal\'{i}as de manejo.

@@ -44,12 +44,21 @@
 \contentsline {subsection}{\numberline {4.3.2}Tipos de funciones de activaci\'{o}n}{32}{subsection.88}
 \contentsline {subsubsection}{Funci\'{o}n de activaci\'{o}n sigmoide (funci\'{o}n log\'{i}stica)}{32}{section*.90}
 \contentsline {subsubsection}{Funci\'{o}n de tangente hiperb\'{o}lica - tanh}{32}{section*.92}
-\contentsline {subsection}{\numberline {4.3.3}Funci\'{o}n de unidad lineal rectificada (Rectified Linear Unit - ReLU)}{33}{subsection.94}
+\contentsline {subsubsection}{Funci\'{o}n de unidad lineal rectificada (Rectified Linear Unit - ReLU)}{33}{section*.94}
 \contentsline {subsubsection}{Leaky ReLU (LReLU)}{34}{section*.96}
-\contentsline {subsection}{\numberline {4.3.4}Arquitectura de las Redes Neuronales}{34}{subsection.98}
-\contentsline {subsection}{\numberline {4.3.5}Proceso de aprendizaje de las Redes Neuronales}{35}{subsection.100}
+\contentsline {subsection}{\numberline {4.3.3}Arquitectura de las Redes Neuronales}{34}{subsection.98}
+\contentsline {subsection}{\numberline {4.3.4}Proceso de aprendizaje de las Redes Neuronales}{35}{subsection.100}
 \contentsline {subsubsection}{Backpropagation}{35}{section*.101}
 \contentsline {section}{\numberline {4.4}Tipos de Redes Neuronales}{36}{section.102}
 \contentsline {subsection}{\numberline {4.4.1}Autoencoders}{36}{subsection.103}
-\contentsline {section}{\numberline {4.5}Modelo del comportamiento normal}{39}{section.106}
-\contentsline {section}{\numberline {4.6}Aprendizaje autom\'{a}tico para an\'{a}lisis de series de tiempo}{39}{section.107}
+\contentsline {subsection}{\numberline {4.4.2}Redes neuronales convolucionales}{36}{subsection.105}
+\contentsline {subsection}{\numberline {4.4.3}Redes neuronales recurrentes}{37}{subsection.108}
+\contentsline {subsection}{\numberline {4.4.4}LSTM}{39}{subsection.112}
+\contentsline {subsection}{\numberline {4.4.5}GRU}{40}{subsection.115}
+\contentsline {section}{\numberline {4.5}Resumen del cap\'{i}tulo}{41}{section.118}
+\contentsline {chapter}{\numberline {5}Generaci\'{o}n del modelo de detecci\'{o}n de anomal\'{i}as de conducci\'{o}n}{43}{chapter.119}
+\contentsline {section}{\numberline {5.1}Conjunto de muestra}{43}{section.120}
+\contentsline {section}{\numberline {5.2}Modelo de detecci\'{o}n de anomal\'{i}as}{44}{section.122}
+\contentsline {subsection}{\numberline {5.2.1}Generaci\'{o}n de series temporales}{44}{subsection.123}
+\contentsline {section}{\numberline {5.3}Modelo del comportamiento normal}{46}{section.125}
+\contentsline {section}{\numberline {5.4}Autoencoders para la detecci\'{o}n de anomal\'{i}as}{46}{section.126}
