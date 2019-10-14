@@ -51,14 +51,17 @@
 \contentsline {subsubsection}{Backpropagation}{35}{section*.101}
 \contentsline {section}{\numberline {4.4}Tipos de Redes Neuronales}{36}{section.102}
 \contentsline {subsection}{\numberline {4.4.1}Autoencoders}{36}{subsection.103}
-\contentsline {subsection}{\numberline {4.4.2}Redes neuronales convolucionales}{36}{subsection.105}
+\contentsline {subsection}{\numberline {4.4.2}Redes neuronales convolucionales}{37}{subsection.105}
 \contentsline {subsection}{\numberline {4.4.3}Redes neuronales recurrentes}{37}{subsection.108}
 \contentsline {subsection}{\numberline {4.4.4}LSTM}{39}{subsection.112}
 \contentsline {subsection}{\numberline {4.4.5}GRU}{40}{subsection.115}
-\contentsline {section}{\numberline {4.5}Resumen del cap\'{i}tulo}{41}{section.118}
-\contentsline {chapter}{\numberline {5}Generaci\'{o}n del modelo de detecci\'{o}n de anomal\'{i}as de conducci\'{o}n}{43}{chapter.119}
-\contentsline {section}{\numberline {5.1}Conjunto de muestra}{43}{section.120}
-\contentsline {section}{\numberline {5.2}Modelo de detecci\'{o}n de anomal\'{i}as}{44}{section.122}
-\contentsline {subsection}{\numberline {5.2.1}Generaci\'{o}n de series temporales}{44}{subsection.123}
-\contentsline {section}{\numberline {5.3}Modelo del comportamiento normal}{46}{section.125}
-\contentsline {section}{\numberline {5.4}Autoencoders para la detecci\'{o}n de anomal\'{i}as}{46}{section.126}
+\contentsline {section}{\numberline {4.5}T\'{e}cnicas de detecci\'{o}n de anomal\'{i}as}{40}{section.118}
+\contentsline {subsection}{\numberline {4.5.1}One-Class SVM}{40}{subsection.119}
+\contentsline {subsection}{\numberline {4.5.2}Autoencoders}{41}{subsection.122}
+\contentsline {subsection}{\numberline {4.5.3}Isolation Forest}{43}{subsection.125}
+\contentsline {section}{\numberline {4.6}Resumen del cap\'{i}tulo}{44}{section.127}
+\contentsline {chapter}{\numberline {5}Generaci\'{o}n del modelo de detecci\'{o}n de anomal\'{i}as de conducci\'{o}n}{45}{chapter.128}
+\contentsline {section}{\numberline {5.1}Conjunto de datos normales y an\'{o}malos}{45}{section.129}
+\contentsline {subsection}{\numberline {5.1.1}Generaci\'{o}n de series temporales}{46}{subsection.131}
+\contentsline {section}{\numberline {5.2}Modelo de detecci\'{o}n de anomal\'{i}as}{46}{section.133}
+\contentsline {subsection}{\numberline {5.2.1}Modelo del comportamiento normal}{46}{subsection.135}

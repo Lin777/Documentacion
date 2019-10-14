@@ -30,5 +30,8 @@
 \contentsline {figure}{\numberline {4.6}{\ignorespaces Arquitectura de una Red Neuronal Convolucional (CNN).\relax }}{37}{figure.caption.107}
 \contentsline {figure}{\numberline {4.7}{\ignorespaces Procesamiento secuencial en una red neuronal recurrente (RNN) \cite {53}.\relax }}{38}{figure.caption.110}
 \contentsline {figure}{\numberline {4.8}{\ignorespaces Estructura de LSTM. Reproducido desde Yan \cite {54}.\relax }}{39}{figure.caption.114}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Estructura de GRU. Reproducido desde \cite {56}.\relax }}{40}{figure.caption.117}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Estructura de GRU. Reproducido desde \cite {56}.\relax }}{41}{figure.caption.117}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces One-Class SVM\relax }}{41}{figure.caption.121}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Detecci\'{o}n de anomal\'{i}as con autoencoder\relax }}{42}{figure.caption.124}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces La figura de la izquierda muestra el aislamiento de una anomal\IeC {\'\i }a, que requiere solo tres particiones. A la derecha, el aislamiento de un punto normal requiere seis particiones \cite {60}.\relax }}{43}{figure.caption.126}
 \addvspace {10\p@ }

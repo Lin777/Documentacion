@@ -272,7 +272,11 @@ Un Autoencoder es una Red Neuronal Artificial usada para aprendizaje autom\'{a}t
   \end{center}
 \end{figure}
 
-Los autoencoders est\'{a}n compuestos de dos partes: el codificador y decodificador. El codificador aprende una representaci\'{o}n compresa de los datos de entrada, este puede ser definido con la funci\'{o}n de codificaci\'{o}n $h=encoder(x)$, el cual es definido por una funci\'{o}n lineal o no lineal. Si la funci\'{o}n del codificador es no lineal el autoencoder ser\'{a} capaz de aprender m\'{a}s caracter\'{i}sticas que un PCA lineal. El prop\'{o}sito del decodificador es reconstruir su propia entrada v\'{i}a la funci\'{o}n de decodificaci\'{o}n, $\hat{x} = decodificador(h)$. Los autoencoders intentan minimizar el error de reconstrucci\'{o}n, el cual es definido como la diferencia entre la salida del decodificador y la entrada original.
+Los autoencoders est\'{a}n compuestos de dos partes: el codificador y decodificador. El codificador aprende una representaci\'{o}n compresa de los datos de entrada, este puede ser definido con la funci\'{o}n de codificaci\'{o}n $h=encoder(x)$, el cual es definido por una funci\'{o}n lineal o no lineal. Si la funci\'{o}n del codificador es no lineal el autoencoder ser\'{a} capaz de aprender m\'{a}s caracter\'{i}sticas que un PCA lineal. El prop\'{o}sito del decodificador es reconstruir su propia entrada v\'{i}a la funci\'{o}n de decodificaci\'{o}n, $\hat{x} = decodificador(h)$.
+
+\vspace{5mm} %5mm vertical space
+
+La diferencia entre la entrada y la entrada reconstruida es el \textbf{error de reconstrucción}. Durante el entrenamiento, el autoencoder minimiza el error de reconstrucción como una función objetivo. Los autoencoders se usan a menudo para la generación de datos como modelos generativos. El decodificador de un autoencoder puede generar una salida dada una representación comprimida asignada artificialmente.
 
 \subsection{Redes neuronales convolucionales}
 
@@ -359,6 +363,78 @@ En resumen, las GRU tienen las siguientes dos caracter\'{i}sticas distintivas:
   \end{center}
 \end{figure}
 
+
+\section{T\'{e}cnicas de detecci\'{o}n de anomal\'{i}as}
+
+Existen varios enfoques disponibles para la detección de anomalías, en esta secci\'{o}n se describir\'{a} algunos de los algoritmos m\'{a}s usados.
+
+\subsection{One-Class SVM}
+
+One-Class SVM\footnote{\textbf{SVM, }Support Vector Machine} (OC-SVM) es un enfoque ampliamente utilizado para descubrir anomal\'{i}as de forma no supervisada \cite{59}. Las OC-SVM son una de las técnicas de aprendizaje semi-supervisado más utilizadas, debido a que da buenos resultados incluso para conjuntos de datos de alta dimensión. Sin embargo, este algoritmo tiene la desventaja de que requiere mucho tiempo y memoria en la práctica y su complejidad crece de forma cuadrática con el número de registros.
+
+\vspace{5mm} %5mm vertical space
+
+Este algoritmo s\'{o}lo se entrena con ejemplos positivos (clases normales). La idea general de \'{e}ste algoritmo es transformar el espacio de atributos y dibujar un hiperplano divisorio para que las observaciones se encuentren lo m\'{a}s lejos posible del origen, como se puede observar en la Figura \ref{fig:oc-svm}.
+
+\begin{figure}[h!]
+  \begin{center}	\includegraphics[width=0.45\textwidth]{imagenes/Cap4/oc-svm}
+  \caption{One-Class SVM} 
+  \label{fig:oc-svm}
+  \end{center}
+\end{figure}
+
+\vspace{5mm} %5mm vertical space
+
+Como resultado, se obtiene un margen, en un lado del cual las observaciones de la muestra de entrenamiento se agrupan lo más densamente posible (observaciones normales $\hat{y_{i}} = 1$) , y en el otro, se encuentran los valores anormales ( $\hat{y_{i}} = -1$ ), no similares a lo que el algoritmo vi\'{o} durante el entrenamiento.
+
+\subsection{Autoencoders}
+
+Hoy en día, los autoencoders se han utilizado ampliamente en la clasificación de imágenes, traducción automática y procesamiento de voz; esto debido a su capacidad de compresión de datos sin supervisión. Hasta donde se sabe, Hawkins et al. y Williams et al. fueron los primeros que propusieron autocodificadores para la detección de anomalías \cite{57}, \cite{58}. Desde entonces, la capacidad de los autoencoders para detectar valores at\'{i}picos se demostró en diferentes dominios como por ejemplo la detecci\'{o}n de anomal\'{i}as en rayos X.
+
+\vspace{5mm} %5mm vertical space
+
+El m\'{e}todo tradicional de detecci\'{o}n de anomal\'{i}as basada en autoencoder se basa principalmente en el error de reconstrucci\'{o}n, considerando como anomal\'{i}as aquellas muestras que presentan un alto error de reconstrucci\'{o}n. En la fase de entrenamiento, solo se usan datos normales para entrenar el autoencoder, con el objetivo de minimizar el error de reconstrucci\'{o}n, de modo que el autoencoder pueda reconocer las caracter\'{i}sticas de los datos normales. En la fase de prueba, el autoencoder entrenado podr'{a} reconstruir datos normales con peque\~{n}os errores de reconstrucci\'{o}n, pero fallar\'{a}n con datos an\'{o}malos que el autoencoder no ha encontrado antes y, por lo tanto, tienen errores de reconstrucci\'{o}n relativamente m\'{a}s altos en comparaci\'{o}n a los datos normales. Por lo tanto, al comparar si el puntaje de reconstrucci\'{o}n de una anomal\'{i}a est\'{a} por encima de un umbral (threshold) predefinido, el autoencoder determinar si los datos presentados para la prueba son an\'{o}malos \cite{47} (Ver Figura \ref{fig:autoencoder-anomaly}). La ecuaci\'{o}n \ref{eqn:threshold} se observa como esta t\'{e}cnica determina lo que es una anomal\'{i}a y lo que no lo es; donde $S_{z}$ representa el error de reconstrucci\'{o}n.
+
+\begin{equation}
+C(z) = \left\lbrace
+\begin{array}{ll}
+\textup{si } S_{z}\leq \textup{Umbral} & \textup{Comportamiento normal}\\
+\textup{si } S_{z}> \textup{Umbral} & \textup{Anomal\'{i}a}
+\end{array}
+\right.
+\label{eqn:threshold}
+\end{equation}
+
+\begin{figure}[h!]
+  \begin{center}	\includegraphics[width=0.95\textwidth]{imagenes/Cap4/autoencoder-anomaly}
+  \caption{Detecci\'{o}n de anomal\'{i}as con autoencoder} 
+  \label{fig:autoencoder-anomaly}
+  \end{center}
+\end{figure}
+
+\subsection{Isolation Forest}
+
+Este modelo se usa en un escenario similar al de una clase SVM, específicamente en un entorno no supervisado. El bosque de aislamiento adopta un enfoque diferente del SVM de una clase, ya que en lugar de agrupar datos normales, trata de aislar los datos anómalos.
+
+\vspace{5mm} %5mm vertical space
+
+El componente básico del Isolation Forest (Bosque de aislamiento) es el árbol de aislamiento, que es un árbol binario simple donde en cada nodo $T_{i}$ tanto la característica como el umbral para la regla de división se seleccionan aleatoriamente. Un nodo existente deja de generar hijos si y solo si solo hay un ejemplo siguiendo la regla de división para esa ruta específica (lo que significa que el ejemplo se ha aislado) o se ha alcanzado una altura máxima. Esto significa que al final del proceso de capacitación tendremos un árbol de clasificación aleatorio completamente sobreajustado, que puede usarse para fines de detección de anomalías. La intuición principal de este algoritmo es que si un ejemplo es anómalo, se aislará después de algunos cortes en el espacio de características, lo que se traduce en tener una baja altura en el árbol de aislamiento.
+
+\begin{figure}[h!]
+  \begin{center}	\includegraphics[width=0.75\textwidth]{imagenes/Cap4/isolation-forest}
+  \caption{La figura de la izquierda muestra el aislamiento de una anomalía, que requiere solo tres particiones. A la derecha, el aislamiento de un punto normal requiere seis particiones \cite{60}.} 
+  \label{fig:isolartion-forest}
+  \end{center}
+\end{figure}
+
+\vspace{5mm} %5mm vertical space
+
+La Figura \ref{fig:isolartion-forest} ilustra el algoritmo y cómo se espera que un punto de datos anómalo se aísle rápidamente, mientras que se espera que un punto de datos normal necesite más particiones.
+
+\vspace{5mm} %5mm vertical space
+
+A diferencia de otros métodos como la agrupación o clasificación, los bosques de aislamiento no aprenden un perfil de lo que es normal, sino que atacan directamente las anomalías. No se utiliza métrica de distancia en este algoritmo lo cual ahorra tiempo en los cálculos; por lo que los bosques de aislamiento tienen una complejidad temporal lineal. 
+
 \section{Resumen del cap\'{i}tulo}
 
-Este cap\'{i}tulo permite complementar los conocimientos necesarios para abordar el desarrollo del m\'{e}todo de detecci\'{o}n de anomal\'{i}as de conducci\'{o}n mediante el uso de Aprendizaje Autom\'{a}tico. En primer lugar, se decribi\'{o} los diferentes paradigmas de aprendizaje que existen y los diferentes enfoques de modelos, luego, se realiz\'{o} una descripci\'{o}n del funcionamiento de las redes neuronales y se mostr\'{o} sus diferentes tipos, entre ellos los autoencoders, que son  el m\'{e}todo elegido para la detecci\'{o}n de anomal\'{i}as en el presente proyecto. El siguiente cap\'{i}tulo detalla la generaci\'{o}n del modelo de detecci\'{o}n de anomal\'{i}as de manejo.
+Este cap\'{i}tulo permite complementar los conocimientos necesarios para abordar el desarrollo del m\'{e}todo de detecci\'{o}n de anomal\'{i}as de conducci\'{o}n mediante el uso de Aprendizaje Autom\'{a}tico. En primer lugar, se decribi\'{o} los diferentes paradigmas de aprendizaje que existen y los diferentes enfoques de modelos, luego, se realiz\'{o} una descripci\'{o}n del funcionamiento de las redes neuronales y se mostr\'{o} sus diferentes tipos y por \'{u}timo se presenta diferentes t\'{e}cnicas de detecci\'{o}n de anomal\'{i}as. El siguiente cap\'{i}tulo detalla la generaci\'{o}n del modelo de detecci\'{o}n de anomal\'{i}as de manejo.
