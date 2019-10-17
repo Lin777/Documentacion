@@ -82,8 +82,86 @@ Como se mencion\'{o} en la anterior secci\'{o}n en esta etapa se utilizar\'{a} u
 
 \vspace{5mm} %5mm vertical space
 
-Para ello se prob\'{o} con diferentes arquitecturas, los detalles se presentan en el Cuadro ... .
+Para ello se prob\'{o} con diferentes arquitecturas, los detalles se presentan en el Cuadro ... . 
 
+\begin{table}[]
+\centering
+\begin{center}
+\begin{tabular}{ll|l|r|l|r|}
+\cline{3-6}
+                                                    &                             & \multicolumn{4}{c|}{\textbf{Arquitectura Convolucional}}                                                                                                           \\ \cline{3-6} 
+                                                    &                             & \multicolumn{4}{c|}{\textbf{NN}}                                                                                                                                   \\ \cline{3-6} 
+                                                    &                             & \multicolumn{1}{c|}{\textbf{Tipo}} & \multicolumn{1}{c|}{\textbf{Salida}} & \multicolumn{1}{c|}{\textbf{Activacion}} & \multicolumn{1}{l|}{\textbf{\# Parametros}} \\ \hline
+\multicolumn{1}{|l|}{\multirow{7}{*}{\textbf{PCA}}} & \multirow{7}{*}{\textbf{3}} & Input                              & (3,3)                                &                                          & 0                                           \\ \cline{3-6} 
+\multicolumn{1}{|l|}{}                              &                             & Flatten                            & 9                                    &                                          & 0                                           \\ \cline{3-6} 
+\multicolumn{1}{|l|}{}                              &                             & Dense                              & 6                                    & relu                                     & 60                                          \\ \cline{3-6} 
+\multicolumn{1}{|l|}{}                              &                             & Dense                              & 3                                    & relu                                     & 21                                          \\ \cline{3-6} 
+\multicolumn{1}{|l|}{}                              &                             & Dense                              & 6                                    & relu                                     & 24                                          \\ \cline{3-6} 
+\multicolumn{1}{|l|}{}                              &                             & Dense                              & 9                                    & tanh                                     & 63                                          \\ \cline{3-6} 
+\multicolumn{1}{|l|}{}                              &                             & Reshape                            & (3,3)                                &                                          & 0                                           \\ \hline
+\end{tabular}
+\end{center}
+\caption{Arquitectura densa para una secuencia de 3 pasos y 3 componentes principales}
+\label{table:dense33}
+\end{table}
+
+% ejemplos de cuadros de aruqitecturas de redes https://webthesis.biblio.polito.it/10360/1/tesi.pdf
+
+% metricas de evaluacion http://www.diva-portal.org/smash/get/diva2:1225367/FULLTEXT01.pdf  , https://escholarship.org/content/qt1f03f6hb/qt1f03f6hb.pdf  ,   http://www.nada.kth.se/~ann/exjobb/maxim_wolpher.pdf
+
+% Ejemplo cuadros resultados    https://arxiv.org/pdf/1809.00957.pdf 
+
+% simple autoencoder
+
+
+
+% cnn autoencoder
+
+\begin{table}[]
+\centering
+\begin{center}
+\begin{tabular}{ll|l|r|l|r|}
+\cline{3-6}
+                                                    &                             & \multicolumn{4}{c|}{\textbf{Arquitectura Convolucional}}                                                                                                           \\ \cline{3-6} 
+                                                    &                             & \multicolumn{4}{c|}{\textbf{CNN}}                                                                                                                                  \\ \cline{3-6} 
+                                                    &                             & \multicolumn{1}{c|}{\textbf{Tipo}} & \multicolumn{1}{c|}{\textbf{Salida}} & \multicolumn{1}{c|}{\textbf{Activacion}} & \multicolumn{1}{l|}{\textbf{\# Parametros}} \\ \hline
+\multicolumn{1}{|l|}{\multirow{8}{*}{\textbf{PCA}}} & \multirow{8}{*}{\textbf{3}} & Input                              & (3,3)                                &                                          & 0                                           \\ \cline{3-6} 
+\multicolumn{1}{|l|}{}                              &                             & Conv1D                             & (3,2)                                & relu                                     & 20                                          \\ \cline{3-6} 
+\multicolumn{1}{|l|}{}                              &                             & MaxPooling1D                       & (2,2)                                &                                          & 0                                           \\ \cline{3-6} 
+\multicolumn{1}{|l|}{}                              &                             & Conv1D                             & (2,4)                                & relu                                     & 28                                          \\ \cline{3-6} 
+\multicolumn{1}{|l|}{}                              &                             & MaxPooling1D                       & (1,4)                                &                                          & 0                                           \\ \cline{3-6} 
+\multicolumn{1}{|l|}{}                              &                             & Conv1D                             & (1,6)                                & relu                                     & 54                                          \\ \cline{3-6} 
+\multicolumn{1}{|l|}{}                              &                             & UpSampling1D                       & (3,6)                                &                                          & 0                                           \\ \cline{3-6} 
+\multicolumn{1}{|l|}{}                              &                             & Conv1D                             & \multicolumn{1}{l|}{(3,3)}           & tanh                                     & 57                                          \\ \hline
+\end{tabular}
+\end{center}
+\caption{Arquitectura convolucional para una secuencia de 3 pasos y 3 componentes principales}
+\label{table:cnn33}
+\end{table}
+
+% lstm autoencoder
+
+
+\begin{table}[]
+\centering
+\begin{center}
+\begin{tabular}{ll|l|r|l|r|}
+\cline{3-6}
+                                                    &                             & \multicolumn{4}{c|}{\textbf{Arquitectura Recurrente}}                                                                                                           \\ \cline{3-6} 
+                                                    &                             & \multicolumn{4}{c|}{\textbf{RNN}}                                                                                                                                  \\ \cline{3-6} 
+                                                    &                             & \multicolumn{1}{c|}{\textbf{Tipo}} & \multicolumn{1}{c|}{\textbf{Salida}} & \multicolumn{1}{c|}{\textbf{Activacion}} & \multicolumn{1}{l|}{\textbf{\# Parametros}} \\ \hline
+\multicolumn{1}{|l|}{\multirow{7}{*}{\textbf{PCA}}} & \multirow{7}{*}{\textbf{3}} & Input                              & (3,3)                                &                                          & 0                                           \\ \cline{3-6} 
+\multicolumn{1}{|l|}{}                              &                             & LSTM                               & (3,9)                                & relu                                     & 468                                         \\ \cline{3-6} 
+\multicolumn{1}{|l|}{}                              &                             & LSTM                               & 6                                    & relu                                     & 384                                         \\ \cline{3-6} 
+\multicolumn{1}{|l|}{}                              &                             & Reshape                            & (3,2)                                &                                          & 0                                           \\ \cline{3-6} 
+\multicolumn{1}{|l|}{}                              &                             & LSTM                               & (3,3)                                & relu                                     & 72                                          \\ \cline{3-6} 
+\multicolumn{1}{|l|}{}                              &                             & LSTM                               & (3,9)                                & relu                                     & 468                                         \\ \cline{3-6} 
+\multicolumn{1}{|l|}{}                              &                             & TimeDistributed(Dense)             & (3,3)                                & tanh                                     & 30                                          \\ \hline
+\end{tabular}
+\end{center}
+\caption{Arquitectura recurrente para una secuencia de 3 pasos y 3 componentes principales}
+\label{table:rnn33}
+\end{table}
 
 
 \vspace{5mm} %5mm vertical space

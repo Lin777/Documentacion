@@ -1,7 +1,7 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {spanish}{}
 \contentsline {chapter}{Agradecimientos}{\es@scroman {iii}}{section*.1}
-\contentsline {chapter}{Resumen}{\es@scroman {xiii}}{section*.6}
+\contentsline {chapter}{Resumen}{\es@scroman {xv}}{section*.6}
 \contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n}{1}{chapter.7}
 \contentsline {section}{\numberline {1.1}Planteamiento del problema}{1}{section.8}
 \contentsline {section}{\numberline {1.2}Objetivo general}{3}{section.11}
@@ -59,9 +59,24 @@
 \contentsline {subsection}{\numberline {4.5.1}One-Class SVM}{40}{subsection.119}
 \contentsline {subsection}{\numberline {4.5.2}Autoencoders}{41}{subsection.122}
 \contentsline {subsection}{\numberline {4.5.3}Isolation Forest}{43}{subsection.125}
-\contentsline {section}{\numberline {4.6}Resumen del cap\'{i}tulo}{44}{section.127}
-\contentsline {chapter}{\numberline {5}Generaci\'{o}n del modelo de detecci\'{o}n de anomal\'{i}as de conducci\'{o}n}{45}{chapter.128}
-\contentsline {section}{\numberline {5.1}Conjunto de datos normales y an\'{o}malos}{45}{section.129}
-\contentsline {subsection}{\numberline {5.1.1}Generaci\'{o}n de series temporales}{46}{subsection.131}
-\contentsline {section}{\numberline {5.2}Modelo de detecci\'{o}n de anomal\'{i}as}{46}{section.133}
-\contentsline {subsection}{\numberline {5.2.1}Modelo del comportamiento normal}{46}{subsection.135}
+\contentsline {section}{\numberline {4.6}M\'{e}tricas de evaluaci\'{o}n}{44}{section.127}
+\contentsline {subsection}{\numberline {4.6.1}Precisi\'{o}n de clasificaci\'{o}n (accuracy)}{44}{subsection.128}
+\contentsline {subsection}{\numberline {4.6.2}P\'{e}rdida logar\'{i}tmica (Logarithmic Loss)}{44}{subsection.130}
+\contentsline {subsection}{\numberline {4.6.3}Matriz de confusi\'{o}n}{45}{subsection.132}
+\contentsline {subsection}{\numberline {4.6.4}\'{A}rea bajo la curva (AUC)}{46}{subsection.135}
+\contentsline {subsubsection}{Tasa de Verdaderos Positivos (TPR)}{46}{section*.137}
+\contentsline {subsubsection}{Tasa de Falsos Positivos (FPR) }{46}{section*.140}
+\contentsline {subsubsection}{ROC (Receiver Operating Characteristics)}{46}{section*.143}
+\contentsline {subsection}{\numberline {4.6.5}F1 Score}{47}{subsection.145}
+\contentsline {subsubsection}{Precisi\'{o}n (Precision)}{47}{section*.146}
+\contentsline {subsubsection}{Recuperaci\'{o}n (Recall)}{47}{section*.148}
+\contentsline {section}{\numberline {4.7}Resumen del cap\'{i}tulo}{48}{section.151}
+\contentsline {chapter}{\numberline {5}Generaci\'{o}n del modelo de detecci\'{o}n de anomal\'{i}as de conducci\'{o}n}{49}{chapter.152}
+\contentsline {section}{\numberline {5.1}Conjunto de datos normales y an\'{o}malos}{49}{section.153}
+\contentsline {subsection}{\numberline {5.1.1}Generaci\'{o}n de series temporales}{50}{subsection.155}
+\contentsline {section}{\numberline {5.2}Modelo de detecci\'{o}n de anomal\'{i}as}{50}{section.157}
+\contentsline {subsection}{\numberline {5.2.1}Modelo del comportamiento normal}{50}{subsection.159}
+\contentsline {chapter}{\numberline {A}Experimentos de diferentes arquitecturas para los autoencoders}{55}{appendix.163}
+\contentsline {section}{\numberline {A.1}Redes densas}{55}{section.164}
+\contentsline {subsection}{\numberline {A.1.1}Redes densas para 3 componentes}{55}{subsection.165}
+\contentsline {subsection}{\numberline {A.1.2}Redes densas para 3 componentes}{55}{subsection.167}

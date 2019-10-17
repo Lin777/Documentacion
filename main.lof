@@ -34,4 +34,6 @@
 \contentsline {figure}{\numberline {4.10}{\ignorespaces One-Class SVM\relax }}{41}{figure.caption.121}
 \contentsline {figure}{\numberline {4.11}{\ignorespaces Detecci\'{o}n de anomal\'{i}as con autoencoder\relax }}{42}{figure.caption.124}
 \contentsline {figure}{\numberline {4.12}{\ignorespaces La figura de la izquierda muestra el aislamiento de una anomal\IeC {\'\i }a, que requiere solo tres particiones. A la derecha, el aislamiento de un punto normal requiere seis particiones \cite {60}.\relax }}{43}{figure.caption.126}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Ejemplo de un curva AUC-ROC \cite {62}.\relax }}{47}{figure.caption.144}
+\addvspace {10\p@ }
 \addvspace {10\p@ }

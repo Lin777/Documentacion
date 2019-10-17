@@ -1,7 +1,48 @@
 % Appendix A
 
-\chapter{Frequently Asked Questions} % Main appendix title
+\chapter{Experimentos de diferentes arquitecturas para los autoencoders} % Main appendix title
 
 \label{AppendixA} % For referencing this appendix elsewhere, use \ref{AppendixA}
 
-\section{How do I change the colors of links?}
+\section{Redes densas}
+
+\subsection{Redes densas para 3 componentes}
+
+\begin{table}[]
+\centering
+\begin{center}
+\begin{tabular}{ll|l|r|l|r|}
+\cline{3-6}
+                                                    &                             & \multicolumn{4}{c|}{\textbf{Arquitectura Convolucional}}                                                                                                           \\ \cline{3-6} 
+                                                    &                             & \multicolumn{4}{c|}{\textbf{NN}}                                                                                                                                   \\ \cline{3-6} 
+                                                    &                             & \multicolumn{1}{c|}{\textbf{Tipo}} & \multicolumn{1}{c|}{\textbf{Salida}} & \multicolumn{1}{c|}{\textbf{Activaci\'{o}n}} & \multicolumn{1}{l|}{\textbf{\# Par\'{a}metros}} \\ \hline
+\multicolumn{1}{|l|}{\multirow{7}{*}{\textbf{PCA}}} & \multirow{7}{*}{\textbf{3}} & Input                              & (3,3)                                &                      & 0                                           \\ \cline{3-6} 
+\multicolumn{1}{|l|}{}                              &                             & Flatten                            & 9                                    &                                          & 0                                           \\ \cline{3-6} 
+\multicolumn{1}{|l|}{}                              &                             & Dense                              & 6                                    & relu                                     & 60                                          \\ \cline{3-6} 
+\multicolumn{1}{|l|}{}                              &                             & Dense                              & 3                                    & relu                                     & 21                                          \\ \cline{3-6} 
+\multicolumn{1}{|l|}{}                              &                             & Dense                              & 6                                    & relu                                     & 24                                          \\ \cline{3-6} 
+\multicolumn{1}{|l|}{}                              &                             & Dense                              & 9                                    & tanh                                     & 63                                          \\ \cline{3-6} 
+\multicolumn{1}{|l|}{}                              &                             & Reshape                            & (3,3)                                &                                          & 0                                           \\ \hline
+
+\multicolumn{1}{|l|}{\multirow{7}{*}{\textbf{PCA}}} & \multirow{7}{*}{\textbf{4}} & Input                              & (3,3)                                &                                          & 0                                           \\ \cline{3-6} 
+\multicolumn{1}{|l|}{}                              &                             & Flatten                            & 9                                    &                                          & 0                                           \\ \cline{3-6} 
+\multicolumn{1}{|l|}{}                              &                             & Dense                              & 6                                    & relu                                     & 60                                          \\ \cline{3-6} 
+\multicolumn{1}{|l|}{}                              &                             & Dense                              & 3                                    & relu                                     & 21                                          \\ \cline{3-6} 
+\multicolumn{1}{|l|}{}                              &                             & Dense                              & 6                                    & relu                                     & 24                                          \\ \cline{3-6} 
+\multicolumn{1}{|l|}{}                              &                             & Dense                              & 9                                    & tanh                                     & 63                                          \\ \cline{3-6} 
+\multicolumn{1}{|l|}{}                              &                             & Reshape                            & (3,3)                                &                                          & 0                                           \\ \hline
+\multicolumn{1}{|l|}{\multirow{7}{*}{\textbf{PCA}}} & \multirow{7}{*}{\textbf{5}} & Input                              & (3,3)                                &                                          & 0                                           \\ \cline{3-6} 
+\multicolumn{1}{|l|}{}                              &                             & Flatten                            & 9                                    &                                          & 0                                           \\ \cline{3-6} 
+\multicolumn{1}{|l|}{}                              &                             & Dense                              & 6                                    & relu                                     & 60                                          \\ \cline{3-6} 
+\multicolumn{1}{|l|}{}                              &                             & Dense                              & 3                                    & relu                                     & 21                                          \\ \cline{3-6} 
+\multicolumn{1}{|l|}{}                              &                             & Dense                              & 6                                    & relu                                     & 24                                          \\ \cline{3-6} 
+\multicolumn{1}{|l|}{}                              &                             & Dense                              & 9                                    & tanh                                     & 63                                          \\ \cline{3-6} 
+\multicolumn{1}{|l|}{}                              &                             & Reshape                            & (3,3)                                &                                          & 0                                           \\ \hline
+\end{tabular}
+\end{center}
+\caption{Arquitectura densa para 3 componentes principales}
+\label{table:dense3_345}
+\end{table}
+
+
+\subsection{Redes densas para 3 componentes}

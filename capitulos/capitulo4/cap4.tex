@@ -435,6 +435,147 @@ La Figura \ref{fig:isolartion-forest} ilustra el algoritmo y cómo se espera que
 
 A diferencia de otros métodos como la agrupación o clasificación, los bosques de aislamiento no aprenden un perfil de lo que es normal, sino que atacan directamente las anomalías. No se utiliza métrica de distancia en este algoritmo lo cual ahorra tiempo en los cálculos; por lo que los bosques de aislamiento tienen una complejidad temporal lineal. 
 
+\section{M\'{e}tricas de evaluaci\'{o}n}
+%https://towardsdatascience.com/metrics-to-evaluate-your-machine-learning-algorithm-f10ba6e38234
+
+Evaluar los algoritmos de aprendizaje autom\'{a}tico es una parte esencial para cualquier proyecto, debido a que un modelo puede brindar resultados satisfactorios cuando es evaluado con una m\'{e}trica; pero puede dar un resultado deficiente cuando se utiliza otra m\'{e}trica. Com\'{u}nmente se usa la precisi\'{o}n de clasificaci\'{o}n para medir el rendimiento de un modelo, sin embargo, no es suficiente para juzgar un modelo. A continuaci\'{o}n se cubrir\'{a} diferentes tipos de m\'{e}tricas de evaluaci\'{o}n.
+
+\subsection{Precisi\'{o}n de clasificaci\'{o}n (accuracy)}
+
+La precisi\'{o}n de clasificaci\'{o}n, conocida tambi\'{e}n con el nombre de precisi\'{o}n, es la relaci\'{o}n entre el n\'{u}mero de predicciones correctas y el n\'{u}mero total de muestras de entrada.
+
+\begin{equation}
+\textup{Precisi\'{o}n} = \frac{\textup{N\'{u}mero de predicciones correctas}}{\textup{N\'{u}mero total de predicciones realizadas}}
+\end{equation}
+
+Esta m\'{e}trica funciona bien si hay el mismo n\'{u}mero de muestras que pertenecen a cada clase; por ejemplo, si se considera que se tiene un conjunto de datos que contiene 98\% de muestras que pertenecen a la clase A y 2\% que pertenecen a la clase B, el modelo podr\'{i}a obtener f\'{a}cilmente un 98\% de precisi\'{o}n de entrenamiento simplemente prediciendo cada muestra de entrenamiento como clase A. 
+
+\vspace{5mm} %5mm vertical space
+
+Esto conlleva que la precisi\'{o}n puede dar la falsa sensaci\'{o}n de lograr una alta precisi\'{o}n, lo cual se convierte en un verdadero problema si se trata problemas que conllevan la detecci\'{o}n de cosas de alto riesgo; por ejemplo, de una enfermedad rara pero mortal ya que el costo de no diagnosticar la enfermedad de una persona enferma es mucho mayor que el costo de enviar a una persona sana a realizarce  m\'{a}s an\'{a}lisis.
+
+\subsection{P\'{e}rdida logar\'{i}tmica (Logarithmic Loss)}
+
+La p\'{e}rdida logar\'{i}tmica, conocida tambi\'{e}n como \textit{Log Loss}, funciona penalizando las clasificaciones falsas, adem\'{a}s tiene un buen rendimiento para la clasificaci\'{o}n de varias clases. Cuando se trabaja con Log Loss, el clasificador debe asignar una probabilidad a cada clase de todas las muestras; suponiendo que hay $N$ muestras que pertenecen a clases $M$, Log Loss se calcula seg\'{u}n la siguiente ecuaci\'{o}n:
+
+\begin{equation}
+LogarithmicLoss = \frac{-1}{N}\sum_{i=1}^{N}\sum_{j=1}^{M} y_{ij}*log(p_{ij})
+\end{equation}
+
+donde:
+\\
+$y_{ij}$, indica si la muestra $i$ pertenece a la clase $j$ o no.\\
+$p_{ij}$, indica la probabilidad de que la muestra $i$ pertenezca a la clase $j$.
+
+\vspace{5mm} %5mm vertical space
+
+Log Loss no tiene l\'{i}mite superior y existe en el rango $[0, \infty )$. Cuando se obtiene un Log Loss cercano a 0 indica una mayor precisi\'{o}n, mientras que si est\'{a} lejos de 0 indica una menor precisi\'{o}n. En general se puede decir que minimizar Log Loss proporciona una mayor precisi\'{o}n para el clasificador.
+
+\subsection{Matriz de confusi\'{o}n}
+
+La matriz de confusi\'{o}n, tambi\'{e}n llamada matriz de error, es el m\'{e}todo m\'{a}s com\'{u}n para evaluar la exactitud de un resultado de clasificaci\'{o}n \cite{61}. Esta matriz es una tabulaci\'{o}n cruzada de los datos esperados y los resultados de la clasificaci\'{o}n del modelo. El n\'{u}mero de columnas y filas es igual al n\'{u}mero de categor\'{i}as de las clasificaci\'{o}n y de ellas se derivan diferentes medidas estad\'{i}sticas.
+
+\begin{table}[]
+
+\centering
+\begin{center}
+\begin{tabular}{ll|c|c|}
+\cline{3-4}
+                                                        &                                              & \multicolumn{2}{c|}{\textbf{Predicci\'{o}n}}                                                          \\ \cline{3-4} 
+                                                        &                                              & \textbf{Clase Positiva}                         & \textbf{Clase Negativa}                         \\ \hline
+\multicolumn{1}{|c|}{}                                  & \multicolumn{1}{c|}{\textbf{Clase Positiva}} & \cellcolor[HTML]{AADD99}Verdadero Positivo (VP) & \cellcolor[HTML]{FFCE93}Falso Negativo (FN)     \\ \cline{2-4} 
+\multicolumn{1}{|c|}{\multirow{-2}{*}{\textbf{Reales}}} & \multicolumn{1}{c|}{\textbf{Clase Negativa}} & \cellcolor[HTML]{DF9F9F}Falso Positivo (FP)     & \cellcolor[HTML]{AADD99}Verdadero Negativo (VN) \\ \hline
+\end{tabular}
+\caption{Matriz de confusi\'{o}n, para una clasificaci\'{o}n binaria.}
+\label{table:matriz}
+\end{center}
+\end{table}
+
+\vspace{5mm} %5mm vertical space
+
+En el Cuadro \ref{table:matriz} las filas de la matriz representan los valores reales, mientras que las columnas est\'{a}n asociadas con los datos clasificados por el modelo (predicciones). La diagonal principal, que se presenta de color verde, indica los aciertos \'{o} Verdaderos Positivos (VP) y Verdaderos Negativos (VN), que son todos aquellos datos donde el modelo obtiene el mismo resultado que se esperaba obtener. En cuanto a todos los dem\'{a}s valores de la matriz pertenecen a aquellos datos que fueron clasificados de forma err\'{o}nea, estos se clasifican en dos clases: Falsos Positivos (FP), que en la matriz se presentan de color rojo y Falsos Negativos (FN) que en la matriz fueron representados de color naranja.
+
+\vspace{5mm} %5mm vertical space
+
+
+
+La precisi\'{o}n global de la matriz se calcula dividiendo la suma de muestras correctamente clasificadas por el n\'{u}mero total de muestras tomadas \ref{eqn:exactitud}. Este valor es una medida de clasificaci\'{o}n como un todo, ya que indica la probabilidad de que una muestra se clasifique correctamente.
+
+\begin{equation}
+Exactitud=\frac{VP+VN}{VP+VN+FP+FN}
+\label{eqn:exactitud}
+\end{equation}
+
+La exactitud no es una medida adecuada para la evaluaci\'{o}n de algoritmos de detecci\'{o}n de valores at\'{i}picos, debido a que la mayoria de las veces un falso negativo es mucho m\'{a}s costoso que un falso positivo, adem\'{a}s que los conjuntos de entrenamiento presentan una gran cantidad de datos normales comparado a la cantidad de datos an\'{o}malos. Existen dos m\'{e}tricas comunes para evaluar algoritmos de detecci\'{o}n de valores at\'{i}picos, AUC y F1 Score; a continuaci\'{o}n se profundizar\'{a} detalladamente estas dos m\'{e}tricas.
+
+\subsection{\'{A}rea bajo la curva (AUC)}
+
+\'{A}rea bajo la curva (AUC\footnote{\textbf{AUC, }Area Under Curve}) es una de las m\'{e}tricas m\'{a}s utilizadas para la evaluaci\'{o}n. Se utiliza para problemas de clasificaci\'{o}n binaria.
+
+\vspace{5mm} %5mm vertical space
+
+El AUC de un clasificador es igual a la probabilidad de que el clasificador clasifique un ejemplo positivo elegido al azar m\'{a}s alto que un ejemplo negativo elegido al azar. Antes de definir AUC, se debe comprender los siguientes t\'{e}rminos:
+
+\subsubsection{Tasa de Verdaderos Positivos (TPR)}
+
+La tasa de verdaderos positivos (TPR\footnote{\textbf{TPR, }de sus siglas en ingl\'{e}s True Positive Rate, tambi\'{e}n conocido como Sensitivity.}), tambi\'{e}n conocida como sensibilidad, corresponde a la proporción de puntos de datos positivos que se consideran correctamente como positivos, con respecto a todos los puntos de datos positivos. Se define seg\'{u}n la ecuaci\'{o}n \ref{eqn:sensibility}.
+
+\begin{equation}
+Sensibilidad = \frac{VP}{FN+VP}
+\label{eqn:sensibility}
+\end{equation}
+
+\subsubsection{Tasa de Falsos Positivos (FPR) }
+
+La tasa de falsos positivos (FPR\footnote{\textbf{FPR, }de sus siglas en ingl\'{e}s False Positive Rate, tambi\'{e}n conocido como Specificity.}), tambi\'{e}n conocida como especificidad, corresponde a la proporción de puntos de datos negativos que se consideran erróneamente como positivos, con respecto a todos los puntos de datos negativos. Se define seg\'{u}n la ecuaci\'{o}n \ref{eqn:specificity}.
+
+\begin{equation}
+Especificidad = \frac{FP}{FP+VN}
+\label{eqn:specificity}
+\end{equation}
+
+\subsubsection{ROC (Receiver Operating Characteristics)}
+
+ROC es la curva dibujada conectando los puntos del eje X = FPR (Tasa de falsos positivos) y el eje y = TPR (Tasa de verdaderos positivos) para diferentes valores de umbral para un modelo, es decir, se elige diferentes umbrales para un modelo, se calcula el TPR y FPR para cada umbral, luego dibuja la curva ROC y finalmente se calcula el AUC, que es el \'{a}rea bajo la curva ROC. En la Figura \ref{fig:auc_roc} se muestra un ejemplo de la curva AUC-ROC.
+
+\begin{figure}[h!]
+  \begin{center}	\includegraphics[width=0.65\textwidth]{imagenes/Cap4/auc_roc}
+  \caption{Ejemplo de un curva AUC-ROC \cite{62}.}
+  \label{fig:auc_roc}
+  \end{center}
+\end{figure}
+
+
+\vspace{5mm} %5mm vertical space
+
+Existen dos razones principales por lo que se necesita esta curva, la primera es que refleja que tan bueno es el modelo para separar dos clases y la segunda es que ayuda a elegir el mejor umbral; por ejemplo, un AUC igual a 0,5 significa que el modelo separa dos posibles resultados al azar y un AUC de 1 (valor m\'{a}ximo) implica una separaci\'{o}n perfecta; por lo tanto se puede decir que mientras mayor sea el valor de AUC mejor es el rendimiento del modelo que se este evaluando.
+
+\subsection{F1 Score}
+
+F1 Score define que tan preciso es un modelo, es decir, cu\'{a}ntas instancias clasifica correctamente, as\'{i} como tambi\'{e}n indica que tan robusto es el modelo. Esta m\'{e}trica es necesaria cuando se desea buscar un equilibrio entre la precisi\'{o}n y la recuperaci\'{o}n, ya que da una evaluaci\'{o}n justa incluso cuando el conjunto de datos se encuentra desequilibrado.
+
+\subsubsection{Precisi\'{o}n (Precision)}
+
+La precisi\'{o}n es el n\'{u}mero de resultados positivos correctos dividido por el n\'{u}mero de resultados positivos predichos por el clasificador.
+
+\begin{equation}
+Precision = \frac{VP}{VP+FP}
+\end{equation}
+
+\subsubsection{Recuperaci\'{o}n (Recall)}
+
+Es el n\'{u}mero de resultados positivos correctos dividido por el n\'{u}mero de todas las muestras que deber\'{i}an haber sido clasificadas como positivas.
+
+\begin{equation}
+Recall = TPR = \frac{VP}{VP+FN}
+\end{equation}
+
+Por lo tanto, F1 Score se expresa matem\'{a}ticamente como:
+
+\begin{equation}
+F1 = 2*\frac{1}{\frac{1}{Precision}+\frac{1}{Recall}}
+\end{equation}
+
 \section{Resumen del cap\'{i}tulo}
 
-Este cap\'{i}tulo permite complementar los conocimientos necesarios para abordar el desarrollo del m\'{e}todo de detecci\'{o}n de anomal\'{i}as de conducci\'{o}n mediante el uso de Aprendizaje Autom\'{a}tico. En primer lugar, se decribi\'{o} los diferentes paradigmas de aprendizaje que existen y los diferentes enfoques de modelos, luego, se realiz\'{o} una descripci\'{o}n del funcionamiento de las redes neuronales y se mostr\'{o} sus diferentes tipos y por \'{u}timo se presenta diferentes t\'{e}cnicas de detecci\'{o}n de anomal\'{i}as. El siguiente cap\'{i}tulo detalla la generaci\'{o}n del modelo de detecci\'{o}n de anomal\'{i}as de manejo.
+Este cap\'{i}tulo permite complementar los conocimientos necesarios para abordar el desarrollo del m\'{e}todo de detecci\'{o}n de anomal\'{i}as de conducci\'{o}n mediante el uso de Aprendizaje Autom\'{a}tico. En primer lugar, se decribi\'{o} los diferentes paradigmas de aprendizaje que existen y los diferentes enfoques de modelos, luego, se realiz\'{o} una descripci\'{o}n del funcionamiento de las redes neuronales y se mostr\'{o} sus diferentes tipos, as\'{i} como tambi\'{e}n diferentes t\'{e}cnicas de detecci\'{o}n de anomal\'{i}as y por \'{u}timo se presenta diferentes m\'{e}tricas de evaluaci\'{o}n de modelos de aprendizaje autom\'{a}tico. El siguiente cap\'{i}tulo detalla la generaci\'{o}n del modelo de detecci\'{o}n de anomal\'{i}as de manejo.

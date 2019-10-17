@@ -6,7 +6,13 @@
 \contentsline {table}{\numberline {3.1}{\ignorespaces Tabla de divisi\'{o}n del conjunto de datos.\relax }}{21}{table.caption.69}
 \contentsline {table}{\numberline {3.2}{\ignorespaces Tabla con estad\'{i}sticas descriptivas de los datos escalados con diferentes t\'{e}cnicas.\relax }}{25}{table.caption.72}
 \addvspace {10\p@ }
+\contentsline {table}{\numberline {4.1}{\ignorespaces Matriz de confusi\'{o}n, para una clasificaci\'{o}n binaria.\relax }}{45}{table.caption.133}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Tabla del conjunto de anomal\'{i}as.\relax }}{45}{table.caption.130}
-\contentsline {table}{\numberline {5.2}{\ignorespaces Tabla con diferentes tama\~{n}os de series de tiempo para 3 y 4 componentes principales.\relax }}{47}{table.caption.132}
-\contentsline {table}{\numberline {5.3}{\ignorespaces Tabla de los m\'{e}todos comparados.\relax }}{48}{table.caption.134}
+\contentsline {table}{\numberline {5.1}{\ignorespaces Tabla del conjunto de anomal\'{i}as.\relax }}{49}{table.caption.154}
+\contentsline {table}{\numberline {5.2}{\ignorespaces Tabla con diferentes tama\~{n}os de series de tiempo para 3 y 4 componentes principales.\relax }}{51}{table.caption.156}
+\contentsline {table}{\numberline {5.3}{\ignorespaces Tabla de los m\'{e}todos comparados.\relax }}{52}{table.caption.158}
+\contentsline {table}{\numberline {5.4}{\ignorespaces Arquitectura densa para una secuencia de 3 pasos y 3 componentes principales\relax }}{52}{table.caption.160}
+\contentsline {table}{\numberline {5.5}{\ignorespaces Arquitectura convolucional para una secuencia de 3 pasos y 3 componentes principales\relax }}{53}{table.caption.161}
+\contentsline {table}{\numberline {5.6}{\ignorespaces Arquitectura recurrente para una secuencia de 3 pasos y 3 componentes principales\relax }}{53}{table.caption.162}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {A.1}{\ignorespaces Arquitectura densa para 3 componentes principales\relax }}{56}{table.caption.166}
