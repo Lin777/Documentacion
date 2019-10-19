@@ -25,15 +25,17 @@
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Gr\'{a}fico de una neurona biol\'{o}gica.\relax }}{30}{figure.caption.85}
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Gr\'{a}fico de una neurona artificial.\relax }}{31}{figure.caption.86}
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Funciones de activaci\'{o}n.\relax }}{32}{figure.caption.89}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Arquitectura de una neurona artificial.\relax }}{34}{figure.caption.99}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Gr\'{a}fico de un Autoencoder.\relax }}{36}{figure.caption.104}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Arquitectura de una Red Neuronal Convolucional (CNN).\relax }}{37}{figure.caption.107}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Procesamiento secuencial en una red neuronal recurrente (RNN) \cite {53}.\relax }}{38}{figure.caption.110}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Estructura de LSTM. Reproducido desde Yan \cite {54}.\relax }}{39}{figure.caption.114}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Estructura de GRU. Reproducido desde \cite {56}.\relax }}{41}{figure.caption.117}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces One-Class SVM\relax }}{41}{figure.caption.121}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Detecci\'{o}n de anomal\'{i}as con autoencoder\relax }}{42}{figure.caption.124}
-\contentsline {figure}{\numberline {4.12}{\ignorespaces La figura de la izquierda muestra el aislamiento de una anomal\IeC {\'\i }a, que requiere solo tres particiones. A la derecha, el aislamiento de un punto normal requiere seis particiones \cite {60}.\relax }}{43}{figure.caption.126}
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Ejemplo de un curva AUC-ROC \cite {62}.\relax }}{47}{figure.caption.144}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Arquitectura de una neurona artificial.\relax }}{35}{figure.caption.102}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Gr\'{a}fico de un Autoencoder.\relax }}{37}{figure.caption.107}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Arquitectura de una Red Neuronal Convolucional (CNN).\relax }}{38}{figure.caption.110}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Procesamiento secuencial en una red neuronal recurrente (RNN) \cite {53}.\relax }}{39}{figure.caption.113}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Estructura de LSTM. Reproducido desde Yan \cite {54}.\relax }}{40}{figure.caption.117}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Estructura de GRU. Reproducido desde \cite {56}.\relax }}{41}{figure.caption.120}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces One-Class SVM\relax }}{42}{figure.caption.124}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Detecci\'{o}n de anomal\'{i}as con autoencoder\relax }}{43}{figure.caption.127}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces La figura de la izquierda muestra el aislamiento de una anomal\IeC {\'\i }a, que requiere solo tres particiones. A la derecha, el aislamiento de un punto normal requiere seis particiones \cite {60}.\relax }}{44}{figure.caption.129}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Ejemplo de un curva AUC-ROC \cite {62}.\relax }}{47}{figure.caption.147}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Resultados.\relax }}{55}{figure.caption.168}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

@@ -145,9 +145,14 @@ Existen diferentes funciones de activaci\'{o}n, a continuaci\'{o}n solo se prese
             \caption{Funci\'{o}n Leaky ReLu}
             \label{fig:l_relu}
         \end{subfigure}
+        \begin{subfigure}[h]{0.45\textwidth} 
+            \includegraphics[width=\textwidth]{imagenes/Cap4/elu}
+            \caption{Funci\'{o}n ELU}
+            \label{fig:elu}
+        \end{subfigure}
         \caption{Funciones de activaci\'{o}n.}
         
-		\label{fig:nor_nor}
+		\label{fig:funciones_activacion}
     \end{figure}
     
 \subsubsection{Funci\'{o}n de activaci\'{o}n sigmoide (funci\'{o}n log\'{i}stica)}
@@ -216,6 +221,24 @@ f(x) = \alpha x + x = \left\lbrace
 \textup{si } x_{i} \leq 0 & \alpha x_{i}
 \end{array}
 \right.
+\end{equation}
+
+\subsubsection{Funci\'{o}n de Unidad Lineal Exponencial (ELU)}
+
+La funci\'{o}n ELU\footnote{\textbf{ELU, }Exponencial Lineal Unit} tiende a converger el costo a cero m\'{a}s rapido y produce resultados m\'{a}s precisos. A diferencia de otras funciones de activaci\'{o}n ELU tiene una constante alfa adicional que deber\'{i}a ser un n\'{u}mero positivo.
+
+\vspace{5mm} %5mm vertical space
+
+Es muy similar a ReLU ya que ambas tienen una funci\'{o}n identidad para las entradas positivas, sin embargo en las entradas negativas ELU se suaviza lentamente hasta que su salida es igual $-\alpha$ mientras que en ReLU se suaviza bruscamente. La funci\'{o}n ELU se calcula seg\'{u}n la ecuaci\'{o}n \ref{eqn:elu}.
+
+\begin{equation}
+f(x) = \left\lbrace
+\begin{array}{ll}
+\textup{si } x_{i}>0 & x_{i}\\
+\textup{si } x_{i} \leq 0 & \alpha *( e^{x_{i}}-1)
+\end{array}
+\right.
+\label{eqn:elu}
 \end{equation}
 
 \subsection{Arquitectura de las Redes Neuronales}
