@@ -1,41 +1,51 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {spanish}{}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Muertes por accidentes de tr\IeC {\'a}nsito por regi\'{o}n en funci\IeC {\'o}n del tipo de usuario (2013), OMS\relax }}{2}{figure.caption.9}
-\contentsline {figure}{\numberline {1.2}{\ignorespaces \'{A}rbol de problemas\relax }}{2}{figure.caption.10}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Muertes por accidentes de tr\IeC {\'a}nsito por regi\'{o}n en funci\IeC {\'o}n del tipo de usuario (2013), OMS\relax }}{2}{figure.9}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces \'{A}rbol de problemas\relax }}{2}{figure.10}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Ejemplo de anomal\'{i}as de punto en un conjunto de datos de 2 dimensiones.\relax }}{6}{figure.caption.21}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Anomal\'{i}a contextual $t_2$ en una serie temporal de temperatura.\relax }}{6}{figure.caption.23}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Anomal\IeC {\'\i }a colectiva correspondiente a una contracci\IeC {\'o}n prematura auricular en un electrocardiograma humano.\relax }}{7}{figure.caption.25}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces M\'{e}todo de detecci\'{o}n de anomal\'{i}as propuesto.\relax }}{10}{figure.caption.33}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Ejemplo de anomal\'{i}as de punto en un conjunto de datos de 2 dimensiones.\relax }}{6}{figure.21}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Anomal\'{i}a contextual $t_2$ en una serie temporal de temperatura.\relax }}{6}{figure.23}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Anomal\IeC {\'\i }a colectiva correspondiente a una contracci\IeC {\'o}n prematura auricular en un electrocardiograma humano.\relax }}{7}{figure.25}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces M\'{e}todo de detecci\'{o}n de anomal\'{i}as propuesto.\relax }}{10}{figure.33}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Recolecci\'{o}n de datos, con intervalo de un segundo.\relax }}{12}{figure.caption.37}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Soporte para celular de parabrisas, posici\'{o}n horizontal.\relax }}{12}{figure.caption.38}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Fragmento del conjunto de datos obtenido.\relax }}{13}{figure.caption.39}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Gr\'{a}fica de los sensores capturados en diferentes posiciones.\relax }}{14}{figure.caption.42}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Histograma de frecuencias del conjunto de datos\relax }}{16}{figure.caption.47}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Tabla de resultados estad\'{i}sticos del conjunto de datos.\relax }}{16}{figure.caption.48}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Regla 68-95-99.7 \relax }}{17}{figure.caption.49}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Regla 68-95-99.7 aplicada a los valores de los sensores del aceler\'{o}metro en Y. \relax }}{18}{figure.caption.50}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Divisi\'{o}n del conjunto de entrenamiento.\relax }}{21}{figure.caption.68}
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Visualizaci\'{o}n de los par\'{a}metros de conducci\'{o}n capturados.\relax }}{22}{figure.caption.70}
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Gr\'{a}fica resultante de aplicar diferentes tipos de normalizaciones a un conjunto de datos.\relax }}{23}{figure.caption.71}
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Gr\'{a}fico de la varianza vs el n\'{u}mero de componentes.\relax }}{26}{figure.caption.73}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Recolecci\'{o}n de datos, con intervalo de un segundo.\relax }}{12}{figure.37}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Soporte para celular de parabrisas, posici\'{o}n horizontal.\relax }}{12}{figure.38}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Fragmento del conjunto de datos obtenido.\relax }}{13}{figure.39}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Gr\'{a}fica de los sensores capturados en diferentes posiciones.\relax }}{14}{figure.44}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Histograma de frecuencias del conjunto de datos\relax }}{16}{figure.49}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Tabla de resultados estad\'{i}sticos del conjunto de datos.\relax }}{16}{figure.50}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Regla 68-95-99.7 \relax }}{17}{figure.51}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Regla 68-95-99.7 aplicada a los valores de los sensores del aceler\'{o}metro en Z. \relax }}{18}{figure.52}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Divisi\'{o}n del conjunto de entrenamiento.\relax }}{21}{figure.70}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Visualizaci\'{o}n de los par\'{a}metros de conducci\'{o}n capturados.\relax }}{22}{figure.72}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Gr\'{a}fica resultante de aplicar diferentes tipos de normalizaciones a un conjunto de datos.\relax }}{23}{figure.77}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Gr\'{a}fico de la varianza vs. el n\'{u}mero de componentes.\relax }}{27}{figure.79}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Gr\'{a}fico de una neurona biol\'{o}gica.\relax }}{30}{figure.caption.85}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Gr\'{a}fico de una neurona artificial.\relax }}{31}{figure.caption.86}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Funciones de activaci\'{o}n.\relax }}{32}{figure.caption.89}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Arquitectura de una neurona artificial.\relax }}{35}{figure.caption.102}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Gr\'{a}fico de un Autoencoder.\relax }}{37}{figure.caption.107}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Arquitectura de una Red Neuronal Convolucional (CNN).\relax }}{38}{figure.caption.110}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Procesamiento secuencial en una red neuronal recurrente (RNN) \cite {53}.\relax }}{39}{figure.caption.113}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Estructura de LSTM. Reproducido desde Yan \cite {54}.\relax }}{40}{figure.caption.117}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Estructura de GRU. Reproducido desde \cite {56}.\relax }}{41}{figure.caption.120}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces One-Class SVM\relax }}{42}{figure.caption.124}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Detecci\'{o}n de anomal\'{i}as con autoencoder\relax }}{43}{figure.caption.127}
-\contentsline {figure}{\numberline {4.12}{\ignorespaces La figura de la izquierda muestra el aislamiento de una anomal\IeC {\'\i }a, que requiere solo tres particiones. A la derecha, el aislamiento de un punto normal requiere seis particiones \cite {60}.\relax }}{44}{figure.caption.129}
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Ejemplo de un curva AUC-ROC \cite {62}.\relax }}{47}{figure.caption.147}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Gr\'{a}fico de una neurona biol\'{o}gica.\relax }}{32}{figure.91}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Gr\'{a}fico de una neurona artificial.\relax }}{33}{figure.92}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Funciones de activaci\'{o}n.\relax }}{34}{figure.100}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Arquitectura de una neurona artificial.\relax }}{37}{figure.113}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Gr\'{a}fico de un Autoencoder.\relax }}{39}{figure.118}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Arquitectura de una Red Neuronal Convolucional (CNN).\relax }}{40}{figure.121}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Procesamiento secuencial en una red neuronal recurrente (RNN) \cite {53}.\relax }}{41}{figure.124}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Estructura de LSTM. Reproducido desde Yan \cite {54}.\relax }}{42}{figure.128}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Estructura de GRU. Reproducido desde \cite {56}.\relax }}{43}{figure.131}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces One-Class SVM\relax }}{44}{figure.135}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Detecci\'{o}n de anomal\'{i}as con autoencoder\relax }}{45}{figure.138}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces La figura de la izquierda muestra el aislamiento de una anomal\IeC {\'\i }a, que requiere solo tres particiones. A la derecha, el aislamiento de un punto normal requiere seis particiones \cite {60}.\relax }}{46}{figure.140}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Ejemplo de un curva AUC-ROC \cite {62}.\relax }}{49}{figure.158}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Resultados.\relax }}{55}{figure.caption.168}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Gr\'{a}fica resultante de diferentes tama\~{n}os de series de tiempo.\relax }}{53}{figure.175}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Resultados.\relax }}{58}{figure.187}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Curva de los valores de reconstrucci\'{o}n obtenidos con el modelo ajustado al comportamiento normal.\relax }}{59}{figure.191}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Resultados de la obtenci\'{o}n de codos con diferentes valores de Sensibilidad, para los valores de reconstrucci\'{o}n obtenidos con el modelo ajustado al comportamiento normal.\relax }}{60}{figure.192}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Representaci\'{o}n gr\'{a}fica del modelo de comportamiento normal o autoencoder.\relax }}{61}{figure.195}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Representaci\'{o}n gr\'{a}fica del error de reconstrucci\'{o}n usado para el entrenamiento de los bosques de aislamiento y los SVM de una clase.\relax }}{62}{figure.197}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Mecanismo de detecci\'{o}n de anomal\'{i}as.\relax }}{65}{figure.205}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Resultados de la detecci\'{o}n de anomal\'{i}as del tipo zig zag.\relax }}{66}{figure.207}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Resultados de la detecci\'{o}n de anomal\'{i}as del tipo giros a alta velocidad.\relax }}{67}{figure.209}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Resultados de la detecci\'{o}n de anomal\'{i}as del tipo frenos en seco.\relax }}{68}{figure.211}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Resultados de la detecci\'{o}n de falsos positivos.\relax }}{69}{figure.213}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

@@ -36,8 +36,16 @@
 %\addbibresource{example.bib}
 %\usepackage[autostyle=true]{csquotes}
 \usepackage{float}
+
+\usepackage{float}
+\usepackage{wrapfig}
+
+%\floatstyle{boxed} % or whatever
+\restylefloat{figure}
+
 \restylefloat{table}
 \newcommand{\adj}[1]{\raisebox{-2pt}[\height][\depth]{#1}}
+\newcommand{\centered}[1]{\begin{tabular}{c} #1 \end{tabular}}
 \newlength{\tempwidth}
 
 %----------------------------------------------------------------------------------------
@@ -78,10 +86,19 @@
 %	TITLE PAGE
 %----------------------------------------------------------------------------------------
 \begin{titlepage}
+
 \begin{center}
 
-\vspace*{.06\textheight}
-{\scshape\LARGE \univname\par}\vspace{1.5cm} % University name
+\begin{table}[]
+\begin{center}
+\begin{tabular}{lcl}
+\centering
+\adj{\includegraphics[width=0.62in]{imagenes/umss}}  & \adj{\includegraphics[width=4.1in]{imagenes/texto}} & \adj{\includegraphics[width=0.72in]{imagenes/fcyt}}  
+\end{tabular}
+\end{center}
+\end{table}
+
+% \vspace{3cm} % University name
 \textsc{\Large Proyecto de Grado}\\[0.5cm] % Thesis type
 
 \HRule \\[0.4cm] % Horizontal line

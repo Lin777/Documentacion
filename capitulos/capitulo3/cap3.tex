@@ -147,7 +147,7 @@ En la Figura \ref{tab: est} se presenta una tabla con estad\'{i}sticas descripti
 
 \vspace{5mm} %5mm vertical space
 
-Con la informaci\'{o}n proporcionada en la Figura \ref{tab: est} ahora es m\'{a}s sencillo realizar un an\'{a}lisis del conjunto de datos, en primer lugar se evidencia que los valores obtenidos durante la captura, presentan desviaciones est\'{a}ndar muy peque\~{n}as entre 0.02 y 0.79 y sin embargo la diferencia entre los valores m\'{i}nimo y m\'{a}ximo son realmente grandes, por ejemplo para el Aceler\'{o}metro en X, la diferencia es 16 aproximadamente (Valor m\'{i}nimo: -1.998 y valor m\'{a}ximo: 14.31), esto quiere decir que nuestro conjunto de datos presenta mucho ruido, considerando como ruido o valores at\'{i}picos, aquellos valores muy alejados de la media. 
+Con la informaci\'{o}n proporcionada en la Figura \ref{tab: est} ahora es m\'{a}s sencillo realizar un an\'{a}lisis del conjunto de datos, en primer lugar se evidencia que los valores obtenidos durante la captura, presentan desviaciones est\'{a}ndar muy peque\~{n}as entre 0.05 y 0.81 y sin embargo la diferencia entre los valores m\'{i}nimo y m\'{a}ximo son realmente grandes, por ejemplo para el Aceler\'{o}metro en X, la diferencia es 10 aproximadamente (Valor m\'{i}nimo: -3.40 y valor m\'{a}ximo: 7.17), esto quiere decir que nuestro conjunto de datos presenta mucho ruido, considerando como ruido o valores at\'{i}picos, aquellos valores muy alejados de la media. 
 
 \vspace{5mm} %5mm vertical space
 
@@ -160,13 +160,13 @@ Para eliminar el ruido que presenta nuestro conjunto de datos se aplic\'{o} la \
   \end{center}
 \end{figure}
 
-En la Figura \ref{fig:689599rule_acc_y}, se puede observar como se comporta la regla 68-95-99.7 sobre los valores del sensor del aceler\'{o}metro en Y, por lo que para eliminar el ruido en nuestro conjunto de datos se tiene dos opciones, eliminar los valores despu\'{e}s de tres desviaciones est\'{a}ndar de la media, en caso de considerar que nuestro conjunto de datos presenta pocas anomal\'{i}as o valores at\'{i}picos, o eliminar los valores despu\'{e}s de dos desviaciones est\'{a}ndar en caso de estar seguro que nuestro conjunto de datos presenta una gran cantidad de ruido en los datos, en nuestro caso la mayor\'{i}a de nuestros datos pertenecen a comportamientos normales de conducci\'{o}n por lo que s\'{o}lo eliminaremos los valores que se encuentran despu\'{e}s de tres desviaciones est\'{a}ndar de la media.
+En la Figura \ref{fig:689599rule_acc_y}, se puede observar como se comporta la regla 68-95-99.7 sobre los valores del sensor del aceler\'{o}metro en Z, por lo que para eliminar el ruido en nuestro conjunto de datos se tiene dos opciones, eliminar los valores despu\'{e}s de tres desviaciones est\'{a}ndar de la media, en caso de considerar que nuestro conjunto de datos presenta pocas anomal\'{i}as o valores at\'{i}picos, o eliminar los valores despu\'{e}s de dos desviaciones est\'{a}ndar en caso de estar seguro que nuestro conjunto de datos presenta una gran cantidad de ruido en los datos, en nuestro caso la mayor\'{i}a de nuestros datos pertenecen a comportamientos normales de conducci\'{o}n por lo que s\'{o}lo se eliminar\'{a} los valores que se encuentran despu\'{e}s de tres desviaciones est\'{a}ndar de la media.
 
 
 \begin{figure}[h!]
-  \begin{center}	\includegraphics[width=0.97\textwidth]{imagenes/Cap3/acc_y_689599_rule}
-  \caption{Regla 68-95-99.7 aplicada a los valores de los sensores del aceler\'{o}metro en Y. }
-  \label{fig:689599rule_acc_y}
+  \begin{center}	\includegraphics[width=0.97\textwidth]{imagenes/Cap3/68-95-99_rule_acc_z}
+  \caption{Regla 68-95-99.7 aplicada a los valores de los sensores del aceler\'{o}metro en Z. }
+  \label{fig:689599rule_acc_z}
   \end{center}
 \end{figure}
 
@@ -359,11 +359,11 @@ La segunda t\'{e}cnica de normalizaci\'{o}n que se aplic\'{o} sobre los datos fu
 
 \vspace{5mm} %5mm vertical space
 
-Para la tercera normalizaci\'{o}n de datos se aplic\'{o} la t\'{e}cnica de \textbf{escalado sobre el valor m\'{a}ximo}, los resultados se presentan totalmente diferentes a los que se obtuvo anteriormente, sin embargo se observa claramente que los valores del aceler\'{o}metro no presentan mucho cambio, con la diferencia de que la media de estos valores son distintas para cada uno, y los valores de los giroscopios se comportan como en los anteriores, como se puede ver en la figura \ref{fig:max}. Esta t\'{e}cnica presenta los peores resultados, ya que no deja nuestro conjunto de datos en un mismo rango lo cual complica su trabajo.
+Para la tercera normalizaci\'{o}n de datos se aplic\'{o} la t\'{e}cnica de \textbf{escalado sobre el valor m\'{a}ximo}, los resultados se presentan totalmente diferentes a los que se obtuvo anteriormente, sin embargo se observa claramente que los valores del aceler\'{o}metro no presentan mucho cambio, con la diferencia de que la media de estos valores son distintas para cada uno, y los valores de los giroscopios se comportan como en los anteriores, como se puede ver en la figura \ref{fig:max}. Esta t\'{e}cnica presenta los peores resultados, ya que no deja el conjunto de datos en un mismo rango lo cual complica el trabajo con dichos datos.
 
 \vspace{5mm} %5mm vertical space
 
-La \'{u}ltima t\'{e}cnica aplicada es el \textbf{escalado robusto}, su resultado puede ser observado en la figura \ref{fig:robust}, el cual puede ser considerado bastante similar a las dos primeras t\'{e}cnicas, con diferencia de que este escalado pronuncia mucho m\'{a}s las fluctuaciones de los valores de los giroscopios.
+La \'{u}ltima t\'{e}cnica aplicada es el \textbf{escalado robusto}, su resultado puede ser observado en la figura \ref{fig:robust}, el cual puede ser considerado bastante similar a las dos primeras t\'{e}cnicas, con diferencia de que este escalado pronuncia mucho m\'{a}s las fluctuaciones de los valores de los giroscopios, convirti\'{e}ndolos incluso a una escala superior que el de los valores de los aceler\'{o}metros.
 
 \vspace{5mm} %5mm vertical space
 
@@ -371,7 +371,7 @@ Para decidir el mejor m\'{e}todo de normalizaci\'{o}n que se puede aplicar a los
 
 \vspace{5mm} %5mm vertical space
 
-En la tabla \ref{table:scalers} se muestra la media y la desviaci\'{o}n est\'{a}ndar de cada variable despu\'{e}s de haber aplicado los diferentes tipos de escalado sobre los datos. Como se puede evidenciar en los escalados sobre el valor m\'{a}ximo y est\'{a}ndar, las desviaciones est\'{a}ndar son muy diferentes, en cuanto al escalado Min-Max las desviaciones est\'{a}ndar de cada variable son casi las mismas todas oscilan entre 0.166759	 y 0.169528, lo cual se adec\'{u}a muy bien para el an\'{a}lisis de componentes principales, que es lo que se busca en este punto.
+En la tabla \ref{table:scalers} se muestra la media y la desviaci\'{o}n est\'{a}ndar de cada variable despu\'{e}s de haber aplicado los diferentes tipos de escalado sobre los datos. Como se puede evidenciar en los escalados sobre el valor m\'{a}ximo y est\'{a}ndar, las desviaciones est\'{a}ndar son muy diferentes, en cuanto al escalado Min-Max las desviaciones est\'{a}ndar de cada variable son casi las mismas todas oscilan entre 0.166814 y 0.169386, lo cual se adec\'{u}a muy bien para el an\'{a}lisis de componentes principales, que es lo que se busca en este punto.
 
 
 \begin{landscape}
@@ -382,22 +382,22 @@ En la tabla \ref{table:scalers} se muestra la media y la desviaci\'{o}n est\'{a}
 \begin{tabular}{ll|r|r|r|r|r|r|}
 \cline{3-8}
  &  & \multicolumn{1}{c|}{\textbf{ACC X}} & \multicolumn{1}{c|}{\textbf{ACC Y}} & \multicolumn{1}{c|}{\textbf{ACC Z}} & \multicolumn{1}{c|}{\textbf{GYR X}} & \multicolumn{1}{c|}{\textbf{GYR Y}} & \multicolumn{1}{c|}{\textbf{GYR Z}} \\ \hline
-\multicolumn{1}{|l|}{\multirow{4}{*}{Min-Max}} & Media & 0.494631 & 0.504011 & 0.500105 & 0.497873 & 0.499490 & 0.499922 \\ \cline{2-8} 
-\multicolumn{1}{|l|}{}                  & Desv. Est. & 0.169528 & 0.168058 & 0.166759 & 0.167592 & 0.167005 & 0.166876 \\ \cline{2-8} 
-\multicolumn{1}{|l|}{}                  & M\'{i}nimo & -3.932480 & -0.736326	& -1.182118 & -2.239772 & -8.435568 & -3.984707 \\ \cline{2-8} 
-\multicolumn{1}{|l|}{}                  & M\'{a}ximo & 2.216958 & 2.543331 & 3.373446 & 2.645991 & 4.752865 & 6.877400 \\ \hline
-\multicolumn{1}{|l|}{\multirow{4}{*}{Est\'{a}ndar}} & Media & -0.053019 & 0.006007 & 0.035521 & 0.013953 & -0.007687 & -0.001008 \\ \cline{2-8} 
-\multicolumn{1}{|l|}{}                  & Desv. Est. & 1.956964 & 1.116028 & 1.270322 & 1.537762 & 1.591346 & 1.525546 \\ \cline{2-8} 
-\multicolumn{1}{|l|}{}                  & M\'{i}nimo & -51.157948 & -8.230720 & -12.779184 & -25.105641 & -85.147607 & -40.998624 \\ \cline{2-8} 
-\multicolumn{1}{|l|}{}                  & M\'{a}ximo & 19.828881 & 13.548560 & 21.923844 & 19.724263 & 40.521651 & 58.300659 \\ \hline
-\multicolumn{1}{|l|}{\multirow{4}{*}{Valor M\'{a}ximo}} & Media & 0.879073 & 0.132640 & -0.296123 & 0.003375 & -0.010434 & 0.000820 \\ \cline{2-8} 
-\multicolumn{1}{|l|}{}                  & Desv. Est. & 0.040565 & 0.293892 & 0.234706 & 0.332638 & 0.330862 & 0.333426 \\ \cline{2-8} 
-\multicolumn{1}{|l|}{}                  & M\'{i}nimo & -0.180264 & -2.036399	& -2.663783 & -5.430323 & -17.712144 & -8.959693 \\ \cline{2-8} 
-\multicolumn{1}{|l|}{}                  & M\'{a}ximo & 1.291199 & 3.698900 & 3.747990 & 4.266974 & 8.416149 & 12.743336 \\ \hline
-\multicolumn{1}{|l|}{\multirow{4}{*}{Robusto}} & Media & -0.159037 & 0.083165 & 0.027062 & 0.039046 & -0.083081 & 0.007354 \\ \cline{2-8} 
-\multicolumn{1}{|l|}{}                  & Desv. Est. & 3.178981 & 1.031395 & 1.181458 & 3.848120 & 2.807440 & 2.582457 \\\cline{2-8} 
-\multicolumn{1}{|l|}{}                  & M\'{i}nimo & -83.176214 & -7.528934	& -11.891205 & -62.820606 & -150.286234 & -69.393756 \\ \cline{2-8} 
-\multicolumn{1}{|l|}{}                  & M\'{a}ximo & 32.138026 & 12.598724 & 20.384211 & 49.362424 & 71.418446 & 98.700906 \\ \hline
+\multicolumn{1}{|l|}{\multirow{4}{*}{Min-Max}} & Media & 0.500369	 & 0.500051 & 0.501112 & 0.497923 & 0.499352 & 0.500396 \\ \cline{2-8} 
+\multicolumn{1}{|l|}{}                  & Desv. Est. & 0.166847 & 0.166814 & 0.167300 & 0.168245 & 0.169386 & 0.166852 \\ \cline{2-8} 
+\multicolumn{1}{|l|}{}                  & M\'{i}nimo & -0.999198 & -0.675814	& -1.041074 & -0.681029 & -0.319990 & -18.004503 \\ \cline{2-8} 
+\multicolumn{1}{|l|}{}                  & M\'{a}ximo & 1.178265 & 1.654068 & 1.869867 & 25.395520 & 27.227514 & 2.345548 \\ \hline
+\multicolumn{1}{|l|}{\multirow{4}{*}{Est\'{a}ndar}} & Media & -0.011266 & -0.009209 & -0.00570 & 0.013265 & 0.009458 & 0.005644 \\ \cline{2-8} 
+\multicolumn{1}{|l|}{}                  & Desv. Est. & 1.050384 & 1.086118 & 1.117567 & 2.224617 & 2.518566 & 2.076506 \\ \cline{2-8} 
+\multicolumn{1}{|l|}{}                  & M\'{i}nimo & -9.451768 & -7.665204 & -10.307538 & -15.575414	 & -12.173164 & -230.291158 \\ \cline{2-8} 
+\multicolumn{1}{|l|}{}                  & M\'{a}ximo & 4.256420 & 7.504531 & 9.137616 & 329.221266 & 397.424938 & 22.968890 \\ \hline
+\multicolumn{1}{|l|}{\multirow{4}{*}{Valor M\'{a}ximo}} & Media & 0.615065 & -0.141064 & 0.842598 & 0.000519 & 0.001827 & -0.001747 \\ \cline{2-8} 
+\multicolumn{1}{|l|}{}                  & Desv. Est. & 0.128546 & 0.286536 & 0.052784 & 0.334925 & 0.337715 & 0.332858 \\ \cline{2-8} 
+\multicolumn{1}{|l|}{}                  & M\'{i}nimo & -0.540261 & -2.160843	& 0.356031 & -2.346416 & -1.631746 & -36.917638 \\ \cline{2-8} 
+\multicolumn{1}{|l|}{}                  & M\'{a}ximo & 1.137343 & 1.841185 & 1.274447 & 49.564032 & 53.291415 & 3.679194 \\ \hline
+\multicolumn{1}{|l|}{\multirow{4}{*}{Robusto}} & Media & -0.028625 & 0.083278 & 0.008976 & 0.010491 & 0.031468 & -0.040602 \\ \cline{2-8} 
+\multicolumn{1}{|l|}{}                  & Desv. Est. & 0.739033 & 0.672602 & 0.956915 & 5.752011 & 5.518751 & 8.397460 \\\cline{2-8} 
+\multicolumn{1}{|l|}{}                  & M\'{i}nimo & -6.670812 & -4.657858	& -8.811955 & -40.295886 & -26.663430 & -931.368512 \\ \cline{2-8} 
+\multicolumn{1}{|l|}{}                  & M\'{a}ximo & 2.974050 & 4.736319 & 7.837925 & 851.216772 & 870.859223 & 92.823529 \\ \hline
 \end{tabular}
 \caption{Tabla con estad\'{i}sticas descriptivas de los datos escalados con diferentes t\'{e}cnicas.}
 \label{table:scalers}
@@ -413,19 +413,35 @@ En la tabla \ref{table:scalers} se muestra la media y la desviaci\'{o}n est\'{a}
 
 \vspace{5mm} %5mm vertical space
 
-Aunque al inicio de esta subsubsecci\'{o}n se explica en detalle algunos de los pasos del funcionamiento interno de PCA, existe una clase llamada PCA implementada en \textsc{scikit-learn}, la cual automatiza todos los pasos siguientes; sin embargo se debe decidir la cantidad correcta de componentes principales para nuestro conjunto de datos, para ello haciendo uso de esta clase se calcula la varianza de cada atributo y posteriormente se grafica los resultados (Ver Figura \ref{fig:varianza-pca}).
+Aunque al inicio de esta subsubsecci\'{o}n se explica en detalle algunos de los pasos del funcionamiento interno de PCA, existe una clase llamada PCA implementada en \textsc{scikit-learn}, la cual automatiza todos los pasos siguientes; sin embargo se necesita determinar cu\'{a}ntas caracter\'{i}sticas (componentes principales) mantener y cu\'{a}ntas eliminar; para \'{e}sta tarea existen tres m\'{e}todos com\'{u}nmente utilizados, los cuales ser\'{a}n descritos a continuaci\'{o}n.
+
+% https://towardsdatascience.com/a-one-stop-shop-for-principal-component-analysis-5582fb7e0a9c
+\begin{itemize}
+\item Seleccionar arbitrariamente cu\'{a}ntas dimensiones se desea mantener, dependiendo del caso de uso. Por ejemplo, para un enfoque de visualizaci\'{o}n se podr\'{i}a elegir 2 o 3 caracter\'{i}sticas.
+\item Calcular la proporci\'{o}n de la varianza para cada caracter\'{i}stica, elegir un umbral y agregar  caracter\'{i}sticas hasta llegar o superar el umbral elegido.
+\item Este m\'{e}todo est\'{a} estrechamente relacionado con el anterior, debido a que se calcula la proporci\'{o}n de varianza para cada caracter\'{i}stica, se ordena las caracter\'{i}sticas por la proporci\'{o}n de varianza y se traza la proporci\'{o}n de varianza acumulada explicada a medida que mantiene las caracter\'{i}sticas (este diagrama es conocido como \textit{diagrama de pantalla}). Se puede elegir cu\'{a}ntas caracter\'{i}sticas incluir al identificar el punto en el que se agrega una nueva caracter\'{i}stica tiene una ca\'{i}da significativa en la variaci\'{o}n en relaci\'{o}n con la caracter\'{i}stica anterior, y elegir la cantidad de caracter\'{i}sticas que existen hasta ese punto. Este m\'{e}todo suele ser conocido como \textit{''Encontrar el codo''}.
+\end{itemize}
+
+Para el desarrollo de la presente investigaci\'{o}n se descart\'{o} tanto el primer y \'{u}ltimo m\'{e}todo de los listados anteriormente, esto debido a que el primer m\'{e}todo no tiene la certeza de que la cantidad de caracter\'{i}sticas que se elige sea lo suficientemente descriptiva para el conjunto de datos; mientras que el \'{u}ltimo m\'{e}todo no cuenta con una definici\'{o}n matem\'{a}ticamente precisa, debido a que s\'{o}lo encuentra el ''codo'', por lo que tambi\'{e}n quita el control de la cantidad de variabilidad total en los datos que se obtiene finalmente.
+
+\vspace{5mm} %5mm vertical space
+
+Una vez descartados los m\'{e}todos que no se ajustan al requerimiento del presente trabajo, la \'{u}nica opci\'{o}n restante es el segundo m\'{e}todo, siendo as\'{i} este el que se aplicar\'{a} para el presente trabajo. Por lo tanto primero se defini\'{o} como 90\% el umbral de variabilidad total que se desea preservar en el conjunto de datos, posteriormente haciendo uso de la clase PCA de \textsc{scikit-learn} se calcula la varianza de cada caracter\'{i}stica y posteriormente se grafica los resultados (Ver Figura \ref{fig:varianza-pca}).
 
 \begin{figure}[h!]
   \begin{center}	\includegraphics[width=0.5\textwidth]{imagenes/Cap3/pca}
-  \caption{Gr\'{a}fico de la varianza vs el n\'{u}mero de componentes.}
+  \caption{Gr\'{a}fico de la varianza vs. el n\'{u}mero de componentes.}
   \label{fig:varianza-pca}
   \end{center}
 \end{figure}
 
-El Gr\'{a}fico \ref{fig:varianza-pca} indica que seleccionando 4 componentes se puede preservar alrededor del 95\% de la varianza total de los datos y que seleccionando 3 componentes se conserva alrededor del 80\% de la varianza de los datos, usar cualquiera de esas cantidades de componentes tiene sentido, ya que no se usar\'{a} el 100\% de la varianza, porque denota todos los componentes y s\'{o}lo se desea usar los principales.
+\vspace{5mm} %5mm vertical space
 
+Y por \'{u}ltimo se debe definir que cantidad de componentes principales conservan el 90\% de la varianza de los datos como m\'{i}nimo. La Gr\'{a}fico \ref{fig:varianza-pca} indica que seleccionando 4 componentes se puede preservar alrededor del 97.7\% de la varianza total de los datos, seleccionando 3 componentes se conserva alrededor del 92.3\% y seleccionando 2 se conserva el 85\% de la varianza; por lo tanto se decidi\'{o} el uso de 3 caracter\'{i}sticas con lo cual se conservar\'{a} el 92.3\% de la varianza total del conjunto de datos.
 
 \vspace{5mm} %5mm vertical space
+
+La ventaja de aplicar PCA al conjunto de datos es la simplificaci\'{o}n de la complejidad del mismo, as\'{i} como tambi\'{e}n la conservaci\'{o}n de gran parte de su informaci\'{o}n, por lo cual en este estudio se pudo reducir de 6 caracter\'{i}sticas a tan s\'{o}lo 3, es decir se reduci\'{o} a la mitad, perdiendo s\'{o}lo aproximadamente un 8\% de la varianza del conjunto de datos.
 
 \section{Resumen del cap\'{i}tulo}
 

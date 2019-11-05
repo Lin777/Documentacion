@@ -18,72 +18,45 @@
                                                                                              &                                  & \multicolumn{1}{c|}{\textbf{Tipo}} & \multicolumn{1}{c|}{\textbf{Salida}} & \multicolumn{1}{c|}{\textbf{Activacion}} & \multicolumn{1}{c|}{\textbf{\# Parametros}} \\ \hline
 \multicolumn{1}{|l|}{\multirow{21}{*}{\rotatebox{90}{\textbf{Redes Neuronales - 3 componentes principales}}}} & \multirow{7}{*}{\textbf{NN\_33}} & Input                              & (3,3)                                &                                          & 0                                           \\ \cline{3-6} 
 \multicolumn{1}{|l|}{}                                                                       &                                  & Flatten                            & 9                                    &                                          & 0                                           \\ \cline{3-6} 
-\multicolumn{1}{|l|}{}                                                                       &                                  & Dense                              & 6                                    & elu                                     & 60                                          \\ \cline{3-6} 
-\multicolumn{1}{|l|}{}                                                                       &                                  & Dense                              & 3                                    & elu                                     & 21                                          \\ \cline{3-6} 
-\multicolumn{1}{|l|}{}                                                                       &                                  & Dense                              & 6                                    & elu                                     & 24                                          \\ \cline{3-6} 
-\multicolumn{1}{|l|}{}                                                                       &                                  & Dense                              & 9                                    & tanh                                     & 63                                          \\ \cline{3-6} 
+\multicolumn{1}{|l|}{}                                                                       &                                  & Dense                              & 8                                    & elu                                     & 80                                          \\ \cline{3-6} 
+\multicolumn{1}{|l|}{}                                                                       &                                  & Dense                              & 5                                    & elu                                     & 45                                          \\ \cline{3-6} 
+\multicolumn{1}{|l|}{}                                                                       &                                  & Dense                              & 8                                    & elu                                     & 48                                          \\ \cline{3-6} 
+\multicolumn{1}{|l|}{}                                                                       &                                  & Dense                              & 9                                    & tanh                                     & 81                                          \\ \cline{3-6} 
 \multicolumn{1}{|l|}{}                                                                       &                                  & Reshape                            & (3,3)                                &                                          & 0                                           \\ \cline{2-6} 
 \multicolumn{1}{|l|}{}                                                                       & \multirow{7}{*}{\textbf{NN\_43}} & Input                              & (4,3)                                &                                          & 0                                           \\ \cline{3-6} 
 \multicolumn{1}{|l|}{}                                                                       &                                  & Flatten                            & 12                                   &                                          & 0                                           \\ \cline{3-6} 
-\multicolumn{1}{|l|}{}                                                                       &                                  & Dense                              & 8                                    & elu                                     & 104                                         \\ \cline{3-6} 
-\multicolumn{1}{|l|}{}                                                                       &                                  & Dense                              & 4                                    & elu                                     & 36                                          \\ \cline{3-6} 
-\multicolumn{1}{|l|}{}                                                                       &                                  & Dense                              & 8                                    & elu                                     & 40                                          \\ \cline{3-6} 
+\multicolumn{1}{|l|}{}                                                                       &                                  & Dense                              & 10                                    & elu                                     & 130                                         \\ \cline{3-6} 
+\multicolumn{1}{|l|}{}                                                                       &                                  & Dense                              & 5                                    & elu                                     & 55                                          \\ \cline{3-6} 
+\multicolumn{1}{|l|}{}                                                                       &                                  & Dense                              & 8                                    & elu                                     & 48                                          \\ \cline{3-6} 
 \multicolumn{1}{|l|}{}                                                                       &                                  & Dense                              & 12                                   & tanh                                     & 108                                         \\ \cline{3-6} 
 \multicolumn{1}{|l|}{}                                                                       &                                  & Reshape                            & (4,3)                                &                                          & 0                                           \\ \cline{2-6} 
 \multicolumn{1}{|l|}{}                                                                       & \multirow{7}{*}{\textbf{NN\_53}} & Input                              & (5,3)                                &                                          & 0                                           \\ \cline{3-6} 
 \multicolumn{1}{|l|}{}                                                                       &                                  & Flatten                            & 15                                   &                                          & 0                                           \\ \cline{3-6} 
 \multicolumn{1}{|l|}{}                                                                       &                                  & Dense                              & 10                                   & elu                                     & 160                                         \\ \cline{3-6} 
-\multicolumn{1}{|l|}{}                                                                       &                                  & Dense                              & 5                                    & elu                                     & 55                                          \\ \cline{3-6} 
-\multicolumn{1}{|l|}{}                                                                       &                                  & Dense                              & 10                                   & elu                                     & 60                                          \\ \cline{3-6} 
-\multicolumn{1}{|l|}{}                                                                       &                                  & Dense                              & 15                                   & tanh                                     & 165                                         \\ \cline{3-6} 
-\multicolumn{1}{|l|}{}                                                                       &                                  & Reshape                            & (5,3)                                &                                          & 1                                           \\ \hline
+\multicolumn{1}{|l|}{}                                                                       &                                  & Dense                              & 6                                    & elu                                     & 66                                          \\ \cline{3-6} 
+\multicolumn{1}{|l|}{}                                                                       &                                  & Dense                              & 11                                   & elu                                     & 77                                          \\ \cline{3-6} 
+\multicolumn{1}{|l|}{}                                                                       &                                  & Dense                              & 15                                   & tanh                                     & 180                                         \\ \cline{3-6} 
+\multicolumn{1}{|l|}{}                                                                       &                                  & Reshape                            & (5,3)                                &                                          & 0                                          \\ \hline
 \end{tabular}
 \end{center}
 \caption{Arquitectura densa para 3 componentes principales}
 \label{table:nn_3}
 \end{table}
 
-%\pagestyle{plain}
-%\pagestyle{thesis}
-
-\subsection{Redes densas para 4 componentes}
+\subsection{Evaluaci\'{o}n redes densas}
 
 \begin{table}[H]
 \centering
-\begin{center}
-
-\begin{tabular}{ll|l|l|l|l|}
-\cline{3-6}
-                                                                                              &                                  & \multicolumn{4}{c|}{\textbf{Arquitecturas Densas}}                                                                                                                 \\ \cline{3-6} 
-                                                                                              &                                  & \multicolumn{1}{c|}{\textbf{Tipo}} & \multicolumn{1}{c|}{\textbf{Salida}} & \multicolumn{1}{c|}{\textbf{Activacion}} & \multicolumn{1}{c|}{\textbf{\# Parametros}} \\ \hline
-\multicolumn{1}{|l|}{\multirow{21}{*}{\rotatebox{90}{\textbf{Redes Neuronales - 4 componentes principales}}}} & \multirow{7}{*}{\textbf{NN\_34}} & Input                              & (3,4)                                &                                          & 0                                           \\ \cline{3-6} 
-\multicolumn{1}{|l|}{}                                                                        &                                  & Flatten                            & 12                                   &                                          & 0                                           \\ \cline{3-6} 
-\multicolumn{1}{|l|}{}                                                                        &                                  & Dense                              & 8                                    & elu                                     & 104                                         \\ \cline{3-6} 
-\multicolumn{1}{|l|}{}                                                                        &                                  & Dense                              & 4                                    & elu                                     & 36                                          \\ \cline{3-6} 
-\multicolumn{1}{|l|}{}                                                                        &                                  & Dense                              & 8                                    & elu                                     & 40                                          \\ \cline{3-6} 
-\multicolumn{1}{|l|}{}                                                                        &                                  & Dense                              & 12                                   & tanh                                     & 108                                         \\ \cline{3-6} 
-\multicolumn{1}{|l|}{}                                                                        &                                  & Reshape                            & (3,4)                                &                                          & 0                                           \\ \cline{2-6} 
-\multicolumn{1}{|l|}{}                                                                        & \multirow{7}{*}{\textbf{NN\_44}} & Input                              & (4,4)                                &                                          & 0                                           \\ \cline{3-6} 
-\multicolumn{1}{|l|}{}                                                                        &                                  & Flatten                            & 16                                   &                                          & 0                                           \\ \cline{3-6} 
-\multicolumn{1}{|l|}{}                                                                        &                                  & Dense                              & 10                                   & elu                                     & 170                                         \\ \cline{3-6} 
-\multicolumn{1}{|l|}{}                                                                        &                                  & Dense                              & 5                                    & elu                                     & 55                                          \\ \cline{3-6} 
-\multicolumn{1}{|l|}{}                                                                        &                                  & Dense                              & 10                                   & elu                                     & 60                                          \\ \cline{3-6} 
-\multicolumn{1}{|l|}{}                                                                        &                                  & Dense                              & 16                                   & tanh                                     & 176                                         \\ \cline{3-6} 
-\multicolumn{1}{|l|}{}                                                                        &                                  & Reshape                            & (4,4)                                &                                          & 0                                           \\ \cline{2-6} 
-\multicolumn{1}{|l|}{}                                                                        & \multirow{7}{*}{\textbf{NN\_54}} & Input                              & (5,4)                                &                                          & 0                                           \\ \cline{3-6} 
-\multicolumn{1}{|l|}{}                                                                        &                                  & Flatten                            & 20                                   &                                          & 0                                           \\ \cline{3-6} 
-\multicolumn{1}{|l|}{}                                                                        &                                  & Dense                              & 12                                   & elu                                     & 252                                         \\ \cline{3-6} 
-\multicolumn{1}{|l|}{}                                                                        &                                  & Dense                              & 6                                    & elu                                     & 78                                          \\ \cline{3-6} 
-\multicolumn{1}{|l|}{}                                                                        &                                  & Dense                              & 12                                   & elu                                     & 84                                          \\ \cline{3-6} 
-\multicolumn{1}{|l|}{}                                                                        &                                  & Dense                              & 20                                   & tanh                                     & 260                                         \\ \cline{3-6} 
-\multicolumn{1}{|l|}{}                                                                        &                                  & Reshape                            & (5,4)                                &                                          & 1                                           \\ \hline
+\begin{tabular}{|l|l|l|l|l|l|l|}
+\hline
+\textbf{Red} & \textbf{val\_loss} & \textbf{val\_acc} & \textbf{val\_f1score} & \textbf{loss} & \textbf{acc} & \textbf{f1score} \\ \hline
+NN\_33 & 0.003956 & 0.899894 & 0.287709 & 0.003898 & 0.900735 & 174173.640890 \\ \hline
+NN\_43 & 0.006572 & 0.869167 & 0.233547 & 0.006104 & 0.869548 & 87092.835609 \\ \hline
+NN\_53 & 0.006400 & 0.846857 & 101587.687459 & 0.006226 & 0.850568 & 0.283059 \\ \hline
 \end{tabular}
-
-\end{center}
-\caption{Arquitectura densa para 4 componentes principales}
-\label{table:nn_4}
+\caption{Tabla de evaluaci\'{o}n de redes densas.}
+\label{table:evaluacion_nn}
 \end{table}
-
 
 \section{Redes convolucionales}
 
@@ -99,7 +72,7 @@
                                                                                         &                                   & \multicolumn{4}{c|}{\textbf{Arquitecturas Convolucionales}}                                                                                                        \\ \cline{3-6} 
                                                                                         &                                   & \multicolumn{1}{c|}{\textbf{Tipo}} & \multicolumn{1}{c|}{\textbf{Salida}} & \multicolumn{1}{c|}{\textbf{Activacion}} & \multicolumn{1}{c|}{\textbf{\# Parametros}} \\ \hline
 \multicolumn{1}{|l|}{\multirow{24}{*}{\rotatebox{90}{\textbf{Redes Conv - 3 componentes principales}}}} & \multirow{8}{*}{\textbf{CNN\_33}} & Input                              & (3,3)                                &                                          & 0                                           \\ \cline{3-6} 
-\multicolumn{1}{|l|}{}                                                                  &                                   & Conv1D                             & (3,2)                                & elu                                     & 20                                          \\ \cline{3-6} 
+\multicolumn{1}{|l|}{}                                                                  &                                   & Conv1D                             & (3,2)                                & elu                                     & 20                                         \\ \cline{3-6} 
 \multicolumn{1}{|l|}{}                                                                  &                                   & MaxPooling1D                       & (2,2)                                &                                          & 0                                           \\ \cline{3-6} 
 \multicolumn{1}{|l|}{}                                                                  &                                   & Conv1D                             & (2,4)                                & elu                                     & 28                                          \\ \cline{3-6} 
 \multicolumn{1}{|l|}{}                                                                  &                                   & MaxPooling1D                       & (1,4)                                &                                          & 0                                           \\ \cline{3-6} 
@@ -109,7 +82,7 @@
 \multicolumn{1}{|l|}{}                                                                  & \multirow{8}{*}{\textbf{CNN\_43}} & Input                              & (4,3)                                &                                          & 0                                           \\ \cline{3-6} 
 \multicolumn{1}{|l|}{}                                                                  &                                   & Conv1D                             & (4,2)                                & elu                                     & 20                                          \\ \cline{3-6} 
 \multicolumn{1}{|l|}{}                                                                  &                                   & MaxPooling1D                       & (2,2)                                &                                          & 0                                           \\ \cline{3-6} 
-\multicolumn{1}{|l|}{}                                                                  &                                   & Conv1D                             & (2,4)                                & elu                                     & 28                                          \\ \cline{3-6} 
+\multicolumn{1}{|l|}{}                                                                  &                                   & Conv1D                             & (2,4)                                & elu                                     & 26                                          \\ \cline{3-6} 
 \multicolumn{1}{|l|}{}                                                                  &                                   & MaxPooling1D                       & (1,4)                                &                                          & 0                                           \\ \cline{3-6} 
 \multicolumn{1}{|l|}{}                                                                  &                                   & Conv1D                             & (1,6)                                & elu                                     & 54                                          \\ \cline{3-6} 
 \multicolumn{1}{|l|}{}                                                                  &                                   & UpSampling1D                       & (4,6)                                &                                          & 0                                           \\ \cline{3-6} 
@@ -129,46 +102,19 @@
 \label{table:cnn_3}
 \end{table}
 
-
-\subsection{Redes convolucionales para 4 componentes}
+\subsection{Evaluaci\'{o}n redes convolucionales}
 
 \begin{table}[H]
 \centering
-\begin{center}
-
-\begin{tabular}{ll|l|l|l|l|}
-\cline{3-6}
-                                                                                        &                                   & \multicolumn{4}{c|}{\textbf{Arquitecturas Convolucionales}}                                                                                                        \\ \cline{3-6} 
-                                                                                        &                                   & \multicolumn{1}{c|}{\textbf{Tipo}} & \multicolumn{1}{c|}{\textbf{Salida}} & \multicolumn{1}{c|}{\textbf{Activacion}} & \multicolumn{1}{c|}{\textbf{\# Parametros}} \\ \hline
-\multicolumn{1}{|l|}{\multirow{24}{*}{\rotatebox{90}{\textbf{Redes Conv - 4 componentes principales}}}} & \multirow{8}{*}{\textbf{CNN\_34}} & Input                              & (3,4)                                &                                          & 0                                           \\ \cline{3-6} 
-\multicolumn{1}{|l|}{}                                                                  &                                   & Conv1D                             & (3,2)                                & elu                                     & 26                                          \\ \cline{3-6} 
-\multicolumn{1}{|l|}{}                                                                  &                                   & MaxPooling1D                       & (2,2)                                &                                          & 0                                           \\ \cline{3-6} 
-\multicolumn{1}{|l|}{}                                                                  &                                   & Conv1D                             & (2,4)                                & elu                                     & 28                                          \\ \cline{3-6} 
-\multicolumn{1}{|l|}{}                                                                  &                                   & MaxPooling1D                       & (1,4)                                &                                          & 0                                           \\ \cline{3-6} 
-\multicolumn{1}{|l|}{}                                                                  &                                   & Conv1D                             & (1,6)                                & elu                                     & 54                                          \\ \cline{3-6} 
-\multicolumn{1}{|l|}{}                                                                  &                                   & UpSampling1D                       & (3,6)                                &                                          & 0                                           \\ \cline{3-6} 
-\multicolumn{1}{|l|}{}                                                                  &                                   & Conv1D                             & (3,4)                                & tanh                                     & 76                                          \\ \cline{2-6} 
-\multicolumn{1}{|l|}{}                                                                  & \multirow{8}{*}{\textbf{CNN\_44}} & Input                              & (4,4)                                &                                          & 0                                           \\ \cline{3-6} 
-\multicolumn{1}{|l|}{}                                                                  &                                   & Conv1D                             & (4,3)                                & elu                                     & 39                                          \\ \cline{3-6} 
-\multicolumn{1}{|l|}{}                                                                  &                                   & MaxPooling1D                       & (2,3)                                &                                          & 0                                           \\ \cline{3-6} 
-\multicolumn{1}{|l|}{}                                                                  &                                   & Conv1D                             & (2,4)                                & elu                                     & 40                                          \\ \cline{3-6} 
-\multicolumn{1}{|l|}{}                                                                  &                                   & MaxPooling1D                       & (1,4)                                &                                          & 0                                           \\ \cline{3-6} 
-\multicolumn{1}{|l|}{}                                                                  &                                   & Conv1D                             & (1,6)                                & elu                                     & 54                                          \\ \cline{3-6} 
-\multicolumn{1}{|l|}{}                                                                  &                                   & UpSampling1D                       & (4,6)                                &                                          & 0                                           \\ \cline{3-6} 
-\multicolumn{1}{|l|}{}                                                                  &                                   & Conv1D                             & (4,4)                                & tanh                                     & 52                                          \\ \cline{2-6} 
-\multicolumn{1}{|l|}{}                                                                  & \multirow{8}{*}{\textbf{CNN\_54}} & Input                              & (5,4)                                &                                          & 0                                           \\ \cline{3-6} 
-\multicolumn{1}{|l|}{}                                                                  &                                   & Conv1D                             & (5,2)                                & elu                                     & 26                                          \\ \cline{3-6} 
-\multicolumn{1}{|l|}{}                                                                  &                                   & MaxPooling1D                       & (3,2)                                &                                          & 0                                           \\ \cline{3-6} 
-\multicolumn{1}{|l|}{}                                                                  &                                   & Conv1D                             & (3,4)                                & elu                                     & 28                                          \\ \cline{3-6} 
-\multicolumn{1}{|l|}{}                                                                  &                                   & MaxPooling1D                       & (2,4)                                &                                          & 0                                           \\ \cline{3-6} 
-\multicolumn{1}{|l|}{}                                                                  &                                   & Conv1D                             & (2,5)                                & elu                                     & 65                                          \\ \cline{3-6} 
-\multicolumn{1}{|l|}{}                                                                  &                                   & Reshape                            & (5,2)                                &                                          & 0                                           \\ \cline{3-6} 
-\multicolumn{1}{|l|}{}                                                                  &                                   & Conv1D                             & (5,4)                                & tanh                                     & 28                                          \\ \hline
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+\textbf{Red} & \textbf{val\_loss} & \textbf{val\_acc} & \textbf{loss} & \textbf{acc} \\ \hline
+CNN\_33 & 0.0070 & 0.8453 & 0.0067 & 0.8434 \\ \hline
+CNN\_43 & 0.0100 & 0.8136 & 0.0097 & 0.8152 \\ \hline
+CNN\_53 & 0.0102 & 0.7951 & 0.0108 & 0.7907 \\ \hline
 \end{tabular}
-
-\end{center}
-\caption{Arquitectura convolucional para 4 componentes principales}
-\label{table:cnn_4}
+\caption{Tabla de evaluaci\'{o}n de redes convolucionales.}
+\label{table:evaluacion_cnn}
 \end{table}
 
 \section{Redes recurrentes}
@@ -186,7 +132,7 @@
                                                                                        &                                   & \multicolumn{1}{c|}{\textbf{Tipo}} & \multicolumn{1}{c|}{\textbf{Salida}} & \multicolumn{1}{c|}{\textbf{Activacion}} & \multicolumn{1}{c|}{\textbf{\# Parametros}} \\ \hline
 \multicolumn{1}{|l|}{\multirow{23}{*}{\rotatebox{90}{\textbf{Redes Rec - 3 componentes principales}}}} & \multirow{7}{*}{\textbf{RNN\_33}} & Input                              & (3,3)                                &                                          & 0                                           \\ \cline{3-6} 
 \multicolumn{1}{|l|}{}                                                                 &                                   & LSTM                               & (3,9)                                & elu                                     & 468                                         \\ \cline{3-6} 
-\multicolumn{1}{|l|}{}                                                                 &                                   & LSTM                               & 6                                    & elu                                     & 3840                                        \\ \cline{3-6} 
+\multicolumn{1}{|l|}{}                                                                 &                                   & LSTM                               & 6                                    & elu                                     & 384                                       \\ \cline{3-6} 
 \multicolumn{1}{|l|}{}                                                                 &                                   & Reshape                            & (3,2)                                &                                          & 0                                           \\ \cline{3-6} 
 \multicolumn{1}{|l|}{}                                                                 &                                   & LSTM                               & (3,3)                                & elu                                     & 72                                          \\ \cline{3-6} 
 \multicolumn{1}{|l|}{}                                                                 &                                   & LSTM                               & (3,9)                                & elu                                     & 468                                         \\ \cline{3-6} 
@@ -199,13 +145,13 @@
 \multicolumn{1}{|l|}{}                                                                 &                                   & LSTM                               & (3,9)                                & elu                                     & 40                                          \\ \cline{3-6} 
 \multicolumn{1}{|l|}{}                                                                 &                                   & TimeDistributed(Dense(3))          & (3,4)                                & tanh                                     & 0                                           \\ \cline{3-6} 
 \multicolumn{1}{|l|}{}                                                                 &                                   & Reshape                            & (4,3)                                &                                          & 0                                           \\ \cline{2-6} 
-\multicolumn{1}{|l|}{}                                                                 & \multirow{8}{*}{\textbf{RNN\_53}} & Input                              & (5,3)                                &                                          & 468                                         \\ \cline{3-6} 
-\multicolumn{1}{|l|}{}                                                                 &                                   & LSTM                               & (5,9)                                & elu                                     & 384                                         \\ \cline{3-6} 
-\multicolumn{1}{|l|}{}                                                                 &                                   & LSTM                               & 6                                    & elu                                     & 0                                           \\ \cline{3-6} 
-\multicolumn{1}{|l|}{}                                                                 &                                   & Reshape                            & (3,2)                                &                                          & 72                                          \\ \cline{3-6} 
-\multicolumn{1}{|l|}{}                                                                 &                                   & LSTM                               & (3,3)                                & elu                                     & 468                                         \\ \cline{3-6} 
-\multicolumn{1}{|l|}{}                                                                 &                                   & LSTM                               & (3,9)                                & elu                                     & 50                                          \\ \cline{3-6} 
-\multicolumn{1}{|l|}{}                                                                 &                                   & TimeDistributed(Dense(3))          & (3,5)                                &                                          & 0                                           \\ \cline{3-6} 
+\multicolumn{1}{|l|}{}                                                                 & \multirow{8}{*}{\textbf{RNN\_53}} & Input                              & (5,3)                                &                                          & 0                                         \\ \cline{3-6} 
+\multicolumn{1}{|l|}{}                                                                 &                                   & LSTM                               & (5,9)                                & elu                                     & 468                                         \\ \cline{3-6} 
+\multicolumn{1}{|l|}{}                                                                 &                                   & LSTM                               & 6                                    & elu                                     & 384                                           \\ \cline{3-6} 
+\multicolumn{1}{|l|}{}                                                                 &                                   & Reshape                            & (3,2)                                &                                          & 0                                          \\ \cline{3-6} 
+\multicolumn{1}{|l|}{}                                                                 &                                   & LSTM                               & (3,3)                                & elu                                     & 72                                         \\ \cline{3-6} 
+\multicolumn{1}{|l|}{}                                                                 &                                   & LSTM                               & (3,9)                                & elu                                     & 468                                          \\ \cline{3-6} 
+\multicolumn{1}{|l|}{}                                                                 &                                   & TimeDistributed(Dense(3))          & (3,5)                                &                                          & 50                                           \\ \cline{3-6} 
 \multicolumn{1}{|l|}{}                                                                 &                                   & Reshape                            & (5,3)                                & tanh                                     & 0                                           \\ \hline
 \end{tabular}
 
@@ -214,40 +160,17 @@
 \label{table:rnn_3}
 \end{table}
 
-
-\subsection{Redes recurrentes para 4 componentes}
+\subsection{Evaluaci\'{o}n redes recurrentes}
 
 \begin{table}[H]
 \centering
-\begin{center}
-
-\begin{tabular}{ll|l|l|l|l|}
-\cline{3-6}
-                                                                                       &                                   & \multicolumn{4}{c|}{\textbf{Arquitecturas Recurrentes}}                                                                                                            \\ \cline{3-6} 
-                                                                                       &                                   & \multicolumn{1}{c|}{\textbf{Tipo}} & \multicolumn{1}{c|}{\textbf{Salida}} & \multicolumn{1}{c|}{\textbf{Activacion}} & \multicolumn{1}{c|}{\textbf{\# Parametros}} \\ \hline
-\multicolumn{1}{|l|}{\multirow{20}{*}{\rotatebox{90}{\textbf{Redes Rec - 3 componentes principales}}}} & \multirow{7}{*}{\textbf{RNN\_34}} & Input                              & (3,4)                                &                                          & 0                                           \\ \cline{3-6} 
-\multicolumn{1}{|l|}{}                                                                 &                                   & LSTM                               & (3,9)                                & elu                                     & 468                                         \\ \cline{3-6} 
-\multicolumn{1}{|l|}{}                                                                 &                                   & LSTM                               & 6                                    & elu                                     & 3840                                        \\ \cline{3-6} 
-\multicolumn{1}{|l|}{}                                                                 &                                   & Reshape                            & (3,2)                                &                                          & 0                                           \\ \cline{3-6} 
-\multicolumn{1}{|l|}{}                                                                 &                                   & LSTM                               & (3,3)                                & elu                                     & 72                                          \\ \cline{3-6} 
-\multicolumn{1}{|l|}{}                                                                 &                                   & LSTM                               & (3,9)                                & elu                                     & 468                                         \\ \cline{3-6} 
-\multicolumn{1}{|l|}{}                                                                 &                                   & TimeDistributed(Dense(3))          & (3,4)                                & tanh                                     & 30                                          \\ \cline{2-6} 
-\multicolumn{1}{|l|}{}                                                                 & \multirow{6}{*}{\textbf{RNN\_44}} & Input                              & (4,4)                                &                                          & 0                                           \\ \cline{3-6} 
-\multicolumn{1}{|l|}{}                                                                 &                                   & LSTM                               & (4,4)                                & elu                                     & 144                                         \\ \cline{3-6} 
-\multicolumn{1}{|l|}{}                                                                 &                                   & LSTM                               & 4                                    & elu                                     & 144                                         \\ \cline{3-6} 
-\multicolumn{1}{|l|}{}                                                                 &                                   & Reshape                            & (4,1)                                &                                          & 0                                           \\ \cline{3-6} 
-\multicolumn{1}{|l|}{}                                                                 &                                   & LSTM                               & (4,2)                                & elu                                     & 32                                          \\ \cline{3-6} 
-\multicolumn{1}{|l|}{}                                                                 &                                   & LSTM                               & (4,4)                                & tanh                                     & 112                                         \\ \cline{2-6} 
-\multicolumn{1}{|l|}{}                                                                 & \multirow{7}{*}{\textbf{RNN\_54}} & Input                              & (5,3)                                &                                          & 0                                           \\ \cline{3-6} 
-\multicolumn{1}{|l|}{}                                                                 &                                   & LSTM                               & (5,15)                               & elu                                     & 1200                                        \\ \cline{3-6} 
-\multicolumn{1}{|l|}{}                                                                 &                                   & LSTM                               & 10                                   & elu                                     & 1040                                        \\ \cline{3-6} 
-\multicolumn{1}{|l|}{}                                                                 &                                   & Reshape                            & (5,2)                                &                                          & 0                                           \\ \cline{3-6} 
-\multicolumn{1}{|l|}{}                                                                 &                                   & LSTM                               & (5,3)                                & elu                                     & 468                                         \\ \cline{3-6} 
-\multicolumn{1}{|l|}{}                                                                 &                                   & LSTM                               & (5,6)                                & elu                                     & 240                                         \\ \cline{3-6} 
-\multicolumn{1}{|l|}{}                                                                 &                                   & TimeDistributed(Dense(4))          & (5,4)                                & tanh                                     & 28                                          \\ \hline
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+\textbf{Red} & \textbf{val\_loss} & \textbf{val\_acc} & \textbf{loss} & \textbf{acc} \\ \hline
+RNN\_33 & 0.0039 & 0.8855 & 0.0037 & 0.8900 \\ \hline
+RNN\_43 & 0.0108 & 0.7871 & 0.0102 & 0.7884 \\ \hline
+RNN\_53 & 0.0295 & 0.2986 & 0.0290 & 0.3370 \\ \hline
 \end{tabular}
-
-\end{center}
-\caption{Arquitectura recurrente para 4 componentes principales}
-\label{table:rnn_4}
+\caption{Tabla de evaluaci\'{o}n de redes recurrentes.}
+\label{table:evaluacion_rnn}
 \end{table}
