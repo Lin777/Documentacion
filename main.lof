@@ -42,10 +42,11 @@
 \contentsline {figure}{\numberline {5.4}{\ignorespaces Resultados de la obtenci\'{o}n de codos con diferentes valores de Sensibilidad, para los valores de reconstrucci\'{o}n obtenidos con el modelo ajustado al comportamiento normal.\relax }}{60}{figure.192}
 \contentsline {figure}{\numberline {5.5}{\ignorespaces Representaci\'{o}n gr\'{a}fica del modelo de comportamiento normal o autoencoder.\relax }}{61}{figure.195}
 \contentsline {figure}{\numberline {5.6}{\ignorespaces Representaci\'{o}n gr\'{a}fica del error de reconstrucci\'{o}n usado para el entrenamiento de los bosques de aislamiento y los SVM de una clase.\relax }}{62}{figure.197}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Mecanismo de detecci\'{o}n de anomal\'{i}as.\relax }}{65}{figure.205}
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Resultados de la detecci\'{o}n de anomal\'{i}as del tipo zig zag.\relax }}{66}{figure.207}
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Resultados de la detecci\'{o}n de anomal\'{i}as del tipo giros a alta velocidad.\relax }}{67}{figure.209}
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Resultados de la detecci\'{o}n de anomal\'{i}as del tipo frenos en seco.\relax }}{68}{figure.211}
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Resultados de la detecci\'{o}n de falsos positivos.\relax }}{69}{figure.213}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Mecanismo de detecci\'{o}n de anomal\'{i}as.\relax }}{65}{figure.204}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Resultados de la detecci\'{o}n de anomal\'{i}as del tipo zig zag.\relax }}{69}{figure.212}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Resultados de la detecci\'{o}n de anomal\'{i}as del tipo giros a alta velocidad.\relax }}{70}{figure.214}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Resultados de la detecci\'{o}n de anomal\'{i}as del tipo frenos en seco.\relax }}{71}{figure.216}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Resultados de la detecci\'{o}n de falsos positivos.\relax }}{72}{figure.218}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

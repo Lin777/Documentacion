@@ -1,0 +1,30 @@
+
+Despu\'{e}s de haber realizado el procedimiento descrito en los anteriores cap\'{i}tulos para generar un mecanismo (modelo) capaz de detectar anomal\'{i}as de conducci\'{o}n, se puede decir que se ha cumplido a cabalidad con los objetivos propuestos en el proyecto. A continuaci\'{o}n se presentar\'{a} las conclusiones a las que se llego as\'{i} como tambi\'{e}n aquellas nuevas ideas e inquietudes que surgieron durante el proceso de desarrollo, las cuales podr\'{i}an mejorar los resultados obtenidos por el presente trabajo de grado.
+
+\section{Conclusiones}
+
+El objetivo fundamental de este trabajo de grado fue desarrollar un mecanismo capaz de detectar anomal\'{i}as de conducci\'{o}n, tal que, se aporte con una soluci\'{o}n para alertar de forma oportuna el hallazgo de patrones an\'{o}malos en la conducci\'{o}n de agentes, ya sean humanos o aut\'{o}nomos, independizando cada modelo seg\'{u}n la experiencia y el ambiente de cada agente.
+
+\vspace{5mm} %5mm vertical space
+
+As\'{i} pues, el aporte principal de este trabajo consiste en la implementaci\'{o}n de un modelo capaz de identificar el 67.68\% de anomal\'{i}as autom\'{a}ticamente, con una tasa de falsos positivos muy baja (0.80\%), lo cu\'{a}l es un resultado realmente satisfactorio debido principalmente al enfoque que se utiliz\'{o} en el estudio.
+
+Por otra parte, considerando que todo el trabajo relacionado con este estudio hasta la fecha no cuenta con un 
+
+, ya que al no contar con etiquetas y muestras que correspondan a anomal\'{i}as en el entrenamiento hizo m\'{a}s desafiante la tarea de definir lo que es o no es una anomal\'{i}a.
+
+\section{Limitaciones y recomendaciones}
+
+Una vez concluido el trabajo de grado, se considera interesante investigar sobre diferentes aspectos de la detecci\'{o}n de anomal\'{i}as y se propone:
+
+\begin{itemize}
+\item Agregar la velocidad del veh\'{i}culo como un nuevo par\'{a}metro del conjunto de datos, debido a que esto podr\'{i}a brindar un mejor entendimiento del comportamiento normal de manejo, as\'{i} como tambi\'{e}n de las anomal\'{i}as.
+\item En lugar de trabajar con los datos en crudo, usar la diferencia entre un dato capturado en el tiempo $t$ y un dato capturado en $t-1$ ($diferencia_{t} = dato_{t}-dato_{t-1}$), la aplicaci\'{o}n de \'{e}ste pre-procesamiento de datos podr\'{i}a maximizar la detecci\'{o}n de aquellas anomal\'{i}as que presentan elevadas diferencias entre los datos consecutivos.
+\item Validar el modelo con nuevos tipos de anomal\'{i}as como por ejemplo: derrapes, choques, giros en U a alta velocidad, entre otros. Esto debido a que el proyecto se limit\'{o} al reconocimiento de s\'{o}lo tres tipos de anomal\'{i}as por la dificultad y peligro que conlleva su captura.
+\item Migrar el modelo del comportamiento normal de keras a Tensorflow 2.0.
+
+\end{itemize}
+
+Por otra parte, es importante resaltar que este trabajo tuvo un conjunto limitado de muestras correspondientes a anomal\'{i}as tanto en cantidad como en tipos, lo cual limita bastante 
+
+ 

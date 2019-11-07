@@ -21,10 +21,12 @@
 \contentsline {table}{\numberline {5.11}{\ignorespaces Evaluaci\'{o}n de la detecci\'{o}n de anomal\'{i}as usando One-Class SVM para el error de reconstrucci\'{o}n del autoencoder.\relax }}{63}{table.201}
 \contentsline {table}{\numberline {5.12}{\ignorespaces Comparaci\'{o}n de los mejores m\'{e}todos de detecci\'{o}n de anomal\'{i}as.\relax }}{64}{table.203}
 \addvspace {10\p@ }
+\contentsline {table}{\numberline {6.1}{\ignorespaces Matriz de confusi\'{o}n, para el mecanismo de detecci\'{o}n de anomal\'{i}as.\relax }}{68}{table.209}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {A.1}{\ignorespaces Arquitectura densa para 3 componentes principales\relax }}{73}{table.221}
-\contentsline {table}{\numberline {A.2}{\ignorespaces Tabla de evaluaci\'{o}n de redes densas.\relax }}{74}{table.223}
-\contentsline {table}{\numberline {A.3}{\ignorespaces Arquitectura convolucional para 3 componentes principales\relax }}{74}{table.226}
-\contentsline {table}{\numberline {A.4}{\ignorespaces Tabla de evaluaci\'{o}n de redes convolucionales.\relax }}{75}{table.228}
-\contentsline {table}{\numberline {A.5}{\ignorespaces Arquitectura recurrente para 3 componentes principales\relax }}{75}{table.231}
-\contentsline {table}{\numberline {A.6}{\ignorespaces Tabla de evaluaci\'{o}n de redes recurrentes.\relax }}{76}{table.233}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {A.1}{\ignorespaces Arquitectura densa para 3 componentes principales\relax }}{75}{table.226}
+\contentsline {table}{\numberline {A.2}{\ignorespaces Tabla de evaluaci\'{o}n de redes densas.\relax }}{76}{table.228}
+\contentsline {table}{\numberline {A.3}{\ignorespaces Arquitectura convolucional para 3 componentes principales\relax }}{76}{table.231}
+\contentsline {table}{\numberline {A.4}{\ignorespaces Tabla de evaluaci\'{o}n de redes convolucionales.\relax }}{77}{table.233}
+\contentsline {table}{\numberline {A.5}{\ignorespaces Arquitectura recurrente para 3 componentes principales\relax }}{77}{table.236}
+\contentsline {table}{\numberline {A.6}{\ignorespaces Tabla de evaluaci\'{o}n de redes recurrentes.\relax }}{78}{table.238}
