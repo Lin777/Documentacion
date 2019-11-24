@@ -1,0 +1,103 @@
+\documentclass[letterpaper, 11pt]{report}
+
+\usepackage[spanish]{babel}
+\usepackage{url}
+\usepackage[final]{graphicx}
+\usepackage{caption}
+\captionsetup[subfigure]{labelformat=parens,labelsep=space,font=small}
+\usepackage{subfig}
+\usepackage{wrapfig}
+\usepackage{vmargin}
+\usepackage{setspace}
+\usepackage{sidecap}
+\usepackage{float}
+\usepackage{enumitem}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{appendix}
+\usepackage[hidelinks,bookmarksopen=true]{hyperref}
+%package to show the code
+\usepackage{listings}
+\usepackage{xcolor}
+\lstset{basicstyle=\ttfamily,
+  showstringspaces=false,
+  commentstyle=\color{red},
+  keywordstyle=\color{blue}
+}
+
+\usepackage[numbered, depth=4]{bookmark}
+\setcounter{tocdepth}{3}
+
+\setmarginsrb{3cm}{2cm}{2cm}{2cm}{0pt}{0mm}{0pt}{0mm}
+
+\begin{document}
+
+% let show index title
+\renewcommand{\contentsname}{\'Indice de Contenido}
+% let show the bibliography
+\renewcommand{\refname}{BIBLIOGRAF\'IA}
+% let show the tables in the index
+\renewcommand{\listtablename}{\'Indice de Tablas}
+% let show pictures index
+\renewcommand{\listfigurename}{\'Indice de Figuras}
+
+% let show annex index
+\renewcommand{\appendixname}{Anexo}
+\renewcommand{\appendixtocname}{\'Indice de Anexos}
+\renewcommand{\appendixpagename}{Anexos}
+
+\include{002-Caratula-Caratula}
+\bookmark[page=1,level=0]{INICIO}
+
+\pagenumbering{gobble}
+
+\newpage
+\include{003-Dedicatoria-Dedicatoria}
+\bookmark[page=2,level=1]{Dedicatoria}
+\newpage
+
+\newpage
+\include{004-Agradecimientos-Agradecimientos}
+\bookmark[page=3,level=1]{Agradecimientos}
+\newpage
+
+\include{005-FichaResumen-FichaResumen}
+\bookmark[page=4,level=1]{Resumen}
+
+\include{006-Indice01-IndiceDeContenido}
+%\tableofcontents
+\bookmark[page=5,level=1]{\'Indice de Contenido}
+
+\newpage
+
+\include{007-Indice02-IndiceFigurasTablas}
+\bookmark[page=7,level=1]{\'Indice de Figuras}
+\bookmark[page=9,level=1]{\'Indice de Tablas}
+
+\newpage
+
+\pagenumbering{arabic}
+
+\include{008-Cap01-Introduccion}
+\include{009-Cap02-MarcoTeorico}
+\include{010-Cap03-ExperimentacionConAlgoritmoKMeans}
+\include{011-Cap04-DesarrolloAplicacionYConfiguracionServidor}
+\include{012-Cap05-Resultados}
+\include{013-Cap06-ConclusionesTrabajosFuturos}
+
+\phantomsection 
+\addcontentsline{toc}{chapter}{BIBIOGRAF\'IA} 
+\bibliographystyle{apalike}
+%\bibliography{014-Bibliografia-Bibliografia}
+\bibliography{001-TextoPrincipal-TextoPrincipal}
+
+\appendix
+\clearpage
+\addappheadtotoc
+\appendixpage
+\include{015-Anexo01-PruebasDeExperimentacion}
+\include{016-Anexo02-ManualDeInstalacion}
+\include{017-Anexo03-ManualDeUsuario}
+\include{018-Anexo04-ManualTecnico}
+
+\end{document}

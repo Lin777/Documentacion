@@ -84,7 +84,7 @@ La Red Neuronal Artificial o ANN\footnote{\textbf{ANN}, Artificial Neural Networ
 Las \textbf{neuronas biol\'{o}gicas} (c\'{e}lulas nerviosas) son las unidades fundamentales del cerebro y del sistema nervioso. Las neuronas son las c\'{e}lulas responsables de recibir informaci\'{o}n sensorial del mundo externo a trav\'{e}s de las dendritas, procesarla y dar una salida a trav\'{e}s del ax\'{o}n (Ver Figura \ref{fig:neurona}). 
 
  \begin{figure}[h!]
-  \begin{center}	\includegraphics[width=0.95\textwidth]{imagenes/Cap4/neurona}
+  \begin{center}	\includegraphics[width=0.95\textwidth, frame]{imagenes/Cap4/neurona}
   \caption{Gr\'{a}fico de una neurona biol\'{o}gica.}
   \label{fig:neurona}
   \end{center}
@@ -101,7 +101,7 @@ La conexi\'{o}n entre neuronas se llama \textbf{sinapsis}, esta no es una conexi
 Una \textbf{neurona artificial} es un procesador elemental, debido a que procesa un vector $x(x_{1},x_{2}, ... ,x_{n})$ de entradas y produce una respuesta o salida \'{u}nica. Los elementos principales de una neurona artificial son los siguientes:
 
 \begin{figure}[h!]
-  \begin{center}	\includegraphics[width=0.95\textwidth]{imagenes/Cap4/neurona_artificial}
+  \begin{center}	\includegraphics[width=0.95\textwidth, frame]{imagenes/Cap4/neurona_artificial}
   \caption{Gr\'{a}fico de una neurona artificial.}
   \label{fig:neurona}
   \end{center}
@@ -123,6 +123,9 @@ h_{i}(t) = \sum_{j}{w_{ij}x_{j}}
 Existen diferentes funciones de activaci\'{o}n, a continuaci\'{o}n solo se presentar\'{a} las m\'{a}s usadas en el \'{a}mbito de las redes neuronales.
 
 \begin{figure}
+        \centering
+        \fbox{\begin{varwidth}{\textwidth}
+        
         \centering
         \begin{subfigure}[h]{0.45\textwidth} 
             \includegraphics[width=\textwidth]{imagenes/Cap4/sigmoid}
@@ -150,6 +153,7 @@ Existen diferentes funciones de activaci\'{o}n, a continuaci\'{o}n solo se prese
             \caption{Funci\'{o}n ELU}
             \label{fig:elu}
         \end{subfigure}
+        \end{varwidth}}
         \caption{Funciones de activaci\'{o}n.}
         
 		\label{fig:funciones_activacion}
@@ -246,7 +250,7 @@ f(x) = \left\lbrace
 Una red neuronal regular consiste de una cadena de capas interconectadas de neuronas, estas capas son: una capa de entrada, una o varias capas ocultas y una capa de salida. 
 
 \begin{figure}[h!]
-  \begin{center}	\includegraphics[width=0.95\textwidth]{imagenes/Cap4/arquitectura}
+  \begin{center}	\includegraphics[width=0.95\textwidth, frame]{imagenes/Cap4/arquitectura}
   \caption{Arquitectura de una neurona artificial.}
   \label{fig:arquitectura}
   \end{center}
@@ -289,7 +293,7 @@ Por lo tanto se puede decir que el algoritmo de Backpropagation toma el error as
 Un Autoencoder es una Red Neuronal Artificial usada para aprendizaje autom\'{a}tico no supervisado, esta entrenada para reconstruir sus propias entradas, es decir, predecir el valor de la salida $\hat{x}$ dada una entrada $x$ v\'{i}a una capa oculta $h$, ver Figura \ref{fig:autoencoder}. Los autoencoders suelen ser usados para reducci\'{o}n de dimensionalidad y aprendizaje de caracter\'{i}sticas. 
 
 \begin{figure}[h!]
-  \begin{center}	\includegraphics[width=0.95\textwidth]{imagenes/Cap4/autoencoder}
+  \begin{center}	\includegraphics[width=0.95\textwidth, frame]{imagenes/Cap4/autoencoder}
   \caption{Gr\'{a}fico de un Autoencoder.}
   \label{fig:autoencoder}
   \end{center}
@@ -337,7 +341,7 @@ Las RNN son una familia particular de redes neuronales donde la red contiene una
 Las RNN tienen una cierta memoria de lo que sucedi\'{o} anteriormente en una secuencia de datos, esto ayuda al sistema a ganar contexto de los datos. Te\'{o}ricamente se dice que las RNN tiene memoria infinita, es decir, este tipo de redes tienen la capacidad de mirar hacia atr\'{a}s indefinidamente; sin embargo en la pr\'{a}ctica s\'{o}lo se puede mirar atr\'{a}s unos \'{u}ltimos pasos.
 
 \begin{figure}[h!]
-  \begin{center}	\includegraphics[width=0.95\textwidth]{imagenes/Cap4/rnn}
+  \begin{center}	\includegraphics[width=0.95\textwidth, frame]{imagenes/Cap4/rnn}
   \caption{Procesamiento secuencial en una red neuronal recurrente (RNN) \cite{53}.}
   \label{fig:rnn}
   \end{center}
@@ -354,7 +358,7 @@ LSTM\footnote{\textbf{LSTM,} Long Short-Term Memory} es una evoluci\'{o}n de RNN
 El modelo LSTM está organizado en forma de estructura de cadena. Sin embargo, el módulo de repetición tiene una estructura diferente. En lugar de una sola red neuronal como un RNN estándar, tiene cuatro capas interactivas con un método único de comunicación. La estructura de la red neuronal LSTM se muestra en la Figura \ref{fig:lstm}.
 
 \begin{figure}[h!]
-  \begin{center}	\includegraphics[width=0.95\textwidth]{imagenes/Cap4/lstm}
+  \begin{center}	\includegraphics[width=0.95\textwidth, frame]{imagenes/Cap4/lstm}
   \caption{Estructura de LSTM. Reproducido desde Yan \cite{54}.} 
   \label{fig:lstm}
   \end{center}
@@ -380,7 +384,7 @@ En resumen, las GRU tienen las siguientes dos caracter\'{i}sticas distintivas:
 \end{itemize}
 
 \begin{figure}[h!]
-  \begin{center}	\includegraphics[width=0.95\textwidth]{imagenes/Cap4/gru}
+  \begin{center}	\includegraphics[width=0.95\textwidth, frame]{imagenes/Cap4/gru}
   \caption{Estructura de GRU. Reproducido desde \cite{56}.} 
   \label{fig:gru}
   \end{center}
@@ -400,7 +404,7 @@ One-Class SVM\footnote{\textbf{SVM, }Support Vector Machine} (OC-SVM) es un enfo
 Este algoritmo s\'{o}lo se entrena con ejemplos positivos (clases normales). La idea general de \'{e}ste algoritmo es transformar el espacio de atributos y dibujar un hiperplano divisorio para que las observaciones se encuentren lo m\'{a}s lejos posible del origen, como se puede observar en la Figura \ref{fig:oc-svm}.
 
 \begin{figure}[h!]
-  \begin{center}	\includegraphics[width=0.45\textwidth]{imagenes/Cap4/oc-svm}
+  \begin{center}	\includegraphics[width=0.45\textwidth, frame]{imagenes/Cap4/oc-svm}
   \caption{One-Class SVM} 
   \label{fig:oc-svm}
   \end{center}
@@ -429,7 +433,7 @@ C(z) = \left\lbrace
 \end{equation}
 
 \begin{figure}[h!]
-  \begin{center}	\includegraphics[width=0.95\textwidth]{imagenes/Cap4/autoencoder-anomaly}
+  \begin{center}	\includegraphics[width=0.95\textwidth, frame]{imagenes/Cap4/autoencoder-anomaly}
   \caption{Detecci\'{o}n de anomal\'{i}as con autoencoder} 
   \label{fig:autoencoder-anomaly}
   \end{center}
@@ -444,7 +448,7 @@ Este modelo se usa en un escenario similar al SVM de una clase, específicamente
 El componente básico del Isolation Forest (Bosque de aislamiento) es el árbol de aislamiento, que es un árbol binario simple donde en cada nodo $T_{i}$ tanto la característica como el umbral para la regla de división se seleccionan aleatoriamente. Un nodo existente deja de generar hijos si y solo si solo hay un ejemplo siguiendo la regla de división para esa ruta específica (lo que significa que el ejemplo se ha aislado) o se ha alcanzado una altura máxima. Esto significa que al final del proceso de capacitación tendremos un árbol de clasificación aleatorio completamente sobreajustado, que puede usarse para fines de detección de anomalías. La intuición principal de este algoritmo es que si un ejemplo es anómalo, se aislará después de algunos cortes en el espacio de características, lo que se traduce en tener una baja altura en el árbol de aislamiento.
 
 \begin{figure}[h!]
-  \begin{center}	\includegraphics[width=0.75\textwidth]{imagenes/Cap4/isolation-forest}
+  \begin{center}	\includegraphics[width=0.75\textwidth, frame]{imagenes/Cap4/isolation-forest}
   \caption{La figura de la izquierda muestra el aislamiento de una anomalía, que requiere solo tres particiones. A la derecha, el aislamiento de un punto normal requiere seis particiones \cite{60}.} 
   \label{fig:isolartion-forest}
   \end{center}
@@ -560,7 +564,7 @@ Especificidad = \frac{FP}{FP+VN}
 ROC es la curva dibujada conectando los puntos del eje X = FPR (Tasa de falsos positivos) y el eje y = TPR (Tasa de verdaderos positivos) para diferentes valores de umbral para un modelo, es decir, se elige diferentes umbrales para un modelo, se calcula el TPR y FPR para cada umbral, luego dibuja la curva ROC y finalmente se calcula el AUC, que es el \'{a}rea bajo la curva ROC. En la Figura \ref{fig:auc_roc} se muestra un ejemplo de la curva AUC-ROC.
 
 \begin{figure}[h!]
-  \begin{center}	\includegraphics[width=0.65\textwidth]{imagenes/Cap4/auc_roc}
+  \begin{center}	\includegraphics[width=0.65\textwidth, frame]{imagenes/Cap4/auc_roc}
   \caption{Ejemplo de un curva AUC-ROC \cite{62}.}
   \label{fig:auc_roc}
   \end{center}

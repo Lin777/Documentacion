@@ -13,7 +13,7 @@ Las anomal\'{i}as pueden ser clasificadas dentro de una de las tres siguientes c
 \item \textbf{Anomal\'{i}as de punto: }Las anomalías de punto son simplemente instancias únicas y anómalas dentro de un conjunto de datos más grande, es decir, \'{e}stas se encuentran separadas del resto de los datos. Por ejemplo, en la Figura \ref{fig:anom_2D}, los puntos $o_1$, $o_2$ y la regi\'{o}n $O_3$ se encuentran fuera de los l\'{i}mites de las regiones normales ($N_1$ y $N_2$), y por lo tanto son anomal\'{i}as puntuales debido a que son diferentes al conjunto de datos normales.
 
 \begin{figure}[h!]
-  \begin{center}	\includegraphics[width=0.45\textwidth]{imagenes/Cap2/anom_2D}
+  \begin{center}	\includegraphics[width=0.45\textwidth,frame]{imagenes/Cap2/anom_2D}
   \caption{Ejemplo de anomal\'{i}as de punto en un conjunto de datos de 2 dimensiones.}
   \label{fig:anom_2D}
   \end{center}
@@ -30,7 +30,7 @@ Este tipo de anomal\'{i}a se considera la m\'{a}s simple y es el foco de la mayo
 Este tipo de anomal\'{i}as se han explorado con mayor frecuencia en los datos de series de tiempo y datos espaciales. La figura \ref{fig:anom_contx} muestra un ejemplo de serie temporal de la temperatura mensual de un \'{a}rea en los \'{u}ltimos 5 a\~{n}os, se debe tener en cuenta que la temperatura en el tiempo $t_1$ es la misma que en el tiempo $t_2$, pero se produce en un contexto diferente, por lo tanto $t_2$ es considerada una anomal\'{i}a.
 
 \begin{figure}[h!]
-  \begin{center}	\includegraphics[width=0.6\textwidth]{imagenes/Cap2/anom_contx}
+  \begin{center}	\includegraphics[width=0.6\textwidth,frame]{imagenes/Cap2/anom_contx}
   \caption{Anomal\'{i}a contextual $t_2$ en una serie temporal de temperatura.}
   \label{fig:anom_contx}
   \end{center}
@@ -44,7 +44,7 @@ Si una colección de instancias de datos relacionadas es anómala con respecto a
 La figura \ref{fig:anom_col} ilustra un ejemplo que muestra una salida de electrocardiograma humano, se puede notar que la región resaltada en rojo denota una anomalía porque existe el mismo valor bajo durante un tiempo anormalmente prolongado (que corresponde a una Contracción prematura auricular). Se debe tener en cuenta que ese valor bajo por sí mismo no es considerada una anomalía.
 
 \begin{figure}[h!]
-  \begin{center}	\includegraphics[width=0.45\textwidth]{imagenes/Cap2/anom_col}
+  \begin{center}	\includegraphics[width=0.45\textwidth,frame]{imagenes/Cap2/anom_col}
   \caption{Anomalía colectiva correspondiente a una contracción prematura auricular en un electrocardiograma humano.}
   \label{fig:anom_col}
   \end{center}
@@ -139,7 +139,7 @@ Con la propuesta que se hace en este trabajo de grado se pretende brindar un pro
 Para lograr este objetivo, se captura el conjunto de datos de los sensores de movimiento de un tel\'{e}fono inteligente, mediante una aplicaci\'{o}n m\'{o}vil, posteriormente se divide y prepara los datos con t\'{e}cnicas de pre-procesamiento de datos. Una vez terminadas estas fases se entrena un modelo con el conjunto de entrenamiento y se valida con el conjunto de desarrollo. Finalmente se elige un modelo \'{o}ptimo y una t\'{e}cnica para clasificar los valores at\'{i}picos, con el objetivo de cubrir un rango completo de los comportamientos normales y excluir con la mayor precisi\'{o}n posible las anomal\'{i}as. Este m\'{e}todo se puede apreciar mejor en la Figura \ref{fig:modeloAnomalias}.
 
 \begin{figure}[h!]
-  \begin{center}	\includegraphics[width=0.90\textwidth]{imagenes/Cap2/metodo1}
+  \begin{center}	\includegraphics[width=0.90\textwidth,frame]{imagenes/Cap2/metodo1}
   \caption{M\'{e}todo de detecci\'{o}n de anomal\'{i}as propuesto.}
   \label{fig:modeloAnomalias}
   \end{center}

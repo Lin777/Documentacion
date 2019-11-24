@@ -33,12 +33,20 @@
 \usepackage{hyperref}
 %\usepackage[backend=bibtex,style=authoryear,natbib=true]{biblatex}
 \usepackage[style=trad-abbrv]{biblatex}
-%\addbibresource{example.bib}
+\addbibresource{example.bib}
 %\usepackage[autostyle=true]{csquotes}
 \usepackage{float}
+\usepackage[export]{adjustbox}
 
 \usepackage{float}
 \usepackage{wrapfig}
+
+% Eliminar sangrias
+\usepackage{parskip}
+
+% Cambiar fuente a Arial
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
 
 %\floatstyle{boxed} % or whatever
 \restylefloat{figure}
@@ -53,7 +61,7 @@
 %----------------------------------------------------------------------------------------
 \geometry{
 	paper=letterpaper,inner=2.5cm,outer=3.8cm,bindingoffset=.5cm,
-	top=1.5cm,bottom=1.5cm, 
+	top=2cm,bottom=2cm,left=3cm, right=2cm 
 }
 %----------------------------------------------------------------------------------------
 %	THESIS INFORMATION
@@ -87,47 +95,55 @@
 %----------------------------------------------------------------------------------------
 \begin{titlepage}
 
-\begin{center}
-
-\begin{table}[]
-\begin{center}
-\begin{tabular}{lcl}
-\centering
-\adj{\includegraphics[width=0.62in]{imagenes/umss}}  & \adj{\includegraphics[width=4.1in]{imagenes/texto}} & \adj{\includegraphics[width=0.72in]{imagenes/fcyt}}  
-\end{tabular}
-\end{center}
-\end{table}
-
-% \vspace{3cm} % University name
-\textsc{\Large Proyecto de Grado}\\[0.5cm] % Thesis type
-
-\HRule \\[0.4cm] % Horizontal line
-{\huge \bfseries \ttitle\par}\vspace{0.4cm} % Thesis title
-\HRule \\[1.5cm] % Horizontal line
- 
-\begin{minipage}[t]{0.4\textwidth}
-\begin{flushleft} \large
-\emph{Autor:}\\
-{\authorname}
-\end{flushleft}
+\begin{minipage}[l]{.15\linewidth}
+\includegraphics[height=2.5cm]{imagenes/umss}
 \end{minipage}
-\begin{minipage}[t]{0.4\textwidth}
-\begin{flushright} \large
-\emph{Tutor:} \\
-{\supname}
-\end{flushright}
-\end{minipage}\\[3cm]
+\begin{minipage}[c]{.65\textwidth}
+\begin{center}
+UNIVERSIDAD MAYOR DE SAN SIM\'{O}N
 
-\vfill
+FACULTAD DE CIENCIAS Y TECNOLOG\'{I}A
 
-\large \textit{Un proyecto de grado presentado en cumplimiento de los requisitos\\ para el titulo de \degreename}\\[0.3cm]
-\textit{en la}\\[0.4cm]
-\groupname\\\deptname\\[2cm]
-\vfill
-
-{\large \today}\\[4cm]
-\vfill
+CARRERA DE INGENIER\'{I}A DE SISTEMAS
 \end{center}
+\end{minipage}
+\begin{minipage}[r]{.15\linewidth}
+\includegraphics[height=2.5cm]{imagenes/logo}
+\end{minipage}
+
+\vfill
+\begin{center}
+\huge {\bf{\ttitle}}	
+\end{center}
+\singlespacing
+\singlespacing
+\singlespacing
+\singlespacing
+\singlespacing
+\begin{center}
+{\large \textit{Un proyecto de grado presentado en cumplimiento de los requisitos\\ para optar por el t\'{i}tulo de Licenciatura en Ingenier\'{i}a de Sistemas}}
+\end{center}
+\vspace{\fill}
+
+\begin{center}
+{\Large Presentado por:}\\
+
+\hspace{ 0.55\textwidth} \Large{\authorname}\\
+
+\hspace{ -0.14\textwidth} {\Large Tutor:}\\
+
+\hspace{ 0.55\textwidth} {\Large{\supname}}\\
+
+\hspace{ 0.35\textwidth} 
+\end{center}
+
+\vspace*{0.2cm}
+ 
+\begin{center}
+\vspace*{1.5cm}
+\Large{COCHABAMBA - BOLIVIA}\hspace*{1cm}\Large{\\Diciembre, 2019}	
+\end{center}	
+	
 \end{titlepage}
 
 \cleardoublepage
@@ -184,6 +200,7 @@ Le agradezco a Dios por haberme acompañado y guiado a lo largo de mi carrera, p
 %----------------------------------------------------------------------------------------
 %	THESIS CONTENT - APPENDICES
 %----------------------------------------------------------------------------------------
+\printbibliography[heading=bibintoc]
 
 \appendix 
 \include{apendices/apendiceA}

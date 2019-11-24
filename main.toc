@@ -2,108 +2,108 @@
 \babel@toc {spanish}{}
 \contentsline {chapter}{Agradecimientos}{\es@scroman {iii}}{section*.1}
 \contentsline {chapter}{Resumen}{\es@scroman {xv}}{section*.6}
-\contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n}{1}{chapter.7}
+\contentsline {chapter}{\numberline {1}\uppercase {Introducci\IeC {\'o}n}}{1}{chapter.7}
 \contentsline {section}{\numberline {1.1}Planteamiento del problema}{1}{section.8}
-\contentsline {section}{\numberline {1.2}Objetivo general}{3}{section.11}
+\contentsline {section}{\numberline {1.2}Objetivo general}{2}{section.11}
 \contentsline {section}{\numberline {1.3}Objetivos espec\IeC {\'\i }ficos}{3}{section.12}
 \contentsline {section}{\numberline {1.4}Justificaci\IeC {\'o}n}{3}{section.13}
-\contentsline {subsection}{\numberline {1.4.1}Justificaci\'{o}n pr\'{a}ctica}{3}{subsection.14}
-\contentsline {subsection}{\numberline {1.4.2}Justificaci\'{o}n metodol\'{o}gica}{3}{subsection.15}
+\contentsline {subsection}{\numberline {1.4.1}Justificaci\'{o}n pr\'{a}ctica}{4}{subsection.14}
+\contentsline {subsection}{\numberline {1.4.2}Justificaci\'{o}n metodol\'{o}gica}{4}{subsection.15}
 \contentsline {section}{\numberline {1.5}L\'{i}mites y alcances}{4}{section.16}
 \contentsline {section}{\numberline {1.6}M\'{e}todo de investigaci\'{o}n}{4}{section.17}
-\contentsline {chapter}{\numberline {2}Fundamentos de la detecci\'{o}n de anomal\'{i}as}{5}{chapter.18}
+\contentsline {chapter}{\numberline {2}\uppercase {Fundamentos de la detecci\'{o}n de anomal\'{i}as}}{5}{chapter.18}
 \contentsline {section}{\numberline {2.1}Detecci\'{o}n de nomal\'{i}as}{5}{section.19}
 \contentsline {section}{\numberline {2.2}Desaf\'{i}os en la detecci\'{o}n de anomal\'{i}as}{7}{section.26}
-\contentsline {subsection}{\numberline {2.2.1}Enfoques de detecci\'{o}n de anomal\'{i}as}{7}{subsection.27}
-\contentsline {subsubsection}{Detecci\'{o}n de anomal\'{i}as supervisada}{7}{section*.28}
+\contentsline {subsection}{\numberline {2.2.1}Enfoques de detecci\'{o}n de anomal\'{i}as}{8}{subsection.27}
+\contentsline {subsubsection}{Detecci\'{o}n de anomal\'{i}as supervisada}{8}{section*.28}
 \contentsline {subsubsection}{Detecci\'{o}n de anomal\'{i}as semi-supervisada}{8}{section*.29}
 \contentsline {subsubsection}{Detecci\'{o}n de anomal\'{i}as no supervisada}{8}{section*.30}
 \contentsline {section}{\numberline {2.3}Trabajo relacionado}{8}{section.31}
-\contentsline {section}{\numberline {2.4}Enfoque sobre el problema}{9}{section.32}
+\contentsline {section}{\numberline {2.4}Enfoque sobre el problema}{10}{section.32}
 \contentsline {section}{\numberline {2.5}Resumen del cap\'{i}tulo}{10}{section.34}
-\contentsline {chapter}{\numberline {3}Captura y preparaci\'{o}n de datos}{11}{chapter.35}
-\contentsline {section}{\numberline {3.1}Captura de datos}{11}{section.36}
-\contentsline {section}{\numberline {3.2}Preparaci\'{o}n de datos}{12}{section.40}
-\contentsline {subsection}{\numberline {3.2.1}Selecci\'{o}n de datos}{13}{subsection.41}
-\contentsline {section}{\numberline {3.3}Pre-procesamiento de datos}{14}{section.45}
-\contentsline {subsection}{\numberline {3.3.1}Limpieza de datos}{14}{subsection.46}
-\contentsline {subsubsection}{Manejo de valores ausentes}{14}{section*.47}
-\contentsline {subsubsection}{Eliminar rudio (suavizado) de los datos}{15}{section*.48}
-\contentsline {subsubsection}{Fusi\'{o}n o integraci\'{o}n de datos}{17}{section*.53}
-\contentsline {subsubsection}{Transformaci\'{o}n de datos}{18}{section*.54}
-\contentsline {subsubsection}{Reducci\'{o}n de datos}{19}{section*.57}
-\contentsline {section}{\numberline {3.4}Resumen del cap\'{i}tulo}{27}{section.80}
-\contentsline {chapter}{\numberline {4}Aprendizaje Autom\'{a}tico para la detecci\'{o}n de anomal\'{i}as}{29}{chapter.81}
-\contentsline {section}{\numberline {4.1}Aprendizaje Supervisado, Aprendizaje no Supervisado y Aprendizaje Semi-supervisado}{29}{section.82}
-\contentsline {subsection}{\numberline {4.1.1}Aprendizaje Supervisado}{29}{subsection.83}
-\contentsline {subsection}{\numberline {4.1.2}Aprendizaje no Supervisado}{30}{subsection.85}
-\contentsline {subsection}{\numberline {4.1.3}Aprendizaje Semi-Supervisado}{30}{subsection.86}
-\contentsline {section}{\numberline {4.2}Modelos Generativos y Discriminativos}{31}{section.87}
-\contentsline {section}{\numberline {4.3}Redes Neuronales Artificiales}{32}{section.88}
-\contentsline {subsection}{\numberline {4.3.1}Neuronas o nodos}{32}{subsection.90}
-\contentsline {subsection}{\numberline {4.3.2}Tipos de funciones de activaci\'{o}n}{34}{subsection.94}
-\contentsline {subsubsection}{Funci\'{o}n de activaci\'{o}n sigmoide (funci\'{o}n log\'{i}stica)}{34}{section*.101}
-\contentsline {subsubsection}{Funci\'{o}n de tangente hiperb\'{o}lica - tanh}{35}{section*.103}
-\contentsline {subsubsection}{Funci\'{o}n de unidad lineal rectificada (Rectified Linear Unit - ReLU)}{35}{section*.105}
-\contentsline {subsubsection}{Leaky ReLU (LReLU)}{36}{section*.107}
-\contentsline {subsubsection}{Funci\'{o}n de Unidad Lineal Exponencial (ELU)}{36}{section*.109}
-\contentsline {subsection}{\numberline {4.3.3}Arquitectura de las Redes Neuronales}{36}{subsection.112}
-\contentsline {subsection}{\numberline {4.3.4}Proceso de aprendizaje de las Redes Neuronales}{37}{subsection.114}
-\contentsline {subsubsection}{Backpropagation}{38}{section*.115}
-\contentsline {section}{\numberline {4.4}Tipos de Redes Neuronales}{38}{section.116}
-\contentsline {subsection}{\numberline {4.4.1}Autoencoders}{38}{subsection.117}
-\contentsline {subsection}{\numberline {4.4.2}Redes neuronales convolucionales}{38}{subsection.119}
-\contentsline {subsection}{\numberline {4.4.3}Redes neuronales recurrentes}{39}{subsection.122}
-\contentsline {subsection}{\numberline {4.4.4}LSTM}{41}{subsection.126}
-\contentsline {subsection}{\numberline {4.4.5}GRU}{41}{subsection.129}
-\contentsline {section}{\numberline {4.5}T\'{e}cnicas de detecci\'{o}n de anomal\'{i}as}{42}{section.132}
-\contentsline {subsection}{\numberline {4.5.1}One-Class SVM}{43}{subsection.133}
-\contentsline {subsection}{\numberline {4.5.2}Autoencoders}{43}{subsection.136}
-\contentsline {subsection}{\numberline {4.5.3}Isolation Forest}{44}{subsection.139}
-\contentsline {section}{\numberline {4.6}M\'{e}tricas de evaluaci\'{o}n}{45}{section.141}
-\contentsline {subsection}{\numberline {4.6.1}Precisi\'{o}n de clasificaci\'{o}n (accuracy)}{46}{subsection.142}
-\contentsline {subsection}{\numberline {4.6.2}P\'{e}rdida logar\'{i}tmica (Logarithmic Loss)}{46}{subsection.144}
-\contentsline {subsection}{\numberline {4.6.3}Matriz de confusi\'{o}n}{47}{subsection.146}
-\contentsline {subsection}{\numberline {4.6.4}\'{A}rea bajo la curva (AUC)}{48}{subsection.149}
-\contentsline {subsubsection}{Tasa de Verdaderos Positivos (TPR)}{48}{section*.151}
-\contentsline {subsubsection}{Tasa de Falsos Positivos (FPR) }{48}{section*.154}
-\contentsline {subsubsection}{ROC (Receiver Operating Characteristics)}{48}{section*.157}
-\contentsline {subsection}{\numberline {4.6.5}F1 Score}{49}{subsection.159}
-\contentsline {subsubsection}{Precisi\'{o}n (Precision)}{49}{section*.160}
-\contentsline {subsubsection}{Recuperaci\'{o}n (Recall)}{50}{section*.162}
-\contentsline {section}{\numberline {4.7}Resumen del cap\'{i}tulo}{50}{section.165}
-\contentsline {chapter}{\numberline {5}Generaci\'{o}n del mecanismo de detecci\'{o}n de anomal\'{i}as}{51}{chapter.166}
-\contentsline {section}{\numberline {5.1}Entorno de desarrollo}{51}{section.167}
-\contentsline {section}{\numberline {5.2}Conjunto de datos normales y an\'{o}malos}{52}{section.168}
-\contentsline {subsection}{\numberline {5.2.1}Generaci\'{o}n de series temporales}{52}{subsection.170}
-\contentsline {section}{\numberline {5.3}Modelo de detecci\'{o}n de anomal\'{i}as}{53}{section.176}
-\contentsline {subsection}{\numberline {5.3.1}Modelo del comportamiento normal}{54}{subsection.178}
-\contentsline {subsubsection}{Arquitectura del modelo}{54}{section*.179}
-\contentsline {subsection}{\numberline {5.3.2}M\'{e}todo de detecci\'{o}n de anomal\'{i}as}{57}{subsection.188}
-\contentsline {subsubsection}{Umbralizaci\'{o}n}{57}{section*.189}
-\contentsline {subsubsection}{Isolation Forest}{61}{section*.194}
-\contentsline {subsubsection}{One-Class SVM}{62}{section*.199}
-\contentsline {subsubsection}{Evaluaci\'{o}n del m\'{e}todo de detecci\'{o}n de anomal\'{i}as}{63}{section*.202}
-\contentsline {section}{\numberline {5.4}Resumen}{66}{section.205}
-\contentsline {chapter}{\numberline {6}Evaluaci\'{o}n y resultados}{67}{chapter.206}
-\contentsline {section}{\numberline {6.1}Evaluaci\'{o}n de desempe\~{n}o}{67}{section.207}
-\contentsline {subsection}{\numberline {6.1.1}Evaluaci\IeC {\'o}n en t\IeC {\'e}rminos de rendimiento de detecci\IeC {\'o}n}{67}{subsection.208}
-\contentsline {section}{\numberline {6.2}Resultados}{68}{section.210}
-\contentsline {subsection}{\numberline {6.2.1}Detecci\'{o}n de anomal\'{i}as del tipo zig zag}{68}{subsection.211}
-\contentsline {subsection}{\numberline {6.2.2}Detecci\'{o}n de anomal\'{i}as del tipo giros a alta velocidad}{69}{subsection.213}
-\contentsline {subsection}{\numberline {6.2.3}Detecci\'{o}n de anomal\'{i}as del tipo frenos en seco}{70}{subsection.215}
-\contentsline {subsection}{\numberline {6.2.4}Detecci\'{o}n de falsos positivos}{71}{subsection.217}
-\contentsline {section}{\numberline {6.3}Resumen}{72}{section.219}
-\contentsline {chapter}{\numberline {7}Conclusiones y trabajos futuros}{73}{chapter.220}
-\contentsline {section}{\numberline {7.1}Conclusiones}{73}{section.221}
-\contentsline {section}{\numberline {7.2}Limitaciones y recomendaciones}{74}{section.222}
-\contentsline {chapter}{\numberline {A}Experimentos de diferentes arquitecturas para los autoencoders}{77}{appendix.223}
-\contentsline {section}{\numberline {A.1}Redes densas}{77}{section.224}
-\contentsline {subsection}{\numberline {A.1.1}Redes densas para 3 componentes}{77}{subsection.225}
-\contentsline {subsection}{\numberline {A.1.2}Evaluaci\'{o}n redes densas}{78}{subsection.227}
-\contentsline {section}{\numberline {A.2}Redes convolucionales}{78}{section.229}
-\contentsline {subsection}{\numberline {A.2.1}Redes convolucionales para 3 componentes}{78}{subsection.230}
-\contentsline {subsection}{\numberline {A.2.2}Evaluaci\'{o}n redes convolucionales}{79}{subsection.232}
-\contentsline {section}{\numberline {A.3}Redes recurrentes}{79}{section.234}
-\contentsline {subsection}{\numberline {A.3.1}Redes recurrentes para 3 componentes}{79}{subsection.235}
-\contentsline {subsection}{\numberline {A.3.2}Evaluaci\'{o}n redes recurrentes}{80}{subsection.237}
+\contentsline {chapter}{\numberline {3}\uppercase {Captura y preparaci\'{o}n de datos}}{13}{chapter.35}
+\contentsline {section}{\numberline {3.1}Captura de datos}{13}{section.36}
+\contentsline {section}{\numberline {3.2}Preparaci\'{o}n de datos}{15}{section.40}
+\contentsline {subsection}{\numberline {3.2.1}Selecci\'{o}n de datos}{15}{subsection.41}
+\contentsline {section}{\numberline {3.3}Pre-procesamiento de datos}{16}{section.45}
+\contentsline {subsection}{\numberline {3.3.1}Limpieza de datos}{16}{subsection.46}
+\contentsline {subsubsection}{Manejo de valores ausentes}{17}{section*.47}
+\contentsline {subsubsection}{Eliminar rudio (suavizado) de los datos}{17}{section*.48}
+\contentsline {subsubsection}{Fusi\'{o}n o integraci\'{o}n de datos}{19}{section*.53}
+\contentsline {subsubsection}{Transformaci\'{o}n de datos}{21}{section*.54}
+\contentsline {subsubsection}{Reducci\'{o}n de datos}{22}{section*.57}
+\contentsline {section}{\numberline {3.4}Resumen del cap\'{i}tulo}{30}{section.80}
+\contentsline {chapter}{\numberline {4}\uppercase {Aprendizaje Autom\'{a}tico para la detecci\'{o}n de anomal\'{i}as}}{31}{chapter.81}
+\contentsline {section}{\numberline {4.1}Aprendizaje Supervisado, Aprendizaje no Supervisado y Aprendizaje Semi-supervisado}{31}{section.82}
+\contentsline {subsection}{\numberline {4.1.1}Aprendizaje Supervisado}{31}{subsection.83}
+\contentsline {subsection}{\numberline {4.1.2}Aprendizaje no Supervisado}{32}{subsection.85}
+\contentsline {subsection}{\numberline {4.1.3}Aprendizaje Semi-Supervisado}{32}{subsection.86}
+\contentsline {section}{\numberline {4.2}Modelos Generativos y Discriminativos}{33}{section.87}
+\contentsline {section}{\numberline {4.3}Redes Neuronales Artificiales}{34}{section.88}
+\contentsline {subsection}{\numberline {4.3.1}Neuronas o nodos}{34}{subsection.90}
+\contentsline {subsection}{\numberline {4.3.2}Tipos de funciones de activaci\'{o}n}{36}{subsection.94}
+\contentsline {subsubsection}{Funci\'{o}n de activaci\'{o}n sigmoide (funci\'{o}n log\'{i}stica)}{36}{section*.101}
+\contentsline {subsubsection}{Funci\'{o}n de tangente hiperb\'{o}lica - tanh}{38}{section*.103}
+\contentsline {subsubsection}{Funci\'{o}n de unidad lineal rectificada (Rectified Linear Unit - ReLU)}{38}{section*.105}
+\contentsline {subsubsection}{Leaky ReLU (LReLU)}{39}{section*.107}
+\contentsline {subsubsection}{Funci\'{o}n de Unidad Lineal Exponencial (ELU)}{39}{section*.109}
+\contentsline {subsection}{\numberline {4.3.3}Arquitectura de las Redes Neuronales}{40}{subsection.112}
+\contentsline {subsection}{\numberline {4.3.4}Proceso de aprendizaje de las Redes Neuronales}{40}{subsection.114}
+\contentsline {subsubsection}{Backpropagation}{41}{section*.115}
+\contentsline {section}{\numberline {4.4}Tipos de Redes Neuronales}{41}{section.116}
+\contentsline {subsection}{\numberline {4.4.1}Autoencoders}{41}{subsection.117}
+\contentsline {subsection}{\numberline {4.4.2}Redes neuronales convolucionales}{42}{subsection.119}
+\contentsline {subsection}{\numberline {4.4.3}Redes neuronales recurrentes}{43}{subsection.122}
+\contentsline {subsection}{\numberline {4.4.4}LSTM}{44}{subsection.126}
+\contentsline {subsection}{\numberline {4.4.5}GRU}{46}{subsection.129}
+\contentsline {section}{\numberline {4.5}T\'{e}cnicas de detecci\'{o}n de anomal\'{i}as}{46}{section.132}
+\contentsline {subsection}{\numberline {4.5.1}One-Class SVM}{47}{subsection.133}
+\contentsline {subsection}{\numberline {4.5.2}Autoencoders}{47}{subsection.136}
+\contentsline {subsection}{\numberline {4.5.3}Isolation Forest}{49}{subsection.139}
+\contentsline {section}{\numberline {4.6}M\'{e}tricas de evaluaci\'{o}n}{50}{section.141}
+\contentsline {subsection}{\numberline {4.6.1}Precisi\'{o}n de clasificaci\'{o}n (accuracy)}{50}{subsection.142}
+\contentsline {subsection}{\numberline {4.6.2}P\'{e}rdida logar\'{i}tmica (Logarithmic Loss)}{50}{subsection.144}
+\contentsline {subsection}{\numberline {4.6.3}Matriz de confusi\'{o}n}{51}{subsection.146}
+\contentsline {subsection}{\numberline {4.6.4}\'{A}rea bajo la curva (AUC)}{52}{subsection.149}
+\contentsline {subsubsection}{Tasa de Verdaderos Positivos (TPR)}{52}{section*.151}
+\contentsline {subsubsection}{Tasa de Falsos Positivos (FPR) }{52}{section*.154}
+\contentsline {subsubsection}{ROC (Receiver Operating Characteristics)}{53}{section*.157}
+\contentsline {subsection}{\numberline {4.6.5}F1 Score}{53}{subsection.159}
+\contentsline {subsubsection}{Precisi\'{o}n (Precision)}{54}{section*.160}
+\contentsline {subsubsection}{Recuperaci\'{o}n (Recall)}{54}{section*.162}
+\contentsline {section}{\numberline {4.7}Resumen del cap\'{i}tulo}{54}{section.165}
+\contentsline {chapter}{\numberline {5}\uppercase {Generaci\'{o}n del mecanismo de detecci\'{o}n de anomal\'{i}as}}{55}{chapter.166}
+\contentsline {section}{\numberline {5.1}Entorno de desarrollo}{55}{section.167}
+\contentsline {section}{\numberline {5.2}Conjunto de datos normales y an\'{o}malos}{56}{section.168}
+\contentsline {subsection}{\numberline {5.2.1}Generaci\'{o}n de series temporales}{56}{subsection.170}
+\contentsline {section}{\numberline {5.3}Modelo de detecci\'{o}n de anomal\'{i}as}{57}{section.176}
+\contentsline {subsection}{\numberline {5.3.1}Modelo del comportamiento normal}{58}{subsection.178}
+\contentsline {subsubsection}{Arquitectura del modelo}{58}{section*.179}
+\contentsline {subsection}{\numberline {5.3.2}M\'{e}todo de detecci\'{o}n de anomal\'{i}as}{61}{subsection.188}
+\contentsline {subsubsection}{Umbralizaci\'{o}n}{61}{section*.189}
+\contentsline {subsubsection}{Isolation Forest}{65}{section*.194}
+\contentsline {subsubsection}{One-Class SVM}{67}{section*.199}
+\contentsline {subsubsection}{Evaluaci\'{o}n del m\'{e}todo de detecci\'{o}n de anomal\'{i}as}{68}{section*.202}
+\contentsline {section}{\numberline {5.4}Resumen}{70}{section.205}
+\contentsline {chapter}{\numberline {6}\uppercase {Evaluaci\'{o}n y resultados}}{71}{chapter.206}
+\contentsline {section}{\numberline {6.1}Evaluaci\'{o}n de desempe\~{n}o}{71}{section.207}
+\contentsline {subsection}{\numberline {6.1.1}Evaluaci\IeC {\'o}n en t\IeC {\'e}rminos de rendimiento de detecci\IeC {\'o}n}{71}{subsection.208}
+\contentsline {section}{\numberline {6.2}Resultados}{72}{section.210}
+\contentsline {subsection}{\numberline {6.2.1}Detecci\'{o}n de anomal\'{i}as del tipo zig zag}{72}{subsection.211}
+\contentsline {subsection}{\numberline {6.2.2}Detecci\'{o}n de anomal\'{i}as del tipo giros a alta velocidad}{74}{subsection.216}
+\contentsline {subsection}{\numberline {6.2.3}Detecci\'{o}n de anomal\'{i}as del tipo frenos en seco}{75}{subsection.221}
+\contentsline {subsection}{\numberline {6.2.4}Detecci\'{o}n de falsos positivos}{76}{subsection.226}
+\contentsline {section}{\numberline {6.3}Resumen}{77}{section.231}
+\contentsline {chapter}{\numberline {7}\uppercase {Conclusiones y trabajos futuros}}{79}{chapter.232}
+\contentsline {section}{\numberline {7.1}Conclusiones}{79}{section.233}
+\contentsline {section}{\numberline {7.2}Limitaciones y recomendaciones}{80}{section.234}
+\contentsline {chapter}{\numberline {A}Experimentos de diferentes arquitecturas para los autoencoders}{83}{appendix.235}
+\contentsline {section}{\numberline {A.1}Redes densas}{83}{section.236}
+\contentsline {subsection}{\numberline {A.1.1}Redes densas para 3 componentes}{83}{subsection.237}
+\contentsline {subsection}{\numberline {A.1.2}Evaluaci\'{o}n redes densas}{84}{subsection.239}
+\contentsline {section}{\numberline {A.2}Redes convolucionales}{84}{section.241}
+\contentsline {subsection}{\numberline {A.2.1}Redes convolucionales para 3 componentes}{84}{subsection.242}
+\contentsline {subsection}{\numberline {A.2.2}Evaluaci\'{o}n redes convolucionales}{85}{subsection.244}
+\contentsline {section}{\numberline {A.3}Redes recurrentes}{85}{section.246}
+\contentsline {subsection}{\numberline {A.3.1}Redes recurrentes para 3 componentes}{85}{subsection.247}
+\contentsline {subsection}{\numberline {A.3.2}Evaluaci\'{o}n redes recurrentes}{86}{subsection.249}

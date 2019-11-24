@@ -61,6 +61,10 @@ Los datos capturados por el dispositivo m\'{o}vil, dependen del tiempo en el que
 
 \begin{figure}[H]
         \centering
+        
+\fbox{\begin{varwidth}{\textwidth}
+
+        \centering
         \begin{subfigure}[h]{0.45\textwidth} 
             \includegraphics[width=\textwidth]{imagenes/Cap4/pca3-2}
             \caption{Serie de tiempo de 2 pasos.}
@@ -82,6 +86,7 @@ Los datos capturados por el dispositivo m\'{o}vil, dependen del tiempo en el que
             \caption{Serie de tiempo de 5 pasos.}
             \label{fig:robust}
         \end{subfigure}
+        \end{varwidth}}
         \caption{Gr\'{a}fica resultante de diferentes tama\~{n}os de series de tiempo.}
         
 		\label{fig:series-de-tiempo}
@@ -236,6 +241,10 @@ En la Figura \ref{fig:res_autoencoders} se muestra los resultados de los autoenc
 
 \begin{figure}
         \centering
+        
+\fbox{\begin{varwidth}{\textwidth}
+
+        \centering
         \begin{subfigure}[h]{0.99\textwidth} 
             \includegraphics[width=\textwidth]{imagenes/Cap5/resultado_nn}
             \caption{Resultados de la red \textbf{NN\_33}}
@@ -252,6 +261,7 @@ En la Figura \ref{fig:res_autoencoders} se muestra los resultados de los autoenc
             \caption{Resultados de la red \textbf{RNN\_33}}
             \label{fig:res_rnn}
         \end{subfigure}     
+        \end{varwidth}}
         \caption{Resultados.}
         
 		\label{fig:res_autoencoders}
@@ -279,7 +289,7 @@ En la Figura \ref{fig:codos} se muestra la curva de los errores de reconstrucci\
 
 \begin{figure}[H]
         \centering
-            \includegraphics[width=0.75\textwidth]{imagenes/Cap5/codos}
+            \includegraphics[width=0.75\textwidth, frame]{imagenes/Cap5/codos}
         \caption{Curva de los valores de reconstrucci\'{o}n obtenidos con el modelo ajustado al comportamiento normal.}
 		\label{fig:codos}
     \end{figure}
@@ -297,7 +307,7 @@ De esta manera en el presente proyecto se realiz\'{o} experimentos con diferente
 
 \begin{figure}[H]
         \centering
-            \includegraphics[width=0.75\textwidth]{imagenes/Cap5/zoom_codos}
+            \includegraphics[width=0.75\textwidth, frame]{imagenes/Cap5/zoom_codos}
         \caption{Resultados de la obtenci\'{o}n de codos con diferentes valores de Sensibilidad, para los valores de reconstrucci\'{o}n obtenidos con el modelo ajustado al comportamiento normal.}
 		\label{fig:zoom_codos}
 \end{figure}
@@ -334,7 +344,7 @@ Existen dos enfoques que pueden realizarse con esta t\'{e}cnica; el primero entr
 
 \begin{figure}[H]
         \centering
-            \includegraphics[width=0.75\textwidth]{imagenes/Cap5/autoencoder}
+            \includegraphics[width=0.75\textwidth, frame]{imagenes/Cap5/autoencoder}
         \caption{Representaci\'{o}n gr\'{a}fica del modelo de comportamiento normal o autoencoder.}
 		\label{fig:autoencoder}
 \end{figure}
@@ -361,7 +371,7 @@ Existen dos enfoques que pueden realizarse con esta t\'{e}cnica; el primero entr
 
 \begin{figure}[H]
         \centering
-            \includegraphics[width=0.75\textwidth]{imagenes/Cap5/error}
+            \includegraphics[width=0.75\textwidth, frame]{imagenes/Cap5/error}
         \caption{Representaci\'{o}n gr\'{a}fica del error de reconstrucci\'{o}n usado para el entrenamiento de los bosques de aislamiento y los SVM de una clase.}
 		\label{fig:error}
 \end{figure}
@@ -463,7 +473,7 @@ Una vez elegido los mejores m\'{e}todos para conformar el mecanismo de detecci\'
 
 \begin{figure}[H]
         \centering
-            \includegraphics[width=0.92\textwidth]{imagenes/Cap5/mecanismo}
+            \includegraphics[width=0.92\textwidth, frame]{imagenes/Cap5/mecanismo}
         \caption{Mecanismo de detecci\'{o}n de anomal\'{i}as.}
 		\label{fig:mecanismo}
 \end{figure}

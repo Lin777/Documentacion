@@ -16,7 +16,7 @@ Para el presente trabajo de grado se eligi\'{o} el uso de tel\'{e}fonos intelige
 \vspace{5mm} %5mm vertical space
 
 \begin{figure}[h!]
-  \begin{center}	\includegraphics[width=0.95\textwidth]{imagenes/Cap3/captura}
+  \begin{center}	\includegraphics[width=0.95\textwidth,frame]{imagenes/Cap3/captura}
   \caption{Recolecci\'{o}n de datos, con intervalo de un segundo.}
   \label{fig:captura}
   \end{center}
@@ -29,7 +29,7 @@ Para la captura de datos se us\'{o} un soporte para celular de parabrisas como s
 \vspace{5mm} %5mm vertical space
 
 \begin{figure}[h!]
-  \begin{center}	\includegraphics[width=0.65\textwidth]{imagenes/Cap3/soporte}
+  \begin{center}	\includegraphics[width=0.65\textwidth,frame]{imagenes/Cap3/soporte}
   \caption{Soporte para celular de parabrisas, posici\'{o}n horizontal.}
   \label{fig:soporte}
   \end{center}
@@ -38,7 +38,7 @@ Para la captura de datos se us\'{o} un soporte para celular de parabrisas como s
 Cada captura, independientemente de la posici\'{o}n en la que se realiz\'{o}, di\'{o} como resultado un conjunto de datos (dataset), donde por cada tiempo T (1 seg.) se tiene seis variables: aceler\'{o}metro en X (acc x), aceler\'{o}metro en Y (acc y), aceler\'{o}metro en Z (acc z), giroscopio en X (gyr x), giroscopio en Y (gyr y) y giroscopio en Z (gyr z). En la Figura \ref{fig:dataset} se aprecia un fragmento del conjunto de datos que se obtuvo en una captura.
 
 \begin{figure}[h!]
-  \begin{center}	\includegraphics[width=0.95\textwidth]{imagenes/Cap3/dataset}
+  \begin{center}	\includegraphics[width=0.95\textwidth,frame]{imagenes/Cap3/dataset}
   \caption{Fragmento del conjunto de datos obtenido.}
   \label{fig:dataset}
   \end{center}
@@ -69,6 +69,7 @@ Para el presente trabajo s\'{o}lo se har\'{a} incapi\'{e} en el primer paso de e
 En la Figura \ref{fig:verHor} se muestra fragmentos de las capturas obtenidas por el dispositivo m\'{o}vil del manejo de un mismo usuario (agente) desde diferentes posiciones.
 
 \begin{figure}
+\fbox{
         \centering
         \begin{subfigure}[h]{0.47\textwidth} 
             \includegraphics[width=\textwidth]{imagenes/Cap3/horizontal}
@@ -81,7 +82,7 @@ En la Figura \ref{fig:verHor} se muestra fragmentos de las capturas obtenidas po
             \label{fig:ver}
         \end{subfigure}
         \caption{Gr\'{a}fica de los sensores capturados en diferentes posiciones.}
-        		\label{fig:verHor}
+        		\label{fig:verHor}}
     \end{figure}
 
 \vspace{5mm} %5mm vertical space
@@ -128,7 +129,7 @@ Es importante destacar que el ruido presente en el conjunto de datos puede afect
 En el presente proyecto se grafic\'{o} histogramas de las frecuencias de cada caracter\'{i}stica de nuestro conjunto de datos y as\'{i} visualizar de mejor manera si existe ruido o valores at\'{i}picos en el mismo. En la Figura \ref{fig:hist} se puede evidenciar que los valores de cada sensor presentan asimetr\'{i}as negativas y positivas, adem\'{a}s de tener muchos valores bastante alejados de la media, lo que d\'{a} un indicio de posibles valores at\'{i}picos.
 
 \begin{figure}[h!]
-  \begin{center}	\includegraphics[width=0.97\textwidth]{imagenes/Cap3/histograma_sensores}
+  \begin{center}	\includegraphics[width=0.97\textwidth,frame]{imagenes/Cap3/histograma_sensores}
   \caption{Histograma de frecuencias del conjunto de datos}
   \label{fig:hist}
   \end{center}
@@ -139,7 +140,7 @@ En el presente proyecto se grafic\'{o} histogramas de las frecuencias de cada ca
 En la Figura \ref{tab: est} se presenta una tabla con estad\'{i}sticas descriptivas de nuestro conjunto de datos, esta tabla presenta: la cantidad de datos, su media, su desviaci\'{o}n est\'{a}ndar, el valor m\'{i}nimo y m\'{a}ximo del conjunto de datos y los percentiles 50, 25 y 75, cabe recalcar que el percentil 50 es el mismo que la mediana.
 
 \begin{figure}[h!]
-  \begin{center}	\includegraphics[width=0.97\textwidth]{imagenes/Cap3/describe_data}
+  \begin{center}	\includegraphics[width=0.97\textwidth,frame]{imagenes/Cap3/describe_data}
   \caption{Tabla de resultados estad\'{i}sticos del conjunto de datos.}
   \label{tab: est}
   \end{center}
@@ -154,7 +155,7 @@ Con la informaci\'{o}n proporcionada en la Figura \ref{tab: est} ahora es m\'{a}
 Para eliminar el ruido que presenta nuestro conjunto de datos se aplic\'{o} la \textbf{Regla 68-95-99.7}, conocida tambi\'{e}n como la \textbf{Regla emp\'{i}rica}, donde suponiendo que el conjunto de datos con el que se trabaja tiene una distribuci\'{o}n normal, la desviaci\'{o}n est\'{a}ndar se puede usar para determinar la proporci\'{o}n de valores que se encuentran dentro de un rango particular del valor medio. Para tales distribuciones, siempre ocurre que el 68\% de los valores est\'{a}n a menos de una desviaci\'{o}n est\'{a}ndar (1SD) del valor medio, que el 95\% de los valores est\'{a}n a menos de dos desviaciones est\'{a}ndar (2SD) de la media y que el 99\% de valores est\'{a}n a menos de tres desviaciones est\'{a}ndar (3SD) de la media. En la Figura \ref{fig:689599rule} se muestra este concepto de forma esquem\'{a}tica.
 
 \begin{figure}[h!]
-  \begin{center}	\includegraphics[width=0.97\textwidth]{imagenes/Cap3/68-95-99_rule}
+  \begin{center}	\includegraphics[width=0.97\textwidth,frame]{imagenes/Cap3/68-95-99_rule}
   \caption{Regla 68-95-99.7 }
   \label{fig:689599rule}
   \end{center}
@@ -164,7 +165,7 @@ En la Figura \ref{fig:689599rule_acc_y}, se puede observar como se comporta la r
 
 
 \begin{figure}[h!]
-  \begin{center}	\includegraphics[width=0.97\textwidth]{imagenes/Cap3/68-95-99_rule_acc_z}
+  \begin{center}	\includegraphics[width=0.97\textwidth,frame]{imagenes/Cap3/68-95-99_rule_acc_z}
   \caption{Regla 68-95-99.7 aplicada a los valores de los sensores del aceler\'{o}metro en Z. }
   \label{fig:689599rule_acc_z}
   \end{center}
@@ -264,7 +265,7 @@ Dado que se cuenta con un conjunto de datos para generar el modelo de Aprendizaj
 \vspace{5mm} %5mm vertical space
 
 \begin{figure}[h!]
-  \begin{center}	\includegraphics[width=0.97\textwidth]{imagenes/Cap3/train-dev-test}
+  \begin{center}	\includegraphics[width=0.97\textwidth,frame]{imagenes/Cap3/train-dev-test}
   \caption{Divisi\'{o}n del conjunto de entrenamiento.}
   \label{fig:train-dev-test}
   \end{center}
@@ -310,7 +311,7 @@ Conjunto de datos         & 100\% & 30000 \\ \hline
 En la secci\'{o}n \ref{subsubsection:est-norm-dataset} ya se describi\'{o} lo que es la estandarizaci\'{o}n o normalizaci\'{o}n de datos y algunos de los tipos de escalado que existen; por lo tanto esta secci\'{o}n s\'{o}lo se limitar\'{a} a la elaboraci\'{o}n de un an\'{a}lisis para decidir que t\'{e}cnica de escalado es la m\'{a}s adecuada para el conjunto de datos, en la Figura \ref{fig:datos_puros} se puede apreciar una fracci\'{o}n del conjunto de datos capturado, la cual es la base con la que se realizar\'{a} el an\'{a}lisis comparativo con los distintos tipos de escalado.
 
 \begin{figure}[h!]
-  \begin{center}	\includegraphics[width=0.5\textwidth]{imagenes/Cap3/datos_sin_preprocesamiento}
+  \begin{center}	\includegraphics[width=0.5\textwidth,frame]{imagenes/Cap3/datos_sin_preprocesamiento}
   \caption{Visualizaci\'{o}n de los par\'{a}metros de conducci\'{o}n capturados.}
   \label{fig:datos_puros}
   \end{center}
@@ -322,6 +323,7 @@ Para probar los diferentes tipos de escalado, se los ajusto con los datos que ya
 
 \begin{figure}
         \centering
+        \fbox{\begin{varwidth}{\textwidth}
         \begin{subfigure}[h]{0.45\textwidth} 
             \includegraphics[width=\textwidth]{imagenes/Cap3/datos_minmax_scaler}
             \caption{Min max Scaler}
@@ -343,6 +345,7 @@ Para probar los diferentes tipos de escalado, se los ajusto con los datos que ya
             \caption{Robust Scaler}
             \label{fig:robust}
         \end{subfigure}
+        \end{varwidth}}
         \caption{Gr\'{a}fica resultante de aplicar diferentes tipos de normalizaciones a un conjunto de datos.}
         
 		\label{fig:nor_nor}
@@ -429,7 +432,7 @@ Para el desarrollo de la presente investigaci\'{o}n se descart\'{o} tanto el pri
 Una vez descartados los m\'{e}todos que no se ajustan al requerimiento del presente trabajo, la \'{u}nica opci\'{o}n restante es el segundo m\'{e}todo, siendo as\'{i} este el que se aplicar\'{a} para el presente trabajo. Por lo tanto primero se defini\'{o} como 90\% el umbral de variabilidad total que se desea preservar en el conjunto de datos, posteriormente haciendo uso de la clase PCA de \textsc{scikit-learn} se calcula la varianza de cada caracter\'{i}stica y posteriormente se grafica los resultados (Ver Figura \ref{fig:varianza-pca}).
 
 \begin{figure}[h!]
-  \begin{center}	\includegraphics[width=0.5\textwidth]{imagenes/Cap3/pca}
+  \begin{center}	\includegraphics[width=0.5\textwidth,frame]{imagenes/Cap3/pca}
   \caption{Gr\'{a}fico de la varianza vs. el n\'{u}mero de componentes.}
   \label{fig:varianza-pca}
   \end{center}
