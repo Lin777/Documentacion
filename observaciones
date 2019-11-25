@@ -1,0 +1,60 @@
+3.3 explicar porque se debe remover los valores atipicos (porque estoy removiendo) debido al uso delautoencoder
+
+- Manejo de valores ausentes -> cambiar por sintenticos
+
+- Explicar mejor los dibujos, de los histogramas
+
+- Discretizacion - no es discreto es continuo
+
+-  Datos vagos -> explicar mejor . (Datos que no ) mostrar su objetivo.
+
+- KNN y KMeans -> agregar referencia bibliografica
+
+- 3.11 Elegir el min max porque nopierde informacion, porque se elige este escalado. Explicar mejor
+
+- Demostrar la dependencia lineal de los valores PCA, explicar porque reducir, reducir tiempo.
+
+- conservacion reelevante de la infromacion
+- perdiendo aproximadamente un poco de la varianza que no impacta en la semantica de la informacion
+
+- poner referencia de porque usar y redcir valores de los datos
+
+- saber de memoria que son modelos discriminativos y discriminativos.
+
+- agregar metodo de ARIMA en modelos discriminativos y descriptivos.
+
+- ARIMA ANOVA, explicar porqu una red NN recurente es tan buena
+
+- ROC, definir un umbral explicar poqrquebusco un umbral
+
+- Descartar la red [pr falta de recursos y porque los resultados son casi los mismos
+
+- Cambir la grafica 4.12 a isolation forest, y la grafica que me paso eduardo en 4.12. a isolation forest de SVM
+
+RESULTADOS-----------
+
+- cambiar genralmente ydecir que se usara esas metricas, se deciidio.
+
+- agregar falsos negativos
+
+- RESULTADOS -> modificar la parte que no se conoce a cabalidad.
+
+- Justificar porque especifico cada valor por tipo de anomalia
+
+- agregar las etiquetas de los ejes
+
+- En la grafica especificar los colores de los bloques cuales son los falsos positivos y falsos negativos.
+
+CONCLUSIONES
+
+- trabajo futuro- > determinar el tipo de anomalia
+
+- Agregar que con mas datos podria ser mejor.
+aprendizaje automatico poenr IA
+
+- se puede utilizar un modelo por cada anomalia
+
+
+
+
+

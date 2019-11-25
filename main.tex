@@ -31,9 +31,16 @@
 \usepackage{multirow}
 \usepackage{xcolor,colortbl}
 \usepackage{hyperref}
+
 %\usepackage[backend=bibtex,style=authoryear,natbib=true]{biblatex}
-\usepackage[style=trad-abbrv]{biblatex}
-\addbibresource{example.bib}
+
+%\usepackage[natbibapa]{apacite}
+\usepackage{apacite}
+\usepackage{babel}
+ 
+%Import the natbib package and sets a bibliography  and citation styles
+%\usepackage[square,sort,comma,numbers]{natbib} 
+
 %\usepackage[autostyle=true]{csquotes}
 \usepackage{float}
 \usepackage[export]{adjustbox}
@@ -87,6 +94,8 @@
 
 \begin{document}
 
+\renewcommand{\refname}{BIBLIOGRAF\'{I}A}
+
 \frontmatter % Use roman page numbering style (i, ii, iii, iv...) for the pre-content pages
 
 \pagestyle{plain} % Default to the plain heading style until the thesis style is called for the body content
@@ -100,11 +109,9 @@
 \end{minipage}
 \begin{minipage}[c]{.65\textwidth}
 \begin{center}
-UNIVERSIDAD MAYOR DE SAN SIM\'{O}N
-
-FACULTAD DE CIENCIAS Y TECNOLOG\'{I}A
-
-CARRERA DE INGENIER\'{I}A DE SISTEMAS
+\href{http://www.umss.edu.bo}{\LARGE{Universidad Mayor de San Simón}} \\
+\href{http://www.fcyt.umss.edu.bo}{\LARGE{Facultad de Ciencias y Tecnología}} \\
+\href{http://www.cs.umss.edu.bo}{\LARGE{Carrera de Ingeniería de Sistemas}}
 \end{center}
 \end{minipage}
 \begin{minipage}[r]{.15\linewidth}
@@ -113,8 +120,9 @@ CARRERA DE INGENIER\'{I}A DE SISTEMAS
 
 \vfill
 \begin{center}
-\huge {\bf{\ttitle}}	
+\Huge {\bf{\ttitle}}	
 \end{center}
+\singlespacing
 \singlespacing
 \singlespacing
 \singlespacing
@@ -190,28 +198,34 @@ Le agradezco a Dios por haberme acompañado y guiado a lo largo de mi carrera, p
 \pagestyle{thesis}
 \include{capitulos/capitulo1}
 \include{capitulos/capitulo2}
-\include{capitulos/capitulo3}
 \include{capitulos/capitulo4}
+\include{capitulos/capitulo3}
 \include{capitulos/capitulo5}
 \include{capitulos/capitulo6}
 \include{capitulos/capitulo7}
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+
+
+\newpage
+
+
+\bibliography{bibliografia} 
+\bibliographystyle{apacite}
+
+%----------------------------------------------------------------------------------------
 
 
 %----------------------------------------------------------------------------------------
 %	THESIS CONTENT - APPENDICES
 %----------------------------------------------------------------------------------------
-\printbibliography[heading=bibintoc]
 
 \appendix 
 \include{apendices/apendiceA}
 %\include{Appendices/AppendixB}
 %\include{Appendices/AppendixC}
 
-%----------------------------------------------------------------------------------------
-%	BIBLIOGRAPHY
-%----------------------------------------------------------------------------------------
-%\printbibliography[heading=bibintoc]
-\input{bibliografia}
-%----------------------------------------------------------------------------------------
 
 \end{document}  

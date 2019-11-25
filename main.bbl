@@ -1,0 +1,1308 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+Araujo%
+, Igreja%
+, R.%
+\BCBL {}\ \BBA {} Araujo%
+}{%
+Araujo%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2012}}%
+}]{%
+Reference31}
+\APACinsertmetastar {%
+Reference31}%
+\begin{APACrefauthors}%
+Araujo, R.%
+, Igreja, A.%
+, R., D\BPBI C.%
+\BCBL {}\ \BBA {} Araujo, R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2012}{6}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Driving coach: A smartphone application to evaluate
+  driving efficient patterns} {Driving coach: A smartphone application to
+  evaluate driving efficient patterns}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Proceedings of the 2012 IEEE Intelligent Vehicles
+  Symposium (IV); Alcala de Henares, Espa\~{n}a.}{}{3--7}{1005-–1010}.
+\newblock
+\begin{APACrefURL}
+  \url{https://www.researchgate.net/publication/261309792_Driving_coach_A_smartphone_application_to_evaluate_driving_efficient_patterns}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Bellman%
+}{%
+Bellman%
+}{%
+{\protect \APACyear {2003}}%
+}]{%
+Reference40}
+\APACinsertmetastar {%
+Reference40}%
+\begin{APACrefauthors}%
+Bellman, R\BPBI E.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2003}.
+\newblock
+\APACrefbtitle {Dynamic programming} {Dynamic programming}.
+\newblock
+\APACaddressPublisher{}{Courier Dover Publications ISBN}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Bengio%
+, Simard%
+\BCBL {}\ \BBA {} Frasconi%
+}{%
+Bengio%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1994}}%
+}]{%
+Reference50}
+\APACinsertmetastar {%
+Reference50}%
+\begin{APACrefauthors}%
+Bengio, Y.%
+, Simard, P.%
+\BCBL {}\ \BBA {} Frasconi, P.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1994}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Learning long-term dependencies with gradient descent is
+  difficult} {Learning long-term dependencies with gradient descent is
+  difficult}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{IEEE Trans. Neural Netw}{5}{}{157--166}.
+\newblock
+\begin{APACrefURL}
+  \url{https://ieeexplore.ieee.org/document/279181/authors#authors}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Bhoyar%
+, Lata%
+, Katkar%
+, Patil%
+\BCBL {}\ \BBA {} Javale%
+}{%
+Bhoyar%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2013}}%
+}]{%
+Reference25}
+\APACinsertmetastar {%
+Reference25}%
+\begin{APACrefauthors}%
+Bhoyar, V.%
+, Lata, P.%
+, Katkar, J.%
+, Patil, A.%
+\BCBL {}\ \BBA {} Javale, D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2013}{3--4}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Symbian Based Rash Driving Detection System} {Symbian
+  based rash driving detection system}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{International Journal of Emerging Trends \& Technology
+  in Computer Science (IJETTCS)}{2}{}{124-–126}.
+\newblock
+\begin{APACrefURL}
+  \url{https://www.ijettcs.org/Volume2Issue2/IJETTCS-2013-03-28-046.pdf}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Bishop%
+}{%
+Bishop%
+}{%
+{\protect \APACyear {2006}}%
+}]{%
+Reference39}
+\APACinsertmetastar {%
+Reference39}%
+\begin{APACrefauthors}%
+Bishop, M\BPBI C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2006}.
+\newblock
+\APACrefbtitle {Pattern recognition and Machine Learning} {Pattern recognition
+  and machine learning}.
+\newblock
+\APACaddressPublisher{}{Springer Science+Business Media, LLC}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Boonmee%
+\ \BBA {} Tangamchit%
+}{%
+Boonmee%
+\ \BBA {} Tangamchit%
+}{%
+{\protect \APACyear {2009}}%
+}]{%
+Reference28}
+\APACinsertmetastar {%
+Reference28}%
+\begin{APACrefauthors}%
+Boonmee, S.%
+\BCBT {}\ \BBA {} Tangamchit, P.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2009}{5}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Portable Reckless Driving Detection System} {Portable
+  reckless driving detection system}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Proceedings of the 6th IEEE International Conference on
+  Electrical Engineering/Electronics, Computer, Telecommunications and
+  Information Technology; Pattaya, Chonburi, Tailandia.}{}{6--9}{412-–415}.
+\newblock
+\begin{APACrefURL} \url{https://ieeexplore.ieee.org/abstract/document/5137037}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Chen%
+, Yu%
+, Zhu%
+, Chen%
+\BCBL {}\ \BBA {} Li%
+}{%
+Chen%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2015}}%
+}]{%
+Reference26}
+\APACinsertmetastar {%
+Reference26}%
+\begin{APACrefauthors}%
+Chen, Z.%
+, Yu, J.%
+, Zhu, Y.%
+, Chen, Y.%
+\BCBL {}\ \BBA {} Li, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2015}{6}{}.
+\newblock
+{\BBOQ}\APACrefatitle {D3: Abnormal Driving Behaviors Detection and
+  Identification Using Smartphone Sensors} {D3: Abnormal driving behaviors
+  detection and identification using smartphone sensors}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Proceedings of the 12th Annual IEEE International
+  Conference on Sensing, Communication, and Networking (SECON); Seattle, WA,
+  USA.}{}{}{20--25}.
+\newblock
+\begin{APACrefURL}
+  \url{http://www.winlab.rutgers.edu/~yychen/papers/D3-Abnormal%20Driving%20Behaviors%20Detection%20and%20Identification%20Using%20Smartphone%20Sensors.pdf}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Cho%
+\ \protect \BOthers {.}}{%
+Cho%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2014a}}%
+}]{%
+Reference55}
+\APACinsertmetastar {%
+Reference55}%
+\begin{APACrefauthors}%
+Cho, K.%
+, Merri\"{e}nboer, B\BPBI V.%
+, Gulcehre, C.%
+, Bahdanau, D.%
+, Bougares, F.%
+, Schwenk, H.%
+\BCBL {}\ \BBA {} Bengio, Y.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2014a}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Learning phrase representations using rnn
+  encoder-decoder for statistical machine translation} {Learning phrase
+  representations using rnn encoder-decoder for statistical machine
+  translation}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{arXiv}{1406.1078}{}{}.
+\newblock
+\begin{APACrefURL} \url{https://www.aclweb.org/anthology/D14-1179.pdf}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Dang-Nhac%
+, Duc-Nhan%
+, Thi-Hau%
+\BCBL {}\ \BBA {} Ha-Nam%
+}{%
+Dang-Nhac%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2018}}%
+}]{%
+Reference20}
+\APACinsertmetastar {%
+Reference20}%
+\begin{APACrefauthors}%
+Dang-Nhac, L.%
+, Duc-Nhan, N.%
+, Thi-Hau, N.%
+\BCBL {}\ \BBA {} Ha-Nam, N.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{4}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Vehicle mode and driving activity detection based on
+  analyzing sensor data of smartphones} {Vehicle mode and driving activity
+  detection based on analyzing sensor data of smartphones}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Sensors}{18(4)}{}{1036}.
+\newblock
+\begin{APACrefURL} \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5948751/}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Dauphin%
+, Fan%
+, Auli%
+\BCBL {}\ \BBA {} Grangiera%
+}{%
+Dauphin%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2017}}%
+}]{%
+Reference43}
+\APACinsertmetastar {%
+Reference43}%
+\begin{APACrefauthors}%
+Dauphin, Y\BPBI N.%
+, Fan, A.%
+, Auli, M.%
+\BCBL {}\ \BBA {} Grangiera, D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{9}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Language Modeling with Gated Convolutional Networks}
+  {Language modeling with gated convolutional networks}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{arXiv}{1612.08083v3}{8}{}.
+\newblock
+\begin{APACrefURL} \url{https://arxiv.org/pdf/1612.08083.pdf} \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Elman%
+}{%
+Elman%
+}{%
+{\protect \APACyear {1990}}%
+}]{%
+Reference35}
+\APACinsertmetastar {%
+Reference35}%
+\begin{APACrefauthors}%
+Elman, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1990}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Finding structure in time} {Finding structure in
+  time}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Cognitive Science}{14(2)}{}{179--211}.
+\newblock
+\begin{APACrefURL} \url{https://crl.ucsd.edu/~elman/Papers/fsit.pdf}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Eren%
+, Makinist%
+, Akin%
+\BCBL {}\ \BBA {} Yilmaz%
+}{%
+Eren%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2012}}%
+}]{%
+Reference27}
+\APACinsertmetastar {%
+Reference27}%
+\begin{APACrefauthors}%
+Eren, H.%
+, Makinist, S.%
+, Akin, E.%
+\BCBL {}\ \BBA {} Yilmaz, A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2012}{6}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Estimating Driving Behavior by a Smartphone} {Estimating
+  driving behavior by a smartphone}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Proceedings of the Intelligent Vehicles Symposium.
+  Alcal\'{a} de Henares, Espa\~{n}a.}{}{3--7}{234–-239}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Ferreira%
+\ \protect \BOthers {.}}{%
+Ferreira%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2017}}%
+}]{%
+Reference21}
+\APACinsertmetastar {%
+Reference21}%
+\begin{APACrefauthors}%
+Ferreira, J.%
+, Carvalho, E.%
+, Ferreira, B.%
+, De~Souza, C.%
+, Suhara, Y.%
+, Pentland, A.%
+\BCBL {}\ \BBA {} Pessin, G.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Driver behavior profiling: An investigation with
+  different smartphone sensors and machine learning} {Driver behavior
+  profiling: An investigation with different smartphone sensors and machine
+  learning}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{PLoS One}{12(4)}{}{e0174959}.
+\newblock
+\begin{APACrefURL} \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5386255/}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Guo%
+\ \protect \BOthers {.}}{%
+Guo%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2018}}%
+}]{%
+Reference47}
+\APACinsertmetastar {%
+Reference47}%
+\begin{APACrefauthors}%
+Guo, Y.%
+, Liao, W.%
+, Wang, Q.%
+, Yu, L.%
+, Ji, T.%
+\BCBL {}\ \BBA {} Li, P.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Multidimensional Time Series Anomaly Detection: A
+  GRU-based Gaussian Mixture Variational Autoencoder Approach}
+  {Multidimensional time series anomaly detection: A gru-based gaussian mixture
+  variational autoencoder approach}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Proceedings of Machine Learning
+  Research}{95}{}{97--112}.
+\newblock
+\begin{APACrefURL} \url{http://proceedings.mlr.press/v95/guo18a/guo18a.pdf}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Hawkins%
+, He%
+, Williams%
+\BCBL {}\ \BBA {} Baxter%
+}{%
+Hawkins%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2002}}%
+}]{%
+Reference57}
+\APACinsertmetastar {%
+Reference57}%
+\begin{APACrefauthors}%
+Hawkins, S.%
+, He, H.%
+, Williams, G.%
+\BCBL {}\ \BBA {} Baxter, R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2002}{9}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Outlier Detection Using Replicator Neural Networks}
+  {Outlier detection using replicator neural networks}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{International Conference on Data Warehousing and
+  Knowledge Discovery}{}{}{170-–180}.
+\newblock
+\begin{APACrefURL} \url{https://togaware.com/papers/dawak02.pdf}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Hochreiter%
+\ \BBA {} Schmidhuber%
+}{%
+Hochreiter%
+\ \BBA {} Schmidhuber%
+}{%
+{\protect \APACyear {1997}}%
+}]{%
+Reference52}
+\APACinsertmetastar {%
+Reference52}%
+\begin{APACrefauthors}%
+Hochreiter, S.%
+\BCBT {}\ \BBA {} Schmidhuber, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1997}{11}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Long short-term memory} {Long short-term memory}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Neural Comput}{9(8)}{15}{1735–-1780}.
+\newblock
+\begin{APACrefURL}
+  \url{https://www.mitpressjournals.org/doi/abs/10.1162/neco.1997.9.8.1735}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Hsu%
+\ \BBA {} Griffiths%
+}{%
+Hsu%
+\ \BBA {} Griffiths%
+}{%
+{\protect \APACyear {2010}}%
+}]{%
+Reference42}
+\APACinsertmetastar {%
+Reference42}%
+\begin{APACrefauthors}%
+Hsu, A.%
+\BCBT {}\ \BBA {} Griffiths, T.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2010}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Effects of generative and discriminative learning on use
+  of category variability} {Effects of generative and discriminative learning
+  on use of category variability}.{\BBCQ}
+\newblock
+\begin{APACrefURL}
+  \url{https://cocosci.princeton.edu/tom/papers/discgencat.pdf}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Johnson%
+\ \BBA {} Trivedi%
+}{%
+Johnson%
+\ \BBA {} Trivedi%
+}{%
+{\protect \APACyear {2011}}%
+}]{%
+Reference23}
+\APACinsertmetastar {%
+Reference23}%
+\begin{APACrefauthors}%
+Johnson, D.%
+\BCBT {}\ \BBA {} Trivedi, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2011}{10}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Driving Style Recognition Using a Smartphone as a Sensor
+  Platform} {Driving style recognition using a smartphone as a sensor
+  platform}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{14th International IEEE Conference en Intelligent
+  Transportation Systems (ITSC)}{}{}{1609–-1615}.
+\newblock
+\begin{APACrefURL}
+  \url{http://cvrr.ucsd.edu/publications/2011/Johnson_ITSC2011.pdf}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Koh%
+\ \BBA {} Kang%
+}{%
+Koh%
+\ \BBA {} Kang%
+}{%
+{\protect \APACyear {2015}}%
+}]{%
+Reference29}
+\APACinsertmetastar {%
+Reference29}%
+\begin{APACrefauthors}%
+Koh, D\BPBI W.%
+\BCBT {}\ \BBA {} Kang, H.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2015}{7}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Smartphone-Based Modeling and Detection of
+  Aggressiveness Reactions in Senior Drivers} {Smartphone-based modeling and
+  detection of aggressiveness reactions in senior drivers}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Proceedings of the IEEE Intelligent Vehicles Symposium;
+  Seoul, Korea.}{}{1}{12--17}.
+\newblock
+\begin{APACrefURL} \url{https://ieeexplore.ieee.org/abstract/document/7225655}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Kridalukmana%
+, Yan-Lu%
+\BCBL {}\ \BBA {} Naderpour%
+}{%
+Kridalukmana%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2017}}%
+}]{%
+Reference24}
+\APACinsertmetastar {%
+Reference24}%
+\begin{APACrefauthors}%
+Kridalukmana, R.%
+, Yan-Lu, H.%
+\BCBL {}\ \BBA {} Naderpour, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {An Object Oriented Bayesian Network Approach for Unsafe
+  Driving Maneuvers Prevention System} {An object oriented bayesian network
+  approach for unsafe driving maneuvers prevention system}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{12th International IEEE Conference}{}{}{}.
+\newblock
+\begin{APACrefURL}
+  \url{https://opus.lib.uts.edu.au/bitstream/10453/122196/4/633634.pdf}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Lecun%
+, Bengio%
+\BCBL {}\ \BBA {} Hinton%
+}{%
+Lecun%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2015}}%
+}]{%
+Reference46}
+\APACinsertmetastar {%
+Reference46}%
+\begin{APACrefauthors}%
+Lecun, Y.%
+, Bengio, Y.%
+\BCBL {}\ \BBA {} Hinton, G.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2015}{5}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Deep learning} {Deep learning}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Nature}{521(7553)}{27}{436–-444}.
+\newblock
+\begin{APACrefURL} \url{https://doi.org/10.1038/nature14539} \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Lecun%
+\ \protect \BOthers {.}}{%
+Lecun%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1998}}%
+}]{%
+Reference48}
+\APACinsertmetastar {%
+Reference48}%
+\begin{APACrefauthors}%
+Lecun, Y.%
+, Jackel, L.%
+, Boser, B.%
+, Denker, J.%
+, Graf, H.%
+, Guyon, I.%
+\BDBL {}Hubbard, W.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1998}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Handwritten digit recognition : Applications of neural
+  networks chips and automatic learning} {Handwritten digit recognition :
+  Applications of neural networks chips and automatic learning}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Proceedings of the IEEE}{86(11)}{}{2278-–2324}.
+\newblock
+\begin{APACrefURL} \url{http://yann.lecun.com/exdb/publis/pdf/lecun-89c.pdf}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Mass%
+, Hannun%
+\BCBL {}\ \BBA {} Ng%
+}{%
+Mass%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2013}}%
+}]{%
+Reference44}
+\APACinsertmetastar {%
+Reference44}%
+\begin{APACrefauthors}%
+Mass, A.%
+, Hannun, A.%
+\BCBL {}\ \BBA {} Ng, A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2013}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Rectifier Nonlinearities Improve Neural Network Acoustic
+  Models} {Rectifier nonlinearities improve neural network acoustic
+  models}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{International Conference on Machine Learning
+  (icml)}{}{}{}.
+\newblock
+\begin{APACrefURL}
+  \url{https://ai.stanford.edu/~amaas/papers/relu_hybrid_icml2013_final.pdf}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Moindrot%
+\ \BBA {} Genthial%
+}{%
+Moindrot%
+\ \BBA {} Genthial%
+}{%
+{\protect \APACyear {2018}}%
+}]{%
+Reference41}
+\APACinsertmetastar {%
+Reference41}%
+\begin{APACrefauthors}%
+Moindrot, O.%
+\BCBT {}\ \BBA {} Genthial, G.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{1}{}.
+\newblock
+\APACrefbtitle {Splitting into train, dev and test sets.} {Splitting into
+  train, dev and test sets.}
+\newblock
+\APAChowpublished {https://cs230-stanford.github.io/train-dev-test-split.html}.
+\newblock
+\APACrefnote{\'{U}ltimo acceso en 16 de octubre de 2019}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Olah%
+}{%
+Olah%
+}{%
+{\protect \APACyear {{\protect \bibnodate {}}}}%
+}]{%
+Reference53}
+\APACinsertmetastar {%
+Reference53}%
+\begin{APACrefauthors}%
+Olah, C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{{\protect \bibnodate {}}}{}{}.
+\newblock
+\APACrefbtitle {Understanding LSTM Networks.} {Understanding lstm networks.}
+\newblock
+\APAChowpublished {http://colah.github.io/posts/2015-08-Understanding-LSTMs/}.
+\newblock
+\APACrefnote{\'{U}ltimo acceso en 11 de octubre de 2019}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+\"{O}zler%
+}{%
+\"{O}zler%
+}{%
+{\protect \APACyear {{\protect \bibnodate {}}}}%
+}]{%
+Reference62}
+\APACinsertmetastar {%
+Reference62}%
+\begin{APACrefauthors}%
+\"{O}zler, H.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{{\protect \bibnodate {}}}{}{}.
+\newblock
+\APACrefbtitle {Accuracy Trap! Pay Attention to Recall, Precision, F-Score,
+  AUC.} {Accuracy trap! pay attention to recall, precision, f-score, auc.}
+\newblock
+\APAChowpublished
+  {https://medium.com/datadriveninvestor/accuracy-trap-pay-attention-to-recall-precision-f-score-auc-d02f28d3299c}.
+\newblock
+\APACrefnote{\'{U}ltimo acceso en 16 de octubre de 2019}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Pascanu%
+, Mikolov%
+\BCBL {}\ \BBA {} Bengio%
+}{%
+Pascanu%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2013}}%
+}]{%
+Reference51}
+\APACinsertmetastar {%
+Reference51}%
+\begin{APACrefauthors}%
+Pascanu, R.%
+, Mikolov, T.%
+\BCBL {}\ \BBA {} Bengio, Y.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2013}{6}{}.
+\newblock
+{\BBOQ}\APACrefatitle {On the difficulty of training recurrent neural networks}
+  {On the difficulty of training recurrent neural networks}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{In Proceedings of the International Conference on
+  Machine Learning; Atlanta, GA, USA}{}{16--21}{1310-–1318}.
+\newblock
+\begin{APACrefURL} \url{http://proceedings.mlr.press/v28/pascanu13.pdf}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Pyle%
+}{%
+Pyle%
+}{%
+{\protect \APACyear {1999}}%
+}]{%
+Reference37}
+\APACinsertmetastar {%
+Reference37}%
+\begin{APACrefauthors}%
+Pyle, D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{1999}.
+\newblock
+\APACrefbtitle {Data preparation for data mining} {Data preparation for data
+  mining}.
+\newblock
+\APACaddressPublisher{}{Morgan Kaufmann Publishers, Inc}.
+\newblock
+\begin{APACrefURL}
+  \url{https://pdfs.semanticscholar.org/470a/828d5e3962f2917a0092cc6ba46ccfe41a2a.pdf}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Rumelhart%
+, Hinton%
+\BCBL {}\ \BBA {} Williams%
+}{%
+Rumelhart%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1986}}%
+}]{%
+Reference34}
+\APACinsertmetastar {%
+Reference34}%
+\begin{APACrefauthors}%
+Rumelhart, D\BPBI E.%
+, Hinton, G\BPBI E.%
+\BCBL {}\ \BBA {} Williams, R\BPBI J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1986}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Learning representations by backpropagating errors.}
+  {Learning representations by backpropagating errors.}{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Nature}{323(6088)}{}{533-–536}.
+\newblock
+\begin{APACrefURL} \url{https://psycnet.apa.org/record/1987-33645-001}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Russakovsky%
+}{%
+Russakovsky%
+}{%
+{\protect \APACyear {2014}}%
+}]{%
+Reference49}
+\APACinsertmetastar {%
+Reference49}%
+\begin{APACrefauthors}%
+Russakovsky, O\BPBI e\BPBI a.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2014}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {ImageNet Large Scale Visual Recognition Challenge}
+  {Imagenet large scale visual recognition challenge}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{International Journal of Computer Vision}{}{}{}.
+\newblock
+\begin{APACrefURL}
+  \url{http://link.springer.com/article/10.1007/s11263-015-0816-y#}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Sch\"{o}lkopf%
+\ \BBA {} Smola%
+}{%
+Sch\"{o}lkopf%
+\ \BBA {} Smola%
+}{%
+{\protect \APACyear {2002}}%
+}]{%
+Reference59}
+\APACinsertmetastar {%
+Reference59}%
+\begin{APACrefauthors}%
+Sch\"{o}lkopf, B.%
+\BCBT {}\ \BBA {} Smola, A\BPBI J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2002}.
+\newblock
+\APACrefbtitle {Support vector machines, regularization, optimization, and
+  beyond} {Support vector machines, regularization, optimization, and beyond}.
+\newblock
+\APACaddressPublisher{}{MIT Press}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Shai%
+\ \BBA {} Shai%
+}{%
+Shai%
+\ \BBA {} Shai%
+}{%
+{\protect \APACyear {2014}}%
+}]{%
+Reference32}
+\APACinsertmetastar {%
+Reference32}%
+\begin{APACrefauthors}%
+Shai, S.%
+\BCBT {}\ \BBA {} Shai, B.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2014}.
+\newblock
+\APACrefbtitle {Understanding Machine Learning: From Theory to Algorithms}
+  {Understanding machine learning: From theory to algorithms}.
+\newblock
+\APACaddressPublisher{}{Cambridge University Press}.
+\newblock
+\begin{APACrefURL}
+  \url{https://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning/understanding-machine-learning-theory-algorithms.pdf}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Smits%
+, Dellepiane%
+\BCBL {}\ \BBA {} Schowengerdt%
+}{%
+Smits%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {1999}}%
+}]{%
+Reference61}
+\APACinsertmetastar {%
+Reference61}%
+\begin{APACrefauthors}%
+Smits, P.%
+, Dellepiane, S.%
+\BCBL {}\ \BBA {} Schowengerdt, R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1999}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Quality assessment of image classification algorithms
+  for land-cover mapping: a review and a proposal for a cost-based approach}
+  {Quality assessment of image classification algorithms for land-cover
+  mapping: a review and a proposal for a cost-based approach}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{International journal of remote sensing
+  20}{8}{}{1461–-1486}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Suad%
+\ \BBA {} Wesam%
+}{%
+Suad%
+\ \BBA {} Wesam%
+}{%
+{\protect \APACyear {2017}}%
+}]{%
+Reference38}
+\APACinsertmetastar {%
+Reference38}%
+\begin{APACrefauthors}%
+Suad, A.%
+\BCBT {}\ \BBA {} Wesam, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Review of Data Preprocessing Techniques in Data Mining}
+  {Review of data preprocessing techniques in data mining}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Review of Scientific
+  Instruments}{12(16)}{}{4102--4107}.
+\newblock
+\begin{APACrefURL}
+  \url{http://docsdrive.com/pdfs/medwelljournals/jeasci/2017/4102-4107.pdf}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Werbos%
+}{%
+Werbos%
+}{%
+{\protect \APACyear {1988}}%
+}]{%
+Reference36}
+\APACinsertmetastar {%
+Reference36}%
+\begin{APACrefauthors}%
+Werbos, P\BPBI J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1988}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Generalization of backpropagation with application to a
+  recurrent gas market model} {Generalization of backpropagation with
+  application to a recurrent gas market model}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Neural Networks}{1(4)}{}{339–-356}.
+\newblock
+\begin{APACrefURL}
+  \url{https://www.sciencedirect.com/science/article/abs/pii/089360808890007X}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Who-Lee%
+, Sik-Yoon%
+, Min-Song%
+\BCBL {}\ \BBA {} Ryoung-Park%
+}{%
+Who-Lee%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2018}}%
+}]{%
+Reference22}
+\APACinsertmetastar {%
+Reference22}%
+\begin{APACrefauthors}%
+Who-Lee, K.%
+, Sik-Yoon, H.%
+, Min-Song, J.%
+\BCBL {}\ \BBA {} Ryoung-Park, K.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{4}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Convolutional Neural Network-Based Classification of
+  Driver’s Emotion during Aggressive and Smooth Driving Using Multi-Modal
+  Camera Sensor} {Convolutional neural network-based classification of
+  driver’s emotion during aggressive and smooth driving using multi-modal
+  camera sensor}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Sensors}{18(4)}{}{957}.
+\newblock
+\begin{APACrefURL} \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5948584/}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Williams%
+\ \BBA {} Baxter%
+}{%
+Williams%
+\ \BBA {} Baxter%
+}{%
+{\protect \APACyear {2002}}%
+}]{%
+Reference58}
+\APACinsertmetastar {%
+Reference58}%
+\begin{APACrefauthors}%
+Williams, G.%
+\BCBT {}\ \BBA {} Baxter, R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2002}{12}{}.
+\newblock
+{\BBOQ}\APACrefatitle {A comparative study of RNN for outlier detection in data
+  mining} {A comparative study of rnn for outlier detection in data
+  mining}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{IEEE International Conference on Data
+  Mining}{}{}{1--16}.
+\newblock
+\begin{APACrefURL} \url{https://togaware.com/papers/tr02102.pdf}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Wolpher%
+}{%
+Wolpher%
+}{%
+{\protect \APACyear {{\protect \bibnodate {}}}}%
+}]{%
+Reference60}
+\APACinsertmetastar {%
+Reference60}%
+\begin{APACrefauthors}%
+Wolpher, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{{\protect \bibnodate {}}}{}{}.
+\newblock
+\APACrefbtitle {Anomaly Detection in Unstructured Time Series Data using an
+  LSTM Autoencoder.} {Anomaly detection in unstructured time series data using
+  an lstm autoencoder.}
+\newblock
+\APAChowpublished
+  {http://www.diva-portal.org/smash/get/diva2:1225367/FULLTEXT01.pdf}.
+\newblock
+\APACrefnote{\'{U}ltimo acceso en 11 de octubre de 2019}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Xue%
+, Shang%
+\BCBL {}\ \BBA {} Feng%
+}{%
+Xue%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2010}}%
+}]{%
+Reference33}
+\APACinsertmetastar {%
+Reference33}%
+\begin{APACrefauthors}%
+Xue, Z.%
+, Shang, Y.%
+\BCBL {}\ \BBA {} Feng, A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2010}{5}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Semi-supervised outlier detection based on fuzzy rough
+  C-means clustering} {Semi-supervised outlier detection based on fuzzy rough
+  c-means clustering}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Mathematics and Computers in
+  Simulation}{80(9)}{}{1911-–1921}.
+\newblock
+\begin{APACrefURL}
+  \url{https://www.researchgate.net/publication/220348246_Semi-supervised_outlier_detection_based_on_fuzzy_rough_C-means_clustering}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Yan%
+}{%
+Yan%
+}{%
+{\protect \APACyear {{\protect \bibnodate {}}}}%
+}]{%
+Reference54}
+\APACinsertmetastar {%
+Reference54}%
+\begin{APACrefauthors}%
+Yan, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{{\protect \bibnodate {}}}{}{}.
+\newblock
+\APACrefbtitle {Understanding LSTM and Its Diagrams.} {Understanding lstm and
+  its diagrams.}
+\newblock
+\APAChowpublished
+  {https://medium.com/mlreview/understanding-lstm-and-its-diagrams-37e2f46f1714}.
+\newblock
+\APACrefnote{\'{U}ltimo acceso en 11 de octubre de 2019}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Zaldivar%
+, Calafate%
+, Cano%
+\BCBL {}\ \BBA {} Manzoni%
+}{%
+Zaldivar%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2011}}%
+}]{%
+Reference30}
+\APACinsertmetastar {%
+Reference30}%
+\begin{APACrefauthors}%
+Zaldivar, J.%
+, Calafate, C.%
+, Cano, J.%
+\BCBL {}\ \BBA {} Manzoni, P.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2011}{10}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Providing accident detection in vehicular networks
+  through OBD-II devices and Android-based smartphones} {Providing accident
+  detection in vehicular networks through obd-ii devices and android-based
+  smartphones}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Proceedings of the 2011 IEEE 36th Conference on Local
+  Computer Networks; Bonn, Alemania.}{}{4--7}{813-–819}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Zeiler%
+\ \protect \BOthers {.}}{%
+Zeiler%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2013}}%
+}]{%
+Reference45}
+\APACinsertmetastar {%
+Reference45}%
+\begin{APACrefauthors}%
+Zeiler, M\BPBI D.%
+, Ranzato, M.%
+, Monga, R.%
+, Mao, M.%
+, Yang, K.%
+, Le, Q\BPBI V.%
+\BCBL {}\ \BBA {} Hinton, G\BPBI E.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2013}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {On rectified linear units for speech processing} {On
+  rectified linear units for speech processing}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{International Conference on Acoustics, Speech and
+  Signal Processing. IEEE}{}{}{3517–-3521}.
+\newblock
+\begin{APACrefURL}
+  \url{https://static.googleusercontent.com/media/research.google.com/es//pubs/archive/40811.pdf}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Zhang%
+, Lipton%
+, Li%
+\BCBL {}\ \BBA {} Smola%
+}{%
+Zhang%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2019}}%
+}]{%
+Reference56}
+\APACinsertmetastar {%
+Reference56}%
+\begin{APACrefauthors}%
+Zhang, A.%
+, Lipton, Z.%
+, Li, M.%
+\BCBL {}\ \BBA {} Smola, A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2019}{9}{}.
+\newblock
+\APACrefbtitle {Dive into Deep Learning.} {Dive into deep learning.}
+\newblock
+\APAChowpublished {https://en.d2l.ai/d2l-en.pdf}.
+\newblock
+\APACrefnote{\'{U}ltimo acceso en 11 de octubre de 2019}
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}

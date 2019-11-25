@@ -4,5 +4,41 @@
 \chapter{\uppercase{Conclusiones y trabajos futuros}}
 \label{Capitulo 7}
 
+Despu\'{e}s de haber realizado el procedimiento descrito en los anteriores cap\'{i}tulos con el objetivo de comprobar la hip\'{o}tesis establecida en la presente investigaci\'{o}n se gener\'{o} un mecanismo (modelo) capaz de detectar anomal\'{i}as de conducci\'{o}n. De esta forma se puede decir que se ha cumplido a cabalidad con los objetivos propuestos en el proyecto. A continuaci\'{o}n se presentar\'{a} las conclusiones a las que se llego, as\'{i} como tambi\'{e}n aquellas nuevas ideas e inquietudes que surgieron durante el proceso de desarrollo, las cuales podr\'{i}an mejorar los resultados obtenidos por el presente trabajo.
 
-\input{capitulos/capitulo7/cap7} 
+\section{Conclusiones}
+
+El objetivo fundamental de este trabajo de investigaci\'{o}n fue desarrollar un mecanismo capaz de detectar anomal\'{i}as de conducci\'{o}n, tal que, se aporte con una soluci\'{o}n para alertar de forma oportuna el hallazgo de patrones an\'{o}malos en la conducci\'{o}n de agentes, ya sean humanos o aut\'{o}nomos, independizando cada modelo seg\'{u}n la experiencia y el ambiente por el que recorre cada agente.
+
+\vspace{5mm} %5mm vertical space
+
+As\'{i} pues, el principal aporte de este estudio consiste en la implementaci\'{o}n de un mecanismo capaz de identificar anomal\'{i}as a partir de los datos de conducci\'{o}n normal de cada agente, sin intervenci\'{o}n humana, es decir, el modelo detector no requiere que un humano intervenga para generarlo, sin embargo, este puede ser optimizado por medio del ajuste del hiperpar\'{a}metro \textit{Contaminaci\'{o}n} con el fin de definir cu\'{a}n sensible a las anomal\'{i}as ser\'{a} dicho detector. Por otra parte, se puede decir que el mecanismo de detecci\'{o}n de este trabajo de investigaci\'{o}n, adem\'{a}s de ser novedoso, es uno de los pocos trabajos que se realizaron con un enfoque \textit{''semi-supervisado''}, ya que la mayor\'{i}a de los trabajos realizados a la fecha fueron realizados mediante un enfoque supervisado.
+
+\vspace{5mm} %5mm vertical space
+
+Las conclusiones que se derivan de este trabajo de investigaci\'{o}n se hicieron en base a los diferentes experimentos realizados, dichas conclusiones se exponen a continuaci\'{o}n.
+
+\begin{itemize}
+\item Se comprueba, a partir del an\'{a}lisis de resultados de este estudio, la capacidad con la que cuentan los sensores inerciales de un dispositivo m\'{o}vil para representar correctamente el movimiento de un autom\'{o}vil y de esa manera ser capaz de alimentar, con un previo pre-procesamiento, un mecanismo de detecci\'{o}n de anomal\'{i}as.
+\item En este trabajo se compararon diferentes arquitecturas de redes neuronales para generar un modelo ajustado al comportamiento normal, donde la red m\'{a}s simple logr\'{o} los mejores resultados tanto en presici\'{o}n como en el tiempo empleado durante el proceso de predicci\'{o}n; demostrando as\'{i}, que no siempre las redes m\'{a}s complejas interpretan mejor los conjuntos de datos.
+\item Por otra parte, se compar\'{o} diferentes t\'{e}cnicas para definir un m\'{e}todo de detecci\'{o}n de anomal\'{i}as adecuado al contexto de la presente investigaci\'{o}n, donde por la simplicidad de su entrenamiento y por su robusto resultado se opt\'{o} por la elecci\'{o}n de la t\'{e}cnica de bosques de aislamiento, con un valor de 0.0075 para el hiperpar\'{a}metro \textit{Contaminaci\'{o}n}.
+\item Integrando el modelo ajustado al comportamiento normal y el m\'{e}todo de detecci\'{o}n de anomal\'{i}as, los cuales s\'{o}lo fueron entrenados con el conjunto de datos ''normal'', se logra la creaci\'{o}n de un mecanismo capaz de identificar valores at\'{i}picos de la conducci\'{o}n de cada agente.
+\item Finalmente se evalu\'{o} la capacidad del mecanismo de detecci\'{o}n, mediante el conjunto de evaluaci\'{o}n el cu\'{a}l presenta muestras an\'{o}malas, dando como resultado la correcta detecci\'{o}n del 67.68\% de las muestras, que presentan anomal\'{i}as en el conjunto de evaluaci\'{o}n, as\'{i} como tambi\'{e}n presenta una tasa de tan s\'{o}lo 0.80\% de muestras normales detectadas como anomal\'{i}as. Siendo un gran avance en el \'{a}mbito de la detecci\'{o}n de anomal\'{i}as con un enfoque semi-supervisado.%, ya que a pesar de aparentar una precisi\'{o}n muy baja detecta por lo menos algunas de las muestras (dato por segundo) de cada anomal\'{i}a presente en el conjunto de evaluaci\'{o}n, lo cual podr\'{i}a interpretarse que este mecanismo detecta la totalidad de las anomal\'{i}as del conjunto con el que se evalu\'{o}.
+\end{itemize}
+
+Este trabajo de investigaci\'{o}n antes que presentar una soluci\'{o}n final sienta las bases para el desarrollo de sistemas de detecci\'{o}n de anomal\'{i}as de la conducci\'{o}n de los agentes, mediante el uso de Aprendizaje Autom\'{a}tico, resaltando la capacidad y alcance que conlleva este estudio, ya que no s\'{o}lo se enfoca en la conducci\'{o}n de agentes humanos, sino que es igual de capaz de ser aplicado en un enfoque de conducci\'{o}n aut\'{o}nomo.
+
+\section{Limitaciones y recomendaciones}
+
+Una vez concluido el trabajo de investigaci\'{o}n, se considera interesante investigar sobre diferentes aspectos de la detecci\'{o}n de anomal\'{i}as y se propone:
+
+\begin{itemize}
+\item Agregar la velocidad del veh\'{i}culo como un nuevo par\'{a}metro del conjunto de datos, debido a que esto podr\'{i}a brindar un mejor entendimiento del comportamiento normal de conducci\'{o}n, as\'{i} como tambi\'{e}n de las anomal\'{i}as.
+\item En lugar de trabajar con los datos en crudo, usar la diferencia entre un dato capturado en el tiempo $t$ y un dato capturado en $t-1$ ($dif_{t} = dato_{t}-dato_{t-1}$), la aplicaci\'{o}n de \'{e}ste pre-procesamiento de datos podr\'{i}a maximizar la detecci\'{o}n de aquellas anomal\'{i}as que presentan elevadas diferencias entre los datos consecutivos.
+\item Validar el modelo con nuevos tipos de anomal\'{i}as como por ejemplo: derrapes, choques, giros en U a alta velocidad, entre otros. Esto debido a que el proyecto se limit\'{o} al reconocimiento de s\'{o}lo tres tipos de anomal\'{i}as por la dificultad y peligro que conlleva su captura.
+\item Migrar el modelo del comportamiento normal de keras a Tensorflow 2.0.
+
+\end{itemize}
+
+ 
+
