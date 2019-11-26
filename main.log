@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2018.5.8)  26 NOV 2019 01:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2018.5.8)  26 NOV 2019 03:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1850,12 +1850,12 @@ File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 \c__siunitx_mathtt_int=\count305
 
 1: section
-<imagenes/umss.jpg, id=438, 453.695pt x 679.53876pt>
+<imagenes/umss.jpg, id=434, 453.695pt x 679.53876pt>
 File: imagenes/umss.jpg Graphic file (type jpg)
 <use imagenes/umss.jpg>
 Package pdftex.def Info: imagenes/umss.jpg  used on input line 108.
 (pdftex.def)             Requested size: 47.49054pt x 71.13188pt.
-<imagenes/logo.jpg, id=442, 606.265pt x 599.23875pt>
+<imagenes/logo.jpg, id=438, 606.265pt x 599.23875pt>
 File: imagenes/logo.jpg Graphic file (type jpg)
 <use imagenes/logo.jpg>
 Package pdftex.def Info: imagenes/logo.jpg  used on input line 118.
@@ -2206,7 +2206,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 14.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 14.
-<imagenes/Cap1/oms1.png, id=828, 619.56468pt x 441.90094pt>
+<imagenes/Cap1/oms1.png, id=823, 619.56468pt x 441.90094pt>
 File: imagenes/Cap1/oms1.png Graphic file (type png)
 <use imagenes/Cap1/oms1.png>
 Package pdftex.def Info: imagenes/Cap1/oms1.png  used on input line 25.
@@ -2231,7 +2231,7 @@ Package babel Info: Redefining spanish shorthand "?
 
 
 ]
-<imagenes/Cap1/arbol_p.png, id=835, 626.34pt x 306.39468pt>
+<imagenes/Cap1/arbol_p.png, id=829, 626.34pt x 306.39468pt>
 File: imagenes/Cap1/arbol_p.png Graphic file (type png)
 <use imagenes/Cap1/arbol_p.png>
 Package pdftex.def Info: imagenes/Cap1/arbol_p.png  used on input line 42.
@@ -2410,7 +2410,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 9.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 9.
-<imagenes/Cap2/anom_2D.png, id=850, 374.14781pt x 326.72063pt>
+<imagenes/Cap2/anom_2D.png, id=845, 374.14781pt x 326.72063pt>
 File: imagenes/Cap2/anom_2D.png Graphic file (type png)
 <use imagenes/Cap2/anom_2D.png>
 Package pdftex.def Info: imagenes/Cap2/anom_2D.png  used on input line 22.
@@ -2436,12 +2436,12 @@ Package babel Info: Redefining spanish shorthand "?
 
 
 ]
-<imagenes/Cap2/anom_contx.png, id=858, 454.69875pt x 225.84375pt>
+<imagenes/Cap2/anom_contx.png, id=853, 454.69875pt x 225.84375pt>
 File: imagenes/Cap2/anom_contx.png Graphic file (type png)
 <use imagenes/Cap2/anom_contx.png>
 Package pdftex.def Info: imagenes/Cap2/anom_contx.png  used on input line 39.
 (pdftex.def)             Requested size: 274.68571pt x 136.43428pt.
-<imagenes/Cap2/anom_col.png, id=860, 386.94562pt x 302.63063pt>
+<imagenes/Cap2/anom_col.png, id=855, 386.94562pt x 302.63063pt>
 File: imagenes/Cap2/anom_col.png Graphic file (type png)
 <use imagenes/Cap2/anom_col.png>
 Package pdftex.def Info: imagenes/Cap2/anom_col.png  used on input line 53.
@@ -2591,7 +2591,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 135.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 135.
-<imagenes/Cap2/metodo1.png, id=911, 963.6pt x 722.7pt>
+<imagenes/Cap2/metodo1.png, id=906, 963.6pt x 722.7pt>
 File: imagenes/Cap2/metodo1.png Graphic file (type png)
 <use imagenes/Cap2/metodo1.png>
 Package pdftex.def Info: imagenes/Cap2/metodo1.png  used on input line 148.
@@ -2816,7 +2816,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 85.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 85.
-<imagenes/Cap4/neurona.png, id=956, 786.94pt x 429.605pt>
+<imagenes/Cap4/neurona.png, id=951, 786.94pt x 429.605pt>
 File: imagenes/Cap4/neurona.png Graphic file (type png)
 <use imagenes/Cap4/neurona.png>
 Package pdftex.def Info: imagenes/Cap4/neurona.png  used on input line 90.
@@ -2849,7 +2849,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 105.
 [16]
-<imagenes/Cap4/neurona_artificial.png, id=962, 652.4375pt x 328.22626pt>
+<imagenes/Cap4/neurona_artificial.png, id=957, 652.4375pt x 328.22626pt>
 File: imagenes/Cap4/neurona_artificial.png Graphic file (type png)
 <use imagenes/Cap4/neurona_artificial.png>
 Package pdftex.def Info: imagenes/Cap4/neurona_artificial.png  used on input li
@@ -2882,27 +2882,27 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 124.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 124.
-<imagenes/Cap4/sigmoid.png, id=970, 322.20375pt x 162.6075pt>
+<imagenes/Cap4/sigmoid.png, id=965, 322.20375pt x 162.6075pt>
 File: imagenes/Cap4/sigmoid.png Graphic file (type png)
 <use imagenes/Cap4/sigmoid.png>
 Package pdftex.def Info: imagenes/Cap4/sigmoid.png  used on input line 159.
 (pdftex.def)             Requested size: 206.01079pt x 103.97166pt.
-<imagenes/Cap4/tanh.png, id=971, 305.64188pt x 151.3153pt>
+<imagenes/Cap4/tanh.png, id=966, 305.64188pt x 151.3153pt>
 File: imagenes/Cap4/tanh.png Graphic file (type png)
 <use imagenes/Cap4/tanh.png>
 Package pdftex.def Info: imagenes/Cap4/tanh.png  used on input line 159.
 (pdftex.def)             Requested size: 206.01079pt x 101.99026pt.
-<imagenes/Cap4/relu.png, id=972, 315.42844pt x 158.84344pt>
+<imagenes/Cap4/relu.png, id=967, 315.42844pt x 158.84344pt>
 File: imagenes/Cap4/relu.png Graphic file (type png)
 <use imagenes/Cap4/relu.png>
 Package pdftex.def Info: imagenes/Cap4/relu.png  used on input line 159.
 (pdftex.def)             Requested size: 206.01079pt x 103.74387pt.
-<imagenes/Cap4/l_relu.png, id=973, 303.38344pt x 161.85469pt>
+<imagenes/Cap4/l_relu.png, id=968, 303.38344pt x 161.85469pt>
 File: imagenes/Cap4/l_relu.png Graphic file (type png)
 <use imagenes/Cap4/l_relu.png>
 Package pdftex.def Info: imagenes/Cap4/l_relu.png  used on input line 159.
 (pdftex.def)             Requested size: 206.01079pt x 109.90906pt.
-<imagenes/Cap4/elu.png, id=974, 363.759pt x 318.59026pt>
+<imagenes/Cap4/elu.png, id=969, 363.759pt x 318.59026pt>
 File: imagenes/Cap4/elu.png Graphic file (type png)
 <use imagenes/Cap4/elu.png>
 Package pdftex.def Info: imagenes/Cap4/elu.png  used on input line 159.
@@ -3028,7 +3028,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 251.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 251.
-<imagenes/Cap4/arquitectura.png, id=1015, 929.4725pt x 516.93124pt>
+<imagenes/Cap4/arquitectura.png, id=1010, 929.4725pt x 516.93124pt>
 File: imagenes/Cap4/arquitectura.png Graphic file (type png)
 <use imagenes/Cap4/arquitectura.png>
 Package pdftex.def Info: imagenes/Cap4/arquitectura.png  used on input line 256
@@ -3112,7 +3112,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 294.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 294.
-<imagenes/Cap4/autoencoder.png, id=1033, 589.20125pt x 330.23375pt>
+<imagenes/Cap4/autoencoder.png, id=1028, 589.20125pt x 330.23375pt>
 File: imagenes/Cap4/autoencoder.png Graphic file (type png)
 <use imagenes/Cap4/autoencoder.png>
 Package pdftex.def Info: imagenes/Cap4/autoencoder.png  used on input line 299.
@@ -3164,7 +3164,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 322.
  [24 <./imagenes/Cap4/autoencoder.png>]
-<imagenes/Cap4/cnn.png, id=1052, 692.5875pt x 234.1247pt>
+<imagenes/Cap4/cnn.png, id=1047, 692.5875pt x 234.1247pt>
 File: imagenes/Cap4/cnn.png Graphic file (type png)
 <use imagenes/Cap4/cnn.png>
 Package pdftex.def Info: imagenes/Cap4/cnn.png  used on input line 324.
@@ -3196,7 +3196,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 345.
  [25 <./imagenes/Cap4/cnn.png>]
-<imagenes/Cap4/rnn.png, id=1070, 767.11594pt x 231.86626pt>
+<imagenes/Cap4/rnn.png, id=1065, 767.11594pt x 231.86626pt>
 File: imagenes/Cap4/rnn.png Graphic file (type png)
 <use imagenes/Cap4/rnn.png>
 Package pdftex.def Info: imagenes/Cap4/rnn.png  used on input line 347.
@@ -3229,7 +3229,7 @@ Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 362.
 
 [26 <./imagenes/Cap4/rnn.png (PNG copy)>]
-<imagenes/Cap4/lstm.png, id=1094, 816.04875pt x 683.55376pt>
+<imagenes/Cap4/lstm.png, id=1089, 816.04875pt x 683.55376pt>
 File: imagenes/Cap4/lstm.png Graphic file (type png)
 <use imagenes/Cap4/lstm.png>
 Package pdftex.def Info: imagenes/Cap4/lstm.png  used on input line 364.
@@ -3261,7 +3261,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 379.
  [27 <./imagenes/Cap4/lstm.png>]
-<imagenes/Cap4/gru.png, id=1107, 705.63625pt x 353.32pt>
+<imagenes/Cap4/gru.png, id=1102, 705.63625pt x 353.32pt>
 File: imagenes/Cap4/gru.png Graphic file (type png)
 <use imagenes/Cap4/gru.png>
 Package pdftex.def Info: imagenes/Cap4/gru.png  used on input line 390.
@@ -3306,7 +3306,7 @@ Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 404.
 
 [28 <./imagenes/Cap4/gru.png>]
-<imagenes/Cap4/oc-svm.png, id=1123, 588.1975pt x 477.785pt>
+<imagenes/Cap4/oc-svm.png, id=1118, 588.1975pt x 477.785pt>
 File: imagenes/Cap4/oc-svm.png Graphic file (type png)
 <use imagenes/Cap4/oc-svm.png>
 Package pdftex.def Info: imagenes/Cap4/oc-svm.png  used on input line 410.
@@ -3338,7 +3338,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 428.
  [29 <./imagenes/Cap4/oc-svm.png>]
-<imagenes/Cap4/comp_if_ocsvm.png, id=1132, 234.8775pt x 438.13687pt>
+<imagenes/Cap4/comp_if_ocsvm.png, id=1127, 234.8775pt x 438.13687pt>
 File: imagenes/Cap4/comp_if_ocsvm.png Graphic file (type png)
 <use imagenes/Cap4/comp_if_ocsvm.png>
 Package pdftex.def Info: imagenes/Cap4/comp_if_ocsvm.png  used on input line 43
@@ -3375,7 +3375,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 460.
 [30]
-<imagenes/Cap4/autoencoder-anomaly.png, id=1149, 814.04124pt x 474.77374pt>
+<imagenes/Cap4/autoencoder-anomaly.png, id=1144, 814.04124pt x 474.77374pt>
 File: imagenes/Cap4/autoencoder-anomaly.png Graphic file (type png)
 <use imagenes/Cap4/autoencoder-anomaly.png>
 Package pdftex.def Info: imagenes/Cap4/autoencoder-anomaly.png  used on input l
@@ -3541,7 +3541,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 567.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 567.
-<imagenes/Cap4/auc_roc.png, id=1186, 362.35374pt x 331.2375pt>
+<imagenes/Cap4/auc_roc.png, id=1181, 362.35374pt x 331.2375pt>
 File: imagenes/Cap4/auc_roc.png Graphic file (type png)
 <use imagenes/Cap4/auc_roc.png>
 Package pdftex.def Info: imagenes/Cap4/auc_roc.png  used on input line 572.
@@ -3703,12 +3703,12 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 19.
 [39]
-<imagenes/Cap3/captura.png, id=1224, 847.165pt x 371.3875pt>
+<imagenes/Cap3/captura.png, id=1219, 847.165pt x 371.3875pt>
 File: imagenes/Cap3/captura.png Graphic file (type png)
 <use imagenes/Cap3/captura.png>
 Package pdftex.def Info: imagenes/Cap3/captura.png  used on input line 23.
 (pdftex.def)             Requested size: 434.91322pt x 190.6575pt.
-<imagenes/Cap3/soporte.png, id=1226, 548.80031pt x 283.0575pt>
+<imagenes/Cap3/soporte.png, id=1221, 548.80031pt x 283.0575pt>
 File: imagenes/Cap3/soporte.png Graphic file (type png)
 <use imagenes/Cap3/soporte.png>
 Package pdftex.def Info: imagenes/Cap3/soporte.png  used on input line 35.
@@ -3728,7 +3728,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 42.
  [40 <./imagenes/Cap3/captura.png> <./imagenes/Cap3/soporte.png (PNG copy)>]
-<imagenes/Cap3/dataset.png, id=1233, 548.0475pt x 149.8097pt>
+<imagenes/Cap3/dataset.png, id=1228, 548.0475pt x 149.8097pt>
 File: imagenes/Cap3/dataset.png Graphic file (type png)
 <use imagenes/Cap3/dataset.png>
 Package pdftex.def Info: imagenes/Cap3/dataset.png  used on input line 44.
@@ -3757,12 +3757,12 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 58.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 58.
-<imagenes/Cap3/horizontal.png, id=1238, 420.82219pt x 335.00156pt>
+<imagenes/Cap3/horizontal.png, id=1233, 420.82219pt x 335.00156pt>
 File: imagenes/Cap3/horizontal.png Graphic file (type png)
 <use imagenes/Cap3/horizontal.png>
 Package pdftex.def Info: imagenes/Cap3/horizontal.png  used on input line 88.
 (pdftex.def)             Requested size: 215.16884pt x 171.28813pt.
-<imagenes/Cap3/vertical.png, id=1239, 348.55219pt x 269.50688pt>
+<imagenes/Cap3/vertical.png, id=1234, 348.55219pt x 269.50688pt>
 File: imagenes/Cap3/vertical.png Graphic file (type png)
 <use imagenes/Cap3/vertical.png>
 Package pdftex.def Info: imagenes/Cap3/vertical.png  used on input line 88.
@@ -3861,13 +3861,13 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 131.
  [43]
-<imagenes/Cap3/histograma_sensores.png, id=1259, 462.528pt x 346.896pt>
+<imagenes/Cap3/histograma_sensores.png, id=1254, 462.528pt x 346.896pt>
 File: imagenes/Cap3/histograma_sensores.png Graphic file (type png)
 <use imagenes/Cap3/histograma_sensores.png>
 Package pdftex.def Info: imagenes/Cap3/histograma_sensores.png  used on input l
 ine 137.
 (pdftex.def)             Requested size: 444.07127pt x 333.06929pt.
-<imagenes/Cap3/describe_data.png, id=1261, 491.58656pt x 172.39406pt>
+<imagenes/Cap3/describe_data.png, id=1256, 491.58656pt x 172.39406pt>
 File: imagenes/Cap3/describe_data.png Graphic file (type png)
 <use imagenes/Cap3/describe_data.png>
 Package pdftex.def Info: imagenes/Cap3/describe_data.png  used on input line 14
@@ -3892,7 +3892,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 157.
 [44 <./imagenes/Cap3/histograma_sensores.png>]
-<imagenes/Cap3/68-95-99_rule.png, id=1269, 632.3625pt x 310.91156pt>
+<imagenes/Cap3/68-95-99_rule.png, id=1264, 632.3625pt x 310.91156pt>
 File: imagenes/Cap3/68-95-99_rule.png Graphic file (type png)
 <use imagenes/Cap3/68-95-99_rule.png>
 Package pdftex.def Info: imagenes/Cap3/68-95-99_rule.png  used on input line 16
@@ -3902,7 +3902,7 @@ Package pdftex.def Info: imagenes/Cap3/68-95-99_rule.png  used on input line 16
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<imagenes/Cap3/68-95-99_rule_acc_z.png, id=1271, 1006.76125pt x 626.34pt>
+<imagenes/Cap3/68-95-99_rule_acc_z.png, id=1266, 1006.76125pt x 626.34pt>
 File: imagenes/Cap3/68-95-99_rule_acc_z.png Graphic file (type png)
 <use imagenes/Cap3/68-95-99_rule_acc_z.png>
 Package pdftex.def Info: imagenes/Cap3/68-95-99_rule_acc_z.png  used on input l
@@ -4022,7 +4022,7 @@ LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <10.95> not available
 (Font)              Font shape `T1/phv/b/it' tried instead on input line 264.
 LaTeX Font Info:    Font shape `T1/phv/b/it' in size <10.95> not available
 (Font)              Font shape `T1/phv/b/sl' tried instead on input line 264.
-<imagenes/Cap3/train-dev-test.png, id=1307, 770.88pt x 213.79875pt>
+<imagenes/Cap3/train-dev-test.png, id=1302, 770.88pt x 213.79875pt>
 File: imagenes/Cap3/train-dev-test.png Graphic file (type png)
 <use imagenes/Cap3/train-dev-test.png>
 Package pdftex.def Info: imagenes/Cap3/train-dev-test.png  used on input line 2
@@ -4051,7 +4051,7 @@ Package babel Info: Redefining spanish shorthand "?
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 297.
 
-<imagenes/Cap3/datos_sin_preprocesamiento.png, id=1331, 426.09187pt x 316.93407
+<imagenes/Cap3/datos_sin_preprocesamiento.png, id=1326, 426.09187pt x 316.93407
 pt>
 File: imagenes/Cap3/datos_sin_preprocesamiento.png Graphic file (type png)
 <use imagenes/Cap3/datos_sin_preprocesamiento.png>
@@ -4061,25 +4061,25 @@ input line 319.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<imagenes/Cap3/datos_minmax_scaler.png, id=1332, 450.18187pt x 326.72063pt>
+<imagenes/Cap3/datos_minmax_scaler.png, id=1327, 450.18187pt x 326.72063pt>
 File: imagenes/Cap3/datos_minmax_scaler.png Graphic file (type png)
 <use imagenes/Cap3/datos_minmax_scaler.png>
 Package pdftex.def Info: imagenes/Cap3/datos_minmax_scaler.png  used on input l
 ine 353.
 (pdftex.def)             Requested size: 206.01079pt x 149.5156pt.
-<imagenes/Cap3/datos_standard_scaler.png, id=1333, 438.13687pt x 325.215pt>
+<imagenes/Cap3/datos_standard_scaler.png, id=1328, 438.13687pt x 325.215pt>
 File: imagenes/Cap3/datos_standard_scaler.png Graphic file (type png)
 <use imagenes/Cap3/datos_standard_scaler.png>
 Package pdftex.def Info: imagenes/Cap3/datos_standard_scaler.png  used on input
  line 353.
 (pdftex.def)             Requested size: 206.01079pt x 152.91557pt.
-<imagenes/Cap3/datos_max_scaler.png, id=1334, 435.12563pt x 321.45094pt>
+<imagenes/Cap3/datos_max_scaler.png, id=1329, 435.12563pt x 321.45094pt>
 File: imagenes/Cap3/datos_max_scaler.png Graphic file (type png)
 <use imagenes/Cap3/datos_max_scaler.png>
 Package pdftex.def Info: imagenes/Cap3/datos_max_scaler.png  used on input line
  353.
 (pdftex.def)             Requested size: 206.01079pt x 152.19537pt.
-<imagenes/Cap3/datos_robust_scaler.png, id=1335, 440.39531pt x 325.96782pt>
+<imagenes/Cap3/datos_robust_scaler.png, id=1330, 440.39531pt x 325.96782pt>
 File: imagenes/Cap3/datos_robust_scaler.png Graphic file (type png)
 <use imagenes/Cap3/datos_robust_scaler.png>
 Package pdftex.def Info: imagenes/Cap3/datos_robust_scaler.png  used on input l
@@ -4161,7 +4161,7 @@ Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 412.
  [54]
 1: section
-<imagenes/Cap3/pca.png, id=1364, 462.528pt x 346.896pt>
+<imagenes/Cap3/pca.png, id=1359, 462.528pt x 346.896pt>
 File: imagenes/Cap3/pca.png Graphic file (type png)
 <use imagenes/Cap3/pca.png>
 Package pdftex.def Info: imagenes/Cap3/pca.png  used on input line 439.
@@ -4304,22 +4304,22 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 64.
  [58]
-<imagenes/Cap4/pca3-2.png, id=1392, 469.755pt x 349.305pt>
+<imagenes/Cap4/pca3-2.png, id=1387, 469.755pt x 349.305pt>
 File: imagenes/Cap4/pca3-2.png Graphic file (type png)
 <use imagenes/Cap4/pca3-2.png>
 Package pdftex.def Info: imagenes/Cap4/pca3-2.png  used on input line 92.
 (pdftex.def)             Requested size: 206.01079pt x 153.18832pt.
-<imagenes/Cap4/pca3-3.png, id=1393, 492.33937pt x 348.55219pt>
+<imagenes/Cap4/pca3-3.png, id=1388, 492.33937pt x 348.55219pt>
 File: imagenes/Cap4/pca3-3.png Graphic file (type png)
 <use imagenes/Cap4/pca3-3.png>
 Package pdftex.def Info: imagenes/Cap4/pca3-3.png  used on input line 92.
 (pdftex.def)             Requested size: 206.01079pt x 145.84842pt.
-<imagenes/Cap4/pca3-4.png, id=1394, 487.06969pt x 350.81062pt>
+<imagenes/Cap4/pca3-4.png, id=1389, 487.06969pt x 350.81062pt>
 File: imagenes/Cap4/pca3-4.png Graphic file (type png)
 <use imagenes/Cap4/pca3-4.png>
 Package pdftex.def Info: imagenes/Cap4/pca3-4.png  used on input line 92.
 (pdftex.def)             Requested size: 206.01079pt x 148.37791pt.
-<imagenes/Cap4/pca3-5.png, id=1395, 480.29437pt x 350.05782pt>
+<imagenes/Cap4/pca3-5.png, id=1390, 480.29437pt x 350.05782pt>
 File: imagenes/Cap4/pca3-5.png Graphic file (type png)
 <use imagenes/Cap4/pca3-5.png>
 Package pdftex.def Info: imagenes/Cap4/pca3-5.png  used on input line 92.
@@ -4422,7 +4422,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 240.
  [62]
-<imagenes/Cap5/resultado_nn.png, id=1419, 1011.78pt x 289.08pt>
+<imagenes/Cap5/resultado_nn.png, id=1414, 1011.78pt x 289.08pt>
 File: imagenes/Cap5/resultado_nn.png Graphic file (type png)
 <use imagenes/Cap5/resultado_nn.png>
 Package pdftex.def Info: imagenes/Cap5/resultado_nn.png  used on input line 267
@@ -4430,13 +4430,13 @@ Package pdftex.def Info: imagenes/Cap5/resultado_nn.png  used on input line 267
 (pdftex.def)             Requested size: 453.22932pt x 129.49371pt.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 267.
-<imagenes/Cap5/resultado_cnn.png, id=1420, 1011.78pt x 289.08pt>
+<imagenes/Cap5/resultado_cnn.png, id=1415, 1011.78pt x 289.08pt>
 File: imagenes/Cap5/resultado_cnn.png Graphic file (type png)
 <use imagenes/Cap5/resultado_cnn.png>
 Package pdftex.def Info: imagenes/Cap5/resultado_cnn.png  used on input line 26
 7.
 (pdftex.def)             Requested size: 453.22932pt x 129.49371pt.
-<imagenes/Cap5/resultado_rnn.png, id=1421, 1011.78pt x 289.08pt>
+<imagenes/Cap5/resultado_rnn.png, id=1416, 1011.78pt x 289.08pt>
 File: imagenes/Cap5/resultado_rnn.png Graphic file (type png)
 <use imagenes/Cap5/resultado_rnn.png>
 Package pdftex.def Info: imagenes/Cap5/resultado_rnn.png  used on input line 26
@@ -4471,7 +4471,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 282.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 282.
-<imagenes/Cap5/codos.png, id=1424, 462.528pt x 346.896pt>
+<imagenes/Cap5/codos.png, id=1419, 462.528pt x 346.896pt>
 File: imagenes/Cap5/codos.png Graphic file (type png)
 <use imagenes/Cap5/codos.png>
 Package pdftex.def Info: imagenes/Cap5/codos.png  used on input line 295.
@@ -4507,7 +4507,7 @@ Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 299.
  [64 <./imagenes/Cap5/resultado_nn.png> <./imagenes/Cap5/resultado_cnn.png> <./
 imagenes/Cap5/resultado_rnn.png>]
-<imagenes/Cap5/zoom_codos.png, id=1439, 873.2625pt x 607.26875pt>
+<imagenes/Cap5/zoom_codos.png, id=1434, 873.2625pt x 607.26875pt>
 File: imagenes/Cap5/zoom_codos.png Graphic file (type png)
 <use imagenes/Cap5/zoom_codos.png>
 Package pdftex.def Info: imagenes/Cap5/zoom_codos.png  used on input line 313.
@@ -4554,7 +4554,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 342.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 342.
-<imagenes/Cap5/isolation-forest.png, id=1453, 513.41812pt x 400.49625pt>
+<imagenes/Cap5/isolation-forest.png, id=1448, 513.41812pt x 400.49625pt>
 File: imagenes/Cap5/isolation-forest.png Graphic file (type png)
 <use imagenes/Cap5/isolation-forest.png>
 Package pdftex.def Info: imagenes/Cap5/isolation-forest.png  used on input line
@@ -4575,7 +4575,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 358.
  [67 <./imagenes/Cap5/isolation-forest.png (PNG copy)>]
-<imagenes/Cap5/autoencoder.png, id=1463, 964.60374pt x 755.82375pt>
+<imagenes/Cap5/autoencoder.png, id=1458, 964.60374pt x 755.82375pt>
 File: imagenes/Cap5/autoencoder.png Graphic file (type png)
 <use imagenes/Cap5/autoencoder.png>
 Package pdftex.def Info: imagenes/Cap5/autoencoder.png  used on input line 361.
@@ -4596,7 +4596,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 383.
  [68 <./imagenes/Cap5/autoencoder.png>]
-<imagenes/Cap5/error.png, id=1473, 945.5325pt x 268.00125pt>
+<imagenes/Cap5/error.png, id=1468, 945.5325pt x 268.00125pt>
 File: imagenes/Cap5/error.png Graphic file (type png)
 <use imagenes/Cap5/error.png>
 Package pdftex.def Info: imagenes/Cap5/error.png  used on input line 388.
@@ -4670,7 +4670,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 473.
 [70]
-<imagenes/Cap5/mecanismo.png, id=1489, 1131.22626pt x 1158.3275pt>
+<imagenes/Cap5/mecanismo.png, id=1484, 1131.22626pt x 1158.3275pt>
 File: imagenes/Cap5/mecanismo.png Graphic file (type png)
 <use imagenes/Cap5/mecanismo.png>
 Package pdftex.def Info: imagenes/Cap5/mecanismo.png  used on input line 490.
@@ -4847,17 +4847,17 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 64.
  [76]
-<imagenes/Cap5/zig_zag1.png, id=1519, 846.16125pt x 645.41125pt>
+<imagenes/Cap5/zig_zag1.png, id=1520, 846.16125pt x 645.41125pt>
 File: imagenes/Cap5/zig_zag1.png Graphic file (type png)
 <use imagenes/Cap5/zig_zag1.png>
 Package pdftex.def Info: imagenes/Cap5/zig_zag1.png  used on input line 81.
 (pdftex.def)             Requested size: 206.01079pt x 157.12755pt.
-<imagenes/Cap5/zig_zag2.png, id=1520, 846.16125pt x 645.41125pt>
+<imagenes/Cap5/zig_zag2.png, id=1521, 846.16125pt x 645.41125pt>
 File: imagenes/Cap5/zig_zag2.png Graphic file (type png)
 <use imagenes/Cap5/zig_zag2.png>
 Package pdftex.def Info: imagenes/Cap5/zig_zag2.png  used on input line 81.
 (pdftex.def)             Requested size: 206.01079pt x 157.12755pt.
-<imagenes/Cap5/zig_zag3.png, id=1521, 846.16125pt x 645.41125pt>
+<imagenes/Cap5/zig_zag3.png, id=1522, 846.16125pt x 645.41125pt>
 File: imagenes/Cap5/zig_zag3.png Graphic file (type png)
 <use imagenes/Cap5/zig_zag3.png>
 Package pdftex.def Info: imagenes/Cap5/zig_zag3.png  used on input line 81.
@@ -4890,17 +4890,17 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 92.
-<imagenes/Cap5/giro1.png, id=1534, 846.16125pt x 645.41125pt>
+<imagenes/Cap5/giro1.png, id=1537, 846.16125pt x 645.41125pt>
 File: imagenes/Cap5/giro1.png Graphic file (type png)
 <use imagenes/Cap5/giro1.png>
 Package pdftex.def Info: imagenes/Cap5/giro1.png  used on input line 115.
 (pdftex.def)             Requested size: 206.01079pt x 157.12755pt.
-<imagenes/Cap5/giro2.png, id=1535, 846.16125pt x 645.41125pt>
+<imagenes/Cap5/giro2.png, id=1538, 846.16125pt x 645.41125pt>
 File: imagenes/Cap5/giro2.png Graphic file (type png)
 <use imagenes/Cap5/giro2.png>
 Package pdftex.def Info: imagenes/Cap5/giro2.png  used on input line 115.
 (pdftex.def)             Requested size: 206.01079pt x 157.12755pt.
-<imagenes/Cap5/giro3.png, id=1536, 846.16125pt x 645.41125pt>
+<imagenes/Cap5/giro3.png, id=1539, 846.16125pt x 645.41125pt>
 File: imagenes/Cap5/giro3.png Graphic file (type png)
 <use imagenes/Cap5/giro3.png>
 Package pdftex.def Info: imagenes/Cap5/giro3.png  used on input line 115.
@@ -4932,17 +4932,17 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 120.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 120.
-<imagenes/Cap5/freno1.png, id=1542, 846.16125pt x 645.41125pt>
+<imagenes/Cap5/freno1.png, id=1546, 846.16125pt x 645.41125pt>
 File: imagenes/Cap5/freno1.png Graphic file (type png)
 <use imagenes/Cap5/freno1.png>
 Package pdftex.def Info: imagenes/Cap5/freno1.png  used on input line 142.
 (pdftex.def)             Requested size: 206.01079pt x 157.12755pt.
-<imagenes/Cap5/freno2.png, id=1543, 846.16125pt x 645.41125pt>
+<imagenes/Cap5/freno2.png, id=1547, 846.16125pt x 645.41125pt>
 File: imagenes/Cap5/freno2.png Graphic file (type png)
 <use imagenes/Cap5/freno2.png>
 Package pdftex.def Info: imagenes/Cap5/freno2.png  used on input line 142.
 (pdftex.def)             Requested size: 206.01079pt x 157.12755pt.
-<imagenes/Cap5/freno3.png, id=1544, 846.16125pt x 645.41125pt>
+<imagenes/Cap5/freno3.png, id=1548, 846.16125pt x 645.41125pt>
 File: imagenes/Cap5/freno3.png Graphic file (type png)
 <use imagenes/Cap5/freno3.png>
 Package pdftex.def Info: imagenes/Cap5/freno3.png  used on input line 142.
@@ -4975,17 +4975,17 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 148.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 148.
-<imagenes/Cap5/fp1.png, id=1557, 846.16125pt x 645.41125pt>
+<imagenes/Cap5/fp1.png, id=1563, 846.16125pt x 645.41125pt>
 File: imagenes/Cap5/fp1.png Graphic file (type png)
 <use imagenes/Cap5/fp1.png>
 Package pdftex.def Info: imagenes/Cap5/fp1.png  used on input line 171.
 (pdftex.def)             Requested size: 206.01079pt x 157.12755pt.
-<imagenes/Cap5/fp2.png, id=1558, 846.16125pt x 645.41125pt>
+<imagenes/Cap5/fp2.png, id=1564, 846.16125pt x 645.41125pt>
 File: imagenes/Cap5/fp2.png Graphic file (type png)
 <use imagenes/Cap5/fp2.png>
 Package pdftex.def Info: imagenes/Cap5/fp2.png  used on input line 171.
 (pdftex.def)             Requested size: 206.01079pt x 157.12755pt.
-<imagenes/Cap5/fp3.png, id=1559, 846.16125pt x 645.41125pt>
+<imagenes/Cap5/fp3.png, id=1565, 846.16125pt x 645.41125pt>
 File: imagenes/Cap5/fp3.png Graphic file (type png)
 <use imagenes/Cap5/fp3.png>
 Package pdftex.def Info: imagenes/Cap5/fp3.png  used on input line 171.
@@ -5482,37 +5482,142 @@ LaTeX Info: Redefining \% on input line 24.
 (./apendices/apendiceA.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 231.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 231.
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 4E9E8E6A448B83F53D4CF95F8F7A5A07;22126.
 
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: 82F01D40D63D0E919509CFF37BEC0615;22033
+(rerunfilecheck)             After:  4E9E8E6A448B83F53D4CF95F8F7A5A07;22126.
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 30779 strings out of 492982
- 618025 string characters out of 6138580
+ 30810 strings out of 492982
+ 618379 string characters out of 6138580
  680972 words of memory out of 5000000
- 33437 multiletter control sequences out of 15000+600000
+ 33435 multiletter control sequences out of 15000+600000
  644561 words of font info for 162 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,21n,80p,10404b,1059s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/t
-exmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
-/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-d
-ist/fonts/type1/public/mathpazo/fplmr.pfb></usr/share/texmf-dist/fonts/type1/pu
-blic/mathpazo/fplmri.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sft
-t1095.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/shar
-e/texmf-dist/fonts/type1/urw/helvetic/uhvbo8a.pfb></usr/share/texmf-dist/fonts/
-type1/urw/helvetic/uhvr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/u
-hvro8a.pfb></usr/share/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/sha
-re/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (110 pages, 6097395 bytes).
+pdfTeX warning (dest): name{table.253} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.251} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{table.248} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{table.246} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{table.243} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{table.241} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{table.211} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.232} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.227} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.222} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.217} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.252} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.250} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.249} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.247} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.245} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.244} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.242} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.240} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.239} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{appendix.238} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{section*.237} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.235} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{chapter.234} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.233} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.228} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.223} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.218} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.213} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.212} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.210} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.209} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{chapter.208} has been referenced but does not exist
+, replaced by a fixed one
+
+{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/tex
+mf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmm
+i10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/s
+hare/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dis
+t/fonts/type1/public/mathpazo/fplmr.pfb></usr/share/texmf-dist/fonts/type1/publ
+ic/mathpazo/fplmri.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sftt1
+095.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/
+texmf-dist/fonts/type1/urw/helvetic/uhvbo8a.pfb></usr/share/texmf-dist/fonts/ty
+pe1/urw/helvetic/uhvr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhv
+ro8a.pfb></usr/share/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share
+/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on main.pdf (110 pages, 6098143 bytes).
 PDF statistics:
- 1837 PDF objects out of 2073 (max. 8388607)
- 1585 compressed objects within 16 object streams
- 410 named destinations out of 1000 (max. 500000)
- 1195 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1874 PDF objects out of 2073 (max. 8388607)
+ 1621 compressed objects within 17 object streams
+ 443 named destinations out of 1000 (max. 500000)
+ 1187 words of extra memory for PDF output out of 10000 (max. 10000000)
 
