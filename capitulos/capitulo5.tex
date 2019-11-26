@@ -1,5 +1,3 @@
-% Chapter 5
-
 \chapter{\uppercase{Generaci\'{o}n del mecanismo de detecci\'{o}n de anomal\'{i}as}}
 \label{Capitulo 5}
 
@@ -242,7 +240,7 @@ Por otra parte la diferencia m\'{a}s grande entre las dos mejores redes (\textbf
 
 \vspace{5mm} %5mm vertical space
 
-En la Figura \ref{fig:res_autoencoders} se muestra los resultados de los autoencoders de siete secuencias tomadas del conjunto de prueba aleatoriamente, en la parte superior de cada figura se encuentra la secuencia de entrada y en la inferior la reconstrucci\'{o}n del modelo, como ya se pod\'{i}a esperar la red \textbf{CNN\_33} presenta los peores resultados, lo cual hace que dicha red sea descartada; en cuanto a las dos redes restantes, la red \textbf{NN\_33} presenta reconstrucciones muy similares a las secuencias de entrada, con algunos peque\~{n}os errores; por otra parte \textbf{RNN\_33} presenta errores un poco m\'{a}s notorios que los obtenidos por  \textbf{NN\_33}. Por lo tanto se lleg\'{o} a la conclusi\'{o}n de que \textbf{NN\_33} es la mejor red que se ajusta al comportamiento normal de coducci\'{o}n, adem\'{a}s de tener la gran ventaja de tener un tiempo de ejecuci\'{o}n mucho menor que el de \textbf{RNN\_33}, lo cual es realmente importante para los sistemas en tiempo real, como el del presente proyecto.
+En la Figura \ref{fig:res_autoencoders} se muestra los resultados de los autoencoders de siete secuencias tomadas del conjunto de prueba aleatoriamente, en la parte superior de cada figura se encuentra la secuencia de entrada y en la inferior la reconstrucci\'{o}n del modelo, como ya se pod\'{i}a esperar la red \textbf{CNN\_33} presenta los peores resultados, lo cual hace que dicha red sea descartada; en cuanto a las dos redes restantes, la red \textbf{NN\_33} presenta reconstrucciones muy similares a las secuencias de entrada, con algunos peque\~{n}os errores; por otra parte \textbf{RNN\_33} presenta errores un poco m\'{a}s notorios que los obtenidos por  \textbf{NN\_33}. Por lo tanto se lleg\'{o} a la conclusi\'{o}n de que la red \textbf{NN\_33} se ajusta mejor al comportamiento normal de coducci\'{o}n, adem\'{a}s de tener la gran ventaja de tener un tiempo de ejecuci\'{o}n mucho menor que el de \textbf{RNN\_33}, lo cual es realmente importante para los sistemas en tiempo real as\'{i} como tambi\'{e}n de aquellos que cuentan con recursos de ejecucion limitados, como es el caso del presente proyecto.
 
 \begin{figure}
         \centering
@@ -341,9 +339,20 @@ Seg\'{u}n los resultados que se muestran en el Cuadro \ref{table:evaluacion_codo
 
 De ello se deduce que, para detectar autom\'{a}ticamente el umbral el uso de 0.5 como par\'{a}metro S es el m\'{a}s adecuado, sin embargo si se desea incrementar el porcentaje de detecci\'{o}n de anomal\'{i}as a costa de incrementar el n\'{u}mero de falsos positivos se puede usar un valor mayor a 0.5 para S y en caso de querer la menor cantidad de falsos positivos posibles se debe usar un valor menor a 0.5.
 
-\vspace{5mm} %5mm vertical space
-
 \subsubsection{Isolation Forest}
+
+Antes de presentar como se llevar\'{a} los experimentos con este algoritmo, es necesario ilustrar m\'{a}s detalladamente el funcionamiento del mismo. Por lo tanto la Figura \ref{fig:isolartion-forest} representa c\'{o}mo se espera que un punto de datos anómalo se aísle rápidamente con el uso de este algoritmo, mientras que un punto de datos normal necesita más particiones para poder ser aislado.
+
+\begin{figure}[h!]
+  \begin{center}	\includegraphics[width=0.75\textwidth, frame]{imagenes/Cap5/isolation-forest}
+  \caption{La figura de la izquierda muestra el aislamiento de una anomalía, que requiere solo tres particiones. A la derecha, el aislamiento de un punto normal requiere seis particiones \protect\cite{Reference60}.} 
+  \label{fig:isolartion-forest}
+  \end{center}
+\end{figure}
+
+Una vez detallado resumidamente el funcionamiento de los bosques de aislamiento se puede proseguir con los diferentes enfoques de los experimentos que se realizar\'{a} con Isolation Forest.
+
+\vspace{5mm} %5mm vertical space
 
 Existen dos enfoques que pueden realizarse con esta t\'{e}cnica; el primero entrena el modelo con los valores compresos del codificador del autoencoder y el segundo se entrena con los errores de reconstrucci\'{o}n del autoencoder. A continuaci\'{o}n se presenta una gr\'{a}fica (Ver Figura \ref{fig:autoencoder}) del autoencoder (modelo del comportamiento normal) con el fin de tener un mejor entendimiento de c\'{o}mo se realizar\'{a}n los experimentos tanto para los bosques de aislamiento como para los SVM de una clase.
 

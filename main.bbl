@@ -563,6 +563,38 @@ Johnson, D.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Klos%
+\ \BBA {} Waszczyszyn%
+}{%
+Klos%
+\ \BBA {} Waszczyszyn%
+}{%
+{\protect \APACyear {2011}}%
+}]{%
+Reference64}
+\APACinsertmetastar {%
+Reference64}%
+\begin{APACrefauthors}%
+Klos, M.%
+\BCBT {}\ \BBA {} Waszczyszyn, Z.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2011}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Modal analysis and modified cascade neural networks in
+  identification of geometrical parameters of circular arches} {Modal analysis
+  and modified cascade neural networks in identification of geometrical
+  parameters of circular arches}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Computers \& Structures}{89}{}{581--589}.
+\newblock
+\begin{APACrefURL}
+  \url{http://cames.ippt.gov.pl/index.php/cames/article/view/110}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Koh%
 \ \BBA {} Kang%
 }{%
@@ -1272,6 +1304,35 @@ Zeiler, M\BPBI D.%
 \newblock
 \begin{APACrefURL}
   \url{https://static.googleusercontent.com/media/research.google.com/es//pubs/archive/40811.pdf}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Zenon%
+}{%
+Zenon%
+}{%
+{\protect \APACyear {2011}}%
+}]{%
+Reference63}
+\APACinsertmetastar {%
+Reference63}%
+\begin{APACrefauthors}%
+Zenon, W.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2011}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Artificial neural networks in civil engineering: another
+  five years of research in Poland} {Artificial neural networks in civil
+  engineering: another five years of research in poland}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Computer Assisted Mechanics and Engineering
+  Sciences}{18}{}{131--146}.
+\newblock
+\begin{APACrefURL}
+  \url{http://cames.ippt.gov.pl/index.php/cames/article/view/110}
   \end{APACrefURL}
 \PrintBackRefs{\CurrentBib}
 

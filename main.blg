@@ -8,8 +8,8 @@ A level-1 auxiliary file: capitulos/capitulo3.aux
 A level-1 auxiliary file: capitulos/capitulo5.aux
 A level-1 auxiliary file: capitulos/capitulo6.aux
 A level-1 auxiliary file: capitulos/capitulo7.aux
-A level-1 auxiliary file: apendices/apendiceA.aux
 The style file: apacite.bst
+A level-1 auxiliary file: apendices/apendiceA.aux
 Reallocated glb_str_ptr (elt_size=8) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=8) to 20 items from 10.
@@ -26,45 +26,45 @@ ptr=1, stack=
 
 ---the literal stack isn't empty for entry Reference42
 while executing---line 5079 of file apacite.bst
-You've used 43 entries,
+You've used 45 entries,
             6951 wiz_defined-function locations,
-            1594 strings with 20854 characters,
-and the built_in function-call counts, 83349 in all, are:
-= -- 9824
-> -- 765
-< -- 4099
-+ -- 4103
-- -- 86
-* -- 5523
-:= -- 15415
-add.period$ -- 177
-call.type$ -- 43
-change.case$ -- 717
+            1609 strings with 21290 characters,
+and the built_in function-call counts, 87504 in all, are:
+= -- 10323
+> -- 789
+< -- 4348
++ -- 4336
+- -- 90
+* -- 5820
+:= -- 16284
+add.period$ -- 185
+call.type$ -- 45
+change.case$ -- 751
 chr.to.int$ -- 0
-cite$ -- 87
-duplicate$ -- 2399
-empty$ -- 3456
-format.name$ -- 1350
-if$ -- 15624
+cite$ -- 91
+duplicate$ -- 2484
+empty$ -- 3606
+format.name$ -- 1388
+if$ -- 16370
 int.to.chr$ -- 0
-int.to.str$ -- 129
+int.to.str$ -- 135
 missing$ -- 0
-newline$ -- 1176
-num.names$ -- 344
-pop$ -- 1499
+newline$ -- 1227
+num.names$ -- 360
+pop$ -- 1545
 preamble$ -- 1
-purify$ -- 206
+purify$ -- 214
 quote$ -- 0
-skip$ -- 5070
+skip$ -- 5322
 stack$ -- 0
-substring$ -- 4394
-swap$ -- 1319
-text.length$ -- 120
+substring$ -- 4639
+swap$ -- 1373
+text.length$ -- 124
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 3440
+type$ -- 3600
 warning$ -- 1
-while$ -- 487
+while$ -- 499
 width$ -- 0
-write$ -- 1494
+write$ -- 1553
 (There was 1 error message)

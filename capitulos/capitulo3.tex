@@ -17,7 +17,6 @@ Actualmente existen varios enfoques para acceder a la información del coductor 
 
 Para el presente trabajo de investigaci\'{o}n se eligi\'{o} el uso de tel\'{e}fonos inteligentes para acceder a la informaci\'{o}n del tipo de conducci\'{o}n, por las razones que se presentaron anteriormente, con este enfoque se desarroll\'{o} una aplicaci\'{o}n m\'{o}vil basada en Android para recopilar datos de los sensores: aceler\'{o}metro y giroscopio, en intervalos de 1 segundo, los cuales en una primera instancia ser\'{a}n almacenados de manera interna en el dispositivo m\'{o}vil. (Ver Figura \ref{fig:captura})
 
-
 \vspace{5mm} %5mm vertical space
 
 \begin{figure}[h!]
@@ -26,7 +25,6 @@ Para el presente trabajo de investigaci\'{o}n se eligi\'{o} el uso de tel\'{e}fo
   \label{fig:captura}
   \end{center}
 \end{figure}
-
 
 \vspace{5mm} %5mm vertical space
 
@@ -104,11 +102,13 @@ Una vez que se seleccionaron los datos con los que se trabajar\'{a}, se debe pro
 
 \subsection{Limpieza de datos}
 
-Los datos de las filas pueden tener registros incompletos, valores ruidosos, valores at\'{i}picos y datos inconsistentes. La limpieza de los datos en la mayor\'{i}a de los casos es el primer paso del pre-procesamiento de datos. Esta t\'{e}cnica se usa para encontrar valores ausentes, suavizar el ruido en los datos, reconocer valores at\'{i}picos y corregir inconsistencias.
+Los datos de las filas pueden tener registros incompletos, valores ruidosos, valores at\'{i}picos y datos inconsistentes. La limpieza de los datos en la mayor\'{i}a de los casos es el primer paso del pre-procesamiento de datos. Esta t\'{e}cnica se usa para compensar valores ausentes, suavizar el ruido en los datos, reconocer valores at\'{i}picos y corregir inconsistencias.
 
-\subsubsection{Manejo de valores ausentes}
+\subsubsection{T\'{e}cnicas de compensaci\'{o}n de registros incompletos}
 
-Los valores ausentes en el conjunto de datos pueden ser llenados usando cualquiera de las t\'{e}cnicas que se mencionan a continuaci\'{o}n.
+Muchos conjuntos de datos del mundo real pueden contener valores faltantes por distintas razones; lo cual puede afectar drásticamente la calidad del modelo de aprendizaje automático. 
+
+A continuaci\'{o}n se presentan cuatro t\'{e}cnicas de compensaci\'{o}n para conjuntos de datos, con el objetivo de sobrellevar el problema de los valores ausentes.
 
 \begin{itemize}
 \item \textbf{Ignorar / Eliminar:} En algunos casos es mejor ignorar o eliminar la tupla que contiene valores faltantes en lugar de llenar esta. Generalmente esta t\'{e}cnica se practica en conjuntos de datos que son muy grandes, donde el eliminar algunos datos no afectar\'{a} la informaci\'{o}n que transmite nuestro conjunto de datos. Sin embargo cuando se trabaja con un conjunto de datos peque\~{n}o el eliminar las tuplas que contienen valores ausentes podr\'{i}a hacer perder informaci\'{o}n importante.
@@ -194,9 +194,9 @@ La transformaci\'{o}n de los datos es el proceso donde se cambia la naturaleza d
 
 \item \textbf{Discretizaci\'{o}n: }Con esta t\'{e}cnica se construye y reemplaza valores en bruto de un atributo num\'{e}rico por valores de intervalo.
 
-\item \textbf{Construcci\'{o}n de atributos / Ingenier\'{i}a de caracter\'{i}sticas: }Esta t\'{e}cnica es \'{u}til para generar informaci\'{o}n adicional a partir de datos vagos, adem\'{a}s puede ser adecuada cuando se tiene menos caracter\'{i}sticas pero a\'{u}n contienen informaci\'{o}n oculta para extraer.
+\item \textbf{Construcci\'{o}n de atributos / Ingenier\'{i}a de caracter\'{i}sticas: }Esta t\'{e}cnica es \'{u}til para generar informaci\'{o}n adicional a partir de aquellos datos que no son lo sufientemente representativos por s\'{i} mismos, adem\'{a}s puede ser adecuada cuando se tiene menos caracter\'{i}sticas pero a\'{u}n contienen informaci\'{o}n oculta para extraer.
 
-\item \textbf{Normalizaci\'{o}n / Estandarizaci\'{o}n: }La normalizaci\'{o}n o estandarizaci\'{o}n se define como el proceso de reescalar datos originales sin cambiar su comportamiento o naturaleza. Se define un nuevo l\'{i}mite (generalmente entre 0 y 1) y se convierte los datos en consecuencia. Esta t\'{e}cnica es \'{u}til en algoritmos de clasificaci\'{o}n que involucran redes neuronales o algoritmos basados en la distancia (por ejemplo, KNN, K-means). Algunas t\'{e}cnicas de normalizaci\'{o}n son:
+\item \textbf{Normalizaci\'{o}n / Estandarizaci\'{o}n: }La normalizaci\'{o}n o estandarizaci\'{o}n se define como el proceso de reescalar datos originales sin cambiar su comportamiento o naturaleza. Se define un nuevo l\'{i}mite (generalmente entre 0 y 1) y se convierte los datos en consecuencia. Esta t\'{e}cnica es \'{u}til en algoritmos de clasificaci\'{o}n que involucran redes neuronales o algoritmos basados en la distancia (por ejemplo, KNN\footnote{\textbf{KNN}, es un algoritmo de clasificaci\'{o}n (o regresi\'{o}n) que, para determinar la clasificaci\'{o}n de un punto, combina la clasificaci\'{o}n de los $K$ puntos m\'{a}s cercanos.}, K-Means\footnote{\textbf{K-Means}, es un algoritmo de agrupamiento que intenta dividir un conjunto de puntos en $K$ grupos; de modo que los puntos en cada grupo tienden a estar cerca uno del otro.}, que se utiliza para la agrupaci\'{o}n. Este algoritmo es capaz de aprender gradualmente c\'{o}mo agrupar valores no etiquetados en grupos mediante un an\'{a}lisis de la distancia media de dichos valores.). Algunas t\'{e}cnicas de normalizaci\'{o}n son:
 \begin{itemize}
 \item \textit{Normalizaci\'{o}n Min-Max: }En este m\'{e}todo, cada entrada se normaliza entre unos l\'{i}mites definidos:
 
@@ -379,8 +379,7 @@ Para decidir el mejor m\'{e}todo de normalizaci\'{o}n que se puede aplicar a los
 
 \vspace{5mm} %5mm vertical space
 
-En la tabla \ref{table:scalers} se muestra la media y la desviaci\'{o}n est\'{a}ndar de cada variable despu\'{e}s de haber aplicado los diferentes tipos de escalado sobre los datos. Como se puede evidenciar en los escalados sobre el valor m\'{a}ximo y est\'{a}ndar, las desviaciones est\'{a}ndar son muy diferentes, en cuanto al escalado Min-Max las desviaciones est\'{a}ndar de cada variable son casi las mismas todas oscilan entre 0.166814 y 0.169386, lo cual se adec\'{u}a muy bien para el an\'{a}lisis de componentes principales, que es lo que se busca en este punto.
-
+En la tabla \ref{table:scalers} se muestra la media y la desviaci\'{o}n est\'{a}ndar de cada variable despu\'{e}s de haber aplicado los diferentes tipos de escalado sobre los datos. Como se puede evidenciar en los escalados sobre el valor m\'{a}ximo y est\'{a}ndar, las desviaciones est\'{a}ndar son muy diferentes, en cuanto al escalado Min-Max las desviaciones est\'{a}ndar de cada variable son casi las mismas ya que todas oscilan entre 0.166814 y 0.169386, lo cual se adec\'{u}a muy bien para el an\'{a}lisis de componentes principales, mencionando adem\'{a}s que esta t\'{e}cnica es la que mejor conserva la informaci\'{o}n relevante del conjunto de datos, por lo cual esta t\'{e}cnica fue la seleccionada debido a que es la m\'{a}s conveniente para esta etapa.
 
 \begin{landscape}
 \pagestyle{empty}
@@ -449,7 +448,7 @@ Y por \'{u}ltimo se debe definir que cantidad de componentes principales conserv
 
 \vspace{5mm} %5mm vertical space
 
-La ventaja de aplicar PCA al conjunto de datos es la simplificaci\'{o}n de la complejidad del mismo, as\'{i} como tambi\'{e}n la conservaci\'{o}n de gran parte de su informaci\'{o}n, por lo cual en este estudio se pudo reducir de 6 caracter\'{i}sticas a tan s\'{o}lo 3, es decir se redujo a la mitad, perdiendo s\'{o}lo aproximadamente un 8\% de la varianza del conjunto de datos.
+En diversos estudios (\citeNP{Reference63}; \citeNP{Reference64}) se prob\'{o} que la aplicaci\'{o}n de PCA como pre-procesamiento del conjunto de datos es una etapa importante, debido a que no s\'{o}lo sirve para la compresi\'{o}n de los datos de entrada, sino que tambi\'{e}n proporciona una mejora satisfactoria de la precisi\'{o}n de los modelos de Aprendizaje Autom\'{a}tico; raz\'{o}n por la cual esta t\'{e}cnica forma parte de la etapa de pre-procesamiento de este trabajo.
 
 \section{Resumen del cap\'{i}tulo}
 

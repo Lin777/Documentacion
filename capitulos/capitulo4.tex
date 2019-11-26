@@ -1,5 +1,3 @@
-% Chapter 4
-
 \chapter{\uppercase{Aprendizaje Autom\'{a}tico para la detecci\'{o}n de anomal\'{i}as}}
 \label{Capitulo 4}
 
@@ -428,20 +426,20 @@ Este modelo se usa en un escenario similar al SVM de una clase, específicamente
 
 El componente básico del Isolation Forest (Bosque de aislamiento) es el árbol de aislamiento, que es un árbol binario simple donde en cada nodo $T_{i}$ tanto la característica como el umbral para la regla de división se seleccionan aleatoriamente. Un nodo existente deja de generar hijos si y solo si solo hay un ejemplo siguiendo la regla de división para esa ruta específica (lo que significa que el ejemplo se ha aislado) o se ha alcanzado una altura máxima. Esto significa que al final del proceso de capacitación tendremos un árbol de clasificación aleatorio completamente sobreajustado, que puede usarse para fines de detección de anomalías. La intuición principal de este algoritmo es que si un ejemplo es anómalo, se aislará después de algunos cortes en el espacio de características, lo que se traduce en tener una baja altura en el árbol de aislamiento.
 
-\begin{figure}[h!]
-  \begin{center}	\includegraphics[width=0.75\textwidth, frame]{imagenes/Cap4/isolation-forest}
-  \caption{La figura de la izquierda muestra el aislamiento de una anomalía, que requiere solo tres particiones. A la derecha, el aislamiento de un punto normal requiere seis particiones \protect\cite{Reference60}.} 
-  \label{fig:isolartion-forest}
-  \end{center}
-\end{figure}
-
-\vspace{5mm} %5mm vertical space
-
-La Figura \ref{fig:isolartion-forest} ilustra el algoritmo y cómo se espera que un punto de datos anómalo se aísle rápidamente, mientras que se espera que un punto de datos normal necesite más particiones.
-
 \vspace{5mm} %5mm vertical space
 
 A diferencia de otros métodos como la agrupación o clasificación, los bosques de aislamiento no aprenden un perfil de lo que es normal, sino que atacan directamente las anomalías. No se utiliza métrica de distancia en este algoritmo lo cual ahorra tiempo en los cálculos; por lo que los bosques de aislamiento tienen una complejidad temporal lineal. 
+
+\vspace{5mm} %5mm vertical space	
+
+En la Figura \ref{fig:comparacion} se presenta una comparaci\'{o}n de la capacidad de los algoritmos Isolation Forest y One-Class SVM para hacer frente a diferentes conjuntos de datos de dos dimensiones, con el objetivo de dar cierta intuici\'{o}n acerca del comportamiento de estos algoritmos.
+
+\begin{figure}[h!]
+  \begin{center}	\includegraphics[width=0.43\textwidth, frame]{imagenes/Cap4/comp_if_ocsvm}
+  \caption{Comparacion del rendimiento entre los algoritmos One-Clas SVM e Isolation Forest.} 
+  \label{fig:comparacion}
+  \end{center}
+\end{figure}
 
 \subsection{Autoencoders}
 
@@ -568,7 +566,7 @@ Especificidad = \frac{FP}{FP+VN}
 
 \subsubsection{ROC (Receiver Operating Characteristics)}
 
-ROC es la curva dibujada conectando los puntos del eje X = FPR (Tasa de falsos positivos) y el eje y = TPR (Tasa de verdaderos positivos) para diferentes valores de umbral para un modelo, es decir, se elige diferentes umbrales para un modelo, se calcula el TPR y FPR para cada umbral, luego dibuja la curva ROC y finalmente se calcula el AUC, que es el \'{a}rea bajo la curva ROC. En la Figura \ref{fig:auc_roc} se muestra un ejemplo de la curva AUC-ROC.
+ROC es la curva dibujada conectando los puntos del eje X = FPR (Tasa de falsos positivos) y el eje y = TPR (Tasa de verdaderos positivos) para diferentes valores de un umbral de discriminaci\'{o}n (l\'{i}mite de decisi\'{o}n para determinar si un valor corresponde a una clase o no) para un modelo, es decir, se elige diferentes umbrales para un modelo, se calcula el TPR y FPR para cada umbral, luego dibuja la curva ROC y finalmente se calcula el AUC, que es el \'{a}rea bajo la curva ROC. En la Figura \ref{fig:auc_roc} se muestra un ejemplo de la curva AUC-ROC.
 
 \begin{figure}[h!]
   \begin{center}	\includegraphics[width=0.65\textwidth, frame]{imagenes/Cap4/auc_roc}
