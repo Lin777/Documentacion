@@ -96,14 +96,15 @@
 \contentsline {chapter}{\numberline {7}\uppercase {Conclusiones y trabajos futuros}}{83}{chapter.235}
 \contentsline {section}{\numberline {7.1}Conclusiones}{83}{section.236}
 \contentsline {section}{\numberline {7.2}Trabajos futuros}{84}{section.237}
-\contentsline {section}{BIBLIOGRAF\'{I}A}{86}{section*.238}
-\contentsline {chapter}{\numberline {A}Experimentos de diferentes arquitecturas para los autoencoders}{91}{appendix.239}
-\contentsline {section}{\numberline {A.1}Redes densas}{91}{section.240}
-\contentsline {subsection}{\numberline {A.1.1}Redes densas para 3 componentes}{91}{subsection.241}
-\contentsline {subsection}{\numberline {A.1.2}Evaluaci\'{o}n redes densas}{92}{subsection.243}
-\contentsline {section}{\numberline {A.2}Redes convolucionales}{92}{section.245}
-\contentsline {subsection}{\numberline {A.2.1}Redes convolucionales para 3 componentes}{92}{subsection.246}
-\contentsline {subsection}{\numberline {A.2.2}Evaluaci\'{o}n redes convolucionales}{93}{subsection.248}
-\contentsline {section}{\numberline {A.3}Redes recurrentes}{93}{section.250}
-\contentsline {subsection}{\numberline {A.3.1}Redes recurrentes para 3 componentes}{93}{subsection.251}
-\contentsline {subsection}{\numberline {A.3.2}Evaluaci\'{o}n redes recurrentes}{94}{subsection.253}
+\contentsline {chapter}{BIBLIOGRAF\'{I}A}{87}{chapter*.238}
+\contentsline {section}{Referencias}{87}{section*.239}
+\contentsline {chapter}{\numberline {A}Experimentos de diferentes arquitecturas para los autoencoders}{91}{appendix.240}
+\contentsline {section}{\numberline {A.1}Redes densas}{91}{section.241}
+\contentsline {subsection}{\numberline {A.1.1}Redes densas para 3 componentes}{91}{subsection.242}
+\contentsline {subsection}{\numberline {A.1.2}Evaluaci\'{o}n redes densas}{92}{subsection.244}
+\contentsline {section}{\numberline {A.2}Redes convolucionales}{92}{section.246}
+\contentsline {subsection}{\numberline {A.2.1}Redes convolucionales para 3 componentes}{92}{subsection.247}
+\contentsline {subsection}{\numberline {A.2.2}Evaluaci\'{o}n redes convolucionales}{93}{subsection.249}
+\contentsline {section}{\numberline {A.3}Redes recurrentes}{93}{section.251}
+\contentsline {subsection}{\numberline {A.3.1}Redes recurrentes para 3 componentes}{93}{subsection.252}
+\contentsline {subsection}{\numberline {A.3.2}Evaluaci\'{o}n redes recurrentes}{94}{subsection.254}

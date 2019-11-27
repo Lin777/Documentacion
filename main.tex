@@ -92,9 +92,12 @@
 \hypersetup{pdfkeywords=\keywordnames}
 }
 
+
+\usepackage{etoolbox}
+\patchcmd{\thebibliography}{\addcontentsline{toc}{section}{\refname}}{}{}{}
 \begin{document}
 
-\renewcommand{\refname}{BIBLIOGRAF\'{I}A}
+%\renewcommand{\refname}{BIBLIOGRAF\'{I}A}
 
 \frontmatter % Use roman page numbering style (i, ii, iii, iv...) for the pre-content pages
 
@@ -162,6 +165,7 @@
 
 \begin{acknowledgements}
 \addchaptertocentry{\acknowledgementname} 
+\bigskip
 Le agradezco a Dios por haberme acompañado y guiado a lo largo de mi carrera, por ser mi fortaleza en los momentos de debilidad y por brindarme una vida llena de aprendizajes, experiencias y sobre todo felicidad.
 \end{acknowledgements}
 
@@ -169,7 +173,7 @@ Le agradezco a Dios por haberme acompañado y guiado a lo largo de mi carrera, p
 %	DEDICATION
 %----------------------------------------------------------------------------------------
 
-\dedicatory{A mi madre, por estar conmigo, por enseñarme a crecer y a levantarme, por apoyarme y guiarme, por ser la base que me ayudó a llegar hasta aquí.} 
+\dedicatory{A mi madre, por estar conmigo, por enseñarme a crecer y a levantarme, por apoyarme y guiarme, por ser la base que me ayudó a llegar hasta aqu\'{i}.} 
 
 %----------------------------------------------------------------------------------------
 %	LIST OF CONTENTS/FIGURES/TABLES PAGES
@@ -187,6 +191,7 @@ Le agradezco a Dios por haberme acompañado y guiado a lo largo de mi carrera, p
 
 \begin{abstract}
 \addchaptertocentry{\abstractname} % Add the abstract to the table of contents
+
 \input{resumen}
 \end{abstract}
 
@@ -208,10 +213,9 @@ Le agradezco a Dios por haberme acompañado y guiado a lo largo de mi carrera, p
 %	BIBLIOGRAPHY
 %----------------------------------------------------------------------------------------
 
+\cleardoublepage
 
-\newpage
-
-
+\addchap{BIBLIOGRAF\'{I}A}
 \bibliography{bibliografia} 
 \bibliographystyle{apacite}
 
