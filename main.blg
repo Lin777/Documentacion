@@ -26,45 +26,45 @@ ptr=1, stack=
 
 ---the literal stack isn't empty for entry Reference42
 while executing---line 5079 of file apacite.bst
-You've used 45 entries,
+You've used 55 entries,
             6951 wiz_defined-function locations,
-            1609 strings with 21290 characters,
-and the built_in function-call counts, 87504 in all, are:
-= -- 10323
-> -- 789
-< -- 4348
-+ -- 4336
-- -- 90
-* -- 5820
-:= -- 16284
-add.period$ -- 185
-call.type$ -- 45
-change.case$ -- 751
+            1665 strings with 22935 characters,
+and the built_in function-call counts, 102455 in all, are:
+= -- 12113
+> -- 906
+< -- 5022
++ -- 4943
+- -- 112
+* -- 6707
+:= -- 18978
+add.period$ -- 231
+call.type$ -- 55
+change.case$ -- 847
 chr.to.int$ -- 0
-cite$ -- 91
-duplicate$ -- 2484
-empty$ -- 3606
-format.name$ -- 1388
-if$ -- 16370
+cite$ -- 111
+duplicate$ -- 2875
+empty$ -- 4308
+format.name$ -- 1566
+if$ -- 19330
 int.to.chr$ -- 0
-int.to.str$ -- 135
+int.to.str$ -- 165
 missing$ -- 0
-newline$ -- 1227
-num.names$ -- 360
-pop$ -- 1545
+newline$ -- 1473
+num.names$ -- 440
+pop$ -- 2097
 preamble$ -- 1
-purify$ -- 214
+purify$ -- 252
 quote$ -- 0
-skip$ -- 5322
+skip$ -- 6121
 stack$ -- 0
-substring$ -- 4639
-swap$ -- 1373
-text.length$ -- 124
+substring$ -- 5302
+swap$ -- 1563
+text.length$ -- 143
 text.prefix$ -- 0
 top$ -- 1
-type$ -- 3600
+type$ -- 4400
 warning$ -- 1
-while$ -- 499
+while$ -- 558
 width$ -- 0
-write$ -- 1553
+write$ -- 1834
 (There was 1 error message)

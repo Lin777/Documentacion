@@ -1,5 +1,5 @@
 \chapter{\uppercase{Aprendizaje Autom\'{a}tico para la detecci\'{o}n de anomal\'{i}as}}
-\label{Capitulo 4}
+\label{Capitulo 3}
 
 El t\'{e}rmino Aprendizaje Autom\'{a}tico se refiere a la detecci\'{o}n autom\'{a}tica de patrones significativos dentro de un conjunto de datos \cite{Reference32}. En las \'{u}ltimas d\'{e}cadas se ha convertido en una herramienta com\'{u}n en casi cualquier tarea que requiera la extracci\'{o}n de informaci\'{o}n de gran cantidad de datos, por lo cual se ha convertido en una de las \'{a}reas de m\'{a}s r\'{a}pido crecimiento de la inform\'{a}tica.
 
@@ -88,7 +88,7 @@ Las \textbf{neuronas biol\'{o}gicas} (c\'{e}lulas nerviosas) son las unidades fu
 
  \begin{figure}[h!]
   \begin{center}	\includegraphics[width=0.95\textwidth, frame]{imagenes/Cap4/neurona}
-  \caption{Gr\'{a}fico de una neurona biol\'{o}gica.}
+  \caption{Gr\'{a}fico de una neurona biol\'{o}gica. Reproducido desde \protect\cite{Reference67}.}
   \label{fig:neurona}
   \end{center}
 \end{figure}
@@ -105,7 +105,7 @@ Una \textbf{neurona artificial} es un procesador elemental, debido a que procesa
 
 \begin{figure}[h!]
   \begin{center}	\includegraphics[width=0.95\textwidth, frame]{imagenes/Cap4/neurona_artificial}
-  \caption{Gr\'{a}fico de una neurona artificial.}
+  \caption{Gr\'{a}fico de una neurona artificial. Reproducido desde \protect\cite{Reference68}.}
   \label{fig:neurona}
   \end{center}
 \end{figure}
@@ -157,7 +157,7 @@ Existen diferentes funciones de activaci\'{o}n, a continuaci\'{o}n solo se prese
             \label{fig:elu}
         \end{subfigure}
         \end{varwidth}}
-        \caption{Funciones de activaci\'{o}n.}
+        \caption{Funciones de activaci\'{o}n \protect\cite{Reference69}.}
         
 		\label{fig:funciones_activacion}
     \end{figure}
@@ -254,7 +254,7 @@ Una red neuronal regular consiste de una cadena de capas interconectadas de neur
 
 \begin{figure}[h!]
   \begin{center}	\includegraphics[width=0.95\textwidth, frame]{imagenes/Cap4/arquitectura}
-  \caption{Arquitectura de una neurona artificial.}
+  \caption{Arquitectura de una neurona artificial. Reproducido desde \protect\cite{Reference70}.}
   \label{fig:arquitectura}
   \end{center}
 \end{figure}
@@ -297,7 +297,7 @@ Un Autoencoder es una Red Neuronal Artificial usada para aprendizaje autom\'{a}t
 
 \begin{figure}[h!]
   \begin{center}	\includegraphics[width=0.95\textwidth, frame]{imagenes/Cap4/autoencoder}
-  \caption{Gr\'{a}fico de un Autoencoder.}
+  \caption{Gr\'{a}fico de un Autoencoder (Elaboraci\'{o}n propia).}
   \label{fig:autoencoder}
   \end{center}
 \end{figure}
@@ -322,7 +322,7 @@ Al apilar múltiples y diferentes capas en una CNN, se crean arquitecturas compl
 
 \begin{figure}[h!]
   \begin{center}	\includegraphics[width=0.95\textwidth]{imagenes/Cap4/cnn}
-  \caption{Arquitectura de una Red Neuronal Convolucional (CNN).}
+  \caption{Arquitectura de una Red Neuronal Convolucional (CNN) \protect\cite{Reference71}.}
   \label{fig:cnn}
   \end{center}
 \end{figure}
@@ -408,7 +408,7 @@ Este algoritmo s\'{o}lo se entrena con ejemplos positivos (clases normales). La 
 
 \begin{figure}[h!]
   \begin{center}	\includegraphics[width=0.45\textwidth, frame]{imagenes/Cap4/oc-svm}
-  \caption{One-Class SVM} 
+  \caption{One-Class SVM. Reproducido desde \protect\cite{Reference72}} 
   \label{fig:oc-svm}
   \end{center}
 \end{figure}
@@ -436,7 +436,7 @@ En la Figura \ref{fig:comparacion} se presenta una comparaci\'{o}n de la capacid
 
 \begin{figure}[h!]
   \begin{center}	\includegraphics[width=0.43\textwidth, frame]{imagenes/Cap4/comp_if_ocsvm}
-  \caption{Comparacion del rendimiento entre los algoritmos One-Clas SVM e Isolation Forest.} 
+  \caption{Comparacion del rendimiento entre los algoritmos One-Clas SVM e Isolation Forest. Reproducido desde \protect\cite{Reference73}.} 
   \label{fig:comparacion}
   \end{center}
 \end{figure}
@@ -461,7 +461,7 @@ C(z) = \left\lbrace
 
 \begin{figure}[h!]
   \begin{center}	\includegraphics[width=0.95\textwidth, frame]{imagenes/Cap4/autoencoder-anomaly}
-  \caption{Detecci\'{o}n de anomal\'{i}as con autoencoder} 
+  \caption{Detecci\'{o}n de anomal\'{i}as con autoencoder (Elaboraci\'{o}n propia).} 
   \label{fig:autoencoder-anomaly}
   \end{center}
 \end{figure}
@@ -518,7 +518,7 @@ La matriz de confusi\'{o}n, tambi\'{e}n llamada matriz de error, es el m\'{e}tod
 \multicolumn{1}{|c|}{}                                  & \multicolumn{1}{c|}{\textbf{Clase Positiva}} & \cellcolor[HTML]{AADD99}Verdadero Positivo (VP) & \cellcolor[HTML]{FFCE93}Falso Negativo (FN)     \\ \cline{2-4} 
 \multicolumn{1}{|c|}{\multirow{-2}{*}{\textbf{Reales}}} & \multicolumn{1}{c|}{\textbf{Clase Negativa}} & \cellcolor[HTML]{DF9F9F}Falso Positivo (FP)     & \cellcolor[HTML]{AADD99}Verdadero Negativo (VN) \\ \hline
 \end{tabular}
-\caption{Matriz de confusi\'{o}n, para una clasificaci\'{o}n binaria.}
+\caption{Matriz de confusi\'{o}n, para una clasificaci\'{o}n binaria (Elaboraci\'{o}n propia).}
 \label{table:matriz}
 \end{center}
 \end{table}

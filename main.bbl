@@ -1,6 +1,60 @@
 \begin{thebibliography}{}
 
 \bibitem [\protect \citeauthoryear {%
+0.22%
+}{%
+0.22%
+}{%
+{\protect \APACyear {{\protect \bibnodate {}}}}%
+}]{%
+Reference73}
+\APACinsertmetastar {%
+Reference73}%
+\begin{APACrefauthors}%
+0.22, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{{\protect \bibnodate {}}}{}{}.
+\newblock
+\APACrefbtitle {Novelty and Outlier Detection.} {Novelty and outlier
+  detection.}
+\newblock
+\APAChowpublished
+  {\url{https://scikit-learn.org/stable/modules/outlier_detection.html}}.
+\newblock
+\APACrefnote{\'{U}ltimo acceso en 19 de diciembre de 2019}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Alashwal%
+, Bin~D.%
+\BCBL {}\ \BBA {} Othman%
+}{%
+Alashwal%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2006}}%
+}]{%
+Reference72}
+\APACinsertmetastar {%
+Reference72}%
+\begin{APACrefauthors}%
+Alashwal, H.%
+, Bin~D., S.%
+\BCBL {}\ \BBA {} Othman, R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2006}{01}{}.
+\newblock
+{\BBOQ}\APACrefatitle {One-Class Support Vector Machines for Protein Protein
+  Interactions Prediction} {One-class support vector machines for protein
+  protein interactions prediction}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Int J Biomed Sci}{1}{}{}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Araujo%
 , Igreja%
 , R.%
@@ -316,6 +370,32 @@ Dauphin, Y\BPBI N.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+de Salud~(OMS)%
+}{%
+de Salud~(OMS)%
+}{%
+{\protect \APACyear {{\protect \bibnodate {}}}}%
+}]{%
+Reference65}
+\APACinsertmetastar {%
+Reference65}%
+\begin{APACrefauthors}%
+de Salud~(OMS), O\BPBI M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{{\protect \bibnodate {}}}{}{}.
+\newblock
+\APACrefbtitle {Informe de la situaci\'{o}n mundial de la seguridad vial 2015.}
+  {Informe de la situaci\'{o}n mundial de la seguridad vial 2015.}
+\newblock
+\APAChowpublished
+  {\url{https://www.who.int/violence_injury_prevention/road_safety_status/2015/Summary_GSRRS2015_SPA.pdf?ua=1}}.
+\newblock
+\APACrefnote{\'{U}ltimo acceso en 19 de diciembre de 2019}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Elman%
 }{%
 Elman%
@@ -403,6 +483,32 @@ Ferreira, J.%
 \newblock
 \begin{APACrefURL} \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5386255/}
   \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Galarnyk%
+}{%
+Galarnyk%
+}{%
+{\protect \APACyear {{\protect \bibnodate {}}}}%
+}]{%
+Reference74}
+\APACinsertmetastar {%
+Reference74}%
+\begin{APACrefauthors}%
+Galarnyk, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{{\protect \bibnodate {}}}{}{}.
+\newblock
+\APACrefbtitle {Explaining the 68\-95\-99.7 rule for a Normal Distribution.}
+  {Explaining the 68\-95\-99.7 rule for a normal distribution.}
+\newblock
+\APAChowpublished
+  {\url{https://towardsdatascience.com/understanding-the-68-95-99-7-rule-for-a-normal-distribution-b7b7cbf760c2}}.
+\newblock
+\APACrefnote{\'{U}ltimo acceso en 19 de diciembre de 2019}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -528,6 +634,60 @@ Hsu, A.%
 \begin{APACrefURL}
   \url{https://cocosci.princeton.edu/tom/papers/discgencat.pdf}
   \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Jayesh%
+}{%
+Jayesh%
+}{%
+{\protect \APACyear {{\protect \bibnodate {}}}}%
+}]{%
+Reference68}
+\APACinsertmetastar {%
+Reference68}%
+\begin{APACrefauthors}%
+Jayesh, B.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{{\protect \bibnodate {}}}{}{}.
+\newblock
+\APACrefbtitle {The Artificial Neural Networks Handbook: Part 4.} {The
+  artificial neural networks handbook: Part 4.}
+\newblock
+\APAChowpublished
+  {\url{https://medium.com/@jayeshbahire/the-artificial-neural-networks-handbook-part-4-d2087d1f583e}}.
+\newblock
+\APACrefnote{\'{U}ltimo acceso en 19 de diciembre de 2019}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Jing%
+\ \BBA {} Guanci%
+}{%
+Jing%
+\ \BBA {} Guanci%
+}{%
+{\protect \APACyear {2018}}%
+}]{%
+Reference69}
+\APACinsertmetastar {%
+Reference69}%
+\begin{APACrefauthors}%
+Jing, Y.%
+\BCBT {}\ \BBA {} Guanci, Y.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{03}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Modified Convolutional Neural Network Based on Dropout
+  and the Stochastic Gradient Descent Optimizer} {Modified convolutional neural
+  network based on dropout and the stochastic gradient descent
+  optimizer}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Algorithms}{11}{}{28}.
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -752,6 +912,32 @@ Mass, A.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Michael%
+}{%
+Michael%
+}{%
+{\protect \APACyear {2015}}%
+}]{%
+Reference70}
+\APACinsertmetastar {%
+Reference70}%
+\begin{APACrefauthors}%
+Michael, A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2015}.
+\newblock
+\APACrefbtitle {Neural Networks and Deep Learning} {Neural networks and deep
+  learning}.
+\newblock
+\APACaddressPublisher{}{Determination Press}.
+\newblock
+\begin{APACrefURL} \url{http://neuralnetworksanddeeplearning.com/index.html}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Moindrot%
 \ \BBA {} Genthial%
 }{%
@@ -777,6 +963,31 @@ Moindrot, O.%
 \APAChowpublished {https://cs230-stanford.github.io/train-dev-test-split.html}.
 \newblock
 \APACrefnote{\'{U}ltimo acceso en 16 de octubre de 2019}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Muhammad%
+}{%
+Muhammad%
+}{%
+{\protect \APACyear {{\protect \bibnodate {}}}}%
+}]{%
+Reference71}
+\APACinsertmetastar {%
+Reference71}%
+\begin{APACrefauthors}%
+Muhammad, R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{{\protect \bibnodate {}}}{}{}.
+\newblock
+\APACrefbtitle {Convolutional Neural Network. In a Nut Shell.} {Convolutional
+  neural network. in a nut shell.}
+\newblock
+\APAChowpublished {\url{https://engmrk.com/convolutional-neural-network-3/}}.
+\newblock
+\APACrefnote{\'{U}ltimo acceso en 19 de diciembre de 2019}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -1062,6 +1273,35 @@ Suad, A.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
+Varun%
+\ \BBA {} Arindam%
+}{%
+Varun%
+\ \BBA {} Arindam%
+}{%
+{\protect \APACyear {2009}}%
+}]{%
+Reference66}
+\APACinsertmetastar {%
+Reference66}%
+\begin{APACrefauthors}%
+Varun, C.%
+\BCBT {}\ \BBA {} Arindam, K., B.and~Vipin.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYear{2009}.
+\newblock
+\APACrefbtitle {Anomaly Detection: A Survey} {Anomaly detection: A survey}.
+\newblock
+\APACaddressPublisher{}{Universidad de Minnesota}.
+\newblock
+\begin{APACrefURL}
+  \url{https://www.researchgate.net/publication/220565847_Anomaly_Detection_A_Survey}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Werbos%
 }{%
 Werbos%
@@ -1122,6 +1362,30 @@ Who-Lee, K.%
 \newblock
 \begin{APACrefURL} \url{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5948584/}
   \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Wikipedia%
+}{%
+Wikipedia%
+}{%
+{\protect \APACyear {{\protect \bibnodate {}}}}%
+}]{%
+Reference67}
+\APACinsertmetastar {%
+Reference67}%
+\begin{APACrefauthors}%
+Wikipedia.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{{\protect \bibnodate {}}}{}{}.
+\newblock
+\APACrefbtitle {Neuron.} {Neuron.}
+\newblock
+\APAChowpublished {\url{https://simple.wikipedia.org/wiki/Neuron}}.
+\newblock
+\APACrefnote{\'{U}ltimo acceso en 19 de diciembre de 2019}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
