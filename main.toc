@@ -11,7 +11,7 @@
 \contentsline {section}{\numberline {1.5}L\'{i}mites y alcances}{4}{section.16}
 \contentsline {section}{\numberline {1.6}M\'{e}todo de investigaci\'{o}n}{4}{section.17}
 \contentsline {chapter}{\numberline {2}\uppercase {Fundamentos de la detecci\'{o}n de anomal\'{i}as}}{5}{chapter.18}
-\contentsline {section}{\numberline {2.1}Detecci\'{o}n de nomal\'{i}as}{5}{section.19}
+\contentsline {section}{\numberline {2.1}Detecci\'{o}n de anomal\'{i}as}{5}{section.19}
 \contentsline {section}{\numberline {2.2}Desaf\'{i}os en la detecci\'{o}n de anomal\'{i}as}{7}{section.26}
 \contentsline {subsection}{\numberline {2.2.1}Enfoques de detecci\'{o}n de anomal\'{i}as}{8}{subsection.27}
 \contentsline {subsubsection}{Detecci\'{o}n de anomal\'{i}as supervisada}{8}{section*.28}
