@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2018.5.8)  30 DEC 2019 11:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2018.5.8)  2 JAN 2020 01:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -4837,21 +4837,21 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 64.
  [76]
-<imagenes/Cap5/zig_zag1.png, id=1616, 846.16125pt x 645.41125pt>
+<imagenes/Cap5/zig_zag1.png, id=1616, 553.06625pt x 415.5525pt>
 File: imagenes/Cap5/zig_zag1.png Graphic file (type png)
 <use imagenes/Cap5/zig_zag1.png>
 Package pdftex.def Info: imagenes/Cap5/zig_zag1.png  used on input line 81.
-(pdftex.def)             Requested size: 206.01079pt x 157.12755pt.
-<imagenes/Cap5/zig_zag2.png, id=1617, 846.16125pt x 645.41125pt>
+(pdftex.def)             Requested size: 206.01079pt x 154.78557pt.
+<imagenes/Cap5/zig_zag2.png, id=1617, 553.06625pt x 415.5525pt>
 File: imagenes/Cap5/zig_zag2.png Graphic file (type png)
 <use imagenes/Cap5/zig_zag2.png>
 Package pdftex.def Info: imagenes/Cap5/zig_zag2.png  used on input line 81.
-(pdftex.def)             Requested size: 206.01079pt x 157.12755pt.
-<imagenes/Cap5/zig_zag3.png, id=1618, 846.16125pt x 645.41125pt>
+(pdftex.def)             Requested size: 206.01079pt x 154.78557pt.
+<imagenes/Cap5/zig_zag3.png, id=1618, 553.06625pt x 415.5525pt>
 File: imagenes/Cap5/zig_zag3.png Graphic file (type png)
 <use imagenes/Cap5/zig_zag3.png>
 Package pdftex.def Info: imagenes/Cap5/zig_zag3.png  used on input line 81.
-(pdftex.def)             Requested size: 206.01079pt x 157.12755pt.
+(pdftex.def)             Requested size: 206.01079pt x 154.78557pt.
 LaTeX Info: Redefining \. on input line 91.
 LaTeX Info: Redefining \% on input line 91.
 Package babel Info: Redefining spanish shorthand <<
@@ -4880,21 +4880,21 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 92.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 92.
-<imagenes/Cap5/giro1.png, id=1631, 846.16125pt x 645.41125pt>
+<imagenes/Cap5/giro1.png, id=1631, 553.06625pt x 415.5525pt>
 File: imagenes/Cap5/giro1.png Graphic file (type png)
 <use imagenes/Cap5/giro1.png>
 Package pdftex.def Info: imagenes/Cap5/giro1.png  used on input line 115.
-(pdftex.def)             Requested size: 206.01079pt x 157.12755pt.
-<imagenes/Cap5/giro2.png, id=1632, 846.16125pt x 645.41125pt>
+(pdftex.def)             Requested size: 206.01079pt x 154.78557pt.
+<imagenes/Cap5/giro2.png, id=1632, 553.06625pt x 415.5525pt>
 File: imagenes/Cap5/giro2.png Graphic file (type png)
 <use imagenes/Cap5/giro2.png>
 Package pdftex.def Info: imagenes/Cap5/giro2.png  used on input line 115.
-(pdftex.def)             Requested size: 206.01079pt x 157.12755pt.
-<imagenes/Cap5/giro3.png, id=1633, 846.16125pt x 645.41125pt>
+(pdftex.def)             Requested size: 206.01079pt x 154.78557pt.
+<imagenes/Cap5/giro3.png, id=1633, 553.06625pt x 415.5525pt>
 File: imagenes/Cap5/giro3.png Graphic file (type png)
 <use imagenes/Cap5/giro3.png>
 Package pdftex.def Info: imagenes/Cap5/giro3.png  used on input line 115.
-(pdftex.def)             Requested size: 206.01079pt x 157.12755pt.
+(pdftex.def)             Requested size: 206.01079pt x 154.78557pt.
 LaTeX Info: Redefining \. on input line 119.
 LaTeX Info: Redefining \% on input line 119.
 Package babel Info: Redefining spanish shorthand <<
@@ -4922,21 +4922,21 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 120.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 120.
-<imagenes/Cap5/freno1.png, id=1639, 846.16125pt x 645.41125pt>
+<imagenes/Cap5/freno1.png, id=1639, 553.06625pt x 415.5525pt>
 File: imagenes/Cap5/freno1.png Graphic file (type png)
 <use imagenes/Cap5/freno1.png>
 Package pdftex.def Info: imagenes/Cap5/freno1.png  used on input line 142.
-(pdftex.def)             Requested size: 206.01079pt x 157.12755pt.
-<imagenes/Cap5/freno2.png, id=1640, 846.16125pt x 645.41125pt>
+(pdftex.def)             Requested size: 206.01079pt x 154.78557pt.
+<imagenes/Cap5/freno2.png, id=1640, 553.06625pt x 415.5525pt>
 File: imagenes/Cap5/freno2.png Graphic file (type png)
 <use imagenes/Cap5/freno2.png>
 Package pdftex.def Info: imagenes/Cap5/freno2.png  used on input line 142.
-(pdftex.def)             Requested size: 206.01079pt x 157.12755pt.
-<imagenes/Cap5/freno3.png, id=1641, 846.16125pt x 645.41125pt>
+(pdftex.def)             Requested size: 206.01079pt x 154.78557pt.
+<imagenes/Cap5/freno3.png, id=1641, 566.115pt x 423.5825pt>
 File: imagenes/Cap5/freno3.png Graphic file (type png)
 <use imagenes/Cap5/freno3.png>
 Package pdftex.def Info: imagenes/Cap5/freno3.png  used on input line 142.
-(pdftex.def)             Requested size: 206.01079pt x 157.12755pt.
+(pdftex.def)             Requested size: 206.01079pt x 154.13773pt.
 LaTeX Info: Redefining \. on input line 146.
 LaTeX Info: Redefining \% on input line 146.
 Package babel Info: Redefining spanish shorthand <<
@@ -4965,21 +4965,21 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 148.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 148.
-<imagenes/Cap5/fp1.png, id=1655, 846.16125pt x 645.41125pt>
+<imagenes/Cap5/fp1.png, id=1655, 553.06625pt x 415.5525pt>
 File: imagenes/Cap5/fp1.png Graphic file (type png)
 <use imagenes/Cap5/fp1.png>
 Package pdftex.def Info: imagenes/Cap5/fp1.png  used on input line 171.
-(pdftex.def)             Requested size: 206.01079pt x 157.12755pt.
-<imagenes/Cap5/fp2.png, id=1656, 846.16125pt x 645.41125pt>
+(pdftex.def)             Requested size: 206.01079pt x 154.78557pt.
+<imagenes/Cap5/fp2.png, id=1656, 553.06625pt x 415.5525pt>
 File: imagenes/Cap5/fp2.png Graphic file (type png)
 <use imagenes/Cap5/fp2.png>
 Package pdftex.def Info: imagenes/Cap5/fp2.png  used on input line 171.
-(pdftex.def)             Requested size: 206.01079pt x 157.12755pt.
-<imagenes/Cap5/fp3.png, id=1657, 846.16125pt x 645.41125pt>
+(pdftex.def)             Requested size: 206.01079pt x 154.78557pt.
+<imagenes/Cap5/fp3.png, id=1657, 553.06625pt x 415.5525pt>
 File: imagenes/Cap5/fp3.png Graphic file (type png)
 <use imagenes/Cap5/fp3.png>
 Package pdftex.def Info: imagenes/Cap5/fp3.png  used on input line 171.
-(pdftex.def)             Requested size: 206.01079pt x 157.12755pt.
+(pdftex.def)             Requested size: 206.01079pt x 154.78557pt.
 LaTeX Info: Redefining \. on input line 175.
 LaTeX Info: Redefining \% on input line 175.
 Package babel Info: Redefining spanish shorthand <<
@@ -5575,7 +5575,7 @@ e/texmf-dist/fonts/type1/urw/helvetic/uhvbo8a.pfb></usr/share/texmf-dist/fonts/
 type1/urw/helvetic/uhvr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/u
 hvro8a.pfb></usr/share/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/sha
 re/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (113 pages, 6105907 bytes).
+Output written on main.pdf (113 pages, 5116242 bytes).
 PDF statistics:
  1966 PDF objects out of 2073 (max. 8388607)
  1686 compressed objects within 17 object streams
