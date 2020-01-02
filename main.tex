@@ -31,14 +31,29 @@
 \usepackage{multirow}
 \usepackage{xcolor,colortbl}
 \usepackage{hyperref}
+
 %\usepackage[backend=bibtex,style=authoryear,natbib=true]{biblatex}
-\usepackage[style=trad-abbrv]{biblatex}
-%\addbibresource{example.bib}
+
+%\usepackage[natbibapa]{apacite}
+\usepackage{apacite}
+\usepackage{babel}
+ 
+%Import the natbib package and sets a bibliography  and citation styles
+%\usepackage[square,sort,comma,numbers]{natbib} 
+
 %\usepackage[autostyle=true]{csquotes}
 \usepackage{float}
+\usepackage[export]{adjustbox}
 
 \usepackage{float}
 \usepackage{wrapfig}
+
+% Eliminar sangrias
+\usepackage{parskip}
+
+% Cambiar fuente a Arial
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
 
 %\floatstyle{boxed} % or whatever
 \restylefloat{figure}
@@ -53,7 +68,7 @@
 %----------------------------------------------------------------------------------------
 \geometry{
 	paper=letterpaper,inner=2.5cm,outer=3.8cm,bindingoffset=.5cm,
-	top=1.5cm,bottom=1.5cm, 
+	top=2cm,bottom=2cm,left=3cm, right=2cm 
 }
 %----------------------------------------------------------------------------------------
 %	THESIS INFORMATION
@@ -77,7 +92,12 @@
 \hypersetup{pdfkeywords=\keywordnames}
 }
 
+
+\usepackage{etoolbox}
+\patchcmd{\thebibliography}{\addcontentsline{toc}{section}{\refname}}{}{}{}
 \begin{document}
+
+%\renewcommand{\refname}{BIBLIOGRAF\'{I}A}
 
 \frontmatter % Use roman page numbering style (i, ii, iii, iv...) for the pre-content pages
 
@@ -87,47 +107,54 @@
 %----------------------------------------------------------------------------------------
 \begin{titlepage}
 
-\begin{center}
-
-\begin{table}[]
-\begin{center}
-\begin{tabular}{lcl}
-\centering
-\adj{\includegraphics[width=0.62in]{imagenes/umss}}  & \adj{\includegraphics[width=4.1in]{imagenes/texto}} & \adj{\includegraphics[width=0.72in]{imagenes/fcyt}}  
-\end{tabular}
-\end{center}
-\end{table}
-
-% \vspace{3cm} % University name
-\textsc{\Large Proyecto de Grado}\\[0.5cm] % Thesis type
-
-\HRule \\[0.4cm] % Horizontal line
-{\huge \bfseries \ttitle\par}\vspace{0.4cm} % Thesis title
-\HRule \\[1.5cm] % Horizontal line
- 
-\begin{minipage}[t]{0.4\textwidth}
-\begin{flushleft} \large
-\emph{Autor:}\\
-{\authorname}
-\end{flushleft}
+\begin{minipage}[l]{.15\linewidth}
+\includegraphics[height=2.5cm]{imagenes/umss}
 \end{minipage}
-\begin{minipage}[t]{0.4\textwidth}
-\begin{flushright} \large
-\emph{Tutor:} \\
-{\supname}
-\end{flushright}
-\end{minipage}\\[3cm]
-
-\vfill
-
-\large \textit{Un proyecto de grado presentado en cumplimiento de los requisitos\\ para el titulo de \degreename}\\[0.3cm]
-\textit{en la}\\[0.4cm]
-\groupname\\\deptname\\[2cm]
-\vfill
-
-{\large \today}\\[4cm]
-\vfill
+\begin{minipage}[c]{.65\textwidth}
+\begin{center}
+\href{http://www.umss.edu.bo}{\LARGE{Universidad Mayor de San Simón}} \\
+\href{http://www.fcyt.umss.edu.bo}{\LARGE{Facultad de Ciencias y Tecnología}} \\
+\href{http://www.cs.umss.edu.bo}{\LARGE{Carrera de Ingeniería de Sistemas}}
 \end{center}
+\end{minipage}
+\begin{minipage}[r]{.15\linewidth}
+\includegraphics[height=2.5cm]{imagenes/logo}
+\end{minipage}
+
+\vfill
+\begin{center}
+\Huge {\bf{\ttitle}}	
+\end{center}
+\singlespacing
+\singlespacing
+\singlespacing
+\singlespacing
+\singlespacing
+\singlespacing
+\begin{center}
+{\large \textit{Un proyecto de grado presentado en cumplimiento de los requisitos\\ para optar por el t\'{i}tulo de Licenciatura en Ingenier\'{i}a de Sistemas}}
+\end{center}
+\vspace{\fill}
+
+\begin{center}
+{\Large Presentado por:}\\
+
+\hspace{ 0.55\textwidth} \Large{\authorname}\\
+
+\hspace{ -0.14\textwidth} {\Large Tutor:}\\
+
+\hspace{ 0.55\textwidth} {\Large{\supname}}\\
+
+\hspace{ 0.35\textwidth} 
+\end{center}
+
+\vspace*{0.2cm}
+ 
+\begin{center}
+\vspace*{1.5cm}
+\Large{COCHABAMBA - BOLIVIA}\hspace*{1cm}\Large{\\Diciembre, 2019}	
+\end{center}	
+	
 \end{titlepage}
 
 \cleardoublepage
@@ -138,6 +165,7 @@
 
 \begin{acknowledgements}
 \addchaptertocentry{\acknowledgementname} 
+\bigskip
 Le agradezco a Dios por haberme acompañado y guiado a lo largo de mi carrera, por ser mi fortaleza en los momentos de debilidad y por brindarme una vida llena de aprendizajes, experiencias y sobre todo felicidad.
 \end{acknowledgements}
 
@@ -145,7 +173,7 @@ Le agradezco a Dios por haberme acompañado y guiado a lo largo de mi carrera, p
 %	DEDICATION
 %----------------------------------------------------------------------------------------
 
-\dedicatory{A mi madre, por estar conmigo, por enseñarme a crecer y a levantarme, por apoyarme y guiarme, por ser la base que me ayudó a llegar hasta aquí.} 
+\dedicatory{A mi madre, por estar conmigo, por enseñarme a crecer y a levantarme, por apoyarme y guiarme, por ser la base que me ayudó a llegar hasta aqu\'{i}.} 
 
 %----------------------------------------------------------------------------------------
 %	LIST OF CONTENTS/FIGURES/TABLES PAGES
@@ -163,6 +191,7 @@ Le agradezco a Dios por haberme acompañado y guiado a lo largo de mi carrera, p
 
 \begin{abstract}
 \addchaptertocentry{\abstractname} % Add the abstract to the table of contents
+
 \input{resumen}
 \end{abstract}
 
@@ -174,11 +203,23 @@ Le agradezco a Dios por haberme acompañado y guiado a lo largo de mi carrera, p
 \pagestyle{thesis}
 \include{capitulos/capitulo1}
 \include{capitulos/capitulo2}
-\include{capitulos/capitulo3}
 \include{capitulos/capitulo4}
+\include{capitulos/capitulo3}
 \include{capitulos/capitulo5}
 \include{capitulos/capitulo6}
 \include{capitulos/capitulo7}
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+
+\cleardoublepage
+
+\addchap{BIBLIOGRAF\'{I}A}
+\bibliography{bibliografia} 
+\bibliographystyle{apacite}
+
+%----------------------------------------------------------------------------------------
 
 
 %----------------------------------------------------------------------------------------
@@ -190,11 +231,5 @@ Le agradezco a Dios por haberme acompañado y guiado a lo largo de mi carrera, p
 %\include{Appendices/AppendixB}
 %\include{Appendices/AppendixC}
 
-%----------------------------------------------------------------------------------------
-%	BIBLIOGRAPHY
-%----------------------------------------------------------------------------------------
-%\printbibliography[heading=bibintoc]
-\input{bibliografia}
-%----------------------------------------------------------------------------------------
 
 \end{document}  

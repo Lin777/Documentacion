@@ -1,0 +1,26 @@
+- Explicar mejor los dibujos, de los histogramas
+
+- Discretizacion - no es discreto es continuo
+
+- 3.11 Elegir el min max porque nopierde informacion, porque se elige este escalado. Explicar mejor
+
+- perdiendo aproximadamente un poco de la varianza que no impacta en la semantica de la informacion
+
+- saber de memoria que son modelos discriminativos y discriminativos.
+
+- agregar metodo de ARIMA en modelos discriminativos y descriptivos.
+
+- ARIMA ANOVA, explicar porqu una red NN recurente es tan buena
+
+RESULTADOS-----------
+
+- hacer matriz de confusion por cada tipo de anomalia presentado.
+
+CONCLUSIONES
+
+- se puede utilizar un modelo por cada anomalia
+
+
+
+
+

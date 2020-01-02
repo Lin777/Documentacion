@@ -95,7 +95,6 @@
 	\thispagestyle{\chapter@p@gestyle}
 }
 
-
 % Addchap provides unnumbered chapters with an entry in the table of contents as well as an updated header
 \ProvideDocumentCommand{\addchap}{ s o m }{%
 	\chapter*{#3}%
@@ -132,7 +131,6 @@
 %----------------------------------------------------------------------------------------
 
 \ifbool{parskip}{\RequirePackage{parskip}} % If the parskip option is passed to the class, require the parskip package 
-
 
 \ifbool{listtoc}{% If the liststotoc option has been passed to the class, add the lists to the table of contents
 	\patchcmd{\listoftables}{\@starttoc{lot}}{%
@@ -332,7 +330,6 @@ KOMA-script documentation for details.}]{fancyhdr}
 	\addtocounter{table}{-1}% Don't count this table as one of the document tables
 	\ifbool{nolistspace}{\endgroup}{}
 }
-
 %----------------------------------------------------------------------------------------
 %	ABSTRACT PAGE DESIGN
 %----------------------------------------------------------------------------------------
@@ -343,66 +340,25 @@ KOMA-script documentation for details.}]{fancyhdr}
 \newcommand{\abstractname}{Resumen}
 \providecaptionname{german,ngerman,austrian,naustrian}{\byname}{von}
 \providecaptionname{american,australian,british,canadian,english,newzealand,UKenglish,USenglish}{\byname}{by}
+
 \ifbool{consistentlayout}{
-	\DeclareDocumentEnvironment{abstract}{ O{} }{%
-		\addchap*{\abstractname}%
-		{\chapteralign\normalsize\abstractauthorfont \authorname \par}% Author name
-		\vspace{\baselineskip}
-		{\chapteralign\parbox{.7\linewidth}{\chapteralign\normalsize\itshape\abstracttitlefont\@title}\par}% Thesis title
-		\bigskip\noindent\ignorespaces
-	}%
-	{}%end alt-abstract
-}{%
-	\DeclareDocumentEnvironment{abstract}{ O{\null\vfill} }{
+	\DeclareDocumentEnvironment{abstract}{}{%
+		\tttypeout{\abstractname}
+		\addchap*{\abstractname}
+	}
+}
+{
+	\DeclareDocumentEnvironment{abstract}{}{%
 		\checktoopen
 		\tttypeout{\abstractname}
-		#1%added to be able to have abstract more than one page long
 		\thispagestyle{plain}
-		\begin{center}
-			{\normalsize \MakeUppercase{\univname} \par}% University name in capitals
-			\bigskip
-			{\huge\textit{\abstractname} \par}
-			\bigskip
-			{\normalsize \facname \par}% Faculty name
-			{\normalsize \deptname \par}% Department name
-			\bigskip
-			{\normalsize \degreename\par}% Degree name
-			\bigskip
-			{\normalsize\bfseries \@title \par}% Thesis title
-			\medskip
-			{\normalsize \byname{} \authorname \par}% Author name
-			\bigskip
-		\end{center}
+		\begin{center}{\huge\textit{\abstractname}\par}\end{center}
 	}
 	{
-		\vfill\null
+		\vfil\vfil\null
 	}
 }
 
-\DeclareDocumentEnvironment{extraAbstract}{ O{\null\vfill} }{
-	\checktoopen
-	\tttypeout{\abstractname}
-	#1%added to be able to have abstract more than one page long
-	\thispagestyle{empty}
-	\begin{center}
-		{\normalsize \MakeUppercase{\univname} \par}% University name in capitals
-		\bigskip
-		{\huge\textit{\abstractname} \par}
-		\bigskip
-		{\normalsize \facname \par}% Faculty name
-		{\normalsize \deptname \par}% Department name
-		\bigskip
-		{\normalsize \degreename\par}% Degree name
-		\bigskip
-		{\normalsize\bfseries \@title \par}% Thesis title
-		\medskip
-		{\normalsize \byname{} \authorname \par}% Author name
-		\bigskip
-	\end{center}
-}
-{
-	\vfill\null
-}
 
 %----------------------------------------------------------------------------------------
 %	ACKNOWLEDGEMENTS PAGE DESIGN
