@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2018.5.8)  6 JAN 2020 05:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2018.5.8)  6 JAN 2020 12:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1986,7 +1986,12 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 78.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 78.
- [8])
+ [8]
+Overfull \hbox (1.29184pt too wide) detected at line 108
+ []\T1/phv/m/n/10.95 100
+ []
+
+)
 \tf@toc=\write4
 \openout4 = `main.toc'.
 
@@ -5512,55 +5517,55 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 4.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 8.
+(babel)             in language  on input line 10.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 8.
+(babel)             in language  on input line 10.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 8.
+(babel)             in language  on input line 10.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 8.
+(babel)             in language  on input line 10.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 8.
+(babel)             in language  on input line 10.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 8.
+(babel)             in language  on input line 10.
 <imagenes/Apendices/Arquitectura.png, id=1826, 1323.94624pt x 439.6425pt>
 File: imagenes/Apendices/Arquitectura.png Graphic file (type png)
 <use imagenes/Apendices/Arquitectura.png>
 Package pdftex.def Info: imagenes/Apendices/Arquitectura.png  used on input lin
-e 11.
+e 13.
 (pdftex.def)             Requested size: 434.91322pt x 144.41833pt.
 1: section
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 16.
+(babel)             in language  on input line 21.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 16.
+(babel)             in language  on input line 21.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 16.
+(babel)             in language  on input line 21.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 16.
+(babel)             in language  on input line 21.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 16.
+(babel)             in language  on input line 21.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 16.
+(babel)             in language  on input line 21.
 [99 <./imagenes/Apendices/Arquitectura.png>]
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 17.
+(babel)             in language  on input line 21.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 17.
+(babel)             in language  on input line 21.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 17.
+(babel)             in language  on input line 21.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 17.
+(babel)             in language  on input line 21.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 17.
+(babel)             in language  on input line 21.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 17.
-<imagenes/Apendices/arquitectura_logica.png, id=1833, 799.98875pt x 346.29375pt
+(babel)             in language  on input line 21.
+<imagenes/Apendices/arquitectura_logica.png, id=1834, 799.98875pt x 346.29375pt
 >
 File: imagenes/Apendices/arquitectura_logica.png Graphic file (type png)
 <use imagenes/Apendices/arquitectura_logica.png>
 Package pdftex.def Info: imagenes/Apendices/arquitectura_logica.png  used on in
-put line 20.
+put line 24.
 (pdftex.def)             Requested size: 434.91322pt x 188.26399pt.
 )
 LaTeX Info: Redefining \. on input line 231.
@@ -5617,10 +5622,10 @@ e/texmf-dist/fonts/type1/urw/helvetic/uhvbo8a.pfb></usr/share/texmf-dist/fonts/
 type1/urw/helvetic/uhvr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/u
 hvro8a.pfb></usr/share/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/sha
 re/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (116 pages, 5213864 bytes).
+Output written on main.pdf (116 pages, 5215133 bytes).
 PDF statistics:
- 1978 PDF objects out of 2073 (max. 8388607)
- 1691 compressed objects within 17 object streams
+ 1980 PDF objects out of 2073 (max. 8388607)
+ 1693 compressed objects within 17 object streams
  427 named destinations out of 1000 (max. 500000)
  1197 words of extra memory for PDF output out of 10000 (max. 10000000)
 
