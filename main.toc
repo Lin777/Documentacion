@@ -103,3 +103,6 @@
 \contentsline {section}{\numberline {A.3}Redes recurrentes}{96}{section.246}
 \contentsline {subsection}{\numberline {A.3.1}Redes recurrentes para 3 componentes}{96}{subsection.247}
 \contentsline {subsection}{\numberline {A.3.2}Evaluaci\'{o}n redes recurrentes}{97}{subsection.249}
+\contentsline {chapter}{\numberline {B}Arquitectura del Sistema de Demostraci\'{o}n}{99}{appendix.251}
+\contentsline {section}{\numberline {B.1}Arquitectura F\'{i}sica}{99}{section.252}
+\contentsline {section}{\numberline {B.2}Arquitectura L\'{o}gica}{100}{section.254}
