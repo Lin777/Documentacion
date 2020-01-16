@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2018.5.8)  6 JAN 2020 12:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2018.5.8)  15 JAN 2020 20:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1838,8 +1838,6 @@ Overfull \hbox (3.2944pt too wide) in paragraph at lines 121--122
 
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <24.88> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 126.
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <12> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 135.
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 158.
 Package babel Info: Redefining spanish shorthand >>
@@ -2342,6 +2340,8 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 91.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 97.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <12> not available
 (Font)              Font shape `T1/phv/m/sl' tried instead on input line 97.
 )
 LaTeX Info: Redefining \. on input line 204.
@@ -5603,11 +5603,11 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 30873 strings out of 492982
- 619745 string characters out of 6138580
- 687111 words of memory out of 5000000
+ 30874 strings out of 492982
+ 619751 string characters out of 6138580
+ 687113 words of memory out of 5000000
  33502 multiletter control sequences out of 15000+600000
- 644561 words of font info for 162 fonts, out of 8000000 for 9000
+ 645715 words of font info for 163 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  58i,21n,80p,10404b,1059s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/t
@@ -5622,7 +5622,7 @@ e/texmf-dist/fonts/type1/urw/helvetic/uhvbo8a.pfb></usr/share/texmf-dist/fonts/
 type1/urw/helvetic/uhvr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/u
 hvro8a.pfb></usr/share/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/sha
 re/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (116 pages, 5215133 bytes).
+Output written on main.pdf (116 pages, 5215233 bytes).
 PDF statistics:
  1980 PDF objects out of 2073 (max. 8388607)
  1693 compressed objects within 17 object streams

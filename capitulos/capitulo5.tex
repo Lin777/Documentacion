@@ -184,7 +184,7 @@ Por otra parte el Cuadro \ref{table:cnn33} se presenta la red que obtiene la mej
 
 % lstm autoencode
 
-En el Cuadro \ref{table:rnn33} se muestra la red que obtuvo la mejor presici\'{o}n de todas las Redes Recurrentes probadas, como en los anteriores casos \'{e}sta red es alimentada con secuencias de 3 pasos. Dicha red cuenta con una capa de entrada (Input), dos capas LSTM una que retorna sus secuencias y una que no, luego viene una capa de redimensionado, posteriormente dos capas LSTM, y finalmente un contenedor  (TimeDistributed) de una capa densa.
+En el Cuadro \ref{table:rnn33} se muestra la red que obtuvo la mejor precisi\'{o}n de todas las Redes Recurrentes probadas, como en los anteriores casos \'{e}sta red es alimentada con secuencias de 3 pasos. Dicha red cuenta con una capa de entrada (Input), dos capas LSTM una que retorna sus secuencias y una que no, luego viene una capa de redimensionado, posteriormente dos capas LSTM, y finalmente un contenedor  (TimeDistributed) de una capa densa.
 
 \begin{table}[H]
 \centering
@@ -219,7 +219,7 @@ Anteriormente se present\'{o} los mejores representantes por tipo de red; ahora 
 
 \vspace{5mm} %5mm vertical space
 
-En el Cap\'{i}tulo 3 se present\'{o} los diversos tipos de evaluaci\'{o}n que existen, en esta etapa el tipo de evaluaci\'{o}n m\'{a}s apropiado es la \textbf{precisi\'{o}n} del modelo, debido a que se tiene un gran conjunto de datos balanceado (debido a que s\'{o}lo se cuenta con comportamientos normales de conducci\'{o}n que correspoden a una sola clase, la "Normal"). Los resultados de la evaluaci\'{o}n de los tres tipos de redes son mostrados en el Cuadro \ref{table:evaluacion_redes}; dicho cuadro presenta la precisi\'{o}n, p\'{e}rdida logar\'{i}tmica y tiempo de ejecuci\'{o}n de cada autoencoder seg\'{u}n el conjunto de prueba; observando estos resultados se puede apreciar que las dos mejores redes son la red densa \textbf{NN\_33} y la red recurrente \textbf{RNN\_33} con presiciones de 90\% aproximadamente, adem\'{a}s de presentar un valor de p\'{e}rdida relativamente bajo en comparaci\'{o}n a la red \textbf{CNN\_33}.
+En el Cap\'{i}tulo 3 se present\'{o} los diversos tipos de evaluaci\'{o}n que existen, en esta etapa el tipo de evaluaci\'{o}n m\'{a}s apropiado es la \textbf{precisi\'{o}n} del modelo, debido a que se tiene un gran conjunto de datos balanceado (debido a que s\'{o}lo se cuenta con comportamientos normales de conducci\'{o}n que correspoden a una sola clase, la "Normal"). Los resultados de la evaluaci\'{o}n de los tres tipos de redes son mostrados en el Cuadro \ref{table:evaluacion_redes}; dicho cuadro presenta la precisi\'{o}n, p\'{e}rdida logar\'{i}tmica y tiempo de ejecuci\'{o}n de cada autoencoder seg\'{u}n el conjunto de prueba; observando estos resultados se puede apreciar que las dos mejores redes son la red densa \textbf{NN\_33} y la red recurrente \textbf{RNN\_33} con precisiones de 90\% aproximadamente, adem\'{a}s de presentar un valor de p\'{e}rdida relativamente bajo en comparaci\'{o}n a la red \textbf{CNN\_33}.
 
 \begin{table}[H]
 \centering
