@@ -52,7 +52,7 @@
 \contentsline {subsection}{\numberline {3.6.3}Matriz de confusi\'{o}n}{34}{subsection.99}
 \contentsline {subsection}{\numberline {3.6.4}\'{A}rea bajo la curva (AUC)}{35}{subsection.102}
 \contentsline {subsubsection}{Tasa de Verdaderos Positivos (TPR)}{35}{section*.104}
-\contentsline {subsubsection}{Tasa de Falsos Positivos (FPR) }{35}{section*.107}
+\contentsline {subsubsection}{Tasa de Verdaderos Negativos (TNR) }{35}{section*.107}
 \contentsline {subsubsection}{ROC (Receiver Operating Characteristics)}{35}{section*.110}
 \contentsline {subsection}{\numberline {3.6.5}F1 Score}{36}{subsection.112}
 \contentsline {subsubsection}{Precisi\'{o}n (Precision)}{36}{section*.113}
@@ -85,24 +85,24 @@
 \contentsline {subsection}{\numberline {6.1.1}Evaluaci\IeC {\'o}n en t\IeC {\'e}rminos de rendimiento de detecci\IeC {\'o}n}{75}{subsection.207}
 \contentsline {section}{\numberline {6.2}Resultados}{76}{section.209}
 \contentsline {subsection}{\numberline {6.2.1}Detecci\'{o}n de anomal\'{i}as del tipo zig zag}{77}{subsection.210}
-\contentsline {subsection}{\numberline {6.2.2}Detecci\'{o}n de anomal\'{i}as del tipo giros a alta velocidad}{78}{subsection.215}
-\contentsline {subsection}{\numberline {6.2.3}Detecci\'{o}n de anomal\'{i}as del tipo frenos en seco}{79}{subsection.220}
-\contentsline {subsection}{\numberline {6.2.4}Detecci\'{o}n de falsos positivos}{80}{subsection.225}
-\contentsline {chapter}{\numberline {7}\uppercase {Conclusiones y trabajos futuros}}{83}{chapter.230}
-\contentsline {section}{\numberline {7.1}Conclusiones}{83}{section.231}
-\contentsline {section}{\numberline {7.2}Trabajos futuros}{84}{section.232}
-\contentsline {chapter}{BIBLIOGRAF\'{I}A}{87}{chapter*.233}
-\contentsline {section}{Referencias}{87}{section*.234}
-\contentsline {chapter}{\numberline {A}Experimentos de diferentes arquitecturas para los autoencoders}{93}{appendix.235}
-\contentsline {section}{\numberline {A.1}Redes densas}{94}{section.236}
-\contentsline {subsection}{\numberline {A.1.1}Redes densas para 3 componentes}{94}{subsection.237}
-\contentsline {subsection}{\numberline {A.1.2}Evaluaci\'{o}n redes densas}{95}{subsection.239}
-\contentsline {section}{\numberline {A.2}Redes convolucionales}{95}{section.241}
-\contentsline {subsection}{\numberline {A.2.1}Redes convolucionales para 3 componentes}{95}{subsection.242}
-\contentsline {subsection}{\numberline {A.2.2}Evaluaci\'{o}n redes convolucionales}{96}{subsection.244}
-\contentsline {section}{\numberline {A.3}Redes recurrentes}{96}{section.246}
-\contentsline {subsection}{\numberline {A.3.1}Redes recurrentes para 3 componentes}{96}{subsection.247}
-\contentsline {subsection}{\numberline {A.3.2}Evaluaci\'{o}n redes recurrentes}{97}{subsection.249}
-\contentsline {chapter}{\numberline {B}Arquitectura del Sistema de Demostraci\'{o}n}{99}{appendix.251}
-\contentsline {section}{\numberline {B.1}Arquitectura F\'{i}sica}{99}{section.252}
-\contentsline {section}{\numberline {B.2}Arquitectura L\'{o}gica}{100}{section.254}
+\contentsline {subsection}{\numberline {6.2.2}Detecci\'{o}n de anomal\'{i}as del tipo giros a alta velocidad}{78}{subsection.216}
+\contentsline {subsection}{\numberline {6.2.3}Detecci\'{o}n de anomal\'{i}as del tipo frenos en seco}{79}{subsection.222}
+\contentsline {subsection}{\numberline {6.2.4}Detecci\'{o}n de falsos positivos}{81}{subsection.228}
+\contentsline {chapter}{\numberline {7}\uppercase {Conclusiones y trabajos futuros}}{83}{chapter.233}
+\contentsline {section}{\numberline {7.1}Conclusiones}{83}{section.234}
+\contentsline {section}{\numberline {7.2}Trabajos futuros}{84}{section.235}
+\contentsline {chapter}{BIBLIOGRAF\'{I}A}{87}{chapter*.236}
+\contentsline {section}{Referencias}{87}{section*.237}
+\contentsline {chapter}{\numberline {A}Experimentos de diferentes arquitecturas para los autoencoders}{93}{appendix.238}
+\contentsline {section}{\numberline {A.1}Redes densas}{94}{section.239}
+\contentsline {subsection}{\numberline {A.1.1}Redes densas para 3 componentes}{94}{subsection.240}
+\contentsline {subsection}{\numberline {A.1.2}Evaluaci\'{o}n redes densas}{95}{subsection.242}
+\contentsline {section}{\numberline {A.2}Redes convolucionales}{95}{section.244}
+\contentsline {subsection}{\numberline {A.2.1}Redes convolucionales para 3 componentes}{95}{subsection.245}
+\contentsline {subsection}{\numberline {A.2.2}Evaluaci\'{o}n redes convolucionales}{96}{subsection.247}
+\contentsline {section}{\numberline {A.3}Redes recurrentes}{96}{section.249}
+\contentsline {subsection}{\numberline {A.3.1}Redes recurrentes para 3 componentes}{96}{subsection.250}
+\contentsline {subsection}{\numberline {A.3.2}Evaluaci\'{o}n redes recurrentes}{97}{subsection.252}
+\contentsline {chapter}{\numberline {B}Arquitectura del Sistema de Demostraci\'{o}n}{99}{appendix.254}
+\contentsline {section}{\numberline {B.1}Arquitectura F\'{i}sica}{99}{section.255}
+\contentsline {section}{\numberline {B.2}Arquitectura L\'{o}gica}{100}{section.257}

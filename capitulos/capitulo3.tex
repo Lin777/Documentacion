@@ -117,7 +117,7 @@ A continuaci\'{o}n se presentan cuatro t\'{e}cnicas de compensaci\'{o}n para con
 
 \item \textbf{Llenar los valores ausentes con valores centrales (Media/Mediana):} Esta t\'{e}cnica es mucho mejor que las presentadas anteriormente. En esta t\'{e}cnica se inserta la media o la mediana del atributo respectivo a los valores faltantes. 
 
-\item \textbf{Interpolaci\'{o}n:} Es una forma confiable, precisa y cient\'{i}fica de completar valores perdidos. Para usar esta t\'{e}cnica primero se debe desarrollar una relaci\'{o}n entre los atributos y luego se predice el valor mas probable y preciso para los lugares faltantes, esto se puede lograr mediante regresi\'{o}n, formulaci\'{o}n bayesiana e inducci\'{o}n por \'{a}rboles de decisi\'{o}n.
+\item \textbf{Interpolaci\'{o}n:} Es una forma confiable, precisa y cient\'{i}fica de completar valores perdidos. Para usar esta t\'{e}cnica primero se debe desarrollar una relaci\'{o}n entre los atributos y luego se predice el valor m\'{a}s probable y preciso para los lugares faltantes, esto se puede lograr mediante regresi\'{o}n, formulaci\'{o}n bayesiana e inducci\'{o}n por \'{a}rboles de decisi\'{o}n.
 
 \end{itemize}
 
@@ -131,7 +131,7 @@ Es importante destacar que el ruido presente en el conjunto de datos puede afect
 
 \vspace{5mm} %5mm vertical space
 
-En el presente proyecto se grafic\'{o} histogramas de las frecuencias de cada caracter\'{i}stica del conjunto de datos y as\'{i} visualizar de mejor manera si existe ruido o valores at\'{i}picos en el mismo. En la Figura \ref{fig:hist} se puede evidenciar que los valores de cada sensor presentan asimetr\'{i}as negativas y positivas, adem\'{a}s de tener muchos valores bastante alejados de la media, lo que d\'{a} un indicio de posibles valores at\'{i}picos.
+En el presente trabajo se grafic\'{o} histogramas de las frecuencias de cada caracter\'{i}stica del conjunto de datos y as\'{i} visualizar de mejor manera si existe ruido o valores at\'{i}picos en el mismo. En la Figura \ref{fig:hist} se puede evidenciar que los valores de cada sensor presentan asimetr\'{i}as negativas y positivas, adem\'{a}s de tener muchos valores bastante alejados de la media, lo que d\'{a} un indicio de posibles valores at\'{i}picos.
 
 \begin{figure}[h!]
   \begin{center}	\includegraphics[width=0.97\textwidth,frame]{imagenes/Cap3/histograma_sensores}
@@ -194,7 +194,7 @@ La transformaci\'{o}n de los datos es el proceso donde se cambia la naturaleza d
 
 \item \textbf{Discretizaci\'{o}n: }Con esta t\'{e}cnica se construye y reemplaza valores en bruto de un atributo num\'{e}rico por valores de intervalo.
 
-\item \textbf{Construcci\'{o}n de atributos / Ingenier\'{i}a de caracter\'{i}sticas: }Esta t\'{e}cnica es \'{u}til para generar informaci\'{o}n adicional a partir de aquellos datos que no son lo sufientemente representativos por s\'{i} mismos, adem\'{a}s puede ser adecuada cuando se tiene menos caracter\'{i}sticas pero a\'{u}n contienen informaci\'{o}n oculta para extraer.
+\item \textbf{Construcci\'{o}n de atributos / Ingenier\'{i}a de caracter\'{i}sticas: }Esta t\'{e}cnica es \'{u}til para generar informaci\'{o}n adicional a partir de aquellos datos que no son lo suficientemente representativos por s\'{i} mismos, adem\'{a}s puede ser adecuada cuando se tiene menos caracter\'{i}sticas pero a\'{u}n contienen informaci\'{o}n oculta para extraer.
 
 \item \textbf{Normalizaci\'{o}n / Estandarizaci\'{o}n: }La normalizaci\'{o}n o estandarizaci\'{o}n se define como el proceso de reescalar datos originales sin cambiar su comportamiento o naturaleza. Se define un nuevo l\'{i}mite (generalmente entre 0 y 1) y se convierte los datos en consecuencia. Esta t\'{e}cnica es \'{u}til en algoritmos de clasificaci\'{o}n que involucran redes neuronales o algoritmos basados en la distancia (por ejemplo, KNN\footnote{\textbf{KNN}, es un algoritmo de clasificaci\'{o}n (o regresi\'{o}n) que, para determinar la clasificaci\'{o}n de un punto, combina la clasificaci\'{o}n de los $K$ puntos m\'{a}s cercanos.}, K-Means\footnote{\textbf{K-Means}, es un algoritmo de agrupamiento que intenta dividir un conjunto de puntos en $K$ grupos; de modo que los puntos en cada grupo tienden a estar cerca uno del otro.}, que se utiliza para la agrupaci\'{o}n. Este algoritmo es capaz de aprender gradualmente c\'{o}mo agrupar valores no etiquetados en grupos mediante un an\'{a}lisis de la distancia media de dichos valores.). Algunas t\'{e}cnicas de normalizaci\'{o}n son:
 \begin{itemize}
@@ -371,7 +371,7 @@ Para la tercera normalizaci\'{o}n de datos se aplic\'{o} la t\'{e}cnica de \text
 
 \vspace{5mm} %5mm vertical space
 
-La \'{u}ltima t\'{e}cnica aplicada es el \textbf{escalado robusto}, su resultado puede ser observado en la figura \ref{fig:robust}, el cual puede ser considerado bastante similar a las dos primeras t\'{e}cnicas, con diferencia de que este escalado pronuncia mucho m\'{a}s las fluctuaciones de los valores de los giroscopios, convirti\'{e}ndolos incluso a una escala superior que el de los valores de los aceler\'{o}metros.
+La \'{u}ltima t\'{e}cnica aplicada es el \textbf{escalado robusto}, su resultado puede ser observado en la figura \ref{fig:robust}, el cual puede ser considerado bastante similar a las dos primeras t\'{e}cnicas, con la diferencia de que este escalado pronuncia mucho m\'{a}s las fluctuaciones de los valores de los giroscopios, convirti\'{e}ndolos incluso a una escala superior que el de los valores de los aceler\'{o}metros.
 
 \vspace{5mm} %5mm vertical space
 
@@ -444,7 +444,7 @@ Una vez descartados los m\'{e}todos que no se ajustan al requerimiento del prese
 
 \vspace{5mm} %5mm vertical space
 
-Y por \'{u}ltimo se debe definir que cantidad de componentes principales conservan el 90\% de la varianza de los datos como m\'{i}nimo. La Gr\'{a}fico \ref{fig:varianza-pca} indica que seleccionando 4 componentes se puede preservar alrededor del 97.7\% de la varianza total de los datos, seleccionando 3 componentes se conserva alrededor del 92.3\% y seleccionando 2 se conserva el 85\% de la varianza; por lo tanto se decidi\'{o} el uso de 3 caracter\'{i}sticas con lo cual se conservar\'{a} el 92.3\% de la varianza total del conjunto de datos.
+Y por \'{u}ltimo se debe definir que cantidad de componentes principales conservan el 90\% de la varianza de los datos como m\'{i}nimo. La Gr\'{a}fica \ref{fig:varianza-pca} indica que seleccionando 4 componentes se puede preservar alrededor del 97.7\% de la varianza total de los datos, seleccionando 3 componentes se conserva alrededor del 92.3\% y seleccionando 2 se conserva el 85\% de la varianza; por lo tanto se decidi\'{o} el uso de 3 caracter\'{i}sticas con lo cual se conservar\'{a} el 92.3\% de la varianza total del conjunto de datos.
 
 \vspace{5mm} %5mm vertical space
 

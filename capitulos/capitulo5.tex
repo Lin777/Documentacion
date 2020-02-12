@@ -5,7 +5,7 @@ Este cap\'{i}tulo describe el proceso que se sigui\'{o} para la generaci\'{o}n d
 
 \section{Entorno de desarrollo}
 
-El experimento de este estudio fue desarrollado en una computador portatil con las siguientes caracter\'{i}sticas:
+El experimento de este estudio fue desarrollado en una computador port\'{a}til con las siguientes caracter\'{i}sticas:
 
 \begin{itemize}
 \item Procesador Intel Core i5-5200U 2.2GHz (c/TB 2.7 GHz).
@@ -43,7 +43,7 @@ A pesar de que se cuenta con una gran cantidad de datos normales, es necesario r
 \hline
 \textbf{Tipo de anomal\'{i}a} & \textbf{No. anomal\'{i}as} & \textbf{No. datos} \\ \hline
 Giros en Zig Zag & 5 & 105  \\ \hline
-Giros a la derecha e izquierda a alta velocidad & 7 & 39  \\ \hline
+Giros a la derecha e izquierda a alta velocidad & 7 & 35  \\ \hline
 Frenos en seco & 6 & 24 \\ \hline
 \end{tabular}
 \caption{Tabla del conjunto de anomal\'{i}as (Elaboraci\'{o}n propia).}
@@ -207,7 +207,7 @@ En el Cuadro \ref{table:rnn33} se muestra la red que obtuvo la mejor precisi\'{o
 \label{table:rnn33}
 \end{table}
 
-Es importante recalcar que las capas de redimensi\'{o}n, agrupaci\'{o}n, muestra ascendente y contenedores s\'{o}lo fueron usadas para controlar la correcta compresi\'{o}n y descompresi\'{o}n de los autoencoders, es por ello que no se detalla a pronfundidad su funcionamiento.
+Es importante recalcar que las capas de redimensi\'{o}n, agrupaci\'{o}n, muestra ascendente y contenedores s\'{o}lo fueron usadas para controlar la correcta compresi\'{o}n y descompresi\'{o}n de los autoencoders, es por ello que no se detalla a profundidad su funcionamiento.
 
 \vspace{5mm} %5mm vertical space
 
@@ -240,7 +240,7 @@ Por otra parte la diferencia m\'{a}s grande entre las dos mejores redes (\textbf
 
 \vspace{5mm} %5mm vertical space
 
-En la Figura \ref{fig:res_autoencoders} se muestra los resultados de los autoencoders de siete secuencias tomadas aleatoriamente del conjunto de prueba, en la parte superior de cada figura se encuentra la secuencia de entrada y en la inferior la reconstrucci\'{o}n del modelo, como ya se pod\'{i}a esperar la red \textbf{CNN\_33} presenta los peores resultados, lo cual hace que dicha red sea descartada; en cuanto a las dos redes restantes, la red \textbf{NN\_33} presenta reconstrucciones muy similares a las secuencias de entrada, con algunos peque\~{n}os errores; por otra parte \textbf{RNN\_33} presenta errores un poco m\'{a}s notorios que los obtenidos por  \textbf{NN\_33}. Por lo tanto se lleg\'{o} a la conclusi\'{o}n de que la red \textbf{NN\_33} se ajusta mejor al comportamiento normal de coducci\'{o}n, adem\'{a}s de tener la gran ventaja de tener un tiempo de ejecuci\'{o}n mucho menor que el de \textbf{RNN\_33}, lo cual es realmente importante para los sistemas en tiempo real as\'{i} como tambi\'{e}n de aquellos que cuentan con recursos de ejecucion limitados, como es el caso del presente proyecto.
+En la Figura \ref{fig:res_autoencoders} se muestra los resultados de los autoencoders de siete secuencias tomadas aleatoriamente del conjunto de prueba, en la parte superior de cada figura se encuentra la secuencia de entrada y en la inferior la reconstrucci\'{o}n del modelo, como ya se pod\'{i}a esperar la red \textbf{CNN\_33} presenta los peores resultados, lo cual hace que dicha red sea descartada; en cuanto a las dos redes restantes, la red \textbf{NN\_33} presenta reconstrucciones muy similares a las secuencias de entrada, con algunos peque\~{n}os errores; por otra parte \textbf{RNN\_33} presenta errores un poco m\'{a}s notorios que los obtenidos por  \textbf{NN\_33}. Por lo tanto se lleg\'{o} a la conclusi\'{o}n de que la red \textbf{NN\_33} se ajusta mejor al comportamiento normal de conducci\'{o}n, adem\'{a}s de tener la gran ventaja de tener un tiempo de ejecuci\'{o}n mucho menor que el de \textbf{RNN\_33}, lo cual es realmente importante para los sistemas en tiempo real as\'{i} como tambi\'{e}n de aquellos que cuentan con recursos de ejecuci\'{o}n limitados, como es el caso del presente trabajo.
 
 \begin{figure}
         \centering
@@ -297,7 +297,7 @@ En la Figura \ref{fig:codos} se muestra la curva de los errores de reconstrucci\
 		\label{fig:codos}
     \end{figure}
 
-Una vez definido la ecuaci\'{o}n de reconstrucci\'{o}n, se debe definir un umbral capaz de poder detectar la mayor cantidad de anomal\'{i}as posibles. Esta tarea puede tornarse simple en un entorno de aprendizaje supervisado, sin embargo automatizar esta tarea en un contexto de aprendizaje no supervisado es un desafio que puede ser dificil de sobrellevar. En el presente trabajo se uso una t\'{e}cnica basada en encontrar un \textit{Punto de codo} de una curva, que en este caso la curva est\'{a} construida en base a los errores de reconstrucci\'{o}n del autoencoder.
+Una vez definido la ecuaci\'{o}n de reconstrucci\'{o}n, se debe definir un umbral capaz de poder detectar la mayor cantidad de anomal\'{i}as posibles. Esta tarea puede tornarse simple en un entorno de aprendizaje supervisado, sin embargo automatizar esta tarea en un contexto de aprendizaje no supervisado es un desaf\'{i}o que puede ser dif\'{i}cil de sobrellevar. En el presente trabajo se us\'{o} una t\'{e}cnica basada en encontrar un \textit{Punto de codo} de una curva, que en este caso la curva est\'{a} construida en base a los errores de reconstrucci\'{o}n del autoencoder.
 
 \vspace{5mm} %5mm vertical space
 
@@ -364,7 +364,7 @@ Existen dos enfoques que pueden realizarse con esta t\'{e}cnica; el primero entr
 \end{figure}
 
 \begin{itemize}
-\item \textbf{\textit{Isolation forest para valores codificados: }}Esta t\'{e}cnica entrena un modelo de bosque de aislamiento con los valores codificados (mediante el codificador del autoencoder, ver Figura \ref{fig:autoencoder}) del conjunto de entrenamiento normal. Para los experimentos se utiliz\'{o} la clase IsolationForest de \textsc{scikit-learn}, esta clase tiene un par\'{a}metro llamado \textsc{contaminaci\'{o}n} el cual sirve para definir que cantidad del conjunto de datos esta contamiado, es decir, define que cantidad de los datos de entrenamiento pueden ser valores at\'{i}picos; en la presente investigaci\'{o}n se realiz\'{o} varias pruebas con diferentes valores para el par\'{a}metro contaminaci\'{o}n. En el Cuadro \ref{table:evaluacion_IF_encoded} se presenta los resultados, donde se evidencia que ninguno de los resultados es alentador, ya que la cantidad de anomal\'{i}as detectadas es muy baja para los tres casos con los que se experimento.
+\item \textbf{\textit{Isolation forest para valores codificados: }}Esta t\'{e}cnica entrena un modelo de bosque de aislamiento con los valores codificados (mediante el codificador del autoencoder, ver Figura \ref{fig:autoencoder}) del conjunto de entrenamiento normal. Para los experimentos se utiliz\'{o} la clase IsolationForest de \textsc{scikit-learn}, esta clase tiene un par\'{a}metro llamado \textsc{contaminaci\'{o}n} el cual sirve para definir que cantidad del conjunto de datos esta contaminado, es decir, define que cantidad de los datos de entrenamiento pueden ser valores at\'{i}picos; en la presente investigaci\'{o}n se realiz\'{o} varias pruebas con diferentes valores para el par\'{a}metro contaminaci\'{o}n. En el Cuadro \ref{table:evaluacion_IF_encoded} se presenta los resultados, donde se evidencia que ninguno de los resultados es alentador, ya que la cantidad de anomal\'{i}as detectadas es muy baja para los tres casos con los que se experimento.
 
 \begin{table}[H]
 \centering
@@ -381,7 +381,7 @@ Existen dos enfoques que pueden realizarse con esta t\'{e}cnica; el primero entr
 \label{table:evaluacion_IF_encoded}
 \end{table}
 
-\item \textbf{\textit{Isolation forest para errores de reconstrucci\'{o}n: }}Para esta t\'{e}cnica se realiz\'{o} el entrenamiento del bosque de aislamiento con la diferencia de los valores de entrada con los valores obtenidos por el autoencoder (Ver Figura \ref{fig:error}), cabe aclarar que la diferencia mencionada anteriormente tambi\'{e}n ser\'{a} llamada \textit{Error de reconstrucci\'{o}n} tanto en esta como en la siguiente subsecci\'{o}n. Los resultados de esta t\'{e}cnica para diferentes valores de contaminaci\'{o}n se presentan en el Cuadro \ref{table:evaluacion_IF_errores_reconstruccion}, donde estos resultados se pueden consider como \'{o}ptimos, debido a que oscilan entre 62 y 67\% de detecci\'{o}nes correctas de anomal\'{i}as, adem\'{a}s de presentar una especificidad realmente alta, del 99\% aproximadamente, lo cual quiere decir que estos modelos presentan una baja tasa de falsos positivos. 
+\item \textbf{\textit{Isolation forest para errores de reconstrucci\'{o}n: }}Para esta t\'{e}cnica se realiz\'{o} el entrenamiento del bosque de aislamiento con la diferencia de los valores de entrada con los valores obtenidos por el autoencoder (Ver Figura \ref{fig:error}), cabe aclarar que la diferencia mencionada anteriormente tambi\'{e}n ser\'{a} llamada \textit{Error de reconstrucci\'{o}n} tanto en esta como en la siguiente subsecci\'{o}n. Los resultados de esta t\'{e}cnica para diferentes valores de contaminaci\'{o}n se presentan en el Cuadro \ref{table:evaluacion_IF_errores_reconstruccion}, donde estos resultados se pueden considerar como \'{o}ptimos, debido a que oscilan entre 62 y 67\% de detecciones correctas de anomal\'{i}as, adem\'{a}s de presentar una especificidad realmente alta, del 99\% aproximadamente, lo cual quiere decir que estos modelos presentan una baja tasa de falsos positivos. 
 
 \begin{figure}[H]
         \centering
@@ -447,7 +447,7 @@ sigmoid & \cellcolor[HTML]{AADD99} 123 & \cellcolor[HTML]{AADD99} 1683 & \cellco
 \end{table}
 
 
-Observando los resultados del Cuadro se puede notar que se aument\'{o} notablemente la sensibilidad, o cantidad de anomal\'{i}as detectadas correctamente, sin embargo, redujo dr\'{a}sticamente la especificidad ya que en algunos casos tan solo llega a un 3.5\%, lo cual es muy alejado al objetivo que se persigue en el presente trabajo.
+Observando los resultados del Cuadro \ref{table:evaluacion_SVM_error} se puede notar que se aument\'{o} notablemente la sensibilidad, o cantidad de anomal\'{i}as detectadas correctamente, sin embargo, redujo dr\'{a}sticamente la especificidad ya que en algunos casos tan solo llega a un 3.5\%, lo cual es muy alejado al objetivo que se persigue en el presente trabajo.
 
 \end{itemize}
 
@@ -475,7 +475,7 @@ Evidentemente el mejor resultado de detecci\'{o}n de anomal\'{i}as es el que se 
 
 \vspace{5mm} %5mm vertical space
 
-Debido a esto s\'{o}lo quedan dos m\'{e}odos a comparar, donde ambos resultados son muy similares; ya que estos cuentan con una sensibilidad de 67.68\%, por otra parte la especificidad tiene una peque\~{n}a variaci\'{o}n entre ambas t\'{e}cnicas dando un resultado levemente mejor para la t\'{e}cnica de umbralizaci\'{o}n con 99.49\% frente a un 99.20\%.
+Debido a esto s\'{o}lo quedan dos m\'{e}todos a comparar, donde ambos resultados son muy similares; ya que estos cuentan con una sensibilidad de 67.68\%, por otra parte la especificidad tiene una peque\~{n}a variaci\'{o}n entre ambas t\'{e}cnicas dando un resultado levemente mejor para la t\'{e}cnica de umbralizaci\'{o}n con 99.49\% frente a un 99.20\%.
 
 \vspace{5mm} %5mm vertical space
 
@@ -483,7 +483,7 @@ En este punto se puede elegir cualquiera de estos dos m\'{e}todos debido a las s
 
 \vspace{5mm} %5mm vertical space
 
-Una vez elegido los mejores m\'{e}todos para conformar el mecanismo de detecci\'{o}n de valores at\'{i}picos, se procede a formalizar este mecanismo por medio de una gr\'{a}fica (Ver Figura \ref{fig:mecanismo}), la cual proporciona una representaci\'{o}n visual del flujo del detector de anomal\'{i}as propuesto; ya que es importante conocer como se compone y como funciona, especialmente antes de realizar su respectiva evalucia\'{o}n. 
+Una vez elegido los mejores m\'{e}todos para conformar el mecanismo de detecci\'{o}n de valores at\'{i}picos, se procede a formalizar este mecanismo por medio de una gr\'{a}fica (Ver Figura \ref{fig:mecanismo}), la cual proporciona una representaci\'{o}n visual del flujo del detector de anomal\'{i}as propuesto; ya que es importante conocer como se compone y como funciona, especialmente antes de realizar su respectiva evaluaci\'{o}n. 
 
 \begin{figure}[H]
         \centering
