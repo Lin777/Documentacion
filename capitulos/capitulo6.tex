@@ -89,13 +89,29 @@ Antes de realizar el an\'{a}lisis de los resultados obtenidos se debe aclarar qu
 
 Como se observa en la Gr\'{a}fica \ref{fig:resultados_zigzag}, la imagen superior izquierda presenta una gran cantidad de falsos negativos, esto se debe a que las oscilaciones de los movimientos en Zig Zag no fueron lo suficientemente bruscos, en comparaci\'{o}n a los dem\'{a}s, por otro lado la imagen superior derecha presenta una cantidad moderada de falsos negativos y un ejemplar de falso positivo, aunque el resultado no parezca del todo bueno realmente si lo es, ya que muchos de los falsos negativos se encuentran entre valores detectados correctamente, lo cual conllevaria a una correcta generaci\'{o}n de alarma de anomal\'{i}as a pesar de no detectar como valor at\'{i}pico la totalidad de los datos an\'{o}malos, en la imagen inferior se presenta un ejemplo similar, aunque en este caso no se detectan falsos positivos.
 
+Con el fin de formalizar los resultados para las anomal\'{i}as del tipo Zig Zag, en la tabla \ref{table:zigzag_resultado} se puede observar que 69 anomal\'{i}as de 105 fueron correctamente detectadas, es decir el 65.71\%. 
+
+\begin{table}[H]
+\centering
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+\multicolumn{3}{|l|}{\textbf{Giros en Zig Zag}} \\ \hline
+\textbf{VP}   & \textbf{FN}   & \textbf{Total}  \\ \hline
+\cellcolor[HTML]{AADD99}69  & \cellcolor[HTML]{DF9F9F}36  & 105             \\ \hline
+\end{tabular}
+\caption{Resultados anomal\'{i}as tipo Zig Zag (Elaboraci\'{o}n propia).}
+\label{table:zigzag_resultado}
+\end{center}
+\end{table}
+
 \subsection{Detecci\'{o}n de anomal\'{i}as del tipo giros a alta velocidad}
 
 Este tipo de anomal\'{i}as suelen ser comunes en agentes que conducen bajo los efectos del alcohol, drogas o con un estado emocional alterado, dichos datos se consideran anomal\'{i}as ya que los giros normalmente se realizan bajando la velocidad del veh\'{i}culo, y al realizar este tipo de actos un agente es propenso a ser el causante de un accidente de tr\'{a}nsito.
 
 \vspace{5mm} %5mm vertical space
 
-La Figura \ref{fig:resultados_giros} muestra los resultados obtenidos para las anomal\'{i}as del tipo giros a alta velocidad, las tres imagenes presentan resultados muy similares, todas tienen una secci\'{o}n en la parte inicial que se presenta como falso negativo, es decir tienen una proporci\'{o}n de datos que no son detectadas correctamente, posteriormente cuentan con un bloque de verdaderos positivos, y por \'{u}ltimo, dos de las tres imagenes cuentan con un ejemplar de falso positivo porterior a la anomal\'{i}a. A pesar de que este tipo de anomal\'{i}as no son detectadas completamente, todas presentan una secci\'{o}n que si es detectado como anomal\'{i}a, lo cual es suficiente para generar una alarma oportunamente.
+La Figura \ref{fig:resultados_giros} muestra los resultados obtenidos para las anomal\'{i}as del tipo giros a alta velocidad, las tres imagenes presentan resultados muy similares, todas tienen una secci\'{o}n en la parte inicial que se presenta como falso negativo, es decir tienen una proporci\'{o}n de datos que no son detectadas correctamente, posteriormente cuentan con un bloque de verdaderos positivos, y por \'{u}ltimo, dos de las tres imagenes cuentan con un ejemplar de falso positivo posterior a la anomal\'{i}a. A pesar de que este tipo de anomal\'{i}as no son detectadas completamente, todas presentan una secci\'{o}n que s\'{i} es detectado como anomal\'{i}a, lo cual es suficiente para generar una alarma oportunamente.
 
 \begin{figure}[H]
         \centering
@@ -116,6 +132,22 @@ La Figura \ref{fig:resultados_giros} muestra los resultados obtenidos para las a
         \caption{Resultados de la detecci\'{o}n de anomal\'{i}as del tipo giros a alta velocidad (Elaboraci\'{o}n propia).}
 		\label{fig:resultados_giros}
     \end{figure}
+
+En el Cuadro \ref{table:giros_resultado} se presenta los resultados generales obtenidos para las anomal\'{i}as del tipo Giros a alta velocidad, donde de 35 anomal\'{i}as 23 fueron correctamente detectadas , es decir, el 65.71\%.
+
+\begin{table}[H]
+\centering
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+\multicolumn{3}{|l|}{\textbf{Giros a alta velocidad}} \\ \hline
+\textbf{VP}   & \textbf{FN}   & \textbf{Total}  \\ \hline
+\cellcolor[HTML]{AADD99}23  & \cellcolor[HTML]{DF9F9F}12  & 35             \\ \hline
+\end{tabular}
+\caption{Resultados del tipo Giros a alta Velocidad (Elaboraci\'{o}n propia).}
+\label{table:giros_resultado}
+\end{center}
+\end{table}
 
 \subsection{Detecci\'{o}n de anomal\'{i}as del tipo frenos en seco}
 
@@ -144,6 +176,21 @@ Los resultados de la detecci\'{o}n de este tipo de anomal\'{i}a se presentan en 
 		\label{fig:resultados_frenos}
     \end{figure}
 
+A continuaci\'{o}n en el Cuadro \ref{table:frenos_resultado} se puede ver que 19 anomal\'{i}as de 24 fueron correctamente detectadas (79.17\%), siendo as\'{i} el tipo de anomal\'{i}a que tiene el porcentaje de detecci\'{o}n m\'{a}s elevado.
+
+\begin{table}[H]
+\centering
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+\multicolumn{3}{|l|}{\textbf{Frenos en seco}} \\ \hline
+\textbf{VP}   & \textbf{FN}   & \textbf{Total}  \\ \hline
+\cellcolor[HTML]{AADD99}19  & \cellcolor[HTML]{DF9F9F}5  & 24             \\ \hline
+\end{tabular}
+\caption{Resultados del tipo Frenos en seco (Elaboraci\'{o}n propia).}
+\label{table:frenos_resultado}
+\end{center}
+\end{table}
 
 \subsection{Detecci\'{o}n de falsos positivos}
 
@@ -151,7 +198,7 @@ As\'{i} como se detect\'{o} una gran cantidad de anomal\'{i}as mediante este mec
 
 \vspace{5mm} %5mm vertical space
 
-De la misma forma que es importante conocer como este m\'{e}todo detecta anomal\'{i}as, tambi\'{e}n es importante saber en que casos el modelo propuesto falla; en la Figura \ref{fig:resultados_falsos_positivos} se presenta algunos casos donde el modelo falla, es decir, esta figura presenta algunos ejemplos de falsos positivos. La figura \ref{fig:resultados_falsos_positivos} ilustra claramente que estos falsos positivos se presentan generalmente de forma aislada, es decir, uno o dos valores detectados err\'{o}neamente como anomal\'{i}as de forma continua, lo cual es un comportamiento diferente al de los verdaderos valores at\'{i}picos, ya que estos presentan una detecci\'{o}n de tres valores at\'{i}picos de forma continua minimamente.
+De la misma forma que es importante conocer como este m\'{e}todo detecta anomal\'{i}as, tambi\'{e}n es importante saber en que casos el modelo propuesto falla; en la Figura \ref{fig:resultados_falsos_positivos} se presenta algunos casos donde el modelo falla, es decir, esta figura presenta algunos ejemplos de falsos positivos. La figura \ref{fig:resultados_falsos_positivos} ilustra claramente que estos falsos positivos se presentan generalmente de forma aislada, es decir, uno o dos valores detectados err\'{o}neamente como anomal\'{i}as de forma continua, lo cual es un comportamiento diferente al de los verdaderos valores at\'{i}picos, ya que estos presentan una detecci\'{o}n de tres valores at\'{i}picos de forma continua m\'{i}nimamente.
 
 \begin{figure}[H]
         
@@ -173,8 +220,8 @@ De la misma forma que es importante conocer como este m\'{e}todo detecta anomal\
 		\label{fig:resultados_falsos_positivos}
     \end{figure}
 
-\section{Resumen}
+%\section{Resumen}
 
-Este cap\'{i}tulo detall\'{o} el tipo de evaluaci\'{o}n al que se someti\'{o} el mecanismo propuesto en el trabajo de investigaci\'{o}n, para finalmente presentar los resultados que se obtuvieron por cada tipo de anomal\'{i}a.
+%Este cap\'{i}tulo detall\'{o} el tipo de evaluaci\'{o}n al que se someti\'{o} el mecanismo propuesto en el trabajo de investigaci\'{o}n, para finalmente presentar los resultados que se obtuvieron por cada tipo de anomal\'{i}a.
  
  
