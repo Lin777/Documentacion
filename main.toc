@@ -1,8 +1,8 @@
 \babel@toc {spanish}{}
 \contentsline {chapter}{Agradecimientos}{\es@scroman {iii}}{section*.1}
-\contentsline {chapter}{Resumen}{\es@scroman {xv}}{section*.6}
-\contentsline {chapter}{\numberline {1}\uppercase {Introducci\IeC {\'o}n}}{1}{chapter.7}
-\contentsline {section}{\numberline {1.1}Planteamiento del problema}{1}{section.8}
+\contentsline {chapter}{Abstract}{\es@scroman {xv}}{section*.6}
+\contentsline {chapter}{\numberline {1}\uppercase {Introduction}}{1}{chapter.7}
+\contentsline {section}{\numberline {1.1}Approach of the problem}{1}{section.8}
 \contentsline {section}{\numberline {1.2}Objetivo general}{2}{section.11}
 \contentsline {section}{\numberline {1.3}Objetivos espec\IeC {\'\i }ficos}{3}{section.12}
 \contentsline {section}{\numberline {1.4}Justificaci\IeC {\'o}n}{3}{section.13}
@@ -91,7 +91,7 @@
 \contentsline {chapter}{\numberline {7}\uppercase {Conclusiones y trabajos futuros}}{83}{chapter.233}
 \contentsline {section}{\numberline {7.1}Conclusiones}{83}{section.234}
 \contentsline {section}{\numberline {7.2}Trabajos futuros}{84}{section.235}
-\contentsline {chapter}{BIBLIOGRAF\'{I}A}{87}{chapter*.236}
+\contentsline {chapter}{BIBLIOGRAFY}{87}{chapter*.236}
 \contentsline {section}{Referencias}{87}{section*.237}
 \contentsline {chapter}{\numberline {A}Experimentos de diferentes arquitecturas para los autoencoders}{93}{appendix.238}
 \contentsline {section}{\numberline {A.1}Redes densas}{94}{section.239}

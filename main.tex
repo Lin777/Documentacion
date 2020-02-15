@@ -73,7 +73,7 @@
 %----------------------------------------------------------------------------------------
 %	THESIS INFORMATION
 %----------------------------------------------------------------------------------------
-\thesistitle{Detecci\'{o}n de Anomal\'{i}as de Conducci\'{o}n}
+\thesistitle{Driving Anomaly Detection}
 \supervisor{Ph.D. Eduardo \textsc{Di Santi}} 
 \examiner{}
 \degree{Licenciatura en Ingeniería de Sistemas}
@@ -81,10 +81,10 @@
 \addresses{}
 %\subject{Biological Sciences} 
 \keywords{}
-\university{\href{http://www.umss.edu.bo}{Universidad Mayor de San Simón}}
-\department{\href{http://www.cs.umss.edu.bo}{Departamento Informática-Sistemas}}
-\group{\href{http://www.cs.umss.edu.bo}{Carrera de Ingeniería de Sistemas}}
-\faculty{\href{http://www.fcyt.umss.edu.bo}{Facultad de Ciencias y Tecnología}}
+\university{\href{http://www.umss.edu.bo}{Mayor de San Simón University}}
+\department{\href{http://www.cs.umss.edu.bo}{IT Department}}
+\group{\href{http://www.cs.umss.edu.bo}{Systems Engineering Degree}}
+\faculty{\href{http://www.fcyt.umss.edu.bo}{Faculty of Science and Technology}}
 
 \AtBeginDocument{
 \hypersetup{pdftitle=\ttitle}
@@ -112,9 +112,9 @@
 \end{minipage}
 \begin{minipage}[c]{.65\textwidth}
 \begin{center}
-\href{http://www.umss.edu.bo}{\LARGE{Universidad Mayor de San Simón}} \\
-\href{http://www.fcyt.umss.edu.bo}{\LARGE{Facultad de Ciencias y Tecnología}} \\
-\href{http://www.cs.umss.edu.bo}{\LARGE{Carrera de Ingeniería de Sistemas}}
+\href{http://www.umss.edu.bo}{\LARGE{Mayor de San Sim\'{o}n University}} \\
+\href{http://www.fcyt.umss.edu.bo}{\LARGE{Faculty of Science and Technology}} \\
+\href{http://www.cs.umss.edu.bo}{\LARGE{Systems Engineering Degree}}
 \end{center}
 \end{minipage}
 \begin{minipage}[r]{.15\linewidth}
@@ -132,16 +132,16 @@
 \singlespacing
 \singlespacing
 \begin{center}
-{\large Proyecto de grado presentado en cumplimiento de los requisitos\\ para optar por el t\'{i}tulo de Licenciatura en Ingenier\'{i}a de Sistemas}
+{\large Degree project submitted in compliance with the requirements\\ to opt for the Degree in Systems Engineering}
 \end{center}
 \vspace{\fill}
 
 \begin{center}
-{\Large Presentado por:}\\
+{\Large Presented by:}\\
 
 \hspace{ 0.50\textwidth} \Large{\authorname}\\
 
-\hspace{ -0.16\textwidth} {\Large Tutor:}\\
+\hspace{ -0.16\textwidth} {\Large Advisor:}\\
 
 \hspace{ 0.56\textwidth} {\Large{\supname}}\\
 
@@ -152,7 +152,7 @@
  
 \begin{center}
 \vspace*{1.5cm}
-\Large{COCHABAMBA - BOLIVIA}\hspace*{1cm}\Large{\\Marzo, 2020}	
+\Large{COCHABAMBA - BOLIVIA}\hspace*{1cm}\Large{\\March, 2020}	
 \end{center}	
 	
 \end{titlepage}
@@ -166,21 +166,24 @@
 \begin{acknowledgements}
 \addchaptertocentry{\acknowledgementname} 
 \bigskip
-%Le agradezco a Dios por haberme acompañado y guiado a lo largo de mi carrera, por ser mi fortaleza en los momentos de debilidad y por brindarme una vida llena de aprendizajes, experiencias y sobre todo felicidad.
 
-A mi profesor: Ph.D. Eduardo Di Santi, quien me brind\'{o} su valiosa y desinteresada orientaci\'{o}n y gu\'{i}a en la elaboraci\'{o}n del presente trabajo, por su paciencia, apoyo e ideas que motivaron esta investigaci\'{o}n; a quien le debo gran parte de mi aprendizaje y mi gusto por el \'{a}rea de la Inteligencia Artificial.
-
-\vspace{5mm} %5mm vertical space
-
-A mi familia, por su comprensi\'{o}n y est\'{i}mulo constante, adem\'{a}s de su apoyo incondicional a lo largo de mis estudios.
+To my professor: Eduardo Di Santi, who gave me his valuable and selfless orientation and guidance in the preparation of this work, for his patience, support and ideas that motivated this research; to whom I owe much of my learning and my taste for the Artificial Intelligence's area.
+%A mi profesor: Eduardo Di Santi, quien me brind\'{o} su valiosa y desinteresada orientaci\'{o}n y gu\'{i}a en la elaboraci\'{o}n del presente trabajo, por su paciencia, apoyo e ideas que motivaron esta investigaci\'{o}n; a quien le debo gran parte de mi aprendizaje y mi gusto por el \'{a}rea de la Inteligencia Artificial.
 
 \vspace{5mm} %5mm vertical space
 
-A mis amigos, que de una y otra forma me apoyaron en la realizaci\'{o}n de este trabajo.
+To my family, for their constant understanding and encouragement, in addition to their unconditional support throughout my studies.
+%A mi familia, por su comprensi\'{o}n y est\'{i}mulo constante, adem\'{a}s de su apoyo incondicional a lo largo de mis estudios.
 
 \vspace{5mm} %5mm vertical space
 
-A la Facultad de Ciencias y Tecnolog\'{i}a y la Universidad Mayor de San Sim\'{o}n, por abrirme las puertas y ser la casa de mi formaci\'{o}n durante toda mi carrera universitaria.
+To my friends, who in one way or another supported me in carrying out this work.
+%A mis amigos, que de una y otra forma me apoyaron en la realizaci\'{o}n de este trabajo.
+
+\vspace{5mm} %5mm vertical space
+
+To the Faculty of Science and Technology and the Mayor de San Simon University, for open me their doors and being the home of my training throughout my university career.
+%A la Facultad de Ciencias y Tecnolog\'{i}a y la Universidad Mayor de San Sim\'{o}n, por abrirme las puertas y ser la casa de mi formaci\'{o}n durante toda mi carrera universitaria.
 
 \end{acknowledgements}
 
@@ -188,7 +191,7 @@ A la Facultad de Ciencias y Tecnolog\'{i}a y la Universidad Mayor de San Sim\'{o
 %	DEDICATION
 %----------------------------------------------------------------------------------------
 
-\dedicatory{A mi madre, por estar conmigo, por enseñarme a crecer y a levantarme, por apoyarme y guiarme, por ser la base que me ayudó a llegar hasta aqu\'{i}.} 
+\dedicatory{To my mother, for being with me, for teaching me to grow and to get up, for supporting and guiding me, for being the base that helped me get here.} 
 
 %----------------------------------------------------------------------------------------
 %	LIST OF CONTENTS/FIGURES/TABLES PAGES
@@ -205,7 +208,7 @@ A la Facultad de Ciencias y Tecnolog\'{i}a y la Universidad Mayor de San Sim\'{o
 %----------------------------------------------------------------------------------------
 
 \begin{abstract}
-\addchaptertocentry{\abstractname} % Add the abstract to the table of contents
+\addchaptertocentry{Abstract} % Add the abstract to the table of contents
 
 \input{resumen}
 \end{abstract}
@@ -230,7 +233,7 @@ A la Facultad de Ciencias y Tecnolog\'{i}a y la Universidad Mayor de San Sim\'{o
 
 \cleardoublepage
 
-\addchap{BIBLIOGRAF\'{I}A}
+\addchap{BIBLIOGRAFY}
 \bibliography{bibliografia} 
 \bibliographystyle{apacite}
 

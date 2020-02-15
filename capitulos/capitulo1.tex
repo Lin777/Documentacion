@@ -1,29 +1,32 @@
 % Chapter 1
 
-\chapter{\uppercase{Introducción}}
+\chapter{\uppercase{Introduction}}
 \label{Capitulo 1}
 
-%\section{Introducción}
+This document describes the development of a method for detecting anomalies in car driving. The use of Machine Learning techniques is proposed to generate a mechanism that identifies driving anomalies, so that they can be used to promptly alert agents and thus correct their driving behaviors.
 
-El presente documento describe el desarrollo de un m\'{e}todo para la detecci\'{o}n de anomal\'{i}as en la conducci\'{o}n de autom\'{o}viles. Se propone el uso de t\'{e}cnicas de Aprendizaje Autom\'{a}tico para generar un mecanismo que identifique anomal\'{i}as de manejo, de tal modo que \'{e}stas puedan usarse para alertar oportunamente a los agentes y as\'{i} logren correjir sus conductas de conducci\'{o}n.
-
-\vspace{5mm} %5mm vertical space
-
-La idea principal, es generar un modelo que aprenda el comportamiento normal de conducci\'{o}n de un agente concreto, para posteriormente detectar de forma aut\'{o}noma aquellos comportamientos inesperados e informarlos como anomal\'{i}as, de manera que se pueda evitar  un accidente de tr\'{a}nsito o reducir los efectos del mismo.
-
-\section{Planteamiento del problema}
-
-Debido a las graves secuelas que causan sobre las personas y los altos costos econ\'{o}micos asociados a ellos, los accidentes de tr\'{a}nsito se catalogan como un problema social y de salud p\'{u}blica mundial.
+%El presente documento describe el desarrollo de un m\'{e}todo para la detecci\'{o}n de anomal\'{i}as en la conducci\'{o}n de autom\'{o}viles. Se propone el uso de t\'{e}cnicas de Aprendizaje Autom\'{a}tico para generar un mecanismo que identifique anomal\'{i}as de manejo, de tal modo que \'{e}stas puedan usarse para alertar oportunamente a los agentes y as\'{i} logren correjir sus conductas de conducci\'{o}n.
 
 \vspace{5mm} %5mm vertical space
 
-Seg\'{u}n la Organizaci\'{o}n Mundial de Salud (OMS) cada a\~{n}o existen aproximadamente 1,25 millones de muertes a causa de accidentes de tr\'{a}nsito, agregando que la mitad de todas estas victimas son peatones, ciclistas y motociclistas (V\'{e}ase la figura \ref{fig:oms} pag. \pageref{fig:oms}). Asimismo se puede decir que son una de las causas de muerte más importantes en el mundo, y la principal causa de muerte entre personas de edades comprendidas entre los 15 y los 29 años. 
+The main idea is to generate a model that learns the normal driving behavior of a specific agent, to later autonomously detect those unexpected behaviors and report them as anomalies, so that a traffic accident can be avoided or the effects of it reduced.
+%La idea principal, es generar un modelo que aprenda el comportamiento normal de conducci\'{o}n de un agente concreto, para posteriormente detectar de forma aut\'{o}noma aquellos comportamientos inesperados e informarlos como anomal\'{i}as, de manera que se pueda evitar  un accidente de tr\'{a}nsito o reducir los efectos del mismo.
+
+\section{Approach of the problem}
+
+Due to the serious consequences they cause on people and the high economic costs associated with them, traffic accidents are classified as a global social and public health problem.
+%Debido a las graves secuelas que causan sobre las personas y los altos costos econ\'{o}micos asociados a ellos, los accidentes de tr\'{a}nsito se catalogan como un problema social y de salud p\'{u}blica mundial.
+
+\vspace{5mm} %5mm vertical space
+
+According to the World Health Organization (WHO) each year there are approximately 1.25 million deaths due to traffic accidents, adding that half of all these victims are pedestrians, cyclists and motorcyclists (See Figure \ref{fig:oms} page \pageref{fig:oms}). It can also be said that they are one of the most important causes of death in the world, and the main cause of death among people between the ages of 15 and 29.
+%Seg\'{u}n la Organizaci\'{o}n Mundial de Salud (OMS) cada a\~{n}o existen aproximadamente 1,25 millones de muertes a causa de accidentes de tr\'{a}nsito, agregando que la mitad de todas estas victimas son peatones, ciclistas y motociclistas (V\'{e}ase la figura \ref{fig:oms} pag. \pageref{fig:oms}). Asimismo se puede decir que son una de las causas de muerte más importantes en el mundo, y la principal causa de muerte entre personas de edades comprendidas entre los 15 y los 29 años. 
 
 \vspace{5mm} %5mm vertical space
 
 \begin{figure}[h!]
   \begin{center}	\includegraphics[width=0.9\textwidth, fbox]{imagenes/Cap1/oms1}
-  \caption{Muertes por accidentes de tránsito por regi\'{o}n en función del tipo de usuario \protect\cite{Reference65}.}
+  \caption{Deaths due to traffic accidents by region depending on user's type \protect\cite{Reference65}.}
   \label{fig:oms}  
   \end{center}
 \end{figure}
