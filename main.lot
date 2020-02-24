@@ -2,34 +2,34 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Matriz de confusi\'{o}n, para una clasificaci\'{o}n binaria (Elaboraci\'{o}n propia).\relax }}{32}{table.100}
+\contentsline {table}{\numberline {3.1}{\ignorespaces Matriz de confusi\'{o}n, para una clasificaci\'{o}n binaria (Elaboraci\'{o}n propia).\relax }}{31}{table.100}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Tabla de divisi\'{o}n del conjunto de datos (Elaboraci\'{o}n propia).\relax }}{48}{table.156}
-\contentsline {table}{\numberline {4.2}{\ignorespaces Tabla con estad\'{i}sticas descriptivas de los datos escalados con diferentes t\'{e}cnicas (Elaboraci\'{o}n propia).\relax }}{52}{table.163}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Tabla de divisi\'{o}n del conjunto de datos (Elaboraci\'{o}n propia).\relax }}{46}{table.156}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Tabla con estad\'{i}sticas descriptivas de los datos escalados con diferentes t\'{e}cnicas (Elaboraci\'{o}n propia).\relax }}{50}{table.163}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Tabla del conjunto de anomal\'{i}as (Elaboraci\'{o}n propia).\relax }}{56}{table.168}
-\contentsline {table}{\numberline {5.2}{\ignorespaces Tabla de los m\'{e}todos comparados (Elaboraci\'{o}n propia).\relax }}{58}{table.176}
-\contentsline {table}{\numberline {5.3}{\ignorespaces Arquitectura densa para una secuencia de 3 pasos y 3 componentes principales (Elaboraci\'{o}n propia).\relax }}{59}{table.179}
-\contentsline {table}{\numberline {5.4}{\ignorespaces Arquitectura convolucional para una secuencia de 3 pasos y 3 componentes principales (Elaboraci\'{o}n propia).\relax }}{59}{table.180}
-\contentsline {table}{\numberline {5.5}{\ignorespaces Arquitectura recurrente para una secuencia de 3 pasos y 3 componentes principales (Elaboraci\'{o}n propia).\relax }}{60}{table.181}
-\contentsline {table}{\numberline {5.6}{\ignorespaces Evaluaci\'{o}n de las redes NN\_33, CNN\_33 y RNN\_33 (Elaboraci\'{o}n propia).\relax }}{61}{table.182}
-\contentsline {table}{\numberline {5.7}{\ignorespaces Evaluaci\'{o}n de la detecci\'{o}n de anomal\'{i}as para cada codo obtenido con los diferentes valores de sensibilidad (Elaboraci\'{o}n propia).\relax }}{65}{table.192}
-\contentsline {table}{\numberline {5.8}{\ignorespaces Evaluaci\'{o}n de la detecci\'{o}n de anomal\'{i}as usando Isolation forest para valores compresos (Elaboraci\'{o}n propia).\relax }}{67}{table.196}
-\contentsline {table}{\numberline {5.9}{\ignorespaces Evaluaci\'{o}n de la detecci\'{o}n de anomal\'{i}as usando Isolation forest para errores de reconstrucci\'{o}n (Elaboraci\'{o}n propia).\relax }}{68}{table.198}
-\contentsline {table}{\numberline {5.10}{\ignorespaces Evaluaci\'{o}n de la detecci\'{o}n de anomal\'{i}as usando One-Class SVM para valores compresos (Elaboraci\'{o}n propia).\relax }}{68}{table.200}
-\contentsline {table}{\numberline {5.11}{\ignorespaces Evaluaci\'{o}n de la detecci\'{o}n de anomal\'{i}as usando One-Class SVM para el error de reconstrucci\'{o}n del autoencoder (Elaboraci\'{o}n propia).\relax }}{68}{table.201}
-\contentsline {table}{\numberline {5.12}{\ignorespaces Comparaci\'{o}n de los mejores m\'{e}todos de detecci\'{o}n de anomal\'{i}as (Elaboraci\'{o}n propia).\relax }}{69}{table.203}
+\contentsline {table}{\numberline {5.1}{\ignorespaces Tabla del conjunto de anomal\'{i}as (Elaboraci\'{o}n propia).\relax }}{54}{table.168}
+\contentsline {table}{\numberline {5.2}{\ignorespaces Tabla de los m\'{e}todos comparados (Elaboraci\'{o}n propia).\relax }}{56}{table.176}
+\contentsline {table}{\numberline {5.3}{\ignorespaces Arquitectura densa para una secuencia de 3 pasos y 3 componentes principales (Elaboraci\'{o}n propia).\relax }}{57}{table.179}
+\contentsline {table}{\numberline {5.4}{\ignorespaces Arquitectura convolucional para una secuencia de 3 pasos y 3 componentes principales (Elaboraci\'{o}n propia).\relax }}{57}{table.180}
+\contentsline {table}{\numberline {5.5}{\ignorespaces Arquitectura recurrente para una secuencia de 3 pasos y 3 componentes principales (Elaboraci\'{o}n propia).\relax }}{58}{table.181}
+\contentsline {table}{\numberline {5.6}{\ignorespaces Evaluaci\'{o}n de las redes NN\_33, CNN\_33 y RNN\_33 (Elaboraci\'{o}n propia).\relax }}{59}{table.182}
+\contentsline {table}{\numberline {5.7}{\ignorespaces Evaluaci\'{o}n de la detecci\'{o}n de anomal\'{i}as para cada codo obtenido con los diferentes valores de sensibilidad (Elaboraci\'{o}n propia).\relax }}{63}{table.192}
+\contentsline {table}{\numberline {5.8}{\ignorespaces Evaluaci\'{o}n de la detecci\'{o}n de anomal\'{i}as usando Isolation forest para valores compresos (Elaboraci\'{o}n propia).\relax }}{65}{table.196}
+\contentsline {table}{\numberline {5.9}{\ignorespaces Evaluaci\'{o}n de la detecci\'{o}n de anomal\'{i}as usando Isolation forest para errores de reconstrucci\'{o}n (Elaboraci\'{o}n propia).\relax }}{66}{table.198}
+\contentsline {table}{\numberline {5.10}{\ignorespaces Evaluaci\'{o}n de la detecci\'{o}n de anomal\'{i}as usando One-Class SVM para valores compresos (Elaboraci\'{o}n propia).\relax }}{66}{table.200}
+\contentsline {table}{\numberline {5.11}{\ignorespaces Evaluaci\'{o}n de la detecci\'{o}n de anomal\'{i}as usando One-Class SVM para el error de reconstrucci\'{o}n del autoencoder (Elaboraci\'{o}n propia).\relax }}{66}{table.201}
+\contentsline {table}{\numberline {5.12}{\ignorespaces Comparaci\'{o}n de los mejores m\'{e}todos de detecci\'{o}n de anomal\'{i}as (Elaboraci\'{o}n propia).\relax }}{67}{table.203}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {6.1}{\ignorespaces Matriz de confusi\'{o}n, para el mecanismo de detecci\'{o}n de anomal\'{i}as (Elaboraci\'{o}n propia).\relax }}{74}{table.208}
-\contentsline {table}{\numberline {6.2}{\ignorespaces Resultados anomal\'{i}as tipo Zig Zag (Elaboraci\'{o}n propia).\relax }}{76}{table.215}
-\contentsline {table}{\numberline {6.3}{\ignorespaces Resultados del tipo Giros a alta Velocidad (Elaboraci\'{o}n propia).\relax }}{77}{table.221}
-\contentsline {table}{\numberline {6.4}{\ignorespaces Resultados del tipo Frenos en seco (Elaboraci\'{o}n propia).\relax }}{78}{table.227}
+\contentsline {table}{\numberline {6.1}{\ignorespaces Matriz de confusi\'{o}n, para el mecanismo de detecci\'{o}n de anomal\'{i}as (Elaboraci\'{o}n propia).\relax }}{72}{table.208}
+\contentsline {table}{\numberline {6.2}{\ignorespaces Resultados anomal\'{i}as tipo Zig Zag (Elaboraci\'{o}n propia).\relax }}{74}{table.215}
+\contentsline {table}{\numberline {6.3}{\ignorespaces Resultados del tipo Giros a alta Velocidad (Elaboraci\'{o}n propia).\relax }}{75}{table.221}
+\contentsline {table}{\numberline {6.4}{\ignorespaces Resultados del tipo Frenos en seco (Elaboraci\'{o}n propia).\relax }}{76}{table.227}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {A.1}{\ignorespaces Arquitectura densa para 3 componentes principales (Elaboraci\'{o}n propia).\relax }}{92}{table.241}
-\contentsline {table}{\numberline {A.2}{\ignorespaces Tabla de evaluaci\'{o}n de redes densas (Elaboraci\'{o}n propia).\relax }}{93}{table.243}
-\contentsline {table}{\numberline {A.3}{\ignorespaces Arquitectura convolucional para 3 componentes principales (Elaboraci\'{o}n propia).\relax }}{93}{table.246}
-\contentsline {table}{\numberline {A.4}{\ignorespaces Tabla de evaluaci\'{o}n de redes convolucionales (Elaboraci\'{o}n propia).\relax }}{94}{table.248}
-\contentsline {table}{\numberline {A.5}{\ignorespaces Arquitectura recurrente para 3 componentes principales (Elaboraci\'{o}n propia).\relax }}{94}{table.251}
-\contentsline {table}{\numberline {A.6}{\ignorespaces Tabla de evaluaci\'{o}n de redes recurrentes (Elaboraci\'{o}n propia).\relax }}{95}{table.253}
+\contentsline {table}{\numberline {A.1}{\ignorespaces Arquitectura densa para 3 componentes principales (Elaboraci\'{o}n propia).\relax }}{90}{table.241}
+\contentsline {table}{\numberline {A.2}{\ignorespaces Tabla de evaluaci\'{o}n de redes densas (Elaboraci\'{o}n propia).\relax }}{91}{table.243}
+\contentsline {table}{\numberline {A.3}{\ignorespaces Arquitectura convolucional para 3 componentes principales (Elaboraci\'{o}n propia).\relax }}{91}{table.246}
+\contentsline {table}{\numberline {A.4}{\ignorespaces Tabla de evaluaci\'{o}n de redes convolucionales (Elaboraci\'{o}n propia).\relax }}{92}{table.248}
+\contentsline {table}{\numberline {A.5}{\ignorespaces Arquitectura recurrente para 3 componentes principales (Elaboraci\'{o}n propia).\relax }}{92}{table.251}
+\contentsline {table}{\numberline {A.6}{\ignorespaces Tabla de evaluaci\'{o}n de redes recurrentes (Elaboraci\'{o}n propia).\relax }}{93}{table.253}
 \addvspace {10\p@ }
