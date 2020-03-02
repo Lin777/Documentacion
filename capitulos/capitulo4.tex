@@ -251,7 +251,7 @@ This function rectifies the values of inputs below zero, forcing them to become 
 
 \vspace{5mm} %5mm vertical space
 
-The main advantage of using ReLU is that it guarantees a faster calculation, since it does not calculate exponentials and divisions, with an improved general calculation speed \cite{Reference45}. Another property of ReLU is that it introduces the shortage in hidden units, since it reduces values between zero and maximum. However, RELU has the limitation that it is easily overfited compared to sigmoid function, although abandonment technique has been adopted to reduce overfited effect of ReLU and rectified networks improved performance of neural networks.
+The main advantage of using ReLU is that it guarantees a faster calculation, since it does not calculate exponentials and divisions, with an improved general calculation speed \cite{Reference45}. Another property of ReLU is that it introduces the shortage in hidden units, since it reduces values between zero and maximum. However, ReLU has the limitation that it is easily overfited compared to sigmoid function, although abandonment technique has been adopted to reduce overfited effect of ReLU and rectified networks improved performance of neural networks.
 %La principal ventaja de utilizar ReLU es que garantiza un cálculo más rápido, ya que no calcula exponenciales y divisiones, con una velocidad general de cálculo mejorada \cite{Reference45}. Otra propiedad de ReLU es que introduce la escasez en las unidades ocultas, ya que reduce los valores entre cero y máximo. Sin embargo, ReLU tiene la limitación de que se sobreajusta fácilmente en comparación con la función sigmoidea, aunque se ha adoptado la técnica de abandono para reducir el efecto de sobreajuste de ReLU y las redes rectificadas mejoraron el rendimiento de las redes neuronales.
 
 \vspace{5mm} %5mm vertical space
@@ -396,7 +396,7 @@ To understand the importance of time series, the following analogy can be taken,
 
 \vspace{5mm} %5mm vertical space
 
-Traditional neural networks do not have data persistence, which for some specific problems, including the one of this work, is a major deficiency. In order to solve these types of problems, Recurrent Neural Networks (RNN\footnote{\textbf{RNN,} Recurrent Neural Network}) appear, which are a type of artificial neural network proposed in the 80s (\citeNP{Reference34}; \citeNP{Reference35}; \citeNP{Reference36}) designed to recognize patterns in data streams, such as text, genomes, handwriting, numerical time series data emanating from sensors, among others
+Traditional neural networks do not have data persistence, which for some specific problems, including the one of this work, is a major deficiency. In order to solve these types of problems, Recurrent Neural Networks (RNN\footnote{\textbf{RNN,} Recurrent Neural Network}) appear, which are a type of artificial neural network proposed in the 80s (\citeNP{Reference34}; \citeNP{Reference35}; \citeNP{Reference36}) designed to recognize patterns in data streams, such as text, genomes, handwriting, numerical time series data emanating from sensors, among others.
 %Las redes neuronales tradicionales no tienen persistencia de los datos, lo que para algunos problemas en concreto, incluyendo el que se aborda en este trabajo, es una gran deficiencia. Con el fin de resolver este tipo de problemas aparecen las Redes Neuronales Recurrentes (RNN\footnote{\textbf{RNN,} Recurrent Neural Network}), las cuales son un tipo de red neuronal artificial propuesta en los a\~{n}os 80 (\citeNP{Reference34}; \citeNP{Reference35}; \citeNP{Reference36}) dise\~{n}ada para reconocer patrones en secuencias de datos, como texto, genomas, escritura a mano, datos de series de tiempo num\'{e}ricos que emanan de sensores, entre otros.
 
 \vspace{5mm} %5mm vertical space
@@ -406,7 +406,7 @@ RNNs are a particular family of neural networks where the network contains one o
 
 \vspace{5mm} %5mm vertical space
 
-RNN have a certain memory of what happened previously in a sequence of data, this helps system to gain context of data. Theoretically it is said that RNN has infinite memory, that is, these types of networks have ability to look back indefinitely; However, in practice you can only look back a few last steps.
+RNN have a certain memory of what happened previously in a sequence of data, this helps system to gain context of data. Theoretically it is said that RNN has infinite memory, that is, these types of networks have ability to look back indefinitely; however, in practice you can only look back a few last steps.
 %Las RNN tienen una cierta memoria de lo que sucedi\'{o} anteriormente en una secuencia de datos, esto ayuda al sistema a ganar contexto de los datos. Te\'{o}ricamente se dice que las RNN tiene memoria infinita, es decir, este tipo de redes tienen la capacidad de mirar hacia atr\'{a}s indefinidamente; sin embargo en la pr\'{a}ctica s\'{o}lo se puede mirar atr\'{a}s unos \'{u}ltimos pasos.
 
 \begin{figure}[h!]
@@ -416,7 +416,7 @@ RNN have a certain memory of what happened previously in a sequence of data, thi
   \end{center}
 \end{figure}
 
-Figure \ref{fig:rnn} illustrates a simple RNN with an input unit, an output unit and a recurring hidden unit expanded in a complete network, where xt is input in the time step t and t is output in the time step t. On the other hand, in training process, RNNs use the Backpropagation algorithm over time (BPTT\footnote{\textbf{BPTT,} Backpropagation Through The Time}). The BPTT process uses a backward, layer by layer, work approach of final output of network, adjusting the weights of each unit according to calculated unit portion of total output error. The repetition of information loops results in large updates of neural network model weights and leads to an unstable network due to accumulation of error gradients during the update process. Therefore, BPTT is not efficient enough to learn a pattern of long-term dependence due to disappearance of gradient and the explosion of gradient problems \cite{Reference50}. To overcome disappearance and explosion gradient problems that standard RNNs have, LSTM and GRU can be used \cite{Reference51}.
+Figure \ref{fig:rnn} illustrates a simple RNN with an input unit, an output unit and a recurring hidden unit expanded in a complete network, where $x_{t}$ is input in the time step $t$ and $y_{t}$ is output in the time step $t$. On the other hand, in training process, RNNs use the Backpropagation algorithm over time (BPTT\footnote{\textbf{BPTT,} Backpropagation Through The Time}). The BPTT process uses a backward, layer by layer, work approach of final output of network, adjusting the weights of each unit according to calculated unit portion of total output error. The repetition of information loops results in large updates of neural network model weights and leads to an unstable network due to accumulation of error gradients during the update process. Therefore, BPTT is not efficient enough to learn a pattern of long-term dependence due to disappearance of gradient and the explosion of gradient problems \cite{Reference50}. To overcome disappearance and explosion gradient problems that standard RNNs have, LSTM and GRU can be used \cite{Reference51}.
 %En la Figura \ref{fig:rnn} se ilustra una simple RNN con una unidad de entrada, una unidad de salida y una unidad oculta recurrente expandida en una red completa, donde $x_{t}$ es la entrada en el paso de tiempo $t$ y $y_{t}$ es la salida en el paso de tiempo $t$. Por otra parte en el proceso de entrenamiento las RNN usan el algoritmo de Backpropagation a trav\'{e}s del tiempo (BPTT\footnote{\textbf{BPTT,} Backpropagation Through The Time}). El proceso BPTT utiliza un enfoque de trabajo hacia atrás, capa por capa, de la salida final de la red, ajustando los pesos de cada unidad de acuerdo con la porción calculada de la unidad del error de la salida total. La repetición de los bucles de información da como resultado grandes actualizaciones de los pesos del modelo de red neuronal y conduce a una red inestable debido a la acumulación de gradientes de error durante el proceso de actualización. Por lo tanto, BPTT no es lo suficientemente eficiente como para aprender un patrón de dependencia a largo plazo debido a la desaparición del gradiente y la explosión de los problemas del gradiente \cite{Reference50}. Para superar los problemas de gradiente de desaparición y explosión que tienen las RNN estándar, se pueden usar LSTM y GRU \cite{Reference51}.
 
 \subsection{LSTM}
@@ -426,7 +426,7 @@ LSTM\footnote{\textbf{LSTM,} Long Short-Term Memory} is an evolution of RNN, it 
 
 \vspace{5mm} %5mm vertical space
 
-The LSTM model is organized in form of a chain structure. However, the repetition module has a different structure. Instead of a single neural network like a standard RNN, it has four interactive layers with a unique method of communication. The LSTM's structure is shown in Figure 3.8.
+The LSTM model is organized in form of a chain structure. However, the repetition module has a different structure. Instead of a single neural network like a standard RNN, it has four interactive layers with a unique method of communication. The LSTM's structure is shown in Figure \ref{fig:lstm}.
 %El modelo LSTM está organizado en forma de estructura de cadena. Sin embargo, el módulo de repetición tiene una estructura diferente. En lugar de una sola red neuronal como un RNN estándar, tiene cuatro capas interactivas con un método único de comunicación. La estructura de la red neuronal LSTM se muestra en la Figura \ref{fig:lstm}.
 
 \begin{figure}[h!]
@@ -446,7 +446,7 @@ A door is similar to a layer or a series of matrix operations, which contains di
 
 \subsection{GRU}
 
-GRU\footnote{\textbf{GRU, }Gated Recurrent Unit} was first designed by Kyunghyun Cho in (2014a). This RNN structure only contains two doors. The update door controls information that flows into memory, while the reset door controls information that flows out of memory. Similar to LSTM, GRU has gate units that modulate flow of information within the unit; however, without having a separate memory cell. One could say that GRU is a slightly more simplified variant of RNN that often offers comparable performance to LSTM and is significantly faster to calculate.
+GRU\footnote{\textbf{GRU, }Gated Recurrent Unit} was first designed by Kyunghyun Cho in \citeyear{Reference55}. This RNN structure only contains two doors. The update door controls information that flows into memory, while the reset door controls information that flows out of memory. Similar to LSTM, GRU has gate units that modulate flow of information within the unit; however, without having a separate memory cell. One could say that GRU is a slightly more simplified variant of RNN that often offers comparable performance to LSTM and is significantly faster to calculate.
 %GRU\footnote{\textbf{GRU, }Gated Recurrent Unit} fue dise\~{n}ado por primera vez por Kyunghyun Cho en \citeyear{Reference55}. Esta estructura de RNN s\'{o}lo contiene dos puertas. La puerta de actualizaci\'{o}n controla la informaci\'{o}n que fluye hacia la memoria, mientras que la puerta de reinicio controla la informaci\'{o}n que fluye fuera de la memoria. De manera similar a la LSTM, GRU tiene unidades de compuerta que modulan el flujo de informaci\'{o}n dentro de la unidad; sin embargo, sin tener una celda de memoria separada. Se podr\'{i}a decir que GRU es una variante de RNN un poco m\'{a}s simplificada que a menudo ofrece un rendimiento comparable a LSTM y es significativamente m\'{a}s r\'{a}pido de calcular.
 
 \vspace{5mm} %5mm vertical space
@@ -455,8 +455,8 @@ In summary, GRUs have following two distinctive characteristics:
 %En resumen, las GRU tienen las siguientes dos caracter\'{i}sticas distintivas:
 
 \begin{itemize}
-\item Reset doors help capture short-term dependencies in time series.
-\item Update doors help capture long-term dependencies in time series.
+\item  \textbf{Reset doors} help capture short-term dependencies in time series.
+\item  \textbf{Update doors} help capture long-term dependencies in time series.
 %\item Las \textbf{puertas de reinicio} ayudan a capturar dependencias a corto plazo en series de tiempo.
 %\item Las \textbf{puertas de actualizaci\'{o}n} ayudan a capturar dependencias a largo plazo en series de tiempo.
 \end{itemize}
@@ -508,7 +508,7 @@ The basic component of Isolation Forest is the isolation tree, which is a simple
 
 \vspace{5mm} %5mm vertical space
 
-Unlike other methods such as grouping or classification, isolation forests do not learn a profile of what is normal, but instead directly attack anomalies. No distance metric is used in this algorithm which saves time in calculations; So isolation forests have a linear temporal complexity.
+Unlike other methods such as grouping or classification, isolation forests do not learn a profile of what is normal, but instead directly attack anomalies. No distance metric is used in this algorithm which saves time in calculations; so isolation forests have a linear temporal complexity.
 %A diferencia de otros métodos como la agrupación o clasificación, los bosques de aislamiento no aprenden un perfil de lo que es normal, sino que atacan directamente las anomalías. No se utiliza métrica de distancia en este algoritmo lo cual ahorra tiempo en los cálculos; por lo que los bosques de aislamiento tienen una complejidad temporal lineal. 
 
 \vspace{5mm} %5mm vertical space	
@@ -525,7 +525,7 @@ A comparison of the ability of Isolation Forest and One-Class SVM algorithms to 
 
 \subsection{Autoencoders}
 
-Today, autoencoders have been widely used in image classification, machine translation and voice processing; This is due to its ability to compress data without supervision. As far as is known, \shortciteA{Reference57} and \shortciteA{Reference58} were the first to propose autocoders for anomaly detection. Since then, the ability of auto-encoders to detect outliers was demonstrated in different domains such as the detection of anomalies in X-rays.
+Today, autoencoders have been widely used in image classification, machine translation and voice processing; This is due to its ability to compress data without supervision. As far as is known, \shortciteA{Reference57} and \shortciteA{Reference58} were the first to propose autoencoders for anomaly detection. Since then, the ability of auto-encoders to detect outliers was demonstrated in different domains such as the detection of anomalies in X-rays.
 %Hoy en día, los autoencoders se han utilizado ampliamente en la clasificación de imágenes, traducción automática y procesamiento de voz; esto debido a su capacidad de compresión de datos sin supervisión. Hasta donde se sabe, \shortciteA{Reference57} y \shortciteA{Reference58} fueron los primeros que propusieron autocodificadores para la detección de anomalías. Desde entonces, la capacidad de los autoencoders para detectar valores at\'{i}picos se demostró en diferentes dominios como por ejemplo la detecci\'{o}n de anomal\'{i}as en rayos X.
 
 \vspace{5mm} %5mm vertical space
@@ -557,40 +557,50 @@ C(z) = \left\lbrace
 Evaluating machine learning algorithms is an essential part of any project, because a model can provide satisfactory results when evaluated with a metric; but it can give a poor result when another metric is used. Classification accuracy is commonly used to measure the performance of a model, however, it is not enough to judge a model. Different types of evaluation metrics will be covered below.
 %Evaluar los algoritmos de aprendizaje autom\'{a}tico es una parte esencial para cualquier proyecto, debido a que un modelo puede brindar resultados satisfactorios cuando es evaluado con una m\'{e}trica; pero puede dar un resultado deficiente cuando se utiliza otra m\'{e}trica. Com\'{u}nmente se usa la precisi\'{o}n de clasificaci\'{o}n para medir el rendimiento de un modelo, sin embargo, no es suficiente para juzgar un modelo. A continuaci\'{o}n se cubrir\'{a} diferentes tipos de m\'{e}tricas de evaluaci\'{o}n.
 
-\subsection{Precisi\'{o}n de clasificaci\'{o}n (accuracy)}
+\subsection{Classification Accuracy}
 
-La precisi\'{o}n de clasificaci\'{o}n, conocida tambi\'{e}n con el nombre de precisi\'{o}n, es la relaci\'{o}n entre el n\'{u}mero de predicciones correctas y el n\'{u}mero total de muestras de entrada.
+The classification accuracy is the relationship between the number of correct predictions and the total number of input samples.
+%La precisi\'{o}n de clasificaci\'{o}n, conocida tambi\'{e}n con el nombre de precisi\'{o}n, es la relaci\'{o}n entre el n\'{u}mero de predicciones correctas y el n\'{u}mero total de muestras de entrada.
 
 \begin{equation}
-\textup{Precisi\'{o}n} = \frac{\textup{N\'{u}mero de predicciones correctas}}{\textup{N\'{u}mero total de predicciones realizadas}}
+\textup{Accuracy} = \frac{\textup{Number of correct predictions}}{\textup{Total number of predictions made}}
 \end{equation}
 
-Esta m\'{e}trica funciona bien si hay el mismo n\'{u}mero de muestras que pertenecen a cada clase; por ejemplo, si se considera que se tiene un conjunto de datos que contiene 98\% de muestras que pertenecen a la clase A y 2\% que pertenecen a la clase B, el modelo podr\'{i}a obtener f\'{a}cilmente un 98\% de precisi\'{o}n de entrenamiento simplemente prediciendo cada muestra de entrenamiento como clase A. 
+This metric works well if there are the same number of samples that belong to each class; for example, if you consider that you have a data set that contains 98\% of samples that belong to class A and 2\% that belong to class B, the model could easily obtain 98\% training accuracy by simply predicting each training sample as class A.
+%Esta m\'{e}trica funciona bien si hay el mismo n\'{u}mero de muestras que pertenecen a cada clase; por ejemplo, si se considera que se tiene un conjunto de datos que contiene 98\% de muestras que pertenecen a la clase A y 2\% que pertenecen a la clase B, el modelo podr\'{i}a obtener f\'{a}cilmente un 98\% de precisi\'{o}n de entrenamiento simplemente prediciendo cada muestra de entrenamiento como clase A. 
 
 \vspace{5mm} %5mm vertical space
 
-Esto conlleva que la precisi\'{o}n puede dar la falsa sensaci\'{o}n de lograr una alta precisi\'{o}n, lo cual se convierte en un verdadero problema si se trata problemas que conllevan la detecci\'{o}n de cosas de alto riesgo; por ejemplo, de una enfermedad rara pero mortal ya que el costo de no diagnosticar la enfermedad de una persona enferma es mucho mayor que el costo de enviar a una persona sana a realizarce  m\'{a}s an\'{a}lisis.
+This implies that precision can give the false feeling of achieving high precision, which becomes a real problem if it involves problems that involve the detection of high-risk things; for example, a rare but deadly disease since cost of not diagnosing a sick person's disease is much higher than cost of sending a healthy person for further analysis.
+%Esto conlleva que la precisi\'{o}n puede dar la falsa sensaci\'{o}n de lograr una alta precisi\'{o}n, lo cual se convierte en un verdadero problema si se trata problemas que conllevan la detecci\'{o}n de cosas de alto riesgo; por ejemplo, de una enfermedad rara pero mortal ya que el costo de no diagnosticar la enfermedad de una persona enferma es mucho mayor que el costo de enviar a una persona sana a realizarce  m\'{a}s an\'{a}lisis.
 
-\subsection{P\'{e}rdida logar\'{i}tmica (Logarithmic Loss)}
+\subsection{Logarithmic Loss}
 
-La p\'{e}rdida logar\'{i}tmica, conocida tambi\'{e}n como \textit{Log Loss}, funciona penalizando las clasificaciones falsas, adem\'{a}s tiene un buen rendimiento para la clasificaci\'{o}n de varias clases. Cuando se trabaja con Log Loss, el clasificador debe asignar una probabilidad a cada clase de todas las muestras; suponiendo que hay $N$ muestras que pertenecen a clases $M$, Log Loss se calcula seg\'{u}n la siguiente ecuaci\'{o}n:
+Logarithmic loss, also known as Log Loss, works by penalizing false classifications, and also has a good performance for the classification of various classes. When working with Log Loss, the classifier must assign a probability to each class of all samples; assuming that there are $N$ samples that belong to $M$ classes, Log Loss is calculated according to the following equation:
+%La p\'{e}rdida logar\'{i}tmica, conocida tambi\'{e}n como \textit{Log Loss}, funciona penalizando las clasificaciones falsas, adem\'{a}s tiene un buen rendimiento para la clasificaci\'{o}n de varias clases. Cuando se trabaja con Log Loss, el clasificador debe asignar una probabilidad a cada clase de todas las muestras; suponiendo que hay $N$ muestras que pertenecen a clases $M$, Log Loss se calcula seg\'{u}n la siguiente ecuaci\'{o}n:
 
 \begin{equation}
 LogarithmicLoss = \frac{-1}{N}\sum_{i=1}^{N}\sum_{j=1}^{M} y_{ij}*log(p_{ij})
 \end{equation}
 
-donde:
+where:
 \\
-$y_{ij}$, indica si la muestra $i$ pertenece a la clase $j$ o no.\\
-$p_{ij}$, indica la probabilidad de que la muestra $i$ pertenezca a la clase $j$.
+$y_{ij}$, indicates whether sample $i$ belongs to class $j$ or not.\\
+$p_{ij}$, indicates the probability that the sample $i$ belongs to class $j$.
+%donde:
+%\\
+%$y_{ij}$, indica si la muestra $i$ pertenece a la clase $j$ o no.\\
+%$p_{ij}$, indica la probabilidad de que la muestra $i$ pertenezca a la clase $j$.
 
 \vspace{5mm} %5mm vertical space
 
-Log Loss no tiene l\'{i}mite superior y existe en el rango $[0, \infty )$. Cuando se obtiene un Log Loss cercano a 0 indica una mayor precisi\'{o}n, mientras que si est\'{a} lejos de 0 indica una menor precisi\'{o}n. En general se puede decir que minimizar Log Loss proporciona una mayor precisi\'{o}n para el clasificador.
+Log Loss has no upper limit and exists in the range $[0, \infty )$. When a Log Loss close to 0 is obtained, it indicates greater precision, while if it is far from 0 it indicates less precision. In general, it can be said that minimizing Log Loss provides greater accuracy for classifier.
+%Log Loss no tiene l\'{i}mite superior y existe en el rango $[0, \infty )$. Cuando se obtiene un Log Loss cercano a 0 indica una mayor precisi\'{o}n, mientras que si est\'{a} lejos de 0 indica una menor precisi\'{o}n. En general se puede decir que minimizar Log Loss proporciona una mayor precisi\'{o}n para el clasificador.
 
-\subsection{Matriz de confusi\'{o}n}
+\subsection{Confusion Matrix}
 
-La matriz de confusi\'{o}n, tambi\'{e}n llamada matriz de error, es el m\'{e}todo m\'{a}s com\'{u}n para evaluar la exactitud de un resultado de clasificaci\'{o}n \cite{Reference61}. Esta matriz es una tabulaci\'{o}n cruzada de los datos esperados y los resultados de la clasificaci\'{o}n del modelo. El n\'{u}mero de columnas y filas es igual al n\'{u}mero de categor\'{i}as de la clasificaci\'{o}n y de ellas se derivan diferentes medidas estad\'{i}sticas.
+Confusion matrix, also called error matrix, is the most common method to evaluate accuracy of a classification result \cite{Reference61}. This matrix is a cross-tabulation of expected data and results of classification model. The number of columns and rows is equal to number of categories in classification and different statistical measures are derived from them.
+%La matriz de confusi\'{o}n, tambi\'{e}n llamada matriz de error, es el m\'{e}todo m\'{a}s com\'{u}n para evaluar la exactitud de un resultado de clasificaci\'{o}n \cite{Reference61}. Esta matriz es una tabulaci\'{o}n cruzada de los datos esperados y los resultados de la clasificaci\'{o}n del modelo. El n\'{u}mero de columnas y filas es igual al n\'{u}mero de categor\'{i}as de la clasificaci\'{o}n y de ellas se derivan diferentes medidas estad\'{i}sticas.
 
 \begin{table}[H]
 
@@ -598,64 +608,72 @@ La matriz de confusi\'{o}n, tambi\'{e}n llamada matriz de error, es el m\'{e}tod
 \begin{center}
 \begin{tabular}{ll|c|c|}
 \cline{3-4}
-                                                        &                                              & \multicolumn{2}{c|}{\textbf{Predicci\'{o}n}}                                                          \\ \cline{3-4} 
-                                                        &                                              & \textbf{Clase Positiva}                         & \textbf{Clase Negativa}                         \\ \hline
-\multicolumn{1}{|c|}{}                                  & \multicolumn{1}{c|}{\textbf{Clase Positiva}} & \cellcolor[HTML]{AADD99}Verdadero Positivo (VP) & \cellcolor[HTML]{FFCE93}Falso Negativo (FN)     \\ \cline{2-4} 
-\multicolumn{1}{|c|}{\multirow{-2}{*}{\textbf{Reales}}} & \multicolumn{1}{c|}{\textbf{Clase Negativa}} & \cellcolor[HTML]{DF9F9F}Falso Positivo (FP)     & \cellcolor[HTML]{AADD99}Verdadero Negativo (VN) \\ \hline
+                                                        &                                              & \multicolumn{2}{c|}{\textbf{Prediction}}                                                          \\ \cline{3-4} 
+                                                        &                                              & \textbf{Positive Class}                         & \textbf{Negative Class}                         \\ \hline
+\multicolumn{1}{|c|}{}                                  & \multicolumn{1}{c|}{\textbf{Positive Class}} & \cellcolor[HTML]{AADD99}True Positive (TP) & \cellcolor[HTML]{FFCE93}False Negative (FN)     \\ \cline{2-4} 
+\multicolumn{1}{|c|}{\multirow{-2}{*}{\textbf{Real}}} & \multicolumn{1}{c|}{\textbf{Negative Class}} & \cellcolor[HTML]{DF9F9F}False Positive (FP)     & \cellcolor[HTML]{AADD99}True Negative (TN) \\ \hline
 \end{tabular}
-\caption{Matriz de confusi\'{o}n, para una clasificaci\'{o}n binaria (Elaboraci\'{o}n propia).}
+\caption{Confusion matrix, for a binary classification (Own elaboration).}
 \label{table:matriz}
 \end{center}
 \end{table}
 
 \vspace{5mm} %5mm vertical space
 
-En el Cuadro \ref{table:matriz} las filas de la matriz representan los valores reales, mientras que las columnas est\'{a}n asociadas con los datos clasificados por el modelo (predicciones). La diagonal principal, que se presenta de color verde, indica los aciertos \'{o} Verdaderos Positivos (VP) y Verdaderos Negativos (VN), que son todos aquellos datos donde el modelo obtiene el mismo resultado que se esperaba obtener. En cuanto a todos los dem\'{a}s valores de la matriz pertenecen a aquellos datos que fueron clasificados de forma err\'{o}nea, estos se clasifican en dos clases: Falsos Positivos (FP), que en la matriz se presentan de color rojo y Falsos Negativos (FN) que en la matriz fueron representados de color naranja.
+In Table \ref{table:matriz} the rows of matrix represent the real values, while columns are associated with the data classified by the model (predictions). The main diagonal, which appears in green, indicates the successes or True Positives (TP) and True Negatives (TN), which are all those data where model obtains the same result that was expected to be obtained. As for all the other values of the matrix, they belong to those data that were classified incorrectly, these are classified into two classes: False Positives (FP), which inthe  matrix are presented in red and False Negatives (FN) that in the matrix they were represented in orange.
+%En el Cuadro \ref{table:matriz} las filas de la matriz representan los valores reales, mientras que las columnas est\'{a}n asociadas con los datos clasificados por el modelo (predicciones). La diagonal principal, que se presenta de color verde, indica los aciertos \'{o} Verdaderos Positivos (VP) y Verdaderos Negativos (VN), que son todos aquellos datos donde el modelo obtiene el mismo resultado que se esperaba obtener. En cuanto a todos los dem\'{a}s valores de la matriz pertenecen a aquellos datos que fueron clasificados de forma err\'{o}nea, estos se clasifican en dos clases: Falsos Positivos (FP), que en la matriz se presentan de color rojo y Falsos Negativos (FN) que en la matriz fueron representados de color naranja.
 
 \vspace{5mm} %5mm vertical space
 
-La precisi\'{o}n global de la matriz se calcula dividiendo la suma de muestras correctamente clasificadas por el n\'{u}mero total de muestras tomadas \ref{eqn:exactitud}. Este valor es una medida de clasificaci\'{o}n como un todo, ya que indica la probabilidad de que una muestra se clasifique correctamente.
+The overall accuracy of matrix is calculated by dividing the sum of  correctly classified samples by the total number of samples taken \ref{eqn:exactitud}. This value is a measure of classification as a whole, since it indicates the probability that a sample is correctly classified.
+%La precisi\'{o}n global de la matriz se calcula dividiendo la suma de muestras correctamente clasificadas por el n\'{u}mero total de muestras tomadas \ref{eqn:exactitud}. Este valor es una medida de clasificaci\'{o}n como un todo, ya que indica la probabilidad de que una muestra se clasifique correctamente.
 
 \begin{equation}
-Exactitud=\frac{VP+VN}{VP+VN+FP+FN}
+Accuracy=\frac{TP+TN}{TP+TN+FP+FN}
 \label{eqn:exactitud}
 \end{equation}
 
-La exactitud no es una medida adecuada para la evaluaci\'{o}n de algoritmos de detecci\'{o}n de valores at\'{i}picos, debido a que la mayoria de las veces un falso negativo es mucho m\'{a}s costoso que un falso positivo, adem\'{a}s que los conjuntos de entrenamiento presentan una gran cantidad de datos normales comparado a la cantidad de datos an\'{o}malos. Existen dos m\'{e}tricas comunes para evaluar algoritmos de detecci\'{o}n de valores at\'{i}picos, AUC y F1 Score; a continuaci\'{o}n se profundizar\'{a} detalladamente estas dos m\'{e}tricas.
+Accuracy is not an adequate measure for the evaluation of atypical value detection algorithms, because most of the time a false negative is much more expensive than a false positive, in addition to training sets presenting a large amount of data normal compared to amount of anomalous data. There are two common metrics to evaluate outlier detection algorithms, AUC and F1 Score; These two metrics will be deepened in detail.
+%La exactitud no es una medida adecuada para la evaluaci\'{o}n de algoritmos de detecci\'{o}n de valores at\'{i}picos, debido a que la mayoria de las veces un falso negativo es mucho m\'{a}s costoso que un falso positivo, adem\'{a}s que los conjuntos de entrenamiento presentan una gran cantidad de datos normales comparado a la cantidad de datos an\'{o}malos. Existen dos m\'{e}tricas comunes para evaluar algoritmos de detecci\'{o}n de valores at\'{i}picos, AUC y F1 Score; a continuaci\'{o}n se profundizar\'{a} detalladamente estas dos m\'{e}tricas.
 
-\subsection{\'{A}rea bajo la curva (AUC)}
+\subsection{Area Under Curve (AUC)}
 
-\'{A}rea bajo la curva (AUC\footnote{\textbf{AUC, }Area Under Curve}) es una de las m\'{e}tricas m\'{a}s utilizadas para la evaluaci\'{o}n. Se utiliza para problemas de clasificaci\'{o}n binaria.
+Area Under Curve (AUC) is one of the most used metrics for evaluation. It is used for binary classification problems.
+%Area Under Curve (AUC) es una de las m\'{e}tricas m\'{a}s utilizadas para la evaluaci\'{o}n. Se utiliza para problemas de clasificaci\'{o}n binaria.
 
 \vspace{5mm} %5mm vertical space
 
-El AUC de un clasificador es igual a la probabilidad de que el clasificador clasifique un ejemplo positivo elegido al azar m\'{a}s alto que un ejemplo negativo elegido al azar. Antes de definir AUC, se debe comprender los siguientes t\'{e}rminos:
+The AUC of a classifier is equal to the probability that the classifier classifies a positive example chosen at random higher than a negative example chosen at random. Before defining AUC, following terms must be understood:
+%El AUC de un clasificador es igual a la probabilidad de que el clasificador clasifique un ejemplo positivo elegido al azar m\'{a}s alto que un ejemplo negativo elegido al azar. Antes de definir AUC, se debe comprender los siguientes t\'{e}rminos:
 
-\subsubsection{Tasa de Verdaderos Positivos (TPR)}
+\subsubsection{Recall or Sensitivity or True Positive Rate (TPR)}
 
-La tasa de verdaderos positivos (TPR\footnote{\textbf{TPR, }de sus siglas en ingl\'{e}s True Positive Rate, tambi\'{e}n conocido como Sensitivity.}), tambi\'{e}n conocida como sensibilidad, corresponde a la proporción de puntos de datos positivos que se consideran correctamente como positivos, con respecto a todos los puntos de datos positivos. Se define seg\'{u}n la ecuaci\'{o}n \ref{eqn:sensibility}.
+True positive rate, also known as sensitivity, corresponds to the proportion of positive data points that are correctly considered positive, with respect to all positive data points. It is defined according to equation \ref{eqn:sensibility}.
+%La tasa de verdaderos positivos (TPR\footnote{\textbf{TPR, }de sus siglas en ingl\'{e}s True Positive Rate, tambi\'{e}n conocido como Sensitivity.}), tambi\'{e}n conocida como sensibilidad, corresponde a la proporción de puntos de datos positivos que se consideran correctamente como positivos, con respecto a todos los puntos de datos positivos. Se define seg\'{u}n la ecuaci\'{o}n \ref{eqn:sensibility}.
 
 \begin{equation}
-Sensibilidad = \frac{VP}{FN+VP}
+Sensitivity = \frac{TP}{FN+TP}
 \label{eqn:sensibility}
 \end{equation}
 
-\subsubsection{Tasa de Verdaderos Negativos (TNR) }
+\subsubsection{Specificity or True Negative Rate (TNR) }
 
-La tasa de verdaderos negativos (TNR\footnote{\textbf{TNR, }de sus siglas en ingl\'{e}s True Negative Rate, tambi\'{e}n conocido como Specificity.}), tambi\'{e}n conocida como especificidad, corresponde a la proporción de puntos de datos negativos que se consideran correctamente como negativos, con respecto a todos los puntos de datos negativos. Se define seg\'{u}n la ecuaci\'{o}n \ref{eqn:specificity}.
+True negative rate, also known as specificity, corresponds to the proportion of negative data points that are correctly considered negative, with respect to all negative data points. It is defined according to equation \ref{eqn:specificity}.
+%La tasa de verdaderos negativos (TNR\footnote{\textbf{TNR, }de sus siglas en ingl\'{e}s True Negative Rate, tambi\'{e}n conocido como Specificity.}), tambi\'{e}n conocida como especificidad, corresponde a la proporción de puntos de datos negativos que se consideran correctamente como negativos, con respecto a todos los puntos de datos negativos. Se define seg\'{u}n la ecuaci\'{o}n \ref{eqn:specificity}.
 
 \begin{equation}
-Especificidad = \frac{VN}{FP+VN}
+Specificity = \frac{TN}{FP+TN}
 \label{eqn:specificity}
 \end{equation}
 
 \subsubsection{ROC (Receiver Operating Characteristics)}
 
-ROC es la curva dibujada conectando los puntos del eje X = FPR (Tasa de falsos positivos) y el eje y = TPR (Tasa de verdaderos positivos) para diferentes valores de un umbral de discriminaci\'{o}n (l\'{i}mite de decisi\'{o}n para determinar si un valor corresponde a una clase o no) para un modelo, es decir, se elige diferentes umbrales para un modelo, se calcula el TPR y FPR para cada umbral, luego dibuja la curva ROC y finalmente se calcula el AUC, que es el \'{a}rea bajo la curva ROC. En la Figura \ref{fig:auc_roc} se muestra un ejemplo de la curva AUC-ROC.
+ROC is the curve drawn by connecting the points on the X axis = FPR (False positive rate) and the y axis = TPR (True positive rate) for different values of a discrimination threshold (decision limit to determine if a value corresponds to a class or not) for a model, that is, different thresholds are chosen for a model, the TPR and FPR are calculated for each threshold, then it draws the ROC curve and finally the AUC is calculated, which is the area under the curve ROC . An example of the AUC-ROC curve is shown in Figure \ref{fig:auc_roc}.
+%ROC es la curva dibujada conectando los puntos del eje X = FPR (Tasa de falsos positivos) y el eje y = TPR (Tasa de verdaderos positivos) para diferentes valores de un umbral de discriminaci\'{o}n (l\'{i}mite de decisi\'{o}n para determinar si un valor corresponde a una clase o no) para un modelo, es decir, se elige diferentes umbrales para un modelo, se calcula el TPR y FPR para cada umbral, luego dibuja la curva ROC y finalmente se calcula el AUC, que es el \'{a}rea bajo la curva ROC. En la Figura \ref{fig:auc_roc} se muestra un ejemplo de la curva AUC-ROC.
 
 \begin{figure}[h!]
   \begin{center}	\includegraphics[width=0.65\textwidth, frame]{imagenes/Cap4/auc_roc}
-  \caption{Ejemplo de un curva AUC-ROC \protect\cite{Reference62}.}
+  \caption{Example of an AUC-ROC curve \protect\cite{Reference62}.}
   \label{fig:auc_roc}
   \end{center}
 \end{figure}
@@ -663,29 +681,34 @@ ROC es la curva dibujada conectando los puntos del eje X = FPR (Tasa de falsos p
 
 \vspace{5mm} %5mm vertical space
 
-Existen dos razones principales por lo que se necesita esta curva, la primera es que refleja que tan bueno es el modelo para separar dos clases y la segunda es que ayuda a elegir el mejor umbral; por ejemplo, un AUC igual a 0,5 significa que el modelo separa dos posibles resultados al azar y un AUC de 1 (valor m\'{a}ximo) implica una separaci\'{o}n perfecta; por lo tanto se puede decir que mientras mayor sea el valor de AUC mejor es el rendimiento del modelo que se est\'{e} evaluando.
+There are two main reasons why this curve is needed, first is that it reflects how good the model is to separate two classes and second is that it helps to choose the best threshold; for example, an AUC equal to 0.5 means that model separates two possible random results and an AUC of 1 (maximum value) implies a perfect separation; therefore, it can be said that the higher the value of AUC, better will be the performance of evaluated model. 
+%Existen dos razones principales por lo que se necesita esta curva, la primera es que refleja que tan bueno es el modelo para separar dos clases y la segunda es que ayuda a elegir el mejor umbral; por ejemplo, un AUC igual a 0,5 significa que el modelo separa dos posibles resultados al azar y un AUC de 1 (valor m\'{a}ximo) implica una separaci\'{o}n perfecta; por lo tanto se puede decir que mientras mayor sea el valor de AUC mejor es el rendimiento del modelo que se est\'{e} evaluando.
 
 \subsection{F1 Score}
 
-F1 Score define que tan preciso es un modelo, es decir, cu\'{a}ntas instancias clasifica correctamente, as\'{i} como tambi\'{e}n indica que tan robusto es el modelo. Esta m\'{e}trica es necesaria cuando se desea buscar un equilibrio entre la precisi\'{o}n y la recuperaci\'{o}n, ya que da una evaluaci\'{o}n justa incluso cuando el conjunto de datos se encuentra desequilibrado.
+F1 Score defines how accurate is a model, that is, how many instances it classifies correctly, as well as indicating how robust is model. This metric is necessary when you want to find a balance between accuracy and recovery, since it gives a fair evaluation even when the data set is unbalanced.
+%F1 Score define que tan preciso es un modelo, es decir, cu\'{a}ntas instancias clasifica correctamente, as\'{i} como tambi\'{e}n indica que tan robusto es el modelo. Esta m\'{e}trica es necesaria cuando se desea buscar un equilibrio entre la precisi\'{o}n y la recuperaci\'{o}n, ya que da una evaluaci\'{o}n justa incluso cuando el conjunto de datos se encuentra desequilibrado.
 
-\subsubsection{Precisi\'{o}n (Precision)}
+\subsubsection{Precision}
 
-La precisi\'{o}n es el n\'{u}mero de resultados positivos correctos dividido por el n\'{u}mero de resultados positivos predichos por el clasificador.
-
-\begin{equation}
-Precision = \frac{VP}{VP+FP}
-\end{equation}
-
-\subsubsection{Recuperaci\'{o}n (Recall)}
-
-Es el n\'{u}mero de resultados positivos correctos dividido por el n\'{u}mero de todas las muestras que deber\'{i}an haber sido clasificadas como positivas.
+Precision is the number of correct positive results divided by the number of positive results predicted by classifier.
+%La precisi\'{o}n es el n\'{u}mero de resultados positivos correctos dividido por el n\'{u}mero de resultados positivos predichos por el clasificador.
 
 \begin{equation}
-Recall = TPR = \frac{VP}{VP+FN}
+Precision = \frac{TP}{TP+FP}
 \end{equation}
 
-Por lo tanto, F1 Score se expresa matem\'{a}ticamente como:
+\subsubsection{Recall}
+
+It is the number of correct positive results divided by the number of all samples that should have been classified as positive.
+%Es el n\'{u}mero de resultados positivos correctos dividido por el n\'{u}mero de todas las muestras que deber\'{i}an haber sido clasificadas como positivas.
+
+\begin{equation}
+Recall = TPR = \frac{TP}{TP+FN}
+\end{equation}
+
+Therefore, F1 Score is expressed mathematically as:
+%Por lo tanto, F1 Score se expresa matem\'{a}ticamente como:
 
 \begin{equation}
 F1 = 2*\frac{1}{\frac{1}{Precision}+\frac{1}{Recall}}
@@ -697,4 +720,5 @@ F1 = 2*\frac{1}{\frac{1}{Precision}+\frac{1}{Recall}}
 
 %El siguiente cap\'{i}tulo detalla el proceso de captura y preparaci\'{o}n del conjunto de datos, una etapa importante, debido a que este conjunto ser\'{a} aquel con el que se entrenar\'{a} el mecanismo de detecci\'{o}n de anomal\'{i}as propuesto.
 
-El siguiente cap\'{i}tulo detalla el proceso de captura y preparaci\'{o}n del conjunto de datos, una etapa importante, debido a que este conjunto ser\'{a} aquel con el que se entrenar\'{a} el mecanismo de detecci\'{o}n de anomal\'{i}as propuesto.
+Next chapter details the process of capturing and preparing the data set, an important stage, because this set will be the one with which proposed anomaly detection mechanism will be trained.
+%El siguiente cap\'{i}tulo detalla el proceso de captura y preparaci\'{o}n del conjunto de datos, una etapa importante, debido a que este conjunto ser\'{a} aquel con el que se entrenar\'{a} el mecanismo de detecci\'{o}n de anomal\'{i}as propuesto.

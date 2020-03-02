@@ -25,47 +25,47 @@
 \contentsline {figure}{\numberline {3.10}{\ignorespaces One-Class SVM. Reproduced from \cite {Reference72}\relax }}{27}{figure.88}
 \contentsline {figure}{\numberline {3.11}{\ignorespaces Performance comparison between the One-Clas SVM and Isolation Forest algorithms. Reproduced from \cite {Reference73}.\relax }}{28}{figure.90}
 \contentsline {figure}{\numberline {3.12}{\ignorespaces Detection of anomalies with autoencoder (Own elaboration).\relax }}{29}{figure.93}
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Ejemplo de un curva AUC-ROC \cite {Reference62}.\relax }}{33}{figure.111}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Example of an AUC-ROC curve \cite {Reference62}.\relax }}{33}{figure.108}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Recolecci\'{o}n de datos, con intervalo de un segundo (Elaboraci\'{o}n propia).\relax }}{36}{figure.120}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Soporte para celular de parabrisas, posici\'{o}n horizontal (Elaboraci\'{o}n propia).\relax }}{36}{figure.121}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Fragmento del conjunto de datos obtenido (Elaboraci\'{o}n propia).\relax }}{37}{figure.122}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Gr\'{a}fica de los sensores capturados en diferentes posiciones (Elaboraci\'{o}n propia).\relax }}{38}{figure.127}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Histograma de frecuencias del conjunto de datos (Elaboraci\'{o}n propia).\relax }}{40}{figure.132}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Tabla de resultados estad\'{i}sticos del conjunto de datos (Elaboraci\'{o}n propia).\relax }}{41}{figure.133}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Regla 68-95-99.7 \cite {Reference74}.\relax }}{42}{figure.134}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Regla 68-95-99.7 aplicada a los valores de los sensores del aceler\'{o}metro en Z (Elaboraci\'{o}n propia). \relax }}{42}{figure.135}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Divisi\'{o}n del conjunto de entrenamiento (Elaboraci\'{o}n propia).\relax }}{46}{figure.155}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Visualizaci\'{o}n de los par\'{a}metros de conducci\'{o}n capturados (Elaboraci\'{o}n propia).\relax }}{47}{figure.157}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Gr\'{a}fica resultante de aplicar diferentes tipos de normalizaciones a un conjunto de datos (Elaboraci\'{o}n propia).\relax }}{48}{figure.162}
-\contentsline {subfigure}{\numberline {a}{\ignorespaces Min max Scaler\relax }}{48}{figure.caption.158}
-\contentsline {subfigure}{\numberline {b}{\ignorespaces Standard Scaler\relax }}{48}{figure.caption.159}
-\contentsline {subfigure}{\numberline {c}{\ignorespaces Max Scaler\relax }}{48}{figure.caption.160}
-\contentsline {subfigure}{\numberline {d}{\ignorespaces Robust Scaler\relax }}{48}{figure.caption.161}
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Gr\'{a}fico de la varianza vs. el n\'{u}mero de componentes (Elaboraci\'{o}n propia).\relax }}{52}{figure.164}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Data collection, with interval of one second (Own elaboration).\relax }}{36}{figure.117}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Windshield cell mount, horizontal position (Own elaboration).\relax }}{36}{figure.118}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Fragment of data set obtained (Own elaboration).\relax }}{37}{figure.119}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Graph of sensors captured in different positions (Own elaboration).\relax }}{38}{figure.124}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Histogram of data set's frequencies (Own elaboration).\relax }}{40}{figure.129}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Table of data set's statistical results (Own elaboration).\relax }}{40}{figure.130}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Rule 68-95-99.7 \cite {Reference74}.\relax }}{41}{figure.131}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Result of applied Rule 68-95-99.7 on values' accelerometer sensors in Z (Own elaboration).\relax }}{42}{figure.132}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Divisi\'{o}n del conjunto de entrenamiento (Elaboraci\'{o}n propia).\relax }}{45}{figure.152}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Visualizaci\'{o}n de los par\'{a}metros de conducci\'{o}n capturados (Elaboraci\'{o}n propia).\relax }}{46}{figure.154}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Gr\'{a}fica resultante de aplicar diferentes tipos de normalizaciones a un conjunto de datos (Elaboraci\'{o}n propia).\relax }}{47}{figure.159}
+\contentsline {subfigure}{\numberline {a}{\ignorespaces Min max Scaler\relax }}{47}{figure.caption.155}
+\contentsline {subfigure}{\numberline {b}{\ignorespaces Standard Scaler\relax }}{47}{figure.caption.156}
+\contentsline {subfigure}{\numberline {c}{\ignorespaces Max Scaler\relax }}{47}{figure.caption.157}
+\contentsline {subfigure}{\numberline {d}{\ignorespaces Robust Scaler\relax }}{47}{figure.caption.158}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Gr\'{a}fico de la varianza vs. el n\'{u}mero de componentes (Elaboraci\'{o}n propia).\relax }}{51}{figure.161}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Gr\'{a}fica resultante de diferentes tama\~{n}os de series de tiempo (Elaboraci\'{o}n propia).\relax }}{55}{figure.174}
-\contentsline {subfigure}{\numberline {a}{\ignorespaces Serie de tiempo de 2 pasos.\relax }}{55}{figure.caption.170}
-\contentsline {subfigure}{\numberline {b}{\ignorespaces Serie de tiempo de 3 pasos.\relax }}{55}{figure.caption.171}
-\contentsline {subfigure}{\numberline {c}{\ignorespaces Serie de tiempo de 4 pasos.\relax }}{55}{figure.caption.172}
-\contentsline {subfigure}{\numberline {d}{\ignorespaces Serie de tiempo de 5 pasos.\relax }}{55}{figure.caption.173}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Resultados (Elaboraci\'{o}n propia).\relax }}{60}{figure.186}
-\contentsline {subfigure}{\numberline {a}{\ignorespaces Resultados de la red \textbf {NN\_33}\relax }}{60}{figure.caption.183}
-\contentsline {subfigure}{\numberline {b}{\ignorespaces Resultados de la red \textbf {CNN\_33}\relax }}{60}{figure.caption.184}
-\contentsline {subfigure}{\numberline {c}{\ignorespaces Resultados de la red \textbf {RNN\_33}\relax }}{60}{figure.caption.185}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Curva de los valores de reconstrucci\'{o}n obtenidos con el modelo del comportamiento normal (Elaboraci\'{o}n propia).\relax }}{61}{figure.190}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Resultados de la obtenci\'{o}n de codos con diferentes valores de Sensibilidad, para los valores de reconstrucci\'{o}n obtenidos con el modelo del comportamiento normal (Elaboraci\'{o}n propia).\relax }}{62}{figure.191}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces La figura de la izquierda muestra el aislamiento de una anomal\IeC {\'\i }a, que requiere solo tres particiones. A la derecha, el aislamiento de un punto normal requiere seis particiones \cite {Reference60}.\relax }}{64}{figure.194}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Representaci\'{o}n gr\'{a}fica del modelo de comportamiento normal o autoencoder (Elaboraci\'{o}n propia).\relax }}{64}{figure.195}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Representaci\'{o}n gr\'{a}fica del error de reconstrucci\'{o}n usado para el entrenamiento de los bosques de aislamiento y los SVM de una clase (Elaboraci\'{o}n propia).\relax }}{65}{figure.197}
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Mecanismo de detecci\'{o}n de anomal\'{i}as (Elaboraci\'{o}n propia).\relax }}{68}{figure.204}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Gr\'{a}fica resultante de diferentes tama\~{n}os de series de tiempo (Elaboraci\'{o}n propia).\relax }}{55}{figure.171}
+\contentsline {subfigure}{\numberline {a}{\ignorespaces Serie de tiempo de 2 pasos.\relax }}{55}{figure.caption.167}
+\contentsline {subfigure}{\numberline {b}{\ignorespaces Serie de tiempo de 3 pasos.\relax }}{55}{figure.caption.168}
+\contentsline {subfigure}{\numberline {c}{\ignorespaces Serie de tiempo de 4 pasos.\relax }}{55}{figure.caption.169}
+\contentsline {subfigure}{\numberline {d}{\ignorespaces Serie de tiempo de 5 pasos.\relax }}{55}{figure.caption.170}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Resultados (Elaboraci\'{o}n propia).\relax }}{60}{figure.183}
+\contentsline {subfigure}{\numberline {a}{\ignorespaces Resultados de la red \textbf {NN\_33}\relax }}{60}{figure.caption.180}
+\contentsline {subfigure}{\numberline {b}{\ignorespaces Resultados de la red \textbf {CNN\_33}\relax }}{60}{figure.caption.181}
+\contentsline {subfigure}{\numberline {c}{\ignorespaces Resultados de la red \textbf {RNN\_33}\relax }}{60}{figure.caption.182}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Curva de los valores de reconstrucci\'{o}n obtenidos con el modelo del comportamiento normal (Elaboraci\'{o}n propia).\relax }}{61}{figure.187}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Resultados de la obtenci\'{o}n de codos con diferentes valores de Sensibilidad, para los valores de reconstrucci\'{o}n obtenidos con el modelo del comportamiento normal (Elaboraci\'{o}n propia).\relax }}{62}{figure.188}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces La figura de la izquierda muestra el aislamiento de una anomal\IeC {\'\i }a, que requiere solo tres particiones. A la derecha, el aislamiento de un punto normal requiere seis particiones \cite {Reference60}.\relax }}{64}{figure.191}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Representaci\'{o}n gr\'{a}fica del modelo de comportamiento normal o autoencoder (Elaboraci\'{o}n propia).\relax }}{64}{figure.192}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Representaci\'{o}n gr\'{a}fica del error de reconstrucci\'{o}n usado para el entrenamiento de los bosques de aislamiento y los SVM de una clase (Elaboraci\'{o}n propia).\relax }}{65}{figure.194}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Mecanismo de detecci\'{o}n de anomal\'{i}as (Elaboraci\'{o}n propia).\relax }}{68}{figure.201}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Resultados de la detecci\'{o}n de anomal\'{i}as del tipo zig zag (Elaboraci\'{o}n propia).\relax }}{73}{figure.214}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Resultados de la detecci\'{o}n de anomal\'{i}as del tipo giros a alta velocidad (Elaboraci\'{o}n propia).\relax }}{75}{figure.220}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Resultados de la detecci\'{o}n de anomal\'{i}as del tipo frenos en seco (Elaboraci\'{o}n propia).\relax }}{76}{figure.226}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Resultados de la detecci\'{o}n de falsos positivos (Elaboraci\'{o}n propia).\relax }}{77}{figure.232}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Resultados de la detecci\'{o}n de anomal\'{i}as del tipo zig zag (Elaboraci\'{o}n propia).\relax }}{73}{figure.211}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Resultados de la detecci\'{o}n de anomal\'{i}as del tipo giros a alta velocidad (Elaboraci\'{o}n propia).\relax }}{75}{figure.217}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Resultados de la detecci\'{o}n de anomal\'{i}as del tipo frenos en seco (Elaboraci\'{o}n propia).\relax }}{76}{figure.223}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Resultados de la detecci\'{o}n de falsos positivos (Elaboraci\'{o}n propia).\relax }}{77}{figure.229}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {B.1}{\ignorespaces Arquitectura f\'{i}sica del Sistema de Demostraci\'{o}n (Elaboraci\'{o}n propia).\relax }}{95}{figure.256}
-\contentsline {figure}{\numberline {B.2}{\ignorespaces Arquitectura L\'{o}gica del Sistema de Demostraci\'{o}n (Elaboraci\'{o}n propia).\relax }}{96}{figure.258}
+\contentsline {figure}{\numberline {B.1}{\ignorespaces Arquitectura f\'{i}sica del Sistema de Demostraci\'{o}n (Elaboraci\'{o}n propia).\relax }}{95}{figure.253}
+\contentsline {figure}{\numberline {B.2}{\ignorespaces Arquitectura L\'{o}gica del Sistema de Demostraci\'{o}n (Elaboraci\'{o}n propia).\relax }}{96}{figure.255}

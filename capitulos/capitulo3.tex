@@ -1,75 +1,89 @@
 % Chapter 3
 
-\chapter{\uppercase{Captura y preparaci\'{o}n de datos}}
+\chapter{\uppercase{DATA CAPTURE AND PREPARATION}}
 \label{Capitulo 3}
 
-Contar con una gran cantidad de datos en cualquier problema de detecci\'{o}n de anomal\'{i}as es lo que permite generar modelos m\'{a}s precisos, debido a que nunca se sabe qu\'{e} caracter\'{i}sticas pueden dar indicio de una anomal\'{i}a, contar con m\'{u}ltiples tipos de datos es lo que permite ir m\'{a}s all\'{a} de una mera detecci\'{o}n de anomal\'{i}as puntuales y ser capaz de identificar anomal\'{i}as contextuales o colectivas m\'{a}s sofisticadas. Sin embargo la obtenci\'{o}n de estos datos no siempre es una tarea sencilla, por lo que muchas veces se debe encontrar una manera de generar los mismos.
+Having a large amount of data in any anomaly detection problem is what makes it possible to generate more accurate models, because you never know what characteristics can indicate an anomaly, having multiple types of data is what allows you to go more beyond a mere detection of specific anomalies and being able to identify more sophisticated contextual or collective anomalies. However, obtaining this data is not always a simple task, so you often have to find a way to generate it.
+%Contar con una gran cantidad de datos en cualquier problema de detecci\'{o}n de anomal\'{i}as es lo que permite generar modelos m\'{a}s precisos, debido a que nunca se sabe qu\'{e} caracter\'{i}sticas pueden dar indicio de una anomal\'{i}a, contar con m\'{u}ltiples tipos de datos es lo que permite ir m\'{a}s all\'{a} de una mera detecci\'{o}n de anomal\'{i}as puntuales y ser capaz de identificar anomal\'{i}as contextuales o colectivas m\'{a}s sofisticadas. Sin embargo la obtenci\'{o}n de estos datos no siempre es una tarea sencilla, por lo que muchas veces se debe encontrar una manera de generar los mismos.
 
 \vspace{5mm} %5mm vertical space
 
-En este cap\'{i}tulo se detallar\'{a} el m\'{e}todo de recolecci\'{o}n de datos que se realiz\'{o} para la presente investigaci\'{o}n y las diferentes t\'{e}cnicas de an\'{a}lisis de datos que se aplic\'{o}.
+This chapter will detail the method of data collection that was performed for this research and the different data analysis techniques that were applied.
+%En este cap\'{i}tulo se detallar\'{a} el m\'{e}todo de recolecci\'{o}n de datos que se realiz\'{o} para la presente investigaci\'{o}n y las diferentes t\'{e}cnicas de an\'{a}lisis de datos que se aplic\'{o}.
 
-\section{Captura de datos} \label{cap:CapDatos}
+\section{Data Capture} \label{cap:CapDatos}
 
-Actualmente existen varios enfoques para acceder a la información del coductor (agente) y del vehículo. En el primer enfoque, un conjunto de sensores y hardware adicional se implementan previamente en el veh\'{i}culo, por ejemplo, cajas telemáticas (cajas negras provistas por compañías de seguros de automóviles), adaptadores de diagnóstico a bordo (OBD-II) enchufados en el controlador del vehículo red de área (CAN) (\citeNP{Reference30}; \citeNP{Reference31}), la información registrada por estos dispositivos se puede recuperar o enviar a través de Internet. Sin embargo, esta estrategia requiere que los vehículos instalen dispositivos adicionales, lo que implica un mayor costo. Para superar estos inconvenientes, existe un enfoque alternativo el cual es usar teléfonos inteligentes para recopilar datos a través de un conjunto de sensores integrados, tales como sensores inerciales (acelerómetros y giroscopios), sistemas de posicionamiento global (GPS), magnetómetros, micrófonos, sensores de imagen (cámaras), sensores de luz , sensores de proximidad, sensores de dirección (brújula), entre otros.
+Currently there are several approaches to access the information of driver (agent) and vehicle. In the first approach, a set of sensors and additional hardware are previously implemented in the vehicle, for example, telematic boxes (black boxes provided by car insurance companies), on-board diagnostic adapters (OBD-II) plugged into the controller of network area vehicle (CAN) (\citeNP{Reference30}; \citeNP{Reference31}), the information recorded by these devices can be retrieved or sent via Internet. However, this strategy requires that vehicles install additional devices, which implies a higher cost. To overcome these inconveniences, there is an alternative approach which is to use smartphones to collect data through a set of integrated sensors, such as inertial sensors (accelerometers and gyroscopes), global positioning systems (GPS), magnetometers, microphones, sensors Image (cameras), light sensors, proximity sensors, direction sensors (compass), among others.
+%Actualmente existen varios enfoques para acceder a la información del coductor (agente) y del vehículo. En el primer enfoque, un conjunto de sensores y hardware adicional se implementan previamente en el veh\'{i}culo, por ejemplo, cajas telemáticas (cajas negras provistas por compañías de seguros de automóviles), adaptadores de diagnóstico a bordo (OBD-II) enchufados en el controlador del vehículo red de área (CAN) (\citeNP{Reference30}; \citeNP{Reference31}), la información registrada por estos dispositivos se puede recuperar o enviar a través de Internet. Sin embargo, esta estrategia requiere que los vehículos instalen dispositivos adicionales, lo que implica un mayor costo. Para superar estos inconvenientes, existe un enfoque alternativo el cual es usar teléfonos inteligentes para recopilar datos a través de un conjunto de sensores integrados, tales como sensores inerciales (acelerómetros y giroscopios), sistemas de posicionamiento global (GPS), magnetómetros, micrófonos, sensores de imagen (cámaras), sensores de luz , sensores de proximidad, sensores de dirección (brújula), entre otros.
 
 \vspace{5mm} %5mm vertical space
 
-Para el presente trabajo de investigaci\'{o}n se eligi\'{o} el uso de tel\'{e}fonos inteligentes para acceder a la informaci\'{o}n del tipo de conducci\'{o}n, por las razones que se presentaron anteriormente, con este enfoque se desarroll\'{o} una aplicaci\'{o}n m\'{o}vil basada en Android para recopilar datos de los sensores: aceler\'{o}metro y giroscopio, en intervalos de 1 segundo, los cuales en una primera instancia ser\'{a}n almacenados de manera interna en el dispositivo m\'{o}vil. (Ver Figura \ref{fig:captura})
+For this research work, the use of smartphones was chosen to access the type of driving information, for reasons presented above, with this approach an Android-based mobile application was developed to collect sensor data: accelerometer and gyroscope, in intervals of 1 second, which in the first instance will be stored internally in the mobile device. (Ver Figura \ref{fig:captura})
+%Para el presente trabajo de investigaci\'{o}n se eligi\'{o} el uso de tel\'{e}fonos inteligentes para acceder a la informaci\'{o}n del tipo de conducci\'{o}n, por las razones que se presentaron anteriormente, con este enfoque se desarroll\'{o} una aplicaci\'{o}n m\'{o}vil basada en Android para recopilar datos de los sensores: aceler\'{o}metro y giroscopio, en intervalos de 1 segundo, los cuales en una primera instancia ser\'{a}n almacenados de manera interna en el dispositivo m\'{o}vil. (Ver Figura \ref{fig:captura})
 
 \vspace{5mm} %5mm vertical space
 
 \begin{figure}[h!]
   \begin{center}	\includegraphics[width=0.95\textwidth,frame]{imagenes/Cap3/captura}
-  \caption{Recolecci\'{o}n de datos, con intervalo de un segundo (Elaboraci\'{o}n propia).}
+  \caption{Data collection, with interval of one second (Own elaboration).}
   \label{fig:captura}
   \end{center}
 \end{figure}
 
 \vspace{5mm} %5mm vertical space
 
-Para la captura de datos se us\'{o} un soporte para celular de parabrisas como se ve en la Figura \ref{fig:soporte}; se realiz\'{o} la captura en dos posiciones distintas (vertical y horizontal).
+For data collect, a windshield cell phone holder was used as seen in Figure \ref{fig:soporte}; the capture was made in two different positions (vertical and horizontal).
+%Para la captura de datos se us\'{o} un soporte para celular de parabrisas como se ve en la Figura \ref{fig:soporte}; se realiz\'{o} la captura en dos posiciones distintas (vertical y horizontal).
 \vspace{5mm} %5mm vertical space
 
 \begin{figure}[h!]
   \begin{center}	\includegraphics[width=0.65\textwidth,frame]{imagenes/Cap3/soporte}
-  \caption{Soporte para celular de parabrisas, posici\'{o}n horizontal (Elaboraci\'{o}n propia).}
+  \caption{Windshield cell mount, horizontal position (Own elaboration).}
   \label{fig:soporte}
   \end{center}
 \end{figure}
 
-Cada captura, independientemente de la posici\'{o}n en la que se realiz\'{o}, di\'{o} como resultado un conjunto de datos (dataset), donde por cada tiempo T (1 seg.) se tiene seis variables: aceler\'{o}metro en X (acc x), aceler\'{o}metro en Y (acc y), aceler\'{o}metro en Z (acc z), giroscopio en X (gyr x), giroscopio en Y (gyr y) y giroscopio en Z (gyr z). En la Figura \ref{fig:dataset} se aprecia un fragmento del conjunto de datos que se obtuvo en una captura.
+Each capture, regardless of position in which it was made, resulted in a dataset (dataset), where for each time T (1 sec.) There are six variables: accelerometer in X (acc x), accelerometer in Y (acc y), accelerometer in Z (acc z), gyroscope in X (gyr x), gyroscope in Y (gyr y) and gyroscope in Z (gyr z). A fragment of data set that was obtained in a capture is shown in Figure \ref{fig:dataset}
+%Cada captura, independientemente de la posici\'{o}n en la que se realiz\'{o}, di\'{o} como resultado un conjunto de datos (dataset), donde por cada tiempo T (1 seg.) se tiene seis variables: aceler\'{o}metro en X (acc x), aceler\'{o}metro en Y (acc y), aceler\'{o}metro en Z (acc z), giroscopio en X (gyr x), giroscopio en Y (gyr y) y giroscopio en Z (gyr z). En la Figura \ref{fig:dataset} se aprecia un fragmento del conjunto de datos que se obtuvo en una captura.
 
 \begin{figure}[h!]
   \begin{center}	\includegraphics[width=0.95\textwidth,frame]{imagenes/Cap3/dataset}
-  \caption{Fragmento del conjunto de datos obtenido (Elaboraci\'{o}n propia).}
+  \caption{Fragment of data set obtained (Own elaboration).}
   \label{fig:dataset}
   \end{center}
 \end{figure}
 
-\section{Preparaci\'{o}n de datos}
+\section{Data preparation}
 
-El Aprendizaje Autom\'{a}tico depende en gran medida de los datos. Son el aspecto m\'{a}s crucial que hace posible el entrenamiento de algoritmos y explica porque el aprendizaje autom\'{a}tico se hizo tan popular en los \'{u}ltimos a\~{n}os. El principal problema es que todos los conjuntos de datos tienen fallas, lo que hace a la preparaci\'{o}n de datos un paso muy importante en el proceso de Aprendizaje Autom\'{a}tico.
+Machine Learning depends heavily on the data. They are the most crucial aspect that makes algorithm training possible and explains why machine learning has become so popular in recent years. The main problem is that all data sets have failures, which makes data preparation a very important step in the Machine Learning process.
+%El Aprendizaje Autom\'{a}tico depende en gran medida de los datos. Son el aspecto m\'{a}s crucial que hace posible el entrenamiento de algoritmos y explica porque el aprendizaje autom\'{a}tico se hizo tan popular en los \'{u}ltimos a\~{n}os. El principal problema es que todos los conjuntos de datos tienen fallas, lo que hace a la preparaci\'{o}n de datos un paso muy importante en el proceso de Aprendizaje Autom\'{a}tico.
 
 \vspace{5mm} %5mm vertical space
 
-El prop\'{o}sito principal de la preparaci\'{o}n de datos es manipular y transformar los datos en crudo, tal que, los datos puedan ser expuestos o hacerse accesibles m\'{a}s facilmente \cite{Reference37}, para lograr este prop\'{o}sito se debe seguir un proceso que implica la selecci\'{o}n, el pre-procesamiento y la transformaci\'{o}n de datos.
+The main purpose of data preparation is to manipulate and transform raw data, so that data can be exposed or made more easily accessible \cite{Reference37}, to achieve this purpose a process that involves selection must be followed, Pre-processing and data transformation.
+%El prop\'{o}sito principal de la preparaci\'{o}n de datos es manipular y transformar los datos en crudo, tal que, los datos puedan ser expuestos o hacerse accesibles m\'{a}s facilmente \cite{Reference37}, para lograr este prop\'{o}sito se debe seguir un proceso que implica la selecci\'{o}n, el pre-procesamiento y la transformaci\'{o}n de datos.
  
-\subsection{Selecci\'{o}n de datos}
+\subsection{Data selection}
 
-La selecci\'{o}n de datos implica los siguientes pasos:
+Data selection involves the following steps:
+%La selecci\'{o}n de datos implica los siguientes pasos:
 
 \begin{itemize}
-\item Seleccionar solo un subconjunto de los datos disponibles.
-\item Derivar o simular algunos datos a partir de los datos diponibles, en caso de ser necesario.
-\item Excluir aquellos datos que no son reelevantes para el problema.
+%\item Seleccionar solo un subconjunto de los datos disponibles.
+%\item Derivar o simular algunos datos a partir de los datos diponibles, en caso de ser necesario.
+%\item Excluir aquellos datos que no son reelevantes para el problema.
+\item Select only a subset of available data.
+\item Derive or simulate some data from available data, if necessary.
+\item Exclude data that is not relevant to the problem.
 \end{itemize}
 
-Para el presente trabajo s\'{o}lo se har\'{a} incapi\'{e} en el primer paso de esta fase, debido a que los datos con los que se cuenta son limitados ya que \'{e}stos fueron capturados para la investigaci\'{o}n y como se indic\'{o} en la secci\'{o}n \ref{cap:CapDatos}, esta captura se realiz\'{o}, tanto de forma vertical como horizontal, a continuaci\'{o}n se analizar\'{a} las diferencias entre ellos.
+For present work, only the first step of this phase will be emphasized, because the data available is limited since they were captured for investigation and as indicated in section \ref{cap:CapDatos}, this capture was made, both vertically and horizontally, the differences between them will be analyzed below.
+%Para el presente trabajo s\'{o}lo se har\'{a} incapi\'{e} en el primer paso de esta fase, debido a que los datos con los que se cuenta son limitados ya que \'{e}stos fueron capturados para la investigaci\'{o}n y como se indic\'{o} en la secci\'{o}n \ref{cap:CapDatos}, esta captura se realiz\'{o}, tanto de forma vertical como horizontal, a continuaci\'{o}n se analizar\'{a} las diferencias entre ellos.
 
 \vspace{5mm} %5mm vertical space
 
-En la Figura \ref{fig:verHor} se muestra fragmentos de las capturas obtenidas por el dispositivo m\'{o}vil de la conducci\'{o}n de un mismo usuario (agente) desde diferentes posiciones.
+Fragments of obtained captures by mobile device of the same user (agent) from different positions are shown in Figure \ref{fig:verHor}.
+%En la Figura \ref{fig:verHor} se muestra fragmentos de las capturas obtenidas por el dispositivo m\'{o}vil de la conducci\'{o}n de un mismo usuario (agente) desde diferentes posiciones.
 
 \begin{figure}
 \fbox{
@@ -84,159 +98,191 @@ En la Figura \ref{fig:verHor} se muestra fragmentos de las capturas obtenidas po
             \caption{Captura de datos en vertical}
             \label{fig:ver}
         \end{subfigure}
-        \caption{Gr\'{a}fica de los sensores capturados en diferentes posiciones (Elaboraci\'{o}n propia).}
+        \caption{Graph of sensors captured in different positions (Own elaboration).}
         		\label{fig:verHor}}
     \end{figure}
 
 \vspace{5mm} %5mm vertical space
 
-Si bien los valores capturados, son muy similares entre s\'{i}, los datos que fueron capturados con el dispositivo m\'{o}vil en posici\'{o}n horizontal, presentan menos ruido, esto debido a que esta posici\'{o}n favorece la inercia del dispositivo cuando el veh\'{i}culo est\'{a} en movimiento, lo cual es una gran ventaja frente a los datos que fueron capturados de forma vertical, ya que estos fueron m\'{a}s suceptibles a sacudirse mientras el veh\'{i}culo se desplazaba haciendo que los valores capturados en esta posici\'{o}n presenten valores de movimiento no s\'{o}lo del veh\'{i}culo sino tambi\'{e}n del dispositivo m\'{o}vil, lo cual no es lo que se busca en el presente trabajo.
+Although captured values are very similar to each other, data that was captured with mobile device in a horizontal position, presents less noise, this because this position favors the inertia of device when  vehicle is in motion, which is a great advantage over data that were captured vertically, since these were more susceptible to shaking while vehicle was moving causing the values captured in this position to present movement values not only of vehicle but also of mobile device, which is not what is sought in the present work.
+%Si bien los valores capturados, son muy similares entre s\'{i}, los datos que fueron capturados con el dispositivo m\'{o}vil en posici\'{o}n horizontal, presentan menos ruido, esto debido a que esta posici\'{o}n favorece la inercia del dispositivo cuando el veh\'{i}culo est\'{a} en movimiento, lo cual es una gran ventaja frente a los datos que fueron capturados de forma vertical, ya que estos fueron m\'{a}s suceptibles a sacudirse mientras el veh\'{i}culo se desplazaba haciendo que los valores capturados en esta posici\'{o}n presenten valores de movimiento no s\'{o}lo del veh\'{i}culo sino tambi\'{e}n del dispositivo m\'{o}vil, lo cual no es lo que se busca en el presente trabajo.
 
 \vspace{5mm} %5mm vertical space
 
-Por las razones presentadas en el anterior p\'{a}rrafo se decidi\'{o} trabajar con los datos capturados con el dispositivo m\'{o}vil en posici\'{o}n horizontal, descartando as\'{i} aquellos datos capturados en vertical.
+For reasons presented in previous paragraph, it was decided to work with the data captured with mobile device in a horizontal position, thus discarding those data captured vertically.
+%Por las razones presentadas en el anterior p\'{a}rrafo se decidi\'{o} trabajar con los datos capturados con el dispositivo m\'{o}vil en posici\'{o}n horizontal, descartando as\'{i} aquellos datos capturados en vertical.
 
-\section{Pre-procesamiento de datos}
+\section{Data preprocessing}
 
-Una vez que se seleccionaron los datos con los que se trabajar\'{a}, se debe proceder a pre-procesarlos, entrando as\'{i} a la fase de Pre-procesamiento de datos, el objetivo de esta fase es reducir la cantidad de los datos, encontrar las relaciones entre ellos, normalizarlos, remover los valores at\'{i}picos y extraer las caracter\'{i}sticas de los datos. Esta fase incluye varias t\'{e}cnicas como la limpieza, integraci\'{o}n, transformaci\'{o}n y reducci\'{o}n de los datos \cite{Reference38}.
+Once data with which you will work will be selected, you must proceed to preprocess them, thus entering the Pre-processing phase of data, the objective of this phase is to reduce amount of data, find relationships between them, normalize them, remove outliers and extract features of data. This phase includes several techniques such as cleaning, integration, transformation and data reduction \cite{Reference38}.
+%Una vez que se seleccionaron los datos con los que se trabajar\'{a}, se debe proceder a pre-procesarlos, entrando as\'{i} a la fase de Pre-procesamiento de datos, el objetivo de esta fase es reducir la cantidad de los datos, encontrar las relaciones entre ellos, normalizarlos, remover los valores at\'{i}picos y extraer las caracter\'{i}sticas de los datos. Esta fase incluye varias t\'{e}cnicas como la limpieza, integraci\'{o}n, transformaci\'{o}n y reducci\'{o}n de los datos \cite{Reference38}.
 
-\subsection{Limpieza de datos}
+\subsection{Data cleaning}
 
-Los datos de las filas pueden tener registros incompletos, valores ruidosos, valores at\'{i}picos y datos inconsistentes. La limpieza de los datos en la mayor\'{i}a de los casos es el primer paso del pre-procesamiento de datos. Esta t\'{e}cnica se usa para compensar valores ausentes, suavizar el ruido en los datos, reconocer valores at\'{i}picos y corregir inconsistencias.
+Row data may have incomplete records, noisy values, outliers and inconsistent data. Data cleaning in most cases is the first step of data pre-processing. This technique is used to compensate for missing values, soften the noise in the data, recognize outliers and correct inconsistencies.
+%Los datos de las filas pueden tener registros incompletos, valores ruidosos, valores at\'{i}picos y datos inconsistentes. La limpieza de los datos en la mayor\'{i}a de los casos es el primer paso del pre-procesamiento de datos. Esta t\'{e}cnica se usa para compensar valores ausentes, suavizar el ruido en los datos, reconocer valores at\'{i}picos y corregir inconsistencias.
 
-\subsubsection{T\'{e}cnicas de compensaci\'{o}n de registros incompletos}
+\subsubsection{Compensation techniques for incomplete records}
 
-Muchos conjuntos de datos del mundo real pueden contener valores faltantes por distintas razones; lo cual puede afectar drásticamente la calidad del modelo de aprendizaje automático. 
+Many real-world data sets may contain missing values for different reasons; which can drastically affect the quality of machine learning model.
+%Muchos conjuntos de datos del mundo real pueden contener valores faltantes por distintas razones; lo cual puede afectar drásticamente la calidad del modelo de aprendizaje automático. 
 
-A continuaci\'{o}n se presentan cuatro t\'{e}cnicas de compensaci\'{o}n para conjuntos de datos, con el objetivo de sobrellevar el problema de los valores ausentes.
+Below are four compensation techniques for data sets, with the aim of coping with the problem of missing values.
+%A continuaci\'{o}n se presentan cuatro t\'{e}cnicas de compensaci\'{o}n para conjuntos de datos, con el objetivo de sobrellevar el problema de los valores ausentes.
 
 \begin{itemize}
-\item \textbf{Ignorar / Eliminar:} En algunos casos es mejor ignorar o eliminar la tupla que contiene valores faltantes en lugar de llenar esta. Generalmente esta t\'{e}cnica se practica en conjuntos de datos que son muy grandes, donde el eliminar algunos datos no afectar\'{a} la informaci\'{o}n que transmite el conjunto de datos. Sin embargo cuando se trabaja con un conjunto de datos peque\~{n}o el eliminar las tuplas que contienen valores ausentes podr\'{i}a hacer perder informaci\'{o}n importante.
+\item \textbf{Ignore / Delete:} In some cases it is better to ignore or eliminate the tuple that contains missing values instead of filling it. Generally this technique is practiced in data sets that are very large, where deleting some data will not affect the information transmitted by data set. However, when working with a small data set, removing tuples that contain missing values could cause you to lose important information.
+%\item \textbf{Ignorar / Eliminar:} En algunos casos es mejor ignorar o eliminar la tupla que contiene valores faltantes en lugar de llenar esta. Generalmente esta t\'{e}cnica se practica en conjuntos de datos que son muy grandes, donde el eliminar algunos datos no afectar\'{a} la informaci\'{o}n que transmite el conjunto de datos. Sin embargo cuando se trabaja con un conjunto de datos peque\~{n}o el eliminar las tuplas que contienen valores ausentes podr\'{i}a hacer perder informaci\'{o}n importante.
 
-\item \textbf{Llenar manualmente los valores ausentes:} Otra opci\'{o}n tambi\'{e}n es completar los valores faltantes si se comprende la naturaleza de los mismos, esto generalmente se realiza en conjunto de datos peque\~{n}os, ya que en los conjuntos grandes \'{e}sta tarea requerir\'{i}a bastante tiempo.
+\item \textbf{Fill out missing values manually:} Another option is also to complete  missing values if you understand the nature of them, this is usually done in a small data set, since in large sets this task would require a lot of time.
+%\item \textbf{Llenar manualmente los valores ausentes:} Otra opci\'{o}n tambi\'{e}n es completar los valores faltantes si se comprende la naturaleza de los mismos, esto generalmente se realiza en conjunto de datos peque\~{n}os, ya que en los conjuntos grandes \'{e}sta tarea requerir\'{i}a bastante tiempo.
 
-\item \textbf{Llenar los valores ausentes con valores centrales (Media/Mediana):} Esta t\'{e}cnica es mucho mejor que las presentadas anteriormente. En esta t\'{e}cnica se inserta la media o la mediana del atributo respectivo a los valores faltantes. 
+\item \textbf{Fill the missing values with central values (Medium / Medium):} This technique is much better than those presented above. In this technique, the mean or median of respective attribute is inserted to missing values.
+%\item \textbf{Llenar los valores ausentes con valores centrales (Media/Mediana):} Esta t\'{e}cnica es mucho mejor que las presentadas anteriormente. En esta t\'{e}cnica se inserta la media o la mediana del atributo respectivo a los valores faltantes. 
 
-\item \textbf{Interpolaci\'{o}n:} Es una forma confiable, precisa y cient\'{i}fica de completar valores perdidos. Para usar esta t\'{e}cnica primero se debe desarrollar una relaci\'{o}n entre los atributos y luego se predice el valor m\'{a}s probable y preciso para los lugares faltantes, esto se puede lograr mediante regresi\'{o}n, formulaci\'{o}n bayesiana e inducci\'{o}n por \'{a}rboles de decisi\'{o}n.
+\item \textbf{Interpolation:} It is a reliable, accurate and scientific way to complete missing values. To use this technique, a relationship between attributes must first be developed and then the most probable and precise value for missing places is predicted, this can be achieved through regression, bayesian formulation and induction by decision trees.
+%\item \textbf{Interpolaci\'{o}n:} Es una forma confiable, precisa y cient\'{i}fica de completar valores perdidos. Para usar esta t\'{e}cnica primero se debe desarrollar una relaci\'{o}n entre los atributos y luego se predice el valor m\'{a}s probable y preciso para los lugares faltantes, esto se puede lograr mediante regresi\'{o}n, formulaci\'{o}n bayesiana e inducci\'{o}n por \'{a}rboles de decisi\'{o}n.
 
 \end{itemize}
 
-\subsubsection{Eliminar rudio (suavizado) de los datos}
+\subsubsection{Remove noise from data (smoothing)}
 
-Para comprender esta t\'{e}cnica primero se debe definir qu\'{e} es el ruido en los datos. El ruido en los datos es cualquier tipo de error aleatorio o variaci\'{o}n en los atributos medidos; por otra parte los valores at\'{i}picos presentes en los datos tambi\'{e}n pueden considerarse como ruido. 
-
-\vspace{5mm} %5mm vertical space
-
-Es importante destacar que el ruido presente en el conjunto de datos puede afectar en gran medida el resultado de los algoritmos de Aprendizaje Autom\'{a}tico, por lo tanto aquellos datos que contengan ruido no son considerados buenos datos y deben ser eliminados en lo posible. Sin embargo antes de eliminar estos, se debe ser capaz de detectarlos; para lograr este objetivo existen muchas t\'{e}cnicas que se pueden utilizar, una de estas t\'{e}cnicas es la \textbf{Visualizaci\'{o}n de datos}, la cual consiste en obtener una representaci\'{o}n visual de los datos, para poder evidenciar si existe ruido en los datos y/o valores at\'{i}picos.
+To understand this technique you must first define what is noise in data. Noise in data is any type of random error or variation in measured attributes; on the other hand outliers present in data can also be considered as noise.
+%Para comprender esta t\'{e}cnica primero se debe definir qu\'{e} es el ruido en los datos. El ruido en los datos es cualquier tipo de error aleatorio o variaci\'{o}n en los atributos medidos; por otra parte los valores at\'{i}picos presentes en los datos tambi\'{e}n pueden considerarse como ruido. 
 
 \vspace{5mm} %5mm vertical space
 
-En el presente trabajo se grafic\'{o} histogramas de las frecuencias de cada caracter\'{i}stica del conjunto de datos y as\'{i} visualizar de mejor manera si existe ruido o valores at\'{i}picos en el mismo. En la Figura \ref{fig:hist} se puede evidenciar que los valores de cada sensor presentan asimetr\'{i}as negativas y positivas, adem\'{a}s de tener muchos valores bastante alejados de la media, lo que d\'{a} un indicio de posibles valores at\'{i}picos.
+It is important to note that noise present in data set can greatly affect  result of Automatic Learning algorithms, therefore those data that contain noise are not considered good data and should be eliminated as much as possible. However before removing these, you should be able to detect them; To achieve this goal there are many techniques that can be used, one of these techniques is Visualization of data, which consists in obtaining a visual representation of data, to be able to show if there is noise in data and/or outliers.
+%Es importante destacar que el ruido presente en el conjunto de datos puede afectar en gran medida el resultado de los algoritmos de Aprendizaje Autom\'{a}tico, por lo tanto aquellos datos que contengan ruido no son considerados buenos datos y deben ser eliminados en lo posible. Sin embargo antes de eliminar estos, se debe ser capaz de detectarlos; para lograr este objetivo existen muchas t\'{e}cnicas que se pueden utilizar, una de estas t\'{e}cnicas es la \textbf{Visualizaci\'{o}n de datos}, la cual consiste en obtener una representaci\'{o}n visual de los datos, para poder evidenciar si existe ruido en los datos y/o valores at\'{i}picos.
+
+\vspace{5mm} %5mm vertical space
+
+In this work, histograms of frequencies of each characteristic of data set were plotted and thus visualized of a better way if there was noise or outliers in it. In Figure \ref{fig:hist} it can be shown that values of each sensor have negative and positive asymmetries, in addition to having many values far from the average, which gives an indication of possible outliers.
+%En el presente trabajo se grafic\'{o} histogramas de las frecuencias de cada caracter\'{i}stica del conjunto de datos y as\'{i} visualizar de mejor manera si existe ruido o valores at\'{i}picos en el mismo. En la Figura \ref{fig:hist} se puede evidenciar que los valores de cada sensor presentan asimetr\'{i}as negativas y positivas, adem\'{a}s de tener muchos valores bastante alejados de la media, lo que d\'{a} un indicio de posibles valores at\'{i}picos.
 
 \begin{figure}[h!]
   \begin{center}	\includegraphics[width=0.97\textwidth,frame]{imagenes/Cap3/histograma_sensores}
-  \caption{Histograma de frecuencias del conjunto de datos (Elaboraci\'{o}n propia).}
+  \caption{Histogram of data set's frequencies (Own elaboration).}
   \label{fig:hist}
   \end{center}
 \end{figure}
 
 \vspace{5mm} %5mm vertical space
 
-En la Figura \ref{tab: est} se presenta una tabla con estad\'{i}sticas descriptivas del conjunto de datos, esta tabla presenta: la cantidad de datos, su media, su desviaci\'{o}n est\'{a}ndar, el valor m\'{i}nimo y m\'{a}ximo del conjunto de datos y los percentiles 50, 25 y 75, cabe recalcar que el percentil 50 es el mismo que la mediana.
+A table with descriptive statistics of data set is presented in Figure \ref{tab: est}, this table presents: the amount of data, its mean, its standard deviation, the minimum and maximum value of data set and the 50, 25 and 75 percentiles, it should be noted that the percentile 50 is same as median.
+%En la Figura \ref{tab: est} se presenta una tabla con estad\'{i}sticas descriptivas del conjunto de datos, esta tabla presenta: la cantidad de datos, su media, su desviaci\'{o}n est\'{a}ndar, el valor m\'{i}nimo y m\'{a}ximo del conjunto de datos y los percentiles 50, 25 y 75, cabe recalcar que el percentil 50 es el mismo que la mediana.
 
 \begin{figure}[h!]
   \begin{center}	\includegraphics[width=0.97\textwidth,frame]{imagenes/Cap3/describe_data}
-  \caption{Tabla de resultados estad\'{i}sticos del conjunto de datos (Elaboraci\'{o}n propia).}
+  \caption{Table of data set's statistical results (Own elaboration).}
   \label{tab: est}
   \end{center}
 \end{figure}
 
 \vspace{5mm} %5mm vertical space
 
-Con la informaci\'{o}n proporcionada en la Figura \ref{tab: est} ahora es m\'{a}s sencillo realizar un an\'{a}lisis del conjunto de datos, en primer lugar se evidencia que los valores obtenidos durante la captura, presentan desviaciones est\'{a}ndar muy peque\~{n}as entre 0.05 y 0.81 y sin embargo la diferencia entre los valores m\'{i}nimo y m\'{a}ximo son realmente grandes, por ejemplo para el Aceler\'{o}metro en X, la diferencia es 10 aproximadamente (Valor m\'{i}nimo: -3.40 y valor m\'{a}ximo: 7.17), esto quiere decir que el conjunto de datos con el que se trabaja presenta mucho ruido, considerando como ruido o valores at\'{i}picos, aquellos valores muy alejados de la media. 
+With the information provided in Figure 4.6, it is now easier to perform an analysis of data set, first it is evident that the values obtained during the capture, have very small standard deviations between 0.05 and 0.81 and yet difference between the values minimum and maximum are really large, for example for the Accelerometer in X, difference is approximately 10 (Minimum value: -3.40 and maximum value: 7.17), this means that set of data with which it works presents a lot of noise, considering as noise or outliers, those values far from the average.
+%Con la informaci\'{o}n proporcionada en la Figura \ref{tab: est} ahora es m\'{a}s sencillo realizar un an\'{a}lisis del conjunto de datos, en primer lugar se evidencia que los valores obtenidos durante la captura, presentan desviaciones est\'{a}ndar muy peque\~{n}as entre 0.05 y 0.81 y sin embargo la diferencia entre los valores m\'{i}nimo y m\'{a}ximo son realmente grandes, por ejemplo para el Aceler\'{o}metro en X, la diferencia es 10 aproximadamente (Valor m\'{i}nimo: -3.40 y valor m\'{a}ximo: 7.17), esto quiere decir que el conjunto de datos con el que se trabaja presenta mucho ruido, considerando como ruido o valores at\'{i}picos, aquellos valores muy alejados de la media. 
 
 \vspace{5mm} %5mm vertical space
 
-Para eliminar el ruido que presenta el conjunto de datos se aplic\'{o} la \textbf{Regla 68-95-99.7}, conocida tambi\'{e}n como la \textbf{Regla emp\'{i}rica}, donde suponiendo que el conjunto de datos con el que se trabaja tiene una distribuci\'{o}n normal, la desviaci\'{o}n est\'{a}ndar se puede usar para determinar la proporci\'{o}n de valores que se encuentran dentro de un rango particular del valor medio. Para tales distribuciones, siempre ocurre que el 68\% de los valores est\'{a}n a menos de una desviaci\'{o}n est\'{a}ndar (1SD) del valor medio, que el 95\% de los valores est\'{a}n a menos de dos desviaciones est\'{a}ndar (2SD) de la media y que el 99\% de valores est\'{a}n a menos de tres desviaciones est\'{a}ndar (3SD) de la media. En la Figura \ref{fig:689599rule} se muestra este concepto de forma esquem\'{a}tica.
+To eliminate the noise presented by data set, Rule 68-95-99.7, also known as Empirical Rule, was applied, assuming that data set with which it works has a normal distribution, standard deviation can be used to determine the proportion of values that fall within a particular range of average value. For such distributions, it is always the case that 68\% of the values are less than a standard deviation (1SD) of average value, that 95\% of values are less than two standard deviations (2SD) of average and that the 99\% of values are less than three standard deviations (3SD) from average. Figure \ref{fig:689599rule} shows this concept schematically.
+%Para eliminar el ruido que presenta el conjunto de datos se aplic\'{o} la \textbf{Regla 68-95-99.7}, conocida tambi\'{e}n como la \textbf{Regla emp\'{i}rica}, donde suponiendo que el conjunto de datos con el que se trabaja tiene una distribuci\'{o}n normal, la desviaci\'{o}n est\'{a}ndar se puede usar para determinar la proporci\'{o}n de valores que se encuentran dentro de un rango particular del valor medio. Para tales distribuciones, siempre ocurre que el 68\% de los valores est\'{a}n a menos de una desviaci\'{o}n est\'{a}ndar (1SD) del valor medio, que el 95\% de los valores est\'{a}n a menos de dos desviaciones est\'{a}ndar (2SD) de la media y que el 99\% de valores est\'{a}n a menos de tres desviaciones est\'{a}ndar (3SD) de la media. En la Figura \ref{fig:689599rule} se muestra este concepto de forma esquem\'{a}tica.
 
 \begin{figure}[h!]
   \begin{center}	\includegraphics[width=0.97\textwidth,frame]{imagenes/Cap3/68-95-99_rule}
-  \caption{Regla 68-95-99.7 \protect\cite{Reference74}.}
+  \caption{Rule 68-95-99.7 \protect\cite{Reference74}.}
   \label{fig:689599rule}
   \end{center}
 \end{figure}
 
-En la Figura \ref{fig:689599rule_acc_z}, se puede observar como se comporta la regla 68-95-99.7 sobre los valores del sensor del aceler\'{o}metro en Z, por lo que para eliminar el ruido del conjunto de datos se cuenta con dos opciones, eliminar los valores despu\'{e}s de tres desviaciones est\'{a}ndar de la media, en caso de considerar que el conjunto de datos presenta pocas anomal\'{i}as o valores at\'{i}picos, o eliminar los valores despu\'{e}s de dos desviaciones est\'{a}ndar en caso de estar seguro que el conjunto de datos presenta una gran cantidad de ruido en los datos, en este caso la mayor\'{i}a de los datos pertenecen a comportamientos normales de conducci\'{o}n por lo que s\'{o}lo se eliminar\'{a} los valores que se encuentran despu\'{e}s de tres desviaciones est\'{a}ndar de la media.
-
+In Figure \ref{fig:689599rule_acc_z}, it can be observed how rule 68-95-99.7 behaves on the values of accelerometer sensor in Z, so to eliminate noise from data set there are two options, eliminate values after three standard deviations from the mean, in case of considering that data set presents few anomalies or outliers, or eliminating values after two standard deviations in case of being sure that data set presents a great amount of noise in data, in this case most of data belong to normal driving behaviors so that only values found after three standard deviations from mean will be eliminated.
+%En la Figura \ref{fig:689599rule_acc_z}, se puede observar como se comporta la regla 68-95-99.7 sobre los valores del sensor del aceler\'{o}metro en Z, por lo que para eliminar el ruido del conjunto de datos se cuenta con dos opciones, eliminar los valores despu\'{e}s de tres desviaciones est\'{a}ndar de la media, en caso de considerar que el conjunto de datos presenta pocas anomal\'{i}as o valores at\'{i}picos, o eliminar los valores despu\'{e}s de dos desviaciones est\'{a}ndar en caso de estar seguro que el conjunto de datos presenta una gran cantidad de ruido en los datos, en este caso la mayor\'{i}a de los datos pertenecen a comportamientos normales de conducci\'{o}n por lo que s\'{o}lo se eliminar\'{a} los valores que se encuentran despu\'{e}s de tres desviaciones est\'{a}ndar de la media.
 
 \begin{figure}[h!]
   \begin{center}	\includegraphics[width=0.97\textwidth,frame]{imagenes/Cap3/68-95-99_rule_acc_z}
-  \caption{Regla 68-95-99.7 aplicada a los valores de los sensores del aceler\'{o}metro en Z (Elaboraci\'{o}n propia). }
+  \caption{Result of applied Rule 68-95-99.7 on values' accelerometer sensors in Z (Own elaboration).}
   \label{fig:689599rule_acc_z}
   \end{center}
 \end{figure}
 
-\subsubsection{Fusi\'{o}n o integraci\'{o}n de datos}
+\subsubsection{Fusion or data integration}
 
-Cuando se trabaja con datos del mundo real, es posible que los datos que se requiere no se encuentren en un mismo conjunto de datos, en \'{e}stos casos, se necesita recopilar datos de diferentes fuentes y fusionarlos en un solo conjunto de datos; este proceso recibe el nombre de Fusi\'{o}n o Integraci\'{o}n de datos. Uno de los problemas m\'{a}s comunes de este proceso es la redundancia. 
+When working with real-world data, it is possible that the required data is not found in same data set, in these cases, it is necessary to collect data from different sources and merge them into a single data set; this process is called Fusion or Data Integration. One of the most common problems of this process is redundancy.
+%Cuando se trabaja con datos del mundo real, es posible que los datos que se requiere no se encuentren en un mismo conjunto de datos, en \'{e}stos casos, se necesita recopilar datos de diferentes fuentes y fusionarlos en un solo conjunto de datos; este proceso recibe el nombre de Fusi\'{o}n o Integraci\'{o}n de datos. Uno de los problemas m\'{a}s comunes de este proceso es la redundancia. 
 
 \vspace{5mm} %5mm vertical space
 
-Este proceso no se aplic\'{o} en la investigaci\'{o}n debido a que s\'{o}lo se captur\'{o} los datos por medio del dispositivo m\'{o}vil, por lo cual no se tiene el problema de tener m\'{a}s de una fuente de datos.
+This process was not applied in investigation because data was only captured through mobile device, so there is no problem of having more than one data source.
+%Este proceso no se aplic\'{o} en la investigaci\'{o}n debido a que s\'{o}lo se captur\'{o} los datos por medio del dispositivo m\'{o}vil, por lo cual no se tiene el problema de tener m\'{a}s de una fuente de datos.
 
-\subsubsection{Transformaci\'{o}n de datos}
+\subsubsection{Data transformation}
 \label{subsubsection:est-norm-dataset}
 
-La transformaci\'{o}n de los datos es el proceso donde se cambia la naturaleza de los datos, dicho proceso usa algunas estrategias para poder extraer informaci\'{o}n importante del conjunto de datos; algunas de las estrategias para la transformaci\'{o}n de datos son: 
+Data transformation is the process where the nature of data is changed, this process uses some strategies to be able to extract important information from data set; some of strategies for data transformation are:
+%La transformaci\'{o}n de los datos es el proceso donde se cambia la naturaleza de los datos, dicho proceso usa algunas estrategias para poder extraer informaci\'{o}n importante del conjunto de datos; algunas de las estrategias para la transformaci\'{o}n de datos son: 
 
 \begin{itemize}
-\item \textbf{Agregaci\'{o}n: }En esta t\'{e}cnica, la operaci\'{o}n de resumen o agregaci\'{o}n se aplica sobre los datos. Por ejemplo: los datos de ventas diarias se pueden usar para calcular el monto mensual y anual en ventas, para posteriormente agregar estos datos calculados al conjunto de datos.
+\item \textbf{Aggregation:} In this technique, the summary or aggregation operation is applied to data. For example: daily sales data can be used to calculate monthly and annual sales amount, and then add these calculated data to data set.
+%\item \textbf{Agregaci\'{o}n: }En esta t\'{e}cnica, la operaci\'{o}n de resumen o agregaci\'{o}n se aplica sobre los datos. Por ejemplo: los datos de ventas diarias se pueden usar para calcular el monto mensual y anual en ventas, para posteriormente agregar estos datos calculados al conjunto de datos.
 
-\item \textbf{Discretizaci\'{o}n: }Con esta t\'{e}cnica se construye y reemplaza valores en bruto de un atributo num\'{e}rico por valores de intervalo.
+\item \textbf{Discretization:} With this technique, raw values of a numerical attribute are constructed and replaced by interval values.
+%\item \textbf{Discretizaci\'{o}n: }Con esta t\'{e}cnica se construye y reemplaza valores en bruto de un atributo num\'{e}rico por valores de intervalo.
 
-\item \textbf{Construcci\'{o}n de atributos / Ingenier\'{i}a de caracter\'{i}sticas: }Esta t\'{e}cnica es \'{u}til para generar informaci\'{o}n adicional a partir de aquellos datos que no son lo suficientemente representativos por s\'{i} mismos, adem\'{a}s puede ser adecuada cuando se tiene menos caracter\'{i}sticas pero a\'{u}n contienen informaci\'{o}n oculta para extraer.
+\item \textbf{Attribute Construction/Feature Engineering:} This technique is useful for generating additional information from those data that are not representative enough by themselves, and may also be adequate when there are fewer features but still contain hidden information to extract.
+%\item \textbf{Construcci\'{o}n de atributos / Ingenier\'{i}a de caracter\'{i}sticas: }Esta t\'{e}cnica es \'{u}til para generar informaci\'{o}n adicional a partir de aquellos datos que no son lo suficientemente representativos por s\'{i} mismos, adem\'{a}s puede ser adecuada cuando se tiene menos caracter\'{i}sticas pero a\'{u}n contienen informaci\'{o}n oculta para extraer.
 
-\item \textbf{Normalizaci\'{o}n / Estandarizaci\'{o}n: }La normalizaci\'{o}n o estandarizaci\'{o}n se define como el proceso de reescalar datos originales sin cambiar su comportamiento o naturaleza. Se define un nuevo l\'{i}mite (generalmente entre 0 y 1) y se convierte los datos en consecuencia. Esta t\'{e}cnica es \'{u}til en algoritmos de clasificaci\'{o}n que involucran redes neuronales o algoritmos basados en la distancia (por ejemplo, KNN\footnote{\textbf{KNN}, es un algoritmo de clasificaci\'{o}n (o regresi\'{o}n) que, para determinar la clasificaci\'{o}n de un punto, combina la clasificaci\'{o}n de los $K$ puntos m\'{a}s cercanos.}, K-Means\footnote{\textbf{K-Means}, es un algoritmo de agrupamiento que intenta dividir un conjunto de puntos en $K$ grupos; de modo que los puntos en cada grupo tienden a estar cerca uno del otro.}, que se utiliza para la agrupaci\'{o}n. Este algoritmo es capaz de aprender gradualmente c\'{o}mo agrupar valores no etiquetados en grupos mediante un an\'{a}lisis de la distancia media de dichos valores.). Algunas t\'{e}cnicas de normalizaci\'{o}n son:
+\item \textbf{Normalization / Standardization:} Normalization or standardization is defined as process of rescaling original data without changing its behavior or nature. A new limit is defined (generally between 0 and 1) and data is converted accordingly. This technique is useful in classification algorithms that involve neural networks or distance-based algorithms (for example, KNN\footnote {\textbf{KNN}, is a classification algorithm (or regression) that, to determine the classification of a point, combines the classification of the nearest $K$ points.}, K-Means \footnote {\ textbf{K-Means}, is a clustering algorithm that attempts to divide a set of points into $K$ groups; so the points in each group tend to be close to each other.}, which is used for clustering. This algorithm is able to gradually learn how to group unlabeled values into groups by an analysis of average distance of these values.). Some standardization techniques are:
+%\item \textbf{Normalizaci\'{o}n / Estandarizaci\'{o}n: }La normalizaci\'{o}n o estandarizaci\'{o}n se define como el proceso de reescalar datos originales sin cambiar su comportamiento o naturaleza. Se define un nuevo l\'{i}mite (generalmente entre 0 y 1) y se convierte los datos en consecuencia. Esta t\'{e}cnica es \'{u}til en algoritmos de clasificaci\'{o}n que involucran redes neuronales o algoritmos basados en la distancia (por ejemplo, KNN\footnote{\textbf{KNN}, es un algoritmo de clasificaci\'{o}n (o regresi\'{o}n) que, para determinar la clasificaci\'{o}n de un punto, combina la clasificaci\'{o}n de los $K$ puntos m\'{a}s cercanos.}, K-Means\footnote{\textbf{K-Means}, es un algoritmo de agrupamiento que intenta dividir un conjunto de puntos en $K$ grupos; de modo que los puntos en cada grupo tienden a estar cerca uno del otro.}, que se utiliza para la agrupaci\'{o}n. Este algoritmo es capaz de aprender gradualmente c\'{o}mo agrupar valores no etiquetados en grupos mediante un an\'{a}lisis de la distancia media de dichos valores.). Algunas t\'{e}cnicas de normalizaci\'{o}n son:
 \begin{itemize}
-\item \textit{Normalizaci\'{o}n Min-Max: }En este m\'{e}todo, cada entrada se normaliza entre unos l\'{i}mites definidos:
+\item \textit{Normalization Min-Max:}s In this method, each input is normalized between defined limits:
+%\item \textit{Normalizaci\'{o}n Min-Max: }En este m\'{e}todo, cada entrada se normaliza entre unos l\'{i}mites definidos:
 
 \begin{equation}
-x_{normalizado} = \frac{x - x_{min}}{x_{max}-x_{min}}
+x_{normalize} = \frac{x - x_{min}}{x_{max}-x_{min}}
 \end{equation}
 
-Presenta el problema de que comprime los datos de entrada entre unos límites fijos, que por lo general son 0 y 1. Esto quiere decir que si existe ruido, éste va a ser ampliado, lo que hace que este m\'{e}todo no sea adecuado para señales estables.
+It presents the problem that it compresses the input data between fixed limits, which are usually 0 and 1. This means that if there is noise, it will be expanded, which makes this method not suitable for stable signals.
+%Presenta el problema de que comprime los datos de entrada entre unos límites fijos, que por lo general son 0 y 1. Esto quiere decir que si existe ruido, éste va a ser ampliado, lo que hace que este m\'{e}todo no sea adecuado para señales estables.
 
-\item \textit{Escalado est\'{a}ndar (Standard Scaler): }Es un m\'{e}todo alternativo al escalado de variables, consiste en restar a cada dato la media de la variable y dividirlo por la desviaci\'{o}n t\'{i}pica.
+\item \textit{Standard Scaler:} It is an alternative method to the variables' scaling, it consists in subtracting from each data the variable's average and dividing it by standard deviation.
+%\item \textit{Escalado est\'{a}ndar (Standard Scaler): }Es un m\'{e}todo alternativo al escalado de variables, consiste en restar a cada dato la media de la variable y dividirlo por la desviaci\'{o}n t\'{i}pica.
 
 \begin{equation}
-x_{normalizado} = \frac{x - x_{media}}{x_{desvSt}}
+x_{normalize} = \frac{x - x_{average}}{x_{std}}
 \end{equation}
 
-\'{E}ste m\'{e}todo es adecuado para normalizar se\~{n}ales estables, no obstante, tanto la media como la desviaci\'{o}n est\'{a}ndar son muy sensibles a valores an\'{o}malos. Una alternativa de soluci\'{o}n de \'{e}sto, es la eliminaci\'{o}n de anomal\'{i}as antes de realizar la normalizaci\'{o}n.
+This method is suitable for normalizing stable signals, however, both mean and standard deviation are very sensitive to anomalous values. An alternative solution to this is the elimination of anomalies before normalization.
+%\'{E}ste m\'{e}todo es adecuado para normalizar se\~{n}ales estables, no obstante, tanto la media como la desviaci\'{o}n est\'{a}ndar son muy sensibles a valores an\'{o}malos. Una alternativa de soluci\'{o}n de \'{e}sto, es la eliminaci\'{o}n de anomal\'{i}as antes de realizar la normalizaci\'{o}n.
 
-\item \textit{Escalado sobre el valor m\'{a}ximo: }Este m\'{e}todo, presenta la idea de escalar los datos dividiendo \'{e}stos entre su m\'{a}ximo valor.
+\item \textit{Scaling over the maximum value:} This method presents the idea of scaling data by dividing it by its maximum value.
+%\item \textit{Escalado sobre el valor m\'{a}ximo: }Este m\'{e}todo, presenta la idea de escalar los datos dividiendo \'{e}stos entre su m\'{a}ximo valor.
 
-\item \textit{Escalado robusto (Robust scaler): }El escalado robusto consiste en eliminar la mediana y escala los datos de acuerdo con el rango de interquartil (IQR). Este m\'{e}todo es robusto para valores at\'{i}picos.
+\item \textit{Robust scaler:} Robust scaling involves eliminating the median and scaling data according to interquartile range (IQR). This method is robust for outliers.
+%\item \textit{Escalado robusto (Robust scaler): }El escalado robusto consiste en eliminar la mediana y escala los datos de acuerdo con el rango de interquartil (IQR). Este m\'{e}todo es robusto para valores at\'{i}picos.
 
 \end{itemize}
 
 \end{itemize}
 
-\subsubsection{Reducci\'{o}n de datos}
+\subsubsection{Data reduction}
 
-Este proceso se basa en la adopci\'{o}n de algunas estrategias, tal que, el an\'{a}lisis de datos reducidos produce la misma informaci\'{o}n producida por los datos originales. Algunas de las estrategias incluyen: an\'{a}lisis de componentes principales (PCA), selecci\'{o}n de un subconjunto de atributos, agrupaci\'{o}n y muestreo entre otros.
-
-\vspace{5mm} %5mm vertical space
-
-\textbf{An\'{a}lisis de componentes principales (PCA)}
+This process is based on adoption of some strategies, such that analysis of reduced data produces the same information produced by original data. Some of strategies include: principal component analysis (PCA), selection of a attributes' subset, grouping and sampling among others.
+%Este proceso se basa en la adopci\'{o}n de algunas estrategias, tal que, el an\'{a}lisis de datos reducidos produce la misma informaci\'{o}n producida por los datos originales. Algunas de las estrategias incluyen: an\'{a}lisis de componentes principales (PCA), selecci\'{o}n de un subconjunto de atributos, agrupaci\'{o}n y muestreo entre otros.
 
 \vspace{5mm} %5mm vertical space
 
-El An\'{a}lisis de Componentes Principales (PCA - Principal Component Analysis) es una técnica que se usa ampliamente para aplicaciones como reducción de dimensionalidad, compresión de datos con pérdida, extracción de características y visualización de datos \cite{Reference39}.
+\textbf{Principal Component Analysis (PCA)}
 
 \vspace{5mm} %5mm vertical space
 
-PCA es una t\'{e}cnica estad\'{i}stica no supervisada y no param\'{e}trica, que se utiliza para la reducci\'{o}n de dimensionalidad. Esta t\'{e}cnica es un paso importante debido a que la alta dimensionalidad en el campo de aprendizaje autom\'{a}tico puede llevar al sobreajuste del modelo, reduciendo as\'{i} su capacidad de generalizaci\'{o}n, \citeA{Reference40} describe este fen\'{o}meno como la "Maldici\'{o}n de la Dimensionalidad". Adem\'{a}s, el uso de esta t\'{e}cnica puede mejorar directamente el rendimiento de los modelos de Aprendizaje Autom\'{a}tico.
+Principal Component Analysis (PCA) is a technique that is widely used for applications such as dimensionality reduction, lossy data compression, feature extraction and data visualization \cite{Reference39}.
+%El An\'{a}lisis de Componentes Principales (PCA - Principal Component Analysis) es una técnica que se usa ampliamente para aplicaciones como reducción de dimensionalidad, compresión de datos con pérdida, extracción de características y visualización de datos \cite{Reference39}.
+
+\vspace{5mm} %5mm vertical space
+
+PCA is an unsupervised and non-parametric statistical technique, which is used for dimensionality reduction. This technique is an important step because high dimensionality in the field of machine learning can lead to model's overfitting, thus reducing its ability to generalize, \citeA{Reference40} describes this phenomenon as the ''Curse of Dimensionality''. In addition, the use of this technique can directly improve performance of Machine Learning models.
+%PCA es una t\'{e}cnica estad\'{i}stica no supervisada y no param\'{e}trica, que se utiliza para la reducci\'{o}n de dimensionalidad. Esta t\'{e}cnica es un paso importante debido a que la alta dimensionalidad en el campo de aprendizaje autom\'{a}tico puede llevar al sobreajuste del modelo, reduciendo as\'{i} su capacidad de generalizaci\'{o}n, \citeA{Reference40} describe este fen\'{o}meno como la "Maldici\'{o}n de la Dimensionalidad". Adem\'{a}s, el uso de esta t\'{e}cnica puede mejorar directamente el rendimiento de los modelos de Aprendizaje Autom\'{a}tico.
 
 \vspace{5mm} %5mm vertical space
 
