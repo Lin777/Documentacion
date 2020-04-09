@@ -1,19 +1,25 @@
-\chapter{\uppercase{Generaci\'{o}n del mecanismo de detecci\'{o}n de anomal\'{i}as}}
+\chapter{\uppercase{GENERATION OF THE ANOMALY DETECTION MECHANISM}}
 \label{Capitulo 5}
 
-Este cap\'{i}tulo describe el proceso que se sigui\'{o} para la generaci\'{o}n del mecanismo de detecci\'{o}n de anomal\'{i}as de conducci\'{o}n. Seg\'{u}n lo repasado en el cap\'{i}tulo 3, en el presente trabajo, se propone un detector de valores at\'{i}picos con un enfoque semi-supervisado; sin embargo, antes de profundizar en el m\'{e}todo propuesto se debe realizar una descripci\'{o}n del entorno de desarrollo con el se que desarroll\'{o} el experimento, adem\'{a}s de realizar un repaso del conjunto de datos con el que se cuenta en este estudio.
+This chapter describes the process that was followed to generate the conduction anomaly detection mechanism. As reviewed in Chapter 3, in this document, an outlier detector with a semi-supervised approach is proposed; however, before delving into the proposed method, a description of the development environment with which the experiment was used should be carried out, in addition to reviewing dataset available in this study.
+%Este cap\'{i}tulo describe el proceso que se sigui\'{o} para la generaci\'{o}n del mecanismo de detecci\'{o}n de anomal\'{i}as de conducci\'{o}n. Seg\'{u}n lo repasado en el cap\'{i}tulo 3, en el presente trabajo, se propone un detector de valores at\'{i}picos con un enfoque semi-supervisado; sin embargo, antes de profundizar en el m\'{e}todo propuesto se debe realizar una descripci\'{o}n del entorno de desarrollo con el se que desarroll\'{o} el experimento, adem\'{a}s de realizar un repaso del conjunto de datos con el que se cuenta en este estudio.
 
-\section{Entorno de desarrollo}
+\section{Development environment}
 
-El experimento de este estudio fue desarrollado en una computador port\'{a}til con las siguientes caracter\'{i}sticas:
+The experiment of this study was developed on a laptop with following characteristics:
+%El experimento de este estudio fue desarrollado en una computador port\'{a}til con las siguientes caracter\'{i}sticas:
 
 \begin{itemize}
-\item Procesador Intel Core i5-5200U 2.2GHz (c/TB 2.7 GHz).
-\item 8 GB de memoria RAM.
-\item Sistema Operativo ArchLinux version 4.15.15-1-ARCH (64 bits). 
+\item Intel Core i5-5200U 2.2GHz processor (c / TB 2.7 GHz).
+\item 8 GB of RAM.
+\item ArchLinux Operating System version 4.15.15-1-ARCH (64 bits).
+%\item Procesador Intel Core i5-5200U 2.2GHz (c/TB 2.7 GHz).
+%\item 8 GB de memoria RAM.
+%\item Sistema Operativo ArchLinux version 4.15.15-1-ARCH (64 bits). 
 \end{itemize}
 
-Es importante aclarar que el tipo de m\'{e}todos utilizado en este estudio suelen ser mucho m\'{a}s eficientes en computadores que cuenten con una unidad de procesamiento gr\'{a}fico (GPU), dado que esta unidad permite el procesamiento en paralelo. El c\'{o}digo desarrollado en este trabajo fue escrito en \textsc{Python}, un lenguaje de programaci\'{o}n interpretado que se enfatiza en la simplicidad y legibilidad de c\'{o}digo, adem\'{a}s de que se potencia con el apoyo de poderosas librer\'{i}as cient\'{i}ficas tales como \textsc{NumPy}, \textsc{SciPy}, \textsc{OpenCV}, \textsc{Keras}, \textsc{Matplotlib}, \textsc{Seaborn}, etc. En cuanto al desarrollo de experimentos y la generaci\'{o}n del mecanismo de detecci\'{o}n esta desarrollado en Jupyter Notebook que es una aplicaci\'{o}n web local basado en Python que permite visualizar y ejecutar documentos que contienen c\'{o}digo fuente y ecuaciones. Las versiones de las herramientas utilizadas son detalladas a continuaci\'{o}n:
+It is important to clarify that methods' types used in this study are usually much more efficient in computers that have a graphics processing unit (GPU), since this unit allows parallel processing. The code developed in this work was written in \textsc{PYTHON}, an interpreted programming language that emphasizes code simplicity and readability, as well as being powered with support of powerful scientific libraries such as \textsc{NUMPY}, \textsc{SCIPY}, \textsc{OPENCV}, \textsc{KERAS}, \textsc{MATPLOTLIB}, \textsc{SEABORN}, etc. as for the experiments' development and the generation of detection mechanism, Jupyter Notebook was used, which is a local Python-based web application that allows you to view and execute documents that contain source code and equations. The versions of tools used are detailed below.
+%Es importante aclarar que el tipo de m\'{e}todos utilizado en este estudio suelen ser mucho m\'{a}s eficientes en computadores que cuenten con una unidad de procesamiento gr\'{a}fico (GPU), dado que esta unidad permite el procesamiento en paralelo. El c\'{o}digo desarrollado en este trabajo fue escrito en \textsc{Python}, un lenguaje de programaci\'{o}n interpretado que se enfatiza en la simplicidad y legibilidad de c\'{o}digo, adem\'{a}s de que se potencia con el apoyo de poderosas librer\'{i}as cient\'{i}ficas tales como \textsc{NumPy}, \textsc{SciPy}, \textsc{OpenCV}, \textsc{Keras}, \textsc{Matplotlib}, \textsc{Seaborn}, etc. En cuanto al desarrollo de experimentos y la generaci\'{o}n del mecanismo de detecci\'{o}n esta desarrollado en Jupyter Notebook que es una aplicaci\'{o}n web local basado en Python que permite visualizar y ejecutar documentos que contienen c\'{o}digo fuente y ecuaciones. Las versiones de las herramientas utilizadas son detalladas a continuaci\'{o}n:
 
 \begin{itemize}
 \item \textbf{Python:} 3.6.5
@@ -29,7 +35,7 @@ Es importante aclarar que el tipo de m\'{e}todos utilizado en este estudio suele
 \item \textbf{Matplotlib:} 2.0.2
 \end{itemize}
 
-\section{Conjunto de datos normales y an\'{o}malos}
+\section{Normal and anomalous dataset}
 
 En el Cap\'{i}tulo 4 se describi\'{o} el proceso de captura y preparaci\'{o}n del conjunto de datos, as\'{i} como tambi\'{e}n su divisi\'{o}n en conjunto de entrenamiento/desarrollo/prueba; sin embargo cabe aclarar que aquel cap\'{i}tulo s\'{o}lo se enfoc\'{o} en el \textbf{conjunto de datos normales}.%, con los cuales se entrenar\'{a} el modelo ajustado al comportamiento normal.%; por lo que es el conjunto que se usa para entrenar el modelo que se ajusta al comportamiento normal de manejo.
 

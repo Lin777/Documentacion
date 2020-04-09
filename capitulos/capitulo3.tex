@@ -286,91 +286,112 @@ PCA is an unsupervised and non-parametric statistical technique, which is used f
 
 \vspace{5mm} %5mm vertical space
 
-PCA combina las variables de entrada de una manera espec\'{i}fica, luego se deshace de las variables ''menos importantes'' y al mismo tiempo conserva las partes m\'{a}s valiosas (o componentes principales\footnote{\textbf{Componente principal}, es una combinaci\'{o}n lineal normalizada de las caracter\'{i}sticas originales en el conjunto de datos.}) de todas las variables.
+PCA combines the input variables in a specific way, then gets rid of the ''less important'' variables and at the same time preserves the most valuable parts (or principal components \footnote{\textbf{Principal Component}, it is a normalized linear combination of the original features in dataset.}) of all variables.
+%PCA combina las variables de entrada de una manera espec\'{i}fica, luego se deshace de las variables ''menos importantes'' y al mismo tiempo conserva las partes m\'{a}s valiosas (o componentes principales\footnote{\textbf{Componente principal}, es una combinaci\'{o}n lineal normalizada de las caracter\'{i}sticas originales en el conjunto de datos.}) de todas las variables.
 
 \vspace{5mm} %5mm vertical space
 
-Cuando se usa PCA enfocado al aprendizaje autom\'{a}tico se sigue los siguientes pasos:
+%Cuando se usa PCA enfocado al aprendizaje autom\'{a}tico se sigue los siguientes pasos:
+When using PCA with a machine learning aproach, we follow these steps:
 
 \begin{enumerate}
 
-\item Dividir el conjunto de datos \textit{d}-dimensional en conjunto de entrenamiendo, desarrollo y prueba.
-\item Estandarizar / Normalizar el conjunto de datos seg\'{u}n el conjunto de entrenamiento.
-\item Construir la matriz de covarianza.
-\item Descomponer la matriz de covarianza en sus vectores y valores propios.
-\item Ordenar los valores propios disminuyendo el orden para clasificar los vectores propios correspondientes.
-\item Seleccionar \textit{k} vectores propios que corresponden a los \textit{k} valores propios m\'{a}s grandes, donde \textit{k} es la dimensionalidad del nuevo subespacio de entidad (\textit{k}<=\textit{d}).
-\item Construir una matriz de proyecci\'{o}n \textbf{W} a partir de los "top" \textit{k} vectores propios.
-\item Transformar el conjunto de entrenamiento de entrada \textit{d}-dimensional \textbf{X} utilizando la matriz de proyecci\'{o}n \textbf{W} para obtener el nuevo subespacio de caracter\'{i}stica \textit{k}-dimensional.
+%\item Dividir el conjunto de datos \textit{d}-dimensional en conjunto de entrenamiendo, desarrollo y prueba.
+%\item Estandarizar / Normalizar el conjunto de datos seg\'{u}n el conjunto de entrenamiento.
+%\item Construir la matriz de covarianza.
+%\item Descomponer la matriz de covarianza en sus vectores y valores propios.
+%\item Ordenar los valores propios disminuyendo el orden para clasificar los vectores propios correspondientes.
+%\item Seleccionar \textit{k} vectores propios que corresponden a los \textit{k} valores propios m\'{a}s grandes, donde \textit{k} es la dimensionalidad del nuevo subespacio de entidad (\textit{k}<=\textit{d}).
+%\item Construir una matriz de proyecci\'{o}n \textbf{W} a partir de los "top" \textit{k} vectores propios.
+%\item Transformar el conjunto de entrenamiento de entrada \textit{d}-dimensional \textbf{X} utilizando la matriz de proyecci\'{o}n \textbf{W} para obtener el nuevo subespacio de caracter\'{i}stica \textit{k}-dimensional.
+
+\item Divide \textit{d}-dimensional dataset into a training, development and test set.
+\item Standardize / Normalize the dataset according to training set.
+\item Construct the covariance matrix.
+\item Decompose the covariance matrix into its vectors and eigenvalues.
+\item Order the eigenvalues by decreasing order to classify corresponding eigenvectors.
+\item Select \textit{k} eigenvectors that correspond to \textit{k} largest eigenvalues, where \textit{k} is the dimensionality of new entity subspace (\textit{k} <= \textit{d}).
+\item Construct a projection matrix \textbf{W} from the ''top'' \textit{k} eigenvectors.
+\item Transform \textit{d}-dimensional input training set \textbf{X} using the projection matrix \textbf{W} to obtain the new \textit{k}-dimensional feature subspace.
 
 \end{enumerate}
 
 \vspace{5mm} %5mm vertical space
 
-\textbf{\textit{Divisi\'{o}n del conjunto de datos}}
+\textbf{\textit{Dataset division}}
+%\textbf{\textit{Divisi\'{o}n del conjunto de datos}}
 
 \vspace{5mm} %5mm vertical space
 
-Dado que se cuenta con un conjunto de datos para generar el modelo de Aprendizaje Autom\'{a}tico, este se divide en tres partes: conjunto de entrenamiento\footnote{\textbf{Conjunto de entrenamiento}, es la muestra de datos utilizada para ajustar el modelo de Aprendizaje Autom\'{a}tico.}, desarrollo\footnote{\textbf{Conjunto de desarrollo}, es la muestra de datos utilizada para proporcionar una evaluaci\'{o}n imparcial de un modelo ajustado con el conjunto de entrenamiento mientras se ajustan los hiperpar\'{a}metros del modelo.} y prueba\footnote{\textbf{Conjunto de prueba}, es la muestra de datos utilizada para proporcionar una evaluaci\'{o}n imparcial de un ajuste final del modelo en el conjunto de entrenamiento.}, sin embargo esto no es una tarea trivial; ya que si no se hace correctamente el resultado puede ser desastroso.
+Given that there is a dataset to generate Machine Learning model, it is divided into three parts: training\footnote{\textbf{Training set}, is the data sample used to fit the Machine Learning model.}, development\footnote{\textbf{Development set}, is the data sample used to provide an unbiased evaluation of a fitted model with the training set while adjusting the model hyperparameters.} and testing set\footnote{\textbf{Test set}, is the data sample used to provide an unbiased evaluation of a final fit of model in the training set.}, however this is not a trivial task; because if it is not done correctly the result can be disastrous.
+
+%Dado que se cuenta con un conjunto de datos para generar el modelo de Aprendizaje Autom\'{a}tico, este se divide en tres partes: conjunto de entrenamiento\footnote{\textbf{Conjunto de entrenamiento}, es la muestra de datos utilizada para ajustar el modelo de Aprendizaje Autom\'{a}tico.}, desarrollo\footnote{\textbf{Conjunto de desarrollo}, es la muestra de datos utilizada para proporcionar una evaluaci\'{o}n imparcial de un modelo ajustado con el conjunto de entrenamiento mientras se ajustan los hiperpar\'{a}metros del modelo.} y prueba\footnote{\textbf{Conjunto de prueba}, es la muestra de datos utilizada para proporcionar una evaluaci\'{o}n imparcial de un ajuste final del modelo en el conjunto de entrenamiento.}, sin embargo esto no es una tarea trivial; ya que si no se hace correctamente el resultado puede ser desastroso.
 
 \vspace{5mm} %5mm vertical space
 
 \begin{figure}[h!]
   \begin{center}	\includegraphics[width=0.97\textwidth,frame]{imagenes/Cap3/train-dev-test}
-  \caption{Divisi\'{o}n del conjunto de entrenamiento (Elaboraci\'{o}n propia).}
+  \caption{Division of the dataset (Own elaboration).}
   \label{fig:train-dev-test}
   \end{center}
 \end{figure}
 
-En el trabajo de \citeA{Reference41} se dice que la divisi\'{o}n del conjunto de datos tiene un gran impacto en la productividad, por lo cual es importante que al elegir los subconjuntos estos deben tener la \textbf{misma distribuci\'{o}n} y deben ser elegidos aleatoriamente del conjunto de datos. 
+The work of \citeA{Reference41} saids that division of dataset has a great impact on productivity, so it is important that when choosing subsets they must have the \textbf{same distribution} and must be chosen randomly from dataset.
+%En el trabajo de \citeA{Reference41} se dice que la divisi\'{o}n del conjunto de datos tiene un gran impacto en la productividad, por lo cual es importante que al elegir los subconjuntos estos deben tener la \textbf{misma distribuci\'{o}n} y deben ser elegidos aleatoriamente del conjunto de datos. 
 
 \vspace{5mm} %5mm vertical space
 
-Por otra parte el tama\~{n}o del conjunto de desarrollo y prueba deben ser lo suficientemente grandes como para que los resultados del desarrollo y prueba sean representativos para el rendimiento del modelo. Para conjuntos de datos grandes (mayores a un mill\'{o}n), el conjunto de desarrollo y prueba puede tener alrededor de 10000 ejemplos cada uno, es decir, el 1\% del total de datos.
+On the other hand, the size of development and test set must be large enough so that development and test results are representative for the performance of model. For large data sets (greater than one million), the development and test set can have around 10000 examples each, that is, 1\% of the total data.
+%Por otra parte el tama\~{n}o del conjunto de desarrollo y prueba deben ser lo suficientemente grandes como para que los resultados del desarrollo y prueba sean representativos para el rendimiento del modelo. Para conjuntos de datos grandes (mayores a un mill\'{o}n), el conjunto de desarrollo y prueba puede tener alrededor de 10000 ejemplos cada uno, es decir, el 1\% del total de datos.
 
 \vspace{5mm} %5mm vertical space
 
-Otras consideraciones que deben tomarse en cuenta en la pr\'{a}ctica son:
+Other considerations to be taken into account in practice are:
+%Otras consideraciones que deben tomarse en cuenta en la pr\'{a}ctica son:
 
 \begin{itemize}
-\item La divisi\'{o}n del conjunto de entrenamiento/desarrollo/prueba siempre debe ser la misma para todos los experimentos, por lo tanto se debe contar con script reproducible para crear la divisi\'{o}n entrenamiento/desarrollo/prueba.
-\item Se debe probar que los conjuntos de desarrollo y prueba provengan de la misma distribuci\'{o}n.
+\item The division of training/development/test set must always be the same for all experiments, therefore a reproducible script must be available to create the training/development/test division.
+%\item La divisi\'{o}n del conjunto de entrenamiento/desarrollo/prueba siempre debe ser la misma para todos los experimentos, por lo tanto se debe contar con script reproducible para crear la divisi\'{o}n entrenamiento/desarrollo/prueba.
+\item Must be probed that development and test sets came from the same distribution.
+%\item Se debe probar que los conjuntos de desarrollo y prueba provengan de la misma distribuci\'{o}n.
 \end{itemize}
 
-En la presente investigaci\'{o}n el conjunto de datos cuenta con 30000 ejemplos, por lo que la divisi\'{o}n de el conjunto de datos ser\'{a} la que se observa en el Cuadro \ref{table:division-dataset}.
-
+In the present investigation, the data set has 30,000 examples, so the division of data set will be as shown in Table \ref{table:division-dataset}.
+%En la presente investigaci\'{o}n el conjunto de datos cuenta con 30000 ejemplos, por lo que la divisi\'{o}n de el conjunto de datos ser\'{a} la que se observa en el Cuadro \ref{table:division-dataset}.
 
 \begin{table}[]
 \centering
 \begin{tabular}{|l|l|l|}
 \hline
-Conjunto de entrenamiento & 70\%  & 21000 \\ \hline
-Conjunto de desarrollo    & 15\%  & 4500  \\ \hline
-Conjunto de prueba        & 15\%  & 4500  \\ \hline
-Conjunto de datos         & 100\% & 30000 \\ \hline
+Training set & 70\%  & 21000 \\ \hline
+Development set    & 15\%  & 4500  \\ \hline
+Test set       & 15\%  & 4500  \\ \hline
+Data set       & 100\% & 30000 \\ \hline
 \end{tabular}
-\caption{Tabla de divisi\'{o}n del conjunto de datos (Elaboraci\'{o}n propia).}
+\caption{Table of dataset's division (Own elaboration).}
 \label{table:division-dataset}
 \end{table}
 
 \vspace{5mm} %5mm vertical space
 
-\textbf{\textit{Estandarizar / Normalizar el conjunto de datos}}
+\textbf{\textit{Standardize / Normalize the dataset}}
 
 \vspace{5mm} %5mm vertical space
 
-En la secci\'{o}n \ref{subsubsection:est-norm-dataset} ya se describi\'{o} lo que es la estandarizaci\'{o}n o normalizaci\'{o}n de datos y algunos de los tipos de escalado que existen; por lo tanto esta secci\'{o}n s\'{o}lo se limitar\'{a} a la elaboraci\'{o}n de un an\'{a}lisis para decidir que t\'{e}cnica de escalado es la m\'{a}s adecuada para el conjunto de datos, en la Figura \ref{fig:datos_puros} se puede apreciar una fracci\'{o}n del conjunto de datos capturado, la cual es la base con la que se realizar\'{a} el an\'{a}lisis comparativo con los distintos tipos de escalado.
+In section \ref{subsubsection:est-norm-dataset} we have already described what is the standardization or normalization of data and some of scaling's types that exist; therefore this section will only be limited to the elaboration of an analysis to decide which scaling technique is the most suitable for data set, in Figure \ref{fig:datos_puros} a fraction of captured data set can be seen, that is the basis with which the comparative analysis will be carried out with the different scaling's types.
+%En la secci\'{o}n \ref{subsubsection:est-norm-dataset} ya se describi\'{o} lo que es la estandarizaci\'{o}n o normalizaci\'{o}n de datos y algunos de los tipos de escalado que existen; por lo tanto esta secci\'{o}n s\'{o}lo se limitar\'{a} a la elaboraci\'{o}n de un an\'{a}lisis para decidir que t\'{e}cnica de escalado es la m\'{a}s adecuada para el conjunto de datos, en la Figura \ref{fig:datos_puros} se puede apreciar una fracci\'{o}n del conjunto de datos capturado, la cual es la base con la que se realizar\'{a} el an\'{a}lisis comparativo con los distintos tipos de escalado.
 
 \begin{figure}[h!]
   \begin{center}	\includegraphics[width=0.5\textwidth,frame]{imagenes/Cap3/datos_sin_preprocesamiento}
-  \caption{Visualizaci\'{o}n de los par\'{a}metros de conducci\'{o}n capturados (Elaboraci\'{o}n propia).}
+  \caption{Visualization of the captured driving parameters (Own elaboration).}
   \label{fig:datos_puros}
   \end{center}
 \end{figure}
 
 \vspace{5mm} %5mm vertical space
 
-Para probar los diferentes tipos de escalado, se los ajusto con los datos que ya no presentan ruido o valores at\'{i}picos del conjunto de entrenamiento.
+To test the different scaling's types, we fit them with data that no longer has noise or outliers from training set.
+%Para probar los diferentes tipos de escalado, se los ajusto con los datos que ya no presentan ruido o valores at\'{i}picos del conjunto de entrenamiento.
 
 \begin{figure}
         \centering
@@ -397,35 +418,39 @@ Para probar los diferentes tipos de escalado, se los ajusto con los datos que ya
             \label{fig:robust}
         \end{subfigure}
         \end{varwidth}}
-        \caption{Gr\'{a}fica resultante de aplicar diferentes tipos de normalizaciones a un conjunto de datos (Elaboraci\'{o}n propia).}
-        
+        \caption{Graph resulting from applying different types of normalizations to data set (Own elaboration).}
 		\label{fig:nor_nor}
     \end{figure}
 
 \vspace{5mm} %5mm vertical space
 
-El primer tipo de escalado que se realiz\'{o} sobre el conjunto de datos capturados fue la \textbf{Normalizaci\'{o}n Min-Max}, el cual se realiz\'{o} entre los l\'{i}mites 0 y 1, los resultados obtenidos se muestran en la figura \ref{fig:min_max}, donde se puede apreciar que los valores del aceler\'{o}metro, en sus tres ejes, no se veen deformados despu\'{e}s de haber sido escalados con \'{e}sta t\'{e}cnica y los valores del giroscopio, los cuales son m\'{a}s estables se tornan deformados, considerando como datos estables aquellos datos que se presentan como una l\'{i}nea en cero con pocas fluctuaciones; esta deformaci\'{o}n puede ser ventajosa al hacer m\'{a}s visible peque\~{n}as curvas que anteriormente eran imperceptibles, sin embargo conlleva el peligro de que pueda ampliar ruido existente en los datos que no pudimos eliminar en el paso previo a esta tarea.
-
-
-\vspace{5mm} %5mm vertical space
-
-La segunda t\'{e}cnica de normalizaci\'{o}n que se aplic\'{o} sobre los datos fue el \textbf{escalado est\'{a}ndar}, el resultado se puede apreciar en la figura \ref{fig:standard}, observando detalladamente los resultados se puede evidenciar que son muy similares a los obtenidos con la normalizaci\'{o}n Min-Max, las \'{u}nicas diferencias que se pueden evidenciar son que el nuevo rango de los datos es m\'{a}s amplio con media en cero y valores que oscilan principalmente entre 2 y -2,  y que se amplia un poco m\'{a}s algunas de las fluctuaciones que presentan los giroscopios.
+The first type of scaling that was performed on captured data set was \textbf{Min-Max Normalization}, which was performed between the limits 0 and 1, the results obtained are shown in Figure \ref{fig:min_max}, where it can be seen that the values of Accelerometer, in its three axes, are not deformed after being scaled with this technique and gyroscope values, which are more stable, become deformed, considering as stable data those data that are presented as a line in zero with few fluctuations; This deformation can be advantageous by making small curves that were previously imperceptible more visible, however it carries the danger that it could amplify existing noise in data that we could not eliminate in previous step to this task.
+%El primer tipo de escalado que se realiz\'{o} sobre el conjunto de datos capturados fue la \textbf{Normalizaci\'{o}n Min-Max}, el cual se realiz\'{o} entre los l\'{i}mites 0 y 1, los resultados obtenidos se muestran en la figura \ref{fig:min_max}, donde se puede apreciar que los valores del aceler\'{o}metro, en sus tres ejes, no se veen deformados despu\'{e}s de haber sido escalados con \'{e}sta t\'{e}cnica y los valores del giroscopio, los cuales son m\'{a}s estables se tornan deformados, considerando como datos estables aquellos datos que se presentan como una l\'{i}nea en cero con pocas fluctuaciones; esta deformaci\'{o}n puede ser ventajosa al hacer m\'{a}s visible peque\~{n}as curvas que anteriormente eran imperceptibles, sin embargo conlleva el peligro de que pueda ampliar ruido existente en los datos que no pudimos eliminar en el paso previo a esta tarea.
 
 \vspace{5mm} %5mm vertical space
 
-Para la tercera normalizaci\'{o}n de datos se aplic\'{o} la t\'{e}cnica de \textbf{escalado sobre el valor m\'{a}ximo}, los resultados se presentan totalmente diferentes a los que se obtuvo anteriormente, sin embargo se observa claramente que los valores del aceler\'{o}metro no presentan mucho cambio, con la diferencia de que la media de estos valores son distintas para cada uno, y los valores de los giroscopios se comportan como en los anteriores, como se puede ver en la figura \ref{fig:max}. Esta t\'{e}cnica presenta los peores resultados, ya que no deja el conjunto de datos en un mismo rango lo cual complica el trabajo con dichos datos.
+The second normalization technique that was applied to data was \textbf{standard scaling}, the result can be seen in Figure \ref{fig:standard}, observing in detail the results can be seen to be very similar to those obtained with Min-Max normalization, the only differences that can be seen are that the new range of the data is broader with a mean of zero and values that oscillate mainly between 2 and -2, and that some of fluctuations presented by gyroscopes are expanded a little more.
+%La segunda t\'{e}cnica de normalizaci\'{o}n que se aplic\'{o} sobre los datos fue el \textbf{escalado est\'{a}ndar}, el resultado se puede apreciar en la figura \ref{fig:standard}, observando detalladamente los resultados se puede evidenciar que son muy similares a los obtenidos con la normalizaci\'{o}n Min-Max, las \'{u}nicas diferencias que se pueden evidenciar son que el nuevo rango de los datos es m\'{a}s amplio con media en cero y valores que oscilan principalmente entre 2 y -2,  y que se amplia un poco m\'{a}s algunas de las fluctuaciones que presentan los giroscopios.
 
 \vspace{5mm} %5mm vertical space
 
-La \'{u}ltima t\'{e}cnica aplicada es el \textbf{escalado robusto}, su resultado puede ser observado en la figura \ref{fig:robust}, el cual puede ser considerado bastante similar a las dos primeras t\'{e}cnicas, con la diferencia de que este escalado pronuncia mucho m\'{a}s las fluctuaciones de los valores de los giroscopios, convirti\'{e}ndolos incluso a una escala superior que el de los valores de los aceler\'{o}metros.
+For the third data normalization, technique applied was the \textbf{scaling on maximum value}, the results are totally different from those obtained previously, however it is clearly observed that accelerometer values do not show much change, with the difference that average of these values are different for each one, and gyroscope values behave as in the previous ones, this can be seen in figure \ref{fig:max}. This technique presents the worst results, since it does not leave data set in the same range, which complicates the work with them.
+%Para la tercera normalizaci\'{o}n de datos se aplic\'{o} la t\'{e}cnica de \textbf{escalado sobre el valor m\'{a}ximo}, los resultados se presentan totalmente diferentes a los que se obtuvo anteriormente, sin embargo se observa claramente que los valores del aceler\'{o}metro no presentan mucho cambio, con la diferencia de que la media de estos valores son distintas para cada uno, y los valores de los giroscopios se comportan como en los anteriores, como se puede ver en la figura \ref{fig:max}. Esta t\'{e}cnica presenta los peores resultados, ya que no deja el conjunto de datos en un mismo rango lo cual complica el trabajo con dichos datos.
 
 \vspace{5mm} %5mm vertical space
 
-Para decidir el mejor m\'{e}todo de normalizaci\'{o}n que se puede aplicar a los datos capturados, primero se descartar\'{a} completamente el \textbf{m\'{e}todo de escalado sobre el valor m\'{a}ximo} debido a que los resultados que present\'{o} fueron totalmente desalentadores ya que los valores despu\'{e}s del escalado no compart\'{i}an los mismos l\'{i}mites, por otra parte los restantes tres tipos de escalado son muy similares, lo cual complica la elecci\'{o}n de escalado correcto, sin embargo cuando se usa PCA se debe ser muy cuidadoso, debido a que si se tiene una variable con una desviaci\'{o}n est\'{a}ndar alta, esta tendr\'{a} un mayor peso en el c\'{a}lculo del eje que una variable con una desviaci\'{o}n est\'{a}nda baja, por lo cual este puede ser un par\'{a}metro de decisi\'{o}n importante para elegir el tipo de escalado m\'{a}s adecuado.
+The last technique applied is \textbf{robust scaling}, its result can be seen in figure \ref{fig:robust}, which can be considered quite similar to the first two techniques, with the difference that this scaling pronounces more the fluctuations of gyroscope's values, converting them even to a higher scale than that of accelerometer's values.
+%La \'{u}ltima t\'{e}cnica aplicada es el \textbf{escalado robusto}, su resultado puede ser observado en la figura \ref{fig:robust}, el cual puede ser considerado bastante similar a las dos primeras t\'{e}cnicas, con la diferencia de que este escalado pronuncia mucho m\'{a}s las fluctuaciones de los valores de los giroscopios, convirti\'{e}ndolos incluso a una escala superior que el de los valores de los aceler\'{o}metros.
 
 \vspace{5mm} %5mm vertical space
 
-En la tabla \ref{table:scalers} se muestra la media y la desviaci\'{o}n est\'{a}ndar de cada variable despu\'{e}s de haber aplicado los diferentes tipos de escalado sobre los datos. Como se puede evidenciar en los escalados sobre el valor m\'{a}ximo y est\'{a}ndar, las desviaciones est\'{a}ndar son muy diferentes, en cuanto al escalado Min-Max las desviaciones est\'{a}ndar de cada variable son casi las mismas ya que todas oscilan entre 0.166814 y 0.169386, lo cual se adec\'{u}a muy bien para el an\'{a}lisis de componentes principales, mencionando adem\'{a}s que esta t\'{e}cnica es la que mejor conserva la informaci\'{o}n relevante del conjunto de datos, por lo cual esta t\'{e}cnica fue la seleccionada debido a que es la m\'{a}s conveniente para esta etapa.
+To decide the best normalization method that can be applied to the captured data, the \textbf{scaling method on the maximum value} will be completely discarded first because the results it presented were totally discouraging since the values after scaling did not share the same limits, on the other hand, the remaining three types of scaling are very similar, which complicates the choice of correct scaling, however, when using PCA, you must be very careful, because if you have a variable with a high standard deviation, this will have a greater weight in the calculation of the axis than a variable with a low standard deviation, so this can be an important decision parameter to choose the most appropriate type of scaling.
+%Para decidir el mejor m\'{e}todo de normalizaci\'{o}n que se puede aplicar a los datos capturados, primero se descartar\'{a} completamente el \textbf{m\'{e}todo de escalado sobre el valor m\'{a}ximo} debido a que los resultados que present\'{o} fueron totalmente desalentadores ya que los valores despu\'{e}s del escalado no compart\'{i}an los mismos l\'{i}mites, por otra parte los restantes tres tipos de escalado son muy similares, lo cual complica la elecci\'{o}n de escalado correcto, sin embargo cuando se usa PCA se debe ser muy cuidadoso, debido a que si se tiene una variable con una desviaci\'{o}n est\'{a}ndar alta, esta tendr\'{a} un mayor peso en el c\'{a}lculo del eje que una variable con una desviaci\'{o}n est\'{a}nda baja, por lo cual este puede ser un par\'{a}metro de decisi\'{o}n importante para elegir el tipo de escalado m\'{a}s adecuado.
+
+\vspace{5mm} %5mm vertical space
+
+Table \ref{table:scalers} shows the mean and standard deviation of each variable after the different types of scaling have been applied to the data. As can be seen in the scaling of the maximum and standard value, the standard deviations are very different, as for the Min-Max scaling, the standard deviations of each variable are almost the same since they all range between 0.166814 and 0.169386, which It suits very well for the analysis of main components, also mentioning that this technique is the one that best preserves the relevant information in the data set, so this technique was selected because it is the most convenient for this stage.
+%En la tabla \ref{table:scalers} se muestra la media y la desviaci\'{o}n est\'{a}ndar de cada variable despu\'{e}s de haber aplicado los diferentes tipos de escalado sobre los datos. Como se puede evidenciar en los escalados sobre el valor m\'{a}ximo y est\'{a}ndar, las desviaciones est\'{a}ndar son muy diferentes, en cuanto al escalado Min-Max las desviaciones est\'{a}ndar de cada variable son casi las mismas ya que todas oscilan entre 0.166814 y 0.169386, lo cual se adec\'{u}a muy bien para el an\'{a}lisis de componentes principales, mencionando adem\'{a}s que esta t\'{e}cnica es la que mejor conserva la informaci\'{o}n relevante del conjunto de datos, por lo cual esta t\'{e}cnica fue la seleccionada debido a que es la m\'{a}s conveniente para esta etapa.
 
 \begin{landscape}
 \pagestyle{empty}
@@ -435,24 +460,24 @@ En la tabla \ref{table:scalers} se muestra la media y la desviaci\'{o}n est\'{a}
 \begin{tabular}{ll|r|r|r|r|r|r|}
 \cline{3-8}
  &  & \multicolumn{1}{c|}{\textbf{ACC X}} & \multicolumn{1}{c|}{\textbf{ACC Y}} & \multicolumn{1}{c|}{\textbf{ACC Z}} & \multicolumn{1}{c|}{\textbf{GYR X}} & \multicolumn{1}{c|}{\textbf{GYR Y}} & \multicolumn{1}{c|}{\textbf{GYR Z}} \\ \hline
-\multicolumn{1}{|l|}{\multirow{4}{*}{Min-Max}} & Media & 0.500369	 & 0.500051 & 0.501112 & 0.497923 & 0.499352 & 0.500396 \\ \cline{2-8} 
-\multicolumn{1}{|l|}{}                  & Desv. Est. & 0.166847 & 0.166814 & 0.167300 & 0.168245 & 0.169386 & 0.166852 \\ \cline{2-8} 
-\multicolumn{1}{|l|}{}                  & M\'{i}nimo & -0.999198 & -0.675814	& -1.041074 & -0.681029 & -0.319990 & -18.004503 \\ \cline{2-8} 
-\multicolumn{1}{|l|}{}                  & M\'{a}ximo & 1.178265 & 1.654068 & 1.869867 & 25.395520 & 27.227514 & 2.345548 \\ \hline
-\multicolumn{1}{|l|}{\multirow{4}{*}{Est\'{a}ndar}} & Media & -0.011266 & -0.009209 & -0.00570 & 0.013265 & 0.009458 & 0.005644 \\ \cline{2-8} 
-\multicolumn{1}{|l|}{}                  & Desv. Est. & 1.050384 & 1.086118 & 1.117567 & 2.224617 & 2.518566 & 2.076506 \\ \cline{2-8} 
-\multicolumn{1}{|l|}{}                  & M\'{i}nimo & -9.451768 & -7.665204 & -10.307538 & -15.575414	 & -12.173164 & -230.291158 \\ \cline{2-8} 
-\multicolumn{1}{|l|}{}                  & M\'{a}ximo & 4.256420 & 7.504531 & 9.137616 & 329.221266 & 397.424938 & 22.968890 \\ \hline
-\multicolumn{1}{|l|}{\multirow{4}{*}{Valor M\'{a}ximo}} & Media & 0.615065 & -0.141064 & 0.842598 & 0.000519 & 0.001827 & -0.001747 \\ \cline{2-8} 
-\multicolumn{1}{|l|}{}                  & Desv. Est. & 0.128546 & 0.286536 & 0.052784 & 0.334925 & 0.337715 & 0.332858 \\ \cline{2-8} 
-\multicolumn{1}{|l|}{}                  & M\'{i}nimo & -0.540261 & -2.160843	& 0.356031 & -2.346416 & -1.631746 & -36.917638 \\ \cline{2-8} 
-\multicolumn{1}{|l|}{}                  & M\'{a}ximo & 1.137343 & 1.841185 & 1.274447 & 49.564032 & 53.291415 & 3.679194 \\ \hline
-\multicolumn{1}{|l|}{\multirow{4}{*}{Robusto}} & Media & -0.028625 & 0.083278 & 0.008976 & 0.010491 & 0.031468 & -0.040602 \\ \cline{2-8} 
-\multicolumn{1}{|l|}{}                  & Desv. Est. & 0.739033 & 0.672602 & 0.956915 & 5.752011 & 5.518751 & 8.397460 \\\cline{2-8} 
-\multicolumn{1}{|l|}{}                  & M\'{i}nimo & -6.670812 & -4.657858	& -8.811955 & -40.295886 & -26.663430 & -931.368512 \\ \cline{2-8} 
-\multicolumn{1}{|l|}{}                  & M\'{a}ximo & 2.974050 & 4.736319 & 7.837925 & 851.216772 & 870.859223 & 92.823529 \\ \hline
+\multicolumn{1}{|l|}{\multirow{4}{*}{Min-Max}} & Average & 0.500369	 & 0.500051 & 0.501112 & 0.497923 & 0.499352 & 0.500396 \\ \cline{2-8} 
+\multicolumn{1}{|l|}{}                  & St. Deviation & 0.166847 & 0.166814 & 0.167300 & 0.168245 & 0.169386 & 0.166852 \\ \cline{2-8} 
+\multicolumn{1}{|l|}{}                  & Minimum & -0.999198 & -0.675814	& -1.041074 & -0.681029 & -0.319990 & -18.004503 \\ \cline{2-8} 
+\multicolumn{1}{|l|}{}                  & Maximum & 1.178265 & 1.654068 & 1.869867 & 25.395520 & 27.227514 & 2.345548 \\ \hline
+\multicolumn{1}{|l|}{\multirow{4}{*}{Standard}} & Media & -0.011266 & -0.009209 & -0.00570 & 0.013265 & 0.009458 & 0.005644 \\ \cline{2-8} 
+\multicolumn{1}{|l|}{}                  & St. Deviation & 1.050384 & 1.086118 & 1.117567 & 2.224617 & 2.518566 & 2.076506 \\ \cline{2-8} 
+\multicolumn{1}{|l|}{}                  & Minimum & -9.451768 & -7.665204 & -10.307538 & -15.575414	 & -12.173164 & -230.291158 \\ \cline{2-8} 
+\multicolumn{1}{|l|}{}                  & Maximum & 4.256420 & 7.504531 & 9.137616 & 329.221266 & 397.424938 & 22.968890 \\ \hline
+\multicolumn{1}{|l|}{\multirow{4}{*}{Maximum Abs. Value}} & Average & 0.615065 & -0.141064 & 0.842598 & 0.000519 & 0.001827 & -0.001747 \\ \cline{2-8} 
+\multicolumn{1}{|l|}{}                  & St. Deviation & 0.128546 & 0.286536 & 0.052784 & 0.334925 & 0.337715 & 0.332858 \\ \cline{2-8} 
+\multicolumn{1}{|l|}{}                  & Minimum & -0.540261 & -2.160843	& 0.356031 & -2.346416 & -1.631746 & -36.917638 \\ \cline{2-8} 
+\multicolumn{1}{|l|}{}                  & Maximum & 1.137343 & 1.841185 & 1.274447 & 49.564032 & 53.291415 & 3.679194 \\ \hline
+\multicolumn{1}{|l|}{\multirow{4}{*}{Robust}} & Average & -0.028625 & 0.083278 & 0.008976 & 0.010491 & 0.031468 & -0.040602 \\ \cline{2-8} 
+\multicolumn{1}{|l|}{}                  & St. Deviation & 0.739033 & 0.672602 & 0.956915 & 5.752011 & 5.518751 & 8.397460 \\\cline{2-8} 
+\multicolumn{1}{|l|}{}                  & Minimum & -6.670812 & -4.657858	& -8.811955 & -40.295886 & -26.663430 & -931.368512 \\ \cline{2-8} 
+\multicolumn{1}{|l|}{}                  & Maximum & 2.974050 & 4.736319 & 7.837925 & 851.216772 & 870.859223 & 92.823529 \\ \hline
 \end{tabular}
-\caption{Tabla con estad\'{i}sticas descriptivas de los datos escalados con diferentes t\'{e}cnicas (Elaboraci\'{o}n propia).}
+\caption{Table with descriptive statistics of scaled data with different techniques (Own elaboration).}
 \label{table:scalers}
 \end{table}
 \end{landscape}
@@ -462,39 +487,47 @@ En la tabla \ref{table:scalers} se muestra la media y la desviaci\'{o}n est\'{a}
 
 \vspace{5mm} %5mm vertical space
 
-\textbf{\textit{Aplicar PCA al conjunto de datos}}
+\textbf{\textit{Apply PCA to dataset}}
 
 \vspace{5mm} %5mm vertical space
 
-Aunque al inicio de esta subsubsecci\'{o}n se explica en detalle algunos de los pasos del funcionamiento interno de PCA, existe una clase llamada PCA implementada en \textsc{scikit-learn}, la cual automatiza todos los pasos siguientes; sin embargo se necesita determinar cu\'{a}ntas caracter\'{i}sticas (componentes principales) mantener y cu\'{a}ntas eliminar; para \'{e}sta tarea existen tres m\'{e}todos com\'{u}nmente utilizados, los cuales ser\'{a}n descritos a continuaci\'{o}n.
+Although some of steps in the internal workings of PCA are explained in detail at the beginning of this sub-section, there is a class called PCA implemented in \textsc{SCIKIT-LEARN}, which automates all following steps; however, it is necessary to determine how many characteristics (principal components) to maintain and how many to eliminate; for this task there are three commonly used methods, which will be described below.
+%Aunque al inicio de esta subsubsecci\'{o}n se explica en detalle algunos de los pasos del funcionamiento interno de PCA, existe una clase llamada PCA implementada en \textsc{scikit-learn}, la cual automatiza todos los pasos siguientes; sin embargo se necesita determinar cu\'{a}ntas caracter\'{i}sticas (componentes principales) mantener y cu\'{a}ntas eliminar; para \'{e}sta tarea existen tres m\'{e}todos com\'{u}nmente utilizados, los cuales ser\'{a}n descritos a continuaci\'{o}n.
 
 % https://towardsdatascience.com/a-one-stop-shop-for-principal-component-analysis-5582fb7e0a9c
 \begin{itemize}
-\item Seleccionar arbitrariamente cu\'{a}ntas dimensiones se desea mantener, dependiendo del caso de uso. Por ejemplo, para un enfoque de visualizaci\'{o}n se podr\'{i}a elegir 2 o 3 caracter\'{i}sticas.
-\item Calcular la proporci\'{o}n de la varianza para cada caracter\'{i}stica, elegir un umbral y agregar  caracter\'{i}sticas hasta llegar o superar el umbral elegido.
-\item Este m\'{e}todo est\'{a} estrechamente relacionado con el anterior, debido a que se calcula la proporci\'{o}n de varianza para cada caracter\'{i}stica, se ordena las caracter\'{i}sticas por la proporci\'{o}n de varianza y se traza la proporci\'{o}n de varianza acumulada explicada a medida que mantiene las caracter\'{i}sticas (este diagrama es conocido como \textit{diagrama de pantalla}). Se puede elegir cu\'{a}ntas caracter\'{i}sticas incluir al identificar el punto en el que se agrega una nueva caracter\'{i}stica tiene una ca\'{i}da significativa en la variaci\'{o}n en relaci\'{o}n con la caracter\'{i}stica anterior, y elegir la cantidad de caracter\'{i}sticas que existen hasta ese punto. Este m\'{e}todo suele ser conocido como \textit{''Encontrar el codo''}.
+\item Arbitrarily select how many dimensions you want to keep, depending of use case. For instance, in a viewing approach you could choose 2 or 3 features.
+\item Calculate the variance ratio for each feature, choose a threshold, and add features until the chosen threshold is reached or exceeded.
+\item This method is closely related to previous one, because the variance ratio for each feature is calculated, the features are ordered by variance ratio and the cumulative variance ratio explained  is plotted while it maintains the features (this diagram is known as a screen diagram). You can choose how many features to include by identifying the point at which a new feature is added that has a significant drop in variance from previous feature, and choose the number of features that exist up to that point. This method is usually known as ''Find elbow''.
+%\item Seleccionar arbitrariamente cu\'{a}ntas dimensiones se desea mantener, dependiendo del caso de uso. Por ejemplo, para un enfoque de visualizaci\'{o}n se podr\'{i}a elegir 2 o 3 caracter\'{i}sticas.
+%\item Calcular la proporci\'{o}n de la varianza para cada caracter\'{i}stica, elegir un umbral y agregar  caracter\'{i}sticas hasta llegar o superar el umbral elegido.
+%\item Este m\'{e}todo est\'{a} estrechamente relacionado con el anterior, debido a que se calcula la proporci\'{o}n de varianza para cada caracter\'{i}stica, se ordena las caracter\'{i}sticas por la proporci\'{o}n de varianza y se traza la proporci\'{o}n de varianza acumulada explicada a medida que mantiene las caracter\'{i}sticas (este diagrama es conocido como \textit{diagrama de pantalla}). Se puede elegir cu\'{a}ntas caracter\'{i}sticas incluir al identificar el punto en el que se agrega una nueva caracter\'{i}stica tiene una ca\'{i}da significativa en la variaci\'{o}n en relaci\'{o}n con la caracter\'{i}stica anterior, y elegir la cantidad de caracter\'{i}sticas que existen hasta ese punto. Este m\'{e}todo suele ser conocido como ''Encontrar el codo''}.
 \end{itemize}
 
-Para el desarrollo de la presente investigaci\'{o}n se descart\'{o} tanto el primer y \'{u}ltimo m\'{e}todo de los listados anteriormente, esto debido a que el primer m\'{e}todo no tiene la certeza de que la cantidad de caracter\'{i}sticas que se elige sea lo suficientemente descriptiva para el conjunto de datos; mientras que el \'{u}ltimo m\'{e}todo no cuenta con una definici\'{o}n matem\'{a}ticamente precisa, debido a que s\'{o}lo encuentra el ''codo'', por lo que tambi\'{e}n quita el control de la cantidad de variabilidad total en los datos que se obtiene finalmente.
+For the development of this investigation, both the first and last method of those listed above were discarded, this because the first method does not have the certainty that the quantity of features chosen is descriptive enough for dataset; while the last method does not have a mathematically precise definition, since it only finds ''elbow'', so it also removes control of amount of total variability in data that is finally obtained.
+%Para el desarrollo de la presente investigaci\'{o}n se descart\'{o} tanto el primer y \'{u}ltimo m\'{e}todo de los listados anteriormente, esto debido a que el primer m\'{e}todo no tiene la certeza de que la cantidad de caracter\'{i}sticas que se elige sea lo suficientemente descriptiva para el conjunto de datos; mientras que el \'{u}ltimo m\'{e}todo no cuenta con una definici\'{o}n matem\'{a}ticamente precisa, debido a que s\'{o}lo encuentra el ''codo'', por lo que tambi\'{e}n quita el control de la cantidad de variabilidad total en los datos que se obtiene finalmente.
 
 \vspace{5mm} %5mm vertical space
 
-Una vez descartados los m\'{e}todos que no se ajustan al requerimiento del presente trabajo, la \'{u}nica opci\'{o}n restante es el segundo m\'{e}todo, siendo as\'{i} este el que se aplicar\'{a} para el presente trabajo. Por lo tanto primero se defini\'{o} como 90\% el umbral de variabilidad total que se desea preservar en el conjunto de datos, posteriormente haciendo uso de la clase PCA de \textsc{scikit-learn} se calcula la varianza de cada caracter\'{i}stica y posteriormente se grafica los resultados (Ver Figura \ref{fig:varianza-pca}).
+Once the methods that do not conform to the requirement of this work have been discarded, the only remaining option is the second method, thus being the one that will be applied for present work. Therefore, the total variability threshold to be preserved in data set was defined as 90\%, later using the PCA class of SCIKIT-LEARN, the variance of each characteristic is calculated and then the results are plotted (See Figure \ref{fig:varianza-pca}).
+%Una vez descartados los m\'{e}todos que no se ajustan al requerimiento del presente trabajo, la \'{u}nica opci\'{o}n restante es el segundo m\'{e}todo, siendo as\'{i} este el que se aplicar\'{a} para el presente trabajo. Por lo tanto primero se defini\'{o} como 90\% el umbral de variabilidad total que se desea preservar en el conjunto de datos, posteriormente haciendo uso de la clase PCA de \textsc{scikit-learn} se calcula la varianza de cada caracter\'{i}stica y posteriormente se grafica los resultados (Ver Figura \ref{fig:varianza-pca}).
 
 \begin{figure}[h!]
   \begin{center}	\includegraphics[width=0.75\textwidth,frame]{imagenes/Cap3/pca}
-  \caption{Gr\'{a}fico de la varianza vs. el n\'{u}mero de componentes (Elaboraci\'{o}n propia).}
+  \caption{Variance's graph vs.components' number (Own elaboration).}
   \label{fig:varianza-pca}
   \end{center}
 \end{figure}
 
 \vspace{5mm} %5mm vertical space
 
-Y por \'{u}ltimo se debe definir que cantidad de componentes principales conservan el 90\% de la varianza de los datos como m\'{i}nimo. La Gr\'{a}fica \ref{fig:varianza-pca} indica que seleccionando 4 componentes se puede preservar alrededor del 97.7\% de la varianza total de los datos, seleccionando 3 componentes se conserva alrededor del 92.3\% y seleccionando 2 se conserva el 85\% de la varianza; por lo tanto se decidi\'{o} el uso de 3 caracter\'{i}sticas con lo cual se conservar\'{a} el 92.3\% de la varianza total del conjunto de datos.
+And finally, it must be defined how many principal components retain at least 90\% of data's variance. Figure \ref{fig:varianza-pca} indicates that selecting 4 components can preserve about 97.7\% of data's total variance, selecting 3 components conserves around 92.3\% and selecting 2 conserves 85\% of variance; therefore, the use of 3 features was decided, which will conserve 92.3\% of dataset's total variance.
+%Y por \'{u}ltimo se debe definir que cantidad de componentes principales conservan el 90\% de la varianza de los datos como m\'{i}nimo. La Gr\'{a}fica \ref{fig:varianza-pca} indica que seleccionando 4 componentes se puede preservar alrededor del 97.7\% de la varianza total de los datos, seleccionando 3 componentes se conserva alrededor del 92.3\% y seleccionando 2 se conserva el 85\% de la varianza; por lo tanto se decidi\'{o} el uso de 3 caracter\'{i}sticas con lo cual se conservar\'{a} el 92.3\% de la varianza total del conjunto de datos.
 
 \vspace{5mm} %5mm vertical space
 
-En diversos estudios (\citeNP{Reference63}; \citeNP{Reference64}) se prob\'{o} que la aplicaci\'{o}n de PCA como pre-procesamiento del conjunto de datos es una etapa importante, debido a que no s\'{o}lo sirve para la compresi\'{o}n de los datos de entrada, sino que tambi\'{e}n proporciona una mejora satisfactoria de la precisi\'{o}n de los modelos de Aprendizaje Autom\'{a}tico; raz\'{o}n por la cual esta t\'{e}cnica forma parte de la etapa de pre-procesamiento de este trabajo.
+In various researches (\citeNP{Reference63}; \citeNP{Reference64}) it was proven that the application of PCA as pre-processing of the data set is an important stage, because it not only serves to compress the input data, but which also provides a satisfactory improvement in accuracy of Machine Learning models; reason why this technique is part of pre-processing stage of this work.
+%En diversos estudios (\citeNP{Reference63}; \citeNP{Reference64}) se prob\'{o} que la aplicaci\'{o}n de PCA como pre-procesamiento del conjunto de datos es una etapa importante, debido a que no s\'{o}lo sirve para la compresi\'{o}n de los datos de entrada, sino que tambi\'{e}n proporciona una mejora satisfactoria de la precisi\'{o}n de los modelos de Aprendizaje Autom\'{a}tico; raz\'{o}n por la cual esta t\'{e}cnica forma parte de la etapa de pre-procesamiento de este trabajo.
 
 %\section{Resumen del cap\'{i}tulo}
 
