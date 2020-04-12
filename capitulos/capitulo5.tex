@@ -349,7 +349,7 @@ Once the elbows were obtained, each of them was evaluated. Table \ref{table:eval
 \begin{center}
 \begin{tabular}{|l|r|r|r|r|r|r|r|}
 \hline
-\textbf{S} & \multicolumn{1}{l|}{\textbf{Threshold}} & \multicolumn{1}{l|}{\textbf{VP}} & \multicolumn{1}{l|}{\textbf{VN}}& \multicolumn{1}{l|}{\textbf{FN}}& \multicolumn{1}{l|}{\textbf{FP}} & \multicolumn{1}{l|}{\textbf{Sensitivity}} & \multicolumn{1}{l|}{\textbf{Specificity}} \\ \hline
+\textbf{S} & \multicolumn{1}{l|}{\textbf{Threshold}} & \multicolumn{1}{l|}{\textbf{TP}} & \multicolumn{1}{l|}{\textbf{VN}}& \multicolumn{1}{l|}{\textbf{FN}}& \multicolumn{1}{l|}{\textbf{FP}} & \multicolumn{1}{l|}{\textbf{Sensitivity}} & \multicolumn{1}{l|}{\textbf{Specificity}} \\ \hline
 0.0 & 5.665 & \cellcolor[HTML]{AADD99} 92 & \cellcolor[HTML]{AADD99} 43993 & \cellcolor[HTML]{FFCE93} 72 & \cellcolor[HTML]{FFCE93} 47 & 0.5610 & 0.9989 \\ \hline
 0.5  & 2.806 & \cellcolor[HTML]{AADD99} 111 & \cellcolor[HTML]{AADD99} 43814 & \cellcolor[HTML]{FFCE93} 53 & \cellcolor[HTML]{FFCE93} 226 & 0.6768 & 0.9949 \\ \hline
 1.0 &  1.920 & \cellcolor[HTML]{AADD99} 120 & \cellcolor[HTML]{AADD99} 43562 & \cellcolor[HTML]{FFCE93} 44 & \cellcolor[HTML]{FFCE93} 478 & 0.7317 & 0.9891 \\ \hline
@@ -404,7 +404,7 @@ There are two approaches that can be done with this technique; first one trains 
 \begin{center}
 \begin{tabular}{|l|r|r|r|r|r|r|r|}
 \hline
-\textbf{Contamination (C)} & \multicolumn{1}{l|}{\textbf{VP}} & \multicolumn{1}{l|}{\textbf{VN}}& \multicolumn{1}{l|}{\textbf{FN}}& \multicolumn{1}{l|}{\textbf{FP}} & \multicolumn{1}{l|}{\textbf{Sensitivity}} & \multicolumn{1}{l|}{\textbf{Specificity}} \\ \hline
+\textbf{Contamination (C)} & \multicolumn{1}{l|}{\textbf{TP}} & \multicolumn{1}{l|}{\textbf{VN}}& \multicolumn{1}{l|}{\textbf{FN}}& \multicolumn{1}{l|}{\textbf{FP}} & \multicolumn{1}{l|}{\textbf{Sensitivity}} & \multicolumn{1}{l|}{\textbf{Specificity}} \\ \hline
 0.0025 & \cellcolor[HTML]{AADD99} 3 & \cellcolor[HTML]{AADD99} 43944 & \cellcolor[HTML]{FFCE93} 161 & \cellcolor[HTML]{FFCE93} 96 & 0.0183 & 0.9978 \\ \hline
 0.0050 & \cellcolor[HTML]{AADD99} 17 & \cellcolor[HTML]{AADD99} 43817 & \cellcolor[HTML]{FFCE93} 147 & \cellcolor[HTML]{FFCE93} 223 & 0.1037 & 0.9949 \\ \hline
 0.0075 & \cellcolor[HTML]{AADD99} 17 & \cellcolor[HTML]{AADD99} 43738 & \cellcolor[HTML]{FFCE93} 147 & \cellcolor[HTML]{FFCE93} 302 & 0.1037 & 0.9931 \\ \hline
@@ -429,7 +429,7 @@ There are two approaches that can be done with this technique; first one trains 
 \begin{center}
 \begin{tabular}{|l|r|r|r|r|r|r|r|}
 \hline
-\textbf{Contamination (C)} & \multicolumn{1}{l|}{\textbf{VP}} & \multicolumn{1}{l|}{\textbf{VN}}& \multicolumn{1}{l|}{\textbf{FN}}& \multicolumn{1}{l|}{\textbf{FP}} & \multicolumn{1}{l|}{\textbf{Sensitivity}} & \multicolumn{1}{l|}{\textbf{Specificity}} \\ \hline
+\textbf{Contamination (C)} & \multicolumn{1}{l|}{\textbf{TP}} & \multicolumn{1}{l|}{\textbf{VN}}& \multicolumn{1}{l|}{\textbf{FN}}& \multicolumn{1}{l|}{\textbf{FP}} & \multicolumn{1}{l|}{\textbf{Sensitivity}} & \multicolumn{1}{l|}{\textbf{Specificity}} \\ \hline
 0.0025 & \cellcolor[HTML]{AADD99} 103 & \cellcolor[HTML]{AADD99} 43898 & \cellcolor[HTML]{FFCE93} 61 & \cellcolor[HTML]{FFCE93} 142 & 0.6280 & 0.9968 \\ \hline
 0.0050 & \cellcolor[HTML]{AADD99} 108 & \cellcolor[HTML]{AADD99} 43792 & \cellcolor[HTML]{FFCE93} 56 & \cellcolor[HTML]{FFCE93} 248 & 0.6585 & 0.9944 \\ \hline
 0.0075 & \cellcolor[HTML]{AADD99} 111 & \cellcolor[HTML]{AADD99} 43688 & \cellcolor[HTML]{FFCE93} 53 & \cellcolor[HTML]{FFCE93} 352 & 0.6768 & 0.9920 \\ \hline
@@ -454,7 +454,7 @@ In the same way as in isolation forests, two different types of experiments were
 \begin{center}
 \begin{tabular}{|l|r|r|r|r|r|r|r|}
 \hline
-\textbf{Kernel} & \multicolumn{1}{l|}{\textbf{VP}} & \multicolumn{1}{l|}{\textbf{VN}}& \multicolumn{1}{l|}{\textbf{FN}}& \multicolumn{1}{l|}{\textbf{FP}} & \multicolumn{1}{l|}{\textbf{Sensitivity}} & \multicolumn{1}{l|}{\textbf{Specificity}} \\ \hline
+\textbf{Kernel} & \multicolumn{1}{l|}{\textbf{TP}} & \multicolumn{1}{l|}{\textbf{VN}}& \multicolumn{1}{l|}{\textbf{FN}}& \multicolumn{1}{l|}{\textbf{FP}} & \multicolumn{1}{l|}{\textbf{Sensitivity}} & \multicolumn{1}{l|}{\textbf{Specificity}} \\ \hline
 rbf & \cellcolor[HTML]{AADD99} 49 & \cellcolor[HTML]{AADD99} 41746 & \cellcolor[HTML]{FFCE93} 115 & \cellcolor[HTML]{FFCE93} 2294 & 0.2988 & 0.9479 \\ \hline
 poly & \cellcolor[HTML]{AADD99} 56 & \cellcolor[HTML]{AADD99} 22532 & \cellcolor[HTML]{FFCE93} 108 & \cellcolor[HTML]{FFCE93} 21508 & 0.3415 & 0.5116 \\ \hline
 sigmoid & \cellcolor[HTML]{AADD99} 13 & \cellcolor[HTML]{AADD99} 42378 & \cellcolor[HTML]{FFCE93} 151 & \cellcolor[HTML]{FFCE93} 1662 & 0.0793 & 0.9623 \\ \hline
@@ -472,7 +472,7 @@ sigmoid & \cellcolor[HTML]{AADD99} 13 & \cellcolor[HTML]{AADD99} 42378 & \cellco
 \begin{center}
 \begin{tabular}{|l|r|r|r|r|r|r|r|}
 \hline
-\textbf{Kernel} & \multicolumn{1}{l|}{\textbf{VP}} & \multicolumn{1}{l|}{\textbf{VN}}& \multicolumn{1}{l|}{\textbf{FN}}& \multicolumn{1}{l|}{\textbf{FP}} & \multicolumn{1}{l|}{\textbf{Sensitivity}} & \multicolumn{1}{l|}{\textbf{Specificity}} \\ \hline
+\textbf{Kernel} & \multicolumn{1}{l|}{\textbf{TP}} & \multicolumn{1}{l|}{\textbf{VN}}& \multicolumn{1}{l|}{\textbf{FN}}& \multicolumn{1}{l|}{\textbf{FP}} & \multicolumn{1}{l|}{\textbf{Sensitivity}} & \multicolumn{1}{l|}{\textbf{Specificity}} \\ \hline
 rbf & \cellcolor[HTML]{AADD99} 134 & \cellcolor[HTML]{AADD99} 41887 & \cellcolor[HTML]{FFCE93} 30 & \cellcolor[HTML]{FFCE93} 2153 & 0.8170 & 0.9511 \\ \hline
 poly & \cellcolor[HTML]{AADD99} 97 & \cellcolor[HTML]{AADD99} 1559 & \cellcolor[HTML]{FFCE93} 67 & \cellcolor[HTML]{FFCE93} 42481 & 0.5915 & 0.0354 \\ \hline
 sigmoid & \cellcolor[HTML]{AADD99} 123 & \cellcolor[HTML]{AADD99} 1683 & \cellcolor[HTML]{FFCE93} 41 & \cellcolor[HTML]{FFCE93} 42357 & 0.7500 & 0.0382 \\ \hline
@@ -498,7 +498,7 @@ Once the different types of experiments had been carried out, the best exponent 
 \begin{center}
 \begin{tabular}{|p{40mm}|r|r|r|r|r|r|r|}
 \hline
-\textbf{Method name} & \multicolumn{1}{l|}{\textbf{VP}} & \multicolumn{1}{l|}{\textbf{VN}}& \multicolumn{1}{l|}{\textbf{FN}}& \multicolumn{1}{l|}{\textbf{FP}} & \multicolumn{1}{l|}{\textbf{Sensitivity}} & \multicolumn{1}{l|}{\textbf{Specificity}} \\ \hline
+\textbf{Method name} & \multicolumn{1}{l|}{\textbf{TP}} & \multicolumn{1}{l|}{\textbf{VN}}& \multicolumn{1}{l|}{\textbf{FN}}& \multicolumn{1}{l|}{\textbf{FP}} & \multicolumn{1}{l|}{\textbf{Sensitivity}} & \multicolumn{1}{l|}{\textbf{Specificity}} \\ \hline
 Thresholding with S=0.5 & \cellcolor[HTML]{AADD99} 111 & \cellcolor[HTML]{AADD99} 43814 & \cellcolor[HTML]{FFCE93} 53 & \cellcolor[HTML]{FFCE93} 226 & 0.6768 & 0.9949 \\ \hline
 Isolation Forest for reconstruction errors with C=0.0075 & \cellcolor[HTML]{AADD99} 111 & \cellcolor[HTML]{AADD99} 43688 & \cellcolor[HTML]{FFCE93} 53 & \cellcolor[HTML]{FFCE93} 352 & 0.6768 & 0.9920 \\ \hline
 One-Class SVM for reconstruction errors with kernel RBF& \cellcolor[HTML]{AADD99} 134 & \cellcolor[HTML]{AADD99} 41887 & \cellcolor[HTML]{FFCE93} 30 & \cellcolor[HTML]{FFCE93} 2153 & 0.8170 & 0.9511 \\ \hline

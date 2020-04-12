@@ -20,10 +20,10 @@
 \contentsline {table}{\numberline {5.11}{\ignorespaces Anomaly detection evaluation using One-Class SVM for autoencoder's reconstruction error (Own elaboration).\relax }}{64}{table.198}% 
 \contentsline {table}{\numberline {5.12}{\ignorespaces Comparison of the best anomaly detection methods (own elaboration).\relax }}{64}{table.200}% 
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {6.1}{\ignorespaces Matriz de confusi\'{o}n, para el mecanismo de detecci\'{o}n de anomal\'{i}as (Elaboraci\'{o}n propia).\relax }}{68}{table.205}% 
-\contentsline {table}{\numberline {6.2}{\ignorespaces Resultados anomal\'{i}as tipo Zig Zag (Elaboraci\'{o}n propia).\relax }}{70}{table.212}% 
-\contentsline {table}{\numberline {6.3}{\ignorespaces Resultados del tipo Giros a alta Velocidad (Elaboraci\'{o}n propia).\relax }}{71}{table.218}% 
-\contentsline {table}{\numberline {6.4}{\ignorespaces Resultados del tipo Frenos en seco (Elaboraci\'{o}n propia).\relax }}{72}{table.224}% 
+\contentsline {table}{\numberline {6.1}{\ignorespaces Confusion matrix, for the anomaly detection mechanism (Own elaboration).\relax }}{68}{table.205}% 
+\contentsline {table}{\numberline {6.2}{\ignorespaces Results of anomalies Zig Zag type (Own elaboration).\relax }}{70}{table.212}% 
+\contentsline {table}{\numberline {6.3}{\ignorespaces Results anomalies' detection of the type High speed turns (Own elaboration).\relax }}{71}{table.218}% 
+\contentsline {table}{\numberline {6.4}{\ignorespaces Results of anomalies' detection of the type dry brakes (Own elaboration).\relax }}{72}{table.224}% 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {A.1}{\ignorespaces Arquitectura densa para 3 componentes principales (Elaboraci\'{o}n propia).\relax }}{85}{table.238}% 

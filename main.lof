@@ -60,10 +60,10 @@
 \contentsline {figure}{\numberline {5.7}{\ignorespaces Graphical representation of reconstruction error used for the training of isolation forests and One-Class SVM (Own elaboration).\relax }}{63}{figure.194}% 
 \contentsline {figure}{\numberline {5.8}{\ignorespaces Anomaly detection mechanism (Own elaboration).\relax }}{66}{figure.201}% 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Resultados de la detecci\'{o}n de anomal\'{i}as del tipo zig zag (Elaboraci\'{o}n propia).\relax }}{69}{figure.211}% 
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Resultados de la detecci\'{o}n de anomal\'{i}as del tipo giros a alta velocidad (Elaboraci\'{o}n propia).\relax }}{71}{figure.217}% 
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Resultados de la detecci\'{o}n de anomal\'{i}as del tipo frenos en seco (Elaboraci\'{o}n propia).\relax }}{72}{figure.223}% 
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Resultados de la detecci\'{o}n de falsos positivos (Elaboraci\'{o}n propia).\relax }}{73}{figure.229}% 
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Results of anomalies' detection of zig zag type (Own elaboration).\relax }}{69}{figure.211}% 
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Results of anomalies' detection of the high speed turns type (Own elaboration)\relax }}{71}{figure.217}% 
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Results of anomalies' detection of type dry brakes (Own elaboration).\relax }}{72}{figure.223}% 
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Results of false positives' detection (Own elaboration).\relax }}{73}{figure.229}% 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

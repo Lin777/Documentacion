@@ -1,5 +1,5 @@
 \babel@toc {nil}{}
-\contentsline {chapter}{Agradecimientos}{iii}{section*.1}% 
+\contentsline {chapter}{Acknowledgment}{iii}{section*.1}% 
 \contentsline {chapter}{Abstract}{xv}{section*.6}% 
 \contentsline {chapter}{\numberline {1}\uppercase {Introduction}}{1}{chapter.7}% 
 \contentsline {section}{\numberline {1.1}Approach of the problem}{1}{section.8}% 
@@ -81,14 +81,14 @@
 \contentsline {subsubsection}{One-Class SVM}{63}{section*.196}% 
 \contentsline {subsubsection}{Evaluation of the anomaly detection method}{64}{section*.199}% 
 \contentsline {chapter}{\numberline {6}\uppercase {RESULTS AND EVALUATION}}{67}{chapter.202}% 
-\contentsline {section}{\numberline {6.1}Evaluaci\'{o}n de desempe\~{n}o}{67}{section.203}% 
-\contentsline {subsection}{\numberline {6.1.1}Evaluaci\IeC {\'o}n en t\IeC {\'e}rminos de rendimiento de detecci\IeC {\'o}n}{67}{subsection.204}% 
-\contentsline {section}{\numberline {6.2}Resultados}{68}{section.206}% 
-\contentsline {subsection}{\numberline {6.2.1}Detecci\'{o}n de anomal\'{i}as del tipo zig zag}{68}{subsection.207}% 
-\contentsline {subsection}{\numberline {6.2.2}Detecci\'{o}n de anomal\'{i}as del tipo giros a alta velocidad}{70}{subsection.213}% 
-\contentsline {subsection}{\numberline {6.2.3}Detecci\'{o}n de anomal\'{i}as del tipo frenos en seco}{71}{subsection.219}% 
-\contentsline {subsection}{\numberline {6.2.4}Detecci\'{o}n de falsos positivos}{73}{subsection.225}% 
-\contentsline {chapter}{\numberline {7}\uppercase {Conclusiones y trabajos futuros}}{75}{chapter.230}% 
+\contentsline {section}{\numberline {6.1}Performance evaluation}{67}{section.203}% 
+\contentsline {subsection}{\numberline {6.1.1}Evaluation in detection performance's terms}{67}{subsection.204}% 
+\contentsline {section}{\numberline {6.2}Results}{68}{section.206}% 
+\contentsline {subsection}{\numberline {6.2.1}Anomalies' detection of zig zag type}{68}{subsection.207}% 
+\contentsline {subsection}{\numberline {6.2.2}Anomalies' detection for turns at high speed}{70}{subsection.213}% 
+\contentsline {subsection}{\numberline {6.2.3}Anomalies' detection of the type dry brakes}{71}{subsection.219}% 
+\contentsline {subsection}{\numberline {6.2.4}Detection of false positives}{73}{subsection.225}% 
+\contentsline {chapter}{\numberline {7}\uppercase {CONCLUSIONS AND FUTURE WORK}}{75}{chapter.230}% 
 \contentsline {section}{\numberline {7.1}Conclusiones}{75}{section.231}% 
 \contentsline {section}{\numberline {7.2}Trabajos futuros}{76}{section.232}% 
 \contentsline {chapter}{BIBLIOGRAFY}{79}{chapter*.233}% 
