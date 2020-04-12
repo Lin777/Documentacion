@@ -71,38 +71,38 @@
 \contentsline {chapter}{\numberline {5}\uppercase {GENERATION OF THE ANOMALY DETECTION MECHANISM}}{51}{chapter.162}% 
 \contentsline {section}{\numberline {5.1}Development environment}{51}{section.163}% 
 \contentsline {section}{\numberline {5.2}Normal and anomalous dataset}{52}{section.164}% 
-\contentsline {subsection}{\numberline {5.2.1}Generaci\'{o}n de series temporales}{52}{subsection.166}% 
-\contentsline {section}{\numberline {5.3}Modelo de detecci\'{o}n de anomal\'{i}as}{53}{section.172}% 
-\contentsline {subsection}{\numberline {5.3.1}Modelo del comportamiento normal}{54}{subsection.174}% 
-\contentsline {subsubsection}{Arquitectura del modelo}{54}{section*.175}% 
-\contentsline {subsection}{\numberline {5.3.2}M\'{e}todo de detecci\'{o}n de anomal\'{i}as}{57}{subsection.184}% 
-\contentsline {subsubsection}{Umbralizaci\'{o}n}{57}{section*.185}% 
+\contentsline {subsection}{\numberline {5.2.1}Generation of time series}{52}{subsection.166}% 
+\contentsline {section}{\numberline {5.3}Anomaly detection model}{53}{section.172}% 
+\contentsline {subsection}{\numberline {5.3.1}Normal behavior model}{54}{subsection.174}% 
+\contentsline {subsubsection}{Model architecture}{54}{section*.175}% 
+\contentsline {subsection}{\numberline {5.3.2}Anomaly detection method}{57}{subsection.184}% 
+\contentsline {subsubsection}{Thresholding}{57}{section*.185}% 
 \contentsline {subsubsection}{Isolation Forest}{61}{section*.190}% 
 \contentsline {subsubsection}{One-Class SVM}{63}{section*.196}% 
-\contentsline {subsubsection}{Evaluaci\'{o}n del m\'{e}todo de detecci\'{o}n de anomal\'{i}as}{64}{section*.199}% 
-\contentsline {chapter}{\numberline {6}\uppercase {Resultados y evaluaci\'{o}n}}{69}{chapter.202}% 
-\contentsline {section}{\numberline {6.1}Evaluaci\'{o}n de desempe\~{n}o}{69}{section.203}% 
-\contentsline {subsection}{\numberline {6.1.1}Evaluaci\IeC {\'o}n en t\IeC {\'e}rminos de rendimiento de detecci\IeC {\'o}n}{69}{subsection.204}% 
-\contentsline {section}{\numberline {6.2}Resultados}{70}{section.206}% 
-\contentsline {subsection}{\numberline {6.2.1}Detecci\'{o}n de anomal\'{i}as del tipo zig zag}{70}{subsection.207}% 
-\contentsline {subsection}{\numberline {6.2.2}Detecci\'{o}n de anomal\'{i}as del tipo giros a alta velocidad}{72}{subsection.213}% 
-\contentsline {subsection}{\numberline {6.2.3}Detecci\'{o}n de anomal\'{i}as del tipo frenos en seco}{73}{subsection.219}% 
-\contentsline {subsection}{\numberline {6.2.4}Detecci\'{o}n de falsos positivos}{75}{subsection.225}% 
-\contentsline {chapter}{\numberline {7}\uppercase {Conclusiones y trabajos futuros}}{77}{chapter.230}% 
-\contentsline {section}{\numberline {7.1}Conclusiones}{77}{section.231}% 
-\contentsline {section}{\numberline {7.2}Trabajos futuros}{78}{section.232}% 
-\contentsline {chapter}{BIBLIOGRAFY}{81}{chapter*.233}% 
-\contentsline {section}{References}{81}{section*.234}% 
-\contentsline {chapter}{\numberline {A}Experimentos de diferentes arquitecturas para los autoencoders}{87}{appendix.235}% 
-\contentsline {section}{\numberline {A.1}Redes densas}{87}{section.236}% 
-\contentsline {subsection}{\numberline {A.1.1}Redes densas para 3 componentes}{87}{subsection.237}% 
-\contentsline {subsection}{\numberline {A.1.2}Evaluaci\'{o}n redes densas}{88}{subsection.239}% 
-\contentsline {section}{\numberline {A.2}Redes convolucionales}{88}{section.241}% 
-\contentsline {subsection}{\numberline {A.2.1}Redes convolucionales para 3 componentes}{88}{subsection.242}% 
-\contentsline {subsection}{\numberline {A.2.2}Evaluaci\'{o}n redes convolucionales}{89}{subsection.244}% 
-\contentsline {section}{\numberline {A.3}Redes recurrentes}{89}{section.246}% 
-\contentsline {subsection}{\numberline {A.3.1}Redes recurrentes para 3 componentes}{89}{subsection.247}% 
-\contentsline {subsection}{\numberline {A.3.2}Evaluaci\'{o}n redes recurrentes}{90}{subsection.249}% 
-\contentsline {chapter}{\numberline {B}Arquitectura del Sistema de Demostraci\'{o}n}{91}{appendix.251}% 
-\contentsline {section}{\numberline {B.1}Arquitectura F\'{i}sica}{91}{section.252}% 
-\contentsline {section}{\numberline {B.2}Arquitectura L\'{o}gica}{92}{section.254}% 
+\contentsline {subsubsection}{Evaluation of the anomaly detection method}{64}{section*.199}% 
+\contentsline {chapter}{\numberline {6}\uppercase {RESULTS AND EVALUATION}}{67}{chapter.202}% 
+\contentsline {section}{\numberline {6.1}Evaluaci\'{o}n de desempe\~{n}o}{67}{section.203}% 
+\contentsline {subsection}{\numberline {6.1.1}Evaluaci\IeC {\'o}n en t\IeC {\'e}rminos de rendimiento de detecci\IeC {\'o}n}{67}{subsection.204}% 
+\contentsline {section}{\numberline {6.2}Resultados}{68}{section.206}% 
+\contentsline {subsection}{\numberline {6.2.1}Detecci\'{o}n de anomal\'{i}as del tipo zig zag}{68}{subsection.207}% 
+\contentsline {subsection}{\numberline {6.2.2}Detecci\'{o}n de anomal\'{i}as del tipo giros a alta velocidad}{70}{subsection.213}% 
+\contentsline {subsection}{\numberline {6.2.3}Detecci\'{o}n de anomal\'{i}as del tipo frenos en seco}{71}{subsection.219}% 
+\contentsline {subsection}{\numberline {6.2.4}Detecci\'{o}n de falsos positivos}{73}{subsection.225}% 
+\contentsline {chapter}{\numberline {7}\uppercase {Conclusiones y trabajos futuros}}{75}{chapter.230}% 
+\contentsline {section}{\numberline {7.1}Conclusiones}{75}{section.231}% 
+\contentsline {section}{\numberline {7.2}Trabajos futuros}{76}{section.232}% 
+\contentsline {chapter}{BIBLIOGRAFY}{79}{chapter*.233}% 
+\contentsline {section}{References}{79}{section*.234}% 
+\contentsline {chapter}{\numberline {A}Experimentos de diferentes arquitecturas para los autoencoders}{85}{appendix.235}% 
+\contentsline {section}{\numberline {A.1}Redes densas}{85}{section.236}% 
+\contentsline {subsection}{\numberline {A.1.1}Redes densas para 3 componentes}{85}{subsection.237}% 
+\contentsline {subsection}{\numberline {A.1.2}Evaluaci\'{o}n redes densas}{86}{subsection.239}% 
+\contentsline {section}{\numberline {A.2}Redes convolucionales}{86}{section.241}% 
+\contentsline {subsection}{\numberline {A.2.1}Redes convolucionales para 3 componentes}{86}{subsection.242}% 
+\contentsline {subsection}{\numberline {A.2.2}Evaluaci\'{o}n redes convolucionales}{87}{subsection.244}% 
+\contentsline {section}{\numberline {A.3}Redes recurrentes}{87}{section.246}% 
+\contentsline {subsection}{\numberline {A.3.1}Redes recurrentes para 3 componentes}{87}{subsection.247}% 
+\contentsline {subsection}{\numberline {A.3.2}Evaluaci\'{o}n redes recurrentes}{88}{subsection.249}% 
+\contentsline {chapter}{\numberline {B}Arquitectura del Sistema de Demostraci\'{o}n}{89}{appendix.251}% 
+\contentsline {section}{\numberline {B.1}Arquitectura F\'{i}sica}{89}{section.252}% 
+\contentsline {section}{\numberline {B.2}Arquitectura L\'{o}gica}{90}{section.254}% 

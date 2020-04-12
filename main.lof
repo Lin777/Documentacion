@@ -44,28 +44,28 @@
 \contentsline {subfigure}{\numberline {d}{\ignorespaces Robust Scaler\relax }}{45}{figure.caption.158}% 
 \contentsline {figure}{\numberline {4.12}{\ignorespaces Variance's graph vs.components' number (Own elaboration).\relax }}{49}{figure.161}% 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Gr\'{a}fica resultante de diferentes tama\~{n}os de series de tiempo (Elaboraci\'{o}n propia).\relax }}{53}{figure.171}% 
-\contentsline {subfigure}{\numberline {a}{\ignorespaces Serie de tiempo de 2 pasos.\relax }}{53}{figure.caption.167}% 
-\contentsline {subfigure}{\numberline {b}{\ignorespaces Serie de tiempo de 3 pasos.\relax }}{53}{figure.caption.168}% 
-\contentsline {subfigure}{\numberline {c}{\ignorespaces Serie de tiempo de 4 pasos.\relax }}{53}{figure.caption.169}% 
-\contentsline {subfigure}{\numberline {d}{\ignorespaces Serie de tiempo de 5 pasos.\relax }}{53}{figure.caption.170}% 
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Resultados (Elaboraci\'{o}n propia).\relax }}{58}{figure.183}% 
-\contentsline {subfigure}{\numberline {a}{\ignorespaces Resultados de la red \textbf {NN\_33}\relax }}{58}{figure.caption.180}% 
-\contentsline {subfigure}{\numberline {b}{\ignorespaces Resultados de la red \textbf {CNN\_33}\relax }}{58}{figure.caption.181}% 
-\contentsline {subfigure}{\numberline {c}{\ignorespaces Resultados de la red \textbf {RNN\_33}\relax }}{58}{figure.caption.182}% 
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Curva de los valores de reconstrucci\'{o}n obtenidos con el modelo del comportamiento normal (Elaboraci\'{o}n propia).\relax }}{59}{figure.187}% 
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Resultados de la obtenci\'{o}n de codos con diferentes valores de Sensibilidad, para los valores de reconstrucci\'{o}n obtenidos con el modelo del comportamiento normal (Elaboraci\'{o}n propia).\relax }}{60}{figure.188}% 
-\contentsline {figure}{\numberline {5.5}{\ignorespaces La figura de la izquierda muestra el aislamiento de una anomal\IeC {\'\i }a, que requiere solo tres particiones. A la derecha, el aislamiento de un punto normal requiere seis particiones \cite {Reference60}.\relax }}{61}{figure.191}% 
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Representaci\'{o}n gr\'{a}fica del modelo de comportamiento normal o autoencoder (Elaboraci\'{o}n propia).\relax }}{62}{figure.192}% 
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Representaci\'{o}n gr\'{a}fica del error de reconstrucci\'{o}n usado para el entrenamiento de los bosques de aislamiento y los SVM de una clase (Elaboraci\'{o}n propia).\relax }}{63}{figure.194}% 
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Mecanismo de detecci\'{o}n de anomal\'{i}as (Elaboraci\'{o}n propia).\relax }}{66}{figure.201}% 
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Results from different sizes of time series (Own elaboration).\relax }}{53}{figure.171}% 
+\contentsline {subfigure}{\numberline {a}{\ignorespaces 2\-step time series.\relax }}{53}{figure.caption.167}% 
+\contentsline {subfigure}{\numberline {b}{\ignorespaces 3\-step time series.\relax }}{53}{figure.caption.168}% 
+\contentsline {subfigure}{\numberline {c}{\ignorespaces 4\-step time series.\relax }}{53}{figure.caption.169}% 
+\contentsline {subfigure}{\numberline {d}{\ignorespaces 5\-step time series.\relax }}{53}{figure.caption.170}% 
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Results (Own elaboration).\relax }}{58}{figure.183}% 
+\contentsline {subfigure}{\numberline {a}{\ignorespaces Results of \textbf {NN\_33} network\relax }}{58}{figure.caption.180}% 
+\contentsline {subfigure}{\numberline {b}{\ignorespaces Results of \textbf {CNN\_33} network\relax }}{58}{figure.caption.181}% 
+\contentsline {subfigure}{\numberline {c}{\ignorespaces Results of \textbf {RNN\_33} network\relax }}{58}{figure.caption.182}% 
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Curve of reconstruction values obtained with the normal behavior model (Own elaboration).\relax }}{59}{figure.187}% 
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Results of obtaining elbows with different Sensitivity values, for reconstruction values obtained with normal behavior model (Own elaboration).\relax }}{60}{figure.188}% 
+\contentsline {figure}{\numberline {5.5}{\ignorespaces The figure on left shows the isolation of an anomaly, requiring only three partitions. On right, isolation of a normal point requires six partitions \cite {Reference60}.\relax }}{61}{figure.191}% 
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Graphical representation of normal behavior model or autoencoder (Own elaboration).\relax }}{62}{figure.192}% 
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Graphical representation of reconstruction error used for the training of isolation forests and One-Class SVM (Own elaboration).\relax }}{63}{figure.194}% 
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Anomaly detection mechanism (Own elaboration).\relax }}{66}{figure.201}% 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Resultados de la detecci\'{o}n de anomal\'{i}as del tipo zig zag (Elaboraci\'{o}n propia).\relax }}{71}{figure.211}% 
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Resultados de la detecci\'{o}n de anomal\'{i}as del tipo giros a alta velocidad (Elaboraci\'{o}n propia).\relax }}{73}{figure.217}% 
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Resultados de la detecci\'{o}n de anomal\'{i}as del tipo frenos en seco (Elaboraci\'{o}n propia).\relax }}{74}{figure.223}% 
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Resultados de la detecci\'{o}n de falsos positivos (Elaboraci\'{o}n propia).\relax }}{75}{figure.229}% 
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Resultados de la detecci\'{o}n de anomal\'{i}as del tipo zig zag (Elaboraci\'{o}n propia).\relax }}{69}{figure.211}% 
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Resultados de la detecci\'{o}n de anomal\'{i}as del tipo giros a alta velocidad (Elaboraci\'{o}n propia).\relax }}{71}{figure.217}% 
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Resultados de la detecci\'{o}n de anomal\'{i}as del tipo frenos en seco (Elaboraci\'{o}n propia).\relax }}{72}{figure.223}% 
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Resultados de la detecci\'{o}n de falsos positivos (Elaboraci\'{o}n propia).\relax }}{73}{figure.229}% 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {B.1}{\ignorespaces Arquitectura f\'{i}sica del Sistema de Demostraci\'{o}n (Elaboraci\'{o}n propia).\relax }}{91}{figure.253}% 
-\contentsline {figure}{\numberline {B.2}{\ignorespaces Arquitectura L\'{o}gica del Sistema de Demostraci\'{o}n (Elaboraci\'{o}n propia).\relax }}{92}{figure.255}% 
+\contentsline {figure}{\numberline {B.1}{\ignorespaces Arquitectura f\'{i}sica del Sistema de Demostraci\'{o}n (Elaboraci\'{o}n propia).\relax }}{89}{figure.253}% 
+\contentsline {figure}{\numberline {B.2}{\ignorespaces Arquitectura L\'{o}gica del Sistema de Demostraci\'{o}n (Elaboraci\'{o}n propia).\relax }}{90}{figure.255}% 
