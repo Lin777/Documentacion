@@ -89,20 +89,20 @@
 \contentsline {subsection}{\numberline {6.2.3}Anomalies' detection of the type dry brakes}{71}{subsection.219}% 
 \contentsline {subsection}{\numberline {6.2.4}Detection of false positives}{73}{subsection.225}% 
 \contentsline {chapter}{\numberline {7}\uppercase {CONCLUSIONS AND FUTURE WORK}}{75}{chapter.230}% 
-\contentsline {section}{\numberline {7.1}Conclusiones}{75}{section.231}% 
-\contentsline {section}{\numberline {7.2}Trabajos futuros}{76}{section.232}% 
-\contentsline {chapter}{BIBLIOGRAFY}{79}{chapter*.233}% 
-\contentsline {section}{References}{79}{section*.234}% 
-\contentsline {chapter}{\numberline {A}Experimentos de diferentes arquitecturas para los autoencoders}{85}{appendix.235}% 
-\contentsline {section}{\numberline {A.1}Redes densas}{85}{section.236}% 
-\contentsline {subsection}{\numberline {A.1.1}Redes densas para 3 componentes}{85}{subsection.237}% 
-\contentsline {subsection}{\numberline {A.1.2}Evaluaci\'{o}n redes densas}{86}{subsection.239}% 
-\contentsline {section}{\numberline {A.2}Redes convolucionales}{86}{section.241}% 
-\contentsline {subsection}{\numberline {A.2.1}Redes convolucionales para 3 componentes}{86}{subsection.242}% 
-\contentsline {subsection}{\numberline {A.2.2}Evaluaci\'{o}n redes convolucionales}{87}{subsection.244}% 
-\contentsline {section}{\numberline {A.3}Redes recurrentes}{87}{section.246}% 
-\contentsline {subsection}{\numberline {A.3.1}Redes recurrentes para 3 componentes}{87}{subsection.247}% 
-\contentsline {subsection}{\numberline {A.3.2}Evaluaci\'{o}n redes recurrentes}{88}{subsection.249}% 
-\contentsline {chapter}{\numberline {B}Arquitectura del Sistema de Demostraci\'{o}n}{89}{appendix.251}% 
-\contentsline {section}{\numberline {B.1}Arquitectura F\'{i}sica}{89}{section.252}% 
-\contentsline {section}{\numberline {B.2}Arquitectura L\'{o}gica}{90}{section.254}% 
+\contentsline {section}{\numberline {7.1}Conclusions}{75}{section.231}% 
+\contentsline {section}{\numberline {7.2}Future works}{76}{section.232}% 
+\contentsline {chapter}{BIBLIOGRAFY}{77}{chapter*.233}% 
+\contentsline {section}{References}{77}{section*.234}% 
+\contentsline {chapter}{\numberline {A}Experiments of different architectures for autoencoders}{83}{appendix.235}% 
+\contentsline {section}{\numberline {A.1}Dense networks}{83}{section.236}% 
+\contentsline {subsection}{\numberline {A.1.1}Dense nets for 3 components}{83}{subsection.237}% 
+\contentsline {subsection}{\numberline {A.1.2}Dense network evaluation}{84}{subsection.239}% 
+\contentsline {section}{\numberline {A.2}Convolutional networks}{84}{section.241}% 
+\contentsline {subsection}{\numberline {A.2.1}Convolutional networks for 3 components}{84}{subsection.242}% 
+\contentsline {subsection}{\numberline {A.2.2}Evaluation of convolutional networks}{85}{subsection.244}% 
+\contentsline {section}{\numberline {A.3}Recurrent networks}{85}{section.246}% 
+\contentsline {subsection}{\numberline {A.3.1}Recurrent networks for 3 components}{85}{subsection.247}% 
+\contentsline {subsection}{\numberline {A.3.2}Recurrent networks evaluation}{86}{subsection.249}% 
+\contentsline {chapter}{\numberline {B}Demonstration System Architecture}{87}{appendix.251}% 
+\contentsline {section}{\numberline {B.1}Physical Architecture}{87}{section.252}% 
+\contentsline {section}{\numberline {B.2}Logical Architecture}{87}{section.254}% 

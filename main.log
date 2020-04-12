@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2020.4.6)  12 APR 2020 16:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2020.4.6)  12 APR 2020 18:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1061,12 +1061,6 @@ Overfull \hbox (10.3792pt too wide) in paragraph at lines 59--59
  or autoencoder (Own elaboration).[][] [][]  
  []
 
-
-Overfull \hbox (11.66078pt too wide) in paragraph at lines 64--64
- [][] [][][]\T1/phv/m/n/10.95 Resultados de la detección de anomalías del tipo 
-giros a alta velocidad (Elaboración 
- []
-
 )
 \tf@lof=\write5
 \openout5 = `main.lof'.
@@ -1083,14 +1077,15 @@ Overfull \hbox (17.85765pt too wide) in paragraph at lines 20--20
 for autoencoder's reconstruction 
  []
 
-1: section
-[13
-
-])
+)
 \tf@lot=\write6
 \openout6 = `main.lot'.
 
- [14]
+
+1: section
+[13
+
+] [14]
 --------------------
  Abstract
 --------------------
@@ -1114,7 +1109,7 @@ LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <17.28> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 3.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 15.
-<imagenes/Cap1/oms1.png, id=869, 619.56468pt x 441.90094pt>
+<imagenes/Cap1/oms1.png, id=866, 619.56468pt x 441.90094pt>
 File: imagenes/Cap1/oms1.png Graphic file (type png)
 <use imagenes/Cap1/oms1.png>
 Package pdftex.def Info: imagenes/Cap1/oms1.png  used on input line 28.
@@ -1127,7 +1122,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 ]
-<imagenes/Cap1/arbol_p.png, id=879, 626.34pt x 306.39468pt>
+<imagenes/Cap1/arbol_p.png, id=876, 626.34pt x 306.39468pt>
 File: imagenes/Cap1/arbol_p.png Graphic file (type png)
 <use imagenes/Cap1/arbol_p.png>
 Package pdftex.def Info: imagenes/Cap1/arbol_p.png  used on input line 48.
@@ -1168,7 +1163,7 @@ Chapter 2.
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\uppercase' on input line 3.
 
-<imagenes/Cap2/anom_2D.png, id=895, 374.14781pt x 326.72063pt>
+<imagenes/Cap2/anom_2D.png, id=892, 374.14781pt x 326.72063pt>
 File: imagenes/Cap2/anom_2D.png Graphic file (type png)
 <use imagenes/Cap2/anom_2D.png>
 Package pdftex.def Info: imagenes/Cap2/anom_2D.png  used on input line 27.
@@ -1182,7 +1177,7 @@ Overfull \hbox (10.43373pt too wide) in paragraph at lines 38--40
 ese are points that are only considered anomalous
  []
 
-<imagenes/Cap2/anom_contx.png, id=901, 454.69875pt x 225.84375pt>
+<imagenes/Cap2/anom_contx.png, id=898, 454.69875pt x 225.84375pt>
 File: imagenes/Cap2/anom_contx.png Graphic file (type png)
 <use imagenes/Cap2/anom_contx.png>
 Package pdftex.def Info: imagenes/Cap2/anom_contx.png  used on input line 47.
@@ -1196,7 +1191,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 ]
-<imagenes/Cap2/anom_col.png, id=913, 386.94562pt x 302.63063pt>
+<imagenes/Cap2/anom_col.png, id=910, 386.94562pt x 302.63063pt>
 File: imagenes/Cap2/anom_col.png Graphic file (type png)
 <use imagenes/Cap2/anom_col.png>
 Package pdftex.def Info: imagenes/Cap2/anom_col.png  used on input line 62.
@@ -1255,7 +1250,7 @@ ed to generate the model detection;
  []
 
 [9]
-<imagenes/Cap2/metodo1.png, id=967, 963.6pt x 722.7pt>
+<imagenes/Cap2/metodo1.png, id=964, 963.6pt x 722.7pt>
 File: imagenes/Cap2/metodo1.png Graphic file (type png)
 <use imagenes/Cap2/metodo1.png>
 Package pdftex.def Info: imagenes/Cap2/metodo1.png  used on input line 182.
@@ -1301,7 +1296,7 @@ obtained, therefore unknown samples
 [13]
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <9> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 104.
-<imagenes/Cap4/neurona.png, id=1001, 786.94pt x 429.605pt>
+<imagenes/Cap4/neurona.png, id=998, 786.94pt x 429.605pt>
 File: imagenes/Cap4/neurona.png Graphic file (type png)
 <use imagenes/Cap4/neurona.png>
 Package pdftex.def Info: imagenes/Cap4/neurona.png  used on input line 113.
@@ -1313,7 +1308,7 @@ uron and chemically between neurons,
  []
 
 [14 <./imagenes/Cap4/neurona.png>]
-<imagenes/Cap4/neurona_artificial.png, id=1012, 652.4375pt x 328.22626pt>
+<imagenes/Cap4/neurona_artificial.png, id=1009, 652.4375pt x 328.22626pt>
 File: imagenes/Cap4/neurona_artificial.png Graphic file (type png)
 <use imagenes/Cap4/neurona_artificial.png>
 Package pdftex.def Info: imagenes/Cap4/neurona_artificial.png  used on input li
@@ -1326,27 +1321,27 @@ ns, these inputs would be dendrites of a biological
  []
 
 [15 <./imagenes/Cap4/neurona_artificial.png>]
-<imagenes/Cap4/sigmoid.png, id=1026, 322.20375pt x 162.6075pt>
+<imagenes/Cap4/sigmoid.png, id=1023, 322.20375pt x 162.6075pt>
 File: imagenes/Cap4/sigmoid.png Graphic file (type png)
 <use imagenes/Cap4/sigmoid.png>
 Package pdftex.def Info: imagenes/Cap4/sigmoid.png  used on input line 190.
 (pdftex.def)             Requested size: 206.01079pt x 103.97166pt.
-<imagenes/Cap4/tanh.png, id=1027, 305.64188pt x 151.3153pt>
+<imagenes/Cap4/tanh.png, id=1024, 305.64188pt x 151.3153pt>
 File: imagenes/Cap4/tanh.png Graphic file (type png)
 <use imagenes/Cap4/tanh.png>
 Package pdftex.def Info: imagenes/Cap4/tanh.png  used on input line 190.
 (pdftex.def)             Requested size: 206.01079pt x 101.99026pt.
-<imagenes/Cap4/relu.png, id=1028, 315.42844pt x 158.84344pt>
+<imagenes/Cap4/relu.png, id=1025, 315.42844pt x 158.84344pt>
 File: imagenes/Cap4/relu.png Graphic file (type png)
 <use imagenes/Cap4/relu.png>
 Package pdftex.def Info: imagenes/Cap4/relu.png  used on input line 190.
 (pdftex.def)             Requested size: 206.01079pt x 103.74387pt.
-<imagenes/Cap4/l_relu.png, id=1029, 303.38344pt x 161.85469pt>
+<imagenes/Cap4/l_relu.png, id=1026, 303.38344pt x 161.85469pt>
 File: imagenes/Cap4/l_relu.png Graphic file (type png)
 <use imagenes/Cap4/l_relu.png>
 Package pdftex.def Info: imagenes/Cap4/l_relu.png  used on input line 190.
 (pdftex.def)             Requested size: 206.01079pt x 109.90906pt.
-<imagenes/Cap4/elu.png, id=1030, 363.759pt x 318.59026pt>
+<imagenes/Cap4/elu.png, id=1027, 363.759pt x 318.59026pt>
 File: imagenes/Cap4/elu.png Graphic file (type png)
 <use imagenes/Cap4/elu.png>
 Package pdftex.def Info: imagenes/Cap4/elu.png  used on input line 190.
@@ -1362,14 +1357,14 @@ Overfull \hbox (6.829pt too wide) in paragraph at lines 222--224
 [16] [17 <./imagenes/Cap4/sigmoid.png (PNG copy)> <./imagenes/Cap4/tanh.png (PN
 G copy)> <./imagenes/Cap4/relu.png (PNG copy)> <./imagenes/Cap4/l_relu.png (PNG
  copy)> <./imagenes/Cap4/elu.png>] [18]
-<imagenes/Cap4/arquitectura.png, id=1078, 929.4725pt x 516.93124pt>
+<imagenes/Cap4/arquitectura.png, id=1075, 929.4725pt x 516.93124pt>
 File: imagenes/Cap4/arquitectura.png Graphic file (type png)
 <use imagenes/Cap4/arquitectura.png>
 Package pdftex.def Info: imagenes/Cap4/arquitectura.png  used on input line 302
 .
 (pdftex.def)             Requested size: 434.91322pt x 241.87709pt.
  [19 <./imagenes/Cap4/arquitectura.png>] [20]
-<imagenes/Cap4/autoencoder.png, id=1097, 589.20125pt x 330.23375pt>
+<imagenes/Cap4/autoencoder.png, id=1094, 589.20125pt x 330.23375pt>
 File: imagenes/Cap4/autoencoder.png Graphic file (type png)
 <use imagenes/Cap4/autoencoder.png>
 Package pdftex.def Info: imagenes/Cap4/autoencoder.png  used on input line 356.
@@ -1399,7 +1394,7 @@ Overfull \hbox (30.09094pt too wide) in paragraph at lines 382--384
 convolution layer, grouping/subsampling
  []
 
-<imagenes/Cap4/cnn.png, id=1111, 692.5875pt x 234.1247pt>
+<imagenes/Cap4/cnn.png, id=1108, 692.5875pt x 234.1247pt>
 File: imagenes/Cap4/cnn.png Graphic file (type png)
 <use imagenes/Cap4/cnn.png>
 Package pdftex.def Info: imagenes/Cap4/cnn.png  used on input line 386.
@@ -1411,7 +1406,7 @@ Overfull \hbox (2.5825pt too wide) in paragraph at lines 399--401
  []
 
 [22 <./imagenes/Cap4/cnn.png>]
-<imagenes/Cap4/rnn.png, id=1133, 767.11594pt x 231.86626pt>
+<imagenes/Cap4/rnn.png, id=1130, 767.11594pt x 231.86626pt>
 File: imagenes/Cap4/rnn.png Graphic file (type png)
 <use imagenes/Cap4/rnn.png>
 Package pdftex.def Info: imagenes/Cap4/rnn.png  used on input line 413.
@@ -1429,13 +1424,13 @@ e of learning long-term dependencies
  []
 
 [23 <./imagenes/Cap4/rnn.png (PNG copy)>]
-<imagenes/Cap4/lstm.png, id=1157, 816.04875pt x 683.55376pt>
+<imagenes/Cap4/lstm.png, id=1154, 816.04875pt x 683.55376pt>
 File: imagenes/Cap4/lstm.png Graphic file (type png)
 <use imagenes/Cap4/lstm.png>
 Package pdftex.def Info: imagenes/Cap4/lstm.png  used on input line 433.
 (pdftex.def)             Requested size: 434.91322pt x 364.30522pt.
  [24 <./imagenes/Cap4/lstm.png>]
-<imagenes/Cap4/gru.png, id=1169, 705.63625pt x 353.32pt>
+<imagenes/Cap4/gru.png, id=1166, 705.63625pt x 353.32pt>
 File: imagenes/Cap4/gru.png Graphic file (type png)
 <use imagenes/Cap4/gru.png>
 Package pdftex.def Info: imagenes/Cap4/gru.png  used on input line 465.
@@ -1447,13 +1442,13 @@ Overfull \hbox (3.16078pt too wide) in paragraph at lines 479--481
  []
 
 [25 <./imagenes/Cap4/gru.png>]
-<imagenes/Cap4/oc-svm.png, id=1183, 588.1975pt x 477.785pt>
+<imagenes/Cap4/oc-svm.png, id=1180, 588.1975pt x 477.785pt>
 File: imagenes/Cap4/oc-svm.png Graphic file (type png)
 <use imagenes/Cap4/oc-svm.png>
 Package pdftex.def Info: imagenes/Cap4/oc-svm.png  used on input line 488.
 (pdftex.def)             Requested size: 206.01079pt x 167.33661pt.
  [26 <./imagenes/Cap4/oc-svm.png>]
-<imagenes/Cap4/comp_if_ocsvm.png, id=1195, 234.8775pt x 438.13687pt>
+<imagenes/Cap4/comp_if_ocsvm.png, id=1192, 234.8775pt x 438.13687pt>
 File: imagenes/Cap4/comp_if_ocsvm.png Graphic file (type png)
 <use imagenes/Cap4/comp_if_ocsvm.png>
 Package pdftex.def Info: imagenes/Cap4/comp_if_ocsvm.png  used on input line 52
@@ -1471,14 +1466,14 @@ Overfull \hbox (5.58272pt too wide) in paragraph at lines 533--535
  is above a predefined threshold,
  []
 
-<imagenes/Cap4/autoencoder-anomaly.png, id=1214, 814.04124pt x 474.77374pt>
+<imagenes/Cap4/autoencoder-anomaly.png, id=1210, 814.04124pt x 474.77374pt>
 File: imagenes/Cap4/autoencoder-anomaly.png Graphic file (type png)
 <use imagenes/Cap4/autoencoder-anomaly.png>
 Package pdftex.def Info: imagenes/Cap4/autoencoder-anomaly.png  used on input l
 ine 547.
 (pdftex.def)             Requested size: 434.91322pt x 253.65009pt.
 [28 <./imagenes/Cap4/autoencoder-anomaly.png>] [29] [30]
-<imagenes/Cap4/auc_roc.png, id=1243, 362.35374pt x 331.2375pt>
+<imagenes/Cap4/auc_roc.png, id=1240, 362.35374pt x 331.2375pt>
 File: imagenes/Cap4/auc_roc.png Graphic file (type png)
 <use imagenes/Cap4/auc_roc.png>
 Package pdftex.def Info: imagenes/Cap4/auc_roc.png  used on input line 675.
@@ -1520,7 +1515,7 @@ Overfull \hbox (7.65659pt too wide) in paragraph at lines 21--23
 an Android-based mobile application
  []
 
-<imagenes/Cap3/captura.png, id=1266, 847.165pt x 371.3875pt>
+<imagenes/Cap3/captura.png, id=1263, 847.165pt x 371.3875pt>
 File: imagenes/Cap3/captura.png Graphic file (type png)
 <use imagenes/Cap3/captura.png>
 Package pdftex.def Info: imagenes/Cap3/captura.png  used on input line 27.
@@ -1534,12 +1529,12 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 ]
-<imagenes/Cap3/soporte.png, id=1275, 548.80031pt x 283.0575pt>
+<imagenes/Cap3/soporte.png, id=1272, 548.80031pt x 283.0575pt>
 File: imagenes/Cap3/soporte.png Graphic file (type png)
 <use imagenes/Cap3/soporte.png>
 Package pdftex.def Info: imagenes/Cap3/soporte.png  used on input line 40.
 (pdftex.def)             Requested size: 297.57036pt x 153.48367pt.
-<imagenes/Cap3/dataset.png, id=1277, 548.0475pt x 149.8097pt>
+<imagenes/Cap3/dataset.png, id=1274, 548.0475pt x 149.8097pt>
 File: imagenes/Cap3/dataset.png Graphic file (type png)
 <use imagenes/Cap3/dataset.png>
 Package pdftex.def Info: imagenes/Cap3/dataset.png  used on input line 50.
@@ -1554,12 +1549,12 @@ Overfull \hbox (5.91144pt too wide) in paragraph at lines 85--87
  user (agent) from different positions
  []
 
-<imagenes/Cap3/horizontal.png, id=1287, 420.82219pt x 335.00156pt>
+<imagenes/Cap3/horizontal.png, id=1284, 420.82219pt x 335.00156pt>
 File: imagenes/Cap3/horizontal.png Graphic file (type png)
 <use imagenes/Cap3/horizontal.png>
 Package pdftex.def Info: imagenes/Cap3/horizontal.png  used on input line 102.
 (pdftex.def)             Requested size: 215.16884pt x 171.28813pt.
-<imagenes/Cap3/vertical.png, id=1288, 348.55219pt x 269.50688pt>
+<imagenes/Cap3/vertical.png, id=1285, 348.55219pt x 269.50688pt>
 File: imagenes/Cap3/vertical.png Graphic file (type png)
 <use imagenes/Cap3/vertical.png>
 Package pdftex.def Info: imagenes/Cap3/vertical.png  used on input line 102.
@@ -1572,7 +1567,7 @@ erent reasons; which can drastically
 
 [36 <./imagenes/Cap3/horizontal.png (PNG copy)> <./imagenes/Cap3/vertical.png (
 PNG copy)>]
-<imagenes/Cap3/histograma_sensores.png, id=1304, 462.528pt x 346.896pt>
+<imagenes/Cap3/histograma_sensores.png, id=1301, 462.528pt x 346.896pt>
 File: imagenes/Cap3/histograma_sensores.png Graphic file (type png)
 <use imagenes/Cap3/histograma_sensores.png>
 Package pdftex.def Info: imagenes/Cap3/histograma_sensores.png  used on input l
@@ -1582,7 +1577,7 @@ ine 164.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<imagenes/Cap3/describe_data.png, id=1306, 491.58656pt x 172.39406pt>
+<imagenes/Cap3/describe_data.png, id=1303, 491.58656pt x 172.39406pt>
 File: imagenes/Cap3/describe_data.png Graphic file (type png)
 <use imagenes/Cap3/describe_data.png>
 Package pdftex.def Info: imagenes/Cap3/describe_data.png  used on input line 17
@@ -1593,13 +1588,13 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [37] [38 <./imagenes/Cap3/histograma_sensores.png> <./imagenes/Cap3/describe_da
 ta.png (PNG copy)>]
-<imagenes/Cap3/68-95-99_rule.png, id=1318, 632.3625pt x 310.91156pt>
+<imagenes/Cap3/68-95-99_rule.png, id=1315, 632.3625pt x 310.91156pt>
 File: imagenes/Cap3/68-95-99_rule.png Graphic file (type png)
 <use imagenes/Cap3/68-95-99_rule.png>
 Package pdftex.def Info: imagenes/Cap3/68-95-99_rule.png  used on input line 19
 3.
 (pdftex.def)             Requested size: 444.07127pt x 218.33871pt.
-<imagenes/Cap3/68-95-99_rule_acc_z.png, id=1324, 1006.76125pt x 626.34pt>
+<imagenes/Cap3/68-95-99_rule_acc_z.png, id=1321, 1006.76125pt x 626.34pt>
 File: imagenes/Cap3/68-95-99_rule_acc_z.png Graphic file (type png)
 <use imagenes/Cap3/68-95-99_rule_acc_z.png>
 Package pdftex.def Info: imagenes/Cap3/68-95-99_rule_acc_z.png  used on input l
@@ -1638,7 +1633,7 @@ LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <10.95> not available
 (Font)              Font shape `T1/phv/b/it' tried instead on input line 321.
 LaTeX Font Info:    Font shape `T1/phv/b/it' in size <10.95> not available
 (Font)              Font shape `T1/phv/b/sl' tried instead on input line 321.
-<imagenes/Cap3/train-dev-test.png, id=1353, 770.88pt x 213.79875pt>
+<imagenes/Cap3/train-dev-test.png, id=1350, 770.88pt x 213.79875pt>
 File: imagenes/Cap3/train-dev-test.png Graphic file (type png)
 <use imagenes/Cap3/train-dev-test.png>
 Package pdftex.def Info: imagenes/Cap3/train-dev-test.png  used on input line 3
@@ -1658,32 +1653,32 @@ LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 362.
 
 [43 <./imagenes/Cap3/train-dev-test.png>]
-<imagenes/Cap3/datos_sin_preprocesamiento.png, id=1384, 426.09187pt x 316.93407
+<imagenes/Cap3/datos_sin_preprocesamiento.png, id=1381, 426.09187pt x 316.93407
 pt>
 File: imagenes/Cap3/datos_sin_preprocesamiento.png Graphic file (type png)
 <use imagenes/Cap3/datos_sin_preprocesamiento.png>
 Package pdftex.def Info: imagenes/Cap3/datos_sin_preprocesamiento.png  used on 
 input line 385.
 (pdftex.def)             Requested size: 228.90244pt x 170.26169pt.
-<imagenes/Cap3/datos_minmax_scaler.png, id=1385, 450.18187pt x 326.72063pt>
+<imagenes/Cap3/datos_minmax_scaler.png, id=1382, 450.18187pt x 326.72063pt>
 File: imagenes/Cap3/datos_minmax_scaler.png Graphic file (type png)
 <use imagenes/Cap3/datos_minmax_scaler.png>
 Package pdftex.def Info: imagenes/Cap3/datos_minmax_scaler.png  used on input l
 ine 420.
 (pdftex.def)             Requested size: 206.01079pt x 149.5156pt.
-<imagenes/Cap3/datos_standard_scaler.png, id=1386, 438.13687pt x 325.215pt>
+<imagenes/Cap3/datos_standard_scaler.png, id=1383, 438.13687pt x 325.215pt>
 File: imagenes/Cap3/datos_standard_scaler.png Graphic file (type png)
 <use imagenes/Cap3/datos_standard_scaler.png>
 Package pdftex.def Info: imagenes/Cap3/datos_standard_scaler.png  used on input
  line 420.
 (pdftex.def)             Requested size: 206.01079pt x 152.91557pt.
-<imagenes/Cap3/datos_max_scaler.png, id=1387, 435.12563pt x 321.45094pt>
+<imagenes/Cap3/datos_max_scaler.png, id=1384, 435.12563pt x 321.45094pt>
 File: imagenes/Cap3/datos_max_scaler.png Graphic file (type png)
 <use imagenes/Cap3/datos_max_scaler.png>
 Package pdftex.def Info: imagenes/Cap3/datos_max_scaler.png  used on input line
  420.
 (pdftex.def)             Requested size: 206.01079pt x 152.19537pt.
-<imagenes/Cap3/datos_robust_scaler.png, id=1388, 440.39531pt x 325.96782pt>
+<imagenes/Cap3/datos_robust_scaler.png, id=1385, 440.39531pt x 325.96782pt>
 File: imagenes/Cap3/datos_robust_scaler.png Graphic file (type png)
 <use imagenes/Cap3/datos_robust_scaler.png>
 Package pdftex.def Info: imagenes/Cap3/datos_robust_scaler.png  used on input l
@@ -1700,7 +1695,7 @@ ely discarded first because the results it presented
 
 [46] [47]
 1: section
-<imagenes/Cap3/pca.png, id=1412, 462.528pt x 346.896pt>
+<imagenes/Cap3/pca.png, id=1409, 462.528pt x 346.896pt>
 File: imagenes/Cap3/pca.png Graphic file (type png)
 <use imagenes/Cap3/pca.png>
 Package pdftex.def Info: imagenes/Cap3/pca.png  used on input line 516.
@@ -1749,22 +1744,22 @@ Overfull \hbox (3.53737pt too wide) in paragraph at lines 63--65
 d to validate the proposed method,
  []
 
-<imagenes/Cap4/pca3-2.png, id=1441, 469.755pt x 349.305pt>
+<imagenes/Cap4/pca3-2.png, id=1438, 469.755pt x 349.305pt>
 File: imagenes/Cap4/pca3-2.png Graphic file (type png)
 <use imagenes/Cap4/pca3-2.png>
 Package pdftex.def Info: imagenes/Cap4/pca3-2.png  used on input line 100.
 (pdftex.def)             Requested size: 206.01079pt x 153.18832pt.
-<imagenes/Cap4/pca3-3.png, id=1442, 492.33937pt x 348.55219pt>
+<imagenes/Cap4/pca3-3.png, id=1439, 492.33937pt x 348.55219pt>
 File: imagenes/Cap4/pca3-3.png Graphic file (type png)
 <use imagenes/Cap4/pca3-3.png>
 Package pdftex.def Info: imagenes/Cap4/pca3-3.png  used on input line 100.
 (pdftex.def)             Requested size: 206.01079pt x 145.84842pt.
-<imagenes/Cap4/pca3-4.png, id=1443, 487.06969pt x 350.81062pt>
+<imagenes/Cap4/pca3-4.png, id=1440, 487.06969pt x 350.81062pt>
 File: imagenes/Cap4/pca3-4.png Graphic file (type png)
 <use imagenes/Cap4/pca3-4.png>
 Package pdftex.def Info: imagenes/Cap4/pca3-4.png  used on input line 100.
 (pdftex.def)             Requested size: 206.01079pt x 148.37791pt.
-<imagenes/Cap4/pca3-5.png, id=1444, 480.29437pt x 350.05782pt>
+<imagenes/Cap4/pca3-5.png, id=1441, 480.29437pt x 350.05782pt>
 File: imagenes/Cap4/pca3-5.png Graphic file (type png)
 <use imagenes/Cap4/pca3-5.png>
 Package pdftex.def Info: imagenes/Cap4/pca3-5.png  used on input line 100.
@@ -1783,7 +1778,7 @@ e input layer receives a two-dimensional
  []
 
 [54] [55] [56]
-<imagenes/Cap5/resultado_nn.png, id=1471, 1011.78pt x 289.08pt>
+<imagenes/Cap5/resultado_nn.png, id=1468, 1011.78pt x 289.08pt>
 File: imagenes/Cap5/resultado_nn.png Graphic file (type png)
 <use imagenes/Cap5/resultado_nn.png>
 Package pdftex.def Info: imagenes/Cap5/resultado_nn.png  used on input line 286
@@ -1791,13 +1786,13 @@ Package pdftex.def Info: imagenes/Cap5/resultado_nn.png  used on input line 286
 (pdftex.def)             Requested size: 453.22932pt x 129.49371pt.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 286.
-<imagenes/Cap5/resultado_cnn.png, id=1472, 1011.78pt x 289.08pt>
+<imagenes/Cap5/resultado_cnn.png, id=1469, 1011.78pt x 289.08pt>
 File: imagenes/Cap5/resultado_cnn.png Graphic file (type png)
 <use imagenes/Cap5/resultado_cnn.png>
 Package pdftex.def Info: imagenes/Cap5/resultado_cnn.png  used on input line 28
 6.
 (pdftex.def)             Requested size: 453.22932pt x 129.49371pt.
-<imagenes/Cap5/resultado_rnn.png, id=1473, 1011.78pt x 289.08pt>
+<imagenes/Cap5/resultado_rnn.png, id=1470, 1011.78pt x 289.08pt>
 File: imagenes/Cap5/resultado_rnn.png Graphic file (type png)
 <use imagenes/Cap5/resultado_rnn.png>
 Package pdftex.def Info: imagenes/Cap5/resultado_rnn.png  used on input line 28
@@ -1808,26 +1803,26 @@ Overfull \hbox (2.22444pt too wide) in paragraph at lines 286--287
  [][] 
  []
 
-<imagenes/Cap5/codos.png, id=1476, 462.528pt x 346.896pt>
+<imagenes/Cap5/codos.png, id=1473, 462.528pt x 346.896pt>
 File: imagenes/Cap5/codos.png Graphic file (type png)
 <use imagenes/Cap5/codos.png>
 Package pdftex.def Info: imagenes/Cap5/codos.png  used on input line 318.
 (pdftex.def)             Requested size: 343.35365pt x 257.53004pt.
 [57] [58 <./imagenes/Cap5/resultado_nn.png> <./imagenes/Cap5/resultado_cnn.png>
  <./imagenes/Cap5/resultado_rnn.png>]
-<imagenes/Cap5/zoom_codos.png, id=1491, 873.2625pt x 607.26875pt>
+<imagenes/Cap5/zoom_codos.png, id=1488, 873.2625pt x 607.26875pt>
 File: imagenes/Cap5/zoom_codos.png Graphic file (type png)
 <use imagenes/Cap5/zoom_codos.png>
 Package pdftex.def Info: imagenes/Cap5/zoom_codos.png  used on input line 339.
 (pdftex.def)             Requested size: 343.35365pt x 238.7705pt.
  [59 <./imagenes/Cap5/codos.png>] [60 <./imagenes/Cap5/zoom_codos.png>]
-<imagenes/Cap5/isolation-forest.png, id=1505, 513.41812pt x 400.49625pt>
+<imagenes/Cap5/isolation-forest.png, id=1502, 513.41812pt x 400.49625pt>
 File: imagenes/Cap5/isolation-forest.png Graphic file (type png)
 <use imagenes/Cap5/isolation-forest.png>
 Package pdftex.def Info: imagenes/Cap5/isolation-forest.png  used on input line
  377.
 (pdftex.def)             Requested size: 343.35365pt x 267.83609pt.
-<imagenes/Cap5/autoencoder.png, id=1511, 964.60374pt x 755.82375pt>
+<imagenes/Cap5/autoencoder.png, id=1508, 964.60374pt x 755.82375pt>
 File: imagenes/Cap5/autoencoder.png Graphic file (type png)
 <use imagenes/Cap5/autoencoder.png>
 Package pdftex.def Info: imagenes/Cap5/autoencoder.png  used on input line 393.
@@ -1852,7 +1847,7 @@ e values obtained by autoencoder
  []
 
 [62 <./imagenes/Cap5/autoencoder.png>]
-<imagenes/Cap5/error.png, id=1525, 945.5325pt x 268.00125pt>
+<imagenes/Cap5/error.png, id=1522, 945.5325pt x 268.00125pt>
 File: imagenes/Cap5/error.png Graphic file (type png)
 <use imagenes/Cap5/error.png>
 Package pdftex.def Info: imagenes/Cap5/error.png  used on input line 422.
@@ -1913,7 +1908,7 @@ e search for elbows with thresholding
  []
 
 [64]
-<imagenes/Cap5/mecanismo.png, id=1543, 1131.22626pt x 1158.3275pt>
+<imagenes/Cap5/mecanismo.png, id=1540, 1131.22626pt x 1158.3275pt>
 File: imagenes/Cap5/mecanismo.png Graphic file (type png)
 <use imagenes/Cap5/mecanismo.png>
 Package pdftex.def Info: imagenes/Cap5/mecanismo.png  used on input line 532.
@@ -1987,51 +1982,51 @@ l.43 ... positive rate for normal class is $100âˆ’
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
-<imagenes/Cap5/zig_zag1.png, id=1559, 553.06625pt x 415.5525pt>
+<imagenes/Cap5/zig_zag1.png, id=1556, 553.06625pt x 415.5525pt>
 File: imagenes/Cap5/zig_zag1.png Graphic file (type png)
 <use imagenes/Cap5/zig_zag1.png>
 Package pdftex.def Info: imagenes/Cap5/zig_zag1.png  used on input line 94.
 (pdftex.def)             Requested size: 206.01079pt x 154.78557pt.
-<imagenes/Cap5/zig_zag2.png, id=1560, 553.06625pt x 415.5525pt>
+<imagenes/Cap5/zig_zag2.png, id=1557, 553.06625pt x 415.5525pt>
 File: imagenes/Cap5/zig_zag2.png Graphic file (type png)
 <use imagenes/Cap5/zig_zag2.png>
 Package pdftex.def Info: imagenes/Cap5/zig_zag2.png  used on input line 94.
 (pdftex.def)             Requested size: 206.01079pt x 154.78557pt.
-<imagenes/Cap5/zig_zag3.png, id=1561, 553.06625pt x 415.5525pt>
+<imagenes/Cap5/zig_zag3.png, id=1558, 553.06625pt x 415.5525pt>
 File: imagenes/Cap5/zig_zag3.png Graphic file (type png)
 <use imagenes/Cap5/zig_zag3.png>
 Package pdftex.def Info: imagenes/Cap5/zig_zag3.png  used on input line 94.
 (pdftex.def)             Requested size: 206.01079pt x 154.78557pt.
 [68] [69 <./imagenes/Cap5/zig_zag1.png> <./imagenes/Cap5/zig_zag2.png> <./image
 nes/Cap5/zig_zag3.png>]
-<imagenes/Cap5/giro1.png, id=1578, 553.06625pt x 415.5525pt>
+<imagenes/Cap5/giro1.png, id=1575, 553.06625pt x 415.5525pt>
 File: imagenes/Cap5/giro1.png Graphic file (type png)
 <use imagenes/Cap5/giro1.png>
 Package pdftex.def Info: imagenes/Cap5/giro1.png  used on input line 149.
 (pdftex.def)             Requested size: 206.01079pt x 154.78557pt.
-<imagenes/Cap5/giro2.png, id=1579, 553.06625pt x 415.5525pt>
+<imagenes/Cap5/giro2.png, id=1576, 553.06625pt x 415.5525pt>
 File: imagenes/Cap5/giro2.png Graphic file (type png)
 <use imagenes/Cap5/giro2.png>
 Package pdftex.def Info: imagenes/Cap5/giro2.png  used on input line 149.
 (pdftex.def)             Requested size: 206.01079pt x 154.78557pt.
-<imagenes/Cap5/giro3.png, id=1580, 553.06625pt x 415.5525pt>
+<imagenes/Cap5/giro3.png, id=1577, 553.06625pt x 415.5525pt>
 File: imagenes/Cap5/giro3.png Graphic file (type png)
 <use imagenes/Cap5/giro3.png>
 Package pdftex.def Info: imagenes/Cap5/giro3.png  used on input line 149.
 (pdftex.def)             Requested size: 206.01079pt x 154.78557pt.
  [70] [71 <./imagenes/Cap5/giro1.png> <./imagenes/Cap5/giro2.png> <./imagenes/C
 ap5/giro3.png>]
-<imagenes/Cap5/freno1.png, id=1597, 553.06625pt x 415.5525pt>
+<imagenes/Cap5/freno1.png, id=1594, 553.06625pt x 415.5525pt>
 File: imagenes/Cap5/freno1.png Graphic file (type png)
 <use imagenes/Cap5/freno1.png>
 Package pdftex.def Info: imagenes/Cap5/freno1.png  used on input line 194.
 (pdftex.def)             Requested size: 206.01079pt x 154.78557pt.
-<imagenes/Cap5/freno2.png, id=1598, 553.06625pt x 415.5525pt>
+<imagenes/Cap5/freno2.png, id=1595, 553.06625pt x 415.5525pt>
 File: imagenes/Cap5/freno2.png Graphic file (type png)
 <use imagenes/Cap5/freno2.png>
 Package pdftex.def Info: imagenes/Cap5/freno2.png  used on input line 194.
 (pdftex.def)             Requested size: 206.01079pt x 154.78557pt.
-<imagenes/Cap5/freno3.png, id=1599, 566.115pt x 423.5825pt>
+<imagenes/Cap5/freno3.png, id=1596, 566.115pt x 423.5825pt>
 File: imagenes/Cap5/freno3.png Graphic file (type png)
 <use imagenes/Cap5/freno3.png>
 Package pdftex.def Info: imagenes/Cap5/freno3.png  used on input line 194.
@@ -2044,17 +2039,17 @@ of type dry brakes (Own
 
 [72 <./imagenes/Cap5/freno1.png> <./imagenes/Cap5/freno2.png> <./imagenes/Cap5/
 freno3.png>]
-<imagenes/Cap5/fp1.png, id=1612, 553.06625pt x 415.5525pt>
+<imagenes/Cap5/fp1.png, id=1609, 553.06625pt x 415.5525pt>
 File: imagenes/Cap5/fp1.png Graphic file (type png)
 <use imagenes/Cap5/fp1.png>
 Package pdftex.def Info: imagenes/Cap5/fp1.png  used on input line 239.
 (pdftex.def)             Requested size: 206.01079pt x 154.78557pt.
-<imagenes/Cap5/fp2.png, id=1613, 553.06625pt x 415.5525pt>
+<imagenes/Cap5/fp2.png, id=1610, 553.06625pt x 415.5525pt>
 File: imagenes/Cap5/fp2.png Graphic file (type png)
 <use imagenes/Cap5/fp2.png>
 Package pdftex.def Info: imagenes/Cap5/fp2.png  used on input line 239.
 (pdftex.def)             Requested size: 206.01079pt x 154.78557pt.
-<imagenes/Cap5/fp3.png, id=1614, 553.06625pt x 415.5525pt>
+<imagenes/Cap5/fp3.png, id=1611, 553.06625pt x 415.5525pt>
 File: imagenes/Cap5/fp3.png Graphic file (type png)
 <use imagenes/Cap5/fp3.png>
 Package pdftex.def Info: imagenes/Cap5/fp3.png  used on input line 239.
@@ -2074,58 +2069,25 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\uppercase' on input line 1.
 
 
-Overfull \hbox (1.4567pt too wide) in paragraph at lines 4--5
-\T1/phv/m/n/10.95 Después de haber realizado el procedimiento descrito en los a
-nteriores capítulos, con el objetivo
+Overfull \hbox (6.7126pt too wide) in paragraph at lines 4--6
+\T1/phv/m/n/10.95 After having carried out procedure described in previous chap
+ters, in order to verify the hypothesis
+ []
+
+
+Overfull \hbox (5.72739pt too wide) in paragraph at lines 4--6
+\T1/phv/m/n/10.95 established in this investigation, a mechanism (model) capabl
+e of detecting conduction anomalies
  []
 
 1: section
 [75]
-Overfull \hbox (9.418pt too wide) in paragraph at lines 20--21
-\T1/phv/m/n/10.95 el modelo del comportamiento normal, donde la red más simple 
-logró los mejores resultados
+Overfull \hbox (16.4148pt too wide) in paragraph at lines 44--46
+[]\T1/phv/m/n/10.95 Add vehicle speed as a new parameter in dataset, as this co
+uld provide a better understanding
  []
 
-
-Overfull \hbox (22.13937pt too wide) in paragraph at lines 20--21
-\T1/phv/m/n/10.95 tanto en precisión como en el tiempo empleado durante el proc
-eso de predicción; demostrando
- []
-
-
-Overfull \hbox (18.86757pt too wide) in paragraph at lines 23--24
-\T1/phv/m/n/10.95 detección del 67.68% de las muestras, que presentan anomalías
- en el conjunto de evaluación,
- []
-
-
-Overfull \hbox (7.78603pt too wide) in paragraph at lines 30--31
-\T1/phv/m/n/10.95 Una vez concluido el trabajo de investigación, se considera i
-nteresante investigar sobre diferentes
- []
-
-
-Overfull \hbox (13.97034pt too wide) in paragraph at lines 33--34
-\T1/phv/m/n/10.95 a que esto podría brindar un mejor entendimiento del comporta
-miento normal de conducción,
- []
-
-
-Overfull \hbox (21.95445pt too wide) in paragraph at lines 35--37
-\T1/phv/m/n/10.95 giros en U a alta velocidad, entre otros. Esto debido a que e
-l estudio se limitó al reconocimiento
- []
-
-[76]
-Overfull \hbox (22.73093pt too wide) in paragraph at lines 39--40
-[]\T1/phv/m/n/10.95 Implementar un sistema de información para monitorear las a
-nomalías mediante el mecanismo
- []
-
-) [77] [78
-
-
-] (./main.bbl
+) [76] (./main.bbl
 LaTeX Font Info:    Try loading font information for T1+cmtt on input line 24.
  (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
@@ -2154,7 +2116,9 @@ tion % 20and % 20Identification %
  []
 
 1: section
-[79
+[77
+
+
 
 ]
 Underfull \hbox (badness 1735) in paragraph at lines 383--397
@@ -2180,7 +2144,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 650--664
 ] -handbook [] -part [] -4 [] -d2087d1f583e$[][]\T1/phv/m/n/10.95 .
  []
 
-[80]
+[78]
 Underfull \hbox (badness 1859) in paragraph at lines 1004--1016
 []\T1/phv/m/n/10.95 Olah, C.  (n.d.[]).  \T1/phv/m/sl/10.95 Understanding lstm 
 networks.  \T1/phv/m/n/10.95 http://colah.github.io/posts/2015-08-
@@ -2222,7 +2186,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1197--1213
 chine [] -learning [] -theory []
  []
 
-[81]
+[79]
 Underfull \hbox (badness 1748) in paragraph at lines 1433--1448
 []\T1/phv/m/n/10.95 Wolpher, M.  (n.d.[]).  \T1/phv/m/sl/10.95 Anomaly detectio
 n in unstructured time series data using an
@@ -2240,59 +2204,67 @@ Underfull \hbox (badness 10000) in paragraph at lines 1493--1507
 ms-37e2f46f1714.
  []
 
-[82]) [83]
+[80]) [81]
 \openout2 = `apendices/apendiceA.aux'.
 
- (./apendices/apendiceA.tex [84
+ (./apendices/apendiceA.tex [82
 
 
 ]
 Appendix A.
-1: section
-[85]
-Underfull \hbox (badness 3281) in paragraph at lines 101--101
- []\T1/phv/m/sc/10 Table A.3: |\T1/phv/m/n/10 Arquitectura convolucional para 3
- componentes principales 
+
+Overfull \hbox (7.21953pt too wide) in paragraph at lines 49--56
+ [][] 
  []
 
-[86]) [87] [88]
+1: section
+[83]
+Underfull \hbox (badness 2237) in paragraph at lines 99--99
+ []\T1/phv/m/sc/10 Table A.3: |\T1/phv/m/n/10 Convolutional architecture for 3 
+principal components (Own 
+ []
+
+[84]) [85] [86]
 \openout2 = `apendices/apendiceB.aux'.
 
  (./apendices/apendiceB.tex
 Appendix B.
-<imagenes/Apendices/Arquitectura.png, id=1770, 1323.94624pt x 439.6425pt>
+<imagenes/Apendices/Arquitectura.png, id=1758, 1323.94624pt x 439.6425pt>
 File: imagenes/Apendices/Arquitectura.png Graphic file (type png)
 <use imagenes/Apendices/Arquitectura.png>
 Package pdftex.def Info: imagenes/Apendices/Arquitectura.png  used on input lin
-e 13.
+e 14.
 (pdftex.def)             Requested size: 434.91322pt x 144.41833pt.
-<imagenes/Apendices/arquitectura_logica.png, id=1772, 799.98875pt x 346.29375pt
+<imagenes/Apendices/arquitectura_logica.png, id=1759, 799.98875pt x 346.29375pt
 >
 File: imagenes/Apendices/arquitectura_logica.png Graphic file (type png)
 <use imagenes/Apendices/arquitectura_logica.png>
 Package pdftex.def Info: imagenes/Apendices/arquitectura_logica.png  used on in
-put line 24.
+put line 26.
 (pdftex.def)             Requested size: 434.91322pt x 188.26399pt.
-1: section
-[89
 
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-
- <./imagenes/Apendices/Arquitectura.png>])
-Overfull \hbox (7.53403pt too wide) in paragraph at lines 31--249
-\T1/phv/m/n/10.95 detección propuesto: el pre-procesamiento y la detección de a
-nomalías, como se puede observar
+)
+Overfull \hbox (11.62903pt too wide) in paragraph at lines 32--249
+\T1/phv/m/n/10.95 Regarding logical architecture, two main parts of the propose
+d detection mechanism are observed:
  []
 
-[90 <./imagenes/Apendices/arquitectura_logica.png>]
+1: section
+[87
+
+
+
+ <./imagenes/Apendices/Arquitectura.png>] [88 <./imagenes/Apendices/arquitectur
+a_logica.png>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 252.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 252.
- (./main.aux
-(./capitulos/capitulo1.aux) (./capitulos/capitulo2.aux)
-(./capitulos/capitulo4.aux) (./capitulos/capitulo3.aux)
-(./capitulos/capitulo5.aux) (./capitulos/capitulo6.aux)
-(./capitulos/capitulo7.aux) (./apendices/apendiceA.aux)
-(./apendices/apendiceB.aux))
+ (./main.aux (./capitulos/capitulo1.aux)
+(./capitulos/capitulo2.aux) (./capitulos/capitulo4.aux)
+(./capitulos/capitulo3.aux) (./capitulos/capitulo5.aux)
+(./capitulos/capitulo6.aux) (./capitulos/capitulo7.aux)
+(./apendices/apendiceA.aux) (./apendices/apendiceB.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 252.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 252.
 
@@ -2302,16 +2274,16 @@ Package rerunfilecheck Warning: File `main.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: 28699EC4D6C0A1A487A7FA133E1134F6;20125
-(rerunfilecheck)             After:  860F04445C23861E159A4E8B199B6189;19903.
+(rerunfilecheck)             Before: 860F04445C23861E159A4E8B199B6189;19903
+(rerunfilecheck)             After:  AABA74DAE44D50BB9BD2204BB5DABAD3;19819.
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 31366 strings out of 494443
- 627602 string characters out of 6174713
- 698008 words of memory out of 5000000
+ 31364 strings out of 494443
+ 627586 string characters out of 6174713
+ 696904 words of memory out of 5000000
  34132 multiletter control sequences out of 15000+600000
  647875 words of font info for 165 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
@@ -2329,10 +2301,10 @@ r/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb></usr/share/texlive/texmf-d
 ist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (106 pages, 5180537 bytes).
+Output written on main.pdf (104 pages, 5177802 bytes).
 PDF statistics:
- 1984 PDF objects out of 2073 (max. 8388607)
- 1644 compressed objects within 17 object streams
- 417 named destinations out of 1000 (max. 500000)
+ 1972 PDF objects out of 2073 (max. 8388607)
+ 1634 compressed objects within 17 object streams
+ 415 named destinations out of 1000 (max. 500000)
  1197 words of extra memory for PDF output out of 10000 (max. 10000000)
 

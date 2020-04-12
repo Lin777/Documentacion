@@ -1,22 +1,21 @@
 % Appendix A
 
-\chapter{Experimentos de diferentes arquitecturas para los autoencoders} % Main appendix title
+\chapter{Experiments of different architectures for autoencoders} % Main appendix title
 
 \label{chapter:AppendixA} % For referencing this appendix elsewhere, use \ref{AppendixA}
 
-\section{Redes densas}
+\section{Dense networks}
 \label{section:nn}
 
-\subsection{Redes densas para 3 componentes}
+\subsection{Dense nets for 3 components}
 
 \begin{table}[H]
 \centering
 \begin{center}
 \begin{tabular}{ll|l|l|l|l|}
 \cline{3-6}
-                                                                                             &                                  & \multicolumn{4}{c|}{\textbf{Arquitecturas Densas}}                                                                                                                 \\ \cline{3-6} 
-                                                                                             &                                  & \multicolumn{1}{c|}{\textbf{Tipo}} & \multicolumn{1}{c|}{\textbf{Salida}} & \multicolumn{1}{c|}{\textbf{Activacion}} & \multicolumn{1}{c|}{\textbf{\# Parametros}} \\ \hline
-\multicolumn{1}{|l|}{\multirow{21}{*}{\rotatebox{90}{\textbf{Redes Neuronales - 3 componentes principales}}}} & \multirow{7}{*}{\textbf{NN\_33}} & Input                              & (3,3)                                &                                          & 0                                           \\ \cline{3-6} 
+                                                                                             &                                  & \multicolumn{4}{c|}{\textbf{Dense architecture}}                                                                                                                 \\ \cline{3-6}                                                                                              &                                  & \multicolumn{1}{c|}{\textbf{Type}} & \multicolumn{1}{c|}{\textbf{Output}} & \multicolumn{1}{c|}{\textbf{Activation}} & \multicolumn{1}{c|}{\textbf{\# Parameters}} \\ \hline
+\multicolumn{1}{|l|}{\multirow{21}{*}{\rotatebox{90}{\textbf{Neural Networks - 3 principal components}}}} & \multirow{7}{*}{\textbf{NN\_33}} & Input                              & (3,3)                                &                                          & 0                                           \\ \cline{3-6} 
 \multicolumn{1}{|l|}{}                                                                       &                                  & Flatten                            & 9                                    &                                          & 0                                           \\ \cline{3-6} 
 \multicolumn{1}{|l|}{}                                                                       &                                  & Dense                              & 8                                    & elu                                     & 80                                          \\ \cline{3-6} 
 \multicolumn{1}{|l|}{}                                                                       &                                  & Dense                              & 5                                    & elu                                     & 45                                          \\ \cline{3-6} 
@@ -39,29 +38,28 @@
 \multicolumn{1}{|l|}{}                                                                       &                                  & Reshape                            & (5,3)                                &                                          & 0                                          \\ \hline
 \end{tabular}
 \end{center}
-\caption{Arquitectura densa para 3 componentes principales (Elaboraci\'{o}n propia).}
+\caption{Dense architecture for 3 principal components (Own elaboration).}
 \label{table:nn_3}
 \end{table}
 
-\subsection{Evaluaci\'{o}n redes densas}
+\subsection{Dense network evaluation}
 
 \begin{table}[H]
 \centering
 \begin{tabular}{|l|l|l|l|l|l|l|}
 \hline
-\textbf{Red} & \textbf{val\_loss} & \textbf{val\_acc} & \textbf{val\_f1score} & \textbf{loss} & \textbf{acc} & \textbf{f1score} \\ \hline
+\textbf{Network} & \textbf{val\_loss} & \textbf{val\_acc} & \textbf{val\_f1score} & \textbf{loss} & \textbf{acc} & \textbf{f1score} \\ \hline
 NN\_33 & 0.003956 & 0.899894 & 0.287709 & 0.003898 & 0.900735 & 174173.640890 \\ \hline
 NN\_43 & 0.006572 & 0.869167 & 0.233547 & 0.006104 & 0.869548 & 87092.835609 \\ \hline
 NN\_53 & 0.006400 & 0.846857 & 101587.687459 & 0.006226 & 0.850568 & 0.283059 \\ \hline
 \end{tabular}
-\caption{Tabla de evaluaci\'{o}n de redes densas (Elaboraci\'{o}n propia).}
+\caption{Dense network evaluation table (Own elaboration).}
 \label{table:evaluacion_nn}
 \end{table}
 
-\section{Redes convolucionales}
+\section{Convolutional networks}
 
-
-\subsection{Redes convolucionales para 3 componentes}
+\subsection{Convolutional networks for 3 components}
 
 \begin{table}[H]
 \centering
@@ -69,9 +67,9 @@ NN\_53 & 0.006400 & 0.846857 & 101587.687459 & 0.006226 & 0.850568 & 0.283059 \\
 
 \begin{tabular}{ll|l|l|l|l|}
 \cline{3-6}
-                                                                                        &                                   & \multicolumn{4}{c|}{\textbf{Arquitecturas Convolucionales}}                                                                                                        \\ \cline{3-6} 
-                                                                                        &                                   & \multicolumn{1}{c|}{\textbf{Tipo}} & \multicolumn{1}{c|}{\textbf{Salida}} & \multicolumn{1}{c|}{\textbf{Activacion}} & \multicolumn{1}{c|}{\textbf{\# Parametros}} \\ \hline
-\multicolumn{1}{|l|}{\multirow{24}{*}{\rotatebox{90}{\textbf{Redes Conv - 3 componentes principales}}}} & \multirow{8}{*}{\textbf{CNN\_33}} & Input                              & (3,3)                                &                                          & 0                                           \\ \cline{3-6} 
+                                                                                        &                                   & \multicolumn{4}{c|}{\textbf{Convolutional architecture}}                                                                                                        \\ \cline{3-6} 
+                                                                                        &                                   & \multicolumn{1}{c|}{\textbf{Type}} & \multicolumn{1}{c|}{\textbf{Output}} & \multicolumn{1}{c|}{\textbf{Activation}} & \multicolumn{1}{c|}{\textbf{\# Parameters}} \\ \hline
+\multicolumn{1}{|l|}{\multirow{24}{*}{\rotatebox{90}{\textbf{Conv. Networks - 3 principal components}}}} & \multirow{8}{*}{\textbf{CNN\_33}} & Input                              & (3,3)                                &                                          & 0                                           \\ \cline{3-6} 
 \multicolumn{1}{|l|}{}                                                                  &                                   & Conv1D                             & (3,2)                                & elu                                     & 20                                         \\ \cline{3-6} 
 \multicolumn{1}{|l|}{}                                                                  &                                   & MaxPooling1D                       & (2,2)                                &                                          & 0                                           \\ \cline{3-6} 
 \multicolumn{1}{|l|}{}                                                                  &                                   & Conv1D                             & (2,4)                                & elu                                     & 28                                          \\ \cline{3-6} 
@@ -98,29 +96,28 @@ NN\_53 & 0.006400 & 0.846857 & 101587.687459 & 0.006226 & 0.850568 & 0.283059 \\
 \end{tabular}
 
 \end{center}
-\caption{Arquitectura convolucional para 3 componentes principales (Elaboraci\'{o}n propia).}
+\caption{Convolutional architecture for 3 principal components (Own elaboration).}
 \label{table:cnn_3}
 \end{table}
 
-\subsection{Evaluaci\'{o}n redes convolucionales}
+\subsection{Evaluation of convolutional networks}
 
 \begin{table}[H]
 \centering
 \begin{tabular}{|l|l|l|l|l|}
 \hline
-\textbf{Red} & \textbf{val\_loss} & \textbf{val\_acc} & \textbf{loss} & \textbf{acc} \\ \hline
+\textbf{Network} & \textbf{val\_loss} & \textbf{val\_acc} & \textbf{loss} & \textbf{acc} \\ \hline
 CNN\_33 & 0.0070 & 0.8453 & 0.0067 & 0.8434 \\ \hline
 CNN\_43 & 0.0100 & 0.8136 & 0.0097 & 0.8152 \\ \hline
 CNN\_53 & 0.0102 & 0.7951 & 0.0108 & 0.7907 \\ \hline
 \end{tabular}
-\caption{Tabla de evaluaci\'{o}n de redes convolucionales (Elaboraci\'{o}n propia).}
+\caption{Convolutional networks evaluation table (Own elaboration).}
 \label{table:evaluacion_cnn}
 \end{table}
 
-\section{Redes recurrentes}
+\section{Recurrent networks}
 
-
-\subsection{Redes recurrentes para 3 componentes}
+\subsection{Recurrent networks for 3 components}
 
 \begin{table}[H]
 \centering
@@ -128,9 +125,9 @@ CNN\_53 & 0.0102 & 0.7951 & 0.0108 & 0.7907 \\ \hline
 
 \begin{tabular}{ll|l|l|l|l|}
 \cline{3-6}
-                                                                                       &                                   & \multicolumn{4}{c|}{\textbf{Arquitecturas Recurrentes}}                                                                                                            \\ \cline{3-6} 
-                                                                                       &                                   & \multicolumn{1}{c|}{\textbf{Tipo}} & \multicolumn{1}{c|}{\textbf{Salida}} & \multicolumn{1}{c|}{\textbf{Activacion}} & \multicolumn{1}{c|}{\textbf{\# Parametros}} \\ \hline
-\multicolumn{1}{|l|}{\multirow{23}{*}{\rotatebox{90}{\textbf{Redes Rec - 3 componentes principales}}}} & \multirow{7}{*}{\textbf{RNN\_33}} & Input                              & (3,3)                                &                                          & 0                                           \\ \cline{3-6} 
+                                                                                       &                                   & \multicolumn{4}{c|}{\textbf{Recurrent architecture}}                                                                                                            \\ \cline{3-6} 
+                                                                                      &                                   & \multicolumn{1}{c|}{\textbf{Type}} & \multicolumn{1}{c|}{\textbf{Output}} & \multicolumn{1}{c|}{\textbf{Activation}} & \multicolumn{1}{c|}{\textbf{\# Parameters}} \\ \hline
+\multicolumn{1}{|l|}{\multirow{23}{*}{\rotatebox{90}{\textbf{Rec. Networks - 3 principal components}}}} & \multirow{7}{*}{\textbf{RNN\_33}} & Input                              & (3,3)                                &                                          & 0                                           \\ \cline{3-6} 
 \multicolumn{1}{|l|}{}                                                                 &                                   & LSTM                               & (3,9)                                & elu                                     & 468                                         \\ \cline{3-6} 
 \multicolumn{1}{|l|}{}                                                                 &                                   & LSTM                               & 6                                    & elu                                     & 384                                       \\ \cline{3-6} 
 \multicolumn{1}{|l|}{}                                                                 &                                   & Reshape                            & (3,2)                                &                                          & 0                                           \\ \cline{3-6} 
@@ -156,21 +153,21 @@ CNN\_53 & 0.0102 & 0.7951 & 0.0108 & 0.7907 \\ \hline
 \end{tabular}
 
 \end{center}
-\caption{Arquitectura recurrente para 3 componentes principales (Elaboraci\'{o}n propia).}
+\caption{Recurrent architecture for 3 principal components (Own elaboration).}
 \label{table:rnn_3}
 \end{table}
 
-\subsection{Evaluaci\'{o}n redes recurrentes}
+\subsection{Recurrent networks evaluation}
 
 \begin{table}[H]
 \centering
 \begin{tabular}{|l|l|l|l|l|}
 \hline
-\textbf{Red} & \textbf{val\_loss} & \textbf{val\_acc} & \textbf{loss} & \textbf{acc} \\ \hline
+\textbf{Network} & \textbf{val\_loss} & \textbf{val\_acc} & \textbf{loss} & \textbf{acc} \\ \hline
 RNN\_33 & 0.0039 & 0.8855 & 0.0037 & 0.8900 \\ \hline
 RNN\_43 & 0.0108 & 0.7871 & 0.0102 & 0.7884 \\ \hline
 RNN\_53 & 0.0295 & 0.2986 & 0.0290 & 0.3370 \\ \hline
 \end{tabular}
-\caption{Tabla de evaluaci\'{o}n de redes recurrentes (Elaboraci\'{o}n propia).}
+\caption{Recurrent networks evaluation table (Own elaboration).}
 \label{table:evaluacion_rnn}
 \end{table}
